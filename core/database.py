@@ -35,6 +35,7 @@ def init_db():
             q_type          TEXT NOT NULL DEFAULT 'free_text',
             options         TEXT,
             page_images     TEXT,
+            video_links     TEXT,
             FOREIGN KEY (case_id) REFERENCES cases(id)
         );
         CREATE TABLE IF NOT EXISTS answers (

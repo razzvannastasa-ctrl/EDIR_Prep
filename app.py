@@ -362,13 +362,14 @@ def view_question():
                     _submit_case()
                     st.rerun()
 
-    # ── Right: page images ────────────────────────────────────────────────────
+    # ── Right: page images + video links ─────────────────────────────────────
     with col_img:
         imgs = _load_images(q.get("page_images"))
         if imgs:
             _show_images(imgs)
-        else:
-            st.caption("No images for this question.")
+        video_links = json.loads(q.get("video_links") or "[]")
+        for i, url in enumerate(video_links, 1):
+            st.markdown(f"[▶ Video {i}]({url})")
 
     # ── Timer tick (only runs while case is active) ───────────────────────────
     if st.session_state.case_active:
@@ -447,12 +448,15 @@ def view_review():
                     st.markdown("**Explanation**")
                     st.markdown(ans_row["explanation"])
 
-            # Answer page images (collapsed by default)
-            if ans_row and ans_row["page_images"]:
-                ans_imgs = _load_images(ans_row["page_images"])
-                if any(p.exists() for p in ans_imgs):
-                    with st.expander("View answer pages"):
-                        _show_images(ans_imgs)
+            # Cropped clinical images for this question
+            imgs = _load_images(q.get("page_images"))
+            if imgs:
+                _show_images(imgs)
+
+            # Video links
+            video_links = json.loads(q.get("video_links") or "[]")
+            for i, url in enumerate(video_links, 1):
+                st.markdown(f"[▶ Video {i}]({url})")
 
             # ── Rating buttons ────────────────────────────────────────────────
             st.markdown("---")
@@ -544,6 +548,14 @@ def view_import():
                 st.success(msg2)
             else:
                 st.error(msg2)
+
+        if st.button("Extract Video Links (PDF)", disabled=not has_data()):
+            from core.vision import run_doi_extraction
+            ok3, msg3 = run_doi_extraction()
+            if ok3:
+                st.success(msg3)
+            else:
+                st.error(msg3)
 
     st.markdown("---")
     st.markdown("#### Short Cases & MRQs")

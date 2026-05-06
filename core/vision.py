@@ -21,7 +21,15 @@ try:
 except ImportError:
     Image = None
 
+try:
+    import fitz
+except ImportError:
+    fitz = None
+
 from core.database import get_conn
+
+PDF_PATH = Path(__file__).parent.parent / "data" / "pdfs" / "EDiR_CORE.pdf"
+DOI_PAT  = re.compile(r'https://doi\.org/[^\s)]+')
 
 CROPS_DIR   = Path(__file__).parent.parent / "data" / "crops"
 IMAGES_DIR  = Path(__file__).parent.parent / "data" / "page_images"
@@ -158,8 +166,9 @@ def run_vision_enhancement(api_key: str, progress_callback=None) -> tuple[bool, 
                     None
                 )
 
-            page_data = _call_claude(client, png_path)
-            images    = page_data.get("images", [])
+            page_data   = _call_claude(client, png_path)
+            images      = page_data.get("images", [])
+            video_links = page_data.get("video_links", [])
 
             # Group crops by question
             q_crops: dict[int, list[str]] = {}
@@ -172,20 +181,31 @@ def run_vision_enhancement(api_key: str, progress_callback=None) -> tuple[bool, 
                     continue
 
                 belongs = img_info.get("belongs_to", "vignette")
-                # Resolve to question IDs
                 target_ids = q_map.get(belongs) or q_map.get("vignette", [])
                 for qid in target_ids:
                     q_crops.setdefault(qid, [])
                     if crop_rel not in q_crops[qid]:
                         q_crops[qid].append(crop_rel)
 
-            # Update DB
+            # Update DB — crops and video links (links go to Q1 / vignette question)
             with get_conn() as conn:
                 for qid, crops in q_crops.items():
                     if crops:
                         conn.execute(
                             "UPDATE questions SET page_images=? WHERE id=?",
                             (json.dumps(crops), qid)
+                        )
+                if video_links:
+                    vignette_ids = q_map.get("vignette") or q_map.get("Q1", [])
+                    for qid in vignette_ids:
+                        existing = conn.execute(
+                            "SELECT video_links FROM questions WHERE id=?", (qid,)
+                        ).fetchone()
+                        existing_links = json.loads(existing["video_links"] or "[]") if existing else []
+                        merged = list(dict.fromkeys(existing_links + video_links))
+                        conn.execute(
+                            "UPDATE questions SET video_links=? WHERE id=?",
+                            (json.dumps(merged), qid)
                         )
 
             total_pages_processed += 1
@@ -209,3 +229,48 @@ def _get_cases_with_questions(chapter_id: int) -> list[dict]:
             ).fetchall()
             result.append({"case": dict(case), "questions": [dict(q) for q in qs]})
         return result
+
+
+def run_doi_extraction() -> tuple[bool, str]:
+    """
+    Read DOI video links directly from the PDF text (no API call needed).
+    Associates each doi.org link with the question whose page it appears on,
+    then updates questions.video_links in the DB.
+    """
+    if fitz is None:
+        return False, "PyMuPDF not installed."
+    if not PDF_PATH.exists():
+        return False, f"PDF not found: {PDF_PATH}"
+
+    doc = fitz.open(str(PDF_PATH))
+    updated = 0
+
+    with get_conn() as conn:
+        rows = conn.execute(
+            "SELECT id, q_number, page_images FROM questions"
+        ).fetchall()
+
+        for row in rows:
+            page_imgs = json.loads(row["page_images"] or "[]")
+            # collect DOI links from all pages this question references
+            doi_links: list[str] = []
+            for img_path in page_imgs:
+                m = re.search(r'page_(\d+)', img_path)
+                if not m:
+                    continue
+                page_idx = int(m.group(1))
+                if page_idx >= len(doc):
+                    continue
+                text = doc[page_idx].get_text("text")
+                for link in DOI_PAT.findall(text):
+                    if link not in doi_links:
+                        doi_links.append(link)
+
+            if doi_links:
+                conn.execute(
+                    "UPDATE questions SET video_links=? WHERE id=?",
+                    (json.dumps(doi_links), row["id"])
+                )
+                updated += 1
+
+    return True, f"DOI extraction complete — {updated} questions updated."
