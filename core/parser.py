@@ -73,7 +73,7 @@ CHAPTER_STRUCTURE = [
 # ── Low-level helpers ─────────────────────────────────────────────────────────
 
 def _page_image_path(page_idx: int) -> str:
-    return str(IMAGES_DIR / f"page_{page_idx:03d}.png")
+    return f"data/page_images/page_{page_idx:03d}.png"
 
 
 def _get_page_texts(doc, start: int, end: int) -> list[tuple[int, str]]:

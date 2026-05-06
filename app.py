@@ -101,11 +101,20 @@ def _submit_case():
     st.session_state.core_view = "review"
 
 
+_APP_DIR = Path(__file__).parent
+
 def _load_images(paths_json: str | None) -> list[Path]:
     if not paths_json:
         return []
     try:
-        return [Path(p) for p in json.loads(paths_json)]
+        paths = []
+        for p in json.loads(paths_json):
+            pp = Path(p)
+            # Stored path may be absolute (old local DB) or relative — normalise to repo-relative
+            if not pp.is_absolute() or not pp.exists():
+                pp = _APP_DIR / "data" / "page_images" / pp.name
+            paths.append(pp)
+        return paths
     except Exception:
         return []
 
@@ -360,11 +369,10 @@ def view_question():
         else:
             st.caption("No images for this question.")
 
-    # ── Timer tick ────────────────────────────────────────────────────────────
+    # ── Timer tick (only runs while case is active) ───────────────────────────
     if st.session_state.case_active:
         if _remaining is not None and _remaining <= 0:
             st.warning("Time's up! Submitting automatically…")
-            time.sleep(1)
             _submit_case()
             st.rerun()
         else:
