@@ -4,9 +4,5 @@ __pycache__/
 .env
 .streamlit/secrets.toml
 
-# Generated at parse time — large files, personal data
-data/page_images/
-data/edir_prep.db
-
 # PDFs are copyrighted — keep local only
 data/pdfs/
