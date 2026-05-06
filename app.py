@@ -523,6 +523,27 @@ def view_import():
         else:
             st.error(msg)
 
+    # ── Vision enhancement ────────────────────────────────────────────────────
+    if has_data():
+        st.markdown("---")
+        st.markdown("#### Extract images with Claude Vision")
+        st.markdown(
+            "Replaces full-page screenshots with cropped clinical images "
+            "(X-rays, CTs, MRIs) mapped to each question. Runs once; results "
+            "are saved locally. Requires an Anthropic API key in secrets."
+        )
+        if st.button("Run Vision Enhancement", disabled=not has_data()):
+            from core.vision import run_vision_enhancement
+            api_key = st.secrets.get("ANTHROPIC_API_KEY", "")
+            status  = st.empty()
+            def _vis_cb(msg, _frac):
+                status.text(msg)
+            ok2, msg2 = run_vision_enhancement(api_key, _vis_cb)
+            if ok2:
+                st.success(msg2)
+            else:
+                st.error(msg2)
+
     st.markdown("---")
     st.markdown("#### Short Cases & MRQs")
     st.info(
