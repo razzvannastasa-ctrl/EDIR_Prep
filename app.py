@@ -109,10 +109,11 @@ def _load_images(paths_json: str | None) -> list[Path]:
     try:
         paths = []
         for p in json.loads(paths_json):
+            if "crops" not in p:
+                continue  # skip full-page fallbacks, only show cropped clinical images
             pp = Path(p)
-            # Stored path may be absolute (old local DB) or relative — normalise to repo-relative
-            if not pp.is_absolute() or not pp.exists():
-                pp = _APP_DIR / "data" / "page_images" / pp.name
+            if not pp.is_absolute():
+                pp = _APP_DIR / pp
             paths.append(pp)
         return paths
     except Exception:
