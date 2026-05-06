@@ -4,6 +4,7 @@ import datetime
 from pathlib import Path
 
 import streamlit as st
+from streamlit_autorefresh import st_autorefresh
 
 from core.database import (
     init_db, has_data,
@@ -287,6 +288,10 @@ def view_case_start():
 
 
 def view_question():
+    # Refresh every second while case is active to keep the timer ticking
+    if st.session_state.case_active:
+        st_autorefresh(interval=1000, key="case_timer")
+
     questions = st.session_state.questions
     q_idx     = st.session_state.q_index
     n_q       = len(questions)
@@ -371,15 +376,11 @@ def view_question():
         for i, url in enumerate(video_links, 1):
             st.markdown(f"[▶ Video {i}]({url})")
 
-    # ── Timer tick (only runs while case is active) ───────────────────────────
-    if st.session_state.case_active:
-        if _remaining is not None and _remaining <= 0:
-            st.warning("Time's up! Submitting automatically…")
-            _submit_case()
-            st.rerun()
-        else:
-            time.sleep(1)
-            st.rerun()
+    # ── Auto-submit when time runs out ────────────────────────────────────────
+    if st.session_state.case_active and _remaining is not None and _remaining <= 0:
+        st.warning("Time's up! Submitting automatically…")
+        _submit_case()
+        st.rerun()
 
 
 def view_review():
