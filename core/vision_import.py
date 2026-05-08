@@ -264,7 +264,8 @@ Extract every MRQ with its correct answer(s). Return ONLY valid JSON:
       "options": ["a. option text", "b. option text", "c. option text", "d. option text", "e. option text"],
       "correct_options": ["a", "c"],
       "explanation": "explanation text, or empty string if none",
-      "video_links": []
+      "video_links": [],
+      "page_offset": 0
     }}
   ]
 }}
@@ -274,6 +275,7 @@ Rules:
 - correct_options: the letter(s) of correct answers, e.g. ["a"] or ["b","d"]
 - video_links: any doi.org URLs visible anywhere on the pages
 - explanation: text that follows the answer key on the answer page
+- page_offset: 0-based index into the question images sent (which page this question appears on)
 """
 
 _CORE_PROMPT = """\
@@ -448,9 +450,11 @@ def _insert_mrq_group(data: dict, chapter_id: int, doc, group: dict):
 
         q_type = "single_choice" if len(correct) == 1 else "multiple_choice"
 
-        # page_images: first question page as reference
+        p_off     = q.get("page_offset", 0)
         page_imgs = []
-        if group["q_pages"]:
+        if 0 <= p_off < len(group["q_pages"]):
+            page_imgs = [_save_page(doc, group["q_pages"][p_off])]
+        elif group["q_pages"]:
             page_imgs = [_save_page(doc, group["q_pages"][0])]
 
         q_id = insert_question(case_id, q_num, q_text, q_type,
