@@ -78,78 +78,135 @@ def _letters_to_indices(val) -> list[int]:
     return result
 
 
-# ── Pass 1: TOC extraction ────────────────────────────────────────────────────
-
-_TOC_PROMPT = """\
-These are the first pages of the EDiR (Essential Guide in Radiology) textbook.
-
-The book has two page-numbering systems:
-- Front matter uses Roman numerals (I, II, … XV). The Table of Contents is in this section.
-- Main content uses Arabic numerals starting at 1.
-
-Your tasks:
-1. Find the Table of Contents and extract the complete book structure.
-2. Identify which 0-based image index (counting from the first image in this batch) \
-corresponds to the first Arabic page "1" of the main content.
-
-Each chapter contains up to three section types:
-- "core"  CORE Cases (Clinical Oriented Reasoning Evaluation)
-- "mrq"   Multiple Response Questions
-- "sc"    Short Cases
-
-The TOC lists printed Arabic page numbers. Extract the start and end printed page \
-number for the question pages and the answer pages of each section.
-If the TOC only shows a start page (no explicit end), infer the end from where the \
-next section starts (i.e. end = next_start - 1).
-
-Return ONLY valid JSON — no markdown, no explanation:
-{
-  "arabic_start_pdf_index": 16,
-  "chapters": [
-    {
-      "number": 1,
-      "title": "Chapter title exactly as written",
-      "sections": [
-        {
-          "type": "core",
-          "q_start": 1,
-          "q_end": 14,
-          "a_start": 201,
-          "a_end": 214
-        },
-        {
-          "type": "mrq",
-          "q_start": 15,
-          "q_end": 24,
-          "a_start": 215,
-          "a_end": 222
-        },
-        {
-          "type": "sc",
-          "q_start": 25,
-          "q_end": 36,
-          "a_start": 223,
-          "a_end": 232
-        }
-      ]
-    }
-  ]
-}
-
-Omit section types not present in a chapter.
-"""
-
+# ── Pass 1: TOC extraction from PDF bookmarks ─────────────────────────────────
 
 def _extract_toc(client, doc) -> dict | None:
-    n = min(20, len(doc))
-    images = [_img_msg(_render(doc, i, zoom=1.5)) for i in range(n)]
-    content = images + [{"type": "text", "text": _TOC_PROMPT}]
+    """
+    Read the book structure from the PDF's built-in bookmarks (outline).
+    Falls back to Vision if the PDF has no bookmarks.
+    Returns: {arabic_start_pdf_index, chapters: [{number, title, sections}]}
+    """
+    result = _toc_from_bookmarks(doc)
+    if result:
+        return result
+    return _extract_toc_vision(client, doc)
 
+
+def _toc_from_bookmarks(doc) -> dict | None:
+    raw = doc.get_toc()   # [(level, title, fitz_page_1based), ...]
+    if not raw:
+        return None
+
+    ch_pat = re.compile(r'^(\d+)\s*[:\-]?\s*')
+
+    # Collect chapter-level entries (level 1 with a leading number)
+    chapters_raw = []
+    for raw_idx, (lv, title, page) in enumerate(raw):
+        m = ch_pat.match(title.strip()) if lv == 1 else None
+        if m:
+            num = int(m.group(1))
+            ch_title = title.strip()[m.end():].strip().lstrip(':').strip() or f"Chapter {num}"
+            chapters_raw.append((raw_idx, num, ch_title, page))
+
+    if not chapters_raw:
+        return None
+
+    # arabic_start_pdf_index: 0-based PDF index of printed Arabic page 1
+    # = fitz page of chapter 1 - 1  (chapter 1 always starts at Arabic page 1)
+    arabic_start = chapters_raw[0][3] - 1
+
+    def to_arabic(fitz_p: int) -> int:
+        return fitz_p - arabic_start   # fitz is 1-based so this gives arabic page number
+
+    def parse_sections(sub: list[tuple], ch_end_fitz: int) -> list[dict]:
+        mrq_q = sc_q = core_q = None
+        mrq_a = sc_a = core_a = None
+        bib_p = ch_end_fitz
+        in_answers = False
+
+        for lv, title, page in sub:
+            tl = title.lower()
+            if 'bibliograph' in tl:
+                bib_p = min(bib_p, page)
+                continue
+            if lv == 2 and 'answer' in tl:
+                in_answers = True
+                continue
+            if not in_answers:
+                if re.search(r'multiple.?response|mrq', tl) and mrq_q is None:
+                    mrq_q = page
+                elif re.search(r'short.?case', tl) and sc_q is None:
+                    sc_q = page
+                elif re.search(r'\bcore\b', tl) and core_q is None:
+                    core_q = page
+            else:
+                if re.search(r'multiple.?response|mrq', tl) and mrq_a is None:
+                    mrq_a = page
+                elif re.search(r'short.?case', tl) and sc_a is None:
+                    sc_a = page
+                elif re.search(r'\bcore\b|reasoning', tl) and core_a is None:
+                    core_a = page
+
+        q_bounds = sorted(p for p in [mrq_q, sc_q, core_q] if p is not None)
+        a_bounds = sorted(p for p in [mrq_a, sc_a, core_a] if p is not None)
+        # questions end before answers block; answers end before bibliography
+        q_bounds.append(min(a_bounds) if a_bounds else bib_p)
+        a_bounds.append(bib_p)
+
+        def end_of(start_p, bounds):
+            for b in bounds:
+                if b > start_p:
+                    return b - 1
+            return start_p
+
+        sections = []
+        if mrq_q and mrq_a:
+            sections.append({"type": "mrq",
+                              "q_start": to_arabic(mrq_q), "q_end": to_arabic(end_of(mrq_q, q_bounds)),
+                              "a_start": to_arabic(mrq_a), "a_end": to_arabic(end_of(mrq_a, a_bounds))})
+        if sc_q and sc_a:
+            sections.append({"type": "sc",
+                              "q_start": to_arabic(sc_q),  "q_end": to_arabic(end_of(sc_q, q_bounds)),
+                              "a_start": to_arabic(sc_a),  "a_end": to_arabic(end_of(sc_a, a_bounds))})
+        if core_q and core_a:
+            sections.append({"type": "core",
+                              "q_start": to_arabic(core_q), "q_end": to_arabic(end_of(core_q, q_bounds)),
+                              "a_start": to_arabic(core_a), "a_end": to_arabic(end_of(core_a, a_bounds))})
+        return sections
+
+    result_chapters = []
+    for ci, (raw_idx, num, title, page) in enumerate(chapters_raw):
+        next_raw_idx  = chapters_raw[ci + 1][0] if ci + 1 < len(chapters_raw) else len(raw)
+        ch_end_fitz   = chapters_raw[ci + 1][3] if ci + 1 < len(chapters_raw) else len(doc) + 1
+        sub = [(lv, t, p) for lv, t, p in
+               [(r[0], r[1], r[2]) for r in raw[raw_idx + 1: next_raw_idx]]]
+        secs = parse_sections(sub, ch_end_fitz)
+        result_chapters.append({"number": num, "title": title, "sections": secs})
+
+    return {"arabic_start_pdf_index": arabic_start, "chapters": result_chapters}
+
+
+def _extract_toc_vision(client, doc) -> dict | None:
+    """Vision fallback: send only the TOC pages (10-15) at low zoom."""
+    _PROMPT = """\
+These pages are the Table of Contents of the EDiR radiology textbook.
+The main content uses Arabic page numbers starting at 1.
+Each chapter has up to three section types: "core", "mrq", "sc".
+Extract the complete structure and return ONLY valid JSON:
+{"arabic_start_pdf_index": 17,
+ "chapters": [{"number": 1, "title": "...", "sections": [
+   {"type": "mrq", "q_start": 2, "q_end": 7, "a_start": 24, "a_end": 27},
+   {"type": "sc",  "q_start": 8, "q_end": 19, "a_start": 28, "a_end": 30},
+   {"type": "core","q_start": 20,"q_end": 23, "a_start": 31, "a_end": 32}
+ ]}]}
+arabic_start_pdf_index is the 0-based PDF page index where Arabic page 1 appears."""
+
+    images = [_img_msg(_render(doc, i, zoom=1.0)) for i in range(10, min(16, len(doc)))]
+    content = images + [{"type": "text", "text": _PROMPT}]
     for attempt in range(3):
         try:
             resp = client.messages.create(
-                model="claude-sonnet-4-6",
-                max_tokens=4096,
+                model="claude-sonnet-4-6", max_tokens=4096,
                 messages=[{"role": "user", "content": content}],
             )
             data = _parse_json(resp.content[0].text)
@@ -487,11 +544,17 @@ def run_vision_import(pdf_path: str | Path, api_key: str,
     toc = _extract_toc(client, doc)
     if not toc:
         doc.close()
-        return False, "Could not extract table of contents from the first 20 pages."
+        return False, (
+            "Could not extract the table of contents. "
+            "Make sure the PDF has bookmarks/outline entries."
+        )
 
     if progress_callback:
         n_ch = len(toc.get("chapters", []))
-        progress_callback(f"TOC found: {n_ch} chapter(s), offset={toc['arabic_start_pdf_index']}", 0.1)
+        progress_callback(
+            f"TOC: {n_ch} chapters found (content starts at PDF page {toc['arabic_start_pdf_index']})",
+            0.1
+        )
 
     # Insert chapters into DB
     chapter_ids: dict[int, int] = {}
