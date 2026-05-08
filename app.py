@@ -521,10 +521,10 @@ def view_review():
 def view_import():
     st.header("Import PDF")
 
-    st.markdown("#### Vision Import")
     st.markdown(
         "Sends every page of the original EDiR PDF to Claude Vision to extract "
-        "**CORE Cases, Short Cases, and MRQs** in a single run.  \n"
+        "**CORE Cases, Short Cases, and MRQs**, then crops clinical images and "
+        "extracts video links — all in one run.  \n"
         "This clears the existing database and re-imports everything from scratch.  \n"
         "**Cost estimate:** ~305 pages × \\$0.003 ≈ \\$1 USD."
     )
@@ -551,8 +551,10 @@ def view_import():
         st.warning("Re-importing will delete **all** existing cases, questions, ratings, and images.")
 
     can_run = bool(pdf_path_input and api_key_input)
-    if st.button("Run Vision Import", type="primary", disabled=not can_run):
+    if st.button("Import PDF", type="primary", disabled=not can_run):
         from core.vision_import import run_vision_import
+        from core.vision import run_vision_enhancement, run_doi_extraction
+
         prog   = st.progress(0.0)
         status = st.empty()
 
@@ -561,42 +563,32 @@ def view_import():
                 prog.progress(min(float(frac), 1.0))
             status.text(msg)
 
+        # Step 1 — import all content
         ok, msg = run_vision_import(pdf_path_input, api_key_input, _cb)
-        prog.progress(1.0)
-        if ok:
-            st.success(msg)
-            st.balloons()
+        if not ok:
+            st.error(f"Import failed: {msg}")
+            return
+        st.success(msg)
+
+        # Step 2 — crop clinical images
+        status.text("Extracting clinical images…")
+        ok2, msg2 = run_vision_enhancement(api_key_input, lambda m, _: status.text(m))
+        if ok2:
+            st.success(msg2)
         else:
-            st.error(msg)
+            st.warning(f"Image extraction: {msg2}")
 
-    # ── Vision enhancement (crop extraction) ──────────────────────────────────
-    if has_data():
-        st.markdown("---")
-        st.markdown("#### Extract Clinical Images with Claude Vision")
-        st.markdown(
-            "Scans saved page images and crops out X-rays, CTs, MRIs etc., "
-            "associating each crop with the correct question. Runs once after import."
-        )
+        # Step 3 — extract video links from PDF text
+        status.text("Extracting video links…")
+        ok3, msg3 = run_doi_extraction()
+        if ok3:
+            st.success(msg3)
+        else:
+            st.warning(f"Video links: {msg3}")
 
-        _enh_key = api_key_input or _secret_key
-        if st.button("Run Vision Enhancement"):
-            from core.vision import run_vision_enhancement
-            status2 = st.empty()
-            def _vis_cb(msg, _frac):
-                status2.text(msg)
-            ok2, msg2 = run_vision_enhancement(_enh_key, _vis_cb)
-            if ok2:
-                st.success(msg2)
-            else:
-                st.error(msg2)
-
-        if st.button("Extract Video Links (PDF)"):
-            from core.vision import run_doi_extraction
-            ok3, msg3 = run_doi_extraction()
-            if ok3:
-                st.success(msg3)
-            else:
-                st.error(msg3)
+        prog.progress(1.0)
+        status.text("All done.")
+        st.balloons()
 
 
 # ══════════════════════════════════════════════════════════════════════════════
