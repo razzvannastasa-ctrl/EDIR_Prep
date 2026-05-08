@@ -550,7 +550,8 @@ def view_import():
     if has_data():
         st.warning("Re-importing will delete **all** existing cases, questions, ratings, and images.")
 
-    can_run = bool(pdf_path_input and api_key_input)
+    pdf_path_clean = pdf_path_input.strip().strip('"').strip("'")
+    can_run = bool(pdf_path_clean and api_key_input)
     if st.button("Import PDF", type="primary", disabled=not can_run):
         from core.vision_import import run_vision_import
         from core.vision import run_vision_enhancement, run_doi_extraction
@@ -564,7 +565,7 @@ def view_import():
             status.text(msg)
 
         # Step 1 — import all content
-        ok, msg = run_vision_import(pdf_path_input, api_key_input, _cb)
+        ok, msg = run_vision_import(pdf_path_clean, api_key_input, _cb)
         if not ok:
             st.error(f"Import failed: {msg}")
             return
