@@ -471,6 +471,11 @@ def view_review():
                 st.markdown("**Correct Answer**")
                 if ans_row and ans_row["answer_text"]:
                     st.markdown(ans_row["answer_text"])
+                elif ans_row and ans_row["correct_options"] and options:
+                    correct_indices = json.loads(ans_row["correct_options"])
+                    correct_labels = [options[i] for i in correct_indices if i < len(options)]
+                    for c in correct_labels:
+                        st.markdown(f"→ {c}")
                 else:
                     st.markdown("_Answer not available_")
 
