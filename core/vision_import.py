@@ -1,20 +1,18 @@
 """
 Vision-based PDF import pipeline.
 
-Pass 1 — Label  : classify every page (chapter, section type, role)
-Pass 2 — Extract: send grouped pages (questions + answers) to Claude
-                  and get back fully-structured case/question data.
-
-The two-pass design means Claude never has to correlate questions with
-answers across distant pages in a single call — we group them first,
-then send them together.
+Pass 1 — TOC    : send the first ~20 pages to Claude to extract the full
+                  book structure (chapter titles, section page ranges) from
+                  the Table of Contents. Converts printed Arabic page numbers
+                  to 0-based PDF indices using the front-matter offset.
+Pass 2 — Extract: send each section's question+answer pages together to
+                  Claude and get back fully-structured case/question data.
 """
 
 import base64
 import json
 import re
 import time
-from collections import defaultdict
 from pathlib import Path
 
 try:
@@ -80,100 +78,116 @@ def _letters_to_indices(val) -> list[int]:
     return result
 
 
-# ── Pass 1: Page labeling ─────────────────────────────────────────────────────
+# ── Pass 1: TOC extraction ────────────────────────────────────────────────────
 
-_LABEL_PROMPT = """\
-This is page {idx} of the EDiR (Essential Guide in Radiology) book.
+_TOC_PROMPT = """\
+These are the first pages of the EDiR (Essential Guide in Radiology) textbook.
 
-Classify this page. Return ONLY valid JSON — no markdown, no explanation:
-{{
-  "chapter": 1,
-  "section": "mrq",
-  "role": "questions",
-  "title": ""
-}}
+The book has two page-numbering systems:
+- Front matter uses Roman numerals (I, II, … XV). The Table of Contents is in this section.
+- Main content uses Arabic numerals starting at 1.
 
-Field rules:
-- "chapter" : visible chapter number (integer), or null
-- "section" : exactly one of:
-    "mrq"    Multiple Response Questions (multiple-choice exam questions, labelled a–e)
-    "sc"     Short Cases (brief clinical case + image + 2-4 questions)
-    "core"   CORE Cases (Clinical Oriented Reasoning Evaluation — vignette + Q1/Q2…)
-    "header" Chapter introduction / title page
-    "bib"    Bibliography or references
-    "other"  Preface, index, blank, etc.
-- "role"    : "questions" | "answers" | "other"
-- "title"   : chapter title string if this is a header page, else empty string
+Your tasks:
+1. Find the Table of Contents and extract the complete book structure.
+2. Identify which 0-based image index (counting from the first image in this batch) \
+corresponds to the first Arabic page "1" of the main content.
+
+Each chapter contains up to three section types:
+- "core"  CORE Cases (Clinical Oriented Reasoning Evaluation)
+- "mrq"   Multiple Response Questions
+- "sc"    Short Cases
+
+The TOC lists printed Arabic page numbers. Extract the start and end printed page \
+number for the question pages and the answer pages of each section.
+If the TOC only shows a start page (no explicit end), infer the end from where the \
+next section starts (i.e. end = next_start - 1).
+
+Return ONLY valid JSON — no markdown, no explanation:
+{
+  "arabic_start_pdf_index": 16,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Chapter title exactly as written",
+      "sections": [
+        {
+          "type": "core",
+          "q_start": 1,
+          "q_end": 14,
+          "a_start": 201,
+          "a_end": 214
+        },
+        {
+          "type": "mrq",
+          "q_start": 15,
+          "q_end": 24,
+          "a_start": 215,
+          "a_end": 222
+        },
+        {
+          "type": "sc",
+          "q_start": 25,
+          "q_end": 36,
+          "a_start": 223,
+          "a_end": 232
+        }
+      ]
+    }
+  ]
+}
+
+Omit section types not present in a chapter.
 """
 
 
-def _label_page(client, png: bytes, page_idx: int) -> dict:
-    prompt = _LABEL_PROMPT.format(idx=page_idx)
-    for _ in range(2):
+def _extract_toc(client, doc) -> dict | None:
+    n = min(20, len(doc))
+    images = [_img_msg(_render(doc, i, zoom=1.5)) for i in range(n)]
+    content = images + [{"type": "text", "text": _TOC_PROMPT}]
+
+    for attempt in range(3):
         try:
             resp = client.messages.create(
                 model="claude-sonnet-4-6",
-                max_tokens=150,
-                messages=[{"role": "user", "content": [
-                    _img_msg(png),
-                    {"type": "text", "text": prompt},
-                ]}],
+                max_tokens=4096,
+                messages=[{"role": "user", "content": content}],
             )
             data = _parse_json(resp.content[0].text)
-            if data and "section" in data:
+            if data and "chapters" in data and "arabic_start_pdf_index" in data:
                 return data
         except Exception:
-            time.sleep(1)
-    return {"chapter": None, "section": "other", "role": "other", "title": ""}
+            time.sleep(2 * (attempt + 1))
+    return None
 
 
-# ── Grouping ──────────────────────────────────────────────────────────────────
+# ── Build extraction groups from TOC ─────────────────────────────────────────
 
-def _propagate_chapters(labels: dict[int, dict]) -> dict[int, dict]:
-    """Fill null chapters by copying from the nearest preceding labeled page."""
-    last_ch = None
-    for idx in sorted(labels):
-        ch = labels[idx].get("chapter")
-        if ch is not None:
-            last_ch = ch
-        elif last_ch is not None and labels[idx].get("section") not in ("other", None):
-            labels[idx] = {**labels[idx], "chapter": last_ch}
-    return labels
-
-
-def _group_labels(labels: dict[int, dict]) -> list[dict]:
+def _build_groups(toc: dict) -> list[dict]:
     """
-    Pair question pages with answer pages for the same (chapter, section).
-    Returns list of groups: {chapter, section, q_pages, a_pages, chapter_title}
+    Convert TOC structure into extraction groups with exact PDF page indices.
+    arabic_start_pdf_index: 0-based PDF index of printed Arabic page 1.
+    pdf_index = arabic_page_number - 1 + arabic_start_pdf_index
     """
-    buckets: dict[tuple, dict] = defaultdict(lambda: {"q": [], "a": []})
-    titles: dict[int, str] = {}
+    offset = toc.get("arabic_start_pdf_index", 0)
 
-    for idx in sorted(labels):
-        lbl  = labels[idx]
-        ch   = lbl.get("chapter")
-        sec  = lbl.get("section", "other")
-        role = lbl.get("role", "other")
+    def to_pdf(arabic: int) -> int:
+        return arabic - 1 + offset
 
-        if sec == "header" and ch and lbl.get("title"):
-            titles[ch] = lbl["title"]
-
-        if sec in ("mrq", "sc", "core") and ch is not None:
-            key = (ch, sec)
-            if role == "questions":
-                buckets[key]["q"].append(idx)
-            elif role == "answers":
-                buckets[key]["a"].append(idx)
+    def page_range(start: int, end: int) -> list[int]:
+        return list(range(to_pdf(start), to_pdf(end) + 1))
 
     groups = []
-    for (ch, sec) in sorted(buckets):
-        groups.append({
-            "chapter":       ch,
-            "section":       sec,
-            "q_pages":       sorted(buckets[(ch, sec)]["q"]),
-            "a_pages":       sorted(buckets[(ch, sec)]["a"]),
-            "chapter_title": titles.get(ch, f"Chapter {ch}"),
-        })
+    for ch in toc.get("chapters", []):
+        for sec in ch.get("sections", []):
+            if sec.get("type") not in ("core", "mrq", "sc"):
+                continue
+            groups.append({
+                "chapter":       ch["number"],
+                "chapter_title": ch["title"],
+                "section":       sec["type"],
+                "q_pages":       page_range(sec["q_start"], sec["q_end"]),
+                "a_pages":       page_range(sec["a_start"], sec["a_end"]),
+            })
     return groups
 
 
@@ -466,40 +480,29 @@ def run_vision_import(pdf_path: str | Path, api_key: str,
             for f in d.glob("*.png"):
                 f.unlink()
 
-    # ── Pass 1: Label every page ──────────────────────────────────────────────
+    # ── Pass 1: Extract TOC ───────────────────────────────────────────────────
     if progress_callback:
-        progress_callback("Pass 1: Classifying pages…", 0.0)
+        progress_callback("Pass 1: Reading table of contents…", 0.0)
 
-    labels: dict[int, dict] = {}
-    for i in range(n):
-        png = _render(doc, i, zoom=1.0)   # small render — just need to read headers
-        labels[i] = _label_page(client, png, i)
-        if progress_callback:
-            progress_callback(f"Pass 1: page {i+1}/{n}…", i / n * 0.35)
-        time.sleep(0.05)
+    toc = _extract_toc(client, doc)
+    if not toc:
+        doc.close()
+        return False, "Could not extract table of contents from the first 20 pages."
 
-    labels = _propagate_chapters(labels)
+    if progress_callback:
+        n_ch = len(toc.get("chapters", []))
+        progress_callback(f"TOC found: {n_ch} chapter(s), offset={toc['arabic_start_pdf_index']}", 0.1)
 
-    # Collect chapter titles and insert chapters
-    chapter_titles: dict[int, str] = {}
-    for lbl in labels.values():
-        ch = lbl.get("chapter")
-        t  = lbl.get("title", "")
-        if ch and t and ch not in chapter_titles:
-            chapter_titles[ch] = t
-
+    # Insert chapters into DB
     chapter_ids: dict[int, int] = {}
-    all_chs = sorted({lbl["chapter"] for lbl in labels.values()
-                      if lbl.get("chapter") is not None})
-    for ch in all_chs:
-        title = chapter_titles.get(ch, f"Chapter {ch}")
-        chapter_ids[ch] = insert_chapter(ch, title)
+    for ch in toc.get("chapters", []):
+        chapter_ids[ch["number"]] = insert_chapter(ch["number"], ch["title"])
 
-    # ── Pass 2: Extract each group ────────────────────────────────────────────
-    groups = _group_labels(labels)
+    # Build extraction groups from TOC page ranges
+    groups = _build_groups(toc)
 
     if progress_callback:
-        progress_callback(f"Pass 2: Extracting {len(groups)} section(s)…", 0.35)
+        progress_callback(f"Pass 2: Extracting {len(groups)} section(s)…", 0.15)
 
     for gi, group in enumerate(groups):
         ch  = group["chapter"]
@@ -510,7 +513,7 @@ def run_vision_import(pdf_path: str | Path, api_key: str,
         if progress_callback:
             progress_callback(
                 f"Pass 2: Ch{ch} {sec.upper()} ({q_n}Q + {a_n}A pages)…",
-                0.35 + gi / max(len(groups), 1) * 0.60,
+                0.15 + gi / max(len(groups), 1) * 0.80,
             )
 
         data  = _extract_group(client, doc, group)
