@@ -559,7 +559,6 @@ def view_import():
     can_run = bool(pdf_path_clean and api_key_input)
     if st.button("Import PDF", type="primary", disabled=not can_run):
         from core.vision_import import run_vision_import
-        from core.vision import run_vision_enhancement, run_doi_extraction
 
         prog   = st.progress(0.0)
         status = st.empty()
@@ -569,32 +568,14 @@ def view_import():
                 prog.progress(min(float(frac), 1.0))
             status.text(msg)
 
-        # Step 1 — import all content
         ok, msg = run_vision_import(pdf_path_clean, api_key_input, _cb)
-        if not ok:
-            st.error(f"Import failed: {msg}")
-            return
-        st.success(msg)
-
-        # Step 2 — crop clinical images
-        status.text("Extracting clinical images…")
-        ok2, msg2 = run_vision_enhancement(api_key_input, lambda m, _: status.text(m))
-        if ok2:
-            st.success(msg2)
-        else:
-            st.warning(f"Image extraction: {msg2}")
-
-        # Step 3 — extract video links from PDF text
-        status.text("Extracting video links…")
-        ok3, msg3 = run_doi_extraction()
-        if ok3:
-            st.success(msg3)
-        else:
-            st.warning(f"Video links: {msg3}")
-
         prog.progress(1.0)
-        status.text("All done.")
-        st.balloons()
+        if ok:
+            status.text("Done.")
+            st.success(msg)
+            st.balloons()
+        else:
+            st.error(f"Import failed: {msg}")
 
 
 # ══════════════════════════════════════════════════════════════════════════════

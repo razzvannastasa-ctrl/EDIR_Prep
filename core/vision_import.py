@@ -13,6 +13,7 @@ import base64
 import json
 import re
 import time
+from collections import defaultdict
 from pathlib import Path
 
 try:
@@ -255,7 +256,7 @@ Chapter {ch}: "{title}" — Multiple Response Questions (MRQs)
 
 The first {nq} image(s) are QUESTION pages. The last {na} image(s) are ANSWER pages.
 
-Extract every MRQ with its correct answer(s). Return ONLY valid JSON:
+Extract every MRQ and every clinical image. Return ONLY valid JSON:
 {{
   "questions": [
     {{
@@ -267,15 +268,26 @@ Extract every MRQ with its correct answer(s). Return ONLY valid JSON:
       "video_links": [],
       "page_offset": 0
     }}
+  ],
+  "images": [
+    {{
+      "belongs_to": 1,
+      "page_offset": 0,
+      "bbox": {{"top": 0.05, "left": 0.1, "bottom": 0.55, "right": 0.9}}
+    }}
   ]
 }}
 
 Rules:
 - Copy text VERBATIM — do not paraphrase or correct
 - correct_options: the letter(s) of correct answers, e.g. ["a"] or ["b","d"]
-- video_links: any doi.org URLs visible anywhere on the pages
+- video_links: any doi.org URLs visible on that question's page
 - explanation: text that follows the answer key on the answer page
-- page_offset: 0-based index into the question images sent (which page this question appears on)
+- page_offset: 0-based index into ALL images sent (question pages first, then answer pages)
+- images: every radiological/clinical image (X-ray, CT, MRI, ultrasound, etc.) — not text, logos, or captions
+- images.belongs_to: question number the image belongs to
+- images.bbox: bounding box as fractions of page size (0.0–1.0)
+- If no clinical images, return "images": []
 """
 
 _CORE_PROMPT = """\
@@ -304,6 +316,13 @@ Return ONLY valid JSON:
         }}
       ]
     }}
+  ],
+  "images": [
+    {{
+      "belongs_to": 1,
+      "page_offset": 0,
+      "bbox": {{"top": 0.05, "left": 0.1, "bottom": 0.55, "right": 0.9}}
+    }}
   ]
 }}
 
@@ -312,8 +331,12 @@ Rules:
 - type: "free_text" | "single_choice" | "multiple_choice"
 - options: list of strings for choice questions, empty list for free_text
 - Match each Q-number to its A-number exactly
-- page_offset: 0-based index into the images sent (which page this question appears on)
-- video_links: any doi.org URLs visible on the pages
+- page_offset: 0-based index into ALL images sent (question pages first, then answer pages)
+- video_links: any doi.org URLs visible on that question's page
+- images: every radiological/clinical image (X-ray, CT, MRI, ultrasound, etc.) — not text, logos, or captions
+- images.belongs_to: question number (use 0 for vignette-level images before Q1)
+- images.bbox: bounding box as fractions of page size (0.0–1.0)
+- If no clinical images, return "images": []
 """
 
 _SC_PROMPT = """\
@@ -342,13 +365,25 @@ Return ONLY valid JSON:
         }}
       ]
     }}
+  ],
+  "images": [
+    {{
+      "belongs_to": 1,
+      "page_offset": 0,
+      "bbox": {{"top": 0.05, "left": 0.1, "bottom": 0.55, "right": 0.9}}
+    }}
   ]
 }}
 
 Rules:
 - Copy text VERBATIM
 - Each short case is a separate entry in "cases"
-- page_offset: 0-based index into the images sent (which page this question appears on)
+- page_offset: 0-based index into ALL images sent (question pages first, then answer pages)
+- video_links: any doi.org URLs visible on that question's page
+- images: every radiological/clinical image (X-ray, CT, MRI, ultrasound, etc.) — not text, logos, or captions
+- images.belongs_to: question number the image belongs to (use 0 for vignette-level images)
+- images.bbox: bounding box as fractions of page size (0.0–1.0)
+- If no clinical images, return "images": []
 """
 
 
@@ -420,6 +455,53 @@ def _crop_and_save(doc, page_idx: int, bbox: dict,
         return False
 
 
+# ── Image crop helper ────────────────────────────────────────────────────────
+
+def _process_images(raw_images: list, all_pages: list, q_id_map: dict, doc):
+    """
+    Crop clinical images returned by the extraction call and update page_images.
+    raw_images : the "images" list from the extraction response
+    all_pages  : ordered list of PDF page indices sent to Claude (q_pages + a_pages)
+    q_id_map   : {question_number (int) -> question_id in DB}; key 0 = vignette → Q1
+    """
+    if not raw_images or PILImage is None:
+        return
+
+    img_counter: dict[int, int] = defaultdict(int)
+    q_crops: dict[int, list[str]] = defaultdict(list)
+
+    for img_info in raw_images:
+        p_off  = img_info.get("page_offset", 0)
+        bbox   = img_info.get("bbox", {})
+        b_to   = img_info.get("belongs_to", 0)
+
+        if not (0 <= p_off < len(all_pages)):
+            continue
+        pdf_page = all_pages[p_off]
+
+        idx      = img_counter[pdf_page]
+        img_counter[pdf_page] += 1
+        crop_rel  = f"data/crops/p{pdf_page:03d}_img{idx:02d}.png"
+        crop_path = Path(__file__).parent.parent / crop_rel
+
+        if not _crop_and_save(doc, pdf_page, bbox, crop_path):
+            continue
+
+        # belongs_to=0 means vignette → assign to Q1
+        key = b_to if b_to != 0 else min(q_id_map, default=1)
+        q_id = q_id_map.get(key) or q_id_map.get(min(q_id_map, default=None))
+        if q_id is not None:
+            q_crops[q_id].append(crop_rel)
+
+    with get_conn() as conn:
+        for q_id, crops in q_crops.items():
+            if crops:
+                conn.execute(
+                    "UPDATE questions SET page_images=? WHERE id=?",
+                    (json.dumps(crops), q_id),
+                )
+
+
 # ── DB insert helpers ─────────────────────────────────────────────────────────
 
 def _save_page(doc, page_idx: int, zoom: float = 2.0) -> str:
@@ -438,7 +520,9 @@ def _insert_mrq_group(data: dict, chapter_id: int, doc, group: dict):
     if not questions:
         return
 
-    case_id = insert_case(chapter_id, 1, None, section="mrq")
+    all_pages = group["q_pages"] + group["a_pages"]
+    case_id   = insert_case(chapter_id, 1, None, section="mrq")
+    q_id_map: dict[int, int] = {}
 
     for q in questions:
         q_num   = int(q.get("number", 0))
@@ -447,35 +531,39 @@ def _insert_mrq_group(data: dict, chapter_id: int, doc, group: dict):
         correct = _letters_to_indices(q.get("correct_options", []))
         exp     = q.get("explanation", "").strip()
         links   = q.get("video_links", [])
+        p_off   = q.get("page_offset", 0)
 
         q_type = "single_choice" if len(correct) == 1 else "multiple_choice"
 
-        p_off     = q.get("page_offset", 0)
         page_imgs = []
-        if 0 <= p_off < len(group["q_pages"]):
-            page_imgs = [_save_page(doc, group["q_pages"][p_off])]
+        if 0 <= p_off < len(all_pages):
+            page_imgs = [_save_page(doc, all_pages[p_off])]
         elif group["q_pages"]:
             page_imgs = [_save_page(doc, group["q_pages"][0])]
 
         q_id = insert_question(case_id, q_num, q_text, q_type,
                                options or None, page_imgs)
         insert_answer(q_id, "", correct or None, exp, [])
+        q_id_map[q_num] = q_id
 
         if links:
             with get_conn() as conn:
                 conn.execute("UPDATE questions SET video_links=? WHERE id=?",
                              (json.dumps(links), q_id))
 
+    _process_images(data.get("images", []), all_pages, q_id_map, doc)
+
 
 def _insert_case_group(data: dict, chapter_id: int, section: str,
                        doc, group: dict):
     from core.database import insert_case, insert_question, insert_answer
-    cases = data.get("cases", [])
+    cases     = data.get("cases", [])
     all_pages = group["q_pages"] + group["a_pages"]
 
     for case_num, case in enumerate(cases, 1):
         vignette = (case.get("vignette") or "").strip()
         case_id  = insert_case(chapter_id, case_num, vignette or None, section=section)
+        q_id_map: dict[int, int] = {}
 
         for q in case.get("questions", []):
             q_num   = int(q.get("number", 0))
@@ -487,7 +575,6 @@ def _insert_case_group(data: dict, chapter_id: int, section: str,
             links   = q.get("video_links", [])
             p_off   = q.get("page_offset", 0)
 
-            # Map page_offset to the actual PDF page index
             page_imgs = []
             if 0 <= p_off < len(all_pages):
                 page_imgs = [_save_page(doc, all_pages[p_off])]
@@ -497,11 +584,14 @@ def _insert_case_group(data: dict, chapter_id: int, section: str,
             q_id = insert_question(case_id, q_num, q_text, q_type,
                                    options or None, page_imgs)
             insert_answer(q_id, answer, None, exp, [])
+            q_id_map[q_num] = q_id
 
             if links:
                 with get_conn() as conn:
                     conn.execute("UPDATE questions SET video_links=? WHERE id=?",
                                  (json.dumps(links), q_id))
+
+        _process_images(data.get("images", []), all_pages, q_id_map, doc)
 
 
 # ── Main entry point ──────────────────────────────────────────────────────────
