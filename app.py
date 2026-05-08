@@ -7,13 +7,12 @@ import streamlit as st
 from streamlit_autorefresh import st_autorefresh
 
 from core.database import (
-    init_db, has_data,
-    get_chapters, get_cases, get_case, get_questions,
+    init_db, has_data, has_section,
+    get_chapters_with_section, get_cases, get_case, get_questions,
     get_answer, get_answers_for_case,
     get_case_stats, get_last_ratings,
     save_attempt, save_rating,
 )
-from core.parser import run_parser, PDF_PATH
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -82,6 +81,18 @@ for _k, _v in _DEFAULTS.items():
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
+def _db_section() -> str:
+    return {"core_cases": "core", "short_cases": "sc", "mrqs": "mrq"}.get(
+        st.session_state.section, "core"
+    )
+
+
+def _section_label() -> str:
+    return {"core_cases": "CORE Cases", "short_cases": "Short Cases", "mrqs": "MRQs"}.get(
+        st.session_state.section, "CORE Cases"
+    )
+
+
 def _fmt_time(seconds: float) -> str:
     m, s = int(seconds // 60), int(seconds % 60)
     return f"{m:02d}:{s:02d}"
@@ -144,8 +155,7 @@ with st.sidebar:
 
     if _chosen_key != st.session_state.section:
         st.session_state.section = _chosen_key
-        if _chosen_key == "core_cases":
-            st.session_state.core_view = "chapters"
+        st.session_state.core_view = "chapters"
         st.rerun()
 
     st.markdown("---")
@@ -173,28 +183,36 @@ if st.session_state.case_active and st.session_state.timer_start is not None:
 # ══════════════════════════════════════════════════════════════════════════════
 
 def view_chapters():
-    st.header("CORE Cases")
+    label = _section_label()
+    sec   = _db_section()
+    st.header(label)
 
-    if not has_data():
+    if not has_section(sec):
         st.info(
-            "No content loaded yet.  \n"
-            "Go to **Import PDF** in the sidebar to parse the EDiR CORE PDF."
+            f"No {label} content loaded yet.  \n"
+            "Go to **Import PDF** in the sidebar to import the EDiR PDF."
         )
         return
 
-    chapters = get_chapters()
+    chapters = get_chapters_with_section(sec)
     cols_per_row = 3
 
     for row_start in range(0, len(chapters), cols_per_row):
         cols = st.columns(cols_per_row)
         for col, ch in zip(cols, chapters[row_start: row_start + cols_per_row]):
-            n_cases = len(get_cases(ch["id"]))
+            n_cases = len(get_cases(ch["id"], section=sec))
+            if sec == "mrq":
+                count_label = "MRQ session" if n_cases == 1 else "MRQ sessions"
+            elif sec == "sc":
+                count_label = "Short Case" if n_cases == 1 else "Short Cases"
+            else:
+                count_label = "CORE case" if n_cases == 1 else "CORE cases"
             with col:
                 with st.container(border=True):
                     st.markdown(f"**Chapter {ch['number']}**")
                     st.markdown(f"### {ch['title']}")
-                    st.caption(f"{n_cases} CORE case{'s' if n_cases != 1 else ''}")
-                    if st.button("Open →", key=f"open_ch_{ch['id']}",
+                    st.caption(f"{n_cases} {count_label}")
+                    if st.button("Open →", key=f"open_ch_{ch['id']}_{sec}",
                                  use_container_width=True):
                         st.session_state.ch_id    = ch["id"]
                         st.session_state.ch_title = ch["title"]
@@ -207,8 +225,10 @@ def view_cases():
         st.session_state.core_view = "chapters"
         st.rerun()
 
-    st.header(f"CORE Cases — {st.session_state.ch_title}")
-    cases = get_cases(st.session_state.ch_id)
+    sec   = _db_section()
+    label = _section_label()
+    st.header(f"{label} — {st.session_state.ch_title}")
+    cases = get_cases(st.session_state.ch_id, section=sec)
 
     if not cases:
         st.warning("No cases found for this chapter.")
@@ -222,14 +242,18 @@ def view_cases():
             c_info, c_btn = st.columns([4, 1])
 
             with c_info:
-                st.markdown(f"**Case {case['case_number']}**")
-                vig = (case["clinical_vignette"] or "").strip()
-                preview = vig[:140] + ("…" if len(vig) > 140 else "")
-                st.caption(preview or "_No vignette available_")
+                if sec == "mrq":
+                    n_qs = len(get_questions(case["id"]))
+                    st.markdown(f"**MRQ Session — Chapter {st.session_state.ch_title}**")
+                    st.caption(f"{n_qs} multiple-choice question{'s' if n_qs != 1 else ''}")
+                else:
+                    st.markdown(f"**Case {case['case_number']}**")
+                    vig = (case["clinical_vignette"] or "").strip()
+                    preview = vig[:140] + ("…" if len(vig) > 140 else "")
+                    st.caption(preview or "_No vignette available_")
 
                 if attempts:
                     last_str = datetime.datetime.fromtimestamp(last_at).strftime("%d %b %Y")
-                    # Summarise last ratings
                     if last_ratings:
                         got = sum(1 for r in last_ratings.values() if r == "got_it")
                         par = sum(1 for r in last_ratings.values() if r == "partial")
@@ -252,16 +276,21 @@ def view_case_start():
         st.session_state.core_view = "cases"
         st.rerun()
 
+    sec       = _db_section()
     case      = get_case(st.session_state.case_id)
     questions = get_questions(st.session_state.case_id)
     n_q       = len(questions)
 
-    st.header(f"Case {case['case_number']}  —  {st.session_state.ch_title}")
+    if sec == "mrq":
+        st.header(f"MRQs — Chapter {st.session_state.ch_title}")
+    else:
+        st.header(f"Case {case['case_number']}  —  {st.session_state.ch_title}")
 
-    # Clinical vignette
-    st.subheader("Clinical Presentation")
-    vig = (case["clinical_vignette"] or "").strip()
-    st.info(vig if vig else "_No vignette available_")
+    # Clinical vignette — not shown for MRQ sessions
+    if sec != "mrq":
+        st.subheader("Clinical Presentation")
+        vig = (case["clinical_vignette"] or "").strip()
+        st.info(vig if vig else "_No vignette available_")
 
     st.markdown(f"**{n_q} question{'s' if n_q != 1 else ''}** — work through all before time runs out.")
 
@@ -492,86 +521,82 @@ def view_review():
 def view_import():
     st.header("Import PDF")
 
-    exists = PDF_PATH.exists()
-    if exists:
-        size_mb = PDF_PATH.stat().st_size / 1_048_576
-        st.success(f"EDiR_CORE.pdf found ({size_mb:.1f} MB)")
-    else:
-        st.warning(
-            f"EDiR_CORE.pdf not found.  \n"
-            f"Copy it to: `{PDF_PATH}`"
-        )
-
-    st.markdown("---")
+    st.markdown("#### Vision Import")
     st.markdown(
-        "**Parsing** extracts all CORE cases, questions, and answers from the PDF "
-        "and renders every page as an image.  \n"
-        "On first run this can take **2–5 minutes** depending on your machine."
+        "Sends every page of the original EDiR PDF to Claude Vision to extract "
+        "**CORE Cases, Short Cases, and MRQs** in a single run.  \n"
+        "This clears the existing database and re-imports everything from scratch.  \n"
+        "**Cost estimate:** ~305 pages × \\$0.003 ≈ \\$1 USD."
+    )
+
+    pdf_path_input = st.text_input(
+        "PDF path",
+        placeholder="C:/path/to/EDiR_Complete.pdf",
+        help="Full path to the original 305-page EDiR PDF on this machine.",
+    )
+
+    _secret_key = ""
+    try:
+        _secret_key = st.secrets.get("ANTHROPIC_API_KEY", "")
+    except Exception:
+        pass
+    api_key_input = st.text_input(
+        "Anthropic API key",
+        value=_secret_key,
+        type="password",
+        help="API key for Claude Vision. Leave blank to use ANTHROPIC_API_KEY from secrets.toml.",
     )
 
     if has_data():
-        st.warning("Re-parsing will delete all existing cases and ratings.")
+        st.warning("Re-importing will delete **all** existing cases, questions, ratings, and images.")
 
-    if st.button("Parse EDiR_CORE.pdf", type="primary", disabled=not exists):
-        prog_bar    = st.progress(0.0)
-        status_text = st.empty()
+    can_run = bool(pdf_path_input and api_key_input)
+    if st.button("Run Vision Import", type="primary", disabled=not can_run):
+        from core.vision_import import run_vision_import
+        prog   = st.progress(0.0)
+        status = st.empty()
 
-        def _on_progress(msg: str, frac: float):
-            prog_bar.progress(min(frac, 1.0))
-            status_text.text(msg)
+        def _cb(msg: str, frac):
+            if frac is not None:
+                prog.progress(min(float(frac), 1.0))
+            status.text(msg)
 
-        ok, msg = run_parser(_on_progress)
-        prog_bar.progress(1.0)
-
+        ok, msg = run_vision_import(pdf_path_input, api_key_input, _cb)
+        prog.progress(1.0)
         if ok:
             st.success(msg)
             st.balloons()
         else:
             st.error(msg)
 
-    # ── Vision enhancement ────────────────────────────────────────────────────
+    # ── Vision enhancement (crop extraction) ──────────────────────────────────
     if has_data():
         st.markdown("---")
-        st.markdown("#### Extract images with Claude Vision")
+        st.markdown("#### Extract Clinical Images with Claude Vision")
         st.markdown(
-            "Replaces full-page screenshots with cropped clinical images "
-            "(X-rays, CTs, MRIs) mapped to each question. Runs once; results "
-            "are saved locally. Requires an Anthropic API key in secrets."
+            "Scans saved page images and crops out X-rays, CTs, MRIs etc., "
+            "associating each crop with the correct question. Runs once after import."
         )
-        if st.button("Run Vision Enhancement", disabled=not has_data()):
+
+        _enh_key = api_key_input or _secret_key
+        if st.button("Run Vision Enhancement"):
             from core.vision import run_vision_enhancement
-            api_key = st.secrets.get("ANTHROPIC_API_KEY", "")
-            status  = st.empty()
+            status2 = st.empty()
             def _vis_cb(msg, _frac):
-                status.text(msg)
-            ok2, msg2 = run_vision_enhancement(api_key, _vis_cb)
+                status2.text(msg)
+            ok2, msg2 = run_vision_enhancement(_enh_key, _vis_cb)
             if ok2:
                 st.success(msg2)
             else:
                 st.error(msg2)
 
-        if st.button("Extract Video Links (PDF)", disabled=not has_data()):
+        if st.button("Extract Video Links (PDF)"):
             from core.vision import run_doi_extraction
             ok3, msg3 = run_doi_extraction()
             if ok3:
                 st.success(msg3)
             else:
                 st.error(msg3)
-
-    st.markdown("---")
-    st.markdown("#### Short Cases & MRQs")
-    st.info(
-        "After Short Cases and MRQs PDFs are ready, you will be able to import "
-        "them here and practice all three question types."
-    )
-
-
-def view_coming_soon(label: str):
-    st.header(label)
-    st.info(
-        f"**{label}** practice is coming soon.  \n"
-        "Focus on CORE Cases for now, then check back here after the next update."
-    )
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -580,7 +605,7 @@ def view_coming_soon(label: str):
 
 section = st.session_state.section
 
-if section == "core_cases":
+if section in ("core_cases", "short_cases", "mrqs"):
     view = st.session_state.core_view
     if view == "chapters":
         view_chapters()
@@ -592,12 +617,6 @@ if section == "core_cases":
         view_question()
     elif view == "review":
         view_review()
-
-elif section == "short_cases":
-    view_coming_soon("Short Cases")
-
-elif section == "mrqs":
-    view_coming_soon("MRQs")
 
 elif section == "import_pdf":
     view_import()

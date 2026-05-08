@@ -24,6 +24,7 @@ def init_db():
             id                  INTEGER PRIMARY KEY,
             chapter_id          INTEGER NOT NULL,
             case_number         INTEGER NOT NULL,
+            section             TEXT NOT NULL DEFAULT 'core',
             clinical_vignette   TEXT,
             FOREIGN KEY (chapter_id) REFERENCES chapters(id)
         );
@@ -66,6 +67,16 @@ def init_db():
             FOREIGN KEY (question_id) REFERENCES questions(id)
         );
         """)
+    _migrate(conn)
+
+
+def _migrate(conn):
+    cols = {r[1] for r in conn.execute("PRAGMA table_info(cases)").fetchall()}
+    if "section" not in cols:
+        conn.execute("ALTER TABLE cases ADD COLUMN section TEXT NOT NULL DEFAULT 'core'")
+    cols_q = {r[1] for r in conn.execute("PRAGMA table_info(questions)").fetchall()}
+    if "video_links" not in cols_q:
+        conn.execute("ALTER TABLE questions ADD COLUMN video_links TEXT")
 
 
 def has_data():
@@ -76,15 +87,41 @@ def has_data():
         return False
 
 
-# ── Read queries ─────────────────────────────────────────────────────────────
+def has_section(section: str) -> bool:
+    try:
+        with get_conn() as conn:
+            return conn.execute(
+                "SELECT COUNT(*) FROM cases WHERE section=?", (section,)
+            ).fetchone()[0] > 0
+    except Exception:
+        return False
+
+
+# ── Read queries ──────────────────────────────────────────────────────────────
 
 def get_chapters():
     with get_conn() as conn:
         return conn.execute("SELECT * FROM chapters ORDER BY number").fetchall()
 
 
-def get_cases(chapter_id):
+def get_chapters_with_section(section: str):
     with get_conn() as conn:
+        return conn.execute(
+            """SELECT ch.* FROM chapters ch
+               WHERE EXISTS (SELECT 1 FROM cases ca
+                             WHERE ca.chapter_id=ch.id AND ca.section=?)
+               ORDER BY ch.number""",
+            (section,)
+        ).fetchall()
+
+
+def get_cases(chapter_id, section: str | None = None):
+    with get_conn() as conn:
+        if section:
+            return conn.execute(
+                "SELECT * FROM cases WHERE chapter_id=? AND section=? ORDER BY case_number",
+                (chapter_id, section)
+            ).fetchall()
         return conn.execute(
             "SELECT * FROM cases WHERE chapter_id=? ORDER BY case_number",
             (chapter_id,)
@@ -123,7 +160,6 @@ def get_case(case_id):
 
 
 def get_case_stats(case_id):
-    """Return (attempt_count, last_submitted_at) for a case."""
     with get_conn() as conn:
         row = conn.execute(
             """SELECT COUNT(*) as cnt, MAX(submitted_at) as last_at
@@ -134,7 +170,6 @@ def get_case_stats(case_id):
 
 
 def get_last_ratings(case_id):
-    """Return {question_id: rating} from the most recent attempt for case_id."""
     with get_conn() as conn:
         attempt = conn.execute(
             "SELECT id FROM attempts WHERE case_id=? AND submitted_at IS NOT NULL ORDER BY submitted_at DESC LIMIT 1",
@@ -162,11 +197,11 @@ def insert_chapter(number, title):
         ).fetchone()[0]
 
 
-def insert_case(chapter_id, case_number, vignette):
+def insert_case(chapter_id, case_number, vignette, section: str = "core"):
     with get_conn() as conn:
         cur = conn.execute(
-            "INSERT INTO cases (chapter_id, case_number, clinical_vignette) VALUES (?,?,?)",
-            (chapter_id, case_number, vignette)
+            "INSERT INTO cases (chapter_id, case_number, clinical_vignette, section) VALUES (?,?,?,?)",
+            (chapter_id, case_number, vignette, section)
         )
         return cur.lastrowid
 
