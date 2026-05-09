@@ -580,6 +580,32 @@ def view_import():
             st.error(f"Import failed: {msg}")
 
     st.markdown("---")
+    st.subheader("Clean Up Answer-Page Images")
+    st.markdown(
+        "Removes any images sourced from **answer pages** that are incorrectly "
+        "showing in the question view.  \n"
+        "**Free — no API calls.** Reads only PDF bookmarks."
+    )
+    if st.button("Clean Up Images", disabled=not bool(pdf_path_clean)):
+        from core.reextract_images import cleanup_answer_images
+
+        prog3   = st.progress(0.0)
+        status3 = st.empty()
+
+        def _cb3(msg: str, frac):
+            if frac is not None:
+                prog3.progress(min(float(frac), 1.0))
+            status3.text(msg)
+
+        ok3, msg3 = cleanup_answer_images(pdf_path_clean, _cb3)
+        prog3.progress(1.0)
+        if ok3:
+            status3.text("Done.")
+            st.success(msg3)
+        else:
+            st.error(f"Cleanup failed: {msg3}")
+
+    st.markdown("---")
     st.subheader("Re-extract Images Only")
     st.markdown(
         "Fixes wrong image assignments without re-importing text or answers.  \n"

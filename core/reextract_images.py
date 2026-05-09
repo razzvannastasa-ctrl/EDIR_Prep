@@ -111,13 +111,13 @@ def _write_crops(q_id_crops: dict):
 # ── Core processing ───────────────────────────────────────────────────────────
 
 def _assign_images(raw_images: list, all_pages: list,
-                   case_q_maps: list[dict], section: str) -> dict:
+                   case_q_maps: list[dict], section: str, n_q_pages: int) -> dict:
     """
     Crop images and build {q_id: [crop_paths]} for the whole group at once.
     Uses a single global counter so filenames never collide across cases.
+    Only uses images from question pages (p_off < n_q_pages).
     """
     from pathlib import Path as _Path
-    import fitz as _fitz  # already imported at module level, re-use cached module
 
     img_counter: dict[int, int] = defaultdict(int)
     q_crops: dict[int, list] = defaultdict(list)
@@ -135,6 +135,8 @@ def _assign_images(raw_images: list, all_pages: list,
 
         if not (0 <= p_off < len(all_pages)):
             continue
+        if p_off >= n_q_pages:
+            continue  # skip images from answer pages
         if not (0 <= case_idx < len(case_q_maps)):
             continue
 
@@ -257,7 +259,7 @@ def run_image_reextraction(pdf_path, api_key, progress_callback=None):
             continue
 
         case_q_maps   = [c["q_id_map"] for c in db_cases]
-        q_id_crops    = _assign_images(raw_images, all_pages, case_q_maps, sec)
+        q_id_crops    = _assign_images(raw_images, all_pages, case_q_maps, sec, nq)
         _write_crops(q_id_crops)
         n_imgs_total += sum(len(v) for v in q_id_crops.values())
 
@@ -270,3 +272,70 @@ def run_image_reextraction(pdf_path, api_key, progress_callback=None):
         progress_callback("Done.", 1.0)
 
     return True, f"Image re-extraction complete — {n_imgs_total} image crop(s) assigned."
+
+
+# ── Free cleanup (no Vision API) ──────────────────────────────────────────────
+
+def cleanup_answer_images(pdf_path, progress_callback=None) -> tuple[bool, str]:
+    """
+    Remove crops sourced from answer pages from questions.page_images.
+    Reads page ranges from PDF bookmarks — no Vision API calls, no cost.
+    """
+    if fitz is None:
+        return False, "PyMuPDF not installed."
+
+    pdf_path = Path(pdf_path)
+    if not pdf_path.exists():
+        return False, f"PDF not found: {pdf_path}"
+
+    from core.vision_import import _toc_from_bookmarks, _build_groups
+
+    if progress_callback:
+        progress_callback("Reading TOC from bookmarks…", 0.0)
+
+    doc    = fitz.open(str(pdf_path))
+    toc    = _toc_from_bookmarks(doc)
+    doc.close()
+
+    if not toc:
+        return False, "No bookmarks found in PDF."
+
+    groups = _build_groups(toc)
+
+    # All PDF page indices that are answer pages across all groups
+    answer_pages: set[int] = set()
+    for g in groups:
+        answer_pages.update(g["a_pages"])
+
+    # Crop filenames encode the page index: p{page:03d}_img{idx:02d}.png
+    page_re = re.compile(r'[/\\]p(\d{3})_img\d{2}\.png$')
+
+    n_removed = 0
+    with get_conn() as conn:
+        rows = conn.execute(
+            "SELECT id, page_images FROM questions WHERE page_images IS NOT NULL AND page_images != '[]'"
+        ).fetchall()
+
+        for i, row in enumerate(rows):
+            if progress_callback and i % 50 == 0:
+                progress_callback(f"Checking question {i}/{len(rows)}…", i / max(len(rows), 1))
+            try:
+                paths = json.loads(row["page_images"])
+            except Exception:
+                continue
+
+            cleaned = []
+            for p in paths:
+                m = page_re.search(p)
+                if m and int(m.group(1)) in answer_pages:
+                    n_removed += 1
+                else:
+                    cleaned.append(p)
+
+            if len(cleaned) != len(paths):
+                conn.execute(
+                    "UPDATE questions SET page_images=? WHERE id=?",
+                    (json.dumps(cleaned), row["id"]),
+                )
+
+    return True, f"Removed {n_removed} answer-page image(s) from question records."

@@ -457,12 +457,14 @@ def _crop_and_save(doc, page_idx: int, bbox: dict,
 
 # ── Image crop helper ────────────────────────────────────────────────────────
 
-def _process_images(raw_images: list, all_pages: list, q_id_map: dict, doc):
+def _process_images(raw_images: list, all_pages: list, q_id_map: dict, doc,
+                    n_q_pages: int | None = None):
     """
     Crop clinical images returned by the extraction call and update page_images.
     raw_images : the "images" list from the extraction response
     all_pages  : ordered list of PDF page indices sent to Claude (q_pages + a_pages)
     q_id_map   : {question_number (int) -> question_id in DB}; key 0 = vignette → Q1
+    n_q_pages  : number of question pages (images beyond this index are answer pages and skipped)
     """
     if not raw_images or PILImage is None:
         return
@@ -477,6 +479,8 @@ def _process_images(raw_images: list, all_pages: list, q_id_map: dict, doc):
 
         if not (0 <= p_off < len(all_pages)):
             continue
+        if n_q_pages is not None and p_off >= n_q_pages:
+            continue  # skip images from answer pages
         pdf_page = all_pages[p_off]
 
         idx      = img_counter[pdf_page]
@@ -551,7 +555,8 @@ def _insert_mrq_group(data: dict, chapter_id: int, doc, group: dict):
                 conn.execute("UPDATE questions SET video_links=? WHERE id=?",
                              (json.dumps(links), q_id))
 
-    _process_images(data.get("images", []), all_pages, q_id_map, doc)
+    _process_images(data.get("images", []), all_pages, q_id_map, doc,
+                    n_q_pages=len(group["q_pages"]))
 
 
 def _insert_case_group(data: dict, chapter_id: int, section: str,
@@ -591,7 +596,8 @@ def _insert_case_group(data: dict, chapter_id: int, section: str,
                     conn.execute("UPDATE questions SET video_links=? WHERE id=?",
                                  (json.dumps(links), q_id))
 
-        _process_images(data.get("images", []), all_pages, q_id_map, doc)
+        _process_images(data.get("images", []), all_pages, q_id_map, doc,
+                        n_q_pages=len(group["q_pages"]))
 
 
 # ── Main entry point ──────────────────────────────────────────────────────────
