@@ -362,6 +362,10 @@ STYLE
 - ST4–ST7 / fellow level — requires integration, not simple recall.
 - Never "Which are NOT correct?" — always ask which ARE correct.
 - Each question fully self-contained; no cross-references between questions.
+- CRITICAL: every explanation must be grounded exclusively in the extracted content
+  provided below. Do NOT add facts, figures, or statements not present in that text.
+  If the extracted content is insufficient to explain an option, say so briefly rather
+  than drawing on outside knowledge.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Chapter: {chapter_title}
@@ -421,6 +425,8 @@ STYLE
 - Do NOT invent findings absent from the source material.
 - Q1–Q3 answerable at ST4 level; Q4–Q7 require integrated interpretation.
 - Multiple source cases → multiple output case objects.
+- CRITICAL: base all answers and explanations strictly on the extracted source
+  content provided below. Do not add facts not present in that text.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Chapter: {chapter_title}
@@ -487,6 +493,8 @@ STYLE
 - British English clinical register.
 - Do NOT invent findings absent from the source.
 - Multiple source cases → multiple case objects.
+- CRITICAL: base all answers and explanations strictly on the extracted source
+  content provided below. Do not add facts not present in that text.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Chapter: {chapter_title}
