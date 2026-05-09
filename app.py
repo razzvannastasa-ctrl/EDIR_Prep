@@ -752,6 +752,12 @@ def view_admin():
     except ImportError:
         _cropper_ok = False
 
+    def _stay_and_rerun():
+        """Lock the selectbox to the current question then rerun."""
+        st.session_state["admin_q_sel"]      = q_id
+        st.session_state["_admin_loaded_qid"] = q_id
+        st.rerun()
+
     def _image_block(label: str, state_key: str, prefix: str):
         st.markdown(f"**{label}**")
         img_list = st.session_state[state_key]
@@ -773,13 +779,13 @@ def view_admin():
                     if st.button(label_btn, key=f"admin_crop_btn_{prefix}_{q_id}_{i}",
                                  help="Toggle crop editor"):
                         st.session_state[crop_key] = not cropping
-                        st.rerun()
+                        _stay_and_rerun()
             with c3:
                 st.markdown("<br><br>", unsafe_allow_html=True)
                 if st.button("✕", key=f"admin_rm_{prefix}_{q_id}_{i}", help="Remove"):
                     st.session_state[state_key] = [x for j, x in enumerate(img_list) if j != i]
                     st.session_state.pop(crop_key, None)
-                    st.rerun()
+                    _stay_and_rerun()
 
             # Inline cropper
             if _cropper_ok and p.exists() and st.session_state.get(crop_key, False):
@@ -799,7 +805,7 @@ def view_admin():
                             st.warning(f"Saved locally, GitHub push failed: {e}")
                     st.session_state[crop_key] = False
                     st.success("Crop saved.")
-                    st.rerun()
+                    _stay_and_rerun()
 
         return st.file_uploader(f"Add image to {label.lower()}", type=["png", "jpg", "jpeg"],
                                 key=f"admin_upl_{prefix}_{q_id}")
