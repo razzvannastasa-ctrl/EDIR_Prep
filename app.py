@@ -626,11 +626,15 @@ def view_admin():
     q   = dict(rows[sel_idx])
     q_id = q["id"]
 
+    def _admin_imgs(paths_json):
+        return [p for p in json.loads(paths_json or "[]") if "crops" in p]
+
     # Reset image lists when question changes
     if st.session_state.get("_admin_loaded_qid") != q_id:
         st.session_state._admin_loaded_qid = q_id
-        st.session_state._admin_q_images   = json.loads(q.get("page_images") or "[]")
-        st.session_state._admin_a_images   = json.loads(get_answer(q_id)["page_images"] if get_answer(q_id) and get_answer(q_id)["page_images"] else "[]")
+        st.session_state._admin_q_images   = _admin_imgs(q.get("page_images"))
+        _ans = get_answer(q_id)
+        st.session_state._admin_a_images   = _admin_imgs(_ans["page_images"] if _ans else None)
 
     ans  = get_answer(q_id)
     ans  = dict(ans) if ans else {}
