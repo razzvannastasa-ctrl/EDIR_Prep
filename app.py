@@ -564,6 +564,7 @@ def _new_book_import_tab(import_type: str) -> None:
     # ── Check for an existing session ─────────────────────────────────────────
     sid     = st.session_state.get(f"{sk}_sid")
     session = load_session(sid) if sid else None
+    running = st.session_state.get(f"{sk}_running")
 
     if session and running is None and session.get("status") not in ("pass2_complete",):
         st.info(
@@ -587,7 +588,7 @@ def _new_book_import_tab(import_type: str) -> None:
     # Re-read after potential clear
     sid     = st.session_state.get(f"{sk}_sid")
     session = load_session(sid) if sid else None
-    running = st.session_state.get(f"{sk}_running")
+    running = st.session_state.get(f"{sk}_running")  # re-read in case clear changed it
 
     # ── IDLE — show input form ─────────────────────────────────────────────────
     if session is None and not running:
