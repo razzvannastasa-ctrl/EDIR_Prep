@@ -107,27 +107,38 @@ def get_chapters():
         return conn.execute("SELECT * FROM chapters ORDER BY number").fetchall()
 
 
-def get_chapters_with_section(section: str):
+def get_sources() -> list[str]:
+    """Return all distinct non-null source values, sorted."""
+    try:
+        with get_conn() as conn:
+            rows = conn.execute(
+                "SELECT DISTINCT source FROM cases WHERE source IS NOT NULL ORDER BY source"
+            ).fetchall()
+            return [r[0] for r in rows]
+    except Exception:
+        return []
+
+
+def get_chapters_with_section(section: str, source: str | None = None):
     with get_conn() as conn:
         return conn.execute(
             """SELECT ch.* FROM chapters ch
                WHERE EXISTS (SELECT 1 FROM cases ca
-                             WHERE ca.chapter_id=ch.id AND ca.section=?)
+                             WHERE ca.chapter_id=ch.id AND ca.section=?
+                             AND (? IS NULL OR ca.source=?))
                ORDER BY ch.number""",
-            (section,)
+            (section, source, source)
         ).fetchall()
 
 
-def get_cases(chapter_id, section: str | None = None):
+def get_cases(chapter_id, section: str | None = None, source: str | None = None):
     with get_conn() as conn:
-        if section:
-            return conn.execute(
-                "SELECT * FROM cases WHERE chapter_id=? AND section=? ORDER BY case_number",
-                (chapter_id, section)
-            ).fetchall()
         return conn.execute(
-            "SELECT * FROM cases WHERE chapter_id=? ORDER BY case_number",
-            (chapter_id,)
+            """SELECT * FROM cases WHERE chapter_id=?
+               AND (? IS NULL OR section=?)
+               AND (? IS NULL OR source=?)
+               ORDER BY case_number""",
+            (chapter_id, section, section, source, source)
         ).fetchall()
 
 
@@ -273,20 +284,23 @@ def clear_all():
 
 # ── Admin queries ─────────────────────────────────────────────────────────────
 
-def admin_get_questions(section: str | None = None, chapter_id: int | None = None):
+def admin_get_questions(section: str | None = None, chapter_id: int | None = None,
+                        source: str | None = None, case_number: int | None = None):
     with get_conn() as conn:
         return conn.execute(
             """SELECT q.id, q.q_number, q.question_text, q.q_type, q.options,
                       q.page_images, q.video_links,
-                      c.id as case_id, c.case_number, c.section, c.clinical_vignette,
+                      c.id as case_id, c.case_number, c.section, c.clinical_vignette, c.source,
                       ch.id as chapter_id, ch.number as chapter_number, ch.title as chapter_title
                FROM questions q
                JOIN cases c ON q.case_id = c.id
                JOIN chapters ch ON c.chapter_id = ch.id
                WHERE (c.section = COALESCE(?, c.section))
                AND (c.chapter_id = COALESCE(?, c.chapter_id))
+               AND (c.source = COALESCE(?, c.source))
+               AND (c.case_number = COALESCE(?, c.case_number))
                ORDER BY ch.number, c.case_number, q.q_number""",
-            (section, chapter_id),
+            (section, chapter_id, source, case_number),
         ).fetchall()
 
 

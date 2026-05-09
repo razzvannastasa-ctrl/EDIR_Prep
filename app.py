@@ -8,7 +8,7 @@ from streamlit_autorefresh import st_autorefresh
 
 from core.database import (
     init_db, has_data, has_section,
-    get_chapters, get_chapters_with_section, get_cases, get_case, get_questions,
+    get_sources, get_chapters, get_chapters_with_section, get_cases, get_case, get_questions,
     get_answer, get_answers_for_case,
     get_case_stats, get_last_ratings,
     save_attempt, save_rating,
@@ -196,13 +196,24 @@ def view_chapters():
         )
         return
 
-    chapters = get_chapters_with_section(sec)
+    # Source filter
+    sources = get_sources()
+    if len(sources) > 1:
+        src_opts  = ["All sources"] + sources
+        src_label = st.selectbox("Source", src_opts, key="study_source_sel",
+                                 label_visibility="collapsed")
+        st.session_state["study_source"] = None if src_label == "All sources" else src_label
+    else:
+        st.session_state["study_source"] = None
+    src = st.session_state.get("study_source")
+
+    chapters = get_chapters_with_section(sec, source=src)
     cols_per_row = 3
 
     for row_start in range(0, len(chapters), cols_per_row):
         cols = st.columns(cols_per_row)
         for col, ch in zip(cols, chapters[row_start: row_start + cols_per_row]):
-            n_cases = len(get_cases(ch["id"], section=sec))
+            n_cases = len(get_cases(ch["id"], section=sec, source=src))
             if sec == "mrq":
                 count_label = "MRQ session" if n_cases == 1 else "MRQ sessions"
             elif sec == "sc":
@@ -230,7 +241,8 @@ def view_cases():
     sec   = _db_section()
     label = _section_label()
     st.header(f"{label} — {st.session_state.ch_title}")
-    cases = get_cases(st.session_state.ch_id, section=sec)
+    src   = st.session_state.get("study_source")
+    cases = get_cases(st.session_state.ch_id, section=sec, source=src)
 
     if not cases:
         st.warning("No cases found for this chapter.")
@@ -667,7 +679,7 @@ def view_admin():
         )
 
     # ── Filters ───────────────────────────────────────────────────────────────
-    f1, f2 = st.columns(2)
+    f1, f2, f3 = st.columns(3)
     with f1:
         sec_map   = {"All sections": None, "CORE": "core", "Short Cases": "sc", "MRQs": "mrq"}
         sec_label = st.selectbox("Section", list(sec_map.keys()), key="admin_f_sec")
@@ -677,8 +689,50 @@ def view_admin():
         ch_map    = {"All chapters": None, **{f"Ch {c['number']}: {c['title']}": c["id"] for c in chapters}}
         ch_label  = st.selectbox("Chapter", list(ch_map.keys()), key="admin_f_ch")
         ch_val    = ch_map[ch_label]
+    with f3:
+        sources   = get_sources()
+        src_map   = {"All sources": None, **{s: s for s in sources}}
+        src_label = st.selectbox("Source", list(src_map.keys()), key="admin_f_src")
+        src_val   = src_map[src_label]
 
-    rows = admin_get_questions(sec_val, ch_val)
+    # ── Case filter ───────────────────────────────────────────────────────────
+    # Fetch all questions matching top-level filters to build the case list
+    all_rows = admin_get_questions(sec_val, ch_val, src_val)
+    if not all_rows:
+        st.info("No questions match the current filter.")
+        return
+
+    # Build ordered unique-case list from result rows
+    seen_cids: set = set()
+    case_list: list[tuple] = []  # [(case_id, label)]
+    for r in all_rows:
+        cid = r["case_id"]
+        if cid not in seen_cids:
+            seen_cids.add(cid)
+            if r["section"] == "mrq":
+                lbl = f"MRQ Group {r['case_number']}"
+            else:
+                vig     = (r.get("clinical_vignette") or "").strip()
+                preview = f" — {vig[:45]}" if vig else ""
+                lbl     = f"C{r['case_number']}{preview}"
+            case_list.append((cid, lbl))
+
+    if len(case_list) > 1:
+        case_labels = ["All cases"] + [lbl for _, lbl in case_list]
+        n_cl        = len(case_labels)
+        raw_ci      = st.session_state.get("admin_f_case", 0)
+        cur_ci      = raw_ci if isinstance(raw_ci, int) and 0 <= raw_ci < n_cl else 0
+        sel_ci      = st.selectbox("Case", range(n_cl), index=cur_ci,
+                                   format_func=lambda i: case_labels[i],
+                                   key="admin_f_case")
+        if sel_ci == 0:
+            rows = list(all_rows)
+        else:
+            sel_cid = case_list[sel_ci - 1][0]
+            rows    = [r for r in all_rows if r["case_id"] == sel_cid]
+    else:
+        rows = list(all_rows)
+
     if not rows:
         st.info("No questions match the current filter.")
         return
