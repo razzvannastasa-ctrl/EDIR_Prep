@@ -241,7 +241,11 @@ Collect:
 2. All clinical images (X-ray, CT, MRI, US, histology) with bounding boxes — NOT text, logos, or diagrams.
 
 Group extracted text by topic. Be as verbatim as possible.
-Also list any ambiguities or questions you have about the content.
+
+IMPORTANT: Do NOT ask about pages not included here. Do not ask whether there are more
+pages, more chapters, or more content — assume you have exactly what you need and extract
+only what is visible. Only add a clarification_question if there is a genuine factual
+ambiguity in the content you CAN see (e.g. a label that could mean two different things).
 
 Return ONLY valid JSON — no prose outside the object:
 {{
@@ -272,6 +276,11 @@ Cases typically have 1–3 image pages followed by 1–3 answer pages, but the l
 Extract every case with its clinical history, questions, and answers.
 Match each question to its answer even if they are several pages apart.
 Also locate all clinical images.
+
+IMPORTANT: Do NOT ask about pages not included here. Do not ask whether there are more
+cases, more pages, or more content — assume you have exactly what was provided and extract
+only what is visible. Only add a clarification_question if there is a genuine factual
+ambiguity in the content you CAN see (e.g. a label that is ambiguous, a side mismatch).
 
 Return ONLY valid JSON — no prose outside the object:
 {{
@@ -656,14 +665,22 @@ def _crop_refs(image_refs: list[int], pass1_images: list[dict],
         if not (0 <= ref < len(pass1_images)):
             continue
         img   = pass1_images[ref]
-        ci    = img.get("chunk_idx", 0)
-        p_off = img.get("page_offset", 0)
+        try:
+            ci    = int(img.get("chunk_idx", 0))
+            p_off = int(img.get("page_offset", 0))
+        except (TypeError, ValueError):
+            continue
         bbox  = img.get("bbox", {})
 
-        if ci >= len(chunk_pages) or p_off >= len(chunk_pages[ci]):
+        if not (0 <= ci < len(chunk_pages)):
+            continue
+        if not (0 <= p_off < len(chunk_pages[ci])):
             continue
 
-        pdf_page = chunk_pages[ci][p_off]
+        try:
+            pdf_page = chunk_pages[ci][p_off]
+        except (IndexError, TypeError):
+            continue
         idx      = img_counter[pdf_page]
         img_counter[pdf_page] += 1
 
