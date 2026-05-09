@@ -74,6 +74,9 @@ def _migrate(conn):
     cols = {r[1] for r in conn.execute("PRAGMA table_info(cases)").fetchall()}
     if "section" not in cols:
         conn.execute("ALTER TABLE cases ADD COLUMN section TEXT NOT NULL DEFAULT 'core'")
+    if "source" not in cols:
+        conn.execute("ALTER TABLE cases ADD COLUMN source TEXT")
+        conn.execute("UPDATE cases SET source='Essential Guide' WHERE source IS NULL")
     cols_q = {r[1] for r in conn.execute("PRAGMA table_info(questions)").fetchall()}
     if "video_links" not in cols_q:
         conn.execute("ALTER TABLE questions ADD COLUMN video_links TEXT")
@@ -197,11 +200,11 @@ def insert_chapter(number, title):
         ).fetchone()[0]
 
 
-def insert_case(chapter_id, case_number, vignette, section: str = "core"):
+def insert_case(chapter_id, case_number, vignette, section: str = "core", source: str = "Essential Guide"):
     with get_conn() as conn:
         cur = conn.execute(
-            "INSERT INTO cases (chapter_id, case_number, clinical_vignette, section) VALUES (?,?,?,?)",
-            (chapter_id, case_number, vignette, section)
+            "INSERT INTO cases (chapter_id, case_number, clinical_vignette, section, source) VALUES (?,?,?,?,?)",
+            (chapter_id, case_number, vignette, section, source)
         )
         return cur.lastrowid
 
