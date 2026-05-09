@@ -565,7 +565,7 @@ def _new_book_import_tab(import_type: str) -> None:
     sid     = st.session_state.get(f"{sk}_sid")
     session = load_session(sid) if sid else None
 
-    if session and session.get("status") not in ("pass2_complete",):
+    if session and running is None and session.get("status") not in ("pass2_complete",):
         st.info(
             f"Existing session found: **{session.get('source', '?')}**  \n"
             f"Status: `{session['status'].replace('_', ' ')}`"
@@ -590,7 +590,7 @@ def _new_book_import_tab(import_type: str) -> None:
     running = st.session_state.get(f"{sk}_running")
 
     # ── IDLE — show input form ─────────────────────────────────────────────────
-    if session is None:
+    if session is None and not running:
         pdf_in  = st.text_input("PDF path", placeholder="C:/path/to/book.pdf", key=f"{sk}_pdf")
         src_in  = st.text_input("Source / book name",
                                 placeholder="e.g. Radiology Review Manual", key=f"{sk}_src")
