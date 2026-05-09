@@ -8,10 +8,12 @@ from streamlit_autorefresh import st_autorefresh
 
 from core.database import (
     init_db, has_data, has_section,
-    get_chapters_with_section, get_cases, get_case, get_questions,
+    get_chapters, get_chapters_with_section, get_cases, get_case, get_questions,
     get_answer, get_answers_for_case,
     get_case_stats, get_last_ratings,
     save_attempt, save_rating,
+    admin_get_questions, admin_update_question, admin_update_answer, admin_update_vignette,
+    DB_PATH,
 )
 
 # ── Page config ───────────────────────────────────────────────────────────────
@@ -60,7 +62,7 @@ init_db()
 
 # ── Session-state defaults ────────────────────────────────────────────────────
 _DEFAULTS = {
-    "section":        "core_cases",   # core_cases | short_cases | mrqs | import_pdf
+    "section":        "core_cases",   # core_cases | short_cases | mrqs | import_pdf | admin
     "core_view":      "chapters",     # chapters | cases | start | question | review
     "ch_id":          None,
     "ch_title":       "",
@@ -146,8 +148,8 @@ with st.sidebar:
     st.markdown("## EDiR Prep")
     st.markdown("---")
 
-    _menu_labels = ["CORE Cases", "Short Cases", "MRQs", "Import PDF"]
-    _menu_keys   = ["core_cases", "short_cases", "mrqs", "import_pdf"]
+    _menu_labels = ["CORE Cases", "Short Cases", "MRQs", "Import PDF", "Admin"]
+    _menu_keys   = ["core_cases", "short_cases", "mrqs", "import_pdf", "admin"]
     _current_idx = _menu_keys.index(st.session_state.section)
 
     _choice = st.radio("", _menu_labels, index=_current_idx, label_visibility="collapsed")
@@ -578,6 +580,209 @@ def view_import():
             st.error(f"Import failed: {msg}")
 
 
+def view_admin():
+    from core.github_sync import push_db, push_image
+    import time as _time
+
+    st.header("Admin Panel")
+
+    # ── GitHub config ─────────────────────────────────────────────────────────
+    try:
+        gh_token = st.secrets.get("GITHUB_TOKEN", "")
+        gh_repo  = st.secrets.get("GITHUB_REPO", "razzvannastasa-ctrl/EDIR_Prep")
+    except Exception:
+        gh_token = gh_repo = ""
+
+    if not gh_token:
+        st.warning(
+            "Add `GITHUB_TOKEN` (PAT with `repo` scope) to your Streamlit secrets "
+            "to enable pushing edits back to GitHub. Edits will still save locally."
+        )
+
+    # ── Filters ───────────────────────────────────────────────────────────────
+    f1, f2 = st.columns(2)
+    with f1:
+        sec_map   = {"All sections": None, "CORE": "core", "Short Cases": "sc", "MRQs": "mrq"}
+        sec_label = st.selectbox("Section", list(sec_map.keys()), key="admin_f_sec")
+        sec_val   = sec_map[sec_label]
+    with f2:
+        chapters  = get_chapters()
+        ch_map    = {"All chapters": None, **{f"Ch {c['number']}: {c['title']}": c["id"] for c in chapters}}
+        ch_label  = st.selectbox("Chapter", list(ch_map.keys()), key="admin_f_ch")
+        ch_val    = ch_map[ch_label]
+
+    rows = admin_get_questions(sec_val, ch_val)
+    if not rows:
+        st.info("No questions match the current filter.")
+        return
+
+    # ── Question selector ─────────────────────────────────────────────────────
+    q_labels = [
+        f"[{r['section'].upper()}] Ch{r['chapter_number']} · Q{r['q_number']} — {r['question_text'][:80]}"
+        for r in rows
+    ]
+    sel_idx = st.selectbox(f"{len(rows)} questions", range(len(q_labels)),
+                           format_func=lambda i: q_labels[i], key="admin_q_sel")
+    q   = dict(rows[sel_idx])
+    q_id = q["id"]
+
+    # Reset image lists when question changes
+    if st.session_state.get("_admin_loaded_qid") != q_id:
+        st.session_state._admin_loaded_qid = q_id
+        st.session_state._admin_q_images   = json.loads(q.get("page_images") or "[]")
+        st.session_state._admin_a_images   = json.loads(get_answer(q_id)["page_images"] if get_answer(q_id) and get_answer(q_id)["page_images"] else "[]")
+
+    ans  = get_answer(q_id)
+    ans  = dict(ans) if ans else {}
+
+    st.markdown("---")
+    st.subheader(f"Q{q['q_number']} · {q['section'].upper()} · Ch{q['chapter_number']}: {q['chapter_title']}")
+
+    # ── Question text ─────────────────────────────────────────────────────────
+    new_q_text = st.text_area("Question text", value=q["question_text"],
+                               height=150, key=f"admin_qt_{q_id}")
+
+    # ── Clinical vignette (non-MRQ only) ─────────────────────────────────────
+    if q["section"] != "mrq":
+        new_vignette = st.text_area(
+            "Clinical vignette (shared by all questions in this case)",
+            value=q.get("clinical_vignette") or "", height=80,
+            key=f"admin_vig_{q['case_id']}",
+        )
+    else:
+        new_vignette = None
+
+    # ── Options / answer ─────────────────────────────────────────────────────
+    q_type      = q["q_type"]
+    options_raw = json.loads(q["options"]) if q.get("options") else []
+    correct_raw = json.loads(ans["correct_options"]) if ans.get("correct_options") else []
+
+    if q_type == "multiple_choice":
+        st.markdown("**Options** (one per line)")
+        opts_text   = st.text_area("", value="\n".join(options_raw), height=130,
+                                   key=f"admin_opts_{q_id}", label_visibility="collapsed")
+        new_options = [o.strip() for o in opts_text.splitlines() if o.strip()]
+
+        valid_defaults = [new_options[i] for i in correct_raw if i < len(new_options)]
+        correct_sel    = st.multiselect("Correct options", new_options,
+                                        default=valid_defaults, key=f"admin_correct_{q_id}")
+        new_correct    = [new_options.index(o) for o in correct_sel if o in new_options]
+        new_ans_text   = ans.get("answer_text") or ""
+    else:
+        new_options  = options_raw
+        new_correct  = correct_raw
+        new_ans_text = st.text_area("Answer text", value=ans.get("answer_text") or "",
+                                    height=120, key=f"admin_ans_{q_id}")
+
+    new_explanation = st.text_area("Explanation", value=ans.get("explanation") or "",
+                                   height=80, key=f"admin_exp_{q_id}")
+
+    # ── Video links ───────────────────────────────────────────────────────────
+    st.markdown("**Video links** (one URL per line)")
+    video_raw   = json.loads(q.get("video_links") or "[]")
+    vlinks_text = st.text_area("", value="\n".join(video_raw), height=80,
+                                key=f"admin_vl_{q_id}", label_visibility="collapsed")
+    new_video_links = [v.strip() for v in vlinks_text.splitlines() if v.strip()]
+
+    # ── Question images ───────────────────────────────────────────────────────
+    st.markdown("**Question images**")
+    q_img_list = st.session_state._admin_q_images
+    for i, img_path in enumerate(list(q_img_list)):
+        p = Path(img_path) if Path(img_path).is_absolute() else _APP_DIR / img_path
+        c1, c2 = st.columns([5, 1])
+        with c1:
+            if p.exists():
+                st.image(str(p), width=260)
+            else:
+                st.caption(f"Missing: {img_path}")
+        with c2:
+            st.markdown("<br><br>", unsafe_allow_html=True)
+            if st.button("✕", key=f"admin_rm_qi_{q_id}_{i}", help="Remove this image"):
+                st.session_state._admin_q_images = [x for j, x in enumerate(q_img_list) if j != i]
+                st.rerun()
+
+    uploaded_q_img = st.file_uploader("Add image to question", type=["png", "jpg", "jpeg"],
+                                       key=f"admin_upl_q_{q_id}")
+
+    # ── Answer images ─────────────────────────────────────────────────────────
+    st.markdown("**Answer images**")
+    a_img_list = st.session_state._admin_a_images
+    for i, img_path in enumerate(list(a_img_list)):
+        p = Path(img_path) if Path(img_path).is_absolute() else _APP_DIR / img_path
+        c1, c2 = st.columns([5, 1])
+        with c1:
+            if p.exists():
+                st.image(str(p), width=260)
+            else:
+                st.caption(f"Missing: {img_path}")
+        with c2:
+            st.markdown("<br><br>", unsafe_allow_html=True)
+            if st.button("✕", key=f"admin_rm_ai_{q_id}_{i}", help="Remove this image"):
+                st.session_state._admin_a_images = [x for j, x in enumerate(a_img_list) if j != i]
+                st.rerun()
+
+    uploaded_a_img = st.file_uploader("Add image to answer", type=["png", "jpg", "jpeg"],
+                                       key=f"admin_upl_a_{q_id}")
+
+    # ── Save button ───────────────────────────────────────────────────────────
+    st.markdown("---")
+    if st.button("Save & Push to GitHub", type="primary", use_container_width=True):
+        crop_dir = _APP_DIR / "data" / "crops"
+        crop_dir.mkdir(parents=True, exist_ok=True)
+
+        # Handle uploaded question image
+        final_q_images = list(st.session_state._admin_q_images)
+        if uploaded_q_img:
+            fname     = f"admin_q{q_id}_{int(_time.time())}.png"
+            img_local = crop_dir / fname
+            img_local.write_bytes(uploaded_q_img.getvalue())
+            repo_path = f"data/crops/{fname}"
+            final_q_images.append(f"data/crops/{fname}")
+            if gh_token and gh_repo:
+                push_image(gh_token, gh_repo, img_local, repo_path)
+
+        # Handle uploaded answer image
+        final_a_images = list(st.session_state._admin_a_images)
+        if uploaded_a_img:
+            fname     = f"admin_a{q_id}_{int(_time.time())}.png"
+            img_local = crop_dir / fname
+            img_local.write_bytes(uploaded_a_img.getvalue())
+            repo_path = f"data/crops/{fname}"
+            final_a_images.append(f"data/crops/{fname}")
+            if gh_token and gh_repo:
+                push_image(gh_token, gh_repo, img_local, repo_path)
+
+        # Update session state image lists
+        st.session_state._admin_q_images = final_q_images
+        st.session_state._admin_a_images = final_a_images
+
+        # Write to SQLite
+        admin_update_question(
+            q_id, new_q_text,
+            new_options if q_type == "multiple_choice" else None,
+            final_q_images, new_video_links,
+        )
+        admin_update_answer(
+            q_id,
+            answer_text    = new_ans_text   if q_type != "multiple_choice" else None,
+            correct_options= new_correct    if q_type == "multiple_choice" else None,
+            explanation    = new_explanation,
+            page_images    = final_a_images,
+        )
+        if new_vignette is not None:
+            admin_update_vignette(q["case_id"], new_vignette)
+
+        # Push DB to GitHub
+        if gh_token and gh_repo:
+            try:
+                push_db(gh_token, gh_repo, DB_PATH)
+                st.success("Saved and pushed to GitHub.")
+            except Exception as e:
+                st.warning(f"Saved locally, but GitHub push failed: {e}")
+        else:
+            st.success("Saved locally (configure GITHUB_TOKEN to also push to GitHub).")
+
+
 # ══════════════════════════════════════════════════════════════════════════════
 # ROUTER
 # ══════════════════════════════════════════════════════════════════════════════
@@ -599,3 +804,6 @@ if section in ("core_cases", "short_cases", "mrqs"):
 
 elif section == "import_pdf":
     view_import()
+
+elif section == "admin":
+    view_admin()

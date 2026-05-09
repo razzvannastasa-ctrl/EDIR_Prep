@@ -266,3 +266,80 @@ def clear_all():
             DELETE FROM cases;
             DELETE FROM chapters;
         """)
+
+
+# ── Admin queries ─────────────────────────────────────────────────────────────
+
+def admin_get_questions(section: str | None = None, chapter_id: int | None = None):
+    with get_conn() as conn:
+        return conn.execute(
+            """SELECT q.id, q.q_number, q.question_text, q.q_type, q.options,
+                      q.page_images, q.video_links,
+                      c.id as case_id, c.case_number, c.section, c.clinical_vignette,
+                      ch.id as chapter_id, ch.number as chapter_number, ch.title as chapter_title
+               FROM questions q
+               JOIN cases c ON q.case_id = c.id
+               JOIN chapters ch ON c.chapter_id = ch.id
+               WHERE (c.section = COALESCE(?, c.section))
+               AND (c.chapter_id = COALESCE(?, c.chapter_id))
+               ORDER BY ch.number, c.case_number, q.q_number""",
+            (section, chapter_id),
+        ).fetchall()
+
+
+def admin_update_question(q_id: int, question_text: str, options, page_images: list, video_links: list):
+    with get_conn() as conn:
+        conn.execute(
+            "UPDATE questions SET question_text=?, options=?, page_images=?, video_links=? WHERE id=?",
+            (
+                question_text,
+                json.dumps(options) if options is not None else None,
+                json.dumps(page_images),
+                json.dumps(video_links),
+                q_id,
+            ),
+        )
+
+
+def admin_update_answer(
+    question_id: int,
+    *,
+    answer_text: str | None = None,
+    correct_options: list | None = None,
+    explanation: str | None = None,
+    page_images: list | None = None,
+):
+    with get_conn() as conn:
+        existing = conn.execute(
+            "SELECT id FROM answers WHERE question_id=?", (question_id,)
+        ).fetchone()
+        fields, vals = [], []
+        if answer_text is not None:
+            fields.append("answer_text = ?"); vals.append(answer_text)
+        if correct_options is not None:
+            fields.append("correct_options = ?"); vals.append(json.dumps(correct_options))
+        if explanation is not None:
+            fields.append("explanation = ?"); vals.append(explanation)
+        if page_images is not None:
+            fields.append("page_images = ?"); vals.append(json.dumps(page_images))
+        if not fields:
+            return
+        if existing:
+            vals.append(question_id)
+            conn.execute(f"UPDATE answers SET {', '.join(fields)} WHERE question_id=?", vals)
+        else:
+            conn.execute(
+                "INSERT INTO answers (question_id, answer_text, correct_options, explanation, page_images) VALUES (?,?,?,?,?)",
+                (
+                    question_id,
+                    answer_text or "",
+                    json.dumps(correct_options) if correct_options else None,
+                    explanation,
+                    json.dumps(page_images) if page_images else None,
+                ),
+            )
+
+
+def admin_update_vignette(case_id: int, vignette: str):
+    with get_conn() as conn:
+        conn.execute("UPDATE cases SET clinical_vignette=? WHERE id=?", (vignette, case_id))
