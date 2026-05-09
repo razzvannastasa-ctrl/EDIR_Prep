@@ -538,111 +538,346 @@ def view_review():
                     st.rerun()
 
 
-def view_import():
-    st.header("Import PDF")
-
-    st.markdown(
-        "Sends every page of the original EDiR PDF to Claude Vision to extract "
-        "**CORE Cases, Short Cases, and MRQs**, then crops clinical images and "
-        "extracts video links — all in one run.  \n"
-        "This clears the existing database and re-imports everything from scratch.  \n"
-        "**Cost estimate:** ~305 pages × \\$0.003 ≈ \\$1 USD."
+def _new_book_import_tab(import_type: str) -> None:
+    """Shared UI for MRQ / Short Cases / CORE Cases import tabs."""
+    from core.new_book_import import (
+        make_session_id, load_session, delete_session,
+        get_clarification_questions, run_pass1, run_pass2,
     )
 
-    pdf_path_input = st.text_input(
-        "PDF path",
-        placeholder="C:/path/to/EDiR_Complete.pdf",
-        help="Full path to the original 305-page EDiR PDF on this machine.",
-    )
+    _type_label = {"mrq": "MRQs", "sc": "Short Cases", "core": "CORE Cases"}[import_type]
+    sk = f"nim_{import_type}"   # session-state key prefix
 
     _secret_key = ""
     try:
         _secret_key = st.secrets.get("ANTHROPIC_API_KEY", "")
+        _gh_token   = st.secrets.get("GITHUB_TOKEN", "")
+        _gh_repo    = st.secrets.get("GITHUB_REPO", "razzvannastase-ctrl/EDIR_Prep")
     except Exception:
-        pass
-    api_key_input = st.text_input(
-        "Anthropic API key",
-        value=_secret_key,
-        type="password",
-        help="API key for Claude Vision. Leave blank to use ANTHROPIC_API_KEY from secrets.toml.",
-    )
+        _gh_token = _gh_repo = ""
 
-    if has_data():
-        st.warning("Re-importing will delete **all** existing cases, questions, ratings, and images.")
-
-    pdf_path_clean = pdf_path_input.strip().strip('"').strip("'")
-    can_run = bool(pdf_path_clean and api_key_input)
-    if st.button("Import PDF", type="primary", disabled=not can_run):
-        from core.vision_import import run_vision_import
-
-        prog   = st.progress(0.0)
-        status = st.empty()
-
-        def _cb(msg: str, frac):
-            if frac is not None:
-                prog.progress(min(float(frac), 1.0))
-            status.text(msg)
-
-        ok, msg = run_vision_import(pdf_path_clean, api_key_input, _cb)
-        prog.progress(1.0)
-        if ok:
-            status.text("Done.")
-            st.success(msg)
-            st.balloons()
-        else:
-            st.error(f"Import failed: {msg}")
-
-    st.markdown("---")
-    st.subheader("Clean Up Answer-Page Images")
     st.markdown(
-        "Removes any images sourced from **answer pages** that are incorrectly "
-        "showing in the question view.  \n"
-        "**Free — no API calls.** Reads only PDF bookmarks."
+        f"Import any radiology book and generate EDiR-style **{_type_label}** from its content.  \n"
+        "Progress is saved after every chapter — you can safely close and resume later."
     )
-    if st.button("Clean Up Images", disabled=not bool(pdf_path_clean)):
-        from core.reextract_images import cleanup_answer_images
 
-        prog3   = st.progress(0.0)
-        status3 = st.empty()
+    # ── Check for an existing session ─────────────────────────────────────────
+    sid     = st.session_state.get(f"{sk}_sid")
+    session = load_session(sid) if sid else None
 
-        def _cb3(msg: str, frac):
+    if session and session.get("status") not in ("pass2_complete",):
+        st.info(
+            f"Existing session found: **{session.get('source', '?')}**  \n"
+            f"Status: `{session['status'].replace('_', ' ')}`"
+        )
+        c1, c2 = st.columns(2)
+        with c1:
+            st.button("Continue this session", key=f"{sk}_keep")
+        with c2:
+            if st.button("Clear & start new", key=f"{sk}_clear"):
+                delete_session(sid)
+                for k in [f"{sk}_sid", f"{sk}_running",
+                           f"{sk}_pdf_val", f"{sk}_src_val",
+                           f"{sk}_api_val", f"{sk}_instr_val",
+                           f"{sk}_answers_val", f"{sk}_api_val2"]:
+                    st.session_state.pop(k, None)
+                st.rerun()
+        st.divider()
+
+    # Re-read after potential clear
+    sid     = st.session_state.get(f"{sk}_sid")
+    session = load_session(sid) if sid else None
+    running = st.session_state.get(f"{sk}_running")
+
+    # ── IDLE — show input form ─────────────────────────────────────────────────
+    if session is None:
+        pdf_in  = st.text_input("PDF path", placeholder="C:/path/to/book.pdf", key=f"{sk}_pdf")
+        src_in  = st.text_input("Source / book name",
+                                placeholder="e.g. Radiology Review Manual", key=f"{sk}_src")
+        api_in  = st.text_input("Anthropic API key", value=_secret_key,
+                                type="password", key=f"{sk}_api")
+        st.caption(
+            "**Book-specific instructions** (optional) — tell Claude anything that helps: "
+            "pages to skip (front matter), chapter structure, image layout, etc."
+        )
+        instr_in = st.text_area(
+            "Instructions", height=110, key=f"{sk}_instr",
+            placeholder=(
+                "e.g. Skip pages 1–15 (front matter). "
+                "Cases start on page 16. "
+                "Each case: 2 image pages then 1 answer page."
+            ),
+        )
+        can = bool(pdf_in.strip() and src_in.strip() and api_in.strip())
+        if st.button("▶  Start — Pass 1 (extract)", type="primary",
+                     disabled=not can, key=f"{sk}_start"):
+            new_sid = make_session_id(pdf_in.strip(), src_in.strip(), import_type)
+            st.session_state[f"{sk}_sid"]      = new_sid
+            st.session_state[f"{sk}_running"]  = "pass1"
+            st.session_state[f"{sk}_pdf_val"]  = pdf_in.strip().strip('"').strip("'")
+            st.session_state[f"{sk}_src_val"]  = src_in.strip()
+            st.session_state[f"{sk}_api_val"]  = api_in.strip()
+            st.session_state[f"{sk}_instr_val"]= instr_in.strip()
+            st.rerun()
+        return
+
+    # ── RUNNING PASS 1 ────────────────────────────────────────────────────────
+    if running == "pass1":
+        pdf_val   = st.session_state.get(f"{sk}_pdf_val", "")
+        src_val   = st.session_state.get(f"{sk}_src_val", "")
+        api_val   = st.session_state.get(f"{sk}_api_val", _secret_key)
+        instr_val = st.session_state.get(f"{sk}_instr_val", "")
+        cur_sid   = st.session_state[f"{sk}_sid"]
+
+        st.info(f"Running Pass 1 for **{src_val}** — please wait…")
+        prog_bar = st.progress(0.0)
+        status_pl = st.empty()
+
+        def _cb1(msg: str, frac):
             if frac is not None:
-                prog3.progress(min(float(frac), 1.0))
-            status3.text(msg)
+                prog_bar.progress(min(float(frac), 1.0))
+            status_pl.text(msg)
 
-        ok3, msg3 = cleanup_answer_images(pdf_path_clean, _cb3)
-        prog3.progress(1.0)
-        if ok3:
-            status3.text("Done.")
-            st.success(msg3)
+        ok1, msg1 = run_pass1(pdf_val, api_val, src_val, import_type,
+                               instr_val, cur_sid, _cb1)
+        st.session_state[f"{sk}_running"] = None
+        if ok1:
+            prog_bar.progress(1.0)
+            st.success(msg1)
         else:
-            st.error(f"Cleanup failed: {msg3}")
+            st.error(f"Pass 1 failed: {msg1}")
+        st.rerun()
+        return
 
-    st.markdown("---")
-    st.subheader("Re-extract Images Only")
-    st.markdown(
-        "Fixes wrong image assignments without re-importing text or answers.  \n"
-        "Use this if images appear on the wrong questions after an import.  \n"
-        "**All question text and answers are preserved.**"
-    )
-    if st.button("Re-extract Images", disabled=not bool(pdf_path_clean and api_key_input)):
-        from core.reextract_images import run_image_reextraction
+    # ── PASS 1 COMPLETE — clarification + trigger Pass 2 ──────────────────────
+    if session.get("status") == "pass1_complete" and running is None:
+        src = session.get("source", "?")
+        n_chs  = len(session.get("pass1_results", {}))
+        n_imgs = sum(len(r.get("images", [])) for r in session["pass1_results"].values())
+        st.success(f"Pass 1 complete — **{src}**")
+        st.markdown(f"Extracted **{n_chs}** chapter(s) · **{n_imgs}** clinical image(s) found.")
 
-        prog2   = st.progress(0.0)
-        status2 = st.empty()
+        all_q = get_clarification_questions(sid)
+        if all_q:
+            st.markdown("**Claude's clarification questions:**")
+            for i, q_txt in enumerate(all_q, 1):
+                st.markdown(f"**{i}.** {q_txt}")
+            answers = st.text_area(
+                "Your answers (address each question above, or leave blank to proceed):",
+                height=140, key=f"{sk}_answers",
+            )
+        else:
+            st.markdown("*Claude has no clarification questions — ready to generate.*")
+            answers = ""
+
+        api_in2 = st.text_input("Anthropic API key", value=_secret_key,
+                                 type="password", key=f"{sk}_api2")
+        if st.button("⚡  Generate — Pass 2", type="primary", key=f"{sk}_gen"):
+            st.session_state[f"{sk}_running"]     = "pass2"
+            st.session_state[f"{sk}_answers_val"] = answers
+            st.session_state[f"{sk}_api_val2"]    = api_in2.strip()
+            st.rerun()
+        return
+
+    # ── RUNNING PASS 2 ────────────────────────────────────────────────────────
+    if running == "pass2":
+        cur_sid  = st.session_state[f"{sk}_sid"]
+        ans_val  = st.session_state.get(f"{sk}_answers_val", "")
+        api_val2 = st.session_state.get(f"{sk}_api_val2", _secret_key)
+        src2     = (load_session(cur_sid) or {}).get("source", "?")
+
+        st.info(f"Running Pass 2 for **{src2}** — please wait…")
+        prog_bar2 = st.progress(0.0)
+        status_pl2 = st.empty()
 
         def _cb2(msg: str, frac):
             if frac is not None:
-                prog2.progress(min(float(frac), 1.0))
-            status2.text(msg)
+                prog_bar2.progress(min(float(frac), 1.0))
+            status_pl2.text(msg)
 
-        ok2, msg2 = run_image_reextraction(pdf_path_clean, api_key_input, _cb2)
-        prog2.progress(1.0)
+        ok2, msg2 = run_pass2(cur_sid, api_val2, ans_val, _gh_token, _gh_repo, _cb2)
+        st.session_state[f"{sk}_running"] = None
         if ok2:
-            status2.text("Done.")
+            prog_bar2.progress(1.0)
             st.success(msg2)
+            st.balloons()
         else:
-            st.error(f"Re-extraction failed: {msg2}")
+            st.error(f"Pass 2 failed: {msg2}")
+        st.rerun()
+        return
+
+    # ── PASS 2 PARTIAL — offer resume ─────────────────────────────────────────
+    if session.get("status") == "pass2_partial" and running is None:
+        done    = set(session.get("pass2_completed", []))
+        pending = set(session.get("pass1_results", {}).keys()) - done
+        st.warning(
+            f"Import partially complete for **{session.get('source')}** — "
+            f"{len(done)} chapter(s) done, {len(pending)} remaining."
+        )
+        api_r = st.text_input("Anthropic API key", value=_secret_key,
+                               type="password", key=f"{sk}_api_r")
+        if st.button("Resume Pass 2", type="primary", key=f"{sk}_resume_p2"):
+            st.session_state[f"{sk}_running"]     = "pass2"
+            st.session_state[f"{sk}_api_val2"]    = api_r.strip()
+            st.session_state[f"{sk}_answers_val"] = session.get("user_answers", "")
+            st.rerun()
+        if st.button("Clear & start fresh", key=f"{sk}_clear2"):
+            delete_session(sid)
+            for k in [f"{sk}_sid", f"{sk}_running"]:
+                st.session_state.pop(k, None)
+            st.rerun()
+        return
+
+    # ── DONE ─────────────────────────────────────────────────────────────────
+    if session.get("status") == "pass2_complete":
+        st.success(f"Import complete — **{session.get('source')}**")
+        # Show chapter mapping with any forced assignments
+        mapping = session.get("chapter_mapping", [])
+        forced  = [m for m in mapping if m.get("match") == "forced"]
+        if forced:
+            st.warning(
+                "The following chapters were force-assigned (no exact match found). "
+                "Review them in the Admin panel."
+            )
+            for m in forced:
+                st.markdown(
+                    f"- **{m['new_title']}** → assigned to **{m['db_chapter_title']}** (forced)"
+                )
+        if st.button("Clear & start new import", key=f"{sk}_done_clear"):
+            delete_session(sid)
+            for k in [f"{sk}_sid", f"{sk}_running"]:
+                st.session_state.pop(k, None)
+            st.rerun()
+
+
+def view_import():
+    st.header("Import PDF")
+
+    tab_eg, tab_mrq, tab_sc, tab_core = st.tabs([
+        "📚 Essential Guide (Legacy)",
+        "🧠 MRQ Import",
+        "🔬 Short Cases Import",
+        "🏥 CORE Cases Import",
+    ])
+
+    # ── Essential Guide (Legacy) ───────────────────────────────────────────────
+    with tab_eg:
+        st.markdown(
+            "Sends every page of the original EDiR PDF to Claude Vision to extract "
+            "**CORE Cases, Short Cases, and MRQs**, then crops clinical images and "
+            "extracts video links — all in one run.  \n"
+            "This clears the existing database and re-imports everything from scratch.  \n"
+            "**Cost estimate:** ~305 pages × \\$0.003 ≈ \\$1 USD."
+        )
+
+        pdf_path_input = st.text_input(
+            "PDF path",
+            placeholder="C:/path/to/EDiR_Complete.pdf",
+            help="Full path to the original 305-page EDiR PDF on this machine.",
+            key="eg_pdf_path",
+        )
+
+        _secret_key = ""
+        try:
+            _secret_key = st.secrets.get("ANTHROPIC_API_KEY", "")
+        except Exception:
+            pass
+        api_key_input = st.text_input(
+            "Anthropic API key",
+            value=_secret_key,
+            type="password",
+            help="API key for Claude Vision. Leave blank to use ANTHROPIC_API_KEY from secrets.toml.",
+            key="eg_api_key",
+        )
+
+        if has_data():
+            st.warning("Re-importing will delete **all** existing cases, questions, ratings, and images.")
+
+        pdf_path_clean = pdf_path_input.strip().strip('"').strip("'")
+        can_run = bool(pdf_path_clean and api_key_input)
+        if st.button("Import PDF", type="primary", disabled=not can_run, key="eg_import_btn"):
+            from core.vision_import import run_vision_import
+
+            prog   = st.progress(0.0)
+            status = st.empty()
+
+            def _cb(msg: str, frac):
+                if frac is not None:
+                    prog.progress(min(float(frac), 1.0))
+                status.text(msg)
+
+            ok, msg = run_vision_import(pdf_path_clean, api_key_input, _cb)
+            prog.progress(1.0)
+            if ok:
+                status.text("Done.")
+                st.success(msg)
+                st.balloons()
+            else:
+                st.error(f"Import failed: {msg}")
+
+        st.markdown("---")
+        st.subheader("Clean Up Answer-Page Images")
+        st.markdown(
+            "Removes any images sourced from **answer pages** that are incorrectly "
+            "showing in the question view.  \n"
+            "**Free — no API calls.** Reads only PDF bookmarks."
+        )
+        if st.button("Clean Up Images", disabled=not bool(pdf_path_clean), key="eg_cleanup_btn"):
+            from core.reextract_images import cleanup_answer_images
+
+            prog3   = st.progress(0.0)
+            status3 = st.empty()
+
+            def _cb3(msg: str, frac):
+                if frac is not None:
+                    prog3.progress(min(float(frac), 1.0))
+                status3.text(msg)
+
+            ok3, msg3 = cleanup_answer_images(pdf_path_clean, _cb3)
+            prog3.progress(1.0)
+            if ok3:
+                status3.text("Done.")
+                st.success(msg3)
+            else:
+                st.error(f"Cleanup failed: {msg3}")
+
+        st.markdown("---")
+        st.subheader("Re-extract Images Only")
+        st.markdown(
+            "Fixes wrong image assignments without re-importing text or answers.  \n"
+            "Use this if images appear on the wrong questions after an import.  \n"
+            "**All question text and answers are preserved.**"
+        )
+        if st.button("Re-extract Images",
+                     disabled=not bool(pdf_path_clean and api_key_input),
+                     key="eg_reextract_btn"):
+            from core.reextract_images import run_image_reextraction
+
+            prog2   = st.progress(0.0)
+            status2 = st.empty()
+
+            def _cb2(msg: str, frac):
+                if frac is not None:
+                    prog2.progress(min(float(frac), 1.0))
+                status2.text(msg)
+
+            ok2, msg2 = run_image_reextraction(pdf_path_clean, api_key_input, _cb2)
+            prog2.progress(1.0)
+            if ok2:
+                status2.text("Done.")
+                st.success(msg2)
+            else:
+                st.error(f"Re-extraction failed: {msg2}")
+
+    # ── New book import tabs ───────────────────────────────────────────────────
+    with tab_mrq:
+        _new_book_import_tab("mrq")
+
+    with tab_sc:
+        _new_book_import_tab("sc")
+
+    with tab_core:
+        _new_book_import_tab("core")
 
 
 def view_admin():

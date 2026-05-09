@@ -79,6 +79,8 @@ def _migrate(conn):
     # Idempotent backfill — runs every startup to cover rows that were NULL
     # because a previous migration run didn't commit the UPDATE.
     conn.execute("UPDATE cases SET source='Essential Guide' WHERE source IS NULL")
+    if "chapter_match" not in cols:
+        conn.execute("ALTER TABLE cases ADD COLUMN chapter_match TEXT")
     conn.commit()
     cols_q = {r[1] for r in conn.execute("PRAGMA table_info(questions)").fetchall()}
     if "video_links" not in cols_q:
@@ -233,11 +235,12 @@ def insert_chapter(number, title):
         ).fetchone()[0]
 
 
-def insert_case(chapter_id, case_number, vignette, section: str = "core", source: str = "Essential Guide"):
+def insert_case(chapter_id, case_number, vignette, section: str = "core",
+                source: str = "Essential Guide", chapter_match: str | None = None):
     with get_conn() as conn:
         cur = conn.execute(
-            "INSERT INTO cases (chapter_id, case_number, clinical_vignette, section, source) VALUES (?,?,?,?,?)",
-            (chapter_id, case_number, vignette, section, source)
+            "INSERT INTO cases (chapter_id, case_number, clinical_vignette, section, source, chapter_match) VALUES (?,?,?,?,?,?)",
+            (chapter_id, case_number, vignette, section, source, chapter_match)
         )
         return cur.lastrowid
 
