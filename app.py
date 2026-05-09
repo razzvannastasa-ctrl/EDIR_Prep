@@ -579,6 +579,32 @@ def view_import():
         else:
             st.error(f"Import failed: {msg}")
 
+    st.markdown("---")
+    st.subheader("Re-extract Images Only")
+    st.markdown(
+        "Fixes wrong image assignments without re-importing text or answers.  \n"
+        "Use this if images appear on the wrong questions after an import.  \n"
+        "**All question text and answers are preserved.**"
+    )
+    if st.button("Re-extract Images", disabled=not bool(pdf_path_clean and api_key_input)):
+        from core.reextract_images import run_image_reextraction
+
+        prog2   = st.progress(0.0)
+        status2 = st.empty()
+
+        def _cb2(msg: str, frac):
+            if frac is not None:
+                prog2.progress(min(float(frac), 1.0))
+            status2.text(msg)
+
+        ok2, msg2 = run_image_reextraction(pdf_path_clean, api_key_input, _cb2)
+        prog2.progress(1.0)
+        if ok2:
+            status2.text("Done.")
+            st.success(msg2)
+        else:
+            st.error(f"Re-extraction failed: {msg2}")
+
 
 def view_admin():
     from core.github_sync import push_db, push_image
