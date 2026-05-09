@@ -86,6 +86,24 @@ def _migrate(conn):
     conn.commit()
 
 
+def get_next_case_number(chapter_id: int, section: str) -> int:
+    with get_conn() as conn:
+        row = conn.execute(
+            "SELECT MAX(case_number) FROM cases WHERE chapter_id=? AND section=?",
+            (chapter_id, section),
+        ).fetchone()
+        return (row[0] or 0) + 1
+
+
+def get_next_q_number(case_id: int) -> int:
+    with get_conn() as conn:
+        row = conn.execute(
+            "SELECT MAX(q_number) FROM questions WHERE case_id=?",
+            (case_id,),
+        ).fetchone()
+        return (row[0] or 0) + 1
+
+
 def has_data():
     try:
         with get_conn() as conn:

@@ -12,6 +12,8 @@ from core.database import (
     get_answer, get_answers_for_case,
     get_case_stats, get_last_ratings,
     save_attempt, save_rating,
+    insert_case, insert_question, insert_answer,
+    get_next_case_number, get_next_q_number,
     admin_get_questions, admin_update_question, admin_update_answer, admin_update_vignette,
     DB_PATH,
 )
@@ -677,280 +679,360 @@ def view_admin():
             "to enable pushing edits back to GitHub. Edits will still save locally."
         )
 
-    # ── Filters ───────────────────────────────────────────────────────────────
-    f1, f2, f3 = st.columns(3)
-    with f1:
-        sec_map   = {"All sections": None, "CORE": "core", "Short Cases": "sc", "MRQs": "mrq"}
-        sec_label = st.selectbox("Section", list(sec_map.keys()), key="admin_f_sec")
-        sec_val   = sec_map[sec_label]
-    with f2:
-        chapters  = get_chapters()
-        ch_map    = {"All chapters": None, **{f"Ch {c['number']}: {c['title']}": c["id"] for c in chapters}}
-        ch_label  = st.selectbox("Chapter", list(ch_map.keys()), key="admin_f_ch")
-        ch_val    = ch_map[ch_label]
-    with f3:
-        sources   = get_sources()
-        src_map   = {"All sources": None, **{s: s for s in sources}}
-        src_label = st.selectbox("Source", list(src_map.keys()), key="admin_f_src")
-        src_val   = src_map[src_label]
+    tab_edit, tab_add = st.tabs(["✏️ Edit Questions", "➕ Add Question"])
 
-    # ── Case filter ───────────────────────────────────────────────────────────
-    # Fetch all questions matching top-level filters to build the case list
-    all_rows = admin_get_questions(sec_val, ch_val, src_val)
-    if not all_rows:
-        st.info("No questions match the current filter.")
-        return
+    # ══════════════════════════════════════════════════════════════════════════
+    with tab_add:
+        st.subheader("Add New Question")
+        a1, a2, a3 = st.columns(3)
+        with a1:
+            add_sec_map   = {"CORE": "core", "Short Cases": "sc", "MRQs": "mrq"}
+            add_sec_lbl   = st.selectbox("Section", list(add_sec_map.keys()), key="add_f_sec")
+            add_sec       = add_sec_map[add_sec_lbl]
+        with a2:
+            add_chapters  = get_chapters()
+            if not add_chapters:
+                st.info("No chapters in DB yet. Import a PDF first.")
+                add_chapters = []
+            add_ch_map    = {f"Ch {c['number']}: {c['title']}": dict(c) for c in add_chapters}
+            add_ch_lbl    = st.selectbox("Chapter", list(add_ch_map.keys()), key="add_f_ch") if add_ch_map else None
+            add_ch        = add_ch_map[add_ch_lbl] if add_ch_lbl else None
+        with a3:
+            existing_src  = get_sources() or []
+            add_src       = st.text_input("Source", value=existing_src[0] if existing_src else "Essential Guide",
+                                          key="add_f_src")
 
-    # Build ordered unique-case list from result rows
-    seen_cids: set = set()
-    case_list: list[tuple] = []  # [(case_id, label)]
-    for r in all_rows:
-        cid = r["case_id"]
-        if cid not in seen_cids:
-            seen_cids.add(cid)
-            if r["section"] == "mrq":
-                lbl = f"MRQ Group {r['case_number']}"
+        if add_ch:
+            # Case picker
+            existing_cases = get_cases(add_ch["id"], section=add_sec)
+            new_case_lbl   = "➕ New case"
+            case_opts      = [new_case_lbl] + [
+                f"C{c['case_number']} — {(c['clinical_vignette'] or '')[:60]}"
+                for c in existing_cases
+            ]
+            sel_case_lbl = st.selectbox("Case", case_opts, key="add_f_case_pick")
+
+            if sel_case_lbl == new_case_lbl:
+                add_vignette = st.text_area(
+                    "Clinical vignette (new case)", height=80, key="add_vignette",
+                )
+                add_case_id = None
             else:
-                vig     = (r["clinical_vignette"] or "").strip()
-                preview = f" — {vig[:45]}" if vig else ""
-                lbl     = f"C{r['case_number']}{preview}"
-            case_list.append((cid, lbl))
+                cidx         = case_opts.index(sel_case_lbl) - 1
+                add_case_id  = existing_cases[cidx]["id"]
+                add_vignette = None
 
-    if len(case_list) > 1:
-        case_labels = ["All cases"] + [lbl for _, lbl in case_list]
-        n_cl        = len(case_labels)
-        raw_ci      = st.session_state.get("admin_f_case", 0)
-        cur_ci      = raw_ci if isinstance(raw_ci, int) and 0 <= raw_ci < n_cl else 0
-        sel_ci      = st.selectbox("Case", range(n_cl), index=cur_ci,
-                                   format_func=lambda i: case_labels[i],
-                                   key="admin_f_case")
-        if sel_ci == 0:
-            rows = list(all_rows)
-        else:
-            sel_cid = case_list[sel_ci - 1][0]
-            rows    = [r for r in all_rows if r["case_id"] == sel_cid]
-    else:
-        rows = list(all_rows)
+            st.markdown("---")
+            add_q_text = st.text_area("Question text *", height=120, key="add_q_text")
 
-    if not rows:
-        st.info("No questions match the current filter.")
-        return
+            if add_sec != "mrq":
+                add_vignette_shared = st.text_area(
+                    "Clinical vignette (shared by all Qs in this case)",
+                    value=add_vignette or "", height=70, key="add_vig_shared",
+                    help="Only used when creating a new case",
+                ) if sel_case_lbl == new_case_lbl else None
+            else:
+                add_vignette_shared = None
 
-    # ── Question selector ─────────────────────────────────────────────────────
-    row_by_id = {r["id"]: dict(r) for r in rows}
-    q_ids     = [r["id"] for r in rows]
-    # Labels include case_number so duplicates across cases are distinguishable
-    labels    = [
-        f"[{r['section'].upper()}] Ch{r['chapter_number']} C{r['case_number']} Q{r['q_number']} — {r['question_text'][:70]}"
-        for r in rows
-    ]
-    n_rows = len(q_ids)
+            add_qtype_lbl = st.selectbox("Question type", ["Free text", "Multiple choice"],
+                                         key="add_q_type")
+            add_q_type    = "free_text" if add_qtype_lbl == "Free text" else "multiple_choice"
 
-    # Store/restore selection as an INDEX (0..n-1), not a q_id.
-    # Using indices guarantees the stored value is always unique and valid;
-    # q_ids as values caused Streamlit to match by label when restoring,
-    # which picked the wrong question when two shared the same label text.
-    raw_idx = st.session_state.get("admin_q_sel", 0)
-    cur_idx = raw_idx if isinstance(raw_idx, int) and 0 <= raw_idx < n_rows else 0
+            add_options = []
+            add_correct = []
+            if add_q_type == "multiple_choice":
+                st.markdown("**Options** (one per line)")
+                add_opts_text = st.text_area("Options", height=100, key="add_opts",
+                                             label_visibility="collapsed")
+                add_options   = [o.strip() for o in add_opts_text.splitlines() if o.strip()]
+                if add_options:
+                    add_corr_sel = st.multiselect("Correct options", add_options, key="add_correct")
+                    add_correct  = [add_options.index(o) for o in add_corr_sel if o in add_options]
+                add_ans_text = ""
+            else:
+                add_ans_text = st.text_area("Answer text", height=100, key="add_ans_text")
 
-    sel_idx  = st.selectbox(
-        f"{len(rows)} questions",
-        range(n_rows),
-        index=cur_idx,
-        format_func=lambda i: labels[i],
-        key="admin_q_sel",
-    )
-    sel_q_id = q_ids[sel_idx]
-    q    = row_by_id[sel_q_id]
-    q_id = sel_q_id
+            add_explanation = st.text_area("Explanation", height=80, key="add_explanation")
 
-    def _admin_imgs(paths_json):
-        return [p for p in json.loads(paths_json or "[]") if "crops" in p]
-
-    # Reset image lists when question changes
-    if st.session_state.get("_admin_loaded_qid") != q_id:
-        st.session_state._admin_loaded_qid = q_id
-        st.session_state._admin_q_images   = _admin_imgs(q.get("page_images"))
-        _ans = get_answer(q_id)
-        st.session_state._admin_a_images   = _admin_imgs(_ans["page_images"] if _ans else None)
-
-    ans  = get_answer(q_id)
-    ans  = dict(ans) if ans else {}
-
-    st.markdown("---")
-    st.subheader(f"Q{q['q_number']} · {q['section'].upper()} · Ch{q['chapter_number']}: {q['chapter_title']}")
-
-    # ── Question text ─────────────────────────────────────────────────────────
-    new_q_text = st.text_area("Question text", value=q["question_text"],
-                               height=150, key=f"admin_qt_{q_id}")
-
-    # ── Clinical vignette (non-MRQ only) ─────────────────────────────────────
-    if q["section"] != "mrq":
-        new_vignette = st.text_area(
-            "Clinical vignette (shared by all questions in this case)",
-            value=q.get("clinical_vignette") or "", height=80,
-            key=f"admin_vig_{q['case_id']}",
-        )
-    else:
-        new_vignette = None
-
-    # ── Options / answer ─────────────────────────────────────────────────────
-    q_type      = q["q_type"]
-    options_raw = json.loads(q["options"]) if q.get("options") else []
-    correct_raw = json.loads(ans["correct_options"]) if ans.get("correct_options") else []
-
-    if q_type == "multiple_choice":
-        st.markdown("**Options** (one per line)")
-        opts_text   = st.text_area("Options list", value="\n".join(options_raw), height=130,
-                                   key=f"admin_opts_{q_id}", label_visibility="collapsed")
-        new_options = [o.strip() for o in opts_text.splitlines() if o.strip()]
-
-        valid_defaults = [new_options[i] for i in correct_raw if i < len(new_options)]
-        correct_sel    = st.multiselect("Correct options", new_options,
-                                        default=valid_defaults, key=f"admin_correct_{q_id}")
-        new_correct    = [new_options.index(o) for o in correct_sel if o in new_options]
-        new_ans_text   = ans.get("answer_text") or ""
-    else:
-        new_options  = options_raw
-        new_correct  = correct_raw
-        new_ans_text = st.text_area("Answer text", value=ans.get("answer_text") or "",
-                                    height=120, key=f"admin_ans_{q_id}")
-
-    new_explanation = st.text_area("Explanation", value=ans.get("explanation") or "",
-                                   height=80, key=f"admin_exp_{q_id}")
-
-    # ── Video links ───────────────────────────────────────────────────────────
-    st.markdown("**Video links** (one URL per line)")
-    video_raw   = json.loads(q.get("video_links") or "[]")
-    vlinks_text = st.text_area("Video links list", value="\n".join(video_raw), height=80,
-                                key=f"admin_vl_{q_id}", label_visibility="collapsed")
-    new_video_links = [v.strip() for v in vlinks_text.splitlines() if v.strip()]
-
-    try:
-        from streamlit_cropper import st_cropper
-        from PIL import Image as _PILImage
-        _cropper_ok = True
-    except ImportError:
-        _cropper_ok = False
-
-    def _image_block(label: str, state_key: str, prefix: str):
-        st.markdown(f"**{label}**")
-        img_list = st.session_state[state_key]
-        for i, img_path in enumerate(list(img_list)):
-            p = Path(img_path) if Path(img_path).is_absolute() else _APP_DIR / img_path
-            crop_key = f"_admin_crop_{prefix}_{q_id}_{i}"
-
-            c1, c2, c3 = st.columns([5, 1, 1])
-            with c1:
-                if p.exists():
-                    st.image(str(p), width=260)
+            if st.button("💾 Add Question", type="primary", key="add_q_btn"):
+                if not add_q_text.strip():
+                    st.error("Question text is required.")
                 else:
-                    st.caption(f"Missing: {img_path}")
-            with c2:
-                st.markdown("<br><br>", unsafe_allow_html=True)
-                if _cropper_ok and p.exists():
-                    cropping = st.session_state.get(crop_key, False)
-                    label_btn = "✕ crop" if cropping else "✂"
-                    if st.button(label_btn, key=f"admin_crop_btn_{prefix}_{q_id}_{i}",
-                                 help="Toggle crop editor"):
-                        st.session_state["_admin_img_action"] = {
-                            "type": "toggle_crop", "crop_key": crop_key,
-                        }
-                        st.rerun()
-            with c3:
-                st.markdown("<br><br>", unsafe_allow_html=True)
-                if st.button("✕", key=f"admin_rm_{prefix}_{q_id}_{i}", help="Remove"):
-                    st.session_state["_admin_img_action"] = {
-                        "type": "remove", "state_key": state_key,
-                        "idx": i, "crop_key": crop_key,
-                    }
-                    st.rerun()
-
-            # Inline cropper
-            if _cropper_ok and p.exists() and st.session_state.get(crop_key, False):
-                src = _PILImage.open(str(p))
-                cropped = st_cropper(src, realtime_update=True, box_color="#C2185B",
-                                     key=f"admin_cropper_{prefix}_{q_id}_{i}")
-                st.image(cropped, caption="Preview", width=260)
-                if st.button("💾 Save crop", key=f"admin_save_crop_{prefix}_{q_id}_{i}",
-                             type="primary"):
-                    cropped.save(str(p))
+                    # Create new case if needed
+                    if add_case_id is None:
+                        next_cn     = get_next_case_number(add_ch["id"], add_sec)
+                        vig_to_save = (add_vignette_shared or add_vignette or "").strip() or None
+                        add_case_id = insert_case(
+                            add_ch["id"], next_cn, vig_to_save,
+                            section=add_sec, source=add_src.strip() or "Essential Guide",
+                        )
+                    next_qn = get_next_q_number(add_case_id)
+                    new_qid = insert_question(
+                        add_case_id, next_qn, add_q_text.strip(), add_q_type,
+                        add_options if add_q_type == "multiple_choice" else None,
+                        [],
+                    )
+                    insert_answer(
+                        new_qid,
+                        add_ans_text.strip() if add_q_type != "multiple_choice" else "",
+                        add_correct if add_q_type == "multiple_choice" else None,
+                        add_explanation.strip() or None,
+                        [],
+                    )
                     if gh_token and gh_repo:
                         try:
-                            repo_path = img_path if not Path(img_path).is_absolute() else \
-                                img_path.replace(str(_APP_DIR).replace("\\", "/") + "/", "")
-                            push_image(gh_token, gh_repo, p, repo_path)
+                            push_db(gh_token, gh_repo, DB_PATH)
+                            st.success(f"Question added (Q{next_qn}) and pushed to GitHub.")
                         except Exception as e:
-                            st.warning(f"Saved locally, GitHub push failed: {e}")
-                    st.session_state["_admin_img_action"] = {
-                        "type": "toggle_crop", "crop_key": crop_key,
-                        "msg": "Crop saved.",
-                    }
-                    st.rerun()
+                            st.warning(f"Saved locally — GitHub push failed: {e}")
+                    else:
+                        st.success(f"Question added (Q{next_qn}) locally.")
 
-        return st.file_uploader(f"Add image to {label.lower()}", type=["png", "jpg", "jpeg"],
-                                key=f"admin_upl_{prefix}_{q_id}")
+    # ══════════════════════════════════════════════════════════════════════════
+    with tab_edit:
+        # ── Filters ───────────────────────────────────────────────────────────
+        f1, f2, f3 = st.columns(3)
+        with f1:
+            sec_map   = {"All sections": None, "CORE": "core", "Short Cases": "sc", "MRQs": "mrq"}
+            sec_label = st.selectbox("Section", list(sec_map.keys()), key="admin_f_sec")
+            sec_val   = sec_map[sec_label]
+        with f2:
+            chapters  = get_chapters()
+            ch_map    = {"All chapters": None, **{f"Ch {c['number']}: {c['title']}": c["id"] for c in chapters}}
+            ch_label  = st.selectbox("Chapter", list(ch_map.keys()), key="admin_f_ch")
+            ch_val    = ch_map[ch_label]
+        with f3:
+            sources   = get_sources()
+            src_map   = {"All sources": None, **{s: s for s in sources}}
+            src_label = st.selectbox("Source", list(src_map.keys()), key="admin_f_src")
+            src_val   = src_map[src_label]
 
-    uploaded_q_img = _image_block("Question images", "_admin_q_images", "q")
-    uploaded_a_img = _image_block("Answer images",   "_admin_a_images", "a")
-
-    # ── Save button ───────────────────────────────────────────────────────────
-    st.markdown("---")
-    if st.button("Save & Push to GitHub", type="primary", use_container_width=True):
-        crop_dir = _APP_DIR / "data" / "crops"
-        crop_dir.mkdir(parents=True, exist_ok=True)
-
-        # Handle uploaded question image
-        final_q_images = list(st.session_state._admin_q_images)
-        if uploaded_q_img:
-            fname     = f"admin_q{q_id}_{int(_time.time())}.png"
-            img_local = crop_dir / fname
-            img_local.write_bytes(uploaded_q_img.getvalue())
-            repo_path = f"data/crops/{fname}"
-            final_q_images.append(f"data/crops/{fname}")
-            if gh_token and gh_repo:
-                push_image(gh_token, gh_repo, img_local, repo_path)
-
-        # Handle uploaded answer image
-        final_a_images = list(st.session_state._admin_a_images)
-        if uploaded_a_img:
-            fname     = f"admin_a{q_id}_{int(_time.time())}.png"
-            img_local = crop_dir / fname
-            img_local.write_bytes(uploaded_a_img.getvalue())
-            repo_path = f"data/crops/{fname}"
-            final_a_images.append(f"data/crops/{fname}")
-            if gh_token and gh_repo:
-                push_image(gh_token, gh_repo, img_local, repo_path)
-
-        # Update session state image lists
-        st.session_state._admin_q_images = final_q_images
-        st.session_state._admin_a_images = final_a_images
-
-        # Write to SQLite
-        admin_update_question(
-            q_id, new_q_text,
-            new_options if q_type == "multiple_choice" else None,
-            final_q_images, new_video_links,
-        )
-        admin_update_answer(
-            q_id,
-            answer_text    = new_ans_text   if q_type != "multiple_choice" else None,
-            correct_options= new_correct    if q_type == "multiple_choice" else None,
-            explanation    = new_explanation,
-            page_images    = final_a_images,
-        )
-        if new_vignette is not None:
-            admin_update_vignette(q["case_id"], new_vignette)
-
-        # Push DB to GitHub
-        if gh_token and gh_repo:
-            try:
-                push_db(gh_token, gh_repo, DB_PATH)
-                st.success("Saved and pushed to GitHub.")
-            except Exception as e:
-                st.warning(f"Saved locally, but GitHub push failed: {e}")
+        # ── Case filter ───────────────────────────────────────────────────────
+        all_rows = admin_get_questions(sec_val, ch_val, src_val)
+        if not all_rows:
+            st.info("No questions match the current filter.")
         else:
-            st.success("Saved locally (configure GITHUB_TOKEN to also push to GitHub).")
+            seen_cids: set = set()
+            case_list: list[tuple] = []
+            for r in all_rows:
+                cid = r["case_id"]
+                if cid not in seen_cids:
+                    seen_cids.add(cid)
+                    if r["section"] == "mrq":
+                        lbl = f"MRQ Group {r['case_number']}"
+                    else:
+                        vig     = (r["clinical_vignette"] or "").strip()
+                        preview = f" — {vig[:45]}" if vig else ""
+                        lbl     = f"C{r['case_number']}{preview}"
+                    case_list.append((cid, lbl))
+
+            if len(case_list) > 1:
+                case_labels = ["All cases"] + [lbl for _, lbl in case_list]
+                n_cl        = len(case_labels)
+                raw_ci      = st.session_state.get("admin_f_case", 0)
+                cur_ci      = raw_ci if isinstance(raw_ci, int) and 0 <= raw_ci < n_cl else 0
+                sel_ci      = st.selectbox("Case", range(n_cl), index=cur_ci,
+                                           format_func=lambda i: case_labels[i],
+                                           key="admin_f_case")
+                if sel_ci == 0:
+                    rows = list(all_rows)
+                else:
+                    sel_cid = case_list[sel_ci - 1][0]
+                    rows    = [r for r in all_rows if r["case_id"] == sel_cid]
+            else:
+                rows = list(all_rows)
+
+            if not rows:
+                st.info("No questions match the current filter.")
+            else:
+                # ── Question selector ──────────────────────────────────────────
+                row_by_id = {r["id"]: dict(r) for r in rows}
+                q_ids     = [r["id"] for r in rows]
+                labels    = [
+                    f"[{r['section'].upper()}] Ch{r['chapter_number']} C{r['case_number']} Q{r['q_number']} — {r['question_text'][:70]}"
+                    for r in rows
+                ]
+                n_rows  = len(q_ids)
+                raw_idx = st.session_state.get("admin_q_sel", 0)
+                cur_idx = raw_idx if isinstance(raw_idx, int) and 0 <= raw_idx < n_rows else 0
+
+                sel_idx  = st.selectbox(
+                    f"{len(rows)} questions", range(n_rows), index=cur_idx,
+                    format_func=lambda i: labels[i], key="admin_q_sel",
+                )
+                sel_q_id = q_ids[sel_idx]
+                q    = row_by_id[sel_q_id]
+                q_id = sel_q_id
+
+                def _admin_imgs(paths_json):
+                    return [p for p in json.loads(paths_json or "[]") if "crops" in p]
+
+                if st.session_state.get("_admin_loaded_qid") != q_id:
+                    st.session_state._admin_loaded_qid = q_id
+                    st.session_state._admin_q_images   = _admin_imgs(q.get("page_images"))
+                    _ans = get_answer(q_id)
+                    st.session_state._admin_a_images   = _admin_imgs(_ans["page_images"] if _ans else None)
+
+                ans = dict(get_answer(q_id) or {})
+
+                st.markdown("---")
+                st.subheader(f"Q{q['q_number']} · {q['section'].upper()} · Ch{q['chapter_number']}: {q['chapter_title']}")
+
+                new_q_text = st.text_area("Question text", value=q["question_text"],
+                                          height=150, key=f"admin_qt_{q_id}")
+
+                if q["section"] != "mrq":
+                    new_vignette = st.text_area(
+                        "Clinical vignette (shared by all questions in this case)",
+                        value=q.get("clinical_vignette") or "", height=80,
+                        key=f"admin_vig_{q['case_id']}",
+                    )
+                else:
+                    new_vignette = None
+
+                q_type      = q["q_type"]
+                options_raw = json.loads(q["options"]) if q.get("options") else []
+                correct_raw = json.loads(ans["correct_options"]) if ans.get("correct_options") else []
+
+                if q_type == "multiple_choice":
+                    st.markdown("**Options** (one per line)")
+                    opts_text   = st.text_area("Options list", value="\n".join(options_raw), height=130,
+                                               key=f"admin_opts_{q_id}", label_visibility="collapsed")
+                    new_options = [o.strip() for o in opts_text.splitlines() if o.strip()]
+                    valid_defaults = [new_options[i] for i in correct_raw if i < len(new_options)]
+                    correct_sel    = st.multiselect("Correct options", new_options,
+                                                    default=valid_defaults, key=f"admin_correct_{q_id}")
+                    new_correct    = [new_options.index(o) for o in correct_sel if o in new_options]
+                    new_ans_text   = ans.get("answer_text") or ""
+                else:
+                    new_options  = options_raw
+                    new_correct  = correct_raw
+                    new_ans_text = st.text_area("Answer text", value=ans.get("answer_text") or "",
+                                                height=120, key=f"admin_ans_{q_id}")
+
+                new_explanation = st.text_area("Explanation", value=ans.get("explanation") or "",
+                                               height=80, key=f"admin_exp_{q_id}")
+
+                st.markdown("**Video links** (one URL per line)")
+                video_raw       = json.loads(q.get("video_links") or "[]")
+                vlinks_text     = st.text_area("Video links list", value="\n".join(video_raw), height=80,
+                                               key=f"admin_vl_{q_id}", label_visibility="collapsed")
+                new_video_links = [v.strip() for v in vlinks_text.splitlines() if v.strip()]
+
+                try:
+                    from streamlit_cropper import st_cropper
+                    from PIL import Image as _PILImage
+                    _cropper_ok = True
+                except ImportError:
+                    _cropper_ok = False
+
+                def _image_block(label: str, state_key: str, prefix: str):
+                    st.markdown(f"**{label}**")
+                    img_list = st.session_state[state_key]
+                    for i, img_path in enumerate(list(img_list)):
+                        p        = Path(img_path) if Path(img_path).is_absolute() else _APP_DIR / img_path
+                        crop_key = f"_admin_crop_{prefix}_{q_id}_{i}"
+                        c1, c2, c3 = st.columns([5, 1, 1])
+                        with c1:
+                            if p.exists():
+                                st.image(str(p), width=260)
+                            else:
+                                st.caption(f"Missing: {img_path}")
+                        with c2:
+                            st.markdown("<br><br>", unsafe_allow_html=True)
+                            if _cropper_ok and p.exists():
+                                cropping  = st.session_state.get(crop_key, False)
+                                label_btn = "✕ crop" if cropping else "✂"
+                                if st.button(label_btn, key=f"admin_crop_btn_{prefix}_{q_id}_{i}",
+                                             help="Toggle crop editor"):
+                                    st.session_state["_admin_img_action"] = {
+                                        "type": "toggle_crop", "crop_key": crop_key,
+                                    }
+                                    st.rerun()
+                        with c3:
+                            st.markdown("<br><br>", unsafe_allow_html=True)
+                            if st.button("✕", key=f"admin_rm_{prefix}_{q_id}_{i}", help="Remove"):
+                                st.session_state["_admin_img_action"] = {
+                                    "type": "remove", "state_key": state_key,
+                                    "idx": i, "crop_key": crop_key,
+                                }
+                                st.rerun()
+                        if _cropper_ok and p.exists() and st.session_state.get(crop_key, False):
+                            _src    = _PILImage.open(str(p))
+                            cropped = st_cropper(_src, realtime_update=True, box_color="#C2185B",
+                                                 key=f"admin_cropper_{prefix}_{q_id}_{i}")
+                            st.image(cropped, caption="Preview", width=260)
+                            if st.button("💾 Save crop", key=f"admin_save_crop_{prefix}_{q_id}_{i}",
+                                         type="primary"):
+                                cropped.save(str(p))
+                                if gh_token and gh_repo:
+                                    try:
+                                        rp = img_path if not Path(img_path).is_absolute() else \
+                                            img_path.replace(str(_APP_DIR).replace("\\", "/") + "/", "")
+                                        push_image(gh_token, gh_repo, p, rp)
+                                    except Exception as e:
+                                        st.warning(f"Saved locally, GitHub push failed: {e}")
+                                st.session_state["_admin_img_action"] = {
+                                    "type": "toggle_crop", "crop_key": crop_key,
+                                    "msg": "Crop saved.",
+                                }
+                                st.rerun()
+                    return st.file_uploader(f"Add image to {label.lower()}", type=["png", "jpg", "jpeg"],
+                                            key=f"admin_upl_{prefix}_{q_id}")
+
+                uploaded_q_img = _image_block("Question images", "_admin_q_images", "q")
+                uploaded_a_img = _image_block("Answer images",   "_admin_a_images", "a")
+
+                # ── Save button ────────────────────────────────────────────────
+                st.markdown("---")
+                if st.button("Save & Push to GitHub", type="primary", use_container_width=True):
+                    crop_dir = _APP_DIR / "data" / "crops"
+                    crop_dir.mkdir(parents=True, exist_ok=True)
+
+                    final_q_images = list(st.session_state._admin_q_images)
+                    if uploaded_q_img:
+                        fname     = f"admin_q{q_id}_{int(_time.time())}.png"
+                        img_local = crop_dir / fname
+                        img_local.write_bytes(uploaded_q_img.getvalue())
+                        final_q_images.append(f"data/crops/{fname}")
+                        if gh_token and gh_repo:
+                            push_image(gh_token, gh_repo, img_local, f"data/crops/{fname}")
+
+                    final_a_images = list(st.session_state._admin_a_images)
+                    if uploaded_a_img:
+                        fname     = f"admin_a{q_id}_{int(_time.time())}.png"
+                        img_local = crop_dir / fname
+                        img_local.write_bytes(uploaded_a_img.getvalue())
+                        final_a_images.append(f"data/crops/{fname}")
+                        if gh_token and gh_repo:
+                            push_image(gh_token, gh_repo, img_local, f"data/crops/{fname}")
+
+                    st.session_state._admin_q_images = final_q_images
+                    st.session_state._admin_a_images = final_a_images
+
+                    admin_update_question(
+                        q_id, new_q_text,
+                        new_options if q_type == "multiple_choice" else None,
+                        final_q_images, new_video_links,
+                    )
+                    admin_update_answer(
+                        q_id,
+                        answer_text     = new_ans_text    if q_type != "multiple_choice" else None,
+                        correct_options = new_correct     if q_type == "multiple_choice" else None,
+                        explanation     = new_explanation,
+                        page_images     = final_a_images,
+                    )
+                    if new_vignette is not None:
+                        admin_update_vignette(q["case_id"], new_vignette)
+
+                    if gh_token and gh_repo:
+                        try:
+                            push_db(gh_token, gh_repo, DB_PATH)
+                            st.success("Saved and pushed to GitHub.")
+                        except Exception as e:
+                            st.warning(f"Saved locally, but GitHub push failed: {e}")
+                    else:
+                        st.success("Saved locally (configure GITHUB_TOKEN to also push to GitHub).")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
