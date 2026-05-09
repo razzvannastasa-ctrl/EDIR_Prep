@@ -712,7 +712,7 @@ def view_admin():
             if r["section"] == "mrq":
                 lbl = f"MRQ Group {r['case_number']}"
             else:
-                vig     = (r.get("clinical_vignette") or "").strip()
+                vig     = (r["clinical_vignette"] or "").strip()
                 preview = f" — {vig[:45]}" if vig else ""
                 lbl     = f"C{r['case_number']}{preview}"
             case_list.append((cid, lbl))
