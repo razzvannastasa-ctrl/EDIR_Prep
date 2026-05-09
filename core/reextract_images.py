@@ -10,6 +10,7 @@ Cost: same page images sent as a full import, but shorter prompts and
 """
 
 import json
+import re
 import time
 from collections import defaultdict
 from pathlib import Path
