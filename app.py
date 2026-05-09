@@ -684,17 +684,30 @@ def view_admin():
         return
 
     # ── Question selector ─────────────────────────────────────────────────────
-    row_by_id  = {r["id"]: dict(r) for r in rows}
-    label_by_id = {
-        r["id"]: f"[{r['section'].upper()}] Ch{r['chapter_number']} · Q{r['q_number']} — {r['question_text'][:80]}"
+    row_by_id = {r["id"]: dict(r) for r in rows}
+    q_ids     = [r["id"] for r in rows]
+    # Labels include case_number so duplicates across cases are distinguishable
+    labels    = [
+        f"[{r['section'].upper()}] Ch{r['chapter_number']} C{r['case_number']} Q{r['q_number']} — {r['question_text'][:70]}"
         for r in rows
-    }
-    q_ids = [r["id"] for r in rows]
-    sel_q_id = st.selectbox(
-        f"{len(rows)} questions", q_ids,
-        format_func=lambda qid: label_by_id.get(qid, str(qid)),
+    ]
+    n_rows = len(q_ids)
+
+    # Store/restore selection as an INDEX (0..n-1), not a q_id.
+    # Using indices guarantees the stored value is always unique and valid;
+    # q_ids as values caused Streamlit to match by label when restoring,
+    # which picked the wrong question when two shared the same label text.
+    raw_idx = st.session_state.get("admin_q_sel", 0)
+    cur_idx = raw_idx if isinstance(raw_idx, int) and 0 <= raw_idx < n_rows else 0
+
+    sel_idx  = st.selectbox(
+        f"{len(rows)} questions",
+        range(n_rows),
+        index=cur_idx,
+        format_func=lambda i: labels[i],
         key="admin_q_sel",
     )
+    sel_q_id = q_ids[sel_idx]
     q    = row_by_id[sel_q_id]
     q_id = sel_q_id
 
