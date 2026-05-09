@@ -669,14 +669,19 @@ def view_admin():
         return
 
     # ── Question selector ─────────────────────────────────────────────────────
-    q_labels = [
-        f"[{r['section'].upper()}] Ch{r['chapter_number']} · Q{r['q_number']} — {r['question_text'][:80]}"
+    row_by_id  = {r["id"]: dict(r) for r in rows}
+    label_by_id = {
+        r["id"]: f"[{r['section'].upper()}] Ch{r['chapter_number']} · Q{r['q_number']} — {r['question_text'][:80]}"
         for r in rows
-    ]
-    sel_idx = st.selectbox(f"{len(rows)} questions", range(len(q_labels)),
-                           format_func=lambda i: q_labels[i], key="admin_q_sel")
-    q   = dict(rows[sel_idx])
-    q_id = q["id"]
+    }
+    q_ids = [r["id"] for r in rows]
+    sel_q_id = st.selectbox(
+        f"{len(rows)} questions", q_ids,
+        format_func=lambda qid: label_by_id.get(qid, str(qid)),
+        key="admin_q_sel",
+    )
+    q    = row_by_id[sel_q_id]
+    q_id = sel_q_id
 
     def _admin_imgs(paths_json):
         return [p for p in json.loads(paths_json or "[]") if "crops" in p]
