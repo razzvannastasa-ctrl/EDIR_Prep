@@ -638,6 +638,21 @@ def view_admin():
 
     st.header("Admin Panel")
 
+    # ── Process pending image action (MUST run before any widget renders) ──────
+    _pending_msg = None
+    if "_admin_img_action" in st.session_state:
+        act = st.session_state.pop("_admin_img_action")
+        if act["type"] == "remove":
+            lst = st.session_state.get(act["state_key"], [])
+            st.session_state[act["state_key"]] = [x for j, x in enumerate(lst) if j != act["idx"]]
+            st.session_state.pop(act.get("crop_key", "___none___"), None)
+        elif act["type"] == "toggle_crop":
+            ck = act["crop_key"]
+            st.session_state[ck] = not st.session_state.get(ck, False)
+        _pending_msg = act.get("msg")
+    if _pending_msg:
+        st.success(_pending_msg)
+
     # ── GitHub config ─────────────────────────────────────────────────────────
     try:
         gh_token = st.secrets.get("GITHUB_TOKEN", "")
@@ -752,12 +767,6 @@ def view_admin():
     except ImportError:
         _cropper_ok = False
 
-    def _stay_and_rerun():
-        """Lock the selectbox to the current question then rerun."""
-        st.session_state["admin_q_sel"]      = q_id
-        st.session_state["_admin_loaded_qid"] = q_id
-        st.rerun()
-
     def _image_block(label: str, state_key: str, prefix: str):
         st.markdown(f"**{label}**")
         img_list = st.session_state[state_key]
@@ -778,14 +787,16 @@ def view_admin():
                     label_btn = "✕ crop" if cropping else "✂"
                     if st.button(label_btn, key=f"admin_crop_btn_{prefix}_{q_id}_{i}",
                                  help="Toggle crop editor"):
-                        st.session_state[crop_key] = not cropping
-                        _stay_and_rerun()
+                        st.session_state["_admin_img_action"] = {
+                            "type": "toggle_crop", "crop_key": crop_key,
+                        }
             with c3:
                 st.markdown("<br><br>", unsafe_allow_html=True)
                 if st.button("✕", key=f"admin_rm_{prefix}_{q_id}_{i}", help="Remove"):
-                    st.session_state[state_key] = [x for j, x in enumerate(img_list) if j != i]
-                    st.session_state.pop(crop_key, None)
-                    _stay_and_rerun()
+                    st.session_state["_admin_img_action"] = {
+                        "type": "remove", "state_key": state_key,
+                        "idx": i, "crop_key": crop_key,
+                    }
 
             # Inline cropper
             if _cropper_ok and p.exists() and st.session_state.get(crop_key, False):
@@ -803,9 +814,10 @@ def view_admin():
                             push_image(gh_token, gh_repo, p, repo_path)
                         except Exception as e:
                             st.warning(f"Saved locally, GitHub push failed: {e}")
-                    st.session_state[crop_key] = False
-                    st.success("Crop saved.")
-                    _stay_and_rerun()
+                    st.session_state["_admin_img_action"] = {
+                        "type": "toggle_crop", "crop_key": crop_key,
+                        "msg": "Crop saved.",
+                    }
 
         return st.file_uploader(f"Add image to {label.lower()}", type=["png", "jpg", "jpeg"],
                                 key=f"admin_upl_{prefix}_{q_id}")
