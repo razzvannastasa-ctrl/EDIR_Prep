@@ -76,10 +76,14 @@ def _migrate(conn):
         conn.execute("ALTER TABLE cases ADD COLUMN section TEXT NOT NULL DEFAULT 'core'")
     if "source" not in cols:
         conn.execute("ALTER TABLE cases ADD COLUMN source TEXT")
-        conn.execute("UPDATE cases SET source='Essential Guide' WHERE source IS NULL")
+    # Idempotent backfill — runs every startup to cover rows that were NULL
+    # because a previous migration run didn't commit the UPDATE.
+    conn.execute("UPDATE cases SET source='Essential Guide' WHERE source IS NULL")
+    conn.commit()
     cols_q = {r[1] for r in conn.execute("PRAGMA table_info(questions)").fetchall()}
     if "video_links" not in cols_q:
         conn.execute("ALTER TABLE questions ADD COLUMN video_links TEXT")
+    conn.commit()
 
 
 def has_data():
