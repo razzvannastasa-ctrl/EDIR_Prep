@@ -4,3 +4,4 @@ anthropic>=0.40.0
 pillow>=10.0.0
 streamlit-autorefresh>=0.0.1
 requests>=2.31.0
+streamlit-cropper>=0.3.0

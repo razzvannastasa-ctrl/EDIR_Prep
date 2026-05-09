@@ -740,45 +740,67 @@ def view_admin():
                                 key=f"admin_vl_{q_id}", label_visibility="collapsed")
     new_video_links = [v.strip() for v in vlinks_text.splitlines() if v.strip()]
 
-    # ── Question images ───────────────────────────────────────────────────────
-    st.markdown("**Question images**")
-    q_img_list = st.session_state._admin_q_images
-    for i, img_path in enumerate(list(q_img_list)):
-        p = Path(img_path) if Path(img_path).is_absolute() else _APP_DIR / img_path
-        c1, c2 = st.columns([5, 1])
-        with c1:
-            if p.exists():
-                st.image(str(p), width=260)
-            else:
-                st.caption(f"Missing: {img_path}")
-        with c2:
-            st.markdown("<br><br>", unsafe_allow_html=True)
-            if st.button("✕", key=f"admin_rm_qi_{q_id}_{i}", help="Remove this image"):
-                st.session_state._admin_q_images = [x for j, x in enumerate(q_img_list) if j != i]
-                st.rerun()
+    try:
+        from streamlit_cropper import st_cropper
+        from PIL import Image as _PILImage
+        _cropper_ok = True
+    except ImportError:
+        _cropper_ok = False
 
-    uploaded_q_img = st.file_uploader("Add image to question", type=["png", "jpg", "jpeg"],
-                                       key=f"admin_upl_q_{q_id}")
+    def _image_block(label: str, state_key: str, prefix: str):
+        st.markdown(f"**{label}**")
+        img_list = st.session_state[state_key]
+        for i, img_path in enumerate(list(img_list)):
+            p = Path(img_path) if Path(img_path).is_absolute() else _APP_DIR / img_path
+            crop_key = f"_admin_crop_{prefix}_{q_id}_{i}"
 
-    # ── Answer images ─────────────────────────────────────────────────────────
-    st.markdown("**Answer images**")
-    a_img_list = st.session_state._admin_a_images
-    for i, img_path in enumerate(list(a_img_list)):
-        p = Path(img_path) if Path(img_path).is_absolute() else _APP_DIR / img_path
-        c1, c2 = st.columns([5, 1])
-        with c1:
-            if p.exists():
-                st.image(str(p), width=260)
-            else:
-                st.caption(f"Missing: {img_path}")
-        with c2:
-            st.markdown("<br><br>", unsafe_allow_html=True)
-            if st.button("✕", key=f"admin_rm_ai_{q_id}_{i}", help="Remove this image"):
-                st.session_state._admin_a_images = [x for j, x in enumerate(a_img_list) if j != i]
-                st.rerun()
+            c1, c2, c3 = st.columns([5, 1, 1])
+            with c1:
+                if p.exists():
+                    st.image(str(p), width=260)
+                else:
+                    st.caption(f"Missing: {img_path}")
+            with c2:
+                st.markdown("<br><br>", unsafe_allow_html=True)
+                if _cropper_ok and p.exists():
+                    cropping = st.session_state.get(crop_key, False)
+                    label_btn = "✕ crop" if cropping else "✂"
+                    if st.button(label_btn, key=f"admin_crop_btn_{prefix}_{q_id}_{i}",
+                                 help="Toggle crop editor"):
+                        st.session_state[crop_key] = not cropping
+                        st.rerun()
+            with c3:
+                st.markdown("<br><br>", unsafe_allow_html=True)
+                if st.button("✕", key=f"admin_rm_{prefix}_{q_id}_{i}", help="Remove"):
+                    st.session_state[state_key] = [x for j, x in enumerate(img_list) if j != i]
+                    st.session_state.pop(crop_key, None)
+                    st.rerun()
 
-    uploaded_a_img = st.file_uploader("Add image to answer", type=["png", "jpg", "jpeg"],
-                                       key=f"admin_upl_a_{q_id}")
+            # Inline cropper
+            if _cropper_ok and p.exists() and st.session_state.get(crop_key, False):
+                src = _PILImage.open(str(p))
+                cropped = st_cropper(src, realtime_update=True, box_color="#C2185B",
+                                     key=f"admin_cropper_{prefix}_{q_id}_{i}")
+                st.image(cropped, caption="Preview", width=260)
+                if st.button("💾 Save crop", key=f"admin_save_crop_{prefix}_{q_id}_{i}",
+                             type="primary"):
+                    cropped.save(str(p))
+                    if gh_token and gh_repo:
+                        try:
+                            repo_path = img_path if not Path(img_path).is_absolute() else \
+                                img_path.replace(str(_APP_DIR).replace("\\", "/") + "/", "")
+                            push_image(gh_token, gh_repo, p, repo_path)
+                        except Exception as e:
+                            st.warning(f"Saved locally, GitHub push failed: {e}")
+                    st.session_state[crop_key] = False
+                    st.success("Crop saved.")
+                    st.rerun()
+
+        return st.file_uploader(f"Add image to {label.lower()}", type=["png", "jpg", "jpeg"],
+                                key=f"admin_upl_{prefix}_{q_id}")
+
+    uploaded_q_img = _image_block("Question images", "_admin_q_images", "q")
+    uploaded_a_img = _image_block("Answer images",   "_admin_a_images", "a")
 
     # ── Save button ───────────────────────────────────────────────────────────
     st.markdown("---")
