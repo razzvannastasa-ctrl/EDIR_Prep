@@ -196,12 +196,11 @@ def view_chapters():
         )
         return
 
-    # Source filter
+    # Source filter (shown whenever at least one source exists)
     sources = get_sources()
-    if len(sources) > 1:
+    if sources:
         src_opts  = ["All sources"] + sources
-        src_label = st.selectbox("Source", src_opts, key="study_source_sel",
-                                 label_visibility="collapsed")
+        src_label = st.selectbox("Source", src_opts, key="study_source_sel")
         st.session_state["study_source"] = None if src_label == "All sources" else src_label
     else:
         st.session_state["study_source"] = None
