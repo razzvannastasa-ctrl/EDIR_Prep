@@ -803,6 +803,7 @@ def view_admin():
                         st.session_state["_admin_img_action"] = {
                             "type": "toggle_crop", "crop_key": crop_key,
                         }
+                        st.rerun()
             with c3:
                 st.markdown("<br><br>", unsafe_allow_html=True)
                 if st.button("✕", key=f"admin_rm_{prefix}_{q_id}_{i}", help="Remove"):
@@ -810,6 +811,7 @@ def view_admin():
                         "type": "remove", "state_key": state_key,
                         "idx": i, "crop_key": crop_key,
                     }
+                    st.rerun()
 
             # Inline cropper
             if _cropper_ok and p.exists() and st.session_state.get(crop_key, False):
@@ -831,6 +833,7 @@ def view_admin():
                         "type": "toggle_crop", "crop_key": crop_key,
                         "msg": "Crop saved.",
                     }
+                    st.rerun()
 
         return st.file_uploader(f"Add image to {label.lower()}", type=["png", "jpg", "jpeg"],
                                 key=f"admin_upl_{prefix}_{q_id}")
