@@ -152,7 +152,7 @@ with st.sidebar:
     _menu_keys   = ["core_cases", "short_cases", "mrqs", "import_pdf", "admin"]
     _current_idx = _menu_keys.index(st.session_state.section)
 
-    _choice = st.radio("", _menu_labels, index=_current_idx, label_visibility="collapsed")
+    _choice = st.radio("Navigation", _menu_labels, index=_current_idx, label_visibility="collapsed")
     _chosen_key = _menu_keys[_menu_labels.index(_choice)]
 
     if _chosen_key != st.session_state.section:
@@ -715,7 +715,7 @@ def view_admin():
 
     if q_type == "multiple_choice":
         st.markdown("**Options** (one per line)")
-        opts_text   = st.text_area("", value="\n".join(options_raw), height=130,
+        opts_text   = st.text_area("Options list", value="\n".join(options_raw), height=130,
                                    key=f"admin_opts_{q_id}", label_visibility="collapsed")
         new_options = [o.strip() for o in opts_text.splitlines() if o.strip()]
 
@@ -736,7 +736,7 @@ def view_admin():
     # ── Video links ───────────────────────────────────────────────────────────
     st.markdown("**Video links** (one URL per line)")
     video_raw   = json.loads(q.get("video_links") or "[]")
-    vlinks_text = st.text_area("", value="\n".join(video_raw), height=80,
+    vlinks_text = st.text_area("Video links list", value="\n".join(video_raw), height=80,
                                 key=f"admin_vl_{q_id}", label_visibility="collapsed")
     new_video_links = [v.strip() for v in vlinks_text.splitlines() if v.strip()]
 
