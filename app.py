@@ -77,6 +77,7 @@ _DEFAULTS = {
     "case_active":    False,
     "attempt_id":     None,
     "ratings":        {},             # {q_id: 'got_it'|'partial'|'missed'}
+    "case_vignette":  "",
 }
 for _k, _v in _DEFAULTS.items():
     if _k not in st.session_state:
@@ -301,12 +302,6 @@ def view_case_start():
     else:
         st.header(f"Case {case['case_number']}  —  {st.session_state.ch_title}")
 
-    # Clinical vignette — not shown for MRQ sessions
-    if sec != "mrq":
-        st.subheader("Clinical Presentation")
-        vig = (case["clinical_vignette"] or "").strip()
-        st.info(vig if vig else "_No vignette available_")
-
     st.markdown(f"**{n_q} question{'s' if n_q != 1 else ''}** — work through all before time runs out.")
 
     st.markdown("---")
@@ -320,14 +315,15 @@ def view_case_start():
     with c_start:
         st.markdown("<br>", unsafe_allow_html=True)
         if st.button("▶  Start Case", type="primary", use_container_width=True):
-            st.session_state.questions    = [dict(q) for q in questions]
-            st.session_state.q_index      = 0
-            st.session_state.user_answers = {}
-            st.session_state.timer_start  = time.time()
-            st.session_state.case_active  = True
-            st.session_state.ratings      = {}
-            st.session_state.attempt_id   = None
-            st.session_state.core_view    = "question"
+            st.session_state.questions        = [dict(q) for q in questions]
+            st.session_state.q_index          = 0
+            st.session_state.user_answers     = {}
+            st.session_state.timer_start      = time.time()
+            st.session_state.case_active      = True
+            st.session_state.ratings          = {}
+            st.session_state.attempt_id       = None
+            st.session_state.core_view        = "question"
+            st.session_state.case_vignette    = (case["clinical_vignette"] or "").strip()
             st.rerun()
 
 
@@ -355,6 +351,11 @@ def view_question():
 
     # ── Left: question + answer input ─────────────────────────────────────────
     with col_q:
+        sec = _db_section()
+        if q_idx == 0 and sec != "mrq":
+            vig = st.session_state.get("case_vignette", "")
+            if vig:
+                st.info(vig)
         st.markdown(f"### Q{q['q_number']}")
         st.markdown(q["question_text"])
 
