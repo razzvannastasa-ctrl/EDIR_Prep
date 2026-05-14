@@ -2,7 +2,6 @@ import time
 import json
 import datetime
 from pathlib import Path
-from PIL import Image
 
 import streamlit as st
 from streamlit_autorefresh import st_autorefresh
@@ -138,12 +137,12 @@ def _load_images(paths_json: str | None) -> list[Path]:
         return []
 
 
-def _show_images(paths: list[Path], caption: str = "", zoom: float | None = None):
+def _show_images(paths: list[Path], caption: str = "", small: bool = False):
     for p in paths:
         if p.exists():
-            if zoom is not None:
-                w = int(Image.open(p).size[0] * zoom)
-                st.image(str(p), width=w, caption=caption)
+            if small:
+                col, _ = st.columns([1, 3])
+                col.image(str(p), use_container_width=True, caption=caption)
             else:
                 st.image(str(p), use_container_width=True, caption=caption)
             caption = ""   # only label the first one
@@ -507,7 +506,7 @@ def view_review():
             # Cropped clinical images for this question
             imgs = _load_images(q.get("page_images"))
             if imgs:
-                _show_images(imgs, zoom=0.25)
+                _show_images(imgs, small=True)
 
             # Video links
             video_links = json.loads(q.get("video_links") or "[]")
