@@ -211,7 +211,7 @@ its topic. If a section of text is front matter, an index, or non-educational pr
 
 Each MRQ is a standalone multiple-select question — no shared clinical vignette.
 Group the chapter content by topic; generate one cluster of related MRQs per topic.
-Aim for 5–12 questions per chapter when content is rich; generate fewer if the source is thin.
+Scale to content volume: ~3–4 questions per page of meaningful theory text; skip or reduce for image-only or sparse pages. Never pad to hit a target — generate fewer if the source is thin.
 
 1. **Question body** — one of:
    - Template A (image-based): "<Brief clinical context>.\n\nWhich of the following statements are correct regarding this image?"
