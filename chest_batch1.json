@@ -1,0 +1,372 @@
+[
+  {
+    "chapter_id": 4,
+    "chapter_match": "exact",
+    "source": "Core Radiology",
+    "section": "mrq",
+    "clinical_vignette": "",
+    "questions": [
+      {
+        "q_number": 1,
+        "question_text": "Regarding accessory pulmonary fissures, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The inferior accessory fissure is present in approximately 12% of patients and is more commonly seen in the right lung.",
+          "The azygos fissure is present in less than 1% of patients.",
+          "The azygos lobe is encased in its own visceral pleura only.",
+          "The left minor fissure separates the lingula from the left upper lobe and is present in approximately 8% of patients.",
+          "The superior accessory fissure is present in approximately 12% of patients."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 3],
+          "explanation": "The inferior accessory fissure divides the medial basal segment from the remaining basal segments and is present in approximately 12% of patients, with a right-sided predominance. The azygos fissure is an uncommon anatomical variant, found in fewer than 1% of patients, in which a portion of the apical right upper lobe is encased in its own parietal and visceral pleura — not visceral pleura alone. The left minor fissure, present in approximately 8% of patients, separates the lingula from the left upper lobe. The superior accessory fissure, which separates the superior and basal segments of the right lower lobe, is present in approximately 5% — not 12% — of patients.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 2,
+        "question_text": "Regarding mechanisms of atelectasis, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Obstructive atelectasis develops more rapidly when the patient breathes supplemental oxygen, as oxygen is absorbed from the alveoli more quickly than nitrogen.",
+          "Relaxation atelectasis is caused by surfactant deficiency.",
+          "In children, airway obstruction causes hyperexpansion of the affected side due to a ball-valve effect.",
+          "Cicatricial atelectasis results from architectural distortion of lung parenchyma by fibrosis.",
+          "Lobar atelectasis in an outpatient is most often caused by mucus plugging."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 3],
+          "explanation": "Obstructive atelectasis develops more rapidly with supplemental oxygen because oxygen is absorbed across the alveolar capillaries faster than nitrogen, accelerating alveolar collapse distal to the obstruction. In children, airway compliance allows a ball-valve effect so the obstructed lung hyperexpands rather than collapsing — the opposite of adult behaviour. Cicatricial atelectasis is volume loss from fibrotic architectural distortion of the lung parenchyma. Relaxation (passive) atelectasis results from mass effect of adjacent lesions such as a pleural effusion or pneumothorax — surfactant deficiency is the mechanism of adhesive atelectasis. In outpatients, lobar atelectasis should prompt exclusion of an obstructing central tumour rather than assumption of mucus plugging.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 3,
+        "question_text": "Regarding the radiological signs of atelectasis, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Displacement of the fissures is a direct sign of atelectasis.",
+          "Air bronchograms are absent when atelectasis is caused by central bronchial obstruction.",
+          "Mediastinal shift occurs away from the side of volume loss.",
+          "Indirect signs of atelectasis include elevation of the diaphragm, rib crowding, and hilar displacement.",
+          "Vascular crowding is an indirect sign of atelectasis."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 3],
+          "explanation": "Direct signs of atelectasis reflect actual lobar volume loss and include fissure displacement, plate-like or triangular opacity, and vascular crowding. Air bronchograms are absent when the cause is central bronchial obstruction, because no air enters the distal airways; they can be seen in compression (relaxation) atelectasis where the airway remains patent. Indirect signs arise from the effect of volume loss on adjacent structures and include diaphragm elevation, rib crowding, mediastinal shift, overinflation of adjacent lobes, and hilar displacement. Mediastinal shift occurs towards — not away from — the side of volume loss. Vascular crowding is a direct rather than indirect sign.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 4,
+        "question_text": "A chest radiograph demonstrates a veil-like opacity obscuring the left cardiac margin with a crescent of air lateral to the aortic arch. Which of the following statements are correct regarding this appearance?",
+        "q_type": "multiple_choice",
+        "options": [
+          "On the lateral view, the major fissure is displaced posteriorly.",
+          "The crescent of air lateral to the aortic arch represents the luftsichel sign.",
+          "The luftsichel sign represents the interface between the aorta and the hyperexpanded superior segment of the left lower lobe.",
+          "Air bronchograms are characteristically present when this appearance results from an obstructing neoplasm.",
+          "This pattern in an adult should raise concern for an underlying airway malignancy."
+        ],
+        "page_images": [{"page": 4, "img_index": 0}, {"page": 4, "img_index": 1}],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 4],
+          "explanation": "The luftsichel (air-sickle) sign is the crescent of lucency lateral to the aortic arch seen on the frontal radiograph of left upper lobe collapse, representing the interface between the aorta and the hyperexpanded superior segment of the left lower lobe as it fills the vacated space. On the lateral view, the major fissure is displaced anteriorly — not posteriorly — and the collapsed upper lobe appears as an anterior opacity. Air bronchograms are absent when an obstructing neoplasm is the cause, because no air reaches the distal airways. Any lobar collapse in an adult should raise concern for an underlying malignancy obstructing the airway.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 5,
+        "question_text": "A frontal chest radiograph demonstrates superior displacement of the minor fissure with a convex hilar mass creating a characteristic sign in right upper lobe collapse. Which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The reverse S sign of Golden is formed by the concave inferior margin of the displaced minor fissure and the convex margins of an obstructing hilar mass.",
+          "This sign is specific to right upper lobe collapse caused by mucus plugging.",
+          "An equivalent sign to the reverse S of Golden occurs in left upper lobe collapse.",
+          "The juxtaphrenic peak sign is a peridiaphragmatic triangular opacity that may be seen with upper lobe volume loss from any cause.",
+          "This sign is also known as the Golden S sign despite describing a reverse S configuration."
+        ],
+        "page_images": [{"page": 4, "img_index": 2}, {"page": 4, "img_index": 3}],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 3, 4],
+          "explanation": "The reverse S sign of Golden is produced by the junction of the concave inferior margin of the superiorly displaced minor fissure with the convex margins of an obstructing hilar mass, forming an S-shape on the frontal radiograph; it is widely known as the Golden S sign despite describing a reverse S. The sign implies an obstructing mass — mucus plugging does not produce a convex hilar margin. Because the left lung has no minor fissure, there is no structural equivalent of this sign in left upper lobe collapse. The juxtaphrenic peak sign — a peridiaphragmatic triangular opacity from diaphragmatic traction by an inferior accessory fissure or inferior pulmonary ligament — can accompany upper lobe volume loss from any cause, not exclusively right upper lobe collapse.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 6,
+        "question_text": "Frontal and lateral radiographs demonstrate triangular opacities at the lower zones with apices directed towards the hila. Which of the following statements are correct regarding lower lobe collapse?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Left lower lobe collapse produces a triangular retrocardiac opacity on the frontal radiograph.",
+          "The flat waist sign in left lower lobe collapse results from posterior shift of hilar structures causing cardiac rotation.",
+          "In right lower lobe collapse, the right heart border is preserved whilst the medial right hemidiaphragm is obscured.",
+          "Lower lobe collapse is well seen on the lateral radiograph as the lobes collapse posterolaterally.",
+          "Mucus plugging causing lobar atelectasis is least common in the left upper lobe."
+        ],
+        "page_images": [{"page": 5, "img_index": 0}, {"page": 5, "img_index": 1}, {"page": 5, "img_index": 2}, {"page": 5, "img_index": 3}],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 2, 4],
+          "explanation": "Left lower lobe collapse produces the characteristic triangular retrocardiac opacity on the frontal radiograph. The flat waist sign describes flattening of the left heart border due to posterior hilar shift and resultant cardiac rotation. In right lower lobe collapse, volume loss predominantly affects the medial basal segments, obscuring the medial right hemidiaphragm while the right heart border — formed by the right middle lobe — remains visible. Lower lobe collapse is poorly seen on the lateral view because the lobes collapse medially rather than posterolaterally. Mucus plugging is most common in the lower lobes and least common in the left upper lobe.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 7,
+        "question_text": "A frontal chest radiograph shows a subtle right-sided opacity. Which of the following statements are correct regarding right middle lobe atelectasis?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Right middle lobe atelectasis is typically conspicuous on the frontal radiograph.",
+          "Silhouetting of the right heart border on the frontal view may be the only clue to right middle lobe collapse.",
+          "On the lateral radiograph, right middle lobe atelectasis appears as a triangular opacity projecting anteriorly over the mid-heart.",
+          "Obstruction of the bronchus intermedius causes combined right middle and right lower lobe collapse.",
+          "Combined right middle and lower lobe collapse obscures both the right heart border and the right hemidiaphragm."
+        ],
+        "page_images": [{"page": 6, "img_index": 0}, {"page": 6, "img_index": 1}],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 3, 4],
+          "explanation": "Right middle lobe atelectasis can be subtle on the frontal radiograph; silhouetting of the right heart border by the collapsed medial segment may be the only visible finding. The lateral radiograph reliably shows a triangular opacity projecting anteriorly over the mid-heart. Obstruction of the bronchus intermedius simultaneously collapses both the right middle and right lower lobes, causing obscuration of both the right heart border and the right hemidiaphragm, with a linear superior margin directed toward the hilum.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 8,
+        "question_text": "A noncontrast CT demonstrates a rounded peripheral opacity in the right lower lobe with adjacent pleural effusion and curved vessels leading into the lesion. Which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "An adjacent pleural abnormality is mandatory for the diagnosis of round atelectasis.",
+          "Round atelectasis most commonly occurs in the anterior upper lobes.",
+          "The comet tail sign represents curved pulmonary vessels and bronchi leading into the focus of atelectasis.",
+          "Volume loss in the affected lobe is one of five required diagnostic criteria for round atelectasis.",
+          "The opacity must be round or elliptical in morphology to satisfy the diagnostic criteria."
+        ],
+        "page_images": [{"page": 6, "img_index": 2}],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 3, 4],
+          "explanation": "Adjacent pleural abnormality is not optional — it is a mandatory criterion; round atelectasis cannot be diagnosed in its absence. All five criteria must be simultaneously satisfied: adjacent pleural abnormality, peripheral opacity in contact with the pleura, round or elliptical morphology, volume loss in the affected lobe, and the comet tail sign. The comet tail sign represents curved pulmonary vessels and bronchi being drawn into the focus of collapsed lung. Round atelectasis most commonly involves the posterior lower lobes, not the anterior upper lobes, and is typically associated with adjacent pleural effusion, thickening, or plaques.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 9,
+        "question_text": "Regarding the secondary pulmonary lobule (SPL), which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The centrilobular artery is often visible on CT as a faint dot.",
+          "Pulmonary veins and lymphatics run in the periphery of each secondary pulmonary lobule within the interlobular septa.",
+          "The centrilobular bronchus is normally visible on CT.",
+          "Each secondary pulmonary lobule measures between 3 and 5 cm in diameter.",
+          "Thickening of the interlobular septa suggests pathological enlargement of either the venous or lymphatic spaces."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 4],
+          "explanation": "The centrilobular artery is often identifiable on CT as a faint central dot, while the centrilobular bronchus is not normally visible. Pulmonary veins and lymphatics travel in the periphery of each lobule within the interlobular septa, which is why septal thickening indicates enlargement of these structures. Each secondary pulmonary lobule measures between 1 and 2.5 cm in diameter — not 3 to 5 cm — and contains generally 12 or fewer acini. Interlobular septal thickening on CT implies pathological enlargement of either the venous or lymphatic spaces within the septa.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 10,
+        "question_text": "A contrast-enhanced CT demonstrates bilateral dense opacities with bilateral air bronchograms, through which pulmonary vessels are not visible. Which of the following statements are correct regarding consolidation?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Ground glass opacification and consolidation are interchangeable terms applicable to both chest radiograph and CT.",
+          "Consolidation is histologically due to complete filling of affected alveoli with blood, pus, water, or cells.",
+          "Pulmonary vessels remain visible through consolidation on unenhanced CT.",
+          "An air bronchogram represents a lucent air-filled bronchus visible within consolidation when the airway remains patent.",
+          "Consolidation causes silhouetting of adjacent structures on conventional radiography."
+        ],
+        "page_images": [{"page": 8, "img_index": 0}],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 3, 4],
+          "explanation": "Consolidation is histologically defined by complete filling of the alveoli, rendering pulmonary vessels invisible on unenhanced CT. Ground glass opacification (GGO) is a distinct pattern in which vessels remain visible through the hazy opacity; GGO is generally a CT-specific descriptor, while consolidation can be described on both radiograph and CT — they are not interchangeable terms. An air bronchogram indicates a patent airway and represents the lucent, air-filled bronchus visible within the opacified lung. Consolidation silhouettes adjacent structures on conventional radiography by sharing the same radiodensity as surrounding soft tissue.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 11,
+        "question_text": "Regarding the differential diagnosis of acute pulmonary consolidation, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Pneumonia is by far the most common cause of acute pulmonary consolidation.",
+          "Adult respiratory distress syndrome (ARDS) is caused by decreased capillary permeability in critically ill patients.",
+          "Aspiration may produce heterogeneous consolidation due to mucus plugging.",
+          "Pulmonary oedema causes consolidation only when mild.",
+          "Pulmonary haemorrhage is a recognised cause of acute consolidation."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 4],
+          "explanation": "Pneumonia is by far the most common cause of acute consolidation. Aspiration produces heterogeneous consolidation because mucus plugging from aspirated secretions creates uneven airspace opacification. Pulmonary haemorrhage — whether primary or from aspiration of blood — fills alveoli with blood and is a recognised acute cause. ARDS results from increased — not decreased — capillary permeability leading to non-cardiogenic pulmonary oedema. Severe pulmonary oedema may cause frank consolidation — not only mild oedema.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 12,
+        "question_text": "Regarding the differential diagnosis of chronic pulmonary consolidation, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Organising pneumonia produces central perihilar consolidation.",
+          "Adenocarcinoma, previously termed bronchioloalveolar carcinoma, is a recognised cause of chronic consolidation.",
+          "Chronic eosinophilic pneumonia causes alveolar filling predominantly in an upper-lobe distribution.",
+          "Lymphoma is a recognised cause of chronic consolidation.",
+          "Organising pneumonia represents a specific response to a single causative organism."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 3],
+          "explanation": "Adenocarcinoma can spread through the airspaces producing persistent consolidation — it was previously classified as bronchioloalveolar carcinoma. Chronic eosinophilic pneumonia is characterised by upper-lobe predominant alveolar eosinophil infiltration. Lymphoma can manifest as pulmonary consolidation. Organising pneumonia is a nonspecific response to lung injury — not a reaction to a specific organism — and characteristically produces peripheral rounded and nodular consolidation from granulation polyps filling the distal airways, not central perihilar opacification.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 13,
+        "question_text": "A noncontrast CT demonstrates diffuse hazy opacity through which pulmonary vasculature and bronchi remain visible. Which of the following statements are correct regarding ground glass opacification (GGO)?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Ground glass is generally a term reserved for CT rather than chest radiography.",
+          "The histological basis of GGO includes partial alveolar filling, alveolar wall thickening, or reduced aeration.",
+          "GGO is defined by obliteration of the underlying pulmonary vessels.",
+          "In the subacute phase of pulmonary haemorrhage, GGO evolves to show peripheral sparing and a crazy paving pattern.",
+          "Atypical pneumonias such as viral infections and Pneumocystis jiroveci pneumonia more commonly cause GGO than consolidation."
+        ],
+        "page_images": [{"page": 9, "img_index": 0}],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 3, 4],
+          "explanation": "Ground glass opacification is defined by a hazy increase in attenuation through which pulmonary vessels and bronchi remain identifiable — obliteration of these structures defines consolidation, not GGO. GGO is generally a CT descriptor; on chest radiography the equivalent is nonspecific haziness. Histologically, GGO reflects partial alveolar filling, alveolar wall thickening, or reduced aeration. In the subacute phase of pulmonary haemorrhage, ground glass clears centrally, leaving peripheral sparing and a crazy paving appearance. Viral pneumonia and Pneumocystis jiroveci pneumonia more commonly produce GGO than the lobar consolidation typical of bacterial infection.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 14,
+        "question_text": "Regarding the differential diagnosis of acute ground glass opacification on CT, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The differential diagnosis of acute GGO overlaps substantially with that of acute consolidation, as entities causing partial alveolar filling may progress to complete filling.",
+          "Pulmonary haemorrhage in the acute phase characteristically presents as peripheral consolidation rather than ground glass.",
+          "Pulmonary oedema causing acute GGO typically has a central or dependent distribution.",
+          "Hypersensitivity pneumonitis in the subacute phase may present with GGO, centrilobular nodules, and mosaic attenuation.",
+          "Adult respiratory distress syndrome does not produce ground glass opacification."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 3],
+          "explanation": "The differentials for acute GGO and acute consolidation overlap substantially because many processes causing partial alveolar filling can progress to complete filling; they are not distinct lists. Pulmonary haemorrhage in the acute phase fills alveoli with blood, appearing as pure GGO rather than peripheral consolidation — the latter is more characteristic of the organising phase. Pulmonary oedema in GGO shows characteristic central or dependent distribution from gravitational redistribution of fluid. Hypersensitivity pneumonitis in the subacute phase causes GGO together with centrilobular nodules and mosaic attenuation from small airway inflammation. ARDS — caused by increased capillary permeability — is a well-recognised cause of bilateral acute GGO, not an exclusion from this differential.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 15,
+        "question_text": "A CT demonstrates smooth bilateral thickening of the interlobular septa in a patient with breathlessness. Which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Sarcoidosis is the most common cause of smooth interlobular septal thickening.",
+          "Smooth interlobular septal thickening results from conditions that dilate the pulmonary veins.",
+          "Pulmonary oedema is the most common cause of smooth interlobular septal thickening.",
+          "Smooth and nodular interlobular septal thickening share the same differential diagnosis.",
+          "Lymphangitic carcinomatosis is a recognised cause of smooth interlobular septal thickening."
+        ],
+        "page_images": [{"page": 10, "img_index": 3}],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 4],
+          "explanation": "Smooth interlobular septal thickening arises from dilation of pulmonary veins or lymphatics within the septa; conditions causing pulmonary venous hypertension are the primary drivers. Pulmonary oedema is by far the most common cause. Lymphangitic carcinomatosis is a recognised but less common cause; it more characteristically produces nodular or irregular thickening from tumour infiltrating the lymphatics, though it may contribute to the differential for smooth thickening. Smooth and nodular thickening have different differentials: smooth reflects venous enlargement, while nodular reflects lymphatic infiltration. Sarcoidosis rarely causes interlobular septal thickening and is not a common cause of this smooth pattern.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 16,
+        "question_text": "A CT demonstrates nodular thickening of the interlobular septa. Which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Nodular or irregular interlobular septal thickening is typically caused by processes that infiltrate the peripheral lymphatics.",
+          "Lymphangitic carcinomatosis represents tumour spread through the lymphatics.",
+          "Sarcoidosis is the most common cause of nodular interlobular septal thickening.",
+          "Crazy paving describes interlobular septal thickening superimposed on ground glass opacification.",
+          "In pulmonary alveolar proteinosis, the interlobular septal thickening results from lymphatics taking up the same proteinaceous material that fills the alveoli."
+        ],
+        "page_images": [{"page": 11, "img_index": 0}, {"page": 11, "img_index": 1}],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 3, 4],
+          "explanation": "Nodular or irregular septal thickening results from infiltration of the peripheral lymphatics by tumour cells or inflammatory material, rather than simple dilatation. Lymphangitic carcinomatosis — representing haematogenous tumour spread into the lymphatic system — is a key cause. Sarcoidosis rarely causes septal thickening; its nodules are typically perilymphatic (subpleural and peribronchial) without significant septal change. Crazy paving — interlobular septal thickening superimposed on ground glass — resembles a paved stone path and was first described in pulmonary alveolar proteinosis. In PAP, both the ground glass opacification and the septal thickening arise from accumulation of proteinaceous material in the alveoli and lymphatics respectively.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 17,
+        "question_text": "Regarding the differential diagnosis of the crazy paving pattern on CT, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Pulmonary alveolar proteinosis is almost always associated with a crazy paving pattern.",
+          "The crazy paving pattern is uncommonly caused by pulmonary oedema.",
+          "Pulmonary oedema is the most common cause of the crazy paving pattern.",
+          "Pneumocystis jiroveci pneumonia is a recognised cause of crazy paving.",
+          "Crazy paving is pathognomonic for pulmonary alveolar proteinosis."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 3],
+          "explanation": "Pulmonary alveolar proteinosis is the entity in which crazy paving was first described, and PAP is almost invariably associated with this pattern. However, crazy paving is not pathognomonic for PAP — pulmonary oedema is the most common cause overall. Pneumocystis jiroveci pneumonia is a well-recognised infectious cause, particularly in immunocompromised patients. Other recognised causes include pulmonary haemorrhage, ARDS, adenocarcinoma, and lipoid pneumonia. Because of this broad differential, clinical context and additional imaging features are required to distinguish among causes.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 18,
+        "question_text": "Regarding centrilobular micronodules and the tree-in-bud pattern, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Tree-in-bud opacification represents a perilymphatic distribution of micronodules.",
+          "Centrilobular nodules characteristically spare the subpleural regions of the lung.",
+          "Mycobacterial infections are a recognised cause of tree-in-bud opacification.",
+          "Haematogenous metastases typically produce a tree-in-bud pattern.",
+          "Hypersensitivity pneumonitis in the subacute phase produces centrilobular nodules."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 4],
+          "explanation": "Centrilobular nodules are centred on the secondary lobule and characteristically spare the subpleural regions and pleural surfaces, distinguishing them from perilymphatic nodules that cluster at the pleura and bronchovascular bundles. Tree-in-bud is a centrilobular pattern — not perilymphatic — reflecting filling of centrilobular bronchioles and their branches with mucus, pus, or fluid from endobronchial spread. Mycobacterial infections are a well-recognised cause of tree-in-bud through endobronchial spread. Hypersensitivity pneumonitis in the subacute phase causes centrilobular nodules from peribronchiolar granulomatous inflammation. Haematogenous metastases do not follow the airways; they produce a random, uniformly distributed nodule pattern.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 19,
+        "question_text": "Regarding perilymphatic and random distributions of pulmonary micronodules, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Sarcoidosis and pneumoconiosis are recognised causes of a perilymphatic nodule distribution.",
+          "A random, uniform distribution of micronodules suggests haematogenous dissemination.",
+          "Perilymphatic nodules characteristically have a uniform distribution throughout the lung.",
+          "Disseminated mycobacterial and fungal infections may produce a random micronodule distribution.",
+          "Lymphangitic carcinomatosis produces a random rather than perilymphatic nodule distribution."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 3],
+          "explanation": "Sarcoidosis and pneumoconiosis both produce nodules that follow the lymphatic routes — along subpleural regions, bronchovascular bundles, and interlobular septa — giving a non-uniform perilymphatic distribution. Lymphangitic carcinomatosis also produces perilymphatic nodules, not a random distribution. A random, uniformly distributed nodule pattern implies haematogenous seeding, seen in metastatic disease, miliary tuberculosis, and disseminated fungal infections. The key distinction is subpleural relationship: perilymphatic nodules cluster at the pleura (non-uniform), while random nodules are uniformly distributed without subpleural predominance.",
+          "page_images": []
+        }
+      }
+    ]
+  }
+]

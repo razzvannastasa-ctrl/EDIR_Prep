@@ -1,0 +1,155 @@
+=== Ch1 q_pages=(1, 4) ===
+[P1]
+1
+Which of the following imaging features do you recognize in this image?
+(Multiple answers are correct.)
+	1.	 Hydro-air levels
+	2.	 Pneumatosis
+	3.	 Segmental bowel wall thickening
+	4.	 Strictures with upstream dilations
+	5.	 Extramural abscesses
+?	Q4
+Give the most likely diagnosis.
+______________________________________________________________________
+______________________________________________________________________
+______________________________________________________________________
+_________________________________
+?	Q5
+Regarding Crohn?s disease (CD), which of the following statements are correct?
+(Multiple answers are correct.)
+	1.	 Layers of bowel wall may be involved.
+	2.	 The presence of skip lesions and ulcers is characteristic.
+	3.	 The rectum and sigmoid colon are the most frequently involved intestinal tracts.
+	4.	 Toxic megacolon is the most frequent complication of CD.
+	5.	 Imaging findings of mesenteric inflammation include ?Coomb sign? and 
+?creeping fat sign.?
+CORE
+A 70-year-old woman
+5
+5 Presenting with abdominal distension and pain.
+20
+	
+P. Ricci and G. Bonito
+https://avxhm.se/blogs/hill0
+
+[P2]
+1
+ 
+?	Q1
+Describe the key findings.
+____________________
+Q markers found: []
+CORE occurrences: [(1005, "'reeping fat sign.”\\n\\x07CORE\\nA 70-year-old woman'")]
+
+=== Ch2 q_pages=(8, 14) ===
+[P8]
+2
+CORE
+C1
+A 42-year-old female
+5
+5 Palpable mass in the left breast at 3?o?clock position.
+ 
+.??
+. RCC mammography
+51
+Breast Radiology
+https://avxhm.se/blogs/hill0
+
+[P9]
+2
+ 
+.??
+. LCC mammography
+52
+	
+M. M. Mu?i?
+https://avxhm.se/blogs/hill0
+
+[P10]
+2
+ 
+.??
+. RMLO
+53
+Breast Radiology
+https://avxhm.se/blogs/hill0
+
+[P11]
+2
+ 
+.??
+. LMLO
+?	Q1
+Describe the mammography findings and advise about the appropriate next step.
+______________________________________________________________________
+______________________________________________________________________
+______________________________________________________________________
+_________________________________
+54
+	
+M. M. Mu?i?
+https://avxhm.se/blogs/hill0
+
+[P12]
+2
+?	Q2
+US is performed.
+ 
+Describe the abnormality.
+______________________________________________________________________
+______________________________________________________________________
+______________________________________________________________________
+_________________________________
+?	Q3
+How would you grade it according to BIRADS?
+______________________________________________________________________
+________________________________________________________
+Q markers found: []
+CORE occurrences: [(8, "'[P8]\\n2\\n\\x07CORE\\n\\x07C1\\nA 42-year-old f'")]
+
+=== Ch3 q_pages=(18, 19) ===
+[P18]
+3
+?	Q1
+Differential diagnosis includes.
+(Multiple answers may be correct.)
+	1.	 Pericardial diverticulum
+	2.	 Asymmetric basal dilated cardiomyopathy
+	3.	 Post-traumatic inferior wall bulging
+	4.	 Inferior wall LV aneurysm
+	5.	 Inferior wall LV pseudoaneurysm
+?	Q2
+What is the most likely diagnosis?
+(Only one option is correct.)
+	1.	 Asymmetric basal dilated cardiomyopathy
+	2.	 Endocardial diverticulum with thrombus
+	3.	 Acute myocardial infarction with microvascular obstruction
+	4.	 Chronic post-infarction aneurysm with thrombus
+	5.	 Hypertrophic cardiomyopathy
+?	Q3
+What course of action would you take next?
+(Multiple answers may be correct.)
+	1.	 No need for further imaging or follow-up
+	2.	 Surgical excision without follow-up
+	3.	 Biopsy
+	4.	 Follow-up of the lesion in order to establish indication for further surgery
+	5.	 Direct application of an intraventricular patch
+CORE
+A 38-year-old female
+5
+5 With palpitations and shortness of breath on exertion
+70
+	
+O. Bronov
+https://avxhm.se/blogs/hill0
+
+[P19]
+3
+ 
+?	Q1
+Describe the main abnormal findings in the chest plain films.
+_____________________________________________________________________
+________________________________
+Q markers found: []
+CORE occurrences: [(892, "'aventricular patch\\n\\x07CORE\\nA 38-year-old femal'")]

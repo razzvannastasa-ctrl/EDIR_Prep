@@ -8,6 +8,7 @@ Usage:
 """
 
 import json
+import hashlib
 import re
 import sys
 from pathlib import Path
@@ -22,13 +23,16 @@ from core.database import (
     insert_case,
     insert_question,
     insert_answer,
+    update_case_original_answer_pages,
+    update_case_article_summary,
 )
 
 CROPS_DIR = Path(__file__).parent.parent / "data" / "crops"
+ANSWER_PAGES_DIR = CROPS_DIR / "original_answer_pages"
 
 
-def _slug(text: str) -> str:
-    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")[:30]
+def _slug(text: str, max_len: int = 30) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")[:max_len]
 
 
 def _extract_image(doc, page_idx: int, img_index: int, out_path: Path) -> bool:
@@ -41,13 +45,17 @@ def _extract_image(doc, page_idx: int, img_index: int, out_path: Path) -> bool:
             return False
         xref = images[img_index][0]
         pix = fitz.Pixmap(doc, xref)
-        if pix.colorspace and pix.colorspace.n > 3:
+        if pix.alpha:
+            pix = fitz.Pixmap(pix, 0)
+        if not pix.colorspace or pix.colorspace.n != 3:
             pix = fitz.Pixmap(fitz.csRGB, pix)
         try:
             pix.save(str(out_path))
         except Exception:
             # Handles separation/spot-colour channels (e.g. CMYK-Black) that fail
             # direct PNG save — convert to RGB first.
+            if pix.alpha:
+                pix = fitz.Pixmap(pix, 0)
             pix = fitz.Pixmap(fitz.csRGB, pix)
             pix.save(str(out_path))
         return True
@@ -75,6 +83,65 @@ def _resolve_images(img_refs: list, doc, source_slug: str) -> list[str]:
     return filenames
 
 
+def _page_index_from_ref(ref) -> int | None:
+    if isinstance(ref, bool):
+        return None
+    if isinstance(ref, int):
+        return ref
+    if isinstance(ref, str):
+        try:
+            return int(ref.strip())
+        except ValueError:
+            return None
+    if isinstance(ref, dict):
+        return _page_index_from_ref(ref.get("page"))
+    return None
+
+
+def _render_original_answer_pages(page_refs: list, doc, source_slug: str, case_id: int) -> list[str]:
+    """Render full source answer pages for the case-level review expander."""
+    if not page_refs:
+        return []
+    if not doc:
+        print("  Warning: original_answer_pages present but no readable PDF was supplied; skipping")
+        return []
+
+    ANSWER_PAGES_DIR.mkdir(parents=True, exist_ok=True)
+
+    filenames = []
+    seen = set()
+    for ref in page_refs:
+        page_idx = _page_index_from_ref(ref)
+        if page_idx is None:
+            print(f"  Warning: invalid original_answer_pages ref: {ref!r}")
+            continue
+        if page_idx in seen:
+            continue
+        seen.add(page_idx)
+
+        if page_idx < 0 or page_idx >= len(doc):
+            print(f"  Warning: original answer page {page_idx} out of range for PDF with {len(doc)} pages")
+            continue
+
+        fname = f"{source_slug}_case_{case_id}_answer_p{page_idx:03d}.jpg"
+        out_path = ANSWER_PAGES_DIR / fname
+        rel_path = f"data/crops/original_answer_pages/{fname}"
+
+        if not out_path.exists():
+            try:
+                pix = doc[page_idx].get_pixmap(matrix=fitz.Matrix(2.0, 2.0), alpha=False)
+                if pix.colorspace and pix.colorspace.n > 3:
+                    pix = fitz.Pixmap(fitz.csRGB, pix)
+                pix.save(str(out_path), jpg_quality=92)
+            except Exception as e:
+                print(f"  Warning: could not render original answer page {page_idx}: {e}")
+                continue
+
+        filenames.append(rel_path)
+
+    return filenames
+
+
 def insert_cases(cases: list, pdf_path: str | None = None) -> tuple[int, int]:
     """Insert cases into DB. Returns (cases_inserted, questions_inserted)."""
     doc = None
@@ -89,6 +156,7 @@ def insert_cases(cases: list, pdf_path: str | None = None) -> tuple[int, int]:
                 print(f"Warning: could not open PDF — images will not be extracted: {e}")
 
     CROPS_DIR.mkdir(parents=True, exist_ok=True)
+    ANSWER_PAGES_DIR.mkdir(parents=True, exist_ok=True)
 
     n_cases = 0
     n_questions = 0
@@ -100,6 +168,9 @@ def insert_cases(cases: list, pdf_path: str | None = None) -> tuple[int, int]:
         section       = case.get("section", "core")
         vignette      = case.get("clinical_vignette", "")
         source_slug   = _slug(source)
+        if pdf_path:
+            pdf_hash = hashlib.sha1(str(Path(pdf_path).resolve()).encode("utf-8")).hexdigest()[:8]
+            source_slug = f"{source_slug}_{_slug(Path(pdf_path).stem, 50)}_{pdf_hash}"
 
         if not chapter_id:
             print(f"  [{i+1}] Skipping case with no chapter_id")
@@ -110,6 +181,12 @@ def insert_cases(cases: list, pdf_path: str | None = None) -> tuple[int, int]:
             chapter_id, case_number, vignette,
             section=section, source=source, chapter_match=chapter_match,
         )
+        original_answer_pages = _render_original_answer_pages(
+            case.get("original_answer_pages", []), doc, source_slug, case_id
+        )
+        if original_answer_pages:
+            update_case_original_answer_pages(case_id, original_answer_pages)
+        update_case_article_summary(case_id, case.get("article_summary"))
         n_cases += 1
 
         questions = case.get("questions", [])

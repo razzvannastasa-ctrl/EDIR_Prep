@@ -81,6 +81,10 @@ def _migrate(conn):
     conn.execute("UPDATE cases SET source='Essential Guide' WHERE source IS NULL")
     if "chapter_match" not in cols:
         conn.execute("ALTER TABLE cases ADD COLUMN chapter_match TEXT")
+    if "original_answer_pages" not in cols:
+        conn.execute("ALTER TABLE cases ADD COLUMN original_answer_pages TEXT")
+    if "article_summary" not in cols:
+        conn.execute("ALTER TABLE cases ADD COLUMN article_summary TEXT")
     conn.commit()
     cols_q = {r[1] for r in conn.execute("PRAGMA table_info(questions)").fetchall()}
     if "video_links" not in cols_q:
@@ -385,3 +389,30 @@ def admin_update_answer(
 def admin_update_vignette(case_id: int, vignette: str):
     with get_conn() as conn:
         conn.execute("UPDATE cases SET clinical_vignette=? WHERE id=?", (vignette, case_id))
+
+
+def update_case_original_answer_pages(case_id: int, page_images: list[str]):
+    """Store case-level screenshots of the source answer page(s)."""
+    with get_conn() as conn:
+        cols = {r[1] for r in conn.execute("PRAGMA table_info(cases)").fetchall()}
+        if "original_answer_pages" not in cols:
+            conn.execute("ALTER TABLE cases ADD COLUMN original_answer_pages TEXT")
+        conn.execute(
+            "UPDATE cases SET original_answer_pages=? WHERE id=?",
+            (json.dumps(page_images), case_id),
+        )
+
+
+def update_case_article_summary(case_id: int, article_summary: str | None):
+    """Store a case-level Markdown summary for article-style MRQ sessions."""
+    summary = (article_summary or "").strip()
+    if not summary:
+        return
+    with get_conn() as conn:
+        cols = {r[1] for r in conn.execute("PRAGMA table_info(cases)").fetchall()}
+        if "article_summary" not in cols:
+            conn.execute("ALTER TABLE cases ADD COLUMN article_summary TEXT")
+        conn.execute(
+            "UPDATE cases SET article_summary=? WHERE id=?",
+            (summary, case_id),
+        )

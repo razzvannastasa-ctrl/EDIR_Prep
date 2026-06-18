@@ -120,13 +120,13 @@ def _submit_case():
 
 _APP_DIR = Path(__file__).parent
 
-def _load_images(paths_json: str | None) -> list[Path]:
+def _load_images(paths_json: str | None, *, crops_only: bool = True) -> list[Path]:
     if not paths_json:
         return []
     try:
         paths = []
         for p in json.loads(paths_json):
-            if "crops" not in p:
+            if crops_only and "crops" not in p:
                 continue  # skip full-page fallbacks, only show cropped clinical images
             pp = Path(p)
             if not pp.is_absolute():
@@ -444,6 +444,13 @@ def view_review():
 
     questions  = st.session_state.questions
     attempt_id = st.session_state.attempt_id
+    case_row = get_case(st.session_state.case_id)
+    article_summary = ""
+    if case_row and "article_summary" in case_row.keys():
+        article_summary = (case_row["article_summary"] or "").strip()
+    original_answer_pages = []
+    if _db_section() in ("core", "sc") and case_row and "original_answer_pages" in case_row.keys():
+        original_answer_pages = _load_images(case_row["original_answer_pages"], crops_only=False)
 
     for q in questions:
         q_id     = q["id"]
@@ -503,6 +510,11 @@ def view_review():
                     st.markdown("**Explanation**")
                     st.markdown(ans_row["explanation"])
 
+                answer_imgs = _load_images(ans_row["page_images"] if ans_row else None)
+                if answer_imgs:
+                    st.markdown("**Answer Images**")
+                    _show_images(answer_imgs, small=True)
+
             # Cropped clinical images for this question
             imgs = _load_images(q.get("page_images"))
             if imgs:
@@ -541,6 +553,14 @@ def view_review():
                     if attempt_id:
                         save_rating(attempt_id, q_id, "missed")
                     st.rerun()
+
+    if article_summary:
+        with st.expander("Article summary", expanded=False):
+            st.markdown(article_summary)
+
+    if original_answer_pages:
+        with st.expander("Original answer page", expanded=False):
+            _show_images(original_answer_pages, small=True)
 
 
 def _new_book_import_tab(import_type: str) -> None:
