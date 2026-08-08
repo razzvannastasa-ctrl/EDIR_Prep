@@ -1,0 +1,15 @@
+chapter_number,chapter_title,core_cases,short_cases,total_cases
+1,Abdominal Radiology,202,262,492
+2,Breast Radiology,101,142,264
+3,Cardiac Radiology,135,105,252
+4,Chest and Thorax Radiology,116,171,315
+5,Genitourinary Radiology,161,236,419
+6,Head and Neck,88,140,251
+7,Interventional and Vascular Radiology,102,111,247
+8,Musculoskeletal Radiology,139,219,386
+9,Neuroradiology,158,177,364
+10,Pediatric Radiology,161,238,427
+11,"Safety in Radiology (Radiation, MRI, Ultrasound, Interventional Procedures, and Contrast Media)",1,6,14
+12,"Physics, Principles of Imaging Techniques, and Informatics",6,19,35
+13,Communication and Management,0,0,12
+14,Hybrid Imaging,6,44,65

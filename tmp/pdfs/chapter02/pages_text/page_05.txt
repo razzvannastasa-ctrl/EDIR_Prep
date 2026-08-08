@@ -1,0 +1,86 @@
+74
+75
+The analytical model is divided into three distinct logical steps: 1) strategic analysis, 2) strategy formulation 
+(generation and choice) and 3) strategic planning, communication and implementation. As illustrated in 
+Figure 2.4, performance measurement and control provides a feedback loop from the strategic planning, 
+communication and implementation step into the initial analysis. In practical terms, this is the basis for a 
+yearly (or even quarterly) strategy review cycle.
+The first step in the analytical model is strategic analysis, and the starting point for this is to analyse the 
+national association’s past performance. This is sometimes referred to as situation and performance analysis. 
+It is important to start with past performance because strategy should not ignore the association’s current 
+situation. If, for example, an association is suffering from a lack of good sporting results at elite level, that 
+issue must be addressed in the strategy formulation process. If it is not, there is a risk that the strategy will 
+be detached from the relevant context. 
+Once the association’s current situation has been assessed, the external analysis is performed as part of step 1. 
+The purpose of the external analysis is to identify the relevant stakeholders and their preferences and interests. 
+This is important because strategies cannot work without this information. External analysis also serves to 
+identify trends, opportunities and threats.
+The third part of step 1 is the internal analysis, where the association’s strengths and weaknesses are assessed. 
+This involves looking at the resources and capabilities the organisation possesses or controls. This is not to be 
+confused with the overall performance assessment carried out in the first step: one looks at the performance, 
+while the other focuses on potential. 
+All three types of analysis in step 1 involve identifying insights and ideas for how the organisation can improve, 
+which come into play in the options stage.
+Figure 2.4: Key elements of a strategic management system
+Strategic analysis
+Strategic planning, 
+communication & 
+implementation 
+Strategy formulation (generation & choice)
+External 
+analysis
+Strategy options
+Vision 
+& 
+SMART goals
+Planning, 
+communication & 
+implementation of 
+the chosen strategy
+Situation & 
+performance 
+analysis
+Domain selection 
+strategy 
+(choice of focus)
+Domain navigation 
+strategy 
+(choice of initiatives)
+Internal 
+analysis
+Performance measurement & control
+During the second of the three steps – strategy formulation – SMART goals (described in Section 4.1) are 
+defined along with initiatives to meet them. As will be described in detail below, goals are domain-specific. 
+A domain is an area within the national association that is relevant to the organisation’s mission. As small, 
+complex organisations, national associations cannot focus on improving all domains all the time. Part of the 
+strategy formulation process is therefore to choose which domains to focus on. We refer to this as the domain 
+selection strategy. Then, the association needs to define a set of initiatives aimed at achieving the goals for 
+each of the chosen domains. We refer to the choice of initiatives as domain navigation.
+In the final step, covering strategic planning, communication and implementation, the strategic plan is drafted 
+and communicated, resources are allocated to the initiatives chosen and performance measurement and 
+control systems are designed. As seen from Figure 2.4, these control systems then feed back to the situation 
+and performance analysis so that the process can be started over again and the strategy updated if results 
+do not meet expectations.
+	> 3. Strategic analysis
+As discussed above, strategic management by national associations involves formulating goals, then designing 
+initiatives and allocating resources to successfully achieve them.
+A strategic management system will work best if these goals and initiatives are based on a profound 
+understanding of the association’s external environment and an impartial appraisal of its internal resources 
+and capabilities. Many strategies fail because they do not properly take into account the various internal 
+and external factors that could adversely affect their outcomes. However, like organisations in other areas, 
+national associations can use a structured and thorough process of analysis to arrive at a useful understanding 
+of the environment in which they operate.
+Strategic analysis can be thought of as the groundwork that needs to be carried out before effective strategies 
+can be formulated and put into practice. This analysis comprises four broad and interconnected parts – 
+situation and performance analysis, external analysis, internal analysis and the potential identification of ideas 
+for strategies. This section introduces these parts and the various tools that can be used for each of them.
+	> 3.1. Situation and performance analysis
+The starting point for any strategy management (or review) process is an assessment of the association’s 
+current situation, within the broader context of its overarching goals laid down in the association’s mission 
+statement and statement of values, which are described further on.
+Situation and performance analysis helps management to define the overall scope of the strategy formulation 
+process, in terms of both the issues it needs to address and the duration of the resulting strategic plan. It 
+involves defining the organisational context in which the strategy formulation process needs to operate, 
+analysing the association’s past performance and studying the problems and challenges that need to be solved.
+CHAPTER 2: STRATEGIC MANAGEMENT
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT

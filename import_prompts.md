@@ -749,6 +749,22 @@ Index starts at printed p.223 / 0-based PDF p.209.
 - The book is built for multiple-choice exam preparation, so many passages naturally support MRQs. Still avoid low-value recall if the point cannot be used for image interpretation, diagnosis, protocol choice, staging, complication recognition, or management.
 - Use source-grounded distractors from adjacent same-chapter topics, especially `THIS vs THAT` comparisons. Do not import outside radiology facts just to make a distractor.
 
+### Distractor quality
+- Every incorrect option must be a credible misconception for a prepared radiology candidate: use the wrong member of a source comparison, a nearby diagnosis with overlapping imaging features, a realistic protocol/staging threshold, or a plausible anatomy/localisation error supported by the same source batch.
+- Do not make an option wrong chiefly by adding giveaway language such as `always`, `never`, `every`, `all`, `only`, `none`, `cannot`, `impossible`, `guaranteed`, or `unrelated`.
+- Do not merely soften an absolute term (`always` -> `usually`, for example). Rewrite the complete distractor around a specific competing concept and re-check that it remains false against the cited page.
+- Keep wrong options parallel to the correct options in clinical register, length, specificity, and grammatical form. Avoid absurd claims, category errors, joke answers, and combinations that can be rejected without radiology knowledge.
+- Audit distractors question by question against the answer explanation and source page. A distractor must not become partly true after editing, and no unselected option may state a source-supported truth.
+
+### Question-level provenance and original answer pages
+- Every MRQ must include a structured `source_locator`, for example:
+  `{"file": "Crack the CORE exam Volumul 1.pdf", "pdf_pages": [261], "book_pages": [262]}`.
+- `pdf_pages` are 1-based PDF-viewer pages. `book_pages` are printed page numbers using the volume-specific mappings above.
+- Map each question to the exact page supporting its correct answer, not merely to the batch or chapter range. Validate the question, correct options, and explanation against that page.
+- Render that exact full PDF page as a legible JPEG in `data/crops/original_answer_pages/` and store its repo-relative path in question-level `original_answer_pages`.
+- The rendered source page is answer-review material: keep it out of `page_images` and `answer.page_images`, so it appears only in the collapsed **Original answer page** expander after answer feedback and cannot leak the answer before submission.
+- Reuse a rendered page asset when several questions cite the same page. Verify every stored asset exists, opens correctly, and corresponds to the cited PDF page.
+
 ### Image handling
 - This PDF is OCR over full-page scans. PyMuPDF typically exposes one large full-page image object per page (~1240 x 1650 px), not separate clean clinical figure crops.
 - Default to **text-only MRQs** with empty `page_images` and `answer.page_images`.
@@ -1438,7 +1454,29 @@ for p in [page_list]:
         print(f'  [{i}] xref={img[0]} size={pix.width}x{pix.height}')
 ```
 
+### Question provenance and original answer pages
+- Every Core Radiology MRQ must include question-level `source_locator` with the split PDF filename,
+  one-based PDF page number, and printed book page number.
+- Every Core Radiology MRQ must include question-level `original_answer_pages` containing a rendered
+  full-page image of the exact source page supporting the correct answer. This page is displayed in the
+  collapsed **Original answer page** expander after feedback in Learning, Custom, and review flows.
+- Select the answer page from the current import batch, not merely the highest lexical match anywhere in
+  the organ-system chapter. If the explanation genuinely spans two pages, include both; otherwise use one.
+- The source page must support every correct option and the explanation. Do not use a page that contains
+  only the question image when the supporting teaching text is on an adjacent page.
+
 ### Question generation
+- **No test-wise distractors:** Reject distractors whose falsity is telegraphed by words such as `always`,
+  `never`, `every`, `all`, `only`, `none`, `impossible`, `cannot`, `automatically`, `regardless`,
+  `identical`, or equivalent sweeping wording. Do not merely exchange these for softer synonyms such as
+  `usually`, `rarely`, `primarily`, or `most`; that can make a false option ambiguous. Replace the entire
+  distractor with a specific, source-grounded same-domain claim whose error is a meaningful distinction
+  (wrong entity attribution, phase, compartment, sequence, distribution, threshold, staging category, or
+  management implication). Established technical names such as the linear no-threshold model are exempt.
+- **Distractor validation:** For each false option, state internally which exact source fact disproves it.
+  If that contradiction cannot be located on the cited page or a named adjacent passage in the same batch,
+  rewrite the distractor. A distractor must remain false after removing any absolute qualifier; otherwise it
+  is relying on test-taking cues rather than knowledge.
 - The book's bullet-point format maps naturally to MRQ options: each bullet is a directly testable statement.
 - **Radiology skill focus:** MRQs should primarily test radiological reasoning, image interpretation,
   protocol selection, anatomy, differential diagnosis, staging, and management implications. Do not turn

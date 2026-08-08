@@ -1,0 +1,717 @@
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT
+
+
+
+• UEFA (2020e). UEFA President Aleksander Čeferin: ‘Purpose over Profit. That is the key’. Retrieved
+  on 14 August 2020 from https://www.uefa.com/insideuefa/about-uefa/news/025b-0f8e7606d4fa-
+  999c03488462-1000--uefa-president-aleksander-ceferin-purpose-over-profit-that-is-t/
+• UEFA (2021). UEFA Toolbox in Football Management.
+• UEFA Direct (2020). The Importance of Social Return on Investment, 183, pp. 30–31.
+• United Nations Department of Economic and Social Affairs (May 2020). The impact of COVID-19 on
+  sport, physical activity and well-being and its effects on social development. Policy Brief, 73.
+• Wills, G., Tacon, R., & Addesa, F. (2020). Uncertainty of outcome, team quality or star players? What
+  drives TV audience demand for UEFA Champions League football? European Sport Management
+  Quarterly, DOI: 10.1080/16184742.2020.1836010.
+
+
+
+
+                                                                                                                                   Chapter 1
+
+                                                                                                                                   The organisation of
+                                                                                                                                   world football
+                                                                                                                                   Sean Hamil
+                                                                                                                                   Birkbeck Sports Business Centre
+                                                                                                                                   Birkbeck College
+                                                                                                                                   University of London
+
+                                                                                                          WE CARE ABOUT FOOTBALL
+
+
+
+
+                                                    40
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                         CHAPTER 1: THE ORGANISATION OF WORLD FOOTBALL
+
+
+
+Football is one of the few truly worldwide phenomena. It is also one of the most organised, structured as it           It is a fundamental principle of any sports competition economy that, when producing any sporting contest,
+is in the form of a global hierarchical pyramid.                                                                       at any level, a significant degree of cooperation is required between the various competitors to stage a
+                                                                                                                       match or organise a league competition (Neale, 1964). Similarly, in order to have a steady pool of players
+Our first purpose here is to describe the organisational structure of world football, focusing first on the            for professional competitions, either national or international, there must be a strong culture of grassroots
+International Football Association Board (IFAB), which regulates the rules of football, then on the roles of           participation, which also drives spectators’ interest in watching professional football. So, an interdependent
+FIFA and UEFA (the game’s world and European governing bodies respectively), and finally on the other five             relationship exists between elite professional football and mass participation at grassroots level. In summary,
+continental football confederations – the Asian Football Confederation (AFC), the Confederación Sudamericana           each stakeholder in the football ecosystem is, in some way, dependent on the others for its own success.
+de Fútbol (CONMEBOL), the Confédération Africaine de Football (CAF), the Confederation of North, Central
+American and Caribbean Association Football (CONCACAF) and the Oceania Football Confederation (OFC).                   Historically, the key benefit of the global football pyramid has been to provide a stable operating and regulatory
+                                                                                                                       environment for football development and competitions. FIFA only recognises one national association and
+Second, we will explain how football’s organisational structure has enabled its global expansion, examine              one league pyramid per country and is responsible for drawing up a coordinated international match calendar
+how the system continues to evolve in order to take account of new stakeholders in the football ecosystem              each year, which facilitates the efficient operation of complementary international club and national team
+and, finally, identify the critical challenges facing the successful management of that ecosystem.                     competitions. Critically, it has been the maintenance of the integrated football pyramid with the agreement
+                                                                                                                       of all of football’s key stakeholders that has helped it to develop into the world’s most popular participation
+The first uniform football regulations were agreed in England in 1863, when The Football Association (The FA)          and spectator sport. Meanwhile, this has also given rise to a number of hugely successful commercial
+was formed. The IFAB then convened for the first time on 2 June 1886 (IFAB, n.d.). It was to draw up a uniform         revenue-generating activities, from which national associations have benefited. Such initiatives include the
+international code, reflecting the need for a consistent set of rules to allow the development of international        promotion of participatory, spectator and commercial interest in football at domestic level, together with
+football between the four ‘home nations’ of the United Kingdom, via The FA, the Scottish Football Association (SFA),   solidarity projects paid for with the operating surpluses of international competitions, such as the UEFA
+the Football Association of Wales (FAW) and what is now the Irish Football Association (IFA) in Northern Ireland.      European Football Championship, the UEFA Champions League and the FIFA World Cup.
+
+FIFA was founded in 1904 and joined the IFAB in 1913. So, the formation of the IFAB, and later FIFA,                   It is important to note that the global sports ecosystem is not static. We are now in an era of globalising
+established an international dimension to football’s development very early in the sport’s history, as well            markets, which has ushered in globalising regulatory frameworks, which have an impact on sport’s traditional
+as an interdependence between national associations and international stakeholders. This relationship also             autonomy. Within Europe, the creation of the single European market has been the key driver for this process.
+facilitated the development of a particular feature of sporting competition: the release of players to national        As a result, new highly influential stakeholders have emerged, and their impact needs to be managed to
+teams by clubs as a form of solidarity. This made it possible to organise parallel club and national team              maintain an equilibrium in the sports system.
+competitions through a system of cooperation for mutual benefit between clubs, national associations,
+regional confederations and FIFA.                                                                                      A good illustration of the emergence of new stakeholders was the European Court of Justice ruling in the
+                                                                                                                       Jean-Marc Bosman case that the football transfer system had unlawfully restricted the player’s right to full
+It is important to note that, as football developed, shadowed by the growth of its associated business                 labour market mobility (European Court of Justice, 1995). That decision put an end to foreign player quotas,
+stakeholders’ activities in everything from sports apparel to media broadcasting, it did so within the framework       both in UEFA competitions and subsequently in all domestic leagues within the European Union (EU).
+of a managed global ecosystem. The metaphor of a biological environment is a good one, since the global                Consequently, players could move between EU countries at the end of their contracts without a
+football ecosystem evolves as new stakeholders emerge and needs to be kept in balance in order to bring                transfer/tribunal fee being due. This principle was then quickly applied in domestic leagues.
+maximum benefits to all the stakeholders.
+                                                                                                                       That decision, which had not been anticipated by European football, led to the rapid internationalisation of
+FIFA sits at the apex of this global ecosystem, above the six broadly regional confederations, which it recognises     football’s labour market and accelerated the explosion in professional players’ wages (which, some would
+(FIFA, September 2020, Articles 22 and 23), although they are not actually FIFA members. Each of these                 argue, financially destabilised European football for a while). Critically, the ruling also meant that the EU
+confederations organises its own national team and club competitions for its individual national associations,         institutions were now key stakeholders in the European football ecosystem, and needed to be taken into
+which are also members of FIFA. The confederations organise their own leagues, which are contested by                  account if equilibrium was to be maintained.
+clubs from the various countries.
+
+
+
+
+                                                        42                                                                                                                    43
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                     CHAPTER 1: THE ORGANISATION OF WORLD FOOTBALL
+
+
+
+A standard element in any business strategy process is the concept of ‘stakeholder mapping’ (Whittington et al.,   > 1. The role of the IFAB
+2019, pp. 396–401). The idea is that successful organisations must constantly monitor their environment
+and adjust their strategies to match the changing stakeholders, both internally and externally.                    At the heart of football’s status as the pre-eminent global sport lies the fact that the game is governed by
+                                                                                                                   a set of playing rules that are easy to understand and universal in their application. It is this combination
+UEFA’s stakeholders can be seen in Figure 1.1 (adapted from UEFA, 2005, p. 30). What this diagram demonstrates     of simplicity and universality, combined with the strong athletic appeal of the game itself, that has helped
+is that the range of active stakeholders in the football ecosystem goes well beyond industry actors such as        football to become the world’s leading participation and spectator sport, played and watched in every corner
+FIFA, national associations, domestic leagues and clubs; it also incorporates sporting partners such as the        of the globe. It is this same combination that drives the interest of key commercial stakeholders, such as
+European governing bodies of other team sports and the Olympic movement, as well as external partners              media businesses and sports apparel companies. The efficient management of the rules of the game has
+such as business and government.                                                                                   therefore played a critical role not only in the development of football as a participation sport, but also in
+                                                                                                                   its commercial success, which then allows football’s various governing bodies to redistribute revenue to the
+                                                    COACHES                                                        game’s grassroots in the form of solidarity payments.
+                                                       &
+                                                    REFEREES
+
+                                                                                                                   The rules of football are the preserve of the IFAB and are set out in the Laws of the Game (IFAB, 2020). Any
+                                                                                                                   national association can propose rule changes, but a three-quarters majority of IFAB members is required for
+                                     CLUBS                       LEAGUES
+                                                                                                                   any amendment to the Laws of the Game to be passed. Historically, the IFAB has introduced rule changes with
+                                                                                                                   great care and discretion, so the Laws of the Game have evolved conservatively over time. One example of
+                                                                                                                   a successful, and very influential, innovation was the introduction of the back-pass rule in 1992, which was
+                          MEDIA                    NATIONAL
+                                                                               EUROPEAN
+                                                                                                                   introduced in order to penalise overly defensive play, while a more recent innovation was the introduction
+                      & COMMERCIAL
+                         PARTNERS                                                UNION
+                                                                                                                   of video assistant referees (VAR) in 2018 (FIFA.com, 3 March 2018).
+
+                                                    UEFA                                                           A key point to note is that IFAB decisions on the Laws of the Game can also have other implications. For
+                                                                                                                   example, in some other sports (such as rugby union and basketball) physical advertising on the field of play
+                     SUPPORTERS                                           PLAYERS                                  is allowed, whereas football’s Law 1 (The Field of Play) specifically bans advertising on the pitch. In football,
+                           &                                                    &
+                       VOLUNTEERS               ASSOCIATIONS                  AGENTS                               the game itself is seen as sacrosanct, and therefore the primary consideration. This approach – the primacy
+                                                                                                                   of sporting imperatives over commercial interests – is articulated in Article 2(1)(g) of the UEFA Statutes (UEFA,
+                                                                                                                   July 2020), which states that one of UEFA’s objectives is “to ensure that sporting values always prevail over
+                                                                                                                   commercial interests”. This distinguishes the governance of football from the more overtly commercial
+                                   LOCAL             FIFA
+                                   PUBLIC
+                                                     &
+                                                                       NGOs                                        approach adopted in some other sports.
+                                 AUTHORITIES
+                                                   OTHER
+                                               CONFEDERATIONS
+                                                                                                                   In summary, the effective governance and custodianship of the Laws of the Game by the IFAB has played a
+                                                                                                                   critical role in football’s status as the pre-eminent global sport, and the way this governance role is managed
+                                                                                                                   has significant commercial implications.
+
+                                                                                                                   > 2. The role of FIFA
+  Figure 1.1: UEFA’s stakeholders                                                                                  FIFA is a not-for-profit association headquartered in Zurich and governed by the Swiss Civil Code. It has 211
+                                                                                                                   member associations (FIFA.com, n.d. (a)), each of which has one vote at the FIFA Congress, regardless of its
+                                                                                                                   population size or economic power. Its overarching goal, as enshrined in its statutes, is:
+As stated above, the primary purpose of this chapter is to explain how world football is organised. The
+ecosystem metaphor is particularly powerful here because the degree of interdependence between key                        “To improve the game of football constantly and promote it globally in the light of its unifying,
+stakeholders is much higher in the sports ecosystem than in most other sectors of the economy. This is                    educational, cultural and humanitarian values, particularly through youth and development programmes”
+because globalisation has introduced new and often unpredictable forces and stakeholders into the sports                  (FIFA, September 2020, Article 2(a))
+ecosystem and their impact needs to be constantly evaluated through strategic analysis. Effective policies
+can then be developed in response.                                                                                 Developing the game of football worldwide is therefore FIFA’s primary strategic objective.
+
+
+
+
+                                                      44                                                                                                                 45
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                 CHAPTER 1: THE ORGANISATION OF WORLD FOOTBALL
+
+
+
+> 2.1. FIFA and the Olympic movement                                                                             A major change to the format of the FIFA World Cup was announced in 2017, when the FIFA Council (see
+                                                                                                                 below) approved a decision to expand the event to a 48-team tournament from 2026. As of that tournament,
+Football is integrated into the wider global sports community by virtue of the fact that it is listed in the     the group stage will comprise 16 groups of three, with the top two teams from each group advancing to a
+Olympic Charter (Olympic.org, 2020) as a recognised Olympic sport, and FIFA is one of the international sports   32-team knockout stage (FIFA.com, 10 January 2017).
+federations that comprises the Olympic movement. Since 1992, most players in the men’s Olympic football
+competition have had to be under 23 years of age, with only three players over the age of 23 allowed per         As a not-for-profit organisation with a primary objective of developing football worldwide, FIFA’s biggest
+squad, so the tournament is now effectively an Under-23 World Cup.                                               single item of expenditure over the 2015–18 period, after operating expenses and the cost of organising
+                                                                                                                 competitions, was – unsurprisingly – football development and education, with such spending totalling
+> 2.2. FIFA as a competition organiser, developer and promoter of football globally                              $1.67bn and accounting for 31.1% of its overall expenditure (FIFA, 2020, p. 21).
+
+FIFA is perhaps best known for the competitions it runs, notably the FIFA World Cup, which is one of the         Historically, the chief engines of FIFA’s football programme were the Goal Programme and the Financial
+biggest sporting events in the world. The 2018 tournament was held in Russia and won by France, and the          Assistance Programme. However, at the 66th FIFA Congress in Mexico City in May 2016, the then newly
+2022 FIFA World Cup will take place in Qatar. The tournament’s global significance can be seen in the fact       elected FIFA president, Gianni Infantino, introduced the FIFA Forward programme, which represented a
+that the 2018 FIFA World Cup reached 3.57 billion viewers (FIFA.com, 21 December 2018).                          complete overhaul of FIFA’s football development programmes (FIFA.com, n.d. (b)). FIFA Forward seeks to
+                                                                                                                 provide 360-degree, tailor-made support for football development in each of FIFA’s member associations
+The 2018 World Cup generated total income of $5.36bn for FIFA (FIFA, 2020, p. 34), derived predominantly         and the six confederations, incorporating a significant increase in financial support and enhanced evaluation
+from the sale of broadcasting and sponsorship rights, but the tournament also enjoyed very high stadium          and auditing processes. The second cycle of FIFA Forward (FIFA Forward 2.0) started on 1 January 2019 and
+attendance figures, with crowds averaging 98.2% of stadium capacity (FIFA, 2020, p. 34).                         will run until 31 December 2022.
+
+The event is also a huge money-spinner, generating a profit (i.e. revenue minus expenses) of $3.53bn in          As well as the World Cup, FIFA also organises a range of other competitions (see Table 1.2). Almost all of
+2018 (FIFA, 2020, p. 34), a surplus used to finance FIFA’s wider activities over the four-year cycle between     these run at a loss, but are financed and organised by FIFA as part of its wider football development role.
+World Cups. FIFA’s total revenue over the 2015–18 period was $6.42bn (FIFA, 2020, p. 17), which shows
+the extent of FIFA’s commercial rights exploitation activities.                                                   Men’s competitions                           Women’s competitions                         Others
+
+Table 1.1 below shows how the places at the 2022 FIFA World Cup will be distributed among the various                                                                                                       FIFA Interactive
+                                                                                                                  FIFA World Cup                               FIFA Women’s World Cup
+regional confederations.                                                                                                                                                                                    World Cup
+
+                                                                                                                  FIFA U-20 World Cup                          FIFA U-20 Women’s World Cup
+  Confederation/host country                     Places        Total member associations
+                                                                                                                  FIFA U-17 World Cup                          FIFA U-17 Women’s World Cup
+  AFC                                            4.5           46
+                                                                                                                  FIFA Club World Cup                          Women’s Olympic Football Tournament
+  CAF                                            5             54
+                                                                                                                                                               Women’s Youth Olympic Futsal
+  CONCACAF                                       3.5           35                                                 FIFA Futsal World Cup
+                                                                                                                                                               Tournament
+  CONMEBOL                                       4.5           10                                                 FIFA Beach Soccer World Cup
+  OFC                                            0.5           11                                                 Men’s Olympic Football Tournament
+  UEFA                                           13            55                                                 Men’s Youth Olympic Futsal Tournament
+  Host country                                   1             1                                                  Blue Stars/FIFA Youth Cup
+Note: Teams in confederations with half a place enter play-offs to determine who will qualify.
+
+   Table 1.1: Geographical breakdown of places at the 2022 FIFA World Cup                                          Table 1.2: FIFA competitions
+
+
+
+
+                                                                     46                                                                                               47
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                        CHAPTER 1: THE ORGANISATION OF WORLD FOOTBALL
+
+
+
+> 2.3. FIFA’s regulatory functions                                                                                    Table 1.3 shows how FIFA and UEFA’s responsibilities overlap.
+
+FIFA, as the governing body of world football, has a number of important regulatory roles, which it performs           FIFA’s exclusive areas                        Overlapping areas             UEFA’s exclusive areas
+in cooperation with the regional confederations and national associations:                                             of responsibility                             of responsibility             of responsibility
+
+                                                                                                                                                                                                   Competitions between
+    1. Ensuring compliance with the Laws of the Game, as laid down by the IFAB;                                                                                      Promotion and                 representative national teams at
+                                                                                                                       Laws of the Game (IFAB)
+                                                                                                                                                                     development of football       European level (UEFA European
+    2. Regulating player intermediaries (or ‘agents’, as they are commonly known);                                                                                                                 Football Championship, etc.)
+
+    3. Regulating players’ status and transfers, which includes, critically, regulating the international player                                                                                  Club competitions at European
+                                                                                                                                                                     Political matters relating
+                                                                                                                       International match calendar                                                level (UEFA Champions League,
+        transfer system using its TMS system (FIFA.com, n.d. (c));                                                                                                   to national associations
+                                                                                                                                                                                                   UEFA Europa League, etc.)
+
+    4. Ensuring, in cooperation with the confederations, that football is free from political interference by         Competitions between representative
+                                                                                                                                                                                                   Club licensing and financial
+        governments, e.g. interference in the election of national association officials (FIFA, September 2020,        national teams at world level (FIFA           Refereeing matters
+                                                                                                                                                                                                   fair play
+        Article 19);                                                                                                   World Cup, etc.)
+
+                                                                                                                       Club competitions at world level (FIFA
+    5. Ensuring that there is only one football association and one league structure per member country,                                                            Football kit                  Licensing of coaches
+                                                                                                                       Club World Cup)
+        thereby guaranteeing the operational integrity of the global football pyramid (FIFA, September 2020,
+        Article 22(3)(e));                                                                                             Status and transfer of players                Safety and security
+
+                                                                                                                       Relationship with the International
+    6. Regulating and protecting the health of national team competitions, whereby clubs are compelled to                                                           Fight against doping
+                                                                                                                       Olympic Committee
+        release players who are called up for national team competitions unless they are injured;
+                                                                                                                       Player intermediaries/agents                  Fight against match-fixing
+    7. Through the FIFA Foundation, established in 2018 as an independent entity, helping to foster social
+                                                                                                                       Match agents (organisers)
+        change around the world and supporting the renovation and reconstruction of damaged or destroyed
+        sports infrastructure worldwide.
+                                                                                                                        Table 1.3: FIFA and UEFA’s regulatory responsibilities
+UEFA is European football’s governing body. Article 51bis(4) of the UEFA Statutes (UEFA, July 2020) shows
+how the relationship between FIFA and UEFA is intended to operate in practice and offers an indication of
+the way in which FIFA’s relationship with the other five regional confederations operates:                            > 2.4. How FIFA is organised
+
+       “[E]ach Member Association [of UEFA] is responsible for deciding national issues, which may not be             FIFA’s supreme legislative body is the FIFA Congress (FIFA, September 2020, Articles 25 to 32), which comprises
+       delegated to the leagues. UEFA is responsible for deciding issues involving more than one Member               representatives of all 211 member associations. The FIFA Congress, is in particular, responsible for deciding
+       Association concerning its own territory. FIFA is responsible for deciding international issues involving      who should host FIFA World Cup tournaments.
+       more than one Confederation.”
+                                                                                                                      Together with the FIFA president, the FIFA Council (FIFA, September 2020, Articles 33 to 34) is the organisation’s
+FIFA and UEFA have overlapping responsibilities, since: (i) they both deal with the same sport; (ii) UEFA’s members   key decision-making body. It was established following an extensive reform process in order to clarify and
+are also FIFA members; (iii) they both seek to protect the same sporting values (the system of promotion and          improve the nature and quality of decision-making at FIFA. An Extraordinary Congress (FIFA.com, 26 February
+relegation; the fight against violence, corruption and match-fixing; the need to ensure that the Laws of the          2016) voted to disband the 24-member FIFA Executive Committee and replace it with the FIFA Council, which
+Game are not questioned by ordinary/arbitration courts; the fight against political/government interference           FIFA describes as “a non-executive, supervisory and strategic body that sets the vision for FIFA and global
+in football, etc.); (iv) they both ensure that football matches are always governed by the same standards             football” (FIFA.com, n.d. (d)).
+(rules on kits, refereeing standards, safety and security rules, infrastructure standards, etc.); and (v) they
+both ensure uniformity in the event of rules and regulations being infringed (e.g. anti-doping regulations).
+
+
+
+
+                                                       48                                                                                                                    49
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                                         CHAPTER 1: THE ORGANISATION OF WORLD FOOTBALL
+
+
+
+As of autumn 2016, the six regional confederations elect 36 of the 37 members of the FIFA Council, with the             sporting pyramid (based on the principle of sporting merit operationalised through the system of promotion
+other member – the FIFA president – being elected by the FIFA Congress. Each confederation must ensure                  and relegation), working in partnership with its member associations and FIFA.
+that it elects at least one female member.
+                                                                                                                        UEFA has long enjoyed positive and fruitful relationships with Europe’s political authorities. It has engaged
+The office of FIFA president is an executive position and therefore involves very considerable day-to-day               in dialogue with EU institutions and the Council of Europe on a wide variety of matters in order to defend
+management authority and influence (FIFA, September 2020, Article 35). Following FIFA’s reform process,                 football’s overall interests, safeguard the ethics of sport and promote good governance. This has often
+the FIFA president can serve a maximum of three four-year terms.                                                        resulted in European authorities giving valuable support to UEFA’s policies and initiatives, as in the case, for
+                                                                                                                        example, of UEFA’s rules on home-grown players, the collective selling of TV rights, financial fair play, and
+The decisions of the Congress, the Council and the president are implemented by FIFA’s general secretariat              UEFA’s efforts to tackle match-fixing and other abusive practices that undermine the integrity of sporting
+(FIFA, September 2020, Articles 36 to 37), under the direction of its secretary general.                                competitions and threaten athletes’ rights.
+
+> 2.5. A summary of FIFA’s purpose and activities                                                                       The landmark cooperation agreement that was, concluded by UEFA and the European Commission in 2014,
+                                                                                                                        which was renewed and extended in February 2018, is further evidence of UEFA’s desire to intensify its
+FIFA (i) plays an important role in organising and policing the rules of the game, in partnership with the IFAB;        cooperation with European authorities in key policy areas (UEFA.com, n.d. (a)).
+(ii) performs an important football development function through the FIFA Forward programme and the
+organisation of a range of international football competitions; (iii) generates large amounts of revenue from           > 3.1. How UEFA is organised
+the FIFA World Cup, enabling it to make substantial financial solidarity payments to its member associations;
+and (iv) performs important regulatory functions in cooperation with regional confederations and national               The framework through which UEFA operationalises its role as the governing body of European football is
+associations (FIFA.com, n.d. (e)). Its strategy for successfully performing these functions is set out in a strategic   set out in the UEFA Statutes (UEFA, July 2020). These inform the implementation of regulatory policy across
+plan entitled Making Football Truly Global: The Vision 2020–2023 (FIFA.com, n.d. (f)).                                  UEFA’s 55 member associations through the principle of subsidiarity, whereby the national associations
+                                                                                                                        implement the decisions of the UEFA Congress in a manner consistent with local conditions.
+> 3. The role of UEFA
+                                                                                                                        Figure 1.2 shows UEFA’s organisational structure. The most important institution in the organisation is the
+UEFA – the Union of European Football Associations – is one of the six regional confederations recognised               UEFA Congress (UEFA, July 2020, Articles 12 to 20), which elects the UEFA president, the UEFA Executive
+by FIFA (FIFA, September 2020, Article 22(1)). It was founded in Basel, Switzerland, in 1954 with two specific          Committee and European members of the FIFA Council.
+purposes: (i) acting as a representative of European football, particularly in its interactions with FIFA; and
+(ii) establishing a cup competition for the top European clubs, which has evolved into today’s UEFA Champions                                                                               CONGRESS               External auditors *1
+League.                                                                                                                                                                               (Member Associations)
+
+                                                                                                                                                            Court of Arbitration
+Headquartered in Nyon, Switzerland, UEFA is a not-for-profit association governed by the Swiss Civil Code.                                                        for Sport *2
+UEFA has 55 member associations, all of which have the same rights, regardless of their population size or                                                     Organs for the        EXECUTIVE COMMITTEE           Governance and
+economic power. Like FIFA, UEFA only recognises one national association and one league pyramid in each                                                        Administration
+                                                                                                                                                                                          President               Compliance auditors
+                                                                                                                                                                 of Justice
+country, thereby helping to preserve the global pyramid of world football. However, a critical distinction
+between UEFA and FIFA is that UEFA has more than 60 years’ experience of organising multiple annual, season-
+long, international club competitions. FIFA, by contrast, only organises one international club competition:                                                     Professional             General secretary
+                                                                                                                             Subsidiaries *3                   Football Strategy                                       Committees         Expert panels
+the FIFA Club World Cup.                                                                                                                                           Council                 Administration
+
+
+UEFA has no formal relationship with the International Olympic Committee, as it is a regional confederation.            *1 See Article 46 of the UEFA Statutes
+                                                                                                                        *2 See Articles 61 to 63 of the UEFA Statutes
+                                                                                                                                                                         Match officers                       Instructors
+                                                                                                                        *3 As created by the Executive Committee in
+UEFA’s corporate purpose is articulated in its statutes (UEFA, July 2020, Article 2), which make it clear that          order to achieve the objectives defined
+                                                                                                                        in Article 2 of the UEFA Statutes
+the primary objective of the organisation is the promotion of football in Europe, based on the principle of
+sporting solidarity (redistribution of resources from the elite professional game to the grassroots) as part of a
+                                                                                                                           Figure 1.2: The organisational structure of UEFA
+
+
+
+
+                                                        50                                                                                                                                       51
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                     CHAPTER 1: THE ORGANISATION OF WORLD FOOTBALL
+
+
+
+Through its decisions, the Congress establishes the operating framework for the president and the Executive               “UEFA, as the football governing body at European level, may recognise and involve in the consultation
+Committee. Member associations are entitled to propose items for the agenda of the UEFA Congress. In                      process in European football matters, groups representing the interests of the various stakeholders of
+essence, UEFA acts as a representative democracy.                                                                         European football (leagues, clubs, players, supporters), provided that they are:
+                                                                                                                            a) organised in accordance with UEFA’s Statutes, regulations and values;
+Together with the president, the Executive Committee implements the decisions of the Congress through                       b) constituted in a democratic, open and transparent manner.”
+the UEFA administration. The Executive Committee comprises the president, 16 other members (including
+at least one woman) elected by the Congress, two members elected by the European Club Association                  A key vehicle for implementing UEFA’s stakeholder engagement strategy has been the Professional Football
+(ECA), and one member elected by the European Leagues. The appointees representing the ECA and the                 Strategy Council, or PFSC (UEFA, July 2020, Article 35). Chaired by the UEFA president, the PFSC is made
+European Leagues are ratified by the Congress and have the same rights and duties as other members                 up of representatives of the European Leagues, the European Club Association and FIFPro Division Europe
+(see Section 3.2 for details).                                                                                     (the European arm of FIFPro, the world players’ union), together with four representatives of UEFA’s member
+                                                                                                                   associations (four UEFA vice-presidents). Since 2007, UEFA’s stakeholder engagement strategy has also
+The president is UEFA’s public representative (UEFA, July 2020, Article 29). The current president, Aleksander     been underpinned by memorandums of understanding (MoUs) between UEFA and each of the three main
+Čeferin (a former president of the Football Association of Slovenia), was first elected to the position in 2016,   stakeholder bodies: FIFPro, the ECA and the European Leagues.
+before being re-elected in 2019.
+                                                                                                                   FIFPro was founded in 1965 and is based in Hoofdorp, in the Netherlands. It represents more than 50,000
+Theodore Theodoridis was appointed UEFA general secretary in September 2016. The general secretary is              professional players around the world, with 65 member associations at national level (FIFPro.org, n.d.).
+UEFA’s most senior executive officer (UEFA, July 2020, Articles 30 to 31).
+                                                                                                                   The ECA was established in 2008 and is based in Nyon, Switzerland. It is the only independent body that
+In addition, a series of committees made up of national association representatives (some of which also            directly represents football clubs at European level (ecaeurope.com, n.d. (a)). In the 2019/20 season, it had 109
+include club representatives) advise on the drafting and implementation of UEFA policies.                          full and 137 associate members (ecaeurope.com, n.d. (b)). UEFA’s current MoU with the ECA was concluded
+                                                                                                                   in 2019 and runs until 2024. Under that MoU, two ECA representatives sit on the UEFA Executive Committee.
+Critically, the UEFA Statutes apply the principle of the separation of powers, separating UEFA’s judicial and
+executive roles. UEFA has four judicial bodies, known as the Organs for the Administration of Justice (UEFA,       The ECA also provides half of the board members of UEFA Club Competitions SA, a UEFA subsidiary set
+July 2020, Article 32(1)). These are (i) the Control, Ethics and Disciplinary Body; (ii) the Appeals Body; (iii)   up following the consultation of all European football stakeholders in relation to the organisation of the
+UEFA’s ethics and disciplinary inspectors; and (iv) the Club Financial Control Body. As their names imply, these   2018–21 UEFA club competition cycle. That subsidiary provides advice and recommendations to the UEFA
+bodies deal with all disciplinary matters, both on and off the field, with the Club Financial Control Body         Club Competitions Committee on strategic business matters and opportunities, which are then referred up
+dealing primarily with matters of club licensing and financial fair play. The Court of Arbitration for Sport in    to the UEFA Executive Committee for approval (UEFA.com, 2 June 2017).
+Lausanne is the ultimate court of appeal for decisions made by UEFA’s disciplinary bodies (UEFA, July 2020,
+Articles 60 to 63).                                                                                                The European Leagues was founded in 2005 and is based in Nyon, Switzerland. It acts as the common voice
+                                                                                                                   of professional football leagues across Europe on all matters of common interest (europeanleagues.com,
+In April 2017, the Congress voted to include a provision in the UEFA Statutes specifically stating that ethics     n.d. (a)). It has 27 full, 6 associate and 3 development members (europeanleagues.com, n.d. (b)). UEFA’s
+and good governance were statutory objectives of the organisation (UEFA, July 2020, Article 2(1)(f)).              current MoU with the European Leagues was concluded in 2019 and runs until 2022. Under that MoU, one
+                                                                                                                   representative of the European Leagues sits on the UEFA Executive Committee.
+> 3.2. UEFA’s stakeholder engagement principle
+                                                                                                                   UEFA’s strategy of structured engagement with key stakeholders now also extends to its relationship with
+Historically, UEFA has formed part of a three-tier hierarchical structure comprising UEFA, national associations   supporter organisations (UEFA.com, n.d. (b)). Football Supporters Europe (FSE), an independent, representative
+and clubs. However, in response to the changing landscape of European football as a result of (i) the              and democratically organised European association of football supporters, was launched with UEFA’s backing
+extraordinary revenue growth generated by European football, especially UEFA competitions; and (ii) the            in 2009 and is recognised as UEFA’s official interlocutor on issues affecting fans. UEFA also supports the
+globalisation of player markets, which has involved the emergence of important new actors in European              activities of SD Europe, a network that advises fan groups on how to become involved in the ownership and
+football, UEFA has also developed a complementary lateral ‘stakeholder engagement’ structure, formally             running of their clubs, as well as working with the Centre for Access to Football in Europe (CAFE) to improve
+recognised in Article 3bis of the UEFA Statutes (UEFA, July 2020):                                                 stadium accessibility and enable more supporters with disabilities to enjoy football at all levels of the game.
+                                                                                                                   SD Europe and CAFE, in partnership with UEFA, also work with clubs to enforce the supporter liaison officer
+
+
+
+
+                                                      52                                                                                                                 53
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                      CHAPTER 1: THE ORGANISATION OF WORLD FOOTBALL
+
+
+
+(SLO) and disability access officer (DAO) requirements laid down in the UEFA Club Licensing and Financial           The European Football Championship is UEFA’s competition for senior men’s national teams and is one of
+Fair Play Regulations (UEFA, 2018).                                                                                 the biggest sporting events in the world (UEFA.com, n.d. (c)). The first edition was contested between 1958
+                                                                                                                    and 1960 (as the European Nations’ Cup), with the Soviet Union beating Yugoslavia 2-1 in the final. The
+UEFA’s stakeholder engagement strategy, which was formally established in 2007, has evolved over the                2016 finals took place in France, where the 16-team format was replaced by a 24-team tournament, with
+years, reflecting changes in Europe’s football ecosystem and the influence exerted by various stakeholders.         Portugal emerging victorious.
+
+> 3.3. UEFA as a competition organiser and a developer and promoter of football in Europe                           Exceptionally, EURO 2020 will have a special one-off format to celebrate the championship’s 60th anniversary.
+                                                                                                                    Styled as a ‘EURO for Europe’, the final tournament will be hosted by 12 national associations in 12 different
+To become UEFA members, national associations must recognise that only UEFA has the authority to organise           cities across Europe, with the semi-finals and the final being held at London’s Wembley Stadium. As a result
+international relations between football bodies in Europe (UEFA, July 2020, Article 51(1)). National associations   of the COVID-19 pandemic, it will take place in summer 2021.
+decide which clubs from their respective countries will be put forward to take part in UEFA’s international
+competitions, but UEFA has ultimate authority over who participates (UEFA, July 2020, Article 50(1)). UEFA’s        EURO 2016 was one of the most successful sporting tournaments ever staged, not least in terms of
+competitions are listed in Table 1.4.                                                                               social media interest. There were more than 300 million visits to EURO2016.com and the official apps
+                                                                                                                    during the tournament, generating 1.5 billion page impressions between 9 June (the day before the
+ Men’s competitions                                      Women’s competitions                                       opening match) and 11 July (the day after the final) – almost four times the levels seen during EURO 2012
+                                                                                                                    (UEFA.com, 12 July 2016). EURO 2016 generated a total of €1.92bn in revenue, an increase of 38% on 2012
+ UEFA Champions League                                   UEFA Women’s Champions League
+                                                                                                                    (UEFA, 2017b, p. 23).
+ UEFA Europa League                                      UEFA European Women’s Championship
+                                                                                                                    As the success of EURO 2016 illustrates, there is huge fan interest in European national team competitions.
+ UEFA Europa Conference League                           UEFA European Women’s Under-19 Championship                However, interest in national team friendlies is in decline across all stakeholder groups – among supporters,
+ UEFA Super Cup                                          UEFA European Women’s Under-17 Championship                clubs, players, broadcasters and sponsors. Friendly matches tend to lack competitive edge, and broadcasters
+                                                                                                                    and sponsors prefer to partner with season-long competitions, rather than individual games.
+ UEFA Youth League                                       UEFA European Women’s Futsal Championship
+                                                                                                                    In 2018, in response to that trend, UEFA launched a new league-based competition, with promotion and
+ UEFA Futsal Champions League
+                                                                                                                    relegation between four tiers of closely matched national teams: the UEFA Nations League. Portugal were
+ UEFA European Football Championship                                                                                crowned champions in the inaugural final against the Netherlands in June 2019. As well as being a stand-
+                                                                                                                    alone competition in its own right, it is an alternative qualification route for UEFA EUROs and FIFA World
+ European Qualifiers
+                                                                                                                    Cups. The structure of the competition ensures a high level of competitive balance between the participating
+ UEFA Nations League                                                                                                teams and, because media rights are sold collectively by UEFA, the majority of the participating teams are
+                                                                                                                    guaranteed higher revenues than they could have achieved through individual bargaining with broadcasters
+ UEFA European Under-21 Championship                                                                                and sponsors for friendly matches (UEFA.com, n.d. (d)).
+ UEFA European Under-19 Championship
+                                                                                                                    The Champions League is UEFA’s main competition for club teams and the most successful club competition
+ UEFA European Under-17 Championship                                                                                in any sport anywhere in the world (UEFA.com, n.d. (e)). It was originally called the European Champion
+                                                                                                                    Clubs’ Cup and was launched in its original form one month after the first UEFA Congress in 1955, having
+ UEFA European Futsal Championship
+                                                                                                                    been instigated by French sports newspaper L’Équipe. Initially, participation was by invitation only, but it was
+ UEFA European Under-19 Futsal Championship                                                                         later opened up to the league champions of all UEFA member associations. In 1992, the competition was
+                                                                                                                    rebranded the UEFA Champions League. For the 1992/93 season, a group stage was introduced, with the
+ UEFA Regions’ Cup
+                                                                                                                    top two teams from each group qualifying for a 16-team knockout stage. The competition format has proved
+                                                                                                                    to be a phenomenal success, and 32 teams now compete in the group stage each season. The Champions
+  Table 1.4: UEFA competitions                                                                                      League is organised in three-season cycles, with the current cycle running from 2018/19 to 2020/21.
+
+
+
+
+                                                       54                                                                                                                 55
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                     CHAPTER 1: THE ORGANISATION OF WORLD FOOTBALL
+
+
+
+The Europa League is UEFA’s second club competition (UEFA.com, n.d. (f)). Originally launched in 1971, in          clubs. This enables UEFA to maximise broadcast, sponsorship and commercial revenues on behalf of the clubs
+2009 it was reorganised and rebranded with its current name. As of the current club competition cycle, the         and their national associations. By way of example, UEFA generated total revenue of €3.86bn in 2018/19, of
+winners automatically qualify for the group stage of the Champions League the following season.                    which 85.8% was derived from the sale of broadcasting rights. While most of this revenue was distributed
+                                                                                                                   to participating clubs, €275.2m was paid to national associations and non-participating clubs in the form of
+The bulk of the revenue generated by the Champions League and the Europa League is distributed to                  solidarity payments and contributions to development/education programmes (UEFA, 2020a, pp. 4, 5 and
+participating clubs, with €1.97bn and €0.56bn being distributed to Champions League and Europa League              9). As this demonstrates, UEFA’s exploitation of commercial property rights is considerable, which is critical
+clubs respectively in 2018/19. However, UEFA also distributes revenue to clubs that have not taken part in         in helping UEFA to meet its solidarity responsibilities towards member associations and the grassroots of
+the two competitions in the form of solidarity payments, with such payments totalling €128.69m in 2018/19.         European football.
+That revenue must be invested in football development projects, with particular emphasis being placed on
+youth development. The solidarity payments are a physical manifestation of UEFA’s adherence to the principle       Led by UEFA, the key stakeholders in European football continue to discuss how the format of the UEFA
+of sporting solidarity (redistribution of resources from the elite professional game to the grassroots) set out    club competitions might evolve for the 2024–27 competition cycle. At the time of writing, no firm decisions
+in its statutes (UEFA.com, 30 December 2019).                                                                      had been made in this regard.
+
+For the 2021–24 club competition cycle, UEFA is launching a third club competition, the Europa Conference          > 3.4. UEFA’s football development role
+League, which starts with a 32-team group stage, before switching to a knockout format (UEFA.com,
+31 October 2019). The winners of this new competition will automatically qualify for the Europa League the         One of UEFA’s key objectives is to develop football all over Europe. One of the ways in which it achieves this
+following season. Critically, this will ensure that at least 34 countries are represented in the group stages of   is by organising competitions for women’s football, youth football (for men and women alike) and futsal.
+UEFA’s various club competitions, up from a minimum of 26 in the current cycle. When the Europa Conference         These are all loss-making, with the cost of running them being underwritten by UEFA. In addition, UEFA also
+League is launched in 2021/22, the number of clubs competing in the group stage of the Europa League               funds very significant amounts of football development activity by its member associations across Europe.
+will be reduced from 48 to 32.
+                                                                                                                   The HatTrick programme (UEFA.com, n.d. (j)) was launched in 2003 as UEFA’s main football development
+For the 2013/14 season, UEFA launched a major new youth competition, the Youth League. That competition            vehicle and is funded entirely by the surpluses from UEFA EUROs. Development projects funded by the
+is contested by the Under-19 teams of the clubs participating in the group stage of the UEFA Champions             programme must (i) help to develop football within UEFA’s territory; (ii) be of common interest to the football
+League and the Under-19 league champions of UEFA’s member associations (UEFA.com, n.d. (g)).                       community; and (iii) have a clear functional, educational and sporting purpose. By way of example, the work
+                                                                                                                   of the UEFA Academy is funded by the HatTrick programme.
+The European Women’s Championship is UEFA’s competition for senior women’s national teams. The first
+edition was contested between 1982 and 1984, with Sweden defeating England in the final (UEFA.com,                 The HatTrick programme operates in four-season cycles. The fourth HatTrick cycle (2016/17 to 2019/20)
+n.d. (h)). The competition has since evolved into one of the biggest events in women’s sport. The final round      distributed a total of €610.5m to UEFA’s member associations. For the fifth cycle (2020/21 to 2023/24), the
+of the 2015–17 edition was held in the Netherlands and won by the hosts, with the final being watched              figure will be €775.5m. A particularly powerful benefit of the HatTrick programme has been its multiplier
+by a global television audience of 15 million, while 178 million people watched the final tournament as a          (or snowball) effect, in terms of encouraging other stakeholders (including governments, local authorities,
+whole (UEFA, 2017a, p. 88). The final round of the next European Women’s Championship will take place              sponsors, clubs and FIFA) to provide additional funding for football-related projects (UEFA.com, 8 August 2019).
+in England in 2022.
+                                                                                                                   UEFA has, in particular, made a major commitment to developing women’s football (UEFA.com, n.d. (k)).
+The Women’s Champions League is the biggest international women’s club competition in the world                    For example, in 2019 it launched a women’s football strategy entitled Time for Action, with its plans for
+(UEFA.com, n.d. (i)). The competition was launched in 2001/02 as the Women’s Cup, before being rebranded           achieving the objectives set out in that strategy being underpinned by HatTrick funding. One of UEFA’s key
+as the Women’s Champions League in 2009/10. A record 62 teams from 50 countries entered the 2019/20                strategic objectives in that regard is to double the number of women and girls playing football in its member
+competition, which was won by Olympic Lyonnais of France. The success of the competition can be seen               associations to 2.5 million by 2024 (UEFA.com, 17 May 2019).
+in the evolution of its structure, which will include a new 16-team group stage as of 2021/22 (UEFA.com,
+6 October 2020).                                                                                                   UEFA also seeks to achieve its development objectives through the UEFA Grow programme, in which UEFA
+                                                                                                                   works directly with national associations to help them grow their internal business development capabilities,
+Central to the success of UEFA’s competitions – particularly the Champions League – is the centralised             so that they can maximise their full potential, both on and off the pitch, as football development organisations
+marketing strategy, whereby broadcasting rights are sold collectively by UEFA on behalf of the participating       (UEFA.com, n.d. (l)).
+
+
+
+
+                                                      56                                                                                                                 57
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                           CHAPTER 1: THE ORGANISATION OF WORLD FOOTBALL
+
+
+
+> 3.5. UEFA’s club licensing system and financial fair play                                                            competitions, and the education of players, officials and national association staff. Fourth, UEFA runs its
+                                                                                                                       Respect campaign, which (as the name suggests) promotes respect for integrity, diversity, dignity, players’
+One key challenge for European football is the need to encourage Europe’s professional clubs to adopt                  health, rules, the referee, opponents and supporters. The Respect logo, which is displayed prominently at all
+sustainable business models. With that objective in mind, UEFA introduced a club licensing system in                   UEFA competitions, has become one of the most recognisable pieces of branding in European football. At the
+2004, making compliance with its requirements – which include minimum standards for sporting matters,                  beginning of the 2017/18 season, UEFA gave fresh impetus to the Respect programme with the launch of the
+infrastructure, personnel, administration, media activities and finances – compulsory for clubs that wish to           #EqualGame campaign, which is designed to promote inclusion and diversity in football (UEFA.com, n.d. (o)).
+participate in UEFA competitions (UEFA.com, n.d. (m)).
+                                                                                                                       > 3.7. UEFA’s commitment to social responsibility
+UEFA’s new club licensing system provided a comprehensive overview of the financial health of European
+football (UEFA, 2016). Unfortunately, the picture it painted was one of very significant financial instability (with   As an integral part of society, football has an invaluable role to play in terms of driving social development and
+the total losses of top-division clubs in Europe totalling €1.67bn in 2010/11, for example). This underlined           bringing its influence to bear (UEFA.com, n.d. (p)). UEFA operates an extensive portfolio of social responsibility
+the need to address the issue of financial fair play in European football, at a time when many clubs were              initiatives through strategic partnerships that strive for zero discrimination and maximum diversity, foster
+effectively seeking to buy sporting success through excessive debt-financed expenditure on player salaries             social integration and reconciliation, and promote active and healthy lifestyles and football for all, as well as
+and transfers, which undermined the sporting integrity of competitions and drove many clubs to bankruptcy,             funding a range of football foundations and charitable programmes.
+while also driving up the operating costs of well-managed clubs.
+                                                                                                                       One noteworthy feature of UEFA’s social responsibility strategy is the UEFA Foundation for Children. Established
+The scale of the financial crisis in European football led UEFA to build on the framework of its club licensing        in 2015 as an independent foundation, it uses sport to support humanitarian projects linked to children’s
+system in order to incorporate financial fair play. New rules – the UEFA Club Licensing and Financial Fair Play        rights in areas such as health, education and integration.
+Regulations (UEFA, 2018) – were gradually introduced between 2010/11 and 2013/14 (UEFA.com, n.d. (n)).
+                                                                                                                       > 3.8. A summary of UEFA’s functions and activities
+The ‘no overdue payables’ criteria (under which clubs must prove that they have settled all debts owed to
+other clubs, employees and social security/tax authorities) were made stricter, with clubs that were behind            UEFA is European football’s governing body. It is a democratically accountable confederation that represents
+on their payments having UEFA competition prize money withheld until their debts were settled. Also, a                 the interests of its member associations. It works to develop football in Europe, particularly through the HatTrick
+new ‘break-even requirement’ entered into force for financial reporting periods ending in 2012 and 2013,               programme, organises highly successful national team and club competitions, and commercially exploits UEFA
+preventing clubs from spending more than they earn and, as of 2013/14, being used to assess all clubs                  properties so that it can distribute revenue to other stakeholders in European football through the solidarity
+wishing to take part in UEFA club competitions. This initiative was welcomed by various UEFA stakeholders,             principle, which also allows it to subsidise the development of a number of other events, including youth,
+notably the ECA and the European Commission.                                                                           women’s, amateur and futsal competitions. It plays a key role in promoting the development of home-grown
+                                                                                                                       players in its member associations through its rules on locally trained players.
+The impact of UEFA’s financial fair play initiative has been significant: clubs assessed under the UEFA Club
+Licensing and Financial Fair Play Regulations reduced their overdue payables from €57m in the 2011 financial           It has various other miscellaneous regulatory functions, as well as a range of wider campaigning functions, which
+year to just €2m in 2019, and reported combined pre-tax profits of €570m and €140m in 2017 and 2018                    include combating discrimination and promoting diversity and inclusion in football via the Respect/#EqualGame
+respectively, compared with pre-tax losses of €1.67bn in 2011 (UEFA, 2020b).                                           initiatives, as well as in the corporate responsibility sector.
+
+> 3.6. UEFA’s other key regulatory functions                                                                           Finally, it regulates the European football industry and promotes financial sustainability and integrity through
+                                                                                                                       its club licensing system and financial fair play rules. UEFA set out its strategy for successfully operationalising
+UEFA also has a number of other important regulatory functions that it fulfils in cooperation with its member          these activities in Together for the Future of Football: UEFA Strategy 2019–2024 (UEFA, 2019).
+associations (and, where appropriate, FIFA). First, UEFA combats betting fraud, notably by means of the betting
+fraud detection system that it launched in September 2009. Second, UEFA promotes home-grown players                    > 4. The roles of the AFC, CAF, CONCACAF, CONMEBOL and the OFC
+through its rules on locally trained players. Since the 2008/09 season, clubs participating in the Champions
+League and the Europa League have had to have a minimum of eight locally trained players in their 25-player            As previously explained, FIFA sits at the apex of world football, and beneath it lie the six regional confederations:
+squads. (It is worth noting, in that regard, that UEFA’s rules make no reference to players’ nationalities, since      UEFA, the AFC, CAF, CONCACAF, CONMEBOL and the OFC. Key historical and organisational information
+such nationality requirements are illegal within the EU on account of the Bosman ruling.) Third, UEFA combats          on each confederation is set out below.
+doping through cooperation with national and international anti-doping agencies, widespread testing across
+
+
+
+
+                                                        58                                                                                                                     59
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                    CHAPTER 1: THE ORGANISATION OF WORLD FOOTBALL
+
+
+
+> 4.1. Asian Football Confederation                                                                                 CONCACAF organises various national team competitions (such as the biennial CONCACAF Gold Cup) and
+                                                                                                                    the annual CONCACAF Champions League for clubs. Having previously been staged elsewhere in CONCACAF
+The AFC is Asian football’s governing body (AFC.com, n.d.). It was formed in May 1954 in Manila, following          territory (Mexico in 1970 and 1986), the 1994 FIFA World Cup in the United States served to significantly
+informal discussions between 12 countries that were competing at the Asian Games. The first Asian Cup for           boost participation in North America and was followed by the launch of the Major League Soccer (MLS)
+national teams was played in Hong Kong in 1956 and was won by South Korea. The AFC has 46 member                    professional league. The 2026 FIFA World Cup will be hosted jointly by Canada, Mexico and the United States.
+associations and is headquartered in Kuala Lumpur, Malaysia.
+                                                                                                                    In April 2014, UEFA and CONCACAF signed a memorandum of understanding with a view to working
+Asian football has developed strongly in recent years. The 2002 FIFA World Cup, for example, was staged             together on the development of football.
+jointly by Japan and South Korea and was a great success. The AFC has its own development programmes and
+has also worked to develop its competitions. It currently organises 14 national team and club competitions,         > 4.4. Confederación Sudamericana de Fútbol
+with the AFC Champions League being its flagship club competition.
+                                                                                                                    CONMEBOL, which has ten members, is the oldest of the world’s regional confederations, having been
+UEFA and the AFC concluded a new memorandum of understanding in 2015, building on the previous one                  founded in 1916 (CONMEBOL.com, n.d.) in order to organise South America’s first national team competition
+signed in 2012 and their positive experience of that partnership. The MoU provides a framework for cooperation      (the Copa América). It is based in Luque, Paraguay.
+between the two confederations in areas such as competitions, grassroots football, coach education, women’s
+football, refereeing, the development of professional football (clubs and leagues) and marketing.                   The CONMEBOL region has historically been one of the two dominant forces in world football (along with
+                                                                                                                    Europe), with South American teams winning 9 of the 21 FIFA World Cup tournaments to date. One of its
+> 4.2. Confédération Africaine de Football                                                                          members, Uruguay, hosted the very first World Cup in 1930, and the tournament returned to South America
+                                                                                                                    in 1950 (Brazil), 1962 (Chile), 1978 (Argentina) and 2014 (Brazil). The Brazilian national team has won the
+CAF is African football’s governing body. Its origins go back to the FIFA Congress held in Lisbon in 1956.          tournament a record five times, most recently in Japan/South Korea in 2002.
+Representatives of four African countries – Egypt, Ethiopia, South Africa and Sudan – attended the event,
+taking the opportunity to discuss matters of common interest. They then reconvened in Khartoum, Sudan, in           CONMEBOL also organises the Copa Libertadores, which is one of the world’s most prestigious club
+February 1957 to draft statutes, and the first Africa Cup of Nations was staged shortly afterwards, with Egypt      competitions (along with the UEFA Champions League). One interesting feature of the Copa Libertadores
+winning the inaugural event. CAF is now headquartered in Cairo and has 54 members (CAFonline.com, n.d.).            (and the Copa América) is that teams from other confederations (usually teams from CONCACAF countries,
+                                                                                                                    such as Mexico) are sometimes invited to take part. From 1960 to 2004, UEFA and CONMEBOL pitted their
+The organisation of African football has gradually developed over the years, culminating in the highly successful   respective European and South American club champions against each other in what was effectively a world
+hosting of the 2010 FIFA World Cup in South Africa. Held biennially, the Africa Cup of Nations is itself one        club championship. Originally known as the Intercontinental Cup, before becoming the Toyota Cup in 1980,
+of the most successful national team competitions in the world. In 1997, UEFA and CAF began collaborating           the competition was superseded by FIFA’s Club World Cup in 2005.
+on the Meridian development project, which involved partnerships between national associations in Africa
+and Europe and culminated in a youth tournament. Then, in February 2014, they signed a memorandum                   In May 2012, UEFA signed a memorandum of understanding with CONMEBOL, covering various forms of
+of understanding with a view to sharing information and experience and cooperating on joint technical               cooperation, and that agreement was then renewed in 2020.
+development programmes in areas such as coaching, refereeing, youth football, women’s football, the
+organisation of competitions, administration, marketing, media operations and social responsibility.                > 4.5. Oceania Football Confederation
+
+> 4.3. Confederation of North, Central American and Caribbean Association Football                                  The smallest of the world’s six regional football confederations in terms of the total population of the
+                                                                                                                    countries represented (oceaniafootball.com, n.d.), the OFC was formed in 1966 by the national associations
+CONCACAF, which has 35 members at the time of writing, is the governing body for football in North America,         of Australia, Fiji, New Zealand and Papua New Guinea. It is based in Auckland, New Zealand, and currently
+Central America and the Caribbean (CONCACAF.com, n.d.). Despite being in South America, French Guiana,              has 11 full and 3 associate members.
+Guyana and Suriname are all associate members of CONCACAF – a reflection of their histories as French,
+English and Dutch colonies in a predominantly Spanish and Portuguese-speaking continent. CONCACAF                   In 2006, Australia left the OFC to join the AFC. And in 2008, an associate member, the Northern Mariana
+was founded in 1961 in Mexico City as a merger of the Football Confederation of Central America and                 Islands Football Association, followed suit. All OFC members apart from New Zealand are small island states
+the Caribbean and the North American Football Confederation, and it now has its headquarters in Miami.              in the South Pacific, where football is not the dominant sport, and none of its member associations have a
+
+
+
+
+                                                      60                                                                                                                61
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                               CHAPTER 1: THE ORGANISATION OF WORLD FOOTBALL
+
+
+
+professional domestic league. Wellington Phoenix FC, for example, are based in New Zealand, but play in           REFERENCES AND FURTHER READING
+the Australian A-League.
+                                                                                                                  • AFC.com (n.d.). Retrieved on 30 October 2020 from www.the-afc.com
+UEFA is a major supporter of the OFC’s football development activities, and in 2012 it signed a memorandum of     • CAFonline.com (n.d.). Retrieved on 30 October 2020 from www.cafonline.com
+understanding with the OFC (complementing another agreement concluded in 2010), under which it pledged            • CONCACAF.com (n.d.). Retrieved on 30 October 2020 from www.concacaf.com
+to support grassroots development programmes and help to encourage best practice in the OFC’s territory.          • CONMEBOL.com (n.d.). Retrieved on 30 October 2020 from www.conmebol.com
+                                                                                                                  • ecaeurope.com (n.d.) (a). Retrieved on 26 October 2020 from www.ecaeurope.com
+> 4.6. UEFA Assist                                                                                                • ecaeurope.com (n.d.) (b). Membership. Retrieved on 26 October 2020 from www.ecaeurope.com/
+                                                                                                                    about-eca/membership/#:~:text=With%20246%20Member%20Clubs%2C%20ECA,from%2055%20
+In 2016, the UEFA Executive Committee approved a new support programme called UEFA Assist, which                    UEFA%20Member%20Associations
+seeks to meet the needs of national associations and confederations outside Europe (UEFA.com, n.d. (q)).          • European Court of Justice (1995). Judgment of 15 December 1995, Bosman, Case C-415/93.
+By rechannelling FIFA Forward funds allocated to UEFA, the programme helps the development of the game              Retrieved on 25 October 2020 from https://eur-lex.europa.eu/legal-content/EN
+by promoting and organising football activities around the world.                                                   TXT/?uri=CELEX%3A61993CJ0415&qid=1606468687786
+                                                                                                                  • europeanleagues.com (n.d.) (a). Retrieved on 26 October 2020 from https://europeanleagues.com
+UEFA Assist has four main objectives: (i) support the development of managerial capabilities, primarily in        • europeanleagues.com (n.d.) (b). Member Leagues. Retrieved on 26 October 2020 from https://
+the football and operations fields; (ii) support youth development; (iii) support small-scale infrastructure        europeanleagues.com/member-leagues-and-associate-members
+development projects; and (iv) support and encourage cooperation between UEFA’s member associations               • FIFA (2020). FIFA Annual Report 2019. Retrieved on 25 October 2020 from https://img.fifa.com/image/
+and national associations in other confederations around the world.                                                 upload/ksndm8om7duu5h8qxlpn.pdf
+                                                                                                                  • FIFA (September 2020). FIFA Statutes. Retrieved on 25 October 2020 from https://img.fifa.com/image/
+The UEFA Assist programme has formalised the ad hoc support that was already being given to other                   upload/viz2gmyb5x0pd24qrhrx.pdf
+associations and confederations in terms of knowledge sharing and football development. In cooperation            • FIFA.com (n.d.) (a). FIFA Member Associations. Retrieved on 25 October 2020 from www.fifa.com/
+with FIFA and the other confederations, support and assistance is spread evenly across non-European national        associations
+associations around the world.                                                                                    • FIFA.com (n.d.) (b). FIFA Forward Football Development Programme. Retrieved on 25 October 2020 from
+                                                                                                                    www.fifa.com/what-we-do/fifa-forward/
+> 5. Conclusion                                                                                                   • FIFA.com (n.d.) (c). TMS. Retrieved on 25 October 2020 from www.fifa.com/who-we-are/legal/tms
+                                                                                                                  • FIFA.com (n.d.) (d). FIFA Council. Retrieved on 25 October 2020 from www.fifa.com/who-we-are/fifa-
+This chapter looked at how world football is organised. The metaphor of a biological ecosystem was chosen,          Council
+since the football environment evolves as new stakeholders emerge and needs to be kept in equilibrium in          • FIFA.com (n.d.) (e). Who We Are. Retrieved on 25 October 2020 from www.fifa.com/who-we-are
+order to bring maximum benefits to all stakeholders. The impact of new and existing stakeholders needs            • FIFA.com (n.d.) (f). The Vision 2020–2023. Retrieved on 25 October 2020 from www.fifa.com/who-we-
+to be kept under constant evaluation through a process of strategic analysis. Effective policies can then be        are/vision
+developed in response.                                                                                            • FIFA.com (26 February 2016). FIFA Congress approves landmark reforms. Retrieved on 26 January
+                                                                                                                    2017 from www.fifa.com/about-fifa/news/y=2016/m=2/news=fifa-Congress-approves-landmark-
+Critically, it should be noted that the current system for organising football at global, regional and national     reforms-2767108.html
+level has served the game well, not only as a spectator and participation sport, but also as a promoter of        • FIFA.com (10 January 2017). Unanimous decision expands FIFA World Cup to 48 teams from 2026.
+public health and general well-being and as a business. The system is complex, and special care needs to            Retrieved on 26 January 2017 from www.fifa.com/about-fifa/news/y=2017/m=1/news=fifa-Council-
+be taken when managing stakeholders, but the benefits of such effective management are compelling.                  unanimously-decides-on-expansion-of-the-fifa-world-cuptm--2863100.html
+                                                                                                                  • FIFA.com (3 March 2018). REPLAY: IFAB comes to landmark decision about VAR. Retrieved on 13
+                                                                                                                    November 2020 from www.fifa.com/who-we-are/news/coming-soon-press-conference-following-the-
+                                                                                                                    ifab-annual-general-meeting
+
+
+
+
+                                                      62                                                                                                           63
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                           CHAPTER 1: THE ORGANISATION OF WORLD FOOTBALL
+
+
+
+• FIFA.com (21 December 2018). More than half the world watched record-breaking 2018 World Cup.
+  Retrieved on 25 October 2020 from www.fifa.com/news/more-than-half-the-world-watched-record-             • UEFA.com (n.d.) (d). UEFA Nations League. Retrieved on 29 October 2020 from www.uefa.com/
+  breaking-2018-world-cup                                                                                   uefanationsleague
+• FIFPro.org (n.d.). Retrieved on 26 October 2020 from www.fifpro.org/en                                   • UEFA.com (n.d.) (e). UEFA Champions League. Retrieved on 29 October 2020 from www.uefa.com/
+• IFAB (n.d.). Retrieved on 25 October 2020 from www.theifab.com/#!/history/ifab                            uefachampionsleague
+• IFAB (2020). Laws of the Game 2020/21. Retrieved on 25 October 2020 from www.theifab.com/laws            • UEFA.com (n.d.) (f). UEFA Europa League. Retrieved on 29 October 2020 from www.uefa.com/
+• Neale, W. (1964). The peculiar economics of professional sports. Quarterly Journal of Economics,          uefaeuropaleague
+  Vol. 78, pp. 1–14                                                                                        • UEFA.com (n.d.) (g). UEFA Youth League. Retrieved on 29 October 2020 from www.uefa.com/
+• oceaniafootball.com (n.d.). Retrieved on 30 October 2020 from www.oceaniafootball.com                     uefayouthleague
+• Olympic.org (2020). Olympic Charter. Retrieved on 25 October 2020 from https://stillmed.olympic.org/     • UEFA.com (n.d.) (h). UEFA Women’s EURO 2022. Retrieved on 29 October 2020 from www.uefa.com/
+  media/Document%20Library/OlympicOrg/General/EN-Olympic-Charter.pdf                                        womenseuro/about
+• UEFA (2005). Vision Europe. Retrieved on 25 October 2020 from www.uefa.com/newsfiles/374875.pdf          • UEFA.com (n.d.) (i). UEFA Women’s Champions League. Retrieved on 29 October 2020 from www.uefa.
+• UEFA (2016). Club Licensing: Ten Years On. Retrieved on 30 September 2016 from www.uefa.com/              com/womenschampionsleague
+  MultimediaFiles/Download/uefaorg/FinancialFairPlay/02/32/60/65/2326065_DOWNLOAD.pdf                      • UEFA.com (n.d.) (j). HatTrick. Retrieved on 29 October 2020 from www.uefa.com/insideuefa/football-
+• UEFA (2017a). UEFA Women’s EURO 2017, The Netherlands: Tournament Review. Retrieved on                    development/hattrick
+  29 October 2020 from www.uefa.com/MultimediaFiles/Download/TechnicalReport/competitions/                 • UEFA.com (n.d.) (k). Women’s Football. Retrieved on 29 October 2020 from www.uefa.com/insideuefa/
+  WOCO/02/51/72/60/2517260_DOWNLOAD.pdf                                                                     football-development/womens-football
+• UEFA (2017b). UEFA Financial Report 2015/16. Retrieved on 29 October 2020 from www.uefa.com/             • UEFA.com (n.d.) (l). UEFA Grow committed to growing European football. Retrieved on 29 October 2020
+  MultimediaFiles/Download/OfficialDocument/uefaorg/Finance/02/45/50/26/2455026_DOWNLOAD.pdf                from www.uefa.com/insideuefa/football-development/grow
+• UEFA (2018). UEFA Club Licensing and Financial Fair Play Regulations.                                    • UEFA.com (n.d.) (m). Club Licensing. Retrieved on 29 October 2020 from www.uefa.com/insideuefa/
+  Retrieved on 30 October 2020 from https://documents.uefa.com/search/                                      protecting-the-game/club-licensing
+  books?filters=FT_Competition~%2522Club+Licensing%2522*FT_Competition_                                    • UEFA.com (n.d.) (n). Financial Fair Play. Retrieved on 29 October 2020 from www.uefa.com/insideuefa/
+  custom~%2522Specific+Regulations%2522*FT_ContentType_custom~%2522Technical+Regulations%                   protecting-the-game/financial-fair-play
+  2522&content-lang=en-GB                                                                                  • UEFA.com (n.d.) (o). #EqualGame. Retrieved on 30 October 2020 from www.uefa.com/insideuefa/social-
+• UEFA (2019). Together for the Future of Football: UEFA Strategy 2019–2024. Retrieved on 29 October        responsibility/respect
+  2020 from www.uefa.com/MultimediaFiles/Download/uefaorg/General/02/59/06/32/2590632_                     • UEFA.com (n.d.) (p). Football and Social Responsibility. Retrieved on 30 October 2020 from www.uefa.
+  DOWNLOAD.pdf                                                                                              com/insideuefa/social-responsibility
+• UEFA (2020a). UEFA Financial Report 2018/19. Retrieved on 29 October 2020 from https://editorial.uefa.   • UEFA.com (n.d.) (q). UEFA Assist. Retrieved on 30 October 2020 from www.uefa.com/insideuefa/
+  com/resources/025a-0f8430656913-10ccbab24e1d-1000/2018_19_uefa_financial_report.pdf                       football-development/uefa-assist
+• UEFA (2020b). UEFA Club Licensing Benchmarking Report: Financial Year 2018. Retrieved on                 • UEFA.com (12 July 2016). UEFA EURO 2016 sets new digital standards. Retrieved on 29 October 2020
+  29 October 2020 from www.uefa.com/MultimediaFiles/Download/OfficialDocument/uefaorg/                      from www.uefa.com/uefaeuro/news/newsid=2390962.html
+  Clublicensing/02/64/06/95/2640695_DOWNLOAD.pdf                                                           • UEFA.com (2 June 2017). UEFA Club Competitions SA formally created. Retrieved on 16 October 2020
+• UEFA (July 2020). UEFA Statutes. Retrieved on 25 October 2020 from https://documents.uefa.com/             from www.uefa.com/insideuefa/mediaservices/news/023a-0f8e53afca03-19e9720b74a9-1000--uefa-
+  search/all?query=statutes&filters=FT_ContentType_custom~%2522Statutes%2522&content-lang=en-GB              club-competitions-sa-formally-created
+• UEFA.com (n.d.) (a). UEFA and the European Institutions. Retrieved on 26 October 2020 from https://      • UEFA.com (17 May 2019). Time for Action: first ever UEFA women’s football strategy launched.
+  www.uefa.com/insideuefa/stakeholders/european-union/                                                       Retrieved on 29 May 2020 from www.uefa.com/insideuefa/about-uefa/news/0251-0f8e6ba98884-
+• UEFA.com (n.d.) (b). Supporters. Retrieved on 26 October 2020 from www.uefa.com/insideuefa/                3dd4ba899f93-1000--time-for-action-first-ever-uefa-women-s-football-strategy-launched
+  stakeholders/supporters                                                                                  • UEFA.com (8 August 2019). Celebrating 15 years of UEFA’s landmark solidarity programme. Retrieved
+• UEFA.com (n.d.) (c). UEFA EURO 2020. Retrieved on 29 October 2020 from www.uefa.com/                       on 29 October 2020 from www.uefa.com/insideuefa/football-development/news/0254-0f8e6e0afa95-
+  uefaeuro-2020                                                                                              617ca8e5f302-1000--celebrating-15-years-of-uefa-s-landmark-solidarity-programme/?referrer=%2Finsid
+                                                                                                             euefa%2Ffootball-development%2Fhattrick%2Fnews%2Fnewsid%3D2617682
+
+
+
+
+                                                  64                                                                                                         65
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT
+
+
+
+• UEFA.com (31 October 2019). UEFA Europa Conference League: What is it? When does it start?
+  Who’s involved? Retrieved on 29 October 2020 from www.uefa.com/uefaeuropaleague/news/0256-
+  0e9a05634e35-236276d37822-1000--uefa-europa-conference-league-what-is-it-when-does-it-start-who
+• UEFA.com (30 December 2019). UEFA solidarity payments: how they work. Retrieved on 29 October
+  2020 from www.uefa.com/insideuefa/about-uefa/news/0258-0f8e7356606e-623079a4c111-1000--
+  uefa-solidarity-payments-how-they-work
+• UEFA.com (6 October 2020). 2021/22 Women’s Champions League: dates, access list, full guide.
+  Retrieved on 29 October 2020 from www.uefa.com/womenschampionsleague/news/0262-
+  108bd1c13e3a-cd0bf3210aad-1000--2021-22-new-format/?iv=true
+• Whittington, R., Regnér, P., Angwin, D., Johnson, G., and Scholes, K., (2019). Exploring Strategy: Text
+  and Cases. Pearson.
+
+
+
+
+                                                                                                                                     Chapter 2
+
+                                                                                                                                     Strategic management
+                                                                                                                                     Mikkel Draebye
+                                                                                                                                     SDA Bocconi School of Management
+                                                                                                                                     Milan, Italy
+
+
+
+
+                                                                                                            WE CARE ABOUT FOOTBALL
+
+
+
+
+                                                   66                                                                                                67
+

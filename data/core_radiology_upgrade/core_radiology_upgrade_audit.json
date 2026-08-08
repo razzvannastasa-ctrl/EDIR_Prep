@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "source": "Core Radiology",
+  "applied_at": "2026-08-08T15:23:40+03:00",
+  "question_count": 2616,
+  "session_count": 107,
+  "questions_with_revised_distractors": 929,
+  "revised_distractor_count": 1175,
+  "remaining_giveaway_flags": 0,
+  "questions_with_source_locator": 2616,
+  "questions_with_original_answer_page": 2616,
+  "unique_source_page_assets": 1100,
+  "missing_source_page_assets": 0,
+  "answer_count_distribution": {
+    "1": 343,
+    "2": 722,
+    "3": 1018,
+    "4": 533
+  },
+  "source_page_anchor_audit": {
+    "questions_with_single_pdf_image_anchors": 925,
+    "exact_matches": 852,
+    "within_one_page": 919
+  },
+  "database_backups": [
+    "C:/Users/Razvan/Documents/Radiologie/backups/Core_Radiology_upgrade/edir_prep.before_core_radiology_pages_20260808_150224.db",
+    "C:/Users/Razvan/Documents/Radiologie/backups/Core_Radiology_upgrade/edir_prep.before_core_radiology_distractors_20260808_152340.db",
+    "C:/Users/Razvan/Documents/Radiologie/backups/Core_Radiology_upgrade/edir_prep.before_core_radiology_pages_20260808_152850.db"
+  ]
+}

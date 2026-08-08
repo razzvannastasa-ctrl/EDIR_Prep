@@ -1,0 +1,2677 @@
+{
+  "schema_version": 1,
+  "library_key": "uefa_cfm",
+  "chapter_number": 15,
+  "session_title": "Chapter 2 - Strategic management",
+  "source_pdf": "Strategic-Management.pdf",
+  "questions": [
+    {
+      "q_number": 1,
+      "question_text": "A national association is considering a youth academy whose benefits will take years to emerge. What is the sound strategic response?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Commit adequate resources and allow enough time for the academy to demonstrate results.",
+        "Commit the full academy budget before defining success measures.",
+        "Use the next competition cycle as the decisive evaluation period.",
+        "Fund facilities first and postpone staffing and analytical work.",
+        "Rotate resources between the academy and senior team as results fluctuate."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          68,
+          69
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0
+        ],
+        "explanation": "This is a long-term and difficult-to-reverse commitment, so it needs structured analysis, sufficient resources and a coherent direction. The academy must be given time to prove itself. Continual short-term changes would create the zigzagging that strategic management is meant to prevent."
+      }
+    },
+    {
+      "q_number": 2,
+      "question_text": "Which features distinguish strategic management from day-to-day operational management in the handbook?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "It concentrates on optimising established operating procedures.",
+        "It is oriented towards the future.",
+        "It commits resources after senior management has selected an initiative intuitively.",
+        "It reallocates significant resources.",
+        "It is formulated at corporate level and translated operationally without departmental strategy."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          68,
+          69
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3
+        ],
+        "explanation": "Strategic management looks ahead, is based on analysis and commits meaningful resources. Operational management handles recurring activities such as travel, competitions and finance. Strategic tools can also be used at departmental, project and individual level."
+      }
+    },
+    {
+      "q_number": 3,
+      "question_text": "Which contributions does strategic management make to an association's prospects of achieving its mission and goals?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Faster approval of routine operational expenditure.",
+        "Effective and efficient resource allocation.",
+        "Coordination and decision-making support.",
+        "Greater central control of departmental work by the executive committee.",
+        "Employee purpose and motivation."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          68,
+          69
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "The chapter identifies resource allocation, coordinated decision support and employee purpose as the three principal contributions. Together they connect long-term choices with consistent action. Strategic management improves the chance of success but cannot eliminate uncertainty or governance."
+      }
+    },
+    {
+      "q_number": 4,
+      "question_text": "A growing association's general secretary is becoming a bottleneck for every decision. Which responses fit the chapter's strategic logic?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Delegate an appropriate level of decision-making to staff.",
+        "Use a documented strategic plan as a decision guide.",
+        "Align decentralised choices with management's intentions.",
+        "Accept that senior leaders cannot retain the same involvement without losing efficiency.",
+        "Retain central approval for cross-departmental decisions while delegating routine administration."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          68,
+          69
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "explanation": "Growth makes complete centralisation inefficient because one leader can no longer know and decide everything. Delegation supported by a clear strategy gives staff useful heuristics for consistent choices. It preserves direction without creating senior-management overload."
+      }
+    },
+    {
+      "q_number": 5,
+      "question_text": "Which statement best defines a strategy in the chapter's terminology?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "A portfolio of departmental objectives compiled for the annual budget.",
+        "A forecast describing the environment in which a long-term goal may be pursued.",
+        "A statement of organisational purpose supported by broad aspirations.",
+        "A resource plan showing how approved activities will be financed.",
+        "A set of planned actions and decisions aimed at achieving a long-term goal."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          68,
+          69
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          4
+        ],
+        "explanation": "A strategy connects deliberate actions and decisions to a long-term goal. It may concern the whole association, a department or a project. It is broader than a budget and more actionable than a timeless statement of purpose."
+      }
+    },
+    {
+      "q_number": 6,
+      "question_text": "Why can limited resources make strategic management especially valuable to a national association?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "It helps direct scarce resources towards defined priorities.",
+        "It spreads resources evenly so each domain maintains a minimum activity level.",
+        "It reduces divergent decisions between competing objectives.",
+        "It favours reversible short-term initiatives until additional resources become available.",
+        "It compensates for resource constraints by narrowing analysis to financial measures."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          68,
+          69
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2
+        ],
+        "explanation": "Limited resources require choices rather than equal investment everywhere. Strategic management establishes a coherent direction and allocates time, people, infrastructure and money accordingly. It improves the odds of success even when the association lacks superior resources."
+      }
+    },
+    {
+      "q_number": 7,
+      "question_text": "Staff in several departments are making locally sensible decisions that conflict with one another. What should management introduce?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "A formal strategic plan that acts as a shared heuristic.",
+        "Clear links between departmental choices and management's intentions.",
+        "Departmental plans negotiated separately and reconciled during annual budgeting.",
+        "Delegated decisions within an agreed organisational direction.",
+        "Central review of decisions that exceed each unit's delegated financial authority."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          70,
+          71
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3
+        ],
+        "explanation": "A documented plan provides the common logic that detailed manuals cannot supply. Staff can then decide autonomously while remaining aligned across functions. This addresses inconsistency without recreating the overload caused by total centralisation."
+      }
+    },
+    {
+      "q_number": 8,
+      "question_text": "Competitions staff pursue commercial growth while grassroots staff pursue participation in ways that undermine each other. Which management conclusions follow?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "The association's commercial and football-development responsibilities can create competing interests.",
+        "Strategic coordination is needed so units pull in the same direction.",
+        "The democratic duty to member entities must be considered alongside business assets.",
+        "Each unit should maximise its own objective without reference to the association's mission.",
+        "Cross-functional consequences should be assessed before initiatives are implemented."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          70,
+          71
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "explanation": "National associations combine commercial assets with duties to develop football and safeguard members. That creates legitimate tensions between units rather than a purely commercial hierarchy. Strategy should coordinate those interests and expose cross-functional consequences."
+      }
+    },
+    {
+      "q_number": 9,
+      "question_text": "How can strategy increase employee purpose and motivation?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "By linking motivation primarily to performance-related pay.",
+        "By communicating resource allocations while leaving their strategic rationale with managers.",
+        "By defining departmental outputs without linking them to mission-level outcomes.",
+        "By showing how specific activities contribute to desired results.",
+        "By using performance controls as the principal explanation for strategic priorities."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          70,
+          71
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "People are motivated partly by understanding why their work matters. Strategy links activities and resource choices to desired results, creating a clear sense of purpose. Rewards may still matter, but money alone is not the chapter's account of motivation."
+      }
+    },
+    {
+      "q_number": 10,
+      "question_text": "Whose support is identified as essential when introducing a strategic management system in a national association?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "The retained strategy consultant.",
+        "The executive committee or board.",
+        "The association's principal commercial partners.",
+        "The department heads responsible for implementation.",
+        "The president."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          70,
+          71
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          4
+        ],
+        "explanation": "A strategic system needs backing from senior management, including the board or executive committee, president and general secretary or CEO. It requires little capital or technical infrastructure. The decisive prerequisite is leadership support rather than outside ownership."
+      }
+    },
+    {
+      "q_number": 11,
+      "question_text": "An unexpected regulatory change makes the association's original plan unrealistic. How should a mature strategic system respond?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Recognise that even careful plans cannot foresee every environmental change.",
+        "Classify the target miss as an implementation problem before reassessing the environment.",
+        "Activate a contingency response to mitigate the threat.",
+        "Maintain the approved initiatives while adjusting their delivery timetable.",
+        "Assess whether the change creates an opportunity as well as a risk."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          70,
+          71
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          4
+        ],
+        "explanation": "Strategic planning increases preparedness but does not predict every internal or external change. A good system permits contingency action and can exploit new opportunities. Blind adherence to obsolete actions would confuse discipline with rigidity."
+      }
+    },
+    {
+      "q_number": 12,
+      "question_text": "Which elements belong to the handbook's generic strategic management system?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Monitoring and analysing internal and external conditions.",
+        "Formulating goals, objectives and action plans.",
+        "A three-to-five-year plan reviewed when its final targets become due.",
+        "Allocating resources and responsibilities.",
+        "Controlling performance and updating rolling targets."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          70,
+          71
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "explanation": "The system moves from analysis to goal and action formulation, then to resource allocation, responsibility and control. Annual review keeps three-to-five-year targets current. A permanent plan would fail to adapt to performance and environmental change."
+      }
+    },
+    {
+      "q_number": 13,
+      "question_text": "Which sequence reflects the example annual strategic-planning review cycle?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Set provisional budgets before reviewing internal and external changes.",
+        "Begin formal monitoring after proposed updates receive executive approval.",
+        "Analyse performance and environmental changes before the review meeting.",
+        "Draft detailed updates before the review meeting and use the meeting to ratify them.",
+        "Ask principal funding partners to approve changes before executive review."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          72,
+          73
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2
+        ],
+        "explanation": "The cycle begins with internal and external analysis based on prior performance. Findings go to a review meeting, proposed updates are then formalised and approved, followed by monitoring and implementation decisions. This order keeps changes evidence-led."
+      }
+    },
+    {
+      "q_number": 14,
+      "question_text": "At the annual review, the previous year's targets were missed and the external environment has changed. Which actions fit the illustrated process?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Present the analysis at a strategic planning review meeting.",
+        "Skip analysis and repeat the plan unchanged.",
+        "Let each department approve its own corporate strategy.",
+        "Use the discussion to set guidelines for plan updates.",
+        "Delay performance control until the end of the next three-to-five-year cycle."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          72,
+          73
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          3
+        ],
+        "explanation": "The review meeting converts performance evidence and environmental change into agreed update guidelines. Those guidelines are later formalised and presented for executive approval. Repeating the plan without review would break the feedback cycle."
+      }
+    },
+    {
+      "q_number": 15,
+      "question_text": "How do periodic strategy development and annual updating work together?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Use annual reviews to revise the vision while retaining fixed operational targets.",
+        "A full strategic process may occur every three to five years.",
+        "Concentrate monitoring in the final year so interim variation does not destabilise direction.",
+        "Annual updates keep medium-term targets relevant.",
+        "The cadence should fit elections, competitions and operational cycles."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          72,
+          73
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3,
+          4
+        ],
+        "explanation": "The association can undertake a major formulation cycle every three to five years while reviewing and updating the plan annually. Timing should fit its governance and competition rhythms. Rolling review preserves direction without treating the original plan as immutable."
+      }
+    },
+    {
+      "q_number": 16,
+      "question_text": "Which activities appear in UEFA Grow's eight-step strategy-development process?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Preparation and a kick-off workshop.",
+        "Immediate budget execution before objectives and actions are identified.",
+        "Analysis of the current situation.",
+        "Drafting followed by review and refinement.",
+        "Implementation and monitoring planning."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          72,
+          73
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "explanation": "UEFA Grow moves from preparation and team mobilisation through analysis, workshops and drafting. Feedback is used to refine and finalise the strategy before implementation and monitoring plans are completed. It is a staged development process, not instant execution."
+      }
+    },
+    {
+      "q_number": 17,
+      "question_text": "A strategy team is beginning from scratch and wants a productive kick-off. What should it accomplish according to UEFA Grow?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Approve the final budget before analysing the situation.",
+        "Excite and inspire the team.",
+        "Replace role allocation with informal volunteering.",
+        "Publish a completed strategy during the first meeting.",
+        "Conduct performance control before a strategy exists."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          72,
+          73
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1
+        ],
+        "explanation": "The kick-off workshop is designed to mobilise the team and establish ownership. Preparation has already identified what and who are needed, while the workshop assigns roles and responsibilities. Final strategy and budget decisions come later."
+      }
+    },
+    {
+      "q_number": 18,
+      "question_text": "Draft strategic objectives are ready for stakeholder testing. Which next steps follow the Grow process?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Begin implementation of low-risk elements while the draft is being reviewed.",
+        "Return the draft to senior management for approval before wider feedback.",
+        "Seek feedback to test and improve the draft.",
+        "Collect feedback as part of the first implementation report.",
+        "Refine the strategy before finalisation."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          72,
+          73
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2,
+          4
+        ],
+        "explanation": "Review and refinement deliberately test a draft before it is finalised. Feedback can expose weak assumptions or improve feasibility. Implementation planning should follow a robust finalisation rather than bypassing scrutiny."
+      }
+    },
+    {
+      "q_number": 19,
+      "question_text": "Which three logical steps structure the chapter's analytical model of strategic management?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Strategic analysis.",
+        "Strategic budgeting, operational delivery and retrospective evaluation.",
+        "Strategy formulation through generation and choice.",
+        "Strategic planning, communication and implementation.",
+        "Independent cycles for goal setting, resource allocation and performance reporting."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          74,
+          75
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3
+        ],
+        "explanation": "The model begins with analysis, moves to formulation and choice, and ends with planning, communication and implementation. Performance measurement connects implementation back to renewed analysis. The stages are distinct but form a continuing cycle."
+      }
+    },
+    {
+      "q_number": 20,
+      "question_text": "Elite sporting results have deteriorated sharply. How should this influence the next strategy review?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Exclude past performance so that the vision remains aspirational.",
+        "Include the shortfall in situation and performance analysis.",
+        "Keep the strategy connected to the association's current context.",
+        "Generate options that address the performance issue.",
+        "Assess the issue before selecting domains and initiatives."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          74,
+          75
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "explanation": "Past and current performance are the starting context for strategy. Ignoring a major elite shortfall would detach formulation from the association's real situation. The issue should inform analysis and the later generation and prioritisation of options."
+      }
+    },
+    {
+      "q_number": 21,
+      "question_text": "Which statements correctly distinguish situation and performance analysis from internal analysis?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Situation and performance analysis examines results already achieved.",
+        "Internal analysis compares recent results with targets to identify underperformance.",
+        "The two analyses use the same evidence but report it to different governing bodies.",
+        "Situation analysis establishes the future capabilities available for implementation.",
+        "Internal analysis concentrates on achieved results while performance analysis estimates potential."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          74,
+          75
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0
+        ],
+        "explanation": "Performance analysis asks how the association has been doing and what problems define its context. Internal analysis instead appraises resources, capabilities, strengths and weaknesses, so it focuses on potential. Confusing them can hide the difference between poor results and limited capacity."
+      }
+    },
+    {
+      "q_number": 22,
+      "question_text": "A participation strategy has been drafted without consulting clubs, schools or families. Which analytical corrections are required?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Replace external analysis with financial reporting alone.",
+        "Identify the relevant external stakeholders and their interests.",
+        "Assume stakeholder preferences are irrelevant once a goal is approved.",
+        "Examine trends, opportunities and threats affecting participation.",
+        "Treat stakeholder mapping as an internal resource audit."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          74,
+          75
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3
+        ],
+        "explanation": "External analysis establishes whose preferences and interests affect a domain and what trends shape it. Participation initiatives cannot work reliably without that knowledge. Internal financial information is useful but does not substitute for understanding stakeholders."
+      }
+    },
+    {
+      "q_number": 23,
+      "question_text": "An association has identified ten attractive domains but lacks resources to improve all of them. Which formulation choices must it make?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Maintain baseline investment across the ten domains and prioritise within each one.",
+        "Choose the domains on which to focus.",
+        "Set domain-specific SMART goals.",
+        "Pilot initiatives in several domains before deciding which domains deserve focus.",
+        "Select initiatives for navigating each chosen domain."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          74,
+          75
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "Domain selection determines where scarce resources should be concentrated. Domain navigation then chooses initiatives for achieving goals within each selected area. Equal investment everywhere would avoid the strategic choice the model requires."
+      }
+    },
+    {
+      "q_number": 24,
+      "question_text": "What management value is created by the feedback loop in the strategic-management model?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "It turns performance information into input for renewed analysis.",
+        "It supports yearly or quarterly review and adjustment.",
+        "It tests whether chosen initiatives are producing expected results.",
+        "It helps update strategy when outcomes diverge from expectations.",
+        "It confirms the original strategic assumptions once implementation data are available."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          74,
+          75
+        ]
+      },
+      "page_crops": [
+        {
+          "pdf_page": 5,
+          "bbox": {
+            "left": 0.05,
+            "top": 0.11,
+            "right": 0.46,
+            "bottom": 0.37
+          },
+          "caption": "Figure 2.4: Key elements of a strategic management system"
+        }
+      ],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "explanation": "Measurement and control close the loop between implementation and the next situation analysis. Managers can learn from results and revise goals or initiatives when needed. The loop creates adaptability, not certainty about the environment."
+      }
+    },
+    {
+      "q_number": 25,
+      "question_text": "What is the strategic role of an association's mission and core values?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "They translate purpose into detailed instructions for the current planning cycle.",
+        "They provide a broad substitute for measurable departmental objectives.",
+        "They are revised when performance indicators reveal a significant target gap.",
+        "They frame the association's sporting and commercial ambitions for the planning period.",
+        "They provide the starting reference for assessing mission-related performance."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          76,
+          77
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          4
+        ],
+        "explanation": "Strategy ultimately helps the organisation fulfil its mission, so mission and values frame the initial assessment. They describe purpose and the standards against which relevant performance is judged. They do not replace specific goals or action plans."
+      }
+    },
+    {
+      "q_number": 26,
+      "question_text": "The association wants to improve football's positioning and reputation. Which approach best defines the organisational context?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Include relevant functions such as competitions, grassroots, communications and marketing.",
+        "Define the context around communications because that unit owns reputation management.",
+        "Exclude units that have no immediate bearing on the objective.",
+        "Include the leadership team and each unit affected by the resulting resource allocation.",
+        "Use the draft initiatives to determine which organisational units belong in the analysis."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          76,
+          77
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2
+        ],
+        "explanation": "Organisational boundaries should capture all functions needed for the objective while removing irrelevant scope. Reputation is cross-functional, so several units contribute. Focused breadth is different from either departmental isolation or indiscriminate inclusion."
+      }
+    },
+    {
+      "q_number": 27,
+      "question_text": "Why should the organisational context be established before strategy formulation?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "It clarifies whether the process covers the whole association or selected units.",
+        "It removes material that is irrelevant to the question.",
+        "It secures early agreement from the stakeholders included in the process.",
+        "It makes cross-functional analysis more focused.",
+        "It creates a stable corporate boundary that can be reused for subsequent reviews."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          76,
+          77
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3
+        ],
+        "explanation": "Context sets the boundary of the analysis and identifies who and what must be involved. A clear boundary improves focus without assuming every issue has the same organisational reach. It does not eliminate disagreement or the need to revisit scope."
+      }
+    },
+    {
+      "q_number": 28,
+      "question_text": "A refereeing unit wants to develop its own objectives while remaining within the association's corporate direction. Which statements apply?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "The strategic-management framework can be used at unit level.",
+        "The unit should define a context appropriate to refereeing.",
+        "Unit goals should remain connected to the wider mission.",
+        "The unit should contribute evidence and actions while corporate leaders retain responsibility for setting its objectives.",
+        "Relevant resources and performance indicators should be analysed."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          76,
+          77
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "explanation": "The framework is scalable from the whole association to a unit, project or individual level. Refereeing can therefore define its own context, evidence and goals while remaining aligned with the corporate mission. Unit planning is not a claim of organisational independence."
+      }
+    },
+    {
+      "q_number": 29,
+      "question_text": "Why is performance assessment in a national association more complex than in a profit-maximising company?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Associations rely mainly on qualitative outcomes that cannot support systematic measurement.",
+        "Financial indicators provide the neutral baseline against which sporting outcomes should be converted.",
+        "Mission-related sporting outcomes are assessed separately from organisational performance.",
+        "The association's purpose usually extends beyond maximising shareholder value.",
+        "Senior national-team and club results provide a sufficient proxy for the wider mission."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          76,
+          77
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "A company focused on shareholder value can emphasise financial returns, while an association serves a broader mission. Its performance must therefore be judged against sporting, participation, operational and stakeholder goals as well as finances. Complexity does not mean measurement is impossible."
+      }
+    },
+    {
+      "q_number": 30,
+      "question_text": "Management wants an impartial view of whether the association is meeting its goals efficiently. Which evidence should it use?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "A structured consensus assessment produced by the senior team.",
+        "Mission-related key performance indicators.",
+        "Financial results compared with budget and previous seasons.",
+        "Indicators selected from common association practice before checking their link to purpose.",
+        "Comparisons with targets or previous results."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          76,
+          77
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          4
+        ],
+        "explanation": "KPIs translate mission and goals into evidence that can be compared over time or against targets. Benchmarking similar organisations can add a relative perspective. Financial data alone cannot represent a multi-purpose football association."
+      }
+    },
+    {
+      "q_number": 31,
+      "question_text": "Which categories organise the handbook's example performance indicators for national associations?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Financial performance.",
+        "Public and media visibility.",
+        "Operational performance.",
+        "Board and committee satisfaction.",
+        "Stakeholder satisfaction."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          78,
+          79
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          4
+        ],
+        "explanation": "The example groups indicators into financial, operational, internal and stakeholder-satisfaction categories. That arrangement gives management a broader picture than one headline measure. Categories should reflect the association's mission and operating context."
+      }
+    },
+    {
+      "q_number": 32,
+      "question_text": "A recession causes sponsors to withdraw urgently from grassroots programmes. How should this affect strategy formulation?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Treat the loss as a priority problem requiring a focused response.",
+        "Consider an ad hoc process for the overriding issue.",
+        "Protect the approved grassroots portfolio and meet the shortfall through temporary reserves.",
+        "Shorten the action horizon where the crisis demands it.",
+        "Allow the urgent challenge to shape the scope of the wider review."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          78,
+          79
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "explanation": "A severe funding shock may override the normal planning rhythm and require rapid action. The association should define the urgent issue, timeframe and response while considering its effect on the broader strategy. Rigidity would leave the plan detached from available resources."
+      }
+    },
+    {
+      "q_number": 33,
+      "question_text": "What determines an appropriate time horizon for a strategic plan?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "The association's presidential term and competition calendar.",
+        "The availability of reliable external and internal data.",
+        "The nature and urgency of the problems being addressed.",
+        "The publication cycle for the association's annual report.",
+        "The time needed for departments to absorb planned expenditure."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          78,
+          79
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2
+        ],
+        "explanation": "The horizon must fit the issue: urgent shocks may require months, normal plans often cover three to five years, and structural goals may need a decade or more. A clear horizon also determines suitable evidence and tools. One duration cannot serve every challenge."
+      }
+    },
+    {
+      "q_number": 34,
+      "question_text": "An association is preparing a 12-year participation strategy. Which analytical choices are appropriate?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Examine long-term demographic trends.",
+        "Extrapolate recent registration growth across the planning period.",
+        "Use the assumptions prepared for the association's short-term financial contingency plan.",
+        "Examine long-term economic and technological trends.",
+        "Choose the horizon after preferred participation initiatives have been costed."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          78,
+          79
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          3
+        ],
+        "explanation": "A long-range participation strategy should assess structural forces likely to change demand and delivery over time. Demographic, economic and technological trends are therefore especially relevant. Current data remain useful, but cannot be the only basis for a 12-year direction."
+      }
+    },
+    {
+      "q_number": 35,
+      "question_text": "A board wants a balanced UEFA Grow performance dashboard. Which choices demonstrate the intended breadth?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Use sporting performance as the headline measure and treat organisational capacity as explanatory data.",
+        "Include participation and performance measures.",
+        "Combine engagement and participation because both measure public involvement.",
+        "Include facilities and revenue measures.",
+        "Include governance, women's football and enabling-capacity measures."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          78,
+          79
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3,
+          4
+        ],
+        "explanation": "UEFA Grow proposes eight complementary areas rather than a single sporting or financial measure. Performance, participation, facilities, revenue, engagement, governance and regulation, women's football and enablers create a rounded assessment. A narrow elite result would miss organisational capacity and wider mission outcomes."
+      }
+    },
+    {
+      "q_number": 36,
+      "question_text": "How do context, performance and problems combine to define the scope of a strategy review?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Context establishes the organisational boundary.",
+        "The previous plan's focus areas and duration establish the default scope for the next cycle.",
+        "Performance evidence shows how the association is doing.",
+        "Problems identify issues requiring action.",
+        "Urgency and scale help establish the time horizon."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          78,
+          79
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "explanation": "The review scope emerges from who and what is included, the evidence of current results and the challenges to resolve. Their importance and urgency also shape duration and priorities. A previous document may inform the process but cannot define it alone."
+      }
+    },
+    {
+      "q_number": 37,
+      "question_text": "What does the chapter mean by a national association domain?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "An organisational function responsible for delivering a strategic objective.",
+        "An activity area involving an exchange with a defined stakeholder group.",
+        "An activity area with a measurable financial return for the association.",
+        "A group of related activities serving stakeholders within a defined territory.",
+        "A programme governed by a standing committee and funded through the strategic plan."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          80,
+          81
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1
+        ],
+        "explanation": "A domain is defined through an activity and an exchange of goods, services or money with identifiable stakeholders. It is not simply an organisational box or commercial market. The concept helps map the association's diverse external environment."
+      }
+    },
+    {
+      "q_number": 38,
+      "question_text": "When mapping the sponsorship domain, which elements should the strategy team identify?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "The commercial department as provider and sponsors as recipients of brand exposure.",
+        "Spectators as the principal stakeholder because sponsors purchase access to their attention.",
+        "The controlled advertising space or rights offered by the association.",
+        "The inventory of rights, leaving contractual obligations to the later implementation plan.",
+        "The sponsor as a customer exchanging money for a defined service."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          80,
+          81
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2,
+          4
+        ],
+        "explanation": "Sponsorship is a comparatively clear domain because the service, stakeholder and exchange can be specified. The association offers controlled rights and the customer supplies money under defined obligations. Mapping should make that value exchange explicit."
+      }
+    },
+    {
+      "q_number": 39,
+      "question_text": "A youth-development review identifies only young players as stakeholders. Which additions are supported by the handbook?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Clubs that deliver membership and training.",
+        "Commercial partners that can finance club delivery and player recruitment.",
+        "Parents who influence participation and safety perceptions.",
+        "Schools and local government that shape access and development.",
+        "Clubs as delivery partners, with families and public bodies treated as contextual influences rather than stakeholders."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          80,
+          81
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3
+        ],
+        "explanation": "Youth development involves a network rather than a simple buyer-seller exchange. Clubs, parents, schools and local government can all influence participation and value creation. Excluding them would weaken both external analysis and later action design."
+      }
+    },
+    {
+      "q_number": 40,
+      "question_text": "Why can a relatively small national association still require complex domain analysis?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "A smaller workforce reduces internal complexity but makes external domains more dependent on shared processes.",
+        "It may operate across many sporting, social, regulatory and commercial areas.",
+        "Its democratic and political structure adds internal complexity.",
+        "Its stakeholders exchange different forms of value.",
+        "Its activity set can be broader than that of a similarly sized company."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          80,
+          81
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "explanation": "A staff of 30 to 70 may still support a dozen or more very different areas. The association combines democratic governance with diverse exchanges and stakeholders. Organisational size therefore understates strategic complexity."
+      }
+    },
+    {
+      "q_number": 41,
+      "question_text": "A strategy team has an unstructured list of hundreds of activities. What is a useful first step in external analysis?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Group activity into a manageable map of principal domains and subdomains.",
+        "Group tasks according to the department currently responsible for them.",
+        "Use UEFA Grow's example domain map as the initial structure and preserve its categories for benchmarking.",
+        "Estimate budgets for activity clusters before defining their stakeholder exchanges.",
+        "Prioritise revenue-producing clusters and map development activities during formulation."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          80,
+          81
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0
+        ],
+        "explanation": "Domain mapping organises a complex environment into principal areas of activity and related subdomains. The handbook suggests that associations often identify roughly 8 to 15 main areas, without prescribing a universal template. The map must reflect the association's own exchanges and mission."
+      }
+    },
+    {
+      "q_number": 42,
+      "question_text": "Why does the chapter prefer the term 'domain' to 'business unit' for many association activities?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Association activities combine commercial and regulatory functions within the same organisational unit.",
+        "Some activities create non-commercial value for stakeholders.",
+        "Commercial activity is better described as a business unit, while development activity forms a domain.",
+        "Many relevant exchanges are not conventional markets.",
+        "The term emphasises strategic responsibility rather than the exchange of value with stakeholders."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          80,
+          81
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3
+        ],
+        "explanation": "National associations operate in areas such as youth development, refereeing and participation where value is broader than profit. Domain is therefore a more flexible label for stakeholder exchanges. Commercial activity can still form a domain or subdomain."
+      }
+    },
+    {
+      "q_number": 43,
+      "question_text": "Which questions are used to identify key success factors within a domain?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Which unit has the largest historical budget?",
+        "What drives stakeholder behaviour?",
+        "How can the association meet stakeholder expectations?",
+        "How can stakeholder preferences be avoided?",
+        "How might it meet those expectations better than alternatives?"
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          82,
+          83
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "KSF analysis begins with the determinants of stakeholder behaviour and satisfaction. It then asks how the association can meet those expectations, potentially better than other organisations. Historical budget size does not by itself identify what makes a domain successful."
+      }
+    },
+    {
+      "q_number": 44,
+      "question_text": "Parents report that youth football feels unsafe and poorly communicated. Which actions follow the KSF example?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Improve clubs' communication with parents.",
+        "Set standards for the atmosphere in youth teams.",
+        "Train and communicate with youth coaches.",
+        "Address access and confidence through clubs, schools and local authorities.",
+        "Use a national youth-football image campaign to strengthen parental confidence before changing club practices."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          82,
+          83
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "explanation": "The KSF approach converts drivers of stakeholder satisfaction into conditions for success. Safety, communication, atmosphere and access require action with clubs, coaches, schools and authorities. Elite branding would not address the identified youth-domain expectations."
+      }
+    },
+    {
+      "q_number": 45,
+      "question_text": "How does domain mapping support later strategy formulation?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "It provides a standard strategic approach that can be adapted across the mapped domains.",
+        "It supplies enough environmental structure to rank domains from stakeholder size alone.",
+        "It establishes the domain portfolio that should receive baseline strategic attention.",
+        "It identifies where external analysis can be replaced by internal capability assessment.",
+        "It creates the structure within which domain-specific goals and initiatives can be developed."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          82,
+          83
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          4
+        ],
+        "explanation": "The domain map defines coherent areas for goals, evidence and action. Management can then compare expected results, costs, investment and revenue when choosing focus. Unclear domains may still require KSF or PEST analysis."
+      }
+    },
+    {
+      "q_number": 46,
+      "question_text": "Managers understand who participates in a new recreational-football domain but cannot explain what drives success. Which analysis should they undertake?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Identify what determines stakeholder behaviour and satisfaction.",
+        "Draft several initiatives from staff experience and use stakeholder research to refine them.",
+        "Translate those expectations into key success factors.",
+        "Use financial sustainability as the first KSF, then add stakeholder factors.",
+        "Transfer KSFs from a comparable participation domain before testing local differences."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          82,
+          83
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2
+        ],
+        "explanation": "KSF analysis is designed for a domain whose success dynamics are uncertain. It links stakeholder motives to what the association must do well. The resulting insight makes initiatives easier to formulate and more likely to be effective."
+      }
+    },
+    {
+      "q_number": 47,
+      "question_text": "Which dimensions form the PEST framework used in external analysis?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Political trends.",
+        "Economic trends.",
+        "Participation trends.",
+        "Social trends.",
+        "Strategic capability trends."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          82,
+          83
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3
+        ],
+        "explanation": "PEST covers political, economic, social and technological trends. It provides a disciplined scan of external forces affecting a particular domain. Match tactics and personality assessment belong to different analytical questions."
+      }
+    },
+    {
+      "q_number": 48,
+      "question_text": "An ageing population and rapid growth of new social platforms are changing youth participation. Which responses fit PEST analysis?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Reassess how social trends affect stakeholder expectations.",
+        "Examine how technological change alters communication.",
+        "Review the domain's key success factors.",
+        "Adjust communications to the new platforms while retaining the existing participation offer and KSFs.",
+        "Adapt participation and parent-engagement initiatives accordingly."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          82,
+          83
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "explanation": "PEST analysis is useful because external trends can change the conditions for success. Demography may alter participation needs while technology changes how clubs communicate with families. The association should update KSFs and actions rather than freeze them."
+      }
+    },
+    {
+      "q_number": 49,
+      "question_text": "How should the scope of a PEST analysis normally be defined?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Use a national PEST scan and apply the same priority trends within each domain.",
+        "Concentrate on trends that the association can influence through its strategy.",
+        "Exclude geographically uneven trends until reliable national data are available.",
+        "Around a specific domain and its relevant geography.",
+        "Define the scope around the association's principal organisational functions."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          84,
+          85
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "PEST factors have meaning in relation to a domain and place. Immigration, economic disparity or technology may be crucial in one country or activity and minor in another. A generic global list can therefore obscure strategic relevance."
+      }
+    },
+    {
+      "q_number": 50,
+      "question_text": "External analysis reveals a new public-funding opportunity and a threat from falling lottery contributions. What should analysts do next?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Hold the ideas outside the option repository until their financial impact is quantified.",
+        "Record potential actions for exploiting the opportunity.",
+        "Treat the funding opportunity as an additional financial resource in the internal analysis.",
+        "Advance both responses to formulation because they arose from validated external analysis.",
+        "Record potential responses to the threat."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          84,
+          85
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          4
+        ],
+        "explanation": "Analysis should generate preliminary implications, issues and options while the evidence is fresh. These ideas enter a repository for later comparison and prioritisation. Recording an option does not mean that it has already been selected."
+      }
+    },
+    {
+      "q_number": 51,
+      "question_text": "What is the main purpose of internal strategic analysis?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Appraise resources the association can access or control.",
+        "Estimate how external political changes will affect the association's resources.",
+        "Assess staff and organisational capabilities.",
+        "Explain past performance through the resources used during the previous cycle.",
+        "Identify strengths and weaknesses that affect execution."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          84,
+          85
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          4
+        ],
+        "explanation": "Internal analysis asks whether the association has the resources and capabilities to execute its goals. It identifies strengths to leverage and weaknesses to address. External trends and past performance are related but distinct analytical tasks."
+      }
+    },
+    {
+      "q_number": 52,
+      "question_text": "A board adopts an ambitious stadium strategy without checking funding, land or delivery expertise. Which risks should management recognise?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "The goals may be disconnected from controllable resources.",
+        "Execution may fail because required capabilities are absent.",
+        "A well-worded goal makes resource appraisal unnecessary.",
+        "Stakeholders may lose confidence in unrealistic commitments.",
+        "The project could consume goodwill and resources without producing results."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          84,
+          85
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "explanation": "Goals must be grounded in financial, tangible and human capability. Unrealistic commitments can damage results and stakeholder trust, not merely miss a target. An internal appraisal should precede final commitment."
+      }
+    },
+    {
+      "q_number": 53,
+      "question_text": "Which item is one of the four resource categories used for a national association's internal analysis?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "External opportunities.",
+        "Stakeholder satisfaction.",
+        "Intangible assets.",
+        "Competition performance.",
+        "Regulatory exposure."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          84,
+          85
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2
+        ],
+        "explanation": "The four categories are financial resources, tangible assets, intangible assets and human resources. Intangibles include brands, reputation, know-how and databases. Political trends and stakeholder drivers belong to external analysis."
+      }
+    },
+    {
+      "q_number": 54,
+      "question_text": "The association is cataloguing its fan database, reputation, training centre and staff expertise. How should these resources be classified?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "The database and reputation are intangible assets.",
+        "Record the database, reputation and facility as assets, while treating expertise as an operating cost.",
+        "Classify staff expertise with intangible know-how because neither is a physical asset.",
+        "The training centre is a tangible asset.",
+        "Treat the training centre as a capability because it enables programme delivery."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          84,
+          85
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          3
+        ],
+        "explanation": "Classification clarifies what the association controls and how it can be measured or developed. Data and reputation are intangible, facilities are tangible, and staff expertise belongs to human resources. Potential financial value does not collapse these distinctions."
+      }
+    },
+    {
+      "q_number": 55,
+      "question_text": "Which statements describe the scoring dimensions in the strengths and weaknesses analysis?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Importance is derived from measurable performance relative to peer associations.",
+        "Importance reflects a resource's value for success.",
+        "A midpoint relative-strength score indicates that the resource makes an average contribution to strategic success.",
+        "Relative strength reflects how well the association performs in that resource.",
+        "Relative strength can use comparable measurable indicators."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          86,
+          87
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3,
+          4
+        ],
+        "explanation": "The grid uses strategic importance and relative strength as separate dimensions. Importance often relies on informed judgement linked to KSFs, while relative strength can be benchmarked objectively. An average score indicates ordinary rather than exceptional capability."
+      }
+    },
+    {
+      "q_number": 56,
+      "question_text": "Senior managers disagree sharply about how important the fan database is to strategic success. Which assessment practices are appropriate?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Ask more than one person to score importance.",
+        "Let the database owner set both scores without challenge.",
+        "Relate importance to the domain's key success factors.",
+        "Use a mathematical average or seek an agreed score.",
+        "Separate importance from the current quality of the database."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          86,
+          87
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "explanation": "Importance is judgemental, so multiple perspectives reduce individual bias. The discussion should connect the resource to the relevant KSFs and distinguish value from current relative strength. Ownership alone is not an objective scoring method."
+      }
+    },
+    {
+      "q_number": 57,
+      "question_text": "An association wants to score its relative strength in training methods. What evidence is most useful?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "A panel assessment by experienced technical staff within the association.",
+        "Comparable indicators from similar national associations.",
+        "The resource's KSF-based importance score adjusted for recent performance.",
+        "National trends in coach education participation and employment.",
+        "The development budget allocated to training-method research."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          86,
+          87
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1
+        ],
+        "explanation": "Relative strength concerns comparative performance in a resource or capability. Where measures exist, equivalent data from similar associations provide a sound basis. Strategic importance and external trends answer different questions."
+      }
+    },
+    {
+      "q_number": 58,
+      "question_text": "How should the four quadrants of the strengths and weaknesses grid be interpreted?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "A low-importance weakness becomes a priority when its relative-strength score is especially poor.",
+        "A strong resource merits strategic investment even when its contribution to KSFs is limited.",
+        "High-importance strong resources are key strengths.",
+        "Relative strength determines the quadrant, while importance is used later for initiative ranking.",
+        "High-importance weak resources are key weaknesses."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          86,
+          87
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2,
+          4
+        ],
+        "explanation": "The grid combines value for success with comparative capability. High-importance areas deserve attention as strengths to leverage or weaknesses to repair. Low-importance resources may be superfluous strengths or irrelevant weaknesses rather than priorities."
+      }
+    },
+    {
+      "q_number": 59,
+      "question_text": "Facilities are crucial to the strategy but score very poorly in relative strength. Which conclusions are justified?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Facilities constitute a key weakness.",
+        "Facilities should be ignored because weakness implies low importance.",
+        "A strategy dependent on current facilities carries execution risk.",
+        "Capability-building or an alternative delivery route should be considered.",
+        "The association should label them a superfluous strength."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          86,
+          87
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3
+        ],
+        "explanation": "High importance combined with low relative strength defines a key weakness. Management should either strengthen the capability, source it differently or reconsider a strategy that relies on it. Ignoring the gap would reduce strategic robustness."
+      }
+    },
+    {
+      "q_number": 60,
+      "question_text": "Why does strengths-and-weaknesses analysis improve assessment of strategy robustness?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "It identifies current capability gaps that should be excluded from the strategic plan.",
+        "It tests whether proposed initiatives rely on capabilities the association actually possesses.",
+        "It highlights important weaknesses that may block execution.",
+        "It identifies valuable strengths that can support success.",
+        "It distinguishes strategically relevant gaps from low-value deficiencies."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          86,
+          87
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "explanation": "Robustness depends on matching ambition to the association's real capability profile. The grid shows where execution is supported, exposed or distracted by irrelevant resources. A weakness may be developed or outsourced rather than making action permanently impossible."
+      }
+    },
+    {
+      "q_number": 61,
+      "question_text": "What broad choices does the chapter give for addressing an important internal weakness?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Build the capability internally.",
+        "Reduce strategic dependence on the capability.",
+        "Reclassify the weakness as non-core.",
+        "Transfer strategic accountability to a supplier.",
+        "Manage the exposure through tighter control."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          88,
+          89
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0
+        ],
+        "explanation": "An association can develop the capability itself or outsource the relevant task when appropriate. The decision depends on core competence and how feasibly internal capacity can be built. Relabelling or ignoring a key weakness leaves the execution risk unchanged."
+      }
+    },
+    {
+      "q_number": 62,
+      "question_text": "Travel logistics are a key weakness and specialist expertise lies outside the association's core competence. Which responses are sensible?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Build a small internal travel unit so the association retains direct control of a strategically important service.",
+        "Evaluate outsourcing to a qualified travel agency.",
+        "Use a specialist supplier and rely on its service standards in place of association-level controls.",
+        "Retain clear responsibility for how the outsourced service supports strategic goals.",
+        "Redesign travel-dependent activities to reduce the need for specialist logistics."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          88,
+          89
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3
+        ],
+        "explanation": "Outsourcing is appropriate when external expertise is stronger and internal capability is difficult or inefficient to build. The association still needs standards, accountability and alignment with its goals. Outsourcing transfers delivery, not strategic responsibility."
+      }
+    },
+    {
+      "q_number": 63,
+      "question_text": "Which steps form the structured approach to strategy formulation after analysis?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Pilot promising ideas before formalising the vision and goals.",
+        "Formulate a vision and SMART goals.",
+        "Generate ideas for achieving the goals.",
+        "Prioritise available resources first and formulate goals that fit the resulting allocation.",
+        "Prioritise goals and actions."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          88,
+          89
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "Formulation converts analytical insight into direction, possible action and explicit choices. A vision and SMART goals establish outcomes, idea generation produces routes, and prioritisation selects among them. Implementation comes after these choices."
+      }
+    },
+    {
+      "q_number": 64,
+      "question_text": "A workshop is confusing the association's mission, five-year vision and annual goals. Which distinctions should the facilitator establish?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Mission describes the organisation's enduring purpose and activity.",
+        "Vision states intended achievement for a defined period.",
+        "Detailed goals give operational direction within the vision.",
+        "SMART goals make desired results specific and assessable.",
+        "Mission, vision and goals are interchangeable labels for the annual budget."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          88,
+          89
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "explanation": "Mission answers why the association exists, vision describes a time-bound destination, and goals specify what must be achieved. SMART formulation makes goals measurable and actionable. Treating the concepts as synonyms weakens both communication and planning."
+      }
+    },
+    {
+      "q_number": 65,
+      "question_text": "Which quality belongs to a SMART goal in the chapter?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "It is directionally aspirational.",
+        "It is measurable but undated.",
+        "It captures a valuable opportunity.",
+        "It requires future capabilities.",
+        "It is measurable."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          88,
+          89
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          4
+        ],
+        "explanation": "SMART goals are specific, measurable, attainable, relevant and time-bound. In simpler terms they should be ambitious but realistic, measurable and aligned with mission and strategy. Open-ended aspirations are insufficient for an action plan."
+      }
+    },
+    {
+      "q_number": 66,
+      "question_text": "A committee proposes the goal 'develop youth participation'. How should it improve the goal?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Specify the target population and desired result.",
+        "Specify a range of acceptable participation growth without fixing a target date.",
+        "Add a measurable target and deadline.",
+        "Define the activities the committee will deliver and use completion as the success measure.",
+        "Set a stretch target based on the leading association's participation rate before assessing attainability."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          88,
+          89
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2
+        ],
+        "explanation": "The generic aspiration does not tell managers what success looks like or when it should be achieved. A defined population, measurable result and deadline create a basis for initiatives and control. The target should remain ambitious, relevant and attainable."
+      }
+    },
+    {
+      "q_number": 67,
+      "question_text": "Which features characterised the Danish association's coordinated planning framework described in the chapter?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "A four-year planning cycle.",
+        "Goals organised around main domains.",
+        "Untracked working groups created whenever any committee wished.",
+        "Common templates based on SMART goals.",
+        "Plans containing actions but no targets or measures."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "handbook_pages": [
+          90,
+          91
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3
+        ],
+        "explanation": "The DBU replaced a proliferation of hard-to-coordinate groups with a common cycle, domain structure and SMART template. Committees specified objectives, measures, yearly targets and actions. Standardisation supported coordination without requiring every plan to be written centrally."
+      }
+    },
+    {
+      "q_number": 68,
+      "question_text": "How should a time-bound organisational vision relate to domain-specific strategic issues?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "The vision should provide an overall direction for the planning period.",
+        "Domain goals should translate that direction into specific outcomes.",
+        "The vision should take account of important issues revealed by analysis.",
+        "The vision should summarise the highest-priority issue from each strategic domain.",
+        "The vision may serve as the heading for a three-to-five-year strategic plan."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "handbook_pages": [
+          90,
+          91
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "explanation": "Vision is broader than the issues arising in individual domains, but it cannot ignore them. It supplies a shared destination while domain-specific goals and actions provide precision. This is why a vision often names a planning period yet still needs SMART goals beneath it."
+      }
+    },
+    {
+      "q_number": 69,
+      "question_text": "The association enters a new esports-related domain where internal experience is limited. What is the most suitable idea-generation response?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Use internal staff to preserve ownership, supplementing their experience after ideas are drafted.",
+        "Adapt a highly visible initiative from a leading association as the initial strategy.",
+        "Fund small pilots across the idea portfolio and compare their early results.",
+        "Use experience and benchmarks from other organisations.",
+        "Delay action generation until the association has recruited in-house domain specialists."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "handbook_pages": [
+          90,
+          91
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "A new domain may exceed internal expertise, making external benchmarks, peer learning and consultants useful. Those inputs should still be tested against the association's analysis and goals. Outside experience informs judgement rather than replacing it."
+      }
+    },
+    {
+      "q_number": 70,
+      "question_text": "Which sources can be used to generate actions for achieving SMART goals?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Actions proposed during analysis before a SMART goal has been selected.",
+        "Experience within the association.",
+        "Initiatives with identified funding because feasibility is part of idea generation.",
+        "Structured benchmarking sessions focused on replicating peer-association practice.",
+        "Experience from other organisations and external specialists."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "handbook_pages": [
+          90,
+          91
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          4
+        ],
+        "explanation": "The chapter presents internal expertise, external experience and dedicated idea-generation methods as three routes. The right route depends on the novelty and complexity of the domain. Ideas are generated broadly before being compared and prioritised."
+      }
+    },
+    {
+      "q_number": 71,
+      "question_text": "Supporters report a poor national-stadium experience, but the causes are unclear. Which design-thinking actions fit the handbook example?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Map the supporters' journey to and through the stadium.",
+        "Begin with a predetermined solution and avoid user experience evidence.",
+        "Identify pains that should be removed.",
+        "Restrict analysis to the final score of the match.",
+        "Identify gains that could improve the experience."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "handbook_pages": [
+          90,
+          91
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          4
+        ],
+        "explanation": "Journey mapping makes the experience visible from the supporter's perspective. Pains identify problems while gains suggest value-creating additions. This method broadens action generation beyond internal assumptions or sporting results."
+      }
+    },
+    {
+      "q_number": 72,
+      "question_text": "Which statements distinguish domain selection from domain navigation?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Domain selection chooses the areas on which the association will focus.",
+        "Domain navigation chooses initiatives within a selected area.",
+        "Navigation allocates a common package of initiatives across the selected domains.",
+        "Both are necessary because resources are limited.",
+        "Both domains and initiatives should be prioritised."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "handbook_pages": [
+          90,
+          91
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "explanation": "Selection answers where the association will concentrate its effort, while navigation answers how it will pursue goals there. Scarcity requires both levels of choice. Equal activity across all domains would avoid rather than perform prioritisation."
+      }
+    },
+    {
+      "q_number": 73,
+      "question_text": "What question is the impact/complexity matrix designed to help management answer?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Which stakeholders should participate in deciding strategic priorities.",
+        "How alternative initiatives compare on expected financial return.",
+        "Which domains or initiatives deserve priority given expected value and delivery difficulty.",
+        "Whether the proposed initiative is consistent with the association's stated mission.",
+        "Which department has the authority and capacity to sponsor an initiative."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          14
+        ],
+        "handbook_pages": [
+          92,
+          93
+        ]
+      },
+      "page_crops": [
+        {
+          "pdf_page": 13,
+          "bbox": {
+            "left": 0.59,
+            "top": 0.53,
+            "right": 0.92,
+            "bottom": 0.79
+          },
+          "caption": "Figure 2.6: Impact/complexity matrix"
+        }
+      ],
+      "answer": {
+        "correct_options": [
+          2
+        ],
+        "explanation": "The matrix compares potential impact with complexity, cost, effort or risk. It supports prioritisation after ideas have been generated. It is a decision aid for strategic focus rather than a governance or competition-ranking tool."
+      }
+    },
+    {
+      "q_number": 74,
+      "question_text": "An initiative has high impact and low complexity. How should the association normally treat it?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Prioritise it as a quick win.",
+        "Investigate it further because low complexity may indicate that its impact has been overstated.",
+        "Schedule it after high-complexity projects so early resources support structural change.",
+        "Check that its impact genuinely supports mission, vision or goals.",
+        "Prioritise it when a similar initiative performed well in the previous planning cycle."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          14
+        ],
+        "handbook_pages": [
+          92,
+          93
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          3
+        ],
+        "explanation": "High-impact, low-complexity initiatives are the matrix's low-hanging fruit. They normally deserve priority, provided the impact assessment is aligned with strategic outcomes. Ease alone is insufficient if the initiative does not advance the mission."
+      }
+    },
+    {
+      "q_number": 75,
+      "question_text": "A proposed national training centre has high expected impact and high complexity. Which next steps fit the chapter?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Treat it as a quick win if sufficient funding is currently available.",
+        "Investigate and plan the project further.",
+        "Place it behind lower-impact initiatives until implementation capability improves.",
+        "Develop a business case or business plan.",
+        "Assess feasibility before committing major resources."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          14
+        ],
+        "handbook_pages": [
+          92,
+          93
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3,
+          4
+        ],
+        "explanation": "High-impact, high-complexity projects may be strategically important but require deeper investigation. A business plan can test cost, risk and feasibility before commitment. Complexity calls for evidence, not automatic rejection or instant execution."
+      }
+    },
+    {
+      "q_number": 76,
+      "question_text": "Which factors are identified as common obstacles to strategy implementation?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Limited understanding of the strategy.",
+        "The mere existence of written goals and an approved budget.",
+        "Resistance to change.",
+        "Unclear expectations or inadequate experience.",
+        "Weak motivation, control or follow-up."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          14
+        ],
+        "handbook_pages": [
+          92,
+          93
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "explanation": "Implementation fails when the people responsible do not understand, accept, know how to perform or remain accountable for the strategy. These are human and organisational conditions. A written plan helps, but cannot execute itself."
+      }
+    },
+    {
+      "q_number": 77,
+      "question_text": "Why may an association prepare different versions of its written strategic plan?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Use the public version to disclose deliverables while keeping strategic rationale internal.",
+        "Internal users often need deadlines, deliverables and operational detail.",
+        "Adapt mission and vision wording to the interests of each audience.",
+        "Use the public plan for stakeholder communication and maintain implementation detail in departmental budgets.",
+        "Publish the plan after initial implementation has confirmed that its goals are feasible."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          14
+        ],
+        "handbook_pages": [
+          92,
+          93
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1
+        ],
+        "explanation": "Writing the strategy is the starting point for communication, but audiences need different levels of detail. Internal versions can support delivery, while public versions may explain direction more generally. The core strategy should remain coherent across versions."
+      }
+    },
+    {
+      "q_number": 78,
+      "question_text": "How should organisational structure respond to strategic priorities?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Retain the existing structure and coordinate new priorities through cross-functional projects.",
+        "Create a project unit for each strategic initiative so line functions remain operationally focused.",
+        "Priority domains should have a clear place in line functions or appropriate units.",
+        "Combine related and unrelated activities in larger line functions to reduce management layers.",
+        "Major strategic change may justify revising the organisation chart."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          14
+        ],
+        "handbook_pages": [
+          92,
+          93
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2,
+          4
+        ],
+        "explanation": "Structure should support rather than obstruct the chosen strategy. Clear line functions improve focus, coordination and control, and new priorities may justify new units. Reorganisation should follow genuine strategic needs rather than every minor action."
+      }
+    },
+    {
+      "q_number": 79,
+      "question_text": "A quarterly report shows that a strategic participation programme is behind schedule and overspending. What should management do?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Investigate the deviation early.",
+        "Wait for consolidated annual accounts before discussing it.",
+        "Take corrective action before year-end.",
+        "Report progress against both budget and strategic objectives.",
+        "Remove the objective from the strategy without analysis."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          15
+        ],
+        "handbook_pages": [
+          94,
+          95
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3
+        ],
+        "explanation": "Structured reporting creates an early-warning mechanism for both financial and strategic performance. Managers can diagnose the deviation and agree corrective action while recovery remains possible. Waiting until year-end sacrifices that principal advantage."
+      }
+    },
+    {
+      "q_number": 80,
+      "question_text": "What trade-off should be considered when designing reporting and control systems?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "A light reporting system is strategically preferable because it protects staff time for implementation.",
+        "Frequent structured reporting can reveal problems early.",
+        "Corrective action becomes possible before deviations grow.",
+        "A formal system requires additional time and resources.",
+        "Controls can cover strategic goals as well as financial measures."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          15
+        ],
+        "handbook_pages": [
+          94,
+          95
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "explanation": "Formal reporting improves visibility and timely intervention but costs more to operate. The association should choose a cadence and scope proportionate to its needs. Control is broader than finance and can monitor progress against strategic objectives."
+      }
+    },
+    {
+      "q_number": 81,
+      "question_text": "What is management by objectives in the chapter's implementation framework?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Translation of organisational goals into individual objectives and responsibilities.",
+        "Assignment of individual targets based on professional-development needs rather than unit goals.",
+        "A periodic performance discussion focused on employee capability and conduct.",
+        "A year-end reporting process that attributes unit outcomes to responsible managers.",
+        "A bonus framework linked to departmental results without negotiated individual objectives."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          15
+        ],
+        "handbook_pages": [
+          94,
+          95
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0
+        ],
+        "explanation": "MBO links the strategy of a unit to the annual objectives of managers and employees. Progress can be reviewed with line managers and corrective action taken. Incentives may be connected to results, but alignment and accountability are the central purpose."
+      }
+    },
+    {
+      "q_number": 82,
+      "question_text": "A department's strategic goal is to increase licensed coaches, but employee objectives concern unrelated media activity. Which corrections follow MBO?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Retain the media objectives but add a departmental participation KPI to each employee review.",
+        "Translate the department goal into relevant individual objectives.",
+        "Review progress when the annual departmental result is available.",
+        "Review progress periodically with line managers.",
+        "Assign coach-development tasks and allow employees to define the expected results during delivery."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          15
+        ],
+        "handbook_pages": [
+          94,
+          95
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3
+        ],
+        "explanation": "Individual work should contribute visibly to the unit's strategic objectives. Relevant annual targets and periodic discussion create accountability and permit correction. Unrelated objectives weaken the link between organisation and execution."
+      }
+    },
+    {
+      "q_number": 83,
+      "question_text": "Why should an association adapt strategic-management formats and timing to its own context?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "The fundamental need for analysis disappears in some associations.",
+        "Associations differ in structure and operating cycles.",
+        "Governance elections and major competitions may shape timing.",
+        "Adaptation means omitting goals and implementation.",
+        "A fitted system is more likely to be usable and sustained."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          15
+        ],
+        "handbook_pages": [
+          94,
+          95
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "The methodology is transferable, but processes must fit the association's structure, culture and calendar. A system may take time to mature around elections or competitions. Adaptation concerns practical design, not abandonment of analytical fundamentals."
+      }
+    },
+    {
+      "q_number": 84,
+      "question_text": "Which principles form a strong oral summary of effective strategic management?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Understand the internal and external environment deeply.",
+        "Appraise resources and capabilities objectively.",
+        "Formulate clear goals and a path to achieve them.",
+        "Allocate sustained effort to implementation and control.",
+        "Assume that a well-written strategy will implement itself."
+      ],
+      "source_locator": {
+        "file": "Strategic-Management.pdf",
+        "pdf_pages": [
+          15
+        ],
+        "handbook_pages": [
+          94,
+          95
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "explanation": "Effective strategy combines evidence, realistic self-assessment, clear choices and disciplined execution. Each element supports the next and performance feedback renews the cycle. A document alone cannot substitute for people, resources, communication and follow-up."
+      }
+    }
+  ]
+}

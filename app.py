@@ -15,7 +15,36 @@ from core.database import (
     insert_case, insert_question, insert_answer,
     get_next_case_number, get_next_q_number,
     admin_get_questions, admin_update_question, admin_update_answer, admin_update_vignette,
-    DB_PATH,
+    DB_PATH, LIBRARY_EDIR, LIBRARY_UEFA_CFM,
+)
+from core.learning import classify_answer, correct_option_indices
+from core.custom_tests import (
+    CONFIG_VERSION,
+    SECTION_LABELS,
+    SECTION_ORDER,
+    continue_to_next_phase as continue_custom_phase,
+    create_test as create_custom_test,
+    delete_template as delete_custom_template,
+    delete_test as delete_custom_test,
+    finish_phase as finish_custom_phase,
+    finish_test as finish_custom_test,
+    get_availability as get_custom_availability,
+    get_official_edir_config,
+    get_result_breakdown as get_custom_result_breakdown,
+    get_standard_ordering as get_custom_ordering,
+    get_templates as get_custom_templates,
+    get_test as get_custom_test,
+    get_test_phases as get_custom_test_phases,
+    get_test_questions as get_custom_test_questions,
+    get_tests as get_custom_tests,
+    is_phased_config,
+    rate_free_text as rate_custom_free_text,
+    save_progress as save_custom_progress,
+    save_template as save_custom_template,
+    set_current_position as set_custom_position,
+    start_test as start_custom_test,
+    update_template as update_custom_template,
+    validate_config as validate_custom_config,
 )
 
 # ── Page config ───────────────────────────────────────────────────────────────
@@ -64,8 +93,9 @@ init_db()
 
 # ── Session-state defaults ────────────────────────────────────────────────────
 _DEFAULTS = {
-    "section":        "core_cases",   # core_cases | short_cases | mrqs | import_pdf | admin
-    "core_view":      "chapters",     # chapters | cases | start | question | review
+    "library_key":    LIBRARY_EDIR,
+    "section":        "core_cases",   # core_cases | short_cases | mrqs | custom
+    "core_view":      "chapters",     # chapters | cases | start | question | review | learning_summary
     "ch_id":          None,
     "ch_title":       "",
     "case_id":        None,
@@ -78,6 +108,16 @@ _DEFAULTS = {
     "attempt_id":     None,
     "ratings":        {},             # {q_id: 'got_it'|'partial'|'missed'}
     "case_vignette":  "",
+    "mrq_mode":       "exam",         # exam | learning
+    "attempt_mode":   "exam",         # mode locked in when an attempt starts
+    "learning_submitted": [],          # question ids with locked answers
+    "learning_results":   {},          # {q_id: correct|partial|incorrect|skipped}
+    "custom_view":     "dashboard",    # dashboard | test | review | summary
+    "custom_test_id":  None,
+    "custom_phase_editor": None,
+    "custom_phase_editor_nonce": 0,
+    "custom_delete_test_id": None,
+    "custom_delete_template_id": None,
 }
 for _k, _v in _DEFAULTS.items():
     if _k not in st.session_state:
@@ -92,10 +132,59 @@ def _db_section() -> str:
     )
 
 
+def _library_key() -> str:
+    return st.session_state.get("library_key", LIBRARY_EDIR)
+
+
+def _library_label() -> str:
+    return "UEFA CFM" if _library_key() == LIBRARY_UEFA_CFM else "EDiR"
+
+
 def _section_label() -> str:
     return {"core_cases": "CORE Cases", "short_cases": "Short Cases", "mrqs": "MRQs"}.get(
         st.session_state.section, "CORE Cases"
     )
+
+
+def _source_locator(value) -> dict:
+    if not value:
+        return {}
+    if isinstance(value, dict):
+        return value
+    try:
+        parsed = json.loads(value)
+        return parsed if isinstance(parsed, dict) else {}
+    except (TypeError, json.JSONDecodeError):
+        return {}
+
+
+def _render_source_citation(question: dict) -> None:
+    locator = _source_locator(question.get("source_locator"))
+    if not locator:
+        return
+    parts = [str(locator.get("file") or question.get("source") or "Source")]
+    pdf_pages = locator.get("pdf_pages") or []
+    handbook_pages = locator.get("handbook_pages") or []
+    book_pages = locator.get("book_pages") or []
+    if pdf_pages:
+        parts.append("PDF " + ", ".join(f"p. {page}" for page in pdf_pages))
+    if handbook_pages:
+        parts.append(
+            "handbook " + ", ".join(f"p. {page}" for page in handbook_pages)
+        )
+    if book_pages:
+        parts.append("book " + ", ".join(f"p. {page}" for page in book_pages))
+    st.caption("Source: " + " · ".join(parts))
+
+
+def _render_original_answer_page(question: dict) -> None:
+    """Show verified source pages only after feedback is available."""
+    original_answer_pages = _load_images(
+        question.get("original_answer_pages"), crops_only=False
+    )
+    if original_answer_pages:
+        with st.expander("Original answer page", expanded=False):
+            _show_images(original_answer_pages, small=True)
 
 
 def _fmt_time(seconds: float) -> str:
@@ -103,7 +192,7 @@ def _fmt_time(seconds: float) -> str:
     return f"{m:02d}:{s:02d}"
 
 
-def _submit_case():
+def _submit_case(next_view: str = "review"):
     now = time.time()
     elapsed = now - st.session_state.timer_start
     aid = save_attempt(
@@ -114,8 +203,19 @@ def _submit_case():
         st.session_state.timer_limit_s,
     )
     st.session_state.attempt_id = aid
+    if st.session_state.get("attempt_mode") == "learning":
+        rating_map = {
+            "correct": "got_it",
+            "partial": "partial",
+            "incorrect": "missed",
+            "skipped": "missed",
+        }
+        for question_id, result in st.session_state.learning_results.items():
+            rating = rating_map[result]
+            st.session_state.ratings[question_id] = rating
+            save_rating(aid, question_id, rating)
     st.session_state.case_active = False
-    st.session_state.core_view = "review"
+    st.session_state.core_view = next_view
 
 
 _APP_DIR = Path(__file__).parent
@@ -137,26 +237,141 @@ def _load_images(paths_json: str | None, *, crops_only: bool = True) -> list[Pat
         return []
 
 
-def _show_images(paths: list[Path], caption: str = "", small: bool = False):
-    for p in paths:
+def _load_image_captions(value) -> list[str]:
+    try:
+        captions = json.loads(value or "[]") if isinstance(value, str) else value
+        return [str(caption) for caption in captions] if isinstance(captions, list) else []
+    except (TypeError, json.JSONDecodeError):
+        return []
+
+
+def _show_images(
+    paths: list[Path],
+    caption: str = "",
+    small: bool = False,
+    captions: list[str] | None = None,
+):
+    captions = captions or []
+    for index, p in enumerate(paths):
+        image_caption = (
+            captions[index]
+            if index < len(captions) and captions[index]
+            else caption if index == 0 else ""
+        )
         if p.exists():
             if small:
                 col, _ = st.columns([1, 3])
-                col.image(str(p), use_container_width=True, caption=caption)
+                col.image(str(p), use_container_width=True, caption=image_caption)
             else:
-                st.image(str(p), use_container_width=True, caption=caption)
-            caption = ""   # only label the first one
+                st.image(str(p), use_container_width=True, caption=image_caption)
         else:
             st.caption(f"Image not rendered yet: {p.name}")
 
 
+def _has_user_answer(q_type: str, user_answer) -> bool:
+    if q_type == "free_text":
+        return bool((user_answer or "").strip())
+    if q_type == "single_choice":
+        return isinstance(user_answer, int)
+    if q_type == "multiple_choice":
+        return bool(user_answer)
+    return False
+
+
+def _submit_learning_answer(q: dict, options: list[str], *, skipped: bool = False):
+    q_id = q["id"]
+    if q_id in st.session_state.learning_submitted:
+        return
+    ans_row = get_answer(q_id)
+    result = classify_answer(
+        q_type=q["q_type"],
+        user_answer=st.session_state.user_answers.get(q_id),
+        options=options,
+        correct_options=ans_row["correct_options"] if ans_row else None,
+        answer_text=ans_row["answer_text"] if ans_row else None,
+        skipped=skipped,
+    )
+    st.session_state.learning_submitted.append(q_id)
+    st.session_state.learning_results[q_id] = result
+
+
+def _show_learning_feedback(q: dict, options: list[str]):
+    q_id = q["id"]
+    result = st.session_state.learning_results[q_id]
+    feedback = {
+        "correct": (st.success, "Correct"),
+        "partial": (st.warning, "Partially correct"),
+        "incorrect": (st.error, "Incorrect"),
+        "skipped": (st.info, "Skipped"),
+    }
+    message_fn, label = feedback[result]
+    message_fn(label)
+
+    ans_row = get_answer(q_id)
+    st.markdown("**Correct answer**")
+    if ans_row and ans_row["answer_text"]:
+        st.markdown(ans_row["answer_text"])
+    elif ans_row and options:
+        correct_indices = correct_option_indices(
+            options, ans_row["correct_options"], ans_row["answer_text"]
+        )
+        if correct_indices:
+            for index in correct_indices:
+                st.markdown(f"→ {options[index]}")
+        else:
+            st.markdown("_Answer not available_")
+    else:
+        st.markdown("_Answer not available_")
+
+    if ans_row and ans_row["explanation"]:
+        with st.expander("Explanation", expanded=False):
+            st.markdown(ans_row["explanation"])
+
+    _render_source_citation(q)
+
+    answer_imgs = _load_images(ans_row["page_images"] if ans_row else None)
+    if answer_imgs:
+        st.markdown("**Answer images**")
+        _show_images(answer_imgs, small=True)
+    _render_original_answer_page(q)
+
+
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("## EDiR Prep")
+    st.markdown("## Prep Library")
+    _library_labels = ["EDiR", "UEFA CFM"]
+    _library_keys = [LIBRARY_EDIR, LIBRARY_UEFA_CFM]
+    _library_index = _library_keys.index(_library_key())
+    _library_choice = st.radio(
+        "Library", _library_labels, index=_library_index, horizontal=True
+    )
+    _chosen_library = _library_keys[_library_labels.index(_library_choice)]
+    if _chosen_library != _library_key():
+        st.session_state.library_key = _chosen_library
+        st.session_state.section = (
+            "mrqs" if _chosen_library == LIBRARY_UEFA_CFM else "core_cases"
+        )
+        st.session_state.core_view = "chapters"
+        st.session_state.custom_view = "dashboard"
+        st.session_state.custom_phase_editor = None
+        st.session_state.custom_test_id = None
+        st.session_state.study_source = None
+        st.session_state.mrq_mode = (
+            "learning" if _chosen_library == LIBRARY_UEFA_CFM else "exam"
+        )
+        st.session_state.case_active = False
+        st.rerun()
     st.markdown("---")
 
-    _menu_labels = ["CORE Cases", "Short Cases", "MRQs", "Import PDF", "Admin"]
-    _menu_keys   = ["core_cases", "short_cases", "mrqs", "import_pdf", "admin"]
+    if _library_key() == LIBRARY_UEFA_CFM:
+        _menu_labels = ["MRQs", "Custom"]
+        _menu_keys = ["mrqs", "custom"]
+    else:
+        _menu_labels = ["CORE Cases", "Short Cases", "MRQs", "Custom"]
+        _menu_keys = ["core_cases", "short_cases", "mrqs", "custom"]
+    if st.session_state.section not in _menu_keys:
+        st.session_state.section = "core_cases"
+        st.session_state.core_view = "chapters"
     _current_idx = _menu_keys.index(st.session_state.section)
 
     _choice = st.radio("Navigation", _menu_labels, index=_current_idx, label_visibility="collapsed")
@@ -164,7 +379,10 @@ with st.sidebar:
 
     if _chosen_key != st.session_state.section:
         st.session_state.section = _chosen_key
-        st.session_state.core_view = "chapters"
+        if _chosen_key == "custom":
+            st.session_state.custom_view = "dashboard"
+        else:
+            st.session_state.core_view = "chapters"
         st.rerun()
 
     st.markdown("---")
@@ -174,7 +392,11 @@ with st.sidebar:
 
 # ── Timer update (runs every rerun while case is active) ─────────────────────
 _remaining: float | None = None
-if st.session_state.case_active and st.session_state.timer_start is not None:
+if (
+    st.session_state.case_active
+    and st.session_state.timer_start is not None
+    and st.session_state.get("attempt_mode") != "learning"
+):
     _elapsed   = time.time() - st.session_state.timer_start
     _remaining = max(0.0, st.session_state.timer_limit_s - _elapsed)
     _color     = "#2E7D32" if _remaining > 120 else ("#E65100" if _remaining > 30 else "#C62828")
@@ -194,18 +416,19 @@ if st.session_state.case_active and st.session_state.timer_start is not None:
 def view_chapters():
     label = _section_label()
     sec   = _db_section()
-    st.header(label)
+    st.header(
+        "UEFA Certificate in Football Management"
+        if _library_key() == LIBRARY_UEFA_CFM
+        else label
+    )
 
-    if not has_section(sec):
-        st.info(
-            f"No {label} content loaded yet.  \n"
-            "Go to **Import PDF** in the sidebar to import the EDiR PDF."
-        )
+    if not has_section(sec, _library_key()):
+        st.info(f"No {label} content is currently available.")
         return
 
     # Source filter (shown whenever at least one source exists)
-    sources = get_sources()
-    if sources:
+    sources = get_sources(_library_key())
+    if sources and _library_key() == LIBRARY_EDIR:
         src_opts  = ["All sources"] + sources
         src_label = st.selectbox("Source", src_opts, key="study_source_sel")
         st.session_state["study_source"] = None if src_label == "All sources" else src_label
@@ -213,13 +436,20 @@ def view_chapters():
         st.session_state["study_source"] = None
     src = st.session_state.get("study_source")
 
-    chapters = get_chapters_with_section(sec, source=src)
+    chapters = get_chapters_with_section(
+        sec, source=src, library_key=_library_key()
+    )
     cols_per_row = 3
 
     for row_start in range(0, len(chapters), cols_per_row):
         cols = st.columns(cols_per_row)
         for col, ch in zip(cols, chapters[row_start: row_start + cols_per_row]):
-            n_cases = len(get_cases(ch["id"], section=sec, source=src))
+            n_cases = len(
+                get_cases(
+                    ch["id"], section=sec, source=src,
+                    library_key=_library_key(),
+                )
+            )
             if sec == "mrq":
                 count_label = "MRQ session" if n_cases == 1 else "MRQ sessions"
             elif sec == "sc":
@@ -248,7 +478,12 @@ def view_cases():
     label = _section_label()
     st.header(f"{label} — {st.session_state.ch_title}")
     src   = st.session_state.get("study_source")
-    cases = get_cases(st.session_state.ch_id, section=sec, source=src)
+    cases = get_cases(
+        st.session_state.ch_id,
+        section=sec,
+        source=src,
+        library_key=_library_key(),
+    )
 
     if not cases:
         st.warning("No cases found for this chapter.")
@@ -264,8 +499,20 @@ def view_cases():
             with c_info:
                 if sec == "mrq":
                     n_qs = len(get_questions(case["id"]))
-                    st.markdown(f"**MRQ Session — Chapter {st.session_state.ch_title}**")
-                    st.caption(f"{n_qs} multiple-choice question{'s' if n_qs != 1 else ''}")
+                    if _library_key() == LIBRARY_UEFA_CFM:
+                        st.markdown(f"**{case['source']}**")
+                        st.caption(
+                            f"Complete handbook session · {n_qs} multiple-response "
+                            f"question{'s' if n_qs != 1 else ''}"
+                        )
+                    else:
+                        st.markdown(
+                            f"**MRQ Session — Chapter {st.session_state.ch_title}**"
+                        )
+                        st.caption(
+                            f"{n_qs} multiple-choice question"
+                            f"{'s' if n_qs != 1 else ''}"
+                        )
                 else:
                     st.markdown(f"**Case {case['case_number']}**")
                     vig = (case["clinical_vignette"] or "").strip()
@@ -302,23 +549,51 @@ def view_case_start():
     n_q       = len(questions)
 
     if sec == "mrq":
-        st.header(f"MRQs — Chapter {st.session_state.ch_title}")
+        st.header(
+            f"{case['source']} — MRQs"
+            if _library_key() == LIBRARY_UEFA_CFM
+            else f"MRQs — Chapter {st.session_state.ch_title}"
+        )
     else:
         st.header(f"Case {case['case_number']}  —  {st.session_state.ch_title}")
 
-    st.markdown(f"**{n_q} question{'s' if n_q != 1 else ''}** — work through all before time runs out.")
+    if sec == "mrq":
+        st.radio(
+            "Study mode",
+            ["exam", "learning"],
+            format_func=lambda mode: "Exam mode" if mode == "exam" else "Learning mode",
+            horizontal=True,
+            key="mrq_mode",
+        )
+
+    is_learning = sec == "mrq" and st.session_state.mrq_mode == "learning"
+    if is_learning:
+        st.markdown(
+            f"**{n_q} question{'s' if n_q != 1 else ''}** — untimed. "
+            "Check each answer to see immediate feedback before continuing."
+        )
+    else:
+        st.markdown(
+            f"**{n_q} question{'s' if n_q != 1 else ''}** — "
+            "work through all before time runs out."
+        )
 
     st.markdown("---")
     c_timer, c_start = st.columns([1, 2])
     with c_timer:
-        new_limit = st.number_input(
-            "Time limit (min)", min_value=1, max_value=60,
-            value=st.session_state.timer_limit_s // 60, step=1,
-        )
-        st.session_state.timer_limit_s = int(new_limit * 60)
+        if is_learning:
+            st.info("Untimed session")
+        else:
+            new_limit = st.number_input(
+                "Time limit (min)", min_value=1,
+                max_value=180 if _library_key() == LIBRARY_UEFA_CFM else 60,
+                value=st.session_state.timer_limit_s // 60, step=1,
+            )
+            st.session_state.timer_limit_s = int(new_limit * 60)
     with c_start:
         st.markdown("<br>", unsafe_allow_html=True)
-        if st.button("▶  Start Case", type="primary", use_container_width=True):
+        start_label = "▶  Start Learning" if is_learning else "▶  Start Case"
+        if st.button(start_label, type="primary", use_container_width=True):
             st.session_state.questions        = [dict(q) for q in questions]
             st.session_state.q_index          = 0
             st.session_state.user_answers     = {}
@@ -326,14 +601,21 @@ def view_case_start():
             st.session_state.case_active      = True
             st.session_state.ratings          = {}
             st.session_state.attempt_id       = None
+            st.session_state.attempt_mode     = "learning" if is_learning else "exam"
+            st.session_state.learning_submitted = []
+            st.session_state.learning_results   = {}
             st.session_state.core_view        = "question"
             st.session_state.case_vignette    = (case["clinical_vignette"] or "").strip()
             st.rerun()
 
 
 def view_question():
+    is_learning = (
+        _db_section() == "mrq"
+        and st.session_state.get("attempt_mode") == "learning"
+    )
     # Refresh every second while case is active to keep the timer ticking
-    if st.session_state.case_active:
+    if st.session_state.case_active and not is_learning:
         st_autorefresh(interval=1000, key="case_timer")
 
     questions = st.session_state.questions
@@ -346,6 +628,7 @@ def view_question():
 
     q    = questions[q_idx]
     q_id = q["id"]
+    is_submitted = q_id in st.session_state.learning_submitted
 
     # Progress bar
     st.progress((q_idx + 1) / n_q,
@@ -361,6 +644,11 @@ def view_question():
             if vig:
                 st.info(vig)
         st.markdown(f"### Q{q['q_number']}")
+        if q.get("source"):
+            st.caption(
+                f"{q['source']} · Chapter {q['chapter_number']}: "
+                f"{q['chapter_title']} · {SECTION_LABELS.get(sec, sec.upper())}"
+            )
         st.markdown(q["question_text"])
 
         q_type  = q["q_type"]
@@ -374,6 +662,7 @@ def view_question():
                 height=160,
                 placeholder="Write your answer here…",
                 key=f"ft_{q_id}",
+                disabled=is_learning and is_submitted,
             )
             st.session_state.user_answers[q_id] = val
 
@@ -384,6 +673,7 @@ def view_question():
                 options,
                 index=prev_idx,
                 key=f"sc_{q_id}",
+                disabled=is_learning and is_submitted,
             )
             if choice in options:
                 st.session_state.user_answers[q_id] = options.index(choice)
@@ -395,41 +685,133 @@ def view_question():
                 options,
                 default=prev_sel,
                 key=f"mc_{q_id}",
+                disabled=is_learning and is_submitted,
             )
             st.session_state.user_answers[q_id] = [options.index(c) for c in chosen]
 
-        # Navigation buttons
-        st.markdown("---")
-        nav = st.columns([1, 1, 2])
-        with nav[0]:
-            if q_idx > 0:
-                if st.button("← Prev", use_container_width=True):
-                    st.session_state.q_index -= 1
-                    st.rerun()
-        with nav[2]:
-            if q_idx < n_q - 1:
-                if st.button("Next →", type="primary", use_container_width=True):
-                    st.session_state.q_index += 1
-                    st.rerun()
+        if is_learning:
+            if is_submitted:
+                _show_learning_feedback(q, options)
+
+            st.markdown("---")
+            if not is_submitted:
+                nav = st.columns([1, 2, 1])
+                with nav[0]:
+                    if q_idx > 0 and st.button("← Previous", use_container_width=True):
+                        st.session_state.q_index -= 1
+                        st.rerun()
+                with nav[1]:
+                    can_check = _has_user_answer(
+                        q_type, st.session_state.user_answers.get(q_id)
+                    )
+                    if st.button(
+                        "Check answer",
+                        type="primary",
+                        use_container_width=True,
+                        disabled=not can_check,
+                    ):
+                        _submit_learning_answer(q, options)
+                        st.rerun()
+                with nav[2]:
+                    if st.button("Skip / Show answer", use_container_width=True):
+                        _submit_learning_answer(q, options, skipped=True)
+                        st.rerun()
             else:
-                if st.button("Submit Case", type="primary", use_container_width=True):
-                    _submit_case()
-                    st.rerun()
+                nav = st.columns([1, 1, 2])
+                with nav[0]:
+                    if q_idx > 0 and st.button("← Previous", use_container_width=True):
+                        st.session_state.q_index -= 1
+                        st.rerun()
+                with nav[2]:
+                    if q_idx < n_q - 1:
+                        if st.button(
+                            "Next question →", type="primary", use_container_width=True
+                        ):
+                            st.session_state.q_index += 1
+                            st.rerun()
+                    elif st.button(
+                        "Finish session", type="primary", use_container_width=True
+                    ):
+                        _submit_case("learning_summary")
+                        st.rerun()
+        else:
+            # Exam-mode navigation
+            st.markdown("---")
+            nav = st.columns([1, 1, 2])
+            with nav[0]:
+                if q_idx > 0:
+                    if st.button("← Prev", use_container_width=True):
+                        st.session_state.q_index -= 1
+                        st.rerun()
+            with nav[2]:
+                if q_idx < n_q - 1:
+                    if st.button("Next →", type="primary", use_container_width=True):
+                        st.session_state.q_index += 1
+                        st.rerun()
+                else:
+                    if st.button("Submit Case", type="primary", use_container_width=True):
+                        _submit_case()
+                        st.rerun()
 
     # ── Right: page images + video links ─────────────────────────────────────
     with col_img:
         imgs = _load_images(q.get("page_images"))
         if imgs:
-            _show_images(imgs)
+            _show_images(
+                imgs,
+                captions=_load_image_captions(q.get("page_image_captions")),
+            )
         video_links = json.loads(q.get("video_links") or "[]")
         for i, url in enumerate(video_links, 1):
             st.markdown(f"[▶ Video {i}]({url})")
 
     # ── Auto-submit when time runs out ────────────────────────────────────────
-    if st.session_state.case_active and _remaining is not None and _remaining <= 0:
+    if (
+        not is_learning
+        and st.session_state.case_active
+        and _remaining is not None
+        and _remaining <= 0
+    ):
         st.warning("Time's up! Submitting automatically…")
         _submit_case()
         st.rerun()
+
+
+def view_learning_summary():
+    if st.button("← MRQ sessions"):
+        st.session_state.core_view = "cases"
+        st.session_state.case_active = False
+        st.rerun()
+
+    st.header("Learning session complete")
+    results = st.session_state.learning_results
+    total = len(st.session_state.questions)
+    counts = {
+        result: sum(1 for value in results.values() if value == result)
+        for result in ("correct", "partial", "incorrect", "skipped")
+    }
+
+    metric_cols = st.columns(4)
+    metric_cols[0].metric("Correct", counts["correct"])
+    metric_cols[1].metric("Partial", counts["partial"])
+    metric_cols[2].metric("Incorrect", counts["incorrect"])
+    metric_cols[3].metric("Skipped", counts["skipped"])
+    st.caption(f"Completed {len(results)} of {total} questions")
+
+    result_labels = {
+        "correct": "Correct",
+        "partial": "Partially correct",
+        "incorrect": "Incorrect",
+        "skipped": "Skipped",
+    }
+    rows = [
+        {
+            "Question": f"Q{q['q_number']}",
+            "Result": result_labels.get(results.get(q["id"]), "Not completed"),
+        }
+        for q in st.session_state.questions
+    ]
+    st.dataframe(rows, use_container_width=True, hide_index=True)
 
 
 def view_review():
@@ -471,6 +853,12 @@ def view_review():
             + (f"— **:{r_color}[{r_label}]**" if rating else "— _not rated_"),
             expanded=True,
         ):
+            if q.get("source"):
+                st.caption(
+                    f"{q['source']} · Chapter {q['chapter_number']}: "
+                    f"{q['chapter_title']} · "
+                    f"{SECTION_LABELS.get(_db_section(), _db_section().upper())}"
+                )
             # ── Question + user answer | Correct answer ───────────────────────
             col_q, col_a = st.columns(2, gap="large")
 
@@ -510,15 +898,23 @@ def view_review():
                     st.markdown("**Explanation**")
                     st.markdown(ans_row["explanation"])
 
+                _render_source_citation(q)
+
                 answer_imgs = _load_images(ans_row["page_images"] if ans_row else None)
                 if answer_imgs:
                     st.markdown("**Answer Images**")
                     _show_images(answer_imgs, small=True)
 
+                _render_original_answer_page(q)
+
             # Cropped clinical images for this question
             imgs = _load_images(q.get("page_images"))
             if imgs:
-                _show_images(imgs, small=True)
+                _show_images(
+                    imgs,
+                    small=True,
+                    captions=_load_image_captions(q.get("page_image_captions")),
+                )
 
             # Video links
             video_links = json.loads(q.get("video_links") or "[]")
@@ -561,6 +957,1310 @@ def view_review():
     if original_answer_pages:
         with st.expander("Original answer page", expanded=False):
             _show_images(original_answer_pages, small=True)
+
+
+def _custom_default_name(prefix: str = "Custom test") -> str:
+    stamp = datetime.datetime.now().strftime("%d %b %Y %H:%M")
+    return f"{prefix} — {stamp}"
+
+
+def _custom_context_label(q: dict) -> str:
+    if q.get("library_key") == LIBRARY_UEFA_CFM:
+        return f"{q['source']} · UEFA CFM · MRQ"
+    return (
+        f"{q['source']} · Chapter {q['chapter_number']}: {q['chapter_title']} · "
+        f"{SECTION_LABELS[q['section']]}"
+    )
+
+
+def _render_user_answer(q: dict, user_answer):
+    options = json.loads(q.get("options") or "[]")
+    if q["q_type"] == "free_text":
+        st.markdown(user_answer or "_No answer_")
+        return
+    if isinstance(user_answer, int):
+        chosen = [options[user_answer]] if user_answer < len(options) else []
+    elif isinstance(user_answer, list):
+        chosen = [options[i] for i in user_answer if i < len(options)]
+    else:
+        chosen = []
+    if chosen:
+        for item in chosen:
+            st.markdown(f"→ {item}")
+    else:
+        st.markdown("_No answer_")
+
+
+def _render_correct_answer(
+    question_id: int,
+    options: list[str],
+    *,
+    show_details: bool = True,
+    collapse_explanation: bool = False,
+    question: dict | None = None,
+):
+    ans_row = get_answer(question_id)
+    if ans_row and ans_row["answer_text"]:
+        st.markdown(ans_row["answer_text"])
+    elif ans_row and options:
+        indices = correct_option_indices(
+            options, ans_row["correct_options"], ans_row["answer_text"]
+        )
+        if indices:
+            for index in indices:
+                st.markdown(f"→ {options[index]}")
+        else:
+            st.markdown("_Answer not available_")
+    else:
+        st.markdown("_Answer not available_")
+
+    if not show_details:
+        return
+    if ans_row and ans_row["explanation"]:
+        if collapse_explanation:
+            with st.expander("Explanation", expanded=False):
+                st.markdown(ans_row["explanation"])
+        else:
+            st.markdown("**Explanation**")
+            st.markdown(ans_row["explanation"])
+    if question:
+        _render_source_citation(question)
+    answer_imgs = _load_images(ans_row["page_images"] if ans_row else None)
+    if answer_imgs:
+        st.markdown("**Answer images**")
+        _show_images(answer_imgs, small=True)
+    if question:
+        _render_original_answer_page(question)
+
+
+def _custom_answer_input(test_id: int, q: dict, *, disabled: bool):
+    saved = q["user_answer_value"]
+    options = json.loads(q.get("options") or "[]")
+    key = f"custom_answer_{test_id}_{q['position']}"
+    if q["q_type"] == "free_text":
+        value = st.text_area(
+            "Your answer",
+            value=saved or "",
+            height=160,
+            key=key,
+            disabled=disabled,
+        )
+    elif q["q_type"] == "single_choice":
+        index = saved if isinstance(saved, int) and saved < len(options) else None
+        choice = st.radio(
+            "Select one:",
+            options,
+            index=index,
+            key=key,
+            disabled=disabled,
+        )
+        value = options.index(choice) if choice in options else None
+    else:
+        defaults = [options[i] for i in (saved or []) if i < len(options)]
+        chosen = st.multiselect(
+            "Select all that apply:",
+            options,
+            default=defaults,
+            key=key,
+            disabled=disabled,
+        )
+        value = [options.index(item) for item in chosen]
+
+    if value != saved and (
+        _has_user_answer(q["q_type"], value) or saved is not None
+    ):
+        save_custom_progress(test_id, q["position"], value)
+    return value, options
+
+
+_CUSTOM_RESULT_LABELS = {
+    "correct": "Correct",
+    "partial": "Partially correct",
+    "incorrect": "Incorrect",
+    "skipped": "Skipped",
+    "unrated": "Needs self-rating",
+    None: "Not completed",
+}
+
+
+def _show_custom_feedback(q: dict, options: list[str]):
+    result = q["result"]
+    feedback = {
+        "correct": (st.success, "Correct"),
+        "partial": (st.warning, "Partially correct"),
+        "incorrect": (st.error, "Incorrect"),
+        "skipped": (st.info, "Skipped"),
+        "unrated": (st.info, "Compare your answer, then rate yourself"),
+    }
+    message_fn, label = feedback[result]
+    message_fn(label)
+    st.markdown("**Correct answer**")
+    _render_correct_answer(
+        q["question_id"], options, collapse_explanation=True, question=q
+    )
+
+
+def _render_custom_section_builder(section: str, availability: list[dict]) -> list[dict]:
+    label = SECTION_LABELS[section]
+    key_prefix = f"{_library_key()}_{section}"
+    rows = [row for row in availability if row["section"] == section]
+    chapter_map = {}
+    for row in rows:
+        chapter_map[row["chapter_id"]] = (
+            row["chapter_number"],
+            row["chapter_title"],
+        )
+
+    with st.expander(f"{label} availability", expanded=False):
+        if section == "mrq":
+            table = [
+                {
+                    "Chapter": f"{row['chapter_number']}. {row['chapter_title']}",
+                    "Source": row["source"],
+                    "MRQ questions": row["question_count"],
+                }
+                for row in rows
+            ]
+        else:
+            table = [
+                {
+                    "Chapter": f"{row['chapter_number']}. {row['chapter_title']}",
+                    "Source": row["source"],
+                    "Cases": row["case_count"],
+                    "Questions": row["question_count"],
+                }
+                for row in rows
+            ]
+        st.dataframe(table, use_container_width=True, hide_index=True)
+
+    selected_chapters = st.multiselect(
+        f"{label} chapters",
+        sorted(chapter_map, key=lambda cid: chapter_map[cid][0]),
+        format_func=lambda cid: f"{chapter_map[cid][0]}. {chapter_map[cid][1]}",
+        key=f"custom_chapters_{key_prefix}",
+    )
+    entries = []
+    unit_label = "MRQ questions" if section == "mrq" else "cases"
+    for chapter_id in selected_chapters:
+        chapter_number, chapter_title = chapter_map[chapter_id]
+        with st.container(border=True):
+            st.markdown(f"**Chapter {chapter_number}: {chapter_title}**")
+            chapter_rows = [row for row in rows if row["chapter_id"] == chapter_id]
+            source_counts = {row["source"]: row["unit_count"] for row in chapter_rows}
+            sources = st.multiselect(
+                "Sources",
+                sorted(source_counts),
+                format_func=lambda source: f"{source} ({source_counts[source]})",
+                key=f"custom_sources_{key_prefix}_{chapter_id}",
+            )
+            if not sources:
+                st.caption("Select at least one source.")
+                continue
+            available_count = sum(source_counts[source] for source in sources)
+            count_key = f"custom_count_{key_prefix}_{chapter_id}"
+            if st.session_state.get(count_key, 1) > available_count:
+                st.session_state[count_key] = available_count
+            count = st.number_input(
+                f"Number of {unit_label}",
+                min_value=1,
+                max_value=max(1, available_count),
+                value=min(1, available_count),
+                step=1,
+                key=count_key,
+            )
+            st.caption(f"{available_count} eligible {unit_label} in the combined pool")
+            entries.append(
+                {
+                    "chapter_id": chapter_id,
+                    "sources": sources,
+                    "count": int(count),
+                }
+            )
+    return entries
+
+
+def _custom_config_summary(config: dict) -> str:
+    if is_phased_config(config):
+        parts = []
+        for phase in config.get("phases", []):
+            count = sum(entry["count"] for entry in phase.get("entries", []))
+            unit = "questions" if phase["section"] == "mrq" else "cases"
+            parts.append(f"{count} {SECTION_LABELS[phase['section']]} {unit}")
+        return " · ".join(parts) if parts else "Empty phased configuration"
+    parts = []
+    for section in ("core", "sc", "mrq"):
+        count = sum(entry["count"] for entry in config["sections"].get(section, []))
+        if count:
+            unit = "questions" if section == "mrq" else "cases"
+            parts.append(f"{count} {SECTION_LABELS[section]} {unit}")
+    return " · ".join(parts) if parts else "Empty configuration"
+
+
+def _custom_ordering_summary(config: dict) -> str:
+    if is_phased_config(config):
+        return "Fixed phases: MRQ → SC → CORE"
+    ordering = get_custom_ordering(config)
+    if ordering["mode"] == "mixed":
+        return "Mixed throughout the test"
+    active_sections = [
+        section
+        for section in ordering["section_order"]
+        if config.get("sections", {}).get(section)
+    ]
+    labels = [SECTION_LABELS[section] for section in active_sections]
+    return "Sequential: " + (" → ".join(labels) if labels else "no content selected")
+
+
+def _open_custom_test(test_id: int):
+    start_custom_test(test_id)
+    st.session_state.custom_test_id = test_id
+    st.session_state.custom_view = "test"
+
+
+def _test_matches_library(test: dict) -> bool:
+    return (test.get("config") or {}).get("library", LIBRARY_EDIR) == _library_key()
+
+
+def _render_custom_builder():
+    st.subheader("Build a new custom test")
+    mode = st.radio(
+        "Mode",
+        ["exam", "learning"],
+        format_func=lambda value: "Exam mode" if value == "exam" else "Learning mode",
+        horizontal=True,
+        key="custom_builder_mode",
+    )
+    if mode == "exam":
+        timer_minutes = st.number_input(
+            "Total time limit (minutes)",
+            min_value=1,
+            max_value=600,
+            value=60,
+            step=5,
+            key="custom_builder_timer",
+        )
+        timer_limit_s = int(timer_minutes * 60)
+    else:
+        st.info("Learning mode is untimed.")
+        timer_limit_s = None
+
+    test_name = st.text_input(
+        "Test name (optional)",
+        placeholder="A date-based name will be generated automatically",
+        key="custom_builder_test_name",
+    )
+    st.markdown("#### Content ordering")
+    if _library_key() == LIBRARY_UEFA_CFM:
+        ordering_mode = "sequential"
+        section_order = ["mrq"]
+        st.info(
+            "UEFA CFM custom tests draw individual MRQs from the handbook "
+            "chapters selected below."
+        )
+    else:
+        ordering_mode = st.radio(
+            "How should content types be presented?",
+            ["sequential", "mixed"],
+            format_func=lambda value: (
+                "Sequential — keep each content type together"
+                if value == "sequential"
+                else "Mixed — interleave all selected content types"
+            ),
+            horizontal=True,
+            key="custom_builder_ordering_mode",
+        )
+        if ordering_mode == "sequential":
+            st.caption(
+                "Choose the section order. Content types with no selected questions are skipped."
+            )
+            order_cols = st.columns(3)
+            section_order = []
+            for index, (column, label) in enumerate(
+                zip(order_cols, ("First", "Second", "Third"))
+            ):
+                with column:
+                    section_order.append(
+                        st.selectbox(
+                            label,
+                            list(SECTION_ORDER),
+                            index=index,
+                            format_func=lambda section: SECTION_LABELS[section],
+                            key=f"custom_builder_section_order_{index}",
+                        )
+                    )
+        else:
+            section_order = list(SECTION_ORDER)
+            st.info(
+                "CORE and Short Cases will be spread among the other content. "
+                "Each case stays intact and its internal questions remain consecutive."
+            )
+    ordering = {
+        "mode": ordering_mode,
+        "section_order": section_order,
+    }
+
+    availability = get_custom_availability(library_key=_library_key())
+    entries = {}
+    if _library_key() == LIBRARY_UEFA_CFM:
+        entries["mrq"] = _render_custom_section_builder("mrq", availability)
+    else:
+        section_tabs = st.tabs(["CORE", "SC", "MRQ"])
+        for tab, section in zip(section_tabs, ("core", "sc", "mrq")):
+            with tab:
+                entries[section] = _render_custom_section_builder(
+                    section, availability
+                )
+    config = {
+        "version": CONFIG_VERSION,
+        "library": _library_key(),
+        "ordering": ordering,
+        "sections": entries,
+    }
+
+    st.markdown("---")
+    st.markdown(f"**Selection:** {_custom_config_summary(config)}")
+    st.caption(_custom_ordering_summary(config))
+    errors = validate_custom_config(config)
+    for error in errors:
+        st.warning(error)
+
+    template_name = st.text_input(
+        "Template name",
+        placeholder="Required only when saving this configuration",
+        key="custom_builder_template_name",
+    )
+    action_cols = st.columns(2)
+    with action_cols[0]:
+        if st.button(
+            "Save as template",
+            use_container_width=True,
+            disabled=bool(errors) or not template_name.strip(),
+            key="custom_save_template",
+        ):
+            save_custom_template(
+                template_name.strip(), mode, timer_limit_s, config
+            )
+            st.success("Template saved.")
+    with action_cols[1]:
+        if st.button(
+            "Generate and start",
+            type="primary",
+            use_container_width=True,
+            disabled=bool(errors),
+            key="custom_generate",
+        ):
+            name = test_name.strip() or _custom_default_name()
+            try:
+                test_id = create_custom_test(name, mode, timer_limit_s, config)
+            except ValueError as exc:
+                st.error(str(exc))
+            else:
+                _open_custom_test(test_id)
+                st.rerun()
+
+
+def _render_phased_template_editor():
+    editor = st.session_state.custom_phase_editor
+    config = editor["config"]
+    nonce = st.session_state.custom_phase_editor_nonce
+    availability = get_custom_availability(library_key=LIBRARY_EDIR)
+
+    st.markdown("---")
+    st.subheader("Customize phased exam")
+    st.info(
+        "This copy remains Exam-only and keeps the MRQ → SC → CORE order. "
+        "Set a chapter quota to zero to omit it."
+    )
+    name = st.text_input(
+        "Template name",
+        value=editor["name"],
+        key=f"phased_editor_name_{nonce}",
+    )
+    edited_phases = []
+    for phase in config["phases"]:
+        section = phase["section"]
+        section_rows = [row for row in availability if row["section"] == section]
+        rows_by_chapter = {}
+        for row in section_rows:
+            rows_by_chapter.setdefault(row["chapter_id"], []).append(row)
+        saved_entries = {
+            int(entry["chapter_id"]): entry for entry in phase.get("entries", [])
+        }
+        with st.expander(
+            f"{phase['phase_index'] + 1}. {phase['name']}", expanded=True
+        ):
+            timer_minutes = st.number_input(
+                "Timer (minutes)",
+                min_value=1,
+                max_value=600,
+                value=max(1, int(phase["timer_limit_s"] // 60)),
+                step=5,
+                key=f"phased_timer_{nonce}_{section}",
+            )
+            edited_entries = []
+            for chapter_id in sorted(
+                rows_by_chapter,
+                key=lambda value: rows_by_chapter[value][0]["chapter_number"],
+            ):
+                first = rows_by_chapter[chapter_id][0]
+                source_counts = {
+                    row["source"]: int(row["unit_count"])
+                    for row in rows_by_chapter[chapter_id]
+                }
+                all_sources = sorted(source_counts)
+                saved = saved_entries.get(chapter_id, {})
+                saved_sources = saved.get("sources", "*")
+                defaults = (
+                    all_sources
+                    if saved_sources == "*"
+                    else [source for source in saved_sources if source in source_counts]
+                )
+                st.markdown(
+                    f"**{first['chapter_number']}. {first['chapter_title']}**"
+                )
+                source_col, quota_col = st.columns([3, 1])
+                with source_col:
+                    sources = st.multiselect(
+                        "Sources",
+                        all_sources,
+                        default=defaults,
+                        format_func=lambda source, counts=source_counts: (
+                            f"{source} ({counts[source]})"
+                        ),
+                        key=f"phased_sources_{nonce}_{section}_{chapter_id}",
+                        label_visibility="collapsed",
+                    )
+                available = sum(source_counts[source] for source in sources)
+                default_count = min(int(saved.get("count", 0)), available)
+                with quota_col:
+                    count = st.number_input(
+                        "Quota",
+                        min_value=0,
+                        max_value=max(0, available),
+                        value=default_count,
+                        step=1,
+                        key=f"phased_count_{nonce}_{section}_{chapter_id}",
+                        label_visibility="collapsed",
+                    )
+                st.caption(
+                    f"{available} available "
+                    f"{'questions' if section == 'mrq' else 'cases'}"
+                )
+                if count:
+                    edited_entries.append(
+                        {
+                            "chapter_id": chapter_id,
+                            "sources": sources,
+                            "count": int(count),
+                        }
+                    )
+            edited_phases.append(
+                {
+                    "phase_index": phase["phase_index"],
+                    "section": section,
+                    "name": phase["name"],
+                    "timer_limit_s": int(timer_minutes * 60),
+                    "entries": edited_entries,
+                }
+            )
+
+    edited_config = {
+        "version": CONFIG_VERSION,
+        "library": LIBRARY_EDIR,
+        "structure": "phased_exam",
+        "phases": edited_phases,
+    }
+    st.markdown(f"**Selection:** {_custom_config_summary(edited_config)}")
+    errors = validate_custom_config(edited_config)
+    for error in errors:
+        st.warning(error)
+    save_col, cancel_col = st.columns(2)
+    with save_col:
+        label = "Save changes" if editor["template_id"] else "Save as new template"
+        if st.button(
+            label,
+            type="primary",
+            use_container_width=True,
+            disabled=bool(errors) or not name.strip(),
+            key=f"phased_editor_save_{nonce}",
+        ):
+            if editor["template_id"]:
+                update_custom_template(
+                    editor["template_id"], name.strip(), "exam", None, edited_config
+                )
+            else:
+                save_custom_template(name.strip(), "exam", None, edited_config)
+            st.session_state.custom_phase_editor = None
+            st.success("Phased template saved.")
+            st.rerun()
+    with cancel_col:
+        if st.button(
+            "Cancel",
+            use_container_width=True,
+            key=f"phased_editor_cancel_{nonce}",
+        ):
+            st.session_state.custom_phase_editor = None
+            st.rerun()
+
+
+def _render_custom_templates():
+    if _library_key() == LIBRARY_EDIR:
+        official = get_official_edir_config()
+        st.subheader("Official preset")
+        with st.container(border=True):
+            st.markdown("### Official EDiR Exam")
+            st.caption(
+                "Exam only · 78 MRQs (95 min) → break → "
+                "24 Short Cases (90 min) → break → 10 CORE cases (90 min)"
+            )
+            st.caption(
+                "Uses all currently available sources and follows the official chapter blueprint."
+            )
+            official_actions = st.columns(2)
+            with official_actions[0]:
+                if st.button(
+                    "Generate Exam",
+                    type="primary",
+                    use_container_width=True,
+                    key="official_edir_generate",
+                ):
+                    try:
+                        test_id = create_custom_test(
+                            _custom_default_name("Official EDiR Exam"),
+                            "exam",
+                            None,
+                            official,
+                        )
+                    except ValueError as exc:
+                        st.error(str(exc))
+                    else:
+                        _open_custom_test(test_id)
+                        st.rerun()
+            with official_actions[1]:
+                if st.button(
+                    "Customize",
+                    use_container_width=True,
+                    key="official_edir_customize",
+                ):
+                    st.session_state.custom_phase_editor_nonce += 1
+                    st.session_state.custom_phase_editor = {
+                        "template_id": None,
+                        "name": "Official EDiR Exam — Custom",
+                        "config": official,
+                    }
+                    st.rerun()
+
+    if st.session_state.custom_phase_editor:
+        _render_phased_template_editor()
+        return
+
+    templates = get_custom_templates(_library_key())
+    st.subheader("Saved templates")
+    if not templates:
+        st.info("No saved templates yet.")
+        return
+    for template in templates:
+        with st.container(border=True):
+            phased = is_phased_config(template["config"])
+            info, action = st.columns([4, 1.4])
+            with info:
+                st.markdown(f"**{template['name']}**")
+                if phased:
+                    st.caption(
+                        f"Phased exam · {_custom_config_summary(template['config'])}"
+                    )
+                    st.caption(
+                        "MRQ / SC / CORE timers: "
+                        + " / ".join(
+                            f"{phase['timer_limit_s'] // 60} min"
+                            for phase in template["config"]["phases"]
+                        )
+                    )
+                else:
+                    st.caption(
+                        f"{'Exam' if template['mode'] == 'exam' else 'Learning'} · "
+                        f"{_custom_config_summary(template['config'])}"
+                    )
+                    st.caption(_custom_ordering_summary(template["config"]))
+                if template["mode"] == "exam" and not phased:
+                    st.caption(f"{template['timer_limit_s'] // 60} minute timer")
+            with action:
+                if st.button(
+                    "Generate",
+                    type="primary",
+                    use_container_width=True,
+                    key=f"custom_template_generate_{template['id']}",
+                ):
+                    name = _custom_default_name(template["name"])
+                    try:
+                        test_id = create_custom_test(
+                            name,
+                            template["mode"],
+                            template["timer_limit_s"],
+                            template["config"],
+                            template_id=template["id"],
+                        )
+                    except ValueError as exc:
+                        st.error(str(exc))
+                    else:
+                        _open_custom_test(test_id)
+                        st.rerun()
+                if phased and st.button(
+                    "Edit",
+                    use_container_width=True,
+                    key=f"custom_template_edit_{template['id']}",
+                ):
+                    st.session_state.custom_phase_editor_nonce += 1
+                    st.session_state.custom_phase_editor = {
+                        "template_id": template["id"],
+                        "name": template["name"],
+                        "config": template["config"],
+                    }
+                    st.rerun()
+                if st.button(
+                    "Delete",
+                    use_container_width=True,
+                    key=f"custom_template_delete_{template['id']}",
+                ):
+                    st.session_state.custom_delete_template_id = template["id"]
+            if st.session_state.custom_delete_template_id == template["id"]:
+                st.warning(
+                    f"Delete the template “{template['name']}”? "
+                    "Tests generated from it will be kept."
+                )
+                confirm, cancel = st.columns(2)
+                with confirm:
+                    if st.button(
+                        "Confirm template deletion",
+                        type="primary",
+                        use_container_width=True,
+                        key=f"custom_template_confirm_delete_{template['id']}",
+                    ):
+                        delete_custom_template(template["id"])
+                        st.session_state.custom_delete_template_id = None
+                        st.rerun()
+                with cancel:
+                    if st.button(
+                        "Cancel",
+                        use_container_width=True,
+                        key=f"custom_template_cancel_delete_{template['id']}",
+                    ):
+                        st.session_state.custom_delete_template_id = None
+                        st.rerun()
+
+
+def _render_custom_test_list(statuses: tuple[str, ...], *, history: bool = False):
+    tests = get_custom_tests(statuses, library_key=_library_key())
+    if not tests:
+        st.info("No completed custom tests yet." if history else "No tests to resume.")
+        return
+    for test in tests:
+        with st.container(border=True):
+            info, action = st.columns([4, 1])
+            with info:
+                st.markdown(f"**{test['name']}**")
+                created = datetime.datetime.fromtimestamp(test["created_at"]).strftime(
+                    "%d %b %Y %H:%M"
+                )
+                st.caption(
+                    f"{'Exam' if test['mode'] == 'exam' else 'Learning'} · "
+                    f"{test['question_count']} questions · {created}"
+                )
+                if test.get("structure") == "phased_exam":
+                    phases = get_custom_test_phases(test["id"])
+                    current_index = int(test.get("current_phase") or 0)
+                    current = next(
+                        (
+                            phase
+                            for phase in phases
+                            if phase["phase_index"] == current_index
+                        ),
+                        None,
+                    )
+                    if current:
+                        if (
+                            current["status"] == "completed"
+                            and current_index + 1 < len(phases)
+                        ):
+                            next_phase = phases[current_index + 1]
+                            st.info(f"Break before {next_phase['name']}")
+                        elif test["status"] != "completed":
+                            st.info(
+                                f"Phase {current_index + 1} of {len(phases)}: "
+                                f"{current['name']}"
+                            )
+                if not history:
+                    completed = test["completed_count"] or 0
+                    st.progress(
+                        completed / max(test["question_count"], 1),
+                        text=f"{completed}/{test['question_count']} completed",
+                    )
+            with action:
+                label = "Review" if history else (
+                    "Start" if test["status"] == "ready" else "Resume"
+                )
+                if st.button(
+                    label,
+                    type="primary",
+                    use_container_width=True,
+                    key=f"custom_open_{test['id']}_{label}",
+                ):
+                    st.session_state.custom_test_id = test["id"]
+                    if history:
+                        st.session_state.custom_view = (
+                            "summary" if test["mode"] == "learning" else "review"
+                        )
+                    else:
+                        _open_custom_test(test["id"])
+                    st.rerun()
+                if st.button(
+                    "Delete",
+                    use_container_width=True,
+                    key=f"custom_test_delete_{test['id']}",
+                ):
+                    st.session_state.custom_delete_test_id = test["id"]
+            if st.session_state.custom_delete_test_id == test["id"]:
+                location = "history" if history else "in-progress tests"
+                st.warning(
+                    f"Permanently delete “{test['name']}” from {location}? "
+                    "Its saved answers and progress will also be deleted."
+                )
+                confirm, cancel = st.columns(2)
+                with confirm:
+                    if st.button(
+                        "Confirm test deletion",
+                        type="primary",
+                        use_container_width=True,
+                        key=f"custom_test_confirm_delete_{test['id']}",
+                    ):
+                        deleted = delete_custom_test(test["id"])
+                        if deleted and st.session_state.custom_test_id == test["id"]:
+                            st.session_state.custom_test_id = None
+                            st.session_state.custom_view = "dashboard"
+                        st.session_state.custom_delete_test_id = None
+                        st.rerun()
+                with cancel:
+                    if st.button(
+                        "Cancel",
+                        use_container_width=True,
+                        key=f"custom_test_cancel_delete_{test['id']}",
+                    ):
+                        st.session_state.custom_delete_test_id = None
+                        st.rerun()
+
+
+def view_custom_dashboard():
+    st.header(f"{_library_label()} custom tests")
+    build_tab, templates_tab, progress_tab, history_tab = st.tabs(
+        ["Build New", "Templates", "In Progress", "History"]
+    )
+    with build_tab:
+        _render_custom_builder()
+    with templates_tab:
+        _render_custom_templates()
+    with progress_tab:
+        _render_custom_test_list(("ready", "in_progress"))
+    with history_tab:
+        _render_custom_test_list(("completed",), history=True)
+
+
+def _grade_custom_learning_answer(q: dict, user_answer, options: list[str]) -> str:
+    if q["q_type"] == "free_text":
+        return "unrated"
+    ans_row = get_answer(q["question_id"])
+    return classify_answer(
+        q_type=q["q_type"],
+        user_answer=user_answer,
+        options=options,
+        correct_options=ans_row["correct_options"] if ans_row else None,
+        answer_text=ans_row["answer_text"] if ans_row else None,
+    )
+
+
+def _render_custom_media(q: dict):
+    imgs = _load_images(q.get("page_images"))
+    if imgs:
+        _show_images(
+            imgs,
+            captions=_load_image_captions(q.get("page_image_captions")),
+        )
+    for index, url in enumerate(json.loads(q.get("video_links") or "[]"), 1):
+        st.markdown(f"[▶ Video {index}]({url})")
+
+
+def _is_last_question_in_custom_case(q: dict, questions: list[dict]) -> bool:
+    """Return whether this is the final persisted question in a SC/CORE case."""
+    if q["section"] not in ("core", "sc"):
+        return False
+    case_positions = [
+        candidate["position"]
+        for candidate in questions
+        if candidate["case_id"] == q["case_id"]
+    ]
+    return bool(case_positions) and q["position"] == max(case_positions)
+
+
+def _render_custom_case_source(q: dict, questions: list[dict]) -> None:
+    """Show the original answer page after the final revealed case question."""
+    if not _is_last_question_in_custom_case(q, questions):
+        return
+    original_answer_pages = _load_images(
+        q.get("original_answer_pages"), crops_only=False
+    )
+    if original_answer_pages:
+        with st.expander("Original answer page", expanded=False):
+            _show_images(original_answer_pages, small=True)
+
+
+def _render_custom_article_summary(q: dict) -> None:
+    """Show a question's saved source-article summary after feedback is revealed."""
+    article_summary = (q.get("article_summary") or "").strip()
+    if article_summary:
+        with st.expander("Article summary", expanded=False):
+            st.markdown(article_summary)
+
+
+def _phase_content_label(phase: dict, questions: list[dict]) -> str:
+    if phase["section"] == "mrq":
+        return f"{len(questions)} MRQ questions"
+    cases = len({q["case_id"] for q in questions})
+    return f"{cases} {SECTION_LABELS[phase['section']]} cases"
+
+
+def _render_phased_custom_test(test: dict):
+    test_id = test["id"]
+    phases = get_custom_test_phases(test_id)
+    phase_index = int(test["current_phase"])
+    if phase_index >= len(phases):
+        st.error("The current exam phase is invalid.")
+        return
+    phase = phases[phase_index]
+
+    if st.button("← Custom dashboard", key="phased_back_dashboard"):
+        st.session_state.custom_view = "dashboard"
+        st.rerun()
+    st.header(test["name"])
+
+    if phase["status"] == "completed" and phase_index < len(phases) - 1:
+        next_phase = phases[phase_index + 1]
+        next_questions = get_custom_test_questions(test_id, phase_index + 1)
+        st.success(f"{phase['name']} completed")
+        st.subheader("Break")
+        st.info(
+            "This break is untimed. Your completed section is locked, and answers "
+            "remain hidden until the entire exam is complete."
+        )
+        actual = phase.get("time_taken_s")
+        if actual is not None:
+            st.caption(f"Section time: {_fmt_time(actual)}")
+        st.markdown(
+            f"**Next:** {next_phase['name']} · "
+            f"{_phase_content_label(next_phase, next_questions)} · "
+            f"{next_phase['timer_limit_s'] // 60} minutes"
+        )
+        if st.button(
+            f"Continue to {next_phase['name']}",
+            type="primary",
+            use_container_width=True,
+            key=f"continue_phase_{test_id}_{phase_index + 1}",
+        ):
+            if continue_custom_phase(test_id):
+                st.rerun()
+            else:
+                st.error("The next phase could not be started. Please reload and try again.")
+        return
+
+    questions = get_custom_test_questions(test_id, phase_index)
+    if not questions:
+        st.error("This phase has no questions.")
+        return
+    if phase["status"] == "ready":
+        start_custom_test(test_id)
+        phase = get_custom_test_phases(test_id)[phase_index]
+
+    started_at = phase["started_at"] or time.time()
+    elapsed = time.time() - started_at
+    remaining = max(0.0, phase["timer_limit_s"] - elapsed)
+    color = "#2E7D32" if remaining > 120 else (
+        "#E65100" if remaining > 30 else "#C62828"
+    )
+    _timer_slot.markdown(
+        f"<div style='text-align:center'>"
+        f"<p style='color:rgba(255,255,255,0.75);margin:0;font-size:0.75em;"
+        f"letter-spacing:1px'>PHASE {phase_index + 1} TIME</p>"
+        f"<p style='font-size:3em;font-weight:bold;color:{color};margin:0;"
+        f"line-height:1'>{_fmt_time(remaining)}</p></div>",
+        unsafe_allow_html=True,
+    )
+    if remaining <= 0:
+        finish_custom_phase(test_id, phase_index)
+        if phase_index == len(phases) - 1:
+            st.session_state.custom_view = "review"
+        st.rerun()
+    st_autorefresh(interval=1000, key=f"phased_timer_{test_id}_{phase_index}")
+
+    positions = [q["position"] for q in questions]
+    current_global = int(test["current_position"])
+    local_index = positions.index(current_global) if current_global in positions else 0
+    q = questions[local_index]
+    st.markdown(
+        f"**Phase {phase_index + 1} of {len(phases)} — {phase['name']}**"
+    )
+    st.progress(
+        (local_index + 1) / len(questions),
+        text=f"Question {local_index + 1} of {len(questions)} in this phase",
+    )
+    col_q, col_img = st.columns([1, 1], gap="large")
+    with col_q:
+        st.caption(_custom_context_label(q))
+        st.markdown(f"### {SECTION_LABELS[q['section']]} Q{q['q_number']}")
+        if q["section"] in ("core", "sc") and q.get("clinical_vignette"):
+            st.info(q["clinical_vignette"])
+        st.markdown(q["question_text"])
+        _custom_answer_input(test_id, q, disabled=False)
+        st.markdown("---")
+        nav = st.columns([1, 1, 2])
+        with nav[0]:
+            if local_index > 0 and st.button(
+                "← Previous",
+                use_container_width=True,
+                key=f"phased_prev_{phase_index}",
+            ):
+                set_custom_position(test_id, positions[local_index - 1])
+                st.rerun()
+        with nav[2]:
+            if local_index < len(questions) - 1:
+                if st.button(
+                    "Next →",
+                    type="primary",
+                    use_container_width=True,
+                    key=f"phased_next_{phase_index}",
+                ):
+                    set_custom_position(test_id, positions[local_index + 1])
+                    st.rerun()
+            elif st.button(
+                f"Complete {phase['name']}",
+                type="primary",
+                use_container_width=True,
+                key=f"phased_complete_{phase_index}",
+            ):
+                finish_custom_phase(test_id, phase_index)
+                if phase_index == len(phases) - 1:
+                    st.session_state.custom_view = "review"
+                st.rerun()
+    with col_img:
+        _render_custom_media(q)
+
+
+def view_custom_test():
+    test_id = st.session_state.custom_test_id
+    test = get_custom_test(test_id) if test_id else None
+    if not test:
+        st.error("Custom test not found.")
+        st.session_state.custom_view = "dashboard"
+        return
+    if not _test_matches_library(test):
+        st.error("This custom test belongs to a different library.")
+        st.session_state.custom_test_id = None
+        st.session_state.custom_view = "dashboard"
+        return
+    if test["status"] == "completed":
+        st.session_state.custom_view = (
+            "summary" if test["mode"] == "learning" else "review"
+        )
+        st.rerun()
+
+    if test["status"] == "ready":
+        start_custom_test(test_id)
+        test = get_custom_test(test_id)
+    if test.get("structure") == "phased_exam":
+        _render_phased_custom_test(test)
+        return
+    questions = get_custom_test_questions(test_id)
+    if not questions:
+        st.error("This custom test has no questions.")
+        return
+    position = min(test["current_position"], len(questions) - 1)
+    q = questions[position]
+    is_learning = test["mode"] == "learning"
+
+    if not is_learning:
+        elapsed = time.time() - test["started_at"]
+        remaining = max(0.0, test["timer_limit_s"] - elapsed)
+        color = "#2E7D32" if remaining > 120 else (
+            "#E65100" if remaining > 30 else "#C62828"
+        )
+        _timer_slot.markdown(
+            f"<div style='text-align:center'>"
+            f"<p style='color:rgba(255,255,255,0.75);margin:0;font-size:0.75em;"
+            f"letter-spacing:1px'>TIME REMAINING</p>"
+            f"<p style='font-size:3em;font-weight:bold;color:{color};margin:0;"
+            f"line-height:1'>{_fmt_time(remaining)}</p></div>",
+            unsafe_allow_html=True,
+        )
+        if remaining <= 0:
+            finish_custom_test(test_id)
+            st.session_state.custom_view = "review"
+            st.rerun()
+        st_autorefresh(interval=1000, key=f"custom_timer_{test_id}")
+
+    if st.button("← Custom dashboard"):
+        st.session_state.custom_view = "dashboard"
+        st.rerun()
+    st.header(test["name"])
+    st.progress(
+        (position + 1) / len(questions),
+        text=f"Question {position + 1} of {len(questions)}",
+    )
+    col_q, col_img = st.columns([1, 1], gap="large")
+    with col_q:
+        st.caption(_custom_context_label(q))
+        st.markdown(f"### {SECTION_LABELS[q['section']]} Q{q['q_number']}")
+        if q["section"] in ("core", "sc") and q.get("clinical_vignette"):
+            st.info(q["clinical_vignette"])
+        st.markdown(q["question_text"])
+        revealed = bool(q["revealed"])
+        user_answer, options = _custom_answer_input(
+            test_id, q, disabled=is_learning and revealed
+        )
+
+        if is_learning and revealed:
+            _show_custom_feedback(q, options)
+            _render_custom_article_summary(q)
+            _render_custom_case_source(q, questions)
+            if q["result"] == "unrated":
+                st.markdown("**Rate your answer**")
+                rating_cols = st.columns(3)
+                for col, rating, label in zip(
+                    rating_cols,
+                    ("got_it", "partial", "missed"),
+                    ("✓ Got it", "~ Partial", "✕ Missed"),
+                ):
+                    with col:
+                        if st.button(
+                            label,
+                            use_container_width=True,
+                            key=f"custom_rate_{test_id}_{position}_{rating}",
+                        ):
+                            rate_custom_free_text(test_id, position, rating)
+                            st.rerun()
+
+        st.markdown("---")
+        if is_learning:
+            complete = q["result"] not in (None, "unrated")
+            if not revealed:
+                nav = st.columns([1, 2, 1])
+                with nav[0]:
+                    if position > 0 and st.button(
+                        "← Previous", use_container_width=True, key="custom_learning_prev"
+                    ):
+                        set_custom_position(test_id, position - 1)
+                        st.rerun()
+                with nav[1]:
+                    if st.button(
+                        "Check answer",
+                        type="primary",
+                        use_container_width=True,
+                        disabled=not _has_user_answer(q["q_type"], user_answer),
+                        key="custom_learning_check",
+                    ):
+                        result = _grade_custom_learning_answer(q, user_answer, options)
+                        save_custom_progress(
+                            test_id,
+                            position,
+                            user_answer,
+                            revealed=True,
+                            result=result,
+                        )
+                        st.rerun()
+                with nav[2]:
+                    if st.button(
+                        "Skip / Show answer",
+                        use_container_width=True,
+                        key="custom_learning_skip",
+                    ):
+                        save_custom_progress(
+                            test_id,
+                            position,
+                            user_answer,
+                            revealed=True,
+                            result="skipped",
+                        )
+                        st.rerun()
+            elif complete:
+                nav = st.columns([1, 1, 2])
+                with nav[0]:
+                    if position > 0 and st.button(
+                        "← Previous", use_container_width=True, key="custom_done_prev"
+                    ):
+                        set_custom_position(test_id, position - 1)
+                        st.rerun()
+                with nav[2]:
+                    if position < len(questions) - 1:
+                        if st.button(
+                            "Next question →",
+                            type="primary",
+                            use_container_width=True,
+                            key="custom_learning_next",
+                        ):
+                            set_custom_position(test_id, position + 1)
+                            st.rerun()
+                    elif st.button(
+                        "Finish test",
+                        type="primary",
+                        use_container_width=True,
+                        key="custom_learning_finish",
+                    ):
+                        finish_custom_test(test_id)
+                        st.session_state.custom_view = "summary"
+                        st.rerun()
+        else:
+            nav = st.columns([1, 1, 2])
+            with nav[0]:
+                if position > 0 and st.button(
+                    "← Previous", use_container_width=True, key="custom_exam_prev"
+                ):
+                    set_custom_position(test_id, position - 1)
+                    st.rerun()
+            with nav[2]:
+                if position < len(questions) - 1:
+                    if st.button(
+                        "Next →",
+                        type="primary",
+                        use_container_width=True,
+                        key="custom_exam_next",
+                    ):
+                        set_custom_position(test_id, position + 1)
+                        st.rerun()
+                elif st.button(
+                    "Submit test",
+                    type="primary",
+                    use_container_width=True,
+                    key="custom_exam_submit",
+                ):
+                    finish_custom_test(test_id)
+                    st.session_state.custom_view = "review"
+                    st.rerun()
+    with col_img:
+        _render_custom_media(q)
+
+
+def _custom_result_summary(test: dict, questions: list[dict]):
+    counts = {
+        result: sum(1 for q in questions if q["result"] == result)
+        for result in ("correct", "partial", "incorrect", "skipped", "unrated")
+    }
+    metric_cols = st.columns(4)
+    metric_cols[0].metric("Correct", counts["correct"])
+    metric_cols[1].metric("Partial", counts["partial"])
+    metric_cols[2].metric("Incorrect", counts["incorrect"])
+    metric_cols[3].metric("Skipped", counts["skipped"])
+    if counts["unrated"]:
+        st.warning(f"{counts['unrated']} free-text answer(s) still need self-rating.")
+
+    phases = (
+        get_custom_test_phases(test["id"])
+        if test.get("structure") == "phased_exam"
+        else []
+    )
+    phase_names = {phase["phase_index"]: phase["name"] for phase in phases}
+    if phases:
+        st.subheader("Phase timing")
+        st.dataframe(
+            [
+                {
+                    "Phase": phase["name"],
+                    "Limit": _fmt_time(phase["timer_limit_s"]),
+                    "Actual": (
+                        _fmt_time(phase["time_taken_s"])
+                        if phase["time_taken_s"] is not None
+                        else "—"
+                    ),
+                }
+                for phase in phases
+            ],
+            use_container_width=True,
+            hide_index=True,
+        )
+
+    breakdown = get_custom_result_breakdown(test["id"])
+    table = [
+        {
+            **(
+                {"Phase": phase_names.get(row["phase_index"], "Phase")}
+                if phases
+                else {}
+            ),
+            "Type": SECTION_LABELS[row["section"]],
+            "Source": row["source"],
+            "Result": _CUSTOM_RESULT_LABELS[row["result"]],
+            "Questions": row["count"],
+        }
+        for row in breakdown
+    ]
+    if table:
+        st.dataframe(table, use_container_width=True, hide_index=True)
+
+
+def view_custom_results(*, compact: bool):
+    test_id = st.session_state.custom_test_id
+    test = get_custom_test(test_id) if test_id else None
+    if not test:
+        st.error("Custom test not found.")
+        return
+    if not _test_matches_library(test):
+        st.error("This custom test belongs to a different library.")
+        st.session_state.custom_test_id = None
+        st.session_state.custom_view = "dashboard"
+        return
+    if test.get("structure") == "phased_exam" and test["status"] != "completed":
+        st.warning("Answers are available only after all three exam phases are complete.")
+        st.session_state.custom_view = "test"
+        st.rerun()
+    questions = get_custom_test_questions(test_id)
+    if st.button("← Custom dashboard"):
+        st.session_state.custom_view = "dashboard"
+        st.rerun()
+    st.header(f"{test['name']} — {'Summary' if compact else 'Review'}")
+    _custom_result_summary(test, questions)
+    if compact:
+        return
+
+    for q in questions:
+        result_label = _CUSTOM_RESULT_LABELS[q["result"]]
+        with st.expander(
+            f"Question {q['position'] + 1} — {result_label}", expanded=False
+        ):
+            st.caption(_custom_context_label(q))
+            if q["section"] in ("core", "sc") and q.get("clinical_vignette"):
+                st.info(q["clinical_vignette"])
+            col_q, col_a = st.columns(2, gap="large")
+            with col_q:
+                st.markdown("**Question**")
+                st.markdown(q["question_text"])
+                st.markdown("**Your answer**")
+                _render_user_answer(q, q["user_answer_value"])
+            with col_a:
+                st.markdown("**Correct answer**")
+                options = json.loads(q.get("options") or "[]")
+                _render_correct_answer(q["question_id"], options, question=q)
+            if q["q_type"] == "free_text" and q["result"] == "unrated":
+                st.markdown("---")
+                st.markdown("**Rate your answer**")
+                rating_cols = st.columns(3)
+                for col, rating, label in zip(
+                    rating_cols,
+                    ("got_it", "partial", "missed"),
+                    ("✓ Got it", "~ Partial", "✕ Missed"),
+                ):
+                    with col:
+                        if st.button(
+                            label,
+                            use_container_width=True,
+                            key=f"custom_review_rate_{test_id}_{q['position']}_{rating}",
+                        ):
+                            rate_custom_free_text(test_id, q["position"], rating)
+                            st.rerun()
 
 
 def _new_book_import_tab(import_type: str) -> None:
@@ -1314,6 +3014,19 @@ if section in ("core_cases", "short_cases", "mrqs"):
         view_question()
     elif view == "review":
         view_review()
+    elif view == "learning_summary":
+        view_learning_summary()
+
+elif section == "custom":
+    custom_view = st.session_state.custom_view
+    if custom_view == "dashboard":
+        view_custom_dashboard()
+    elif custom_view == "test":
+        view_custom_test()
+    elif custom_view == "review":
+        view_custom_results(compact=False)
+    elif custom_view == "summary":
+        view_custom_results(compact=True)
 
 elif section == "import_pdf":
     view_import()

@@ -1,0 +1,3159 @@
+{
+  "schema_version": 1,
+  "library_key": "uefa_cfm",
+  "chapter_number": 15,
+  "session_title": "Chapter 8 - Women's football",
+  "source_pdf": "UEFA-HFM-Womens-football.pdf",
+  "questions": [
+    {
+      "q_number": 1,
+      "question_text": "An association defines a participation target before examining the environment around women's football. Which part of Pettigrew's model is missing?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Context: the external trends, opportunities and threats surrounding the change.",
+        "Content: the specific development goals and intended purpose of the initiative.",
+        "Process: the methods through which the participation target will be delivered.",
+        "Governance: the stakeholders responsible for approving and resourcing the target.",
+        "Evaluation: the indicators used to judge whether participation has become sustainable."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          230,
+          231
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0
+        ],
+        "explanation": "Pettigrew's context asks what surrounds and shapes the proposed change before goals and delivery are finalised. Content concerns what will change, while process concerns how it will happen. A sound participation strategy therefore begins with the political, economic, social and institutional setting."
+      }
+    },
+    {
+      "q_number": 2,
+      "question_text": "Which descriptions correctly distinguish context, content and process in Pettigrew's change model?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Process concerns the stakeholders whose support gives the change legitimacy.",
+        "Context concerns the surrounding trends, opportunities and threats.",
+        "Context concerns the historical baseline used to measure future development.",
+        "Content concerns what is changing and the goals of that change.",
+        "Content concerns the resources and structures through which implementation is controlled."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          230,
+          231
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3
+        ],
+        "explanation": "Context describes the environment, content specifies the intended change and purpose, and process describes how change will be achieved. Stakeholders, history and resources can inform those elements, but they do not replace their definitions. The model keeps diagnosis, ambition and delivery logically connected."
+      }
+    },
+    {
+      "q_number": 3,
+      "question_text": "Which developments appear on the chapter's timeline of women's football?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "The first UEFA women's club competition in 1982.",
+        "The first recorded women's international match in 1881.",
+        "A UEFA resolution on national-association responsibility in 1971.",
+        "The first global women's football strategy in 2001.",
+        "The first FIFA Women's World Cup in 1991."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          230,
+          231
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "The timeline marks the 1881 international, UEFA's 1971 resolution and the 1991 FIFA Women's World Cup. The UEFA European women's championship began in 1982, while UEFA launched its women's club competition in 2001. FIFA's first dedicated global strategy came much later."
+      }
+    },
+    {
+      "q_number": 4,
+      "question_text": "A country lifted a historic ban on women's football but participation remains weak. Which responses reflect the chapter's historical analysis?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Rebuild access to suitable pitches and facilities.",
+        "Restore funding and organisational infrastructure.",
+        "Address social assumptions that survived the formal ban.",
+        "Treat the setback as a long-term development issue rather than a legal change alone.",
+        "Prioritise elite competition so public success can compensate for the historical loss of grassroots structures."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          230,
+          231
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "explanation": "Historic bans denied women's football venues, funding and infrastructure and pushed activity outside official systems. Lifting a ban removes a legal barrier but does not recreate the lost pathway or change entrenched norms. Recovery therefore requires coordinated grassroots, facility, cultural and governance work."
+      }
+    },
+    {
+      "q_number": 5,
+      "question_text": "Why did restrictions on official pitches have effects beyond the wording of the bans?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "They shifted women's football into community settings where national associations could not regulate it.",
+        "They interrupted international fixtures while domestic teams retained local competition.",
+        "They reduced spectator income that had previously financed women's football development.",
+        "They converted women's teams into unofficial clubs without access to men's competition calendars.",
+        "They removed the venues and infrastructure needed for organised development, setting the game back even where informal play continued."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          230,
+          231
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          4
+        ],
+        "explanation": "Access to recognised pitches was fundamental to organised teams, competitions and visibility. Removing that access effectively dismantled the game's infrastructure and support, even if women continued to play informally. The consequence was developmental regression, not merely a temporary reduction in fixtures."
+      }
+    },
+    {
+      "q_number": 6,
+      "question_text": "Which historical events demonstrate institutional influence on women's football development?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "National-association bans blocked access to official football infrastructure.",
+        "The First World War placed women's teams under national-association control.",
+        "UEFA's 1971 resolution asked associations to take responsibility for the women's game.",
+        "The 1881 international established a recognised European competition pathway.",
+        "The 1920 international fixtures secured regular access to men's club grounds."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          230,
+          231
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2
+        ],
+        "explanation": "The bans show how institutions could constrain the game, while the 1971 UEFA resolution helped move responsibility back into national associations. Wartime social change encouraged teams but did not create governing control. Early matches demonstrated demand without establishing durable structures."
+      }
+    },
+    {
+      "q_number": 7,
+      "question_text": "A strategy team is using the chapter's history as part of a context review. Which questions should it ask?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Which past restrictions shaped current access to facilities?",
+        "Which social norms still affect participation?",
+        "Which historical attendance milestones provide a benchmark for current commercial targets?",
+        "Which institutional decisions changed responsibility for the game?",
+        "Which early teams offer a model for the present national competition structure?"
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          230,
+          231
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3
+        ],
+        "explanation": "Historical context explains why today's starting position is uneven and why formal opportunity may not equal practical access. Facilities, norms and institutional ownership are lasting mechanisms. Attendance stories are informative, but they are not a sufficient basis for current commercial targets or structures."
+      }
+    },
+    {
+      "q_number": 8,
+      "question_text": "How do content and process interact in a women's football development strategy?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Content specifies goals such as participation and sustainability.",
+        "Process identifies how those goals will be achieved.",
+        "The chosen process should respond to the diagnosed context.",
+        "Process should be fixed first so realistic content can be selected from the available delivery methods.",
+        "Progress can fail when ambitious content is detached from delivery conditions."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          230,
+          231
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "explanation": "Pettigrew's elements are distinct but connected. Content says what the association wants to change, while process turns that ambition into action in a particular context. Starting with a fixed delivery method can constrain diagnosis and encourage the wrong goal."
+      }
+    },
+    {
+      "q_number": 9,
+      "question_text": "An association wants to copy another country's women's football initiative because it produced rapid growth. What is the best first step?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Replicate the initiative's goals and adjust its delivery process to the available domestic resources.",
+        "Map the initiative's stakeholders and secure equivalent organisations in the domestic system.",
+        "Use the other country's growth rate to set a locally credible participation objective.",
+        "Compare the political, social, economic, legal and football context before adapting the initiative.",
+        "Pilot the initiative in the strongest region before assessing wider contextual differences."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          230,
+          231
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "A programme that worked elsewhere sits within a particular context. The association should first understand whether the same opportunities, threats, norms and structures apply, then adapt content and process. A pilot can be valuable later, but it should not bypass contextual analysis."
+      }
+    },
+    {
+      "q_number": 10,
+      "question_text": "A development plan seeks to repair the legacy of exclusion from official football. Which paired priorities are justified?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Use national-team visibility to restore participation before investing in local infrastructure.",
+        "Create accessible playing opportunities and rebuild recognised development pathways.",
+        "Create separate governance arrangements so historical men's structures do not shape the women's game.",
+        "Measure recovery through the return of attendance levels recorded before the bans.",
+        "Challenge the social norms that once legitimised exclusion."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          230,
+          231
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          4
+        ],
+        "explanation": "The historical damage was both structural and cultural. Rebuilding venues, pathways and official support must be accompanied by work on attitudes and legitimacy. Elite visibility may help, but it cannot replace local access or provide a reliable historical recovery benchmark."
+      }
+    },
+    {
+      "q_number": 11,
+      "question_text": "Which goals are included in FIFA's first global strategy for women's football?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Develop and grow on and off the pitch.",
+        "Standardise professional leagues.",
+        "Showcase the game.",
+        "Integrate women's and men's commercial rights.",
+        "Govern and lead."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          232,
+          233
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          4
+        ],
+        "explanation": "FIFA's five goals are develop and grow, showcase, communicate and commercialise, govern and lead, and educate and empower. Professional league design and rights integration may be policy choices, but they are not goal headings in the strategy."
+      }
+    },
+    {
+      "q_number": 12,
+      "question_text": "A national association is aligning its plan with UEFA's #TimeForAction strategy. Which ambitions belong in that alignment?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Increase the number of women and girls playing.",
+        "Change perceptions of women's football.",
+        "Create a senior women's futsal team before expanding the grassroots football pathway.",
+        "Increase the reach and value of major women's competitions.",
+        "Improve player standards and female representation in UEFA bodies."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          232,
+          233
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "explanation": "UEFA's strategy combines participation, perception, competition value, sporting standards and representation. This is a portfolio rather than a single commercial or performance target. Futsal development can contribute, but the strategy does not prescribe that sequence."
+      }
+    },
+    {
+      "q_number": 13,
+      "question_text": "Why was UEFA's 1971 resolution a pivotal governance development?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "It transferred women's international competitions from informal organisers to UEFA.",
+        "It linked the lifting of national bans to the creation of domestic women's leagues.",
+        "It formally asked national associations to take responsibility for women's football, helping reverse institutional exclusion.",
+        "It made gender equality a condition of national-association membership.",
+        "It established a common European pathway for clubs and representative teams."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          232,
+          233
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2
+        ],
+        "explanation": "The resolution placed formal responsibility for the women's game with national associations. Bans were then lifted across countries and official international development accelerated. It did not itself create a complete competition system or a membership condition."
+      }
+    },
+    {
+      "q_number": 14,
+      "question_text": "Which competition developments are accurately described in the chapter?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "UEFA established a European women's representative-team competition in 1982.",
+        "The representative-team competition was relaunched as Women's EURO in 1982.",
+        "The Women's Champions League introduced centralised rights when it launched.",
+        "UEFA launched the women's club competition that became the Women's Champions League in 2001.",
+        "The first UEFA women's futsal competition preceded the women's club competition."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          232,
+          233
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          3
+        ],
+        "explanation": "The representative competition began in 1982 and was relaunched under the European Women's Championship name in 1990. The women's club competition followed in 2001. Centralised rights and a group stage were later planned changes, while Women's Futsal EURO began in 2019."
+      }
+    },
+    {
+      "q_number": 15,
+      "question_text": "A country has no registered female futsal players but wants to enter a future UEFA competition. Which actions follow the inaugural Women's Futsal EURO experience?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Recruit senior football players first so the association can meet competition entry requirements.",
+        "Use the new competition as a development catalyst.",
+        "Postpone domestic programmes until an international event creates enough participant demand.",
+        "Run talent identification across women's football and futsal.",
+        "Build a national team alongside conditions for continued domestic growth."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          232,
+          233
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3,
+          4
+        ],
+        "explanation": "The inaugural competition prompted many associations to identify talent and create teams from a very low base. A national side can showcase the pathway, but sustainable progress also requires better conditions and further competitions. The example supports parallel development rather than a temporary selection exercise."
+      }
+    },
+    {
+      "q_number": 16,
+      "question_text": "How can major women's competitions contribute to wider development?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "They create visible role models.",
+        "They create a commercial return that can finance grassroots growth without separate development funding.",
+        "They stimulate technical and tactical progress.",
+        "They attract public and commercial interest.",
+        "They provide milestones that reinforce participation and investment."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          232,
+          233
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "explanation": "Competitions showcase quality, produce role models and attract audiences and partners. Those effects can strengthen the broader development environment. They do not remove the need for deliberate grassroots, governance and funding work."
+      }
+    },
+    {
+      "q_number": 17,
+      "question_text": "A governing body is revising the Women's Champions League format and commercial approach. Which chapter-backed intervention is most coherent?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Expand knockout rounds while leaving rights with clubs to preserve local commercial incentives.",
+        "Combine a more competitive group stage with centralised rights to improve visibility.",
+        "Centralise sponsorship while retaining club control of broadcast rights and match production.",
+        "Increase the number of entrants before changing the format so participation drives visibility.",
+        "Bundle rights with men's competitions until women's audiences are commercially mature."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          232,
+          233
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1
+        ],
+        "explanation": "The chapter describes the planned addition of a group stage alongside centralised rights as a way to improve competitiveness and visibility. The two measures reinforce sporting and commercial development. Continued bundling would work against the later strategy of giving women's properties distinct value."
+      }
+    },
+    {
+      "q_number": 18,
+      "question_text": "How did Title IX create a step change for women's football in the United States?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "It required national sports bodies to provide equal competition structures.",
+        "It shifted elite player development from clubs to educational institutions.",
+        "It made gender equality mandatory in federally supported education.",
+        "It linked public funding to equal professional opportunities after college.",
+        "That legal change expanded teams, scholarships and funding in schools and colleges."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          232,
+          233
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2,
+          4
+        ],
+        "explanation": "Title IX altered the legal environment of education, including college sport. The resulting access to teams, scholarships and funding rapidly expanded the player base. Its mechanism was educational equality, not the direct regulation of professional football."
+      }
+    },
+    {
+      "q_number": 19,
+      "question_text": "An association wants one plan to reflect FIFA and UEFA strategic priorities. Which combined actions are well supported?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Grow participation and player standards.",
+        "Use competition reach as the principal measure of progress across the two strategies.",
+        "Showcase and commercialise the game.",
+        "Strengthen governance, leadership and female representation.",
+        "Sequence empowerment after the playing pathway has achieved sustainable growth."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          232,
+          233
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3
+        ],
+        "explanation": "Both strategies link on-pitch growth with visibility, commercial development and leadership. An integrated plan should therefore balance participation, performance, governance and market development. Competition reach is important, but it is not a complete measure and empowerment is not a later-stage add-on."
+      }
+    },
+    {
+      "q_number": 20,
+      "question_text": "A national association is conducting a PESTEL review of women's football. Which issues are correctly classified?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Changing-room availability as social because it affects participant inclusion.",
+        "School-sport policy as political.",
+        "Disposable income and recession as economic.",
+        "Broadcast infrastructure as technological.",
+        "Equality legislation as legal."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          234,
+          235
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "explanation": "PESTEL separates policy, economic capacity, socio-cultural conditions, technology, environment and law. Facilities and changing rooms are treated within the environmental dimension in this chapter. Classification helps the association examine different mechanisms without losing their interaction."
+      }
+    },
+    {
+      "q_number": 21,
+      "question_text": "What is the main value of using PESTEL for women's football development?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "It exposes external opportunities and threats that shape feasible goals and delivery choices.",
+        "It ranks national constraints before stakeholders decide which issues they can influence.",
+        "It distinguishes structural barriers from cultural barriers within grassroots participation.",
+        "It converts historical context into six categories suitable for strategy monitoring.",
+        "It identifies which development initiatives should be led by government rather than football bodies."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          234,
+          235
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0
+        ],
+        "explanation": "PESTEL is a structured context scan. It helps leaders see how policy, wealth, culture, technology, geography, facilities and law can enable or inhibit the women's game. It informs strategy but does not itself rank priorities or allocate responsibility."
+      }
+    },
+    {
+      "q_number": 22,
+      "question_text": "Which technological opportunities are identified for women's football?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Centralised production reducing the cost of targeting advertising audiences.",
+        "Deals with over-the-top digital broadcasters.",
+        "Digital rights being bundled with men's properties to increase initial reach.",
+        "National associations creating their own direct platforms.",
+        "Pay-per-view replacing free access as the preferred early-market model."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          234,
+          235
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3
+        ],
+        "explanation": "OTT providers and association-owned platforms can widen availability and engagement. The chapter also notes uncertainty over rights value because digital economics and free access may reduce revenue. Technology creates options rather than one prescribed commercial model."
+      }
+    },
+    {
+      "q_number": 23,
+      "question_text": "An association plans a free digital channel for women's matches. Which expectations are realistic?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "It should raise rights value by creating competition among digital broadcasters.",
+        "It can increase coverage and audience engagement.",
+        "It may support interest and participation.",
+        "It should replace television partnerships until viewing figures establish a paid market.",
+        "It may generate limited direct revenue while access remains free."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          234,
+          235
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "A direct channel can solve an exposure problem and help build the market. Free access, however, may not monetise rights and can affect how external broadcasters value them. The association should treat reach and revenue as related but distinct objectives."
+      }
+    },
+    {
+      "q_number": 24,
+      "question_text": "How does greater gender equality support women's football development according to the chapter?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "It encourages investment in women's sport.",
+        "It expands opportunities to participate.",
+        "Participation can improve the player skill base.",
+        "It is positively associated with international performance.",
+        "It reduces the effect of cultural heritage once equal-opportunity legislation is in place."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          234,
+          235
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "explanation": "Gender equality affects resources, access and the conditions in which skills develop. The chapter reports positive associations with participation and elite performance. Cultural and religious factors can persist, so legal or workforce equality does not erase every barrier."
+      }
+    },
+    {
+      "q_number": 25,
+      "question_text": "Who is the PlayMakers grassroots programme designed to reach?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Primary-school girls who are at risk of dropping out of organised sport.",
+        "Girls aged five to eight who prefer non-competitive football formats.",
+        "Young players who need fundamental movement skills before joining a club.",
+        "Girls entering football through schools without a recognised local pathway.",
+        "Girls aged five to eight who have not previously played football."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          234,
+          235
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          4
+        ],
+        "explanation": "PlayMakers targets five- to eight-year-old girls who have never played football. Disney stories and imaginative play provide a safe, welcoming entry point. The programme develops movement, life and football skills, but those needs do not define eligibility."
+      }
+    },
+    {
+      "q_number": 26,
+      "question_text": "A hot-climate country with limited pitches is designing a women's football plan. Which conclusions follow the environmental analysis?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Adapt training formats and schedules to climatic constraints.",
+        "Focus indoor provision on futsal before expanding the outdoor player pathway.",
+        "Treat suitable facilities and changing rooms as development infrastructure.",
+        "Use the larger national talent pool to offset irregular access to training.",
+        "Classify facility investment as an economic intervention because climate cannot be changed."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          234,
+          235
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2
+        ],
+        "explanation": "Climate can make regular outdoor training harder, while physical infrastructure can expand opportunity. Strategy should adapt the playing environment and invest in practical access. Futsal may help, but the chapter does not prescribe it as the required sequence or redefine facilities as purely economic."
+      }
+    },
+    {
+      "q_number": 27,
+      "question_text": "How should leaders distinguish legal and social influences on women's football?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Law can create enforceable equality in defined settings.",
+        "Social norms shape whether opportunities are accepted and used.",
+        "Legal change is most effective after social participation has demonstrated demand.",
+        "The two influences can reinforce one another but operate through different mechanisms.",
+        "Social equality is the main route through which legislation improves elite performance."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          234,
+          235
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3
+        ],
+        "explanation": "Title IX illustrates a legal rule changing educational opportunity, while gender norms, religion and cultural heritage shape behaviour and investment more broadly. Legal and social forces interact, yet compliance does not automatically change attitudes. Development plans need both access rights and cultural engagement."
+      }
+    },
+    {
+      "q_number": 28,
+      "question_text": "An association wants grassroots growth to strengthen the whole women's game. Which benefits should its plan connect?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "More girls experiencing football.",
+        "Greater interest among participants and their networks.",
+        "A wider talent pipeline for elite football.",
+        "Earlier identification of talented players so grassroots resources can be concentrated on retention.",
+        "A stronger base for the future health of the game."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          234,
+          235
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "explanation": "Participation is valuable both in itself and as the foundation of the football ecosystem. It creates players, interest and future elite talent. Concentrating grassroots resources on early talent selection would narrow the programme and weaken the wider participation purpose."
+      }
+    },
+    {
+      "q_number": 29,
+      "question_text": "A beginner programme gives girls one short session per week while boys have several informal playing opportunities. Which barrier is most directly illustrated?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Infrastructure: the formal programme provides less club access than boys receive.",
+        "Competitive setting: limited contact increases pressure to perform during each session.",
+        "Gender stereotyping: the schedule reflects assumptions about girls' interest in football.",
+        "Time: girls have less opportunity to practise movement and game-playing skills.",
+        "Individual difference: a common timetable overlooks variation in girls' prior experience."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          236,
+          237
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "The chapter identifies reduced time in sport as a direct barrier to learning and practising fundamental skills. The situation may reflect wider structural or cultural choices, but the immediate mechanism is unequal exposure. Programme design should increase safe, enjoyable opportunities to play."
+      }
+    },
+    {
+      "q_number": 30,
+      "question_text": "Why should grassroots organisers offer both mixed and girl-only environments?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Mixed settings develop competitive resilience, while single-sex settings develop basic skills.",
+        "Some girls enjoy practising with boys.",
+        "Mixed settings suit experienced players, while single-sex settings suit first-time participants.",
+        "Mixed settings improve access, while single-sex settings reduce gender stereotyping.",
+        "Others feel more comfortable and confident in girl-only settings."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          236,
+          237
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          4
+        ],
+        "explanation": "Girls are not a homogeneous group, and preferences for the social environment differ. Choice helps programmes fit participants rather than impose one pathway. The distinction is about comfort, enjoyment and experience, not a fixed link to skill or competitiveness."
+      }
+    },
+    {
+      "q_number": 31,
+      "question_text": "Which barriers to girls' participation are identified in the chapter?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Gender-related stereotypes.",
+        "Insufficient visibility of elite competitions.",
+        "Limited infrastructure and club access.",
+        "Limited access to paid coaching before adolescence.",
+        "Difficulty navigating some conflict-resolution styles."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          236,
+          237
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          4
+        ],
+        "explanation": "The barrier list includes time, environment and competition, stereotypes, infrastructure, individual differences and conflict management. Elite visibility and cost appear in the later discussion of adolescent dropout, but not as labels in this initial six-part list."
+      }
+    },
+    {
+      "q_number": 32,
+      "question_text": "A club is redesigning its introductory offer after girls report feeling judged in competitive sessions. Which changes follow the evidence?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Make fun and enjoyment explicit programme priorities.",
+        "Reduce premature performance pressure.",
+        "Delay formal competition until participants demonstrate confidence in fundamental movement skills.",
+        "Offer a setting in which mistakes feel safe.",
+        "Ask participants which social environment they prefer."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          236,
+          237
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "explanation": "Traditional competitive environments can make girls feel judged and undermine confidence when fun is displaced. A responsive programme changes climate and offers participant choice. The chapter supports flexible design rather than a universal readiness threshold for competition."
+      }
+    },
+    {
+      "q_number": 33,
+      "question_text": "Why must programme design account for individual differences among girls?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Individual assessment identifies which barriers should be addressed through the club and which require partners.",
+        "Different experiences determine whether mixed or single-sex football is the more inclusive format.",
+        "Treating girls as a uniform group obscures differences in circumstances, experience and preference that shape participation.",
+        "Personal circumstances explain why some girls respond more strongly to social stigma during adolescence.",
+        "Individualised programmes prevent infrastructure limits from affecting already active girls."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          236,
+          237
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2
+        ],
+        "explanation": "The chapter explicitly rejects the idea that girls form a homogeneous group. Effective design considers differences within and between groups and the uniqueness of each person. Those differences inform choice, but they do not map each participant to one fixed barrier or format."
+      }
+    },
+    {
+      "q_number": 34,
+      "question_text": "Which patterns are highlighted in the discussion of girls leaving football?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Many players stop when moving from girls' to women's football after age 18.",
+        "Dropout rises when competitive performance becomes part of girls' self-worth after age 18.",
+        "Registered participation falls mainly because adult amateur opportunities are less visible.",
+        "Around age 14, girls' dropout can be about twice the rate for boys.",
+        "Peer influence becomes weaker as girls develop a clearer sense of athletic competence."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          236,
+          237
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          3
+        ],
+        "explanation": "The chapter identifies two important transition risks: adolescence and the move into adult football. At around 14, peer pressure, body image and perceived competence matter; after 18, the pathway into women's football loses many players. Retention therefore needs age-specific responses."
+      }
+    },
+    {
+      "q_number": 35,
+      "question_text": "A national association is designing a retention plan for teenage girls. Which actions address the cited dropout mechanisms?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Separate body-image support from football delivery so coaches can focus on athletic competence.",
+        "Provide good facilities and coaching at suitable times.",
+        "Subsidise club fees after girls have shown sustained commitment to organised football.",
+        "Address safety and transport barriers.",
+        "Use strong female athletic role models."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          236,
+          237
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3,
+          4
+        ],
+        "explanation": "Teenage retention is affected by access, safety, cost, peers, body image and role models. A coherent programme brings those considerations into delivery and partnerships. Waiting for sustained commitment or separating identity concerns from the football environment would miss the mechanism of dropout."
+      }
+    },
+    {
+      "q_number": 36,
+      "question_text": "How do stereotypes and infrastructure reinforce one another as participation barriers?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Masculine stereotypes can reduce institutional priority for girls' football.",
+        "Infrastructure investment should precede stereotype work because visible participation provides the evidence needed to change attitudes.",
+        "Lower priority can produce weaker access to clubs, pitches and school provision.",
+        "Poor access then makes girls' participation appear less normal.",
+        "That apparent lack of demand can reproduce the original stereotype."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          236,
+          237
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "explanation": "Cultural assumptions influence where opportunity and resources are placed, while weak provision makes exclusion seem natural. Breaking the cycle requires both practical access and communication with parents and society. One strand should not be postponed until the other has succeeded."
+      }
+    },
+    {
+      "q_number": 37,
+      "question_text": "Young players avoid speaking up when conflict occurs during training. What is the most appropriate development response?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Use single-sex groups until players become comfortable with competitive disagreement.",
+        "Teach and practise skills for navigating conflict within a supportive football environment.",
+        "Ask coaches to adopt less masculine resolution styles during the introductory phase.",
+        "Provide an escalation route so players can avoid direct conflict while confidence develops.",
+        "Treat conflict competence as a life-skill outcome after regular participation is established."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          236,
+          237
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1
+        ],
+        "explanation": "Conflict is unavoidable in football, so avoiding it does not prepare players for the game or wider life. The chapter recommends helping girls develop the skills to navigate and manage it. Coaching style and escalation routes may support safety, but they do not replace capability-building."
+      }
+    },
+    {
+      "q_number": 38,
+      "question_text": "Girls in a low-income area have poor facilities and must pay for football outside school. Which combined response is best supported?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Prioritise transport support because facility quality affects retention after participation begins.",
+        "Create a free introductory programme and move retained players into the existing paid pathway.",
+        "Improve access to suitable provision through schools or partner facilities.",
+        "Concentrate coaching resources at the strongest local club so quality compensates for travel and fees.",
+        "Reduce the cost barrier through association, government or stakeholder support."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          236,
+          237
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2,
+          4
+        ],
+        "explanation": "The chapter links dropout to inferior facilities, suboptimal times, transport and cost, especially when school opportunities are absent. Partnerships and funding should improve both access and affordability. A short free entry point or a distant high-quality hub leaves the structural barrier in place."
+      }
+    },
+    {
+      "q_number": 39,
+      "question_text": "Which wider benefits provide a case for increasing girls' participation in football?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Development of athletic and movement skills.",
+        "Earlier sporting specialisation that strengthens elite pathways.",
+        "Physical and mental well-being across the life course.",
+        "Educational attainment and transferable life skills.",
+        "Greater employment access through qualifications gained in organised sport."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          238,
+          239
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3
+        ],
+        "explanation": "Participation can support physical competence, health, continued activity, education and skills such as cooperation, leadership and communication. These effects strengthen the social and football case for access. The chapter does not present early specialisation or direct qualifications as the mechanism."
+      }
+    },
+    {
+      "q_number": 40,
+      "question_text": "A PlayMakers-style session is being designed for girls new to football. Which features fit the model?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Use story outcomes as progressive performance goals before introducing football techniques.",
+        "Use familiar stories and characters to stimulate imaginative play.",
+        "Create a positive learning environment in which mistakes feel safe.",
+        "Develop life, movement, game and basic football skills.",
+        "Match delivery to five- to eight-year-old beginners."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          238,
+          239
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "explanation": "PlayMakers uses Disney-inspired storytelling as the delivery approach for young beginners. Its context combines safety, welcome and play with life, movement and football goals. The story supports exploration rather than becoming a disguised performance curriculum."
+      }
+    },
+    {
+      "q_number": 41,
+      "question_text": "What is the central design logic shown in the PlayMakers framework?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Align who the programme serves, what it delivers and how it delivers within a positive context.",
+        "Move from life skills to movement skills and then to football basics within each story.",
+        "Use the self-confidence goal to connect imaginative play with regular activity.",
+        "Balance the Disney narrative with a club pathway suited to beginner players.",
+        "Define the learning environment before selecting the age group and football goals."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          238,
+          239
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0
+        ],
+        "explanation": "The framework connects who, what and how around goals, context and self. It is aimed at young beginners, develops several kinds of skill and uses a positive PlayMakers approach. The components are aligned rather than arranged as a fixed teaching sequence."
+      }
+    },
+    {
+      "q_number": 42,
+      "question_text": "A club wants its recruitment message to reach girls who are new to football. Which communication choices are source-grounded?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Lead with competitive opportunities so interested girls can identify an appropriate standard.",
+        "Advertise in places the target audience already uses.",
+        "Use social media as the main channel and ask existing players to validate the message.",
+        "Use inclusive images and explain health and social benefits.",
+        "Place the campaign around football venues so parents can see the available infrastructure."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          238,
+          239
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3
+        ],
+        "explanation": "Communication should meet girls and women in schools, colleges, gyms, cafes and their networks. Inclusive imagery, benefits, social media, word of mouth and bring-a-friend activity broaden reach. A competition-led or venue-centred message may reproduce the barriers facing newcomers."
+      }
+    },
+    {
+      "q_number": 43,
+      "question_text": "Why should current players be given a voice when participation opportunities are redesigned?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Player input provides evidence of demand before resources are committed.",
+        "They can identify practical changes that would improve their experience.",
+        "Their preferences help tailor venue, format and delivery.",
+        "Consultation is most useful after partners have defined the formats they can support.",
+        "Participation in design can reveal barriers that managers have overlooked."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          238,
+          239
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "Players experience the pathway directly and can reveal how provision fits or fails. Their input supports tailored, participant-centred design and can be gathered through tools such as an online forum. It should shape choices early rather than merely validate a feasible offer."
+      }
+    },
+    {
+      "q_number": 44,
+      "question_text": "A national association has a participation idea but lacks venues and delivery funding. Which actions follow the chapter's guidance?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Partner with schools and colleges.",
+        "Explore facilities linked to boys' and men's clubs.",
+        "Seek FIFA, UEFA, government and commercial resources.",
+        "Coordinate partners around the shared participation goal.",
+        "Reduce the initial target group so existing association facilities can support a consistent programme."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          238,
+          239
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "explanation": "Participation growth often depends on partners that hold facilities, reach or funding. Schools, clubs, governing bodies, government and commercial organisations can contribute complementary resources. Narrowing the audience to fit internal capacity would leave the access problem unresolved."
+      }
+    },
+    {
+      "q_number": 45,
+      "question_text": "Why is storytelling useful in an introductory football programme?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "It makes football techniques meaningful before girls enter competitive play.",
+        "It creates a shared social identity that supports retention beyond the sessions.",
+        "It allows mixed-ability players to progress without formal skill assessment.",
+        "It connects health benefits with characters that parents and children recognise.",
+        "It encourages creativity and original thinking while reducing fear of mistakes."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          238,
+          239
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          4
+        ],
+        "explanation": "Storytelling creates an imaginative and psychologically safe way to move and play. That can make football more attractive and support experimentation among beginners. The chapter does not claim that it substitutes for progression, assessment or retention planning."
+      }
+    },
+    {
+      "q_number": 46,
+      "question_text": "Girls say the existing league venue and format are a poor fit for how they want to play. Which response is appropriate?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Offer participation formats and indoor or outdoor venues shaped by participant preferences.",
+        "Retain the league format and change session length so the pathway remains connected to competition.",
+        "Use player feedback to test and refine the redesigned opportunity.",
+        "Move the programme into local communities before asking players which format they prefer.",
+        "Offer a single-sex version first because venue concerns may reflect discomfort in mixed settings."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          238,
+          239
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2
+        ],
+        "explanation": "The guidance is to tailor opportunities to girls and women, including venue, format and local context, and to give players a voice. Consultation should inform the design rather than follow a predetermined solution. A league, community or girl-only format may work, but none is the default answer."
+      }
+    },
+    {
+      "q_number": 47,
+      "question_text": "How can a participation programme support both football development and broader social outcomes?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "It builds movement and football capability.",
+        "It can improve health and continued activity.",
+        "It turns social benefits into recruitment messages that strengthen the elite talent pathway.",
+        "It develops cooperation, leadership and communication skills.",
+        "It makes educational outcomes part of the association's performance framework for grassroots coaches."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          238,
+          239
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3
+        ],
+        "explanation": "Participation creates football capability and can also support well-being, education and life skills. These outcomes reinforce one another without reducing the programme to talent production. Communication may explain the benefits, but the social value should be embedded in the experience itself."
+      }
+    },
+    {
+      "q_number": 48,
+      "question_text": "A women's football board is reviewing whether its governance environment supports growth. Which positive conditions should it look for?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Evidence of interventions that work.",
+        "Knowledge-sharing among stakeholders.",
+        "Visible leadership support.",
+        "A single accountable funder that can coordinate the transition from dependency to sustainability.",
+        "Commitment to equality and sustainable commercial progress."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          240,
+          241
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "explanation": "The chapter identifies evidence, shared learning, leadership, a climate for change, steps towards sustainability and equality commitments as opportunities. These conditions can be distributed across the ecosystem. Sustainability does not depend on finding one funder to own the transition."
+      }
+    },
+    {
+      "q_number": 49,
+      "question_text": "Why is unclear ownership a serious threat to sustainable women's football development?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "It prevents national associations from distinguishing governance duties from commercial responsibilities.",
+        "It leaves development funding dependent on stakeholders with unequal domestic resources.",
+        "It makes good practice difficult to transfer between clubs, leagues and governing bodies.",
+        "It weakens accountability for coordinating resources, decisions and long-term outcomes across the stakeholder system.",
+        "It allows calendar and regulatory differences to persist without a recognised competition authority."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          240,
+          241
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "Women's football involves many organisations, so unclear ownership can leave essential work uncoordinated and nobody answerable for sustainability. Funding inequality and structural differences worsen that risk but are separate threats. Effective governance clarifies who leads, contributes and reports."
+      }
+    },
+    {
+      "q_number": 50,
+      "question_text": "Which statements reflect the chapter's stakeholder concept and mapping approach?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Stakeholder status depends on a recognised economic, political or legitimate form of power.",
+        "A stakeholder can affect or be affected by organisational objectives.",
+        "Mapping begins with organisations that control resources for women's football.",
+        "Support measures whether a stakeholder's objectives align with the national association's strategy.",
+        "Stakeholders can be mapped by power and support."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          240,
+          241
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          4
+        ],
+        "explanation": "Stakeholder status comes from affecting or being affected by the organisation, not from possessing a particular kind of power. Mapping then examines dimensions such as power, support, legitimacy, urgency and interest. Support is contextual and should not be reduced to formal strategic alignment."
+      }
+    },
+    {
+      "q_number": 51,
+      "question_text": "A national association is mapping stakeholders for a new women's league. Which steps are appropriate?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Identify bodies and groups that affect or experience the league's decisions.",
+        "Exclude service providers whose influence is contractual rather than strategic.",
+        "Assess the nature and strength of their power.",
+        "Map national government within political context before treating it as a football stakeholder.",
+        "Evaluate their support and interests."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          240,
+          241
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          4
+        ],
+        "explanation": "The map should include governing bodies, clubs, players, partners, government, NGOs, broadcasters and providers where relevant. Power, support and interests help explain how to engage them. Contractual or public-sector status does not remove stakeholder relevance."
+      }
+    },
+    {
+      "q_number": 52,
+      "question_text": "Which examples correctly illustrate the chapter's four forms of stakeholder power?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Financial input can create economic power.",
+        "Election or organised backing can create political power.",
+        "A stakeholder deeply affected by a decision has legitimate power through the moral basis of the claim.",
+        "An assigned decision-making role can create legitimate power.",
+        "Charisma and respected leadership can create referent power."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          240,
+          241
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "explanation": "Economic, political, legitimate and referent power describe different sources of influence. Being affected can create a strong normative claim, but it is not the chapter's definition of legitimate power in this four-part list. That distinction prevents moral standing and formal authority from being conflated."
+      }
+    },
+    {
+      "q_number": 53,
+      "question_text": "How does the chapter contrast an individual fan with an organised fan group?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "An organised group gains political power because it represents a recognised supporter constituency.",
+        "An individual fan has economic power through ticket purchases but limited legitimate power.",
+        "An organised group can aggregate voices and use media and matchday channels to gain substantial influence.",
+        "A fan group moves from low to high support when its objection attracts wider media attention.",
+        "An individual fan becomes strategically important when digital engagement can be measured."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          240,
+          241
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2
+        ],
+        "explanation": "One fan may have little influence, but a coordinated group can make its voice heard through social media, broadcasts and chanting. The change is the aggregation and exercise of influence, not a formal transfer of political or legitimate authority. Support and power remain separate dimensions."
+      }
+    },
+    {
+      "q_number": 54,
+      "question_text": "A low-power player group is deeply affected by a proposed calendar change. Which responses are justified?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Recognise the group as a stakeholder because it is affected.",
+        "Increase the group's mapped support score so the effect is visible in prioritisation.",
+        "Consult the group after powerful competition stakeholders have identified feasible options.",
+        "Consider the moral legitimacy of its claim as well as its strategic influence.",
+        "Treat player unions as the representative stakeholder if the players lack direct decision power."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          240,
+          241
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          3
+        ],
+        "explanation": "The stakeholder definition and normative approach require attention to affected groups even when power is low. Strategic mapping can inform engagement, but it should not erase moral significance. Representation may help, yet direct effects still deserve a voice."
+      }
+    },
+    {
+      "q_number": 55,
+      "question_text": "How should power and support be interpreted together in stakeholder mapping?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "High support increases the legitimacy of a stakeholder's power.",
+        "Power estimates a stakeholder's capacity to influence decisions.",
+        "Low support reduces strategic priority unless the stakeholder's concerns are urgent.",
+        "Support indicates the stakeholder's current orientation towards the organisation or goal.",
+        "A powerful but weakly supportive stakeholder needs a different engagement strategy from a powerful ally."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          240,
+          241
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3,
+          4
+        ],
+        "explanation": "Power and support answer different questions and create a more useful map when read together. A high-power ally can help delivery, while a high-power sceptic may require understanding and engagement. Support does not confer legitimacy or cancel the influence of opposition."
+      }
+    },
+    {
+      "q_number": 56,
+      "question_text": "A league initiative has leadership backing but lacks data, resources and clear accountability. Which governance response follows the threat analysis?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Define ownership and reporting responsibility.",
+        "Launch a pilot while the governance model is negotiated.",
+        "Improve the evidence base.",
+        "Secure dedicated resources.",
+        "Coordinate regulatory and calendar issues across stakeholders."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          240,
+          241
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "explanation": "Leadership support is an opportunity, but it does not neutralise missing data, ownership, resources or structural coordination. Those gaps should be addressed explicitly so the initiative can become sustainable. A pilot without clear responsibility can reproduce the same governance weakness."
+      }
+    },
+    {
+      "q_number": 57,
+      "question_text": "A stakeholder map has been completed for a women's football strategy. What is its most important next use?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Rank stakeholder needs so scarce development resources can be distributed transparently.",
+        "Design engagement and collaboration that move stakeholders towards shared development goals.",
+        "Identify which powerful stakeholders should own each strategic objective.",
+        "Test whether a win-win outcome is possible before the strategy is approved.",
+        "Separate strategic stakeholders from groups whose claims are mainly normative."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          242,
+          243
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1
+        ],
+        "explanation": "Mapping is useful because it informs what the organisation should do with and about stakeholders. It supports tailored engagement, priority and collaboration around shared goals. It should not turn power into ownership or remove affected groups from the strategy."
+      }
+    },
+    {
+      "q_number": 58,
+      "question_text": "Why must strategic and normative stakeholder perspectives be used together?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "The strategic view prioritises shared goals, while the normative view resolves conflicts through compromise.",
+        "The strategic view applies to organisations, while the normative view applies to players and communities.",
+        "The strategic view recognises influence and implementation risk.",
+        "The strategic view maps power and support, while the normative view maps legitimacy and urgency.",
+        "The normative view protects the claims of people deeply affected despite limited power."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          242,
+          243
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2,
+          4
+        ],
+        "explanation": "Strategic analysis helps leaders work with stakeholders capable of enabling or obstructing change. Normative analysis prevents low-power affected groups from being ignored. The perspectives are ethical and managerial lenses, not separate maps for different stakeholder types."
+      }
+    },
+    {
+      "q_number": 59,
+      "question_text": "Which tasks are identified as requirements for effective women's football development?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Identify stakeholders specific to the women's game.",
+        "Assign sustainable-development accountability to the strongest governing stakeholder.",
+        "Evaluate their interests and relative power.",
+        "Use the evaluation to seek shared goals and win-win outcomes.",
+        "Standardise stakeholder categories across national and regional contexts."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          242,
+          243
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3
+        ],
+        "explanation": "The chapter sets out identification, evaluation and collaborative use of that evaluation as the core sequence. Context determines which stakeholders matter and what power they have. Accountability should be clarified, but it is not assigned mechanically to the strongest body."
+      }
+    },
+    {
+      "q_number": 60,
+      "question_text": "A youth coach and first-team coach want the same small development budget for different purposes. Which responses fit effective stakeholder management?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Give priority to the first-team request if elite performance is a stated strategic goal.",
+        "Clarify each party's objective and underlying interest.",
+        "Explore whether cooperation can create a different win-win solution.",
+        "Consider a transparent compromise if joint value cannot be created.",
+        "Recognise the longer-term relationship cost if one party simply wins."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          242,
+          243
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "explanation": "A win-win result is desirable but may not be feasible when resources are fixed. Dialogue can uncover alternatives, and compromise may be preferable to an imposed win that damages later cooperation. Strategic importance informs judgement but does not settle the conflict by itself."
+      }
+    },
+    {
+      "q_number": 61,
+      "question_text": "Which statement best captures the structural focus of a stand-alone women's club in the chapter?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Its identity, resources and promotion can remain centred on the women's team without dependence on a men's club.",
+        "Its specialist staff divide their time between women's sporting and commercial roles.",
+        "It keeps a separate identity while remaining inside a men's club reporting perimeter.",
+        "It is insulated from calendar and regulatory differences affecting integrated clubs.",
+        "It depends on women's football revenues rather than parent-club contributions."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          242,
+          243
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0
+        ],
+        "explanation": "A stand-alone club can forge its own identity and devote organisational attention to the women's team. Specialist expertise and independence from a men's team's fortunes can follow. That structure does not guarantee commercial self-sufficiency or freedom from wider league constraints."
+      }
+    },
+    {
+      "q_number": 62,
+      "question_text": "Which facts describe the European women's league landscape in the chapter?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Professional leagues were concentrated in countries where women's clubs were integrated with men's clubs.",
+        "The benchmarking report counted 52 leagues involving 485 clubs.",
+        "League format differences mainly reflected whether players were local or international.",
+        "A minority of leagues were professional while most were amateur.",
+        "Calendar variation was presented as a domestic issue rather than a European competition concern."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          242,
+          243
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3
+        ],
+        "explanation": "European leagues differ in professionalism, format, timing and national context. Those differences affect player quality, recruitment and the development of European competitions. The chapter does not reduce the pattern to club integration or recruitment geography."
+      }
+    },
+    {
+      "q_number": 63,
+      "question_text": "A women's team is considering integration with a major men's club. Which benefits are supported?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Protection from reduced investment if the men's first team is relegated.",
+        "Shared training and stadium infrastructure.",
+        "Bundled sponsorship opportunities.",
+        "A separate reporting perimeter that gives the women's team independent control of shared staff.",
+        "Access to specialist marketing and technical staff."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          242,
+          243
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "Integration can unlock infrastructure, brand, sponsorship and specialist expertise. It also creates a risk that shared staff and resources favour the men's side or that men's-team problems affect the women. A separate operating entity can clarify responsibility but does not create full control over shared assets."
+      }
+    },
+    {
+      "q_number": 64,
+      "question_text": "Which considerations support a balanced comparison of stand-alone and integrated women's clubs?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Stand-alone clubs can build a distinct identity.",
+        "Stand-alone resources remain focused on the women's team.",
+        "Integrated clubs can share infrastructure and expertise.",
+        "Integrated clubs can benefit from a recognised parent brand and commercial bundling.",
+        "The preferred structure depends mainly on whether the domestic women's league is professional or amateur."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          242,
+          243
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "explanation": "Each structure has advantages and risks, and cultural and national context affect the choice. Stand-alone models offer focus and autonomy, while integration offers assets, expertise and reach. League status matters but does not determine the organisational answer."
+      }
+    },
+    {
+      "q_number": 65,
+      "question_text": "A national association is assessing where women's football sits within its own organisation. What should the review establish first?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Whether a dedicated department would provide clearer ownership than staff distributed across divisions.",
+        "Whether the women's committee has authority over league and club development.",
+        "Which domestic stakeholders can supplement UEFA and FIFA funding.",
+        "How the current structure compares with associations whose leagues are professional.",
+        "Its current structure, headcount, funding and responsibility for participation and talent pathways."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          242,
+          243
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          4
+        ],
+        "explanation": "The chapter stresses understanding the current state and status of women's football inside the association. Structure, staffing, resources and development responsibilities reveal barriers and opportunities. Comparison and redesign come after that diagnosis rather than defining it."
+      }
+    },
+    {
+      "q_number": 66,
+      "question_text": "What does a realistic win-win approach require in stakeholder management?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Search for ways to create shared value before accepting a zero-sum allocation.",
+        "Give each stakeholder a benefit proportional to its mapped power and support.",
+        "Recognise when compromise or a difficult trade-off remains necessary.",
+        "Use normative claims to protect low-power groups when strategic goals conflict.",
+        "Set shared goals first and defer distributional conflicts to implementation."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          242,
+          243
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2
+        ],
+        "explanation": "Win-win thinking encourages creativity and cooperation, but the chapter accepts that fixed resources can prevent everyone receiving the preferred outcome. Transparent compromise or choice may then be required. Mapping supports engagement rather than supplying a formula for benefits."
+      }
+    },
+    {
+      "q_number": 67,
+      "question_text": "A league is moving more players onto professional contracts. Which safeguards should accompany the transition?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Plan for education and careers beyond short playing lives.",
+        "Prepare players for increased media scrutiny.",
+        "Prioritise full-time contracts for players whose performance gains can increase league visibility.",
+        "Assess whether salaries provide realistic financial security.",
+        "Use club licensing to align professional salaries with the support available after retirement."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          244,
+          245
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3
+        ],
+        "explanation": "Professionalisation can raise sporting quality by allowing full-time focus, but it also increases dependence on contracts and public pressure. Careers are short and pay may not secure the future. Player welfare and transition support therefore belong alongside sporting and commercial planning."
+      }
+    },
+    {
+      "q_number": 68,
+      "question_text": "Which benefits and risks of player professionalisation are identified?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Full-time commitment can improve playing quality.",
+        "Players become more dependent on contract income.",
+        "Short careers and lower salaries create post-playing financial risk.",
+        "Professionalisation widens the gap between international players and those in amateur domestic leagues.",
+        "Greater media scrutiny creates additional pressure."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          244,
+          245
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "explanation": "The chapter presents professionalisation as a genuine sporting opportunity with material personal risks. Full-time work can improve standards, yet financial security and scrutiny become more acute. The comparison with amateur leagues does not establish the extra gap described in the distractor."
+      }
+    },
+    {
+      "q_number": 69,
+      "question_text": "What commercial role do fans play in the chapter's model?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Stadium attendance provides advertisers with the audience evidence needed to value broadcast rights.",
+        "Digital viewers create sponsor value when they can be converted into ticket-buying supporters.",
+        "Showcase-event audiences establish the commercial trend used to price regular league rights.",
+        "Larger audiences can increase ticket income and make the property more valuable to sponsors and broadcasters.",
+        "Fan growth raises club income before it affects sponsorship and broadcasting demand."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          244,
+          245
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "Fans create direct ticket value and indirect leverage with broadcasters and sponsors. Traditional models often use audience size as a driver, although later sections challenge attendance as the required starting point. Digital and stadium audiences can both matter without following one conversion sequence."
+      }
+    },
+    {
+      "q_number": 70,
+      "question_text": "A national association launches a free streaming channel for domestic women's matches. Which outcomes should it monitor separately?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "The rights value created by moving viewers from free streams to broadcast partners.",
+        "Growth in reach and engagement.",
+        "The sponsorship value generated by average live-stream audiences.",
+        "The proportion of digital viewers who later attend showcase matches.",
+        "Direct and indirect commercial revenue."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          244,
+          245
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          4
+        ],
+        "explanation": "Free digital coverage can expand awareness and engagement while producing little direct income. The association should therefore distinguish audience-building from monetisation and assess broader sponsor or rights effects carefully. A particular conversion path is possible but is not guaranteed by the source."
+      }
+    },
+    {
+      "q_number": 71,
+      "question_text": "Why did unbundling women's competition sponsorship rights represent a development opportunity?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "It allowed women's competitions to be valued and marketed as distinct properties.",
+        "It separated women's rights from the attendance assumptions used to price men's properties.",
+        "It enabled partners to associate directly with the values of the women's game.",
+        "It gave UEFA control of club sponsorship categories needed for centralised broadcasting.",
+        "It created packages spanning elite competitions and grassroots initiatives."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          244,
+          245
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          4
+        ],
+        "explanation": "Unbundling created a clear women's football proposition for internationally recognised brands. It connected competition and grassroots assets and enabled direct image transfer. The move challenged inherited packaging, but it did not remove the need to demonstrate value or establish broadcast control."
+      }
+    },
+    {
+      "q_number": 72,
+      "question_text": "A sponsor is considering a women's league with modest but growing audiences. Which value case is most credible?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Present audience growth and engagement.",
+        "Show the fit between the sponsor's brand and positive values in women's football.",
+        "Price the rights against the larger future market that digital reach is expected to create.",
+        "Explain the digital communities through which image transfer can occur.",
+        "Define how the partnership will activate both awareness and association."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          244,
+          245
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "explanation": "Women's football sponsorship can offer awareness and valuable image transfer even before audiences match mature properties. Digital platforms make associations visible across broad communities. A credible case uses evidence and activation rather than capitalising anticipated growth into the present price."
+      }
+    },
+    {
+      "q_number": 73,
+      "question_text": "What did the cited 2018/19 live-stream data suggest about club structure and digital audiences?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Integrated clubs converted the parent men's audience into higher sponsorship income.",
+        "Stand-alone clubs relied more heavily on free streams to build visibility.",
+        "Integrated clubs reported much larger average digital audiences than stand-alone clubs.",
+        "Integrated clubs generated average audiences comparable with major tournament broadcasts.",
+        "Stand-alone audiences grew more consistently because the women's identity was distinct."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          244,
+          245
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2
+        ],
+        "explanation": "The cited averages were about 72,101 per game for integrated clubs and 4,511 for stand-alone clubs. The chapter suggests that association with a high-profile men's club may help attract viewers. It does not establish the proposed revenue, platform or growth mechanisms."
+      }
+    },
+    {
+      "q_number": 74,
+      "question_text": "How does the chapter qualify the traditional link between audience size and sponsorship value?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Audience reach remains important.",
+        "Digital targeting makes sponsor fit more reliable than mass audience awareness.",
+        "Naming rights create greater value when competition audiences are unstable.",
+        "Image transfer can create value through association with the game's positive qualities.",
+        "Shared values matter mainly when rights have been unbundled from men's football."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          244,
+          245
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          3
+        ],
+        "explanation": "Traditional sponsorship thinking begins with awareness and audience size, but women's football also offers image and values association. Digital communities can expand that opportunity. The chapter adds a second value route rather than declaring audience reach obsolete."
+      }
+    },
+    {
+      "q_number": 75,
+      "question_text": "A club relies heavily on its parent team and governing-body grants. Which steps would strengthen financial resilience?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Reduce parent-club contributions once commercial income covers the women's first-team budget.",
+        "Develop sponsor relationships based on audience and values fit.",
+        "Prioritise ticketing because matchday revenue demonstrates progress towards self-sustainability.",
+        "Explore broadcast and digital revenue while building reach.",
+        "Broaden the mix of earned and external funding."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          244,
+          245
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3,
+          4
+        ],
+        "explanation": "The funding chart and discussion show considerable dependence on founders, parent clubs and grants. Sustainability requires a broader commercial model, but external support may still help development. No single revenue line, including ticketing, is a sufficient test of resilience."
+      }
+    },
+    {
+      "q_number": 76,
+      "question_text": "A league describes itself as sustainable because its parent clubs and governing bodies have committed funding for five years. Which conclusions are appropriate?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "The funding provides valuable development support.",
+        "Five-year certainty is sufficient for sustainability while audiences and sponsor value are still developing.",
+        "Dependence on a small set of contributors remains a sustainability risk.",
+        "Commercial income streams should be developed alongside the support.",
+        "The model should be reviewed against participation, governance and competition goals."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          246,
+          247
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "explanation": "The chapter says European women's football was not self-sustaining and relied substantially on parent clubs and grants. Stable support can start and protect development, but resilience requires a wider model and progress across the football ecosystem. Funding duration alone does not establish sustainability."
+      }
+    },
+    {
+      "q_number": 77,
+      "question_text": "Why is current dependence on founders, parent clubs and grants strategically important?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "It places commercial development behind the priorities of organisations that also fund men's football.",
+        "It exposes women's football to decisions and resources outside its own earned-income model, making long-term development vulnerable.",
+        "It prevents clubs from using sponsorship and broadcasting income to professionalise players.",
+        "It makes national associations accountable for club sustainability without control of league revenues.",
+        "It means commercial initiatives should replace development grants before the game can grow independently."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          246,
+          247
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1
+        ],
+        "explanation": "External contributions are important but create dependency when the game cannot sustain itself through a broader resource base. The risk is vulnerability, not a rule that funders necessarily neglect the women's game. Strategy should diversify and develop income without withdrawing useful investment prematurely."
+      }
+    },
+    {
+      "q_number": 78,
+      "question_text": "Which statements describe Lewin's force field model as used in the chapter?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Classify each force by context, content or process before assigning influence.",
+        "Multiply the strongest driving force by the number of opposing forces.",
+        "Identify and weight forces that support change.",
+        "Treat equal totals as evidence that gradual change remains feasible.",
+        "Identify and weight forces that restrain change."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          246,
+          247
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2,
+          4
+        ],
+        "explanation": "Force field analysis identifies driving and restraining forces and assigns weights to their influence. Change is expected when the driving total exceeds the restraining total. The model is contextual but does not use Pettigrew categories as its scoring method."
+      }
+    },
+    {
+      "q_number": 79,
+      "question_text": "An association's force field shows strong strategy and participation initiatives but weak resources and severe calendar problems. Which actions follow the model?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Preserve and build on the positive strategic forces.",
+        "Increase the weight assigned to participation initiatives after early delivery evidence is available.",
+        "Mitigate the resource constraint.",
+        "Resolve calendar obstacles with relevant stakeholders.",
+        "Launch the strategy while the driving total is close to the restraining total and reassess after one cycle."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          246,
+          247
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3
+        ],
+        "explanation": "Force field analysis is used to act on the balance, not merely describe it. The association should strengthen drivers and remove or reduce specific restraints such as resources and calendars. Reweighting should reflect changed reality, and implementation should not be used to wish away an unfavourable balance."
+      }
+    },
+    {
+      "q_number": 80,
+      "question_text": "Why must force field weights be determined in the association's own context?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Common weights are useful after associations agree a shared European development objective.",
+        "The same factor can have different influence across countries and organisations.",
+        "Available resources and stakeholder relationships vary.",
+        "Competition and calendar structures vary.",
+        "Locally grounded weights reveal which obstacles and drivers deserve action."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          246,
+          247
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "explanation": "Lewin's model is deliberately situational. Funding, participation, strategy, leagues, resources and calendars do not exert the same force everywhere. A common objective can aid coordination, but it does not make local influence comparable without analysis."
+      }
+    },
+    {
+      "q_number": 81,
+      "question_text": "Which example is presented as a force against the development of women's football?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "A lack of dedicated resources.",
+        "Dependence on grants from governing bodies.",
+        "Unequal access to domestic stakeholder funding.",
+        "Variation in national-association structures.",
+        "Limited commercial value from digital rights."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          246,
+          247
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0
+        ],
+        "explanation": "The example model lists lack of leagues and competitions, lack of dedicated resources and calendar problems as restraining forces. The other issues may be wider threats or contextual concerns, but they are not the labelled forces in Figure 8.6."
+      }
+    },
+    {
+      "q_number": 82,
+      "question_text": "A participation objective is ambitious while its delivery resources remain undefined. Which next steps are justified?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Reduce the target until internal association resources can meet the full delivery requirement.",
+        "Assess strengths and weaknesses relevant to the goal.",
+        "Adopt the UEFA doubling ambition so external partners understand the intended scale.",
+        "Identify funding, partners and best-practice initiatives that can support delivery.",
+        "Begin with the strongest existing programme and measure whether it can be expanded nationally."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          246,
+          247
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3
+        ],
+        "explanation": "Goals can be ambitious or more modest, but they need an honest delivery analysis. Resources, partners, strengths, weaknesses and transferable practice help convert ambition into a process. The UEFA target provides inspiration rather than a mandatory local scale."
+      }
+    },
+    {
+      "q_number": 83,
+      "question_text": "How do Pettigrew's process perspective and Lewin's force field analysis complement one another?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Pettigrew establishes the change goal, while Lewin tests whether stakeholder support is sufficient.",
+        "Pettigrew asks how the intended change will be achieved.",
+        "Force field analysis identifies drivers and restraints affecting that delivery.",
+        "Force field totals determine whether the content of change should be revised before implementation.",
+        "The analysis helps select actions that strengthen or mitigate specific forces."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          246,
+          247
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "Pettigrew provides the broad context-content-process logic, while Lewin offers a practical way to analyse the conditions surrounding implementation. The force field can shape actions within the process. It informs but does not mechanically redefine the goal or reduce feasibility to stakeholder support."
+      }
+    },
+    {
+      "q_number": 84,
+      "question_text": "A national association is reviewing governance before launching a women's football strategy. Which questions should it address?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Where does women's football sit in the organisation?",
+        "Is ownership concentrated or distributed across departments?",
+        "Are there dedicated committee and strategy arrangements?",
+        "Which stakeholders must participate in delivering priority goals?",
+        "Which organisational model among UEFA's associations should be adopted as the reference structure?"
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          246,
+          247
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "explanation": "The chapter encourages associations to diagnose their structure, leadership, strategy and stakeholder system. Several structural models exist, so the aim is to understand fitness for local goals rather than copy one reference design. Ownership and involvement should be explicit before delivery."
+      }
+    },
+    {
+      "q_number": 85,
+      "question_text": "Women's football specialists are scattered across an association and no unit owns the strategy. What is the first governance priority?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Create a dedicated women's football department so specialist headcount is brought under one leader.",
+        "Establish a women's football committee before reallocating responsibility across divisions.",
+        "Appoint a strategy lead who reports across the departments containing specialist staff.",
+        "Benchmark the structure against associations with comparable participation and league status.",
+        "Clarify responsibility, coordination and decision rights for the strategy within the existing structure."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          248,
+          249
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          4
+        ],
+        "explanation": "The chapter presents several organisational forms and asks leaders to understand their own arrangement. The immediate need is clear ownership and coordination aligned with goals. A department, committee or cross-functional lead may be suitable later, but structure should follow diagnosis rather than assumption."
+      }
+    },
+    {
+      "q_number": 86,
+      "question_text": "Why should organisational structure be assessed together with strategy and resources?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Structure determines where responsibility and expertise sit.",
+        "Structure provides accountability, while strategy provides stakeholder legitimacy.",
+        "Strategy and resources determine whether that arrangement can deliver the chosen goals.",
+        "Resources determine which of the four association structures is viable.",
+        "Strategy should be finalised before structure so roles can be assigned without duplication."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          248,
+          249
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2
+        ],
+        "explanation": "A chart alone says little about effectiveness. Leaders need to know who owns the work, what the priorities are and whether staffing and funding match them. Strategy and structure should be aligned iteratively rather than in a rigid sequence."
+      }
+    },
+    {
+      "q_number": 87,
+      "question_text": "Which assumptions form part of the traditional commercial cycle described in the chapter?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Large attendances attract broadcasters.",
+        "Large global audiences attract sponsors.",
+        "Professionalisation leads clubs to unbundle women's commercial rights.",
+        "Commercial revenue supports professionalisation and sporting quality.",
+        "Sporting quality converts digital viewers into regular match-going fans."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          248,
+          249
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3
+        ],
+        "explanation": "The traditional cycle links attendance, broadcasting, sponsorship, revenue, professionalisation, quality and renewed audience growth. Rights structure and digital conversion can influence the cycle but are not assumptions listed in it. The chapter later challenges the idea that attendance must be the entry point."
+      }
+    },
+    {
+      "q_number": 88,
+      "question_text": "A women's league has limited stadium attendance but a strong values-based sponsor and growing digital reach. Which interventions can advance the sustainability cycle?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Use sponsorship income to improve resources and professionalisation.",
+        "Use digital reach to strengthen broadcast and partner value.",
+        "Invest in product quality and audience engagement.",
+        "Direct sponsor activation towards attendance growth before allocating funds to professionalisation.",
+        "Treat progress at either commercial point as capable of feeding the circular process."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          248,
+          249
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "explanation": "The cycle is circular, so sponsorship, broadcasting, investment, quality or audiences can provide an entry point. The league should connect its existing strengths so gains reinforce other stages. It need not force sponsorship through attendance before improving the product."
+      }
+    },
+    {
+      "q_number": 89,
+      "question_text": "What is the key implication of viewing the commercial model as a circular process?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Each stage should be strengthened until it can generate resources for the next stage.",
+        "External funding is most useful at the professionalisation stage because it raises product quality.",
+        "A break in one stage can be bypassed temporarily while the rest of the cycle develops.",
+        "Progress can begin at different stages, so weak attendance need not prevent interventions through sponsorship, broadcasting or investment.",
+        "The cycle becomes virtuous once commercial revenue exceeds external contributions."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          248,
+          249
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "A circle has no mandatory first step. Gains in sponsorship, media reach, investment, professionalisation or product quality can stimulate the other elements. The implication is strategic flexibility, not a fixed sequence or a single threshold for virtue."
+      }
+    },
+    {
+      "q_number": 90,
+      "question_text": "Which sources can provide initial investment to start the sustainability cycle?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Broadcasters through free production and distribution.",
+        "Parent clubs or private investors.",
+        "Sponsors through image-transfer rights packages.",
+        "Supporters through membership and academy fees.",
+        "National associations or governing-body programmes."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          248,
+          249
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          4
+        ],
+        "explanation": "The chapter explicitly identifies parent clubs, angel investors, national associations and governing bodies such as UEFA as sources that can kick-start development. Other stakeholders may later generate income, but they are not grouped as initial external funding in this passage."
+      }
+    },
+    {
+      "q_number": 91,
+      "question_text": "A sponsor chooses a women's league for its equality values rather than its current audience size. Which strategy should the league follow?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Build a partnership around credible values fit.",
+        "Treat image transfer as a temporary entry route until attendance can support awareness-led sponsorship.",
+        "Use the investment to strengthen sustainability and professionalisation.",
+        "Separate the equality message from league operations so sporting quality remains the commercial product.",
+        "Connect sponsor activation with audience and product development."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          248,
+          249
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          4
+        ],
+        "explanation": "Values-based sponsorship can itself be a meaningful entry point into the commercial cycle. Credible activation and reinvestment can improve the football product and audience relationship. Image transfer is not merely a bridge to a supposedly superior attendance model."
+      }
+    },
+    {
+      "q_number": 92,
+      "question_text": "How can the traditional model appear as either a virtuous or vicious circle?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Audience growth can attract commercial partners.",
+        "Commercial revenue can support quality and professionalisation.",
+        "The circle becomes vicious when external funding supports quality without producing a proportional audience increase.",
+        "A better product can stimulate further audience growth.",
+        "Weak attendance can seem to block the commercial stages when it is treated as the required starting point."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          248,
+          249
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "explanation": "The same feedback structure can reinforce growth or appear to trap an immature property. The chapter's response is that the cycle can be entered elsewhere rather than accepting attendance as the gatekeeper. External investment may be a solution, not evidence of failure."
+      }
+    },
+    {
+      "q_number": 93,
+      "question_text": "A league's attendance campaign has stalled, but an OTT platform offers investment and distribution. What is the strongest strategic interpretation?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Accept distribution while protecting the attendance campaign as the primary route to sustainable revenue.",
+        "Use the platform to establish audience data before negotiating sponsor packages.",
+        "Use the media intervention as an alternative entry point that can build reach, revenue and later demand elsewhere in the cycle.",
+        "Treat the offer as external funding until viewers begin generating rights income.",
+        "Delay professionalisation spending until digital engagement shows a link with product demand."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          248,
+          249
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2
+        ],
+        "explanation": "Digital broadcasting can begin movement in the circular model without waiting for stadium growth. It can build reach, commercial evidence and resources that improve the product and attract partners. The league should integrate the opportunity rather than subordinate it to the old first-step assumption."
+      }
+    },
+    {
+      "q_number": 94,
+      "question_text": "How do awareness and image transfer differ as sponsorship objectives?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Awareness seeks exposure to an audience.",
+        "Awareness is achieved through attendance, while image transfer is achieved through digital engagement.",
+        "Awareness is a base-level objective, while image transfer requires the sponsor to finance sporting development.",
+        "Image transfer seeks association with the property's values and emotional meaning.",
+        "Awareness values audience size, while image transfer values growth potential rather than current reach."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          250,
+          251
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          3
+        ],
+        "explanation": "Awareness concerns being seen, whereas image transfer concerns what qualities attach to the sponsor through the relationship. Women's football can offer both, including values such as equality and a fast-growing identity. Platform and investment choices support activation but do not define the two objectives."
+      }
+    },
+    {
+      "q_number": 95,
+      "question_text": "A sponsor values equality and the growth story of women's football. Which partnership design is most defensible?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Emphasise the future market size so the values fit can be converted into an awareness target.",
+        "Demonstrate a genuine fit between the sponsor and the football property.",
+        "Use the equality objective for community activation while commercial messaging focuses on sporting growth.",
+        "Create activation that expresses the shared values.",
+        "Measure both audience effects and the intended brand association."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          250,
+          251
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3,
+          4
+        ],
+        "explanation": "Image transfer depends on credible similarity between sponsor aims and the football property's values. Activation should make that relationship visible, and evaluation should examine awareness and association. Separating equality from the commercial story would weaken the reason the sponsor chose the property."
+      }
+    },
+    {
+      "q_number": 96,
+      "question_text": "Which developments challenge the assumption that fan-base growth must begin the sustainability process?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Increasing value in women's broadcast rights.",
+        "The growth of showcase audiences that gives commercial partners evidence beyond domestic attendance.",
+        "The rise of association-, league- and club-controlled OTT platforms.",
+        "Major sponsorship deals based on fit and shared values.",
+        "External investment that can improve resources and professionalisation."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          250,
+          251
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "explanation": "Broadcast change, digital distribution, values-based sponsorship and external investment offer several alternative starting points. They can drive reach, revenue and quality before regular attendance is mature. Showcase audiences help the case, but the chapter's challenge rests on new market mechanisms rather than event evidence alone."
+      }
+    },
+    {
+      "q_number": 97,
+      "question_text": "Which principle best captures the chapter's conclusion on development models?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Associations should combine the strongest participation, governance and commercial practices from comparable countries.",
+        "No perfect model exists; associations should use contextual analysis, shared learning and adaptable tools to move the women's game forward.",
+        "Sustainability requires locally selected entry points into a common European development cycle.",
+        "Stakeholder analysis should determine which development model has the broadest win-win potential.",
+        "Context should shape implementation while UEFA and FIFA strategies provide the common content."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          250,
+          251
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1
+        ],
+        "explanation": "The chapter repeatedly emphasises variation in national context, structures, barriers and opportunities. Tools and useful initiatives can be shared, but there is no universal solution. Strategy requires informed adaptation rather than selecting a model through one criterion."
+      }
+    },
+    {
+      "q_number": 98,
+      "question_text": "A strategy produces commercial growth but players and grassroots groups say they were excluded from decisions. Which response follows the conclusion?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Use the commercial gains to fund the missing grassroots priorities before reopening the strategy.",
+        "Add player and grassroots indicators so future reviews capture their outcomes.",
+        "Reassess who is affected and improve stakeholder engagement.",
+        "Protect the current strategy until the new revenue model has demonstrated sustainability.",
+        "Seek win-win adjustments that preserve progress while addressing legitimate participation and player concerns."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          250,
+          251
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2,
+          4
+        ],
+        "explanation": "Successful development depends on understanding and working with stakeholders, including those affected by decisions. Commercial progress does not remove the normative need for engagement. Funding and indicators may help, but they should follow renewed dialogue rather than substitute for it."
+      }
+    },
+    {
+      "q_number": 99,
+      "question_text": "How does Pettigrew's context-content-process model organise the chapter's final strategic message?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Context explains national history, PESTEL forces and governance conditions.",
+        "Context determines which global goals are feasible, while content and process adapt the FIFA and UEFA strategies.",
+        "Content covers participation, empowerment and sustainable commercial development.",
+        "Process uses stakeholder work and change tools to achieve those aims.",
+        "Process begins when force field analysis shows that drivers exceed restraints."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          250,
+          251
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3
+        ],
+        "explanation": "The chapter uses context to diagnose, content to define the development agenda and process to plan action. FIFA and UEFA goals inform the agenda but do not replace local choice. Force field analysis can support process planning even when the initial balance shows difficult restraints."
+      }
+    },
+    {
+      "q_number": 100,
+      "question_text": "A national association is preparing an integrated plan for the next cycle of women's football. Which workstreams reflect the chapter's conclusion?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Use elite competition growth as the connecting measure across participation, governance and commercial workstreams.",
+        "Grow and retain grassroots participation.",
+        "Strengthen governance, leadership and stakeholder engagement.",
+        "Use communication and commercial innovation to build sustainability.",
+        "Adapt delivery to the country's context and identified forces for and against change."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-Womens-football.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          250,
+          251
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "explanation": "The conclusion joins participation, empowerment, governance and sustainable commercial development within local context. Stakeholder analysis and change models connect the workstreams and guide delivery. Elite competition matters, but it cannot serve as the common measure for this broader system."
+      }
+    }
+  ]
+}

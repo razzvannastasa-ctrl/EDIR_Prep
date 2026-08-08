@@ -1,0 +1,69 @@
+90
+91
+Draebye and Palmieri (2017) explain how the Danish Football Association (DBU) made an important 
+change to the way it formalised and coordinated its planning system in 2016. Before that, the DBU was 
+used to its committees setting up working groups whenever they saw the need. This resulted in a myriad 
+of groups, making it difficult to coordinate and keep track of the work being done.
+In a bid to introduce a common strategic planning framework throughout the organisation, the DBU first 
+set up a four-year planning cycle with a vision for the organisation and goals for each main domain: sport, 
+organisation, commercial and image. All committees and working groups had to use a strategic template 
+based on SMART goals. The various chairpersons were then responsible for defining the strategic objectives, 
+indicating precise measures to achieve them and defining the strategies. The committees were asked to draft 
+a small strategic plan for their working groups using a template in the form of a table with four columns: 1) 
+four to six overall strategic objectives; 2) the measures; 3) the targets (or SMART goals) for each of the four 
+planning years; 4) summaries of actions.
+Redefining the committees, working groups, templates and procedures took up around 20% of a department 
+head’s time for a year, but the actual work on developing goals and plans for each of the subdomains did 
+not take more than a few days at committee level at the beginning of the planning cycle. The plans were 
+then fleshed out at departmental level.
+There is no direct relationship between a vision and strategic issues, as issues are domain-specific, whereas 
+a vision defines the route of the organisation as a whole. However, it is important for the vision to take 
+account of the issues highlighted. 
+A vision is broad, typically has a duration of three to five years and can be considered the title or heading 
+of the strategic plan for that period. This is why strategic plans are often named after the final year they 
+cover, e.g. ‘Vision 2024’. 
+	> 4.2. Generating ideas for actions
+Once SMART goals have been formulated for each strategic domain, work starts on developing an action 
+plan for how to achieve the goals. There are three main ways to identify actions for achieving goals:
+1.	Experience within the organisation
+2.	Experience from other organisations and external consultants
+3.	Specific idea-generating methods such as design thinking, creativity workshops, 
+sprints and hackathons
+The most commonly used approach is the first: using existing experience within the organisation. Based 
+on the internal and external analysis and the SMART goals, the organisation’s experts on the matter in 
+question (for example, the marketing and sponsorship experts) sit down and discuss a plan for achieving 
+the goal. Different ideas can be generated and then later placed in order of priority (see below).
+In some situations it is not sufficient to base the generation of ideas on the expertise and experience within 
+the organisation. This is especially true if a new domain is under discussion. In these cases, the second 
+approach is more appropriate: leaning on the experiences and benchmarks in other organisations and 
+bringing in outside experts. International associations such as UEFA often try to facilitate experience-sharing 
+among national associations, such as through UEFA Academy Online, an online platform for sharing football 
+resources and experience.
+An example of the third approach, making use of specific idea-generation methods in dedicated workshops, 
+sprints or hackathons, is the Football Association of Norway’s use of design-thinking methods to improve fan 
+experience at the national stadium. The fans’ journey to the stadium was mapped and the so-called pains 
+and gains were analysed. This enabled the NFF to identify problems that could be resolved or add elements 
+that could create a better experience (Matthews, 2016).
+	> 4.3. Prioritising the goals and actions: domain selection and navigation
+Once the three analytical stages (situation and performance analysis; external analysis; and internal analysis) 
+have been completed and used to generate and record ideas, the strategy team should now find themselves 
+with a large number of goals and actions. Since most national associations do not have unlimited resources, 
+and since most goals take time and resources to achieve, organisations need to choose which areas to focus 
+on (domain selection) and, for each of the areas chosen, which initiatives to invest in (domain navigation). 
+Both the domains and initiatives then need to be listed according to their priority.
+For this, a tool referred to as an impact/complexity matrix can be used (see Figure 2.6).
+Figure 2.6: Impact/complexity matrix
+Strategic items/investments: 
+investigate/plan further
+Not worth it
+Low hanging fruits/
+quick wins: prioritise
+Fill-ins
+High
+Low
+High
+Impact
+Complexity
+Low
+CHAPTER 2: STRATEGIC MANAGEMENT
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT

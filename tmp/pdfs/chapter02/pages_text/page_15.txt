@@ -1,0 +1,62 @@
+94
+95
+	> 5.4. Designing reporting and control systems
+It is one thing for an organisation to define the budget for its various units, and it is another to ask those 
+units to report back to the financial controller, HR department or general secretary on the progress of 
+activities, revenue generation and spending. Different associations have different traditions, requirements 
+and standards for reporting. Some have very formal, structured rules, so that every month or quarter, the 
+cost and revenue centres must report back on budget progress and will be controlled and receive feedback. 
+Other associations have no reporting system, and do everything at year-end when the consolidated results 
+are calculated. The advantage of a structured system is that if something is not going according to plan, it 
+can be discovered early and corrective actions taken. The disadvantage is that it costs more to run. Reporting 
+and control systems do not necessarily need to limit themselves to financial measures; they could also be 
+extended to include reporting back on and controlling strategic goals and objectives.
+	> 5.5. Defining individual tasks, responsibilities and incentive systems
+Ultimately organisations need to translate the overall organisational goals into individual tasks and 
+responsibilities. This process is often referred to as MBO, or management by objectives and involves individual 
+managers and employees being given, or negotiating, a number of annual objectives in different areas. These 
+objectives are linked to the strategic objectives of that unit. Depending on how the system is implemented, 
+the employee will discuss their progress periodically with their line manager, and corrective action will be 
+taken if progress is not according to plan. Bonuses or other incentive systems could be linked to results.
+	> 6. Conclusion
+The approach to strategic management that has been described in this chapter will hopefully serve as inspiration 
+for any national association that is looking to modify its existing systems. Every organisation is different, 
+and it is important for processes, formats and timing to be suited to the particular organisational context. 
+However, research has shown that the chances of success increase if an organisation defines its goals based 
+on analytical insights into the internal and external environment, sets out the path to achieving these goals, 
+and allocates the right amount of time and effort to putting the strategies into practice.
+Much has been written on the subject of strategic planning and analysis, both in sport and other industries. 
+The same basic methodologies apply to all types of organisation, even if the internal and external environments 
+have different dynamics, but the fundamentals on which good strategies are based remain the same: (1) a 
+profound understanding of the environment in which the organisation operates; (2) an objective appraisal 
+of the organisation’s resources and capabilities; (3) the formulation of clear goals and objectives; and (4) 
+effective implementation.
+REFERENCES AND FURTHER READING
+•	DFB.de (n.d.). Verbandsstruktur, das DFB-Präsidium. Retrieved on 27 December 2020 from https://www.
+dfb.de/verbandsstruktur/praesidium 
+•	Doran, G. T. (1981). There’s a S.M.A.R.T. way to write management’s goals and objectives. Management 
+Review, 70(11), 35–36.
+•	Draebye, M., & Palmieri, A. (2017). The Danish Football Association (DBU) Case A. SDA Bocconi.
+•	Draebye, M., & Raju, P. N. (2012). Strategic management of sports governing bodies. Greyhouse 
+Knowledge.
+•	Fawtrust.cymru (nd). Purpose, vision & goals. Retrieved on 27 December 2020 from www.fawtrust.
+cymru/who-we-are/purpose-vision-goals 
+•	Fishbein, M., & Ajzen, I. (1975). Belief, attitude, intention, and behavior: an introduction to theory and 
+research. Addison-Wesley.
+•	Grant, R. (2019). Contemporary strategy analysis (9th ed.). Wiley.
+•	Kikulis, L. (2000). Continuity and change in governance and decision making in national sports 
+organisations: institutional explanations. Journal of Sports Management, 14(4), 293–320. 
+•	Kraljic, P. (1983). Purchasing Must Become Supply Management. Retrieved from www.hbr.org/1983/09/
+purchasing-must-become-supply-management
+•	Matthews, T. (2016, 30 June – 2 July). Designing Football Rituals for Heightened Fan Experiences 
+[Conference presentation]. The Beautiful Game: The Poetics and Aesthetics of Soccer in Transnational 
+Perspective. Basel, Switzerland.
+•	Shilbury, D., & Ferkins, L. (2011). Professionalisation, sport governance and strategic capability. 
+Managing Leisure, 16, 108–127. 
+•	Tawse, A., & Tabesh, P. (2020). Strategy implementation: a review and an introductory framework. 
+European Management Journal.  
+•	UEFA (2019). Together for the Future of Football: UEFA Strategy 2019–2024. Retrieved on 29 October 2020 
+from www.uefa.com/MultimediaFiles/Download/uefaorg/General/02/59/06/32/2590632_DOWNLOAD.pdf
+•	UEFA (2020). GROW, Leading and Supporting the Growth of European Football. Printed Manual.
+CHAPTER 2: STRATEGIC MANAGEMENT
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT

@@ -1,0 +1,116 @@
+{
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "chapter_title": "Abdominal Radiology",
+      "core_cases": 202,
+      "short_cases": 262,
+      "total_cases": 492
+    },
+    {
+      "chapter_number": 2,
+      "chapter_title": "Breast Radiology",
+      "core_cases": 101,
+      "short_cases": 142,
+      "total_cases": 264
+    },
+    {
+      "chapter_number": 3,
+      "chapter_title": "Cardiac Radiology",
+      "core_cases": 135,
+      "short_cases": 105,
+      "total_cases": 252
+    },
+    {
+      "chapter_number": 4,
+      "chapter_title": "Chest and\u00a0Thorax Radiology",
+      "core_cases": 116,
+      "short_cases": 171,
+      "total_cases": 315
+    },
+    {
+      "chapter_number": 5,
+      "chapter_title": "Genitourinary Radiology",
+      "core_cases": 161,
+      "short_cases": 236,
+      "total_cases": 419
+    },
+    {
+      "chapter_number": 6,
+      "chapter_title": "Head and\u00a0Neck",
+      "core_cases": 88,
+      "short_cases": 140,
+      "total_cases": 251
+    },
+    {
+      "chapter_number": 7,
+      "chapter_title": "Interventional and\u00a0Vascular Radiology",
+      "core_cases": 102,
+      "short_cases": 111,
+      "total_cases": 247
+    },
+    {
+      "chapter_number": 8,
+      "chapter_title": "Musculoskeletal Radiology",
+      "core_cases": 139,
+      "short_cases": 219,
+      "total_cases": 386
+    },
+    {
+      "chapter_number": 9,
+      "chapter_title": "Neuroradiology",
+      "core_cases": 158,
+      "short_cases": 177,
+      "total_cases": 364
+    },
+    {
+      "chapter_number": 10,
+      "chapter_title": "Pediatric Radiology",
+      "core_cases": 161,
+      "short_cases": 238,
+      "total_cases": 427
+    },
+    {
+      "chapter_number": 11,
+      "chapter_title": "Safety in\u00a0Radiology (Radiation, MRI, Ultrasound, Interventional Procedures, and\u00a0Contrast Media)",
+      "core_cases": 1,
+      "short_cases": 6,
+      "total_cases": 14
+    },
+    {
+      "chapter_number": 12,
+      "chapter_title": "Physics, Principles of\u00a0Imaging Techniques, and\u00a0Informatics",
+      "core_cases": 6,
+      "short_cases": 19,
+      "total_cases": 35
+    },
+    {
+      "chapter_number": 13,
+      "chapter_title": "Communication and\u00a0Management",
+      "core_cases": 0,
+      "short_cases": 0,
+      "total_cases": 12
+    },
+    {
+      "chapter_number": 14,
+      "chapter_title": "Hybrid Imaging",
+      "core_cases": 6,
+      "short_cases": 44,
+      "total_cases": 65
+    }
+  ],
+  "sections": [
+    {
+      "section": "core",
+      "cases": 1376
+    },
+    {
+      "section": "mrq",
+      "cases": 297
+    },
+    {
+      "section": "sc",
+      "cases": 1870
+    }
+  ]
+}

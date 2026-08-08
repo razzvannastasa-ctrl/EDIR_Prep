@@ -1,0 +1,2722 @@
+{
+  "schema_version": 1,
+  "library_key": "uefa_cfm",
+  "chapter_number": 15,
+  "session_title": "Chapter 1 - The organisation of world football",
+  "source_pdf": "UEFA-HFM-The-organisation-of-world-football.pdf",
+  "questions": [
+    {
+      "q_number": 1,
+      "question_text": "A national association is explaining why world football is described as a pyramid. Which statement best captures the handbook's model?",
+      "q_type": "multiple_choice",
+      "options": [
+        "FIFA sits above recognised regional confederations, whose national associations are also FIFA members.",
+        "FIFA's six confederations hold membership collectively on behalf of their national associations.",
+        "Confederations supervise clubs directly, while national associations coordinate regional competitions.",
+        "Countries may operate parallel recognised pyramids when each serves a different level of football.",
+        "The IFAB provides the institutional link between domestic leagues and the confederations."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          42,
+          43
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0
+        ],
+        "explanation": "A strong oral answer should describe a coordinated hierarchy rather than a loose collection of clubs. FIFA is at the apex, while the six confederations organise regional competitions for national associations that also belong to FIFA. The confederations are recognised by FIFA but are not themselves FIFA members."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 2,
+      "question_text": "Which features allowed club and national-team competitions to develop in parallel within the football ecosystem?",
+      "q_type": "multiple_choice",
+      "options": [
+        "National associations contract senior players for international windows and release them to clubs between fixtures.",
+        "Clubs release players to national teams as a form of solidarity.",
+        "Club and national-team football developed through separate governance structures coordinated by the international calendar.",
+        "Clubs, national associations, confederations and FIFA cooperate for mutual benefit.",
+        "Broadcasters' calendar agreements provide the principal mechanism linking club and national-team competitions."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          42,
+          43
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3
+        ],
+        "explanation": "The system depends on institutional cooperation and the release of club players for national-team duty. That arrangement lets club and national-team competitions coexist instead of competing for an entirely separate player pool. It illustrates the wider interdependence of stakeholders in the football pyramid."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 3,
+      "question_text": "A league wants to grow its professional audience without investing in grassroots participation. Which handbook principles challenge that approach?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Professional football can sustain spectator demand through competitive quality even when participation declines.",
+        "Professional competitions need a steady pool of players supported by grassroots participation.",
+        "Grassroots participation also stimulates spectator interest in professional football.",
+        "Grassroots investment supports the player pathway but has limited influence on audiences for elite league football.",
+        "Elite and mass-participation football are interdependent parts of the same ecosystem."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          42,
+          43
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "The handbook treats grassroots and elite football as mutually reinforcing. Participation supplies players and helps create interest in watching the professional game. An oral answer should therefore reject a strategy that treats the elite product as self-sustaining."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 4,
+      "question_text": "Which statements explain why producing a sporting competition requires both rivalry and cooperation?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Competitors must cooperate sufficiently to stage individual matches.",
+        "League participants need shared arrangements to organise a coherent competition.",
+        "Stakeholders depend on one another for their own success.",
+        "Cooperation helps preserve a stable operating environment for competition.",
+        "Competition organisers need common sporting rules, while commercial and calendar decisions can remain bilateral."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          42,
+          43
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "explanation": "Sporting opponents compete on the field but jointly produce the contest. Shared rules, calendars and organisational arrangements make meaningful rivalry possible. Purely independent action would undermine the product that every participant relies on."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 5,
+      "question_text": "What was the original management purpose of convening the IFAB in 1886?",
+      "q_type": "multiple_choice",
+      "options": [
+        "To sell global broadcasting rights for national-team competitions.",
+        "To replace the four home-nation associations with a single British association.",
+        "To regulate player agents and international transfers.",
+        "To create the first European club competition.",
+        "To create a uniform international code that enabled football between the four UK home nations."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          42,
+          43
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          4
+        ],
+        "explanation": "The IFAB arose from the need for consistent playing rules across the four home nations. A common code made international matches workable without abolishing the participating associations. Its original purpose was regulatory consistency, not commercial or transfer administration."
+      },
+      "oral_exam_category": "factual_anchor"
+    },
+    {
+      "q_number": 6,
+      "question_text": "Which benefits does the handbook attribute to the integrated global football pyramid?",
+      "q_type": "multiple_choice",
+      "options": [
+        "A stable regulatory environment for football development and competitions.",
+        "A protected sphere of sporting regulation in areas closely connected to competition organisation.",
+        "Coordination of complementary club and national-team calendars.",
+        "Retention of competition income by the organising bodies before discretionary development grants are made.",
+        "Recognition of more than one domestic pyramid where promotion between them is formally coordinated."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          42,
+          43
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2
+        ],
+        "explanation": "The pyramid supplies stability and coordination across levels of the game. FIFA's recognition model and international calendar help complementary competitions operate efficiently. It does not remove football from ordinary law or reserve all value for elite participants."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 7,
+      "question_text": "A commercial competition generates a large operating surplus. Which uses are consistent with the handbook's solidarity logic?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Support domestic football development through the national associations.",
+        "Fund grassroots projects from international competition surpluses.",
+        "Prioritise distributions to participating clubs because their sporting activity generated the surplus.",
+        "Use elite competitions to promote participatory as well as spectator interest.",
+        "Direct the surplus to national-team development because grassroots participation has separate public funding sources."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          42,
+          43
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3
+        ],
+        "explanation": "Solidarity links commercially successful elite events to the wider football pyramid. Surpluses can support associations and grassroots development, preserving the base on which the elite game depends. A distribution model confined entirely to finalists would miss that ecosystem responsibility."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 8,
+      "question_text": "Which consequences followed from the Bosman ruling as presented in the handbook?",
+      "q_type": "multiple_choice",
+      "options": [
+        "EU institutions became important stakeholders in European football.",
+        "Foreign-player quotas in UEFA and EU domestic competitions ended.",
+        "Out-of-contract players gained mobility between EU countries without a transfer or tribunal fee.",
+        "The ruling preserved football's transfer framework but required proportionate limits on foreign-player quotas.",
+        "The professional player labour market internationalised rapidly."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          42,
+          43
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "explanation": "Bosman showed that football regulation operates within the wider legal environment. The ruling expanded labour mobility, removed the relevant quotas and accelerated market internationalisation. It also forced football managers to recognise EU institutions as stakeholders capable of changing the ecosystem."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 9,
+      "question_text": "When a new public regulator begins affecting football, what response follows the chapter's ecosystem approach?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Monitor the regulator as an external constraint while keeping the existing football stakeholder map unchanged.",
+        "Rely on sporting autonomy until the regulator formally challenges a football rule.",
+        "Rebalance influence among current football stakeholders before adding the regulator to strategic analysis.",
+        "Map the regulator as a stakeholder and assess how its influence changes the system's equilibrium.",
+        "Address the regulator through the football rule-making bodies responsible for competition regulations."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          42,
+          43
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "The ecosystem is dynamic, so managers must identify emerging stakeholders and evaluate their impact. Bosman illustrates the cost of failing to anticipate an external legal actor. Strategic analysis should precede policies designed to restore or maintain equilibrium."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 10,
+      "question_text": "Which statements correctly distinguish a confederation from a FIFA member association?",
+      "q_type": "multiple_choice",
+      "options": [
+        "A confederation aggregates its associations' Congress votes on regional matters.",
+        "A confederation is recognised by FIFA but is not itself a FIFA member.",
+        "Confederations hold primary authority for regional national-team football, while FIFA membership concerns club competition.",
+        "Associations participate in FIFA through their confederation rather than holding the two relationships concurrently.",
+        "A national association within a confederation may also be a FIFA member."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          42,
+          43
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          4
+        ],
+        "explanation": "The two memberships should not be conflated. FIFA recognises the six confederations, while the individual national associations hold FIFA membership and participate in their regional structure. That arrangement supports both global and regional governance."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 11,
+      "question_text": "Which management assumptions are consistent with the football-ecosystem metaphor?",
+      "q_type": "multiple_choice",
+      "options": [
+        "The environment changes as new stakeholders emerge.",
+        "A stakeholder map remains valid for the strategic period unless formal membership changes.",
+        "The influence of stakeholders requires continuing strategic evaluation.",
+        "Commercial growth reduces dependence on non-commercial stakeholders by strengthening football's internal resources.",
+        "Effective policy should respond to changes that threaten system balance."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          42,
+          43
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          4
+        ],
+        "explanation": "A biological ecosystem is useful precisely because it evolves and contains interdependent actors. Managers must monitor changes and formulate policy in response. A static map or a purely commercial view would fail to capture that continuing adaptation."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 12,
+      "question_text": "Which arrangements reinforce the operational integrity of the global football pyramid?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Recognition of one national association per country.",
+        "Recognition of one league pyramid per country.",
+        "Club-led calendars reconciled through bilateral release agreements with national associations.",
+        "A coordinated international match calendar.",
+        "Cooperation among FIFA, confederations and national associations."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          42,
+          43
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "explanation": "Integrity depends on recognised authority and coordinated structures. One association and league pyramid per country, combined with a shared international calendar, reduces institutional conflict. Cooperation across governing levels makes club and national-team football complementary."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 13,
+      "question_text": "What is the central purpose of stakeholder mapping in football management?",
+      "q_type": "multiple_choice",
+      "options": [
+        "To rank stakeholders according to their formal powers within UEFA's statutes.",
+        "To document the current organisational network before strategic priorities are formulated.",
+        "To monitor internal and external actors and adjust strategy as their influence changes.",
+        "To distinguish football bodies from external actors that should be managed through public affairs.",
+        "To assign consultation rights in proportion to each stakeholder's operational contribution."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          44,
+          45
+        ]
+      },
+      "page_crops": [
+        {
+          "pdf_page": 3,
+          "bbox": {
+            "left": 0.1,
+            "top": 0.3,
+            "right": 0.42,
+            "bottom": 0.73
+          },
+          "caption": "Figure 1.1: UEFA's stakeholder ecosystem"
+        }
+      ],
+      "answer": {
+        "correct_options": [
+          2
+        ],
+        "explanation": "Stakeholder mapping is a continuing strategic discipline, not a static directory. It helps an organisation understand who can affect its objectives and adjust policy as that environment changes. Formal membership is only one possible source of influence."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 14,
+      "question_text": "Which groups appear in the handbook's broad account of UEFA stakeholders?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Industry actors such as clubs and leagues.",
+        "UEFA member associations and the football bodies they formally recognise.",
+        "European institutions and football organisations with a registered European headquarters.",
+        "External partners such as business and government.",
+        "Cross-sport organisations, with football-specific commercial partners treated as market actors rather than stakeholders."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          44,
+          45
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          3
+        ],
+        "explanation": "UEFA's map reaches beyond the formal football hierarchy. It includes industry actors, sporting partners and external partners whose decisions affect European football. A useful oral answer should emphasise influence and interdependence rather than legal membership alone."
+      },
+      "oral_exam_category": "factual_anchor"
+    },
+    {
+      "q_number": 15,
+      "question_text": "Which factors help explain football's global participation, spectator and commercial appeal according to the IFAB section?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Consistent core Laws combined with regional discretion over selected playing provisions.",
+        "The playing rules are comparatively easy to understand.",
+        "Commercial investment in competitions, which finances later development of the playing rules.",
+        "The Laws of the Game apply universally.",
+        "The game has strong athletic appeal."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          44,
+          45
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3,
+          4
+        ],
+        "explanation": "Football combines an accessible game with a universal rule set and strong athletic appeal. That consistency supports participation and spectatorship across different countries, which in turn attracts commercial interest. Local rewriting or commercial control would weaken the universality described in the chapter."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 16,
+      "question_text": "Which statements describe the IFAB's authority over the Laws of the Game?",
+      "q_type": "multiple_choice",
+      "options": [
+        "The Laws of the Game are the preserve of the IFAB.",
+        "A simple majority of commercial partners can amend a Law.",
+        "Any national association may propose a rule change.",
+        "An amendment requires a three-quarters majority of IFAB members.",
+        "Rule changes have historically been introduced cautiously."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          44,
+          45
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "explanation": "The IFAB is the custodian of a universal rule set and changes it conservatively. Proposals are open to national associations, but adoption requires the specified supermajority. Commercial stakeholders may be affected by a change but do not possess amendment authority."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 17,
+      "question_text": "Which example illustrates the handbook's principle that sporting imperatives should prevail over commercial interests?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Allowing sponsors to alter the dimensions of the pitch.",
+        "Football's ban on physical advertising on the field of play under Law 1.",
+        "Giving broadcasters votes on IFAB amendments.",
+        "Replacing promotion and relegation with advertising revenue rankings.",
+        "Permitting on-field advertising whenever a league requests it."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          44,
+          45
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1
+        ],
+        "explanation": "The handbook uses Law 1's restriction on pitch advertising to show that the game itself is treated as primary. UEFA's statutes express the same idea by placing sporting values above commercial interests. Commercial exploitation must therefore operate within sporting constraints."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 18,
+      "question_text": "Which changes are cited as examples of the IFAB adapting the game while retaining careful custodianship?",
+      "q_type": "multiple_choice",
+      "options": [
+        "The abolition of national associations followed the back-pass rule.",
+        "VAR transferred control of the Laws to broadcasters.",
+        "The 1992 back-pass rule addressed overly defensive play.",
+        "The Bosman ruling was an IFAB amendment to Law 1.",
+        "The 2018 introduction of video assistant referees changed officiating support."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          44,
+          45
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2,
+          4
+        ],
+        "explanation": "The back-pass rule and VAR are examples of deliberate evolution of the Laws of the Game. They responded to sporting needs while leaving the IFAB's custodial role intact. Bosman, by contrast, was a court ruling about labour mobility rather than a change to the playing laws."
+      },
+      "oral_exam_category": "factual_anchor"
+    },
+    {
+      "q_number": 19,
+      "question_text": "What features of FIFA membership support equal formal representation at the FIFA Congress?",
+      "q_type": "multiple_choice",
+      "options": [
+        "FIFA's member associations each have one vote.",
+        "Confederations allocate Congress representation in proportion to their number of member associations.",
+        "Voting weight does not depend on population size.",
+        "Voting weight does not depend on economic power.",
+        "Commercial contribution affects committee representation while Congress voting remains geographically weighted."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          44,
+          45
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3
+        ],
+        "explanation": "FIFA's Congress applies formal equality among its member associations. Each association receives one vote irrespective of national population or economic strength. That principle concerns representation, not an assessment that every football market is identical."
+      },
+      "oral_exam_category": "factual_anchor"
+    },
+    {
+      "q_number": 20,
+      "question_text": "Which statements summarise FIFA's primary strategic purpose as stated in the handbook?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Maximise distributions to professional clubs as its sole objective.",
+        "Continually improve football.",
+        "Promote the game globally.",
+        "Recognise football's unifying, educational, cultural and humanitarian values.",
+        "Place particular emphasis on youth and development programmes."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          44,
+          45
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "explanation": "FIFA's statutory purpose is broader than running major tournaments. It combines global promotion and improvement of the game with social and developmental values, particularly youth development. Commercial revenue is a means of supporting that mission rather than the sole end."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 21,
+      "question_text": "How does the men's Olympic football competition differ from an unrestricted senior World Cup in the handbook's account?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Most squad members must be under 23, with only three over-age players permitted.",
+        "It is governed by FIFA as a parallel event rather than as part of the Olympic competition framework.",
+        "Its age restriction applies to the complete squad at under-21 level.",
+        "Entry is allocated through confederation coefficients rather than Olympic qualification.",
+        "Domestic champion clubs represent their associations under national-team regulations."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          46,
+          47
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0
+        ],
+        "explanation": "FIFA is part of the Olympic movement because football is a recognised Olympic sport. The men's tournament is effectively an under-23 competition with a limited over-age allowance. That age structure distinguishes it from FIFA's unrestricted senior World Cup."
+      },
+      "oral_exam_category": "factual_anchor"
+    },
+    {
+      "q_number": 22,
+      "question_text": "Which statements explain how the FIFA World Cup supports FIFA's wider mission?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Host-country revenues finance the event, while FIFA's central income is reserved for development.",
+        "Broadcasting and sponsorship rights generate substantial revenue.",
+        "The event's commercial function supports FIFA administration, with development financed through member contributions.",
+        "The tournament surplus finances wider FIFA activities between World Cups.",
+        "Membership subscriptions provide the stable base for development while World Cup rights cover competition costs."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          46,
+          47
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3
+        ],
+        "explanation": "The World Cup is both a sporting event and FIFA's principal commercial engine. Its rights income and surplus fund activities across the four-year cycle, including development. An oral answer should connect commercial exploitation to the not-for-profit mission rather than treat them as opposites."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 23,
+      "question_text": "A member association requests generic funding with no local diagnosis or accountability. Which FIFA Forward features suggest how the request should be redesigned?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Use a standard infrastructure package so funding remains comparable between associations.",
+        "Support should be tailor-made to the association's development needs.",
+        "The programme takes a 360-degree view of development support.",
+        "Replace project review with milestone reporting by the recipient association.",
+        "Evaluation and auditing accompany increased financial assistance."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          46,
+          47
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "FIFA Forward replaced older programmes with more comprehensive and locally tailored support. Increased funding is paired with stronger evaluation and auditing rather than reduced accountability. The association should therefore present a needs-based programme with measurable oversight."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 24,
+      "question_text": "Which statements describe FIFA's wider competition portfolio beyond the senior men's World Cup?",
+      "q_type": "multiple_choice",
+      "options": [
+        "It includes men's and women's youth World Cups.",
+        "It includes futsal and beach-soccer competitions.",
+        "It includes Olympic football tournaments.",
+        "Many of these competitions are financed as part of FIFA's development role despite operating at a loss.",
+        "FIFA organises no competition unless it generates a direct profit."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          46,
+          47
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "explanation": "FIFA uses competitions as development instruments across age groups, genders and formats. The handbook explicitly notes that almost all competitions outside the flagship World Cup operate at a loss. Their value is therefore assessed against football-development objectives, not only direct profitability."
+      },
+      "oral_exam_category": "factual_anchor"
+    },
+    {
+      "q_number": 25,
+      "question_text": "Which expenditure priority best reflects FIFA's not-for-profit development objective in the 2015-18 cycle?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Distributions to member associations based on their commercial contribution to FIFA competitions.",
+        "Capital investment in FIFA's central competition-delivery infrastructure.",
+        "Development programmes financed from recurring membership and registration fees.",
+        "Priority funding for senior competitions that generate resources for later development work.",
+        "Football development and education represented its largest single expenditure item after operations and competition costs."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          46,
+          47
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          4
+        ],
+        "explanation": "The handbook links FIFA's legal form and statutory purpose to material development expenditure. Football development and education were a major use of the organisation's resources after core operating and competition costs. That pattern demonstrates mission-led reinvestment rather than shareholder distribution."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 26,
+      "question_text": "Which management conclusions can be drawn from FIFA financing loss-making competitions?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Direct event profit is not the only measure of strategic value.",
+        "Loss-making competitions should continue when they strengthen FIFA's commercial portfolio over the next cycle.",
+        "A flagship event can cross-subsidise developmental competitions.",
+        "Financing youth events is justified primarily when they create a pathway into profitable senior competitions.",
+        "Competition deficits can be accepted as evidence of development commitment without separate outcome evaluation."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          46,
+          47
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2
+        ],
+        "explanation": "A not-for-profit governing body may deliberately fund events that advance participation, talent and representation. The World Cup's surplus makes that portfolio approach possible. Managers should evaluate mission contribution alongside financial performance rather than applying a single-event profit test."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 27,
+      "question_text": "Which elements should appear in an oral explanation of FIFA's dual role as competition organiser and developer?",
+      "q_type": "multiple_choice",
+      "options": [
+        "It stages commercially powerful flagship competitions.",
+        "It reinvests resources in football development and education.",
+        "FIFA's development role is delivered through confederation programmes financed by commercial partners.",
+        "It organises other competitions that broaden the game's reach despite their direct losses.",
+        "Competition organisation generates resources but sits outside FIFA's statutory development responsibilities."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          46,
+          47
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3
+        ],
+        "explanation": "FIFA's competition and development functions reinforce one another. Flagship commercial success produces resources, while a broader event and programme portfolio advances global development. Treating the two roles as unrelated would miss the financing logic described in the chapter."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 28,
+      "question_text": "Which statements correctly characterise FIFA Forward as presented in the handbook?",
+      "q_type": "multiple_choice",
+      "options": [
+        "It overhauled the earlier Goal and Financial Assistance programmes.",
+        "It serves both member associations and the six confederations.",
+        "It combines increased financial support with stronger evaluation.",
+        "It is limited to financing the senior men's World Cup.",
+        "Its support is intended to be comprehensive and tailored."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          46,
+          47
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "explanation": "FIFA Forward is a redesign of development assistance rather than a renamed tournament budget. It expands and tailors support while strengthening evaluation and audit. The programme therefore combines resources, local relevance and accountability."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 29,
+      "question_text": "Which FIFA regulatory responsibility protects the unitary national structure of the global pyramid?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Recognising separate associations for professional and amateur football under a shared national framework.",
+        "Using confederation recommendations as the decisive basis for national-association recognition.",
+        "Operating domestic competitions directly where recognition disputes threaten the national pyramid.",
+        "Ensuring that each member country has one football association and one league structure.",
+        "Linking recognition to an association's capacity to commercialise national competitions."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          48,
+          49
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "FIFA's recognition rule protects a coherent chain of authority within each country. One association and one league structure reduce competing claims and support the operational integrity of the global pyramid. Commercial or intermediary actors do not determine that recognition."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 30,
+      "question_text": "Which activities belong to FIFA's player-market regulatory role?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Setting common qualification standards for coaches working in international football.",
+        "Regulating player status and international transfers through the transfer-matching system.",
+        "Approving club eligibility for confederation competitions through the international transfer system.",
+        "Regulating domestic transfer fees and ticket pricing through member-association directives.",
+        "Regulating player intermediaries or agents."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          48,
+          49
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          4
+        ],
+        "explanation": "FIFA regulates the international movement and representation of players through transfer and intermediary rules. Those functions differ from UEFA-specific club licensing or domestic commercial choices. An oral answer should locate the issue at the appropriate governing level."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 31,
+      "question_text": "A government attempts to appoint a national association's president directly. Which handbook principles are engaged?",
+      "q_type": "multiple_choice",
+      "options": [
+        "FIFA seeks to keep football free from government political interference.",
+        "Government nomination is compatible with autonomy where the association receives substantial public funds.",
+        "Election interference falls within FIFA's regulatory concern.",
+        "Presidential appointments concern association governance and are therefore handled through confederation mediation.",
+        "The confederation and national association cooperate with FIFA in protecting autonomy."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          48,
+          49
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          4
+        ],
+        "explanation": "FIFA's statutes treat government interference in association elections as a threat to football autonomy. FIFA performs this role with confederations and national associations rather than through the IFAB. The IFAB governs playing laws, not institutional elections."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 32,
+      "question_text": "Which statements explain why clubs may be compelled to release fit players for national-team competitions?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Release protects the health of national-team competitions.",
+        "It operationalises solidarity between club and representative football.",
+        "A club can decline release when a player's contractual value would be materially exposed by the international fixture.",
+        "It supports parallel club and national-team competition structures.",
+        "The obligation is subject to the player's not being injured."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          48,
+          49
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "explanation": "Player release is a concrete expression of ecosystem interdependence. Representative competitions need access to players employed by clubs, while injury provides a legitimate limitation. A purely unilateral club veto would undermine the parallel competition model."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 33,
+      "question_text": "Under the handbook's allocation of authority, who decides an issue involving national associations from more than one confederation?",
+      "q_type": "multiple_choice",
+      "options": [
+        "The complainant association.",
+        "The lead confederation.",
+        "FIFA.",
+        "A confederation panel.",
+        "The IFAB."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          48,
+          49
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2
+        ],
+        "explanation": "The territorial scale of an issue determines the governing level. A national association handles national matters, UEFA handles multi-association matters within its territory, and FIFA handles international issues spanning confederations. The question therefore belongs at FIFA level."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 34,
+      "question_text": "Which areas are described as overlapping FIFA and UEFA responsibilities?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Promotion and development of football.",
+        "European club licensing as a FIFA-exclusive function.",
+        "The FIFA World Cup as a UEFA-exclusive competition.",
+        "The fight against doping.",
+        "UEFA coach licensing as an IFAB responsibility."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          48,
+          49
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          3
+        ],
+        "explanation": "FIFA and UEFA share several regulatory and development concerns because they govern the same sport and memberships overlap. Doping and football development are examples of shared fields. European club licensing is UEFA-specific, while world-level competitions fall to FIFA."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 35,
+      "question_text": "Which subjects are assigned exclusively to FIFA in the handbook's FIFA-UEFA responsibility table?",
+      "q_type": "multiple_choice",
+      "options": [
+        "European club licensing and financial fair play.",
+        "The international match calendar.",
+        "European coach licensing.",
+        "The status and transfer of players.",
+        "The relationship with the International Olympic Committee."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          48,
+          49
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3,
+          4
+        ],
+        "explanation": "FIFA's exclusive responsibilities reflect its global scope and Olympic-federation status. Transfers and the international calendar require worldwide coordination, while UEFA has its own European licensing functions. The distinction prevents every regional issue from being treated as global."
+      },
+      "oral_exam_category": "factual_anchor"
+    },
+    {
+      "q_number": 36,
+      "question_text": "Which statements accurately describe the FIFA Congress and FIFA Council?",
+      "q_type": "multiple_choice",
+      "options": [
+        "The Congress is FIFA's supreme legislative body.",
+        "The Council exercises Congress authority between meetings and therefore represents the member associations in strategic votes.",
+        "All member associations are represented in the Congress.",
+        "The Congress decides hosts of FIFA World Cup tournaments.",
+        "The Council is a non-executive, supervisory and strategic body that sets FIFA's vision."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          48,
+          49
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "explanation": "The Congress provides the broad legislative and representative foundation of FIFA. The reformed Council supplies strategic supervision rather than replacing the Congress. Their roles are distinct but complementary within the governance structure."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 37,
+      "question_text": "Who elects the FIFA president under the governance structure described in the handbook?",
+      "q_type": "multiple_choice",
+      "options": [
+        "The six confederation presidents acting alone.",
+        "The FIFA Congress.",
+        "The FIFA general secretariat.",
+        "The International Olympic Committee.",
+        "The IFAB."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          50,
+          51
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1
+        ],
+        "explanation": "The FIFA president is elected by the Congress, while the confederations elect 36 of the other Council members. This separates the election of the president from the confederations' allocation of Council seats. Neither the secretariat nor the IFAB performs that electoral role."
+      },
+      "oral_exam_category": "factual_anchor"
+    },
+    {
+      "q_number": 38,
+      "question_text": "Which governance safeguards or representation requirements apply to the FIFA Council and presidency in the handbook?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Presidential continuity is protected by an open-ended mandate subject to periodic confidence votes.",
+        "Women's representation is allocated through confederation policy rather than FIFA Council requirements.",
+        "Each confederation must elect at least one female Council member.",
+        "The Congress elects the president, who then confirms the confederations' Council nominees.",
+        "The FIFA president may serve a maximum of three four-year terms."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          50,
+          51
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2,
+          4
+        ],
+        "explanation": "The reform framework combines regional representation with a minimum female-representation rule. It also limits presidential tenure to three four-year terms. These safeguards constrain office-holding rather than concentrating appointments in the secretariat."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 39,
+      "question_text": "Which bodies or officers are responsible for implementing FIFA's high-level decisions?",
+      "q_type": "multiple_choice",
+      "options": [
+        "The general secretariat implements decisions of the Congress, Council and president.",
+        "Regional broadcasters implement Congress decisions independently.",
+        "The secretary general directs the general secretariat.",
+        "The president exercises substantial day-to-day executive authority.",
+        "The IFAB general assembly manages FIFA's administrative staff."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          50,
+          51
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3
+        ],
+        "explanation": "FIFA separates high-level decisions from administrative implementation. The secretariat, led by the secretary general, carries out the decisions, while the president also has significant executive authority. External commercial actors and the IFAB do not manage FIFA's administration."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 40,
+      "question_text": "Which functions belong in a concise oral summary of FIFA's purpose and activities?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Operational supervision of domestic professional leagues where FIFA regulations affect player status.",
+        "Partnership with the IFAB in organising and policing the rules.",
+        "Global football development through FIFA Forward.",
+        "Organisation of international competitions.",
+        "Regulation in cooperation with confederations and national associations."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          50,
+          51
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "explanation": "FIFA combines rule custodianship, development, competitions, solidarity financing and regulation. It performs many tasks through partnership across the football pyramid rather than running every club directly. A good oral answer should connect these functions to its global strategic purpose."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 41,
+      "question_text": "Which structural feature most clearly distinguishes UEFA's competition experience from FIFA's in the handbook?",
+      "q_type": "multiple_choice",
+      "options": [
+        "UEFA has decades of experience running several annual, season-long international club competitions.",
+        "UEFA's regional governance remit is broader, while FIFA concentrates on organising global competitions.",
+        "FIFA retains operational responsibility for Europe's principal club competitions through UEFA.",
+        "UEFA's recurring experience is concentrated in club competitions rather than national-team events.",
+        "UEFA's club portfolio is centred on one global-format event complemented by regional qualifiers."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          50,
+          51
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0
+        ],
+        "explanation": "UEFA's distinctive operational experience lies in its portfolio of recurring European club competitions. FIFA has a global remit but, in the handbook's comparison, only one international club competition. The distinction concerns competition operations, not a reversal of their governing levels."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 42,
+      "question_text": "Which principles underpin UEFA's statutory purpose in European football?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Membership structured around the commercial contribution of professional football stakeholders.",
+        "Sporting solidarity redistributes resources from elite football to the grassroots.",
+        "Separate governance channels for elite clubs and the national associations responsible for development.",
+        "Sporting merit is operationalised through promotion and relegation.",
+        "Distribution weighted towards competition performance, with development funded through separate programmes."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          50,
+          51
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3
+        ],
+        "explanation": "UEFA's purpose links the sporting pyramid to solidarity and sporting merit. Promotion and relegation express merit, while redistribution connects elite success to grassroots development. A closed, winner-takes-all model conflicts with both principles."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 43,
+      "question_text": "Why does UEFA maintain dialogue and cooperation with European political authorities?",
+      "q_type": "multiple_choice",
+      "options": [
+        "To align UEFA regulations with political priorities before they are submitted to football's governing bodies.",
+        "To defend football's interests in policy discussions.",
+        "To safeguard sporting ethics and integrity.",
+        "To preserve sporting autonomy by limiting cooperation to areas outside football regulation.",
+        "To promote good governance and obtain support for legitimate football policies."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          50,
+          51
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "UEFA treats public authorities as influential stakeholders rather than as bodies that can simply be ignored. Cooperation can support policies on integrity, governance, collective rights selling and financial sustainability. Dialogue does not mean surrendering all governing authority or claiming exemption from law."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 44,
+      "question_text": "Which UEFA policies are cited as areas where European authorities have provided valuable support?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Rules on home-grown players.",
+        "Collective selling of television rights.",
+        "Financial fair play.",
+        "Efforts against match-fixing and abusive practices.",
+        "A rule allowing nationality quotas contrary to EU law."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          50,
+          51
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "explanation": "The chapter presents cooperation with European authorities as practical support for integrity and governance policies. Home-grown rules, collective rights selling, financial fair play and anti-match-fixing work are examples. Nationality quotas are specifically problematic under the Bosman framework and should not be confused with locally trained-player rules."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 45,
+      "question_text": "What does subsidiarity mean in UEFA's implementation model?",
+      "q_type": "multiple_choice",
+      "options": [
+        "National associations retain discretion over implementation when Congress decisions concern domestic football.",
+        "UEFA intervenes directly where consistent European implementation is more efficient than national delivery.",
+        "Professional stakeholders exercise delegated implementation authority in commercially significant domains.",
+        "Local sponsors may adapt implementation standards where they finance association programmes.",
+        "National associations implement UEFA Congress decisions in a way consistent with local conditions."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          50,
+          51
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          4
+        ],
+        "explanation": "Subsidiarity combines common direction with locally appropriate implementation. UEFA establishes the framework, while national associations apply decisions in their own contexts. It is not a licence to ignore policy or a mechanism for abolishing the national level."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 46,
+      "question_text": "Which electoral functions belong to the UEFA Congress?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Electing the UEFA president.",
+        "Confirming national-association presidents as Congress delegates.",
+        "Electing the UEFA Executive Committee.",
+        "Approving club eligibility lists for UEFA competitions.",
+        "Adopting European variations to the playing rules."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          50,
+          51
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2
+        ],
+        "explanation": "The Congress is the central representative institution in UEFA's governance. It elects the president and Executive Committee and also elects European members of the FIFA Council. Domestic elections, team selection and IFAB law-making fall outside those Congress functions."
+      },
+      "oral_exam_category": "factual_anchor"
+    },
+    {
+      "q_number": 47,
+      "question_text": "Which features demonstrate that UEFA operates as a representative democracy?",
+      "q_type": "multiple_choice",
+      "options": [
+        "The Congress is composed through the member associations.",
+        "Member associations may propose Congress agenda items.",
+        "The president may act between Congress meetings subject to later Executive Committee ratification.",
+        "Congress decisions establish the framework for the president and Executive Committee.",
+        "Professional stakeholder bodies nominate Congress delegates alongside the member associations."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          52,
+          53
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3
+        ],
+        "explanation": "Representative democracy is visible in member-association participation, agenda rights and the authority of Congress decisions. The executive bodies operate within that framework rather than above it. Commercial influence does not replace the statutory representative structure."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 48,
+      "question_text": "Which statements accurately describe the composition or role of UEFA's Executive Committee?",
+      "q_type": "multiple_choice",
+      "options": [
+        "It implements Congress decisions with the president through the UEFA administration.",
+        "It includes members elected by the Congress.",
+        "It includes representatives elected by the European Club Association and European Leagues.",
+        "Its voting membership combines association representatives with delegates from clubs, leagues and broadcasters.",
+        "Stakeholder appointees are ratified by Congress and share the rights and duties of other members."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          52,
+          53
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "explanation": "The Executive Committee connects representative governance with structured stakeholder participation. Congress-elected members sit alongside ratified club and league representatives, all operating under the same duties. The body implements policy through UEFA's administration rather than serving as a commercial board."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 49,
+      "question_text": "Who is UEFA's most senior executive officer according to the governance description?",
+      "q_type": "multiple_choice",
+      "options": [
+        "The UEFA president.",
+        "A UEFA vice-president.",
+        "The chair of the Professional Football Strategy Council.",
+        "The general secretary.",
+        "The director of national-association governance."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          52,
+          53
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "The UEFA president is the public representative, while the general secretary is identified as the most senior executive officer. This distinction helps explain the separation between representation, political leadership and administration. External stakeholders and judicial bodies do not lead UEFA's executive staff."
+      },
+      "oral_exam_category": "factual_anchor"
+    },
+    {
+      "q_number": 50,
+      "question_text": "Which statements reflect UEFA's separation-of-powers principle?",
+      "q_type": "multiple_choice",
+      "options": [
+        "The Executive Committee reviews disciplinary appeals involving strategic competition matters.",
+        "Judicial and executive roles are institutionally separated.",
+        "Independent disciplinary inspectors are nominated jointly with recognised stakeholder groups.",
+        "CAS review is available after UEFA's administrative bodies confirm the disciplinary decision.",
+        "Dedicated Organs for the Administration of Justice handle disciplinary matters."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          52,
+          53
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          4
+        ],
+        "explanation": "UEFA separates policy execution from disciplinary adjudication through specialised judicial bodies. That architecture supports fair governance and avoids having the executive decide every case. Appeals remain possible, ultimately to the Court of Arbitration for Sport."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 51,
+      "question_text": "Which bodies form part of UEFA's Organs for the Administration of Justice?",
+      "q_type": "multiple_choice",
+      "options": [
+        "The Control, Ethics and Disciplinary Body.",
+        "The Professional Football Strategy Council.",
+        "The Appeals Body.",
+        "The UEFA Congress's external commercial partners.",
+        "The Club Financial Control Body."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          52,
+          53
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          4
+        ],
+        "explanation": "UEFA's judicial architecture includes first-instance disciplinary, appeal, inspector and club-financial-control functions. The PFSC is a stakeholder consultation forum, not a judicial organ. Distinguishing consultation from adjudication is important when explaining good governance."
+      },
+      "oral_exam_category": "factual_anchor"
+    },
+    {
+      "q_number": 52,
+      "question_text": "Which statements describe the Court of Arbitration for Sport's place in UEFA disciplinary governance?",
+      "q_type": "multiple_choice",
+      "options": [
+        "It is based in Lausanne.",
+        "It is the ultimate court of appeal for decisions of UEFA disciplinary bodies.",
+        "It drafts UEFA competition formats before Congress approval.",
+        "Its role sits outside UEFA's day-to-day executive administration.",
+        "Its availability reinforces a separation between executive and appellate functions."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          52,
+          53
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "explanation": "CAS provides the ultimate appellate route for UEFA disciplinary decisions. Its external appellate role complements UEFA's internal judicial bodies and supports separation of powers. It does not design competitions or administer UEFA policy."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 53,
+      "question_text": "What change prompted UEFA to complement its traditional hierarchy with formal stakeholder engagement?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Professional stakeholders gained voting rights that displaced parts of the association-based structure.",
+        "The IFAB's regulatory reforms required leagues and clubs to participate in UEFA governance.",
+        "Revenue growth and globalised player markets created influential new actors that needed structured consultation.",
+        "The growth of club competitions made informal bilateral consultation sufficient for stakeholder management.",
+        "European legal pressure led UEFA to consult public authorities while keeping football stakeholders outside formal structures."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          52,
+          53
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2
+        ],
+        "explanation": "UEFA retained its hierarchy of confederation, associations and clubs but recognised that the ecosystem had become more complex. Revenue growth and globalised labour markets increased the influence of clubs, leagues, players and other groups. Structured engagement was an adaptation, not an abandonment of the statutory hierarchy."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 54,
+      "question_text": "Which conditions must a stakeholder group meet to be formally recognised in UEFA consultation?",
+      "q_type": "multiple_choice",
+      "options": [
+        "It must be organised consistently with UEFA's statutes, regulations and values.",
+        "It should demonstrate commercial activity across a representative group of UEFA markets.",
+        "It should represent interests that are not already expressed through member associations.",
+        "It must be constituted democratically, openly and transparently.",
+        "It should maintain a staffed liaison office located close to UEFA's administration."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          52,
+          53
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          3
+        ],
+        "explanation": "Recognition depends on governance quality and compatibility with UEFA's framework. Democratic, open and transparent constitution provides legitimacy for consultation. Commercial scale, location or substitution for member associations is not the test."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 55,
+      "question_text": "Which constituencies are represented in the Professional Football Strategy Council?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Representatives of clubs, leagues and players, with member associations participating through the Executive Committee.",
+        "Professional leagues through the European Leagues.",
+        "A neutral representative of the European sports movement acting as chair.",
+        "Clubs through the European Club Association.",
+        "Players through FIFPro Division Europe."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          52,
+          53
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3,
+          4
+        ],
+        "explanation": "The PFSC brings together leagues, clubs, players and UEFA member-association representatives under the UEFA president's chairmanship. It is a structured vehicle for dialogue among major professional-football stakeholders. It is not limited to technical officials or chaired by the Olympic movement."
+      },
+      "oral_exam_category": "factual_anchor"
+    },
+    {
+      "q_number": 56,
+      "question_text": "Which mechanisms embed club and league stakeholders in UEFA decision-making?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Two ECA representatives sit on the UEFA Executive Committee.",
+        "Stakeholder bodies can unilaterally enact UEFA regulations without Executive Committee approval.",
+        "One European Leagues representative sits on the Executive Committee.",
+        "Memorandums of understanding formalise relationships with major stakeholder bodies.",
+        "UEFA Club Competitions SA gives club representatives a structured advisory role on strategic business matters."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          52,
+          53
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "explanation": "UEFA combines representation, formal agreements and advisory structures. Stakeholders receive defined channels into consultation and governance, but final statutory approval remains with UEFA bodies. Engagement therefore broadens input without transferring unilateral law-making power."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 57,
+      "question_text": "Which organisation is recognised as UEFA's official interlocutor on issues affecting supporters?",
+      "q_type": "multiple_choice",
+      "options": [
+        "The FIFA Council.",
+        "Football Supporters Europe.",
+        "The European Club Association.",
+        "The Court of Arbitration for Sport.",
+        "UEFA Club Competitions SA."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          52,
+          53
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1
+        ],
+        "explanation": "Football Supporters Europe is the recognised representative interlocutor for fan issues. Its democratic and independent character fits UEFA's stakeholder-recognition criteria. Club, judicial and strategic bodies have different constituencies and purposes."
+      },
+      "oral_exam_category": "factual_anchor"
+    },
+    {
+      "q_number": 58,
+      "question_text": "Which supporter-focused functions are associated with SD Europe and CAFE?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Both bodies allocate World Cup hosting rights.",
+        "They regulate international player transfers.",
+        "SD Europe helps fan groups participate in club ownership and governance.",
+        "They replace UEFA's disciplinary bodies.",
+        "CAFE promotes stadium accessibility for supporters with disabilities."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          52,
+          53
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2,
+          4
+        ],
+        "explanation": "UEFA's supporter engagement includes both governance participation and accessibility. SD Europe supports supporter involvement in clubs, while CAFE focuses on access for disabled fans. Neither organisation performs global competition, transfer or disciplinary functions."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 59,
+      "question_text": "Which statements show that UEFA's supporter strategy extends beyond occasional consultation?",
+      "q_type": "multiple_choice",
+      "options": [
+        "UEFA recognises an official supporter interlocutor.",
+        "Supporter dialogue is channelled through recurring forums rather than representation in strategic bodies.",
+        "It supports supporter involvement in club ownership and running.",
+        "It works with accessibility specialists to improve stadium access.",
+        "Club licensing addresses stadium operations, while supporter liaison and accessibility remain consultation topics."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          52,
+          53
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3
+        ],
+        "explanation": "The strategy creates ongoing relationships, specialised networks and operational requirements. Supporter liaison and disability access officers connect dialogue to club practice. This is more systematic than asking fans for feedback only when a crisis occurs."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 60,
+      "question_text": "Which principles should guide a national association designing its own stakeholder forum from the UEFA example?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Weight formal influence according to the resources and implementation capacity each stakeholder contributes.",
+        "Recognise groups with democratic and transparent governance.",
+        "Give major constituencies stable rather than ad hoc channels.",
+        "Preserve clear statutory responsibility for final decisions.",
+        "Review the forum as the stakeholder environment evolves."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          52,
+          53
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "explanation": "The UEFA model combines legitimate representation, continuity and accountable decision rights. Consultation should be structured but should not obscure who is authorised to decide. Because the ecosystem evolves, the engagement design also needs periodic review."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 61,
+      "question_text": "Who has ultimate authority over a club's participation in a UEFA international competition?",
+      "q_type": "multiple_choice",
+      "options": [
+        "UEFA, after national associations put forward clubs from their countries.",
+        "The nominating association's licensing body.",
+        "The domestic league awarding qualification.",
+        "The European Club Association.",
+        "The host association validating the venue."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          54,
+          55
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0
+        ],
+        "explanation": "National associations nominate clubs, but UEFA retains final authority over participation in its competitions. This reflects subsidiarity within a common European regulatory framework. Commercial and stakeholder bodies may advise or influence policy but do not replace UEFA's competition authority."
+      },
+      "oral_exam_category": "factual_anchor"
+    },
+    {
+      "q_number": 62,
+      "question_text": "Why did UEFA create the Nations League in response to declining interest in friendlies?",
+      "q_type": "multiple_choice",
+      "options": [
+        "It separates friendlies from qualification pathways so the new competition can focus on competitive balance.",
+        "It gives matches a competitive league structure with promotion and relegation.",
+        "It applies club-style league structures to association teams through centrally managed franchises.",
+        "It groups more closely matched national teams to improve competitive balance.",
+        "It coordinates fixtures centrally while leaving participating associations to market their media rights."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          54,
+          55
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3
+        ],
+        "explanation": "The Nations League responds to stakeholder dissatisfaction with low-stakes friendlies by creating meaningful, balanced competition. Its tiered structure and links to qualification increase sporting relevance. Collective media-rights sales also distinguish it from fragmented individual bargaining."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 63,
+      "question_text": "Which benefits can collective selling of Nations League media rights provide to participating associations?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Collective selling equalises the sporting resources available to the participating national teams.",
+        "UEFA can bargain for the competition as a coordinated property.",
+        "Many associations receive higher revenues than they could secure individually for friendlies.",
+        "Collective selling reduces the need for separate policies on competitive balance and solidarity.",
+        "Commercial value is linked to a season-long competitive product."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          54,
+          55
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "Collective selling aggregates rights around a coherent competition and can improve bargaining outcomes for smaller associations. The sporting structure makes the media product more attractive than isolated friendlies. It does not equalise results or remove the need for governance."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 64,
+      "question_text": "Which statements illustrate UEFA's use of competitions as both sporting and strategic instruments?",
+      "q_type": "multiple_choice",
+      "options": [
+        "National-team competitions can be redesigned to improve competitive meaning.",
+        "Club competitions generate resources for participating and non-participating stakeholders.",
+        "Youth, women's and futsal events support development objectives.",
+        "Competition formats can widen representation across member associations.",
+        "A competition becomes strategically valuable when its commercial return can finance its direct participants."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          54,
+          55
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "explanation": "UEFA's portfolio serves several purposes at once: elite competition, commercial generation, representation and development. Some events are deliberately subsidised because they advance the wider mission. A purely direct-profit test would overlook those strategic effects."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 65,
+      "question_text": "What does UEFA's distribution to non-participating clubs demonstrate most directly?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Central revenues flow principally to participating clubs, with non-participants supported through domestic association programmes.",
+        "Grassroots development is supported through HatTrick rather than club-competition solidarity.",
+        "Non-participating clubs may use solidarity funding for general first-team operating expenditure.",
+        "Youth development is a desirable consequence of solidarity but is not an explicit distribution purpose.",
+        "Sporting solidarity redistributes part of elite competition revenue beyond the participants."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          56,
+          57
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          4
+        ],
+        "explanation": "Solidarity payments make the statutory redistribution principle tangible. Revenue generated at the top of the pyramid reaches clubs outside the competitions and is directed toward football development, especially youth. The mechanism therefore broadens benefits without treating the funds as unrestricted windfalls."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 66,
+      "question_text": "Which objectives are served by adding a third UEFA club competition in the handbook's account?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Increase the minimum number of countries represented in group-stage club competition.",
+        "Consolidate the Champions League and Europa League into a wider two-tier competition.",
+        "Create a progression route in which the winner qualifies for the Europa League.",
+        "Reduce group-stage access so qualifying rounds can include more associations.",
+        "Coordinate UEFA's club portfolio with FIFA through shared competition authority."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          56,
+          57
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2
+        ],
+        "explanation": "The Europa Conference League was designed to widen access and create a sporting pathway into the Europa League. It complements rather than replaces UEFA's existing club competitions. The management logic combines representation with a connected competition hierarchy."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 67,
+      "question_text": "Which statements explain why centralised marketing is important to UEFA's solidarity model?",
+      "q_type": "multiple_choice",
+      "options": [
+        "UEFA sells broadcasting rights collectively on behalf of participating clubs.",
+        "Aggregation helps maximise commercial revenue.",
+        "Central marketing retains a larger competition reserve before development distributions are considered.",
+        "A portion of the resulting value supports associations, non-participating clubs and development programmes.",
+        "It directs solidarity through associations rather than making distributions to participating clubs."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          56,
+          57
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3
+        ],
+        "explanation": "Centralised marketing pools valuable rights and strengthens UEFA's ability to exploit the property commercially. Most revenue may flow to participants, while part supports solidarity and development obligations. The model therefore links collective commercial power to distribution across the pyramid."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 68,
+      "question_text": "Which criteria should a project satisfy to receive HatTrick development funding?",
+      "q_type": "multiple_choice",
+      "options": [
+        "It should develop football within UEFA's territory.",
+        "It should be of common interest to the football community.",
+        "It should have a clear functional, educational and sporting purpose.",
+        "It must distribute profits to private shareholders as its primary aim.",
+        "It should fit a programme financed from UEFA EURO surpluses."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          56,
+          57
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "explanation": "HatTrick converts EURO surpluses into structured football-development investment. Eligible projects must serve the game broadly and articulate practical, educational and sporting value. A private-profit-first proposal would not fit that programme logic."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 69,
+      "question_text": "What is the HatTrick programme's multiplier or snowball effect?",
+      "q_type": "multiple_choice",
+      "options": [
+        "UEFA funding increases a project's scale through standard matching grants from the association.",
+        "Initial investment is recycled into later HatTrick allocations after projects generate savings.",
+        "Associations are expected to complete projects with programme funding before approaching public partners.",
+        "UEFA funding encourages governments, authorities, sponsors, clubs or FIFA to contribute additional resources.",
+        "Commercial partners provide the principal co-financing because the projects use UEFA competition revenues."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          56,
+          57
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "The multiplier effect describes how an initial UEFA commitment can unlock further stakeholder investment. It is organisational and financial leverage, not an automatic mathematical doubling. Associations should use the programme to build credible partnerships around development projects."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 70,
+      "question_text": "Which statements distinguish UEFA Grow from HatTrick in the chapter?",
+      "q_type": "multiple_choice",
+      "options": [
+        "UEFA Grow is a judicial appeal body.",
+        "UEFA Grow works directly with associations on internal business-development capability.",
+        "HatTrick regulates the Laws of the Game.",
+        "Both programmes exist solely to finance senior men's transfer fees.",
+        "HatTrick primarily finances qualifying football-development activity from EURO surpluses."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          56,
+          57
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          4
+        ],
+        "explanation": "The programmes support development through different levers. HatTrick provides structured project funding, while UEFA Grow strengthens an association's ability to develop its organisation on and off the pitch. Neither is a judicial or playing-law mechanism."
+      },
+      "oral_exam_category": "application"
+    },
+    {
+      "q_number": 71,
+      "question_text": "Which areas are covered by UEFA club-licensing minimum standards for entry to its competitions?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Sporting and infrastructure matters.",
+        "A minimum domestic sporting position set consistently across UEFA associations.",
+        "Personnel and administration.",
+        "Compliance with financial obligations assessed through national company-law certification.",
+        "Media and financial matters."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          58,
+          59
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          4
+        ],
+        "explanation": "Club licensing tests whether a club meets a broad organisational baseline, not merely whether its team qualified on the field. Sporting, infrastructure, staffing, administrative, media and financial standards all contribute to readiness. Licensing does not confer legal exemptions or protected league status."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 72,
+      "question_text": "Which problems justified adding financial fair play to UEFA's club-licensing framework?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Large aggregate losses among European top-division clubs.",
+        "Debt-financed spending on salaries and transfers.",
+        "An absence of any financial information from the licensing system.",
+        "Threats to competition integrity and club survival.",
+        "Cost pressure imposed on better-managed clubs."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          58,
+          59
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "explanation": "Licensing gave UEFA visibility of systemic financial instability and excessive debt-funded competition. Those practices endangered clubs, distorted sporting competition and raised costs for prudent organisations. Financial fair play was therefore an extension of an evidence-producing licensing framework, not a response made without data."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 73,
+      "question_text": "What does the no-overdue-payables criterion require from a club?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Evidence that the club's operating result is compatible with its approved break-even forecast.",
+        "Settlement of long-term infrastructure debt before the licensing decision.",
+        "Proof that debts to clubs, employees and social-security or tax authorities have been settled.",
+        "Compliance with the locally trained-player quota for the submitted squad.",
+        "Confirmation that transfer liabilities have been registered through FIFA's systems."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          58,
+          59
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2
+        ],
+        "explanation": "The criterion focuses on due obligations to key football, employment and public creditors. UEFA may withhold competition prize money while overdue debts remain unsettled. It is narrower than a rule forbidding every loss or requiring accelerated payment of all long-term finance."
+      },
+      "oral_exam_category": "factual_anchor"
+    },
+    {
+      "q_number": 74,
+      "question_text": "Which statements describe the break-even requirement as introduced in the handbook?",
+      "q_type": "multiple_choice",
+      "options": [
+        "It seeks to prevent clubs spending more than they earn.",
+        "It narrows acceptable revenue differences between clubs through a common spending ceiling.",
+        "It is assessed by national associations as part of their own financial performance.",
+        "It is assessed for clubs wishing to participate in UEFA club competitions.",
+        "It forms part of sporting access by replacing coefficient-based qualification where finances are weak."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          58,
+          59
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          3
+        ],
+        "explanation": "Break-even is a financial-sustainability control attached to UEFA competition participation. It constrains expenditure relative to earnings but does not equalise commercial capacity or replace sporting qualification. It operates alongside the wider club-licensing system."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 75,
+      "question_text": "Which UEFA regulatory initiatives address integrity, development or inclusion beyond financial fair play?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Nationality quotas that disregard EU law.",
+        "A betting-fraud detection system.",
+        "A ban on supporter-accessibility officers.",
+        "Rules promoting locally trained players.",
+        "Anti-doping cooperation and education."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          58,
+          59
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3,
+          4
+        ],
+        "explanation": "UEFA's wider regulatory portfolio addresses betting integrity, player development and doping. The locally trained-player rule is framed around training rather than nationality, respecting the Bosman context. Inclusion and accessibility are promoted rather than prohibited."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 76,
+      "question_text": "Which statements correctly distinguish UEFA's locally trained-player rule from a nationality quota?",
+      "q_type": "multiple_choice",
+      "options": [
+        "The rule requires a minimum number of locally trained players in the UEFA squad.",
+        "It sets a citizenship-based minimum for the players registered in UEFA competition squads.",
+        "It does not define those players by nationality.",
+        "Its design avoids the nationality restriction found unlawful in the EU context.",
+        "It promotes player development within member associations."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          58,
+          59
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "explanation": "The rule targets where players were trained, not their passports. That distinction allows UEFA to promote local development while avoiding an unlawful nationality quota. It is therefore both a development instrument and a legally informed regulatory design."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 77,
+      "question_text": "What is the purpose of UEFA's #EqualGame initiative within the Respect framework?",
+      "q_type": "multiple_choice",
+      "options": [
+        "To set transfer fees for locally trained players.",
+        "To promote inclusion and diversity in football.",
+        "To select hosts for FIFA competitions.",
+        "To replace anti-doping testing.",
+        "To license player intermediaries."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          58,
+          59
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1
+        ],
+        "explanation": "#EqualGame gives renewed emphasis to inclusion and diversity within UEFA's wider Respect campaign. It is a values and social-impact initiative rather than a transfer, hosting or anti-doping mechanism. A good oral answer should locate it in UEFA's campaigning role."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 78,
+      "question_text": "Which aims belong to UEFA's social-responsibility portfolio as described in the handbook?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Direct inclusion funding towards elite player pathways.",
+        "Deliver public-health work through competition sponsors.",
+        "Reduce discrimination and increase diversity.",
+        "Separate charitable foundations from football-development programmes.",
+        "Foster social integration and reconciliation."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          58,
+          59
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2,
+          4
+        ],
+        "explanation": "UEFA uses football's social reach to support inclusion, reconciliation, healthy lifestyles and football for all. Strategic partnerships and foundations extend that work beyond competitions. An elite-only or charity-excluding model would contradict the stated portfolio."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 79,
+      "question_text": "Which description correctly identifies CONMEBOL in the handbook?",
+      "q_type": "multiple_choice",
+      "options": [
+        "It is the newest confederation, created for South American club football.",
+        "It was created by merging South America's regional associations with CONCACAF.",
+        "It has the largest membership among the six confederations.",
+        "It is the oldest regional confederation and was founded to organise South America's first national-team competition.",
+        "It was founded to organise South America's first international club competition."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          60,
+          61
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "CONMEBOL was founded in 1916 around the organisation of the Copa América and is the oldest confederation. Its remit is South America, not Oceania or the CONCACAF region. Its small membership should not be confused with its strong historical sporting influence."
+      },
+      "oral_exam_category": "factual_anchor"
+    },
+    {
+      "q_number": 80,
+      "question_text": "Which examples show cooperation between UEFA and other regional confederations?",
+      "q_type": "multiple_choice",
+      "options": [
+        "UEFA administers agreed development projects within the partner confederation's competition structure.",
+        "Memorandums of understanding provide frameworks for technical and organisational exchange.",
+        "The partner confederation participates through an associate relationship with UEFA.",
+        "Cooperation focuses on institutional agreements rather than direct exchange between member associations.",
+        "Cooperation can cover coaching, refereeing, competitions, women's football and administration."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          60,
+          61
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          4
+        ],
+        "explanation": "UEFA uses formal agreements to share experience and support development across confederations. The subject matter can be broad, but the partner confederation retains its own identity and authority. Cooperation is therefore capacity-building rather than institutional annexation."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 81,
+      "question_text": "Which statements describe the distinctive context of the Oceania Football Confederation?",
+      "q_type": "multiple_choice",
+      "options": [
+        "It represents the smallest confederation region by total population.",
+        "Australia remains part of OFC's development environment while competing through the AFC.",
+        "Many members are small South Pacific island states.",
+        "Football has a strong participation base across OFC despite limited professional league structures.",
+        "Most members lack a professional domestic league."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          60,
+          61
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          4
+        ],
+        "explanation": "The OFC operates across small and dispersed football markets with limited professional infrastructure. Australia moved to the AFC, and most remaining members are island states where football is not dominant. Development support must therefore reflect a very different operating context from Europe."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 82,
+      "question_text": "Which objectives define UEFA Assist?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Develop managerial capabilities in football and operations.",
+        "Support youth development.",
+        "Support professional-club development projects in emerging European football markets.",
+        "Support small-scale infrastructure projects.",
+        "Encourage cooperation between UEFA associations and associations in other confederations."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          62
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "explanation": "UEFA Assist packages external development support around management, youth, infrastructure and cooperation. It formalises earlier ad hoc assistance and spreads support across non-European associations with FIFA and the confederations. The programme is not a transfer-market subsidy."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 83,
+      "question_text": "How is UEFA Assist financed according to the chapter?",
+      "q_type": "multiple_choice",
+      "options": [
+        "It uses disciplinary and competition fines earmarked for international development.",
+        "It reallocates a defined share of HatTrick development funding to projects outside Europe.",
+        "It rechannels FIFA Forward funds allocated to UEFA.",
+        "Beneficiary associations contribute a proportion of their FIFA Forward allocation to the programme.",
+        "It is financed through a joint UEFA-IFAB development budget."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          62
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2
+        ],
+        "explanation": "UEFA Assist uses FIFA Forward resources allocated to UEFA to support development outside Europe. That financing illustrates cooperation between global and regional governing levels. It does not depend on forfeiting membership or commercialising the playing laws."
+      },
+      "oral_exam_category": "factual_anchor"
+    },
+    {
+      "q_number": 84,
+      "question_text": "Which management lessons follow from the chapter's concluding ecosystem metaphor?",
+      "q_type": "multiple_choice",
+      "options": [
+        "New and existing stakeholder influence needs continuous evaluation.",
+        "The established pyramid should be preserved by managing new stakeholders through existing channels.",
+        "Increasing stakeholder complexity favours selective consultation with actors holding formal responsibilities.",
+        "Strategic analysis should inform effective policy responses.",
+        "Commercial and sporting performance provide the principal evidence that governance is producing value."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          62
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          3
+        ],
+        "explanation": "The chapter closes by returning to adaptation and equilibrium. Even a system that has served football well needs continuous stakeholder analysis and responsive policy. Its benefits span participation, spectatorship, well-being and business rather than a single commercial measure."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 85,
+      "question_text": "Which outcomes does the chapter attribute to effective organisation of football at global, regional and national levels?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Greater institutional control over football-related stakeholder disputes.",
+        "Growth as a spectator sport.",
+        "Stronger regulatory autonomy for football's governing bodies.",
+        "Growth as a participation sport.",
+        "Contributions to public health and general well-being."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          62
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3,
+          4
+        ],
+        "explanation": "The organisational system has supported football's sporting, social and economic reach. Effective management does not make the ecosystem conflict-free or legally autonomous. Its value lies in coordinating complexity so that multiple public and football benefits can emerge."
+      },
+      "oral_exam_category": "explanation"
+    },
+    {
+      "q_number": 86,
+      "question_text": "Which statements form a strong final oral summary of how world football is organised?",
+      "q_type": "multiple_choice",
+      "options": [
+        "Universal playing laws sit alongside a hierarchical governance pyramid.",
+        "The system is effective because responsibilities are clearly separated between governing levels and stakeholder groups.",
+        "FIFA, confederations and national associations have distinct but overlapping roles.",
+        "Commercial competitions help finance development and solidarity.",
+        "Stakeholder engagement and strategic adaptation are necessary as the ecosystem changes."
+      ],
+      "source_locator": {
+        "file": "UEFA-HFM-The-organisation-of-world-football.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          62
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "explanation": "World football combines common laws, layered institutions, competitions, regulation and redistributive development. Its actors are interdependent, so commercial and sporting success require cooperation and legitimate stakeholder engagement. The system's durability depends on adapting policy without losing coherent authority."
+      },
+      "oral_exam_category": "explanation"
+    }
+  ]
+}

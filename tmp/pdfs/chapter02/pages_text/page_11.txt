@@ -1,0 +1,98 @@
+86
+87
+	> 3.3.2. Analysis of strengths and weaknesses
+Strategies should increase the likelihood of success by leveraging areas where the national association is 
+strong and strengthening areas where it is weak. Internal analysis helps the organisation to determine where 
+its strengths and weaknesses lie. One way of objectively doing this is to score and rank all resources and 
+capabilities on the basis of both their importance and their relative strength and then map them on a grid. 
+Importance is linked to how valuable a given resource is for success (usually following a KSF analysis). As 
+there is no scientific way of scoring importance, it is recommended that more than one person provide an 
+assessment, in order to produce a mathematical average or a mutually agreed score.
+Relative strength indicates how well the organisation performs when it comes to a given resource or capability. 
+If the scoring is on a scale of 1 to 10, a score of 5 would indicate that the organisation is about average with 
+regard to that particular resource or capability. Unlike the scoring for importance, the scoring for relative 
+strength may be based on scientific methods, and whenever measurable indicators are available, scores can 
+be calculated by comparing those indicators with equivalent data for similar national associations.
+After scoring (as in the example in Table 2.8), resources are ready to be plotted on the strengths and 
+weaknesses grid, as shown in Figure 2.5.
+Resource
+Importance
+Relative strength
+Facilities
+8
+1
+Staff
+6
+5
+National team
+6
+3
+Management
+6
+3
+Marketing
+9
+5
+Fan database
+7
+7
+Calendar planning
+6
+5
+Training methods
+7
+7
+Brand
+5
+7
+Network
+4
+4
+Table 2.8: An example of scorings for national association resources
+The strengths and weaknesses grid comprises four quadrants: 
+•	Key strengths: areas where the national association has valuable resources and capabilities that 
+are unique or where it outscores other associations.
+•	Key weaknesses: areas that are important for the success of the national association, but where 
+it is not performing as well as it should.
+•	Superfluous strengths: areas where the national association is strong, but which are largely 
+irrelevant to its success.
+•	Irrelevant weaknesses: areas where the national association is weak, but which are also largely 
+irrelevant to its success.
+Understanding strengths and weaknesses is extremely important when assessing strategy 
+robustness, as strategies that rely on areas where the national association is generally weak 
+are less likely to be successfully carried out.
+Figure 2.5: Strengths and weaknesses grid (based on the scores in Table 2.8)
+1
+5
+10
+5
+10
+J
+B
+C
+D
+F
+H
+G
+E
+A
+Superﬂuous strengths
+Irrelevant 
+weaknesses
+Key strengths
+Key weaknesses
+I
+Strategic importance
+Relative strength
+A. 	 Facilities
+B. 	 Staff
+C. 	 National team
+D. 	 Management
+E. 	 Marketing
+F. 	 Fan database
+G. 	 Calendar planning
+H. 	 Training methods
+I. 	 Brand
+J. 	 Network
+CHAPTER 2: STRATEGIC MANAGEMENT
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT

@@ -1,0 +1,110 @@
+84
+85
+It is important for a PEST analysis to be domain-specific, which typically also means that it should be limited 
+geographically. For example, looking at the hypothetical trends in Table 2.6, immigration, integration of 
+minorities and economic disparities may be major issues in some countries but not be at all relevant in others.
+Political
+Technological
+Market orientation
+Social media platforms
+Immigration and integration
+Multimedia and virtual reality 
+Political correctness
+Big data and data analytics
+Corporate social responsibility
+Internet of things
+Sustainability
+Blockchain
+Economic
+Social
+Disparities between high- and low-growth areas
+Ageing population
+Public spending cuts
+Greater global awareness and exposure 
+Reduced contributions from national lotteries
+Constraints regarding schedule of training sessions 
+because of parents’ own working schedules
+Declines in disposable income
+Inflation of national currency
+	> 3.2.4. Deriving implications: opportunities, threats, strategic issues and options
+When looking at an organisation’s domains, its KSFs and the overall PEST factors affecting them, strategic 
+analysts may be capable of formulating preliminary actions that take advantage of any opportunities or react 
+to any threats. It is important that ideas for both types of action be recorded and fed into a repository of 
+issues and options for potential strategies.
+	> 3.3. Internal analysis
+A national association’s ability to efficiently execute its strategic plans depends on its strengths and weaknesses, 
+the resources at its disposal and the capabilities of its staff. As discussed above, national associations should 
+therefore carry out an objective appraisal of these, using the tools described below.
+Table 2.6: An example of some hypothetical PEST trends
+	> 3.3.1. Identification of resources and capabilities
+Even the most carefully designed and well-articulated goals may amount to nothing if they are not grounded 
+in reality. Unrealistic goals can sometimes do an organisation more harm than good, leading to a loss of faith 
+and goodwill among internal and external stakeholders because the organisation is seen as running the risk 
+of engaging in projects that it does not have the resources or capabilities to carry through.
+For this reason, before starting on a strategy, national associations must take stock of the resources and 
+capabilities at their disposal, i.e. those that they can readily access and control. This is usually straightforward, 
+and most associations will already have a reasonable overview of what is available (or will be available) to 
+them over the strategic management timeframe, without the need for a formal process. 
+A national association’s resources can usually be grouped together in four categories – financial resources, 
+tangible assets, intangible assets and human resources, as illustrated in Table 2.7. Some resources can be 
+measured directly using various metrics. The national association’s accounting, financial reporting, budgeting 
+and information systems will determine the number of metrics and how detailed they are.
+Financial 
+resources
+Tangible 
+assets
+Intangible 
+assets
+Human 
+resources
+Examples
+- Cash reserves 
+- Future funding
+- Revenue 
+generation
+- Borrowing 
+capacity
+- Land 
+- Buildings 
+- Facilities 
+- Equipment 
+- Brands 
+- Trademarks
+- Reputation 
+- Know-how 
+- Patents 
+- Databases and
+contact 
+information
+- Staff skills and 
+capabilities 
+- Staff’s potential to 
+learn and produce 
+ideas
+Measurable 
+indicators
+- Revenues
+- Gross profit
+- Credit rating
+- Cash flows
+- Value of 
+tangible assets
+- Size and 
+capacity of 
+facilities
+- Value of 
+intangible 
+assets
+- Budgets for 
+development 
+of systems and 
+know-how
+- Social media 
+engagement 
+- Staff’s 
+qualifications
+- Pay rates
+- Staff turnover
+Table 2.7: Typical national association resources
+CHAPTER 2: STRATEGIC MANAGEMENT
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT

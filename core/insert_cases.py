@@ -83,6 +83,57 @@ def _resolve_images(img_refs: list, doc, source_slug: str) -> list[str]:
     return filenames
 
 
+def _resolve_page_crops(crop_refs: list, doc, source_slug: str) -> tuple[list[str], list[str]]:
+    """Render normalized page crops used by CFM diagrams and tables."""
+    filenames: list[str] = []
+    captions: list[str] = []
+    if not crop_refs:
+        return filenames, captions
+    if not doc:
+        print("  Warning: page_crops present but no readable PDF was supplied; skipping")
+        return filenames, captions
+
+    for crop_index, ref in enumerate(crop_refs):
+        try:
+            pdf_page = int(ref["pdf_page"])
+            page_idx = pdf_page - 1
+            bbox = ref["bbox"]
+            left = float(bbox["left"])
+            top = float(bbox["top"])
+            right = float(bbox["right"])
+            bottom = float(bbox["bottom"])
+            if not (
+                0 <= page_idx < len(doc)
+                and 0 <= left < right <= 1
+                and 0 <= top < bottom <= 1
+            ):
+                raise ValueError("page or normalized bbox is out of range")
+            page = doc[page_idx]
+            rect = page.rect
+            clip = fitz.Rect(
+                rect.x0 + left * rect.width,
+                rect.y0 + top * rect.height,
+                rect.x0 + right * rect.width,
+                rect.y0 + bottom * rect.height,
+            )
+            bbox_key = f"{left:.4f}-{top:.4f}-{right:.4f}-{bottom:.4f}"
+            crop_hash = hashlib.sha1(bbox_key.encode("ascii")).hexdigest()[:8]
+            fname = (
+                f"{source_slug}_p{page_idx:03d}_crop_{crop_index:02d}_{crop_hash}.png"
+            )
+            out_path = CROPS_DIR / fname
+            if not out_path.exists():
+                pix = page.get_pixmap(matrix=fitz.Matrix(2.0, 2.0), clip=clip, alpha=False)
+                if pix.colorspace and pix.colorspace.n > 3:
+                    pix = fitz.Pixmap(fitz.csRGB, pix)
+                pix.save(str(out_path))
+            filenames.append(f"data/crops/{fname}")
+            captions.append(str(ref.get("caption") or ""))
+        except Exception as exc:
+            print(f"  Warning: could not render page crop {ref!r}: {exc}")
+    return filenames, captions
+
+
 def _page_index_from_ref(ref) -> int | None:
     if isinstance(ref, bool):
         return None
@@ -164,6 +215,7 @@ def insert_cases(cases: list, pdf_path: str | None = None) -> tuple[int, int]:
     for i, case in enumerate(cases):
         chapter_id    = case.get("chapter_id")
         chapter_match = case.get("chapter_match", "close")
+        library_key  = case.get("library_key", "edir")
         source        = case.get("source", "Unknown")
         section       = case.get("section", "core")
         vignette      = case.get("clinical_vignette", "")
@@ -180,6 +232,7 @@ def insert_cases(cases: list, pdf_path: str | None = None) -> tuple[int, int]:
         case_id = insert_case(
             chapter_id, case_number, vignette,
             section=section, source=source, chapter_match=chapter_match,
+            library_key=library_key,
         )
         original_answer_pages = _render_original_answer_pages(
             case.get("original_answer_pages", []), doc, source_slug, case_id
@@ -196,6 +249,12 @@ def insert_cases(cases: list, pdf_path: str | None = None) -> tuple[int, int]:
             q_type   = q.get("q_type", "free_text")
             options  = q.get("options")
             q_images = _resolve_images(q.get("page_images", []), doc, source_slug)
+            crop_images, crop_captions = _resolve_page_crops(
+                q.get("page_crops", []), doc, source_slug
+            )
+            q_images.extend(crop_images)
+            q_captions = list(q.get("page_image_captions") or [])
+            q_captions.extend(crop_captions)
 
             ans      = q.get("answer", {})
             a_text   = ans.get("answer_text")
@@ -203,7 +262,16 @@ def insert_cases(cases: list, pdf_path: str | None = None) -> tuple[int, int]:
             a_expl   = ans.get("explanation", "")
             a_images = _resolve_images(ans.get("page_images", []), doc, source_slug)
 
-            q_id = insert_question(case_id, q_number, q_text, q_type, options, q_images)
+            q_id = insert_question(
+                case_id,
+                q_number,
+                q_text,
+                q_type,
+                options,
+                q_images,
+                page_image_captions=q_captions,
+                source_locator=q.get("source_locator"),
+            )
             insert_answer(q_id, a_text or "", a_correct, a_expl, a_images)
             n_questions += 1
 

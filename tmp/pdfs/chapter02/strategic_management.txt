@@ -1,0 +1,843 @@
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT
+
+
+
+• UEFA.com (31 October 2019). UEFA Europa Conference League: What is it? When does it start?
+  Who’s involved? Retrieved on 29 October 2020 from www.uefa.com/uefaeuropaleague/news/0256-
+  0e9a05634e35-236276d37822-1000--uefa-europa-conference-league-what-is-it-when-does-it-start-who
+• UEFA.com (30 December 2019). UEFA solidarity payments: how they work. Retrieved on 29 October
+  2020 from www.uefa.com/insideuefa/about-uefa/news/0258-0f8e7356606e-623079a4c111-1000--
+  uefa-solidarity-payments-how-they-work
+• UEFA.com (6 October 2020). 2021/22 Women’s Champions League: dates, access list, full guide.
+  Retrieved on 29 October 2020 from www.uefa.com/womenschampionsleague/news/0262-
+  108bd1c13e3a-cd0bf3210aad-1000--2021-22-new-format/?iv=true
+• Whittington, R., Regnér, P., Angwin, D., Johnson, G., and Scholes, K., (2019). Exploring Strategy: Text
+  and Cases. Pearson.
+
+
+
+
+                                                                                                                                     Chapter 2
+
+                                                                                                                                     Strategic management
+                                                                                                                                     Mikkel Draebye
+                                                                                                                                     SDA Bocconi School of Management
+                                                                                                                                     Milan, Italy
+
+
+
+
+                                                                                                            WE CARE ABOUT FOOTBALL
+
+
+
+
+                                                   66                                                                                                67
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                                            CHAPTER 2: STRATEGIC MANAGEMENT
+
+
+
+National football associations manage a wide variety of activities. They are generally concerned with day-to-        Strategic management makes three contributions to increasing the chances of an organisation achieving
+day operations: managing competitions, communications, travel, finances, human resources, etc.                       its mission and goals:
+
+But there is another type of activity that national associations need to engage in: strategic management,               1. Effective and efficient allocation of resources
+which is different from operational management in three respects:                                                       2. Coordination and decision-making support
+                                                                                                                        3. Employee purpose and motivation
+     • It is future oriented.
+     • It involves the allocation (or reallocation) of a significant amount of resources.                            > 1.1. Effective and efficient allocation of resources
+     • It is based on analysis and insights.
+                                                                                                                     Strategic activities are typically long-term and irreversible and national associations do not have unlimited
+The strategic management process results in a strategy that can be defined as a set of planned actions and           resources, so it is important to choose initiatives that are effective. A national association that decides to
+decisions aimed at achieving a long-term goal. The strategy could be for the national association as a whole,        invest in a youth academy system, for instance, must therefore ensure that the right decisions are made and
+or could be for a specific department or project.                                                                    that the academy system is given sufficient time to prove itself. Without adopting a structured and analytical
+                                                                                                                     approach to decision-making, by means of a strategic management system, this might not happen.
+This chapter will present a model for how strategic decisions can be made, put into a strategic plan and
+implemented. The focus is on how a strategy for a national association as a whole can be formulated, but             Another, frequent, risk of not having a solid strategic management system is that decisions could follow
+the tools and methods presented can be applied at departmental, project and individual level as well.                divergent paths or repeatedly zigzag back and forth between competing objectives. Because many associations’
+                                                                                                                     goals can only be achieved in the long term, a lack of clear direction makes it difficult for the organisation to
+The chapter is divided into five parts. It starts with a section highlighting the importance of having a strategic   achieve them efficiently. Strategic management enables the national association to chart a coherent direction
+management system. The second section introduces the fundamental elements of the strategic management                that contributes to the more effective and efficient allocation of resources.
+process and presents an analytical model. The third describes various tools for performing the initial strategic
+analysis. The fourth presents tools and methods for formulating strategies based on the results of the analysis.     Effectively allocating the available resources (infrastructure, finances, human resources, etc.) on the basis of
+The chapter then ends with how to support the implementation of the strategies once they have been set out.          clearly defined strategic objectives therefore helps national associations to increase their chances of success.
+                                                                                                                     For example, if infrastructure development is an important objective in a particular period, a key factor in
+> 1. Crafting strategy as a means to success                                                                         guaranteeing success could be the allocation of increased resources – even at the expense of other non-priority
+                                                                                                                     areas – to give the people and units responsible the time and money to engage government agencies, apply
+Think of any person or organisation you know of that has been successful not because they have the best              for grants from international federations and plan investments, etc. In this instance, strategic management
+talent or because of pure luck. You will find that their success is linked to their ability to formulate a set of    allows the national association to plan and apply available resources suitably in order to meet the objectives.
+simple, long-term goals and objectives, organise themself in such a way as to pursue them effectively and
+then to carry them through to completion. In the world of football, Iceland’s men’s senior national team             > 1.2. Coordination and decision-making support
+qualifying for UEFA EURO 2016 and reaching the quarter-finals, Belgium producing numerous youth talents
+or Norway growing women’s football, are all examples of successes that cannot be attributed to superior              In recent times, national associations have found themselves growing in size (in terms of employees, volunteers
+resources (talent) or pure luck, but are in fact the result of smart choices and good organisation directed at       and service providers) in order to meet the demands of an increasingly commercialised and professionalised
+clear long-term goals.                                                                                               sports environment. As a result, the dynamics of their decision-making processes have become more complex
+                                                                                                                     (see Figure 2.1).
+Just as those national associations managed to achieve success against the odds because they stuck to their
+game plans, organisations with limited resources can increase their chances of being successful by making            In very small organisations (with ten employees or fewer), decision-making is usually centralised, with one
+good decisions and organising themselves properly. This approach, whereby goals are defined and plans are            person making all the decisions (facilitated by their knowledge of what everyone else in the organisation is
+devised for how to achieve them, is exactly what strategic management is. Although it is not necessary to            doing) and providing guidance to everyone else. However, as organisations grow, it becomes increasingly
+formalise a strategic management system, it often does have its benefits.                                            difficult for leaders to retain the same degree of involvement without compromising efficiency.
+
+
+
+
+                                                       68                                                                                                                    69
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                                            CHAPTER 2: STRATEGIC MANAGEMENT
+
+
+
+                                                                                                                   > 2. Introducing a strategic management system
+                        Elite                                                National teams
+                         vs                                                        vs
+                     grassroots                                               leagues/clubs                        Strategic management systems are relatively easy to introduce. They do not require a lot of investment in
+                                                                                                                   terms of capital, infrastructure or technical know-how. All that is needed is support from the organisation’s
+                                                                                                                   senior management. In the case of a national association, this would be its executive committee or board,
+                                                  National                                                         its president, and its general secretary or CEO. However, it might take a few years to find a system that truly
+                                                 association                                                       fits the organisation and its operational cycles, usually the period of time between presidential elections or
+                                                                                                                   major competitions.
+
+
+                       Men’s                                                      Futsal                           One reason why senior managers at some national associations may be reluctant to adopt a more structured
+                        vs                                                          vs                             strategic management system is a perception that if the organisation fails to meet its stated goals in the short
+                      women’s                                                    football
+                                                                                                                   term, this will be treated as a failure on their part. This perceived risk is based on a simplistic and misunderstood
+                                                                                                                   approach to management. Many great business leaders and managers have had to present results to their
+  Figure 2.1: Different parts of a national association pulling in different directions                            boards and shareholders that have been below expectations and not met the initial goals. No strategic planning
+                                                                                                                   process, no matter how thoroughly prepared and well executed it may be, can always foresee changes to
+                                                                                                                   internal and external environments that might affect the original plans. A strategic management system
+To avoid senior management ‘overload’, there must be a certain level of explicit or implicit delegation to         should therefore allow for contingency plans to mitigate a new threat, or even exploit a new opportunity.
+staff. Since it is impossible to write detailed decision-making manuals and guidelines for every employee,
+heuristic support systems are needed to make sure that consistent decisions are made at all the various levels.    The fact that a strategic management system is not difficult to establish does not mean that the resulting
+                                                                                                                   strategic plans and actions will be easy to implement. As will be described in Section 5, strategic decisions
+Strategic management allows national associations to create such support systems. By having a formalised           can encounter resistance and must be accompanied by appropriate support systems. Shilbury and Ferkins
+and documented strategic plan as a guide, staff at all levels of the organisation are more likely to make better   (2011) argue that one of the main challenges faced by national associations when developing strategic
+decisions on their own but aligned with the management’s intentions.                                               management systems is the fact that they are moving from a ‘volunteer-reliant culture’ to one striving to
+                                                                                                                   deliver sports services in a more professional and ‘business-like’ manner. They argue that this transition from
+National associations are unique in nature because, apart from managing various business and commercial            amateur to professional governance can be met with resistance as some national associations struggle to
+assets, they are entrusted with developing and promoting football and safeguarding the interests of their          strike the right balance between paid staff and volunteers. This is further reflected in the ways that national
+various member clubs and other entities within a democratic framework. This dichotomy of interests                 associations apply strategic thinking and assigning strategic roles. It is beyond the scope of this chapter to
+creates an inherent risk that the various units and functions within the organisation might not always pull        deal in detail with the politics of change and change management in national associations, so we will limit
+in the same direction at the same time. For example, people and units involved in organising competitions          ourselves to describing the functions and elements of a generic strategic management system.
+might act and communicate in ways that prove counterproductive to what other units (such as grassroots
+development) are doing.                                                                                            > 2.1. Overview of the elements of a strategic management system
+
+> 1.3. Employee motivation and purpose                                                                             Strategic management systems typically:
+
+As will be developed further in Chapter 3, organisations consist of people. And while people can be motivated         1. monitor and analyse the organisation’s internal and external situation;
+by rewards and money, that is not the whole story. Another important aspect of employee motivation is                 2. formulate goals, objectives and action plans;
+purpose, i.e. knowing why they are doing what they are doing and understanding why it is important. In                3. allocate resources and responsibilities and control performance.
+the strategy formulation process, the organisation links specific activities to desired results and thereby
+provides an explanation for why the organisation has chosen the initiatives it has and why resources have          While this varies from one organisation to another, ideally a national association should adopt a system in
+been allocated the way they have. If the logic is communicated to and understood by employees, they have           which its strategic plans are reviewed every year and the plans are updated, so the association always has
+a higher degree of purpose which leads to greater motivation.                                                      three-to-five-year targets.
+
+
+
+
+                                                      70                                                                                                                    71
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                                                    CHAPTER 2: STRATEGIC MANAGEMENT
+
+
+
+The planning process typically takes place over three calendar months. Some associations present updates
+to their strategic plans at their general meetings, while others do so at the end of the competition season.          AN 8-STEP PROCESS TO DEVELOP A STRATEGY IN 4–6 MONTHS
+
+In the example in Figure 2.2, the process is initiated in June. On the basis of the previous year’s performance         1                                                             2
+and changes to the internal and external environment (box 1), the general secretary or a member of their                    PREPARE                                                       KICK-OFF WORKSHOP
+staff analyses the situation and presents the findings at a strategic planning review meeting (box 2), where                Identify who and what you need and outline                    Excite and inspire the team,
+                                                                                                                            a strategy development plan (2–4 weeks)                       and assign roles and responsibilities
+the information is discussed and general guidelines for updates to the strategic plan are decided. These
+guidelines are then formalised in proposed updates (box 3), to be presented to and approved by the executive
+committee, with a follow-up a couple of months later (box 4). Implementation schemes and budgets are                   3                                                              4
+                                                                                                                            UNDERSTAND CURRENT SITUATION                                  STRATEGY WORKSHOP
+then decided on this basis.                                                                                                 Collect and analyse data to understand                        Identify strategic objectives
+                                                                                                                            the current situation (6–8 weeks)                             and actions required (2–4 weeks)
+
+
+                  Internal and external                          Strategic planning review                             5                                                              6
+                                                                                                                                                                                          REVIEW AND REFINE
+                      analysis (June)                               meeting (June/July)                                     DRAFT STRATEGY
+                                                                                                                                                                                          Get feedback to test and improve
+                                                                                                                            (2–4 weeks)
+                                                                                                                                                                                          the strategy (4–8 weeks)
+
+
+                                                                                                                       7                                                              8
+                                                                                                                                                                                          IMPLEMENTATION AND
+                                                                                                                            FINALISATION WORKSHOP
+                                                                Development and approval                                    Review and finalise the strategy
+                                                                                                                                                                                          MONITORING PLANNING
+                 Monitoring and control                                                                                                                                                   Develop a budget and action plan, including
+                                                                 of strategic plan updates
+                  (August/September)                                                                                                                                                      comms plan; assign roles and accountability
+                                                                          (August)
+                                                                                                                                                                                          (2–4 weeks)
+
+
+                                                                                                                                                                   MONTH 1           MONTH 2           MONTH 3           MONTH 4           MONTH 5
+  Figure 2.2: The planning process                                                                                                                             X    X   X    X   X    X   X    X   X    X   X    X   X    X   X    X   X    X   X    X
+                                                                                                                  1    PREPARE
+                                                                                                                  1a ...
+
+Depending on the type of strategic management system the organisation adopts, this process can be                 2    KICK-OFF WORKSHOP
+                                                                                                                  3    UNDERSTAND CURRENT SITUATION
+performed every three to five years, with updates every year.
+                                                                                                                  3a Collect data
+                                                                                                                  3b Analyse data
+                                                                                                                  4    STRATEGY WORKSHOPS
+                                                                                                                  4a Participation workshops
+
+   STRATEGIC MANAGEMENT IN PRACTICE:                                                                              4b Revenue workshops
+
+   THE UEFA GROW STRATEGY DEVELOPMENT PROCESS                                                                     4c …
+                                                                                                                  5    DRAFT STRATEGY
+                                                                                                                  6    REVIEW & REFINE
+   In July 2020, UEFA Grow published its own framework for strategic planning as part of the Football             6a …
+   Federations of the Future initiative. The framework, which is itself a strategic management system,            7    FINALISATION WORKSHOP
+   contains a number of practical suggestions for how national associations can approach strategic                8    IMPLEMENTATION & MONITORING PLANNING
+
+   planning. It suggests an eight-step process to develop a strategy from scratch over a four-to-six-month
+   period. The main steps and timing are depicted below and the full framework can be found on UEFA
+                                                                                                                      Figure 2.3: Draft strategy development plan
+   Academy Online, the online platform set up by UEFA for sharing football resources.
+
+
+
+
+                                                      72                                                                                                                         73
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                                             CHAPTER 2: STRATEGIC MANAGEMENT
+
+
+
+    Strategic analysis              Strategy formulation (generation & choice)              Strategic planning,
+                                                                                             communication &         During the second of the three steps – strategy formulation – SMART goals (described in Section 4.1) are
+               External       Strategy options                                                implementation         defined along with initiatives to meet them. As will be described in detail below, goals are domain-specific.
+                                                                 Domain selection
+               analysis
+                                                                     strategy
+                                                                                                                     A domain is an area within the national association that is relevant to the organisation’s mission. As small,
+                                                                 (choice of focus)                                   complex organisations, national associations cannot focus on improving all domains all the time. Part of the
+                                                                                                  Planning,          strategy formulation process is therefore to choose which domains to focus on. We refer to this as the domain
+     Situation &                       Vision
+    performance                          &
+                                                                                               communication &       selection strategy. Then, the association needs to define a set of initiatives aimed at achieving the goals for
+                                                                                              implementation of
+       analysis                      SMART goals                                                                     each of the chosen domains. We refer to the choice of initiatives as domain navigation.
+                                                                                             the chosen strategy
+                                                                 Domain navigation
+                                                                      strategy                                       In the final step, covering strategic planning, communication and implementation, the strategic plan is drafted
+               Internal
+               analysis
+                                                                (choice of initiatives)                              and communicated, resources are allocated to the initiatives chosen and performance measurement and
+                                                                                                                     control systems are designed. As seen from Figure 2.4, these control systems then feed back to the situation
+                                                                                                                     and performance analysis so that the process can be started over again and the strategy updated if results
+                                     Performance measurement & control                                               do not meet expectations.
+
+                                                                                                                     > 3. Strategic analysis
+  Figure 2.4: Key elements of a strategic management system
+
+                                                                                                                     As discussed above, strategic management by national associations involves formulating goals, then designing
+The analytical model is divided into three distinct logical steps: 1) strategic analysis, 2) strategy formulation    initiatives and allocating resources to successfully achieve them.
+(generation and choice) and 3) strategic planning, communication and implementation. As illustrated in
+Figure 2.4, performance measurement and control provides a feedback loop from the strategic planning,                A strategic management system will work best if these goals and initiatives are based on a profound
+communication and implementation step into the initial analysis. In practical terms, this is the basis for a         understanding of the association’s external environment and an impartial appraisal of its internal resources
+yearly (or even quarterly) strategy review cycle.                                                                    and capabilities. Many strategies fail because they do not properly take into account the various internal
+                                                                                                                     and external factors that could adversely affect their outcomes. However, like organisations in other areas,
+The first step in the analytical model is strategic analysis, and the starting point for this is to analyse the      national associations can use a structured and thorough process of analysis to arrive at a useful understanding
+national association’s past performance. This is sometimes referred to as situation and performance analysis.        of the environment in which they operate.
+It is important to start with past performance because strategy should not ignore the association’s current
+situation. If, for example, an association is suffering from a lack of good sporting results at elite level, that    Strategic analysis can be thought of as the groundwork that needs to be carried out before effective strategies
+issue must be addressed in the strategy formulation process. If it is not, there is a risk that the strategy will    can be formulated and put into practice. This analysis comprises four broad and interconnected parts –
+be detached from the relevant context.                                                                               situation and performance analysis, external analysis, internal analysis and the potential identification of ideas
+                                                                                                                     for strategies. This section introduces these parts and the various tools that can be used for each of them.
+Once the association’s current situation has been assessed, the external analysis is performed as part of step 1.
+The purpose of the external analysis is to identify the relevant stakeholders and their preferences and interests.   > 3.1. Situation and performance analysis
+This is important because strategies cannot work without this information. External analysis also serves to
+identify trends, opportunities and threats.                                                                          The starting point for any strategy management (or review) process is an assessment of the association’s
+                                                                                                                     current situation, within the broader context of its overarching goals laid down in the association’s mission
+The third part of step 1 is the internal analysis, where the association’s strengths and weaknesses are assessed.    statement and statement of values, which are described further on.
+This involves looking at the resources and capabilities the organisation possesses or controls. This is not to be
+confused with the overall performance assessment carried out in the first step: one looks at the performance,        Situation and performance analysis helps management to define the overall scope of the strategy formulation
+while the other focuses on potential.                                                                                process, in terms of both the issues it needs to address and the duration of the resulting strategic plan. It
+                                                                                                                     involves defining the organisational context in which the strategy formulation process needs to operate,
+All three types of analysis in step 1 involve identifying insights and ideas for how the organisation can improve,   analysing the association’s past performance and studying the problems and challenges that need to be solved.
+which come into play in the options stage.
+
+
+
+
+                                                        74                                                                                                                  75
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                                            CHAPTER 2: STRATEGIC MANAGEMENT
+
+
+
+> 3.1.1. Organisational mission and values                                                                          DFB presidential board
+
+                                                                                                                    DFB president
+The ultimate purpose of strategy is to help organisations to fulfil their mission by continuously improving
+their performance in mission-related areas. As strategies are therefore formulated in terms of the mission,         First vice-president (amateur/regional associations)
+understanding what the mission is and what the core values are is the starting point for any situation and          First vice-president (deputy spokesman for the DFL presidential board)
+performance analysis.
+                                                                                                                    Treasurer
+> 3.1.2. Organisational context                                                                                     Vice-president (match operations and football development)
+
+                                                                                                                    Vice-president (CEO of the executive board of DFL Deutsche Fußball Liga GmbH)
+As part of the situation and performance analysis, the management team needs to clearly identify whether
+the strategic management processes will encompass either the whole of the national association, including           Vice-president (second deputy spokesman for the DFL presidential board)
+its member organisations or only specific organisational functions and units, because clearly establishing the
+                                                                                                                    Vice-president (DFL vice-president)
+boundaries will help to eliminate everything that is not immediately relevant thereby making the strategy
+formulation more focused.                                                                                           Representative for the DFL GmbH (consultative)
+
+                                                                                                                    Vice-president for youth football and refereeing
+For example, if one of the association’s key objectives is to improve football’s positioning and reputation, the
+strategies and plans intended to meet that objective will require the involvement of staff in such areas as the     Vice-president for qualifications and integration
+competitions, grassroots development, communications and marketing units. By placing these organisational
+                                                                                                                    Vice-president for equality, women’s and girls’ football
+boundaries during the situation and performance analysis, the cross-functional analysis can be conducted
+without involving units that are not relevant to the question in hand.                                              Vice-president for FSR and the DFB foundations
+
+                                                                                                                    General secretary
+The organisational context is typically determined by the structure of the organisation itself. Table 2.1, from
+the German Football Association (DFB.de, n.d.), shows the structure of the association’s presidential board.        Representative for the national team (consultative)
+The organisational context for the president and the general secretary is of course the association as a whole,     Sports manager of the youth and talent promotion programme (consultative)
+with all its various activities and domains, but strategic planning could also be conducted at unit level. For
+example, the unit reporting to the vice-president with responsibility for refereeing could use the strategic        Secretary for marketing, communication and CSR of DFB EURO GmbH (consultative)
+management framework to develop its own unit-specific objectives and strategies.                                    Honorary president
+
+The association’s past and current performance in various areas provides a good indication of its situation
+and helps to identify the issues that need to be addressed. However, situation and performance analysis in           Table 2.1: Structure of the presidential board of the German Football Association
+national associations is more complex than in profit-maximising companies. Since the purpose of most of
+these companies is to maximise shareholder value, performance can simply be measured in terms of economic
+                                                                                                                   Situation and performance analysis typically involves studying various key performance indicators (KPIs)
+and financial results – profits, return on investment, return on equity, etc.
+                                                                                                                   and comparing them with targets or previous results. National associations can also benchmark their
+                                                                                                                   results against those of similar organisations to get a clearer picture of their relative performance.
+In contrast, because most national associations are not in the business of maximising profits, performance
+must be evaluated in terms of the association’s stated purpose and goals. The overall goals of a national          Table 2.2 lists a number of typical KPIs that national associations can use as part of their situation and
+association are usually articulated in its mission statement and reiterated through various other operational      performance analysis. Related indicators are usually grouped together in categories to provide a better
+documents such as strategic plans and annual reports. The strategy formulation or review process must start        understanding of how the association is doing in each of those areas. In this example, the categories used
+with a thorough analysis of whether those goals are being achieved, and how efficiently.                           are financial, operational, internal and stakeholder satisfaction. While the list is not exhaustive, it offers ideas
+                                                                                                                   as to how an association could keep track of its performance and therefore be in a better position to assess
+                                                                                                                   the various problems and challenges it faces.
+
+
+
+
+                                                      76                                                                                                                   77
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                                     CHAPTER 2: STRATEGIC MANAGEMENT
+
+
+
+ Financial                                               Operational                                          > 3.1.3. Problems and challenges
+ Amount of funding received (from government,            Number of clubs, teams and players (per age
+ FIFA, UEFA or others)                                   group and gender)                                    It is important to identify and highlight the problems and challenges currently faced by the national association
+                                                                                                              in order to prioritise the way they are handled according to their importance and urgency. If challenges are
+ Funding as a percentage of total funds available                                                             critical and require an urgent response, the strategy formulation process should focus on designing action
+                                                         Number of matches played
+ per source                                                                                                   plans that result in short-term responses. It is not uncommon for certain overriding issues to drive the strategy
+                                                                                                              formulation process or to require the creation of ad hoc processes specifically designed to address those
+ TV rights revenues                                      Number of referees
+                                                                                                              issues as a priority.
+ Other media rights revenues                             Number of course participants
+                                                                                                              For example, an acute financial crisis in the economy at large that forces sponsors and other financial
+ Tournament fees                                         Number of volunteers
+                                                                                                              contributors to withdraw or reduce their contributions to grassroots programmes might require an urgent
+ Sponsorship revenues                                    Number of fan club members                           response that will drive the rest of the strategy formulation process. As discussed above, establishing the
+                                                                                                              organisational context, analysing the association’s performance and identifying problems and challenges will
+                                                         Ranking of national teams and club results in UEFA   make it easier to clarify the scope of the strategy in terms of the issues that need to be addressed and the
+ Ticket revenues
+                                                         competitions
+                                                                                                              time horizon within which to do so.
+ Course and training revenues                            Spectator numbers (per league and national team)
+                                                                                                              A typical strategic management system involves strategic plans with a defined time horizon of three to five
+ Revenue per employee                                    Number of category 1, 2, 3 and 4 stadiums            years and annual reviews of those plans. Under normal circumstances, a national association will not be
+ Net income                                              Number of winter training venues                     required to adjust the time horizons. However, dramatic external events (such as the COVID-19 pandemic)
+                                                                                                              may trigger challenges that require urgent plans with very short timeframes (sometimes as short as 3 to 6
+                                                         Number of mini-pitches at schools                    months), while other goals might require a longer-term strategy (e.g. a 10-to-15-year plan).
+ Internal                                                Stakeholder satisfaction
+                                                                                                              In all three cases – short, medium and longer-term plans – it is extremely important for the strategy formulation
+ Number of administrative employees                      Employee turnover                                    process to have a clearly defined time horizon, as different horizons require the use of different tools and
+                                                                                                              analytical approaches. For example, long-term plans typically require an analysis of long-term demographic,
+ Number of technical employees                           Public approval rates
+                                                                                                              economic and technological trends, whereas medium and short-term plans can be based on the current
+ Formal educational level of employees (number of                                                             situation.
+ employees with high school diplomas, bachelor’s         Number of complaints registered
+ and master’s degrees, etc.)                                                                                  Table 2.3 shows an example of situation and performance analysis in practice. Once the scope of the
+                                                                                                              strategy formulation process has been defined – and ideas for future strategy options have perhaps already
+                                                         Number of criminal investigations involving
+                                                                                                              been identified – the external and internal environments need to be analysed with a view to choosing and
+ Number of female managers                               the football community (coaches, players,
+                                                                                                              formulating effective strategies.
+                                                         club owners, etc.)
+
+ Number of training days completed by
+                                                         Sponsor turnover
+ administrative staff                                                                                            The UEFA Grow framework recommends that national associations analyse their performance in
+                                                                                                                 eight different areas: performance; participation; facilities; revenue; engagement; governance and
+ Number of new ideas and initiatives                     Journalists’ level of satisfaction
+                                                                                                                 regulation; women’s football; and enablers. Below is a (non-exhaustive) list of performance indicators
+                                                         Government and local authorities’                       for the eight areas.
+                                                         level of satisfaction
+
+                                                         Number of participants in the general meeting
+
+
+ Table 2.2: Performance indicators typically used by national associations
+
+
+
+
+                                                    78                                                                                                              79
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                                        CHAPTER 2: STRATEGIC MANAGEMENT
+
+
+
+
+ Performance                 Participation                   Facilities                Revenue                    > 3.2.1. Domain mapping
+ Number of elite teams       Participation across age        Number and type of        Value of public funding    Good strategic management relies on decision-makers fully understanding the external environment: knowing
+ by age group                groups                          facilities per region/    Total sports               what is needed to be successful and being able to identify trends and threats, etc. As mentioned previously,
+ Competition structures      Number of                       area by type              sponsorships & %           national associations are complex organisations. They are complex in their internal structure because of their
+ Number of                   participation coaches,          Demand for facilities     football                   democratic and political nature, but they are also complex in terms of the external environments in which
+ performance coaches,        officials and volunteers        per region/area by type   Total football broadcast   they operate.
+ officials and volunteers    Number, cost and                Utilisation of existing   and media rights
+ Information from elite      impact of participation         facilities                OTT & digital revenues     Many national associations are relatively small organisations, with an average of 30 to 70 employees.
+ clubs & academies           programmes                      Planned facility          Matchday revenues          However, national associations are active in many more areas than other similarly sized companies. A typical
+ Information on talent       Participant and non-            maintenance/              (including ticketing)      company with 50 employees and annual turnover of €5m would not normally be active in more than one
+ pathways                    participant attitudes           development
+                                                                                       ROI/SROI assessments       business area, but national associations have to operate in perhaps a dozen or so different areas. Because
+                             and motivations
+                                                                                       Existing NA assets         not all these areas are markets, they are normally referred to as ‘domains’, rather than ‘businesses’, ‘business
+                             Information from clubs,                                                              areas’ or ‘business units’.
+                             academies & schools
+                                                                                                                  A ‘domain’ refers to an area of the association’s activities where it is possible to identify an exchange of
+                             Governance                                                                           goods, services or money between the association and a defined group of stakeholders. Some of these
+ Engagement                                                  Women’s football          Enablers
+                             & regulation                                                                         domains are easy to identify and the exchange process is clearly understood. In the sponsorship domain, for
+                                                                                                                  example, the association sells space that it owns or controls, such as in stadiums and on websites, to generate
+ Social media                Compliance check                Women’s participation     Previous budget(s)         funds. Here, the stakeholder is a customer exchanging money for an advertising service, which is a defined
+ engagement (follows/        against UEFA Good               across age groups         Organisational charts &    sponsorship package involving clear rights and obligations. Other domains are equally straightforward, such
+ likes/group members)        Governance Framework            % of workforce and        decision-making bodies     as refereeing and stadiums. Here, the service and the stakeholder are easily identified, and the exchange
+ Number of members           Internal regulations/           organisation that is      e.g. Board, Standing
+                                                                                                                  process is simple to understand.
+ of the national team        guides                          female                    Committees, etc.
+ official supporters club    NA handbook                     Number of licensed/       Number of FTEs per         However, other domains, such as youth development, are much more complex. The first difficulty lies in
+ Data from recent            Memberships of                  professionalised clubs    department and roles
+                                                                                                                  understanding the service or the value that is being created. We normally understand youth development
+ football image research     social & international          Average number of         Job descriptions           as the process of giving more young people the opportunity to play football and providing talented young
+ (e.g. surveys)              regulatory bodies               attendees per women’s     Recruitment/hiring         players with adequate training and career prospects in football. So, the service is football club membership.
+                                                             elite match               plans                      But who is the stakeholder, and what is the exchange process? The primary stakeholder is the young player,
+                                                                                       KPI trackers               who may already be playing for a club or may wish to start playing. The player is involved in an exchange
+                                                                                       Calendar of events         with a club, so the club is also a stakeholder. Local government, schools and parents are also parties that
+                                                                                                                  can influence youth development and have a stake in it, so they too are stakeholders.
+
+                                                                                                                  When national associations want to understand their environment as part of their external analysis, mapping
+  Table 2.3: Situation and performance analysis in practice: the UEFA Grow framework
+                                                                                                                  the domains in which they are (or could be) active is an important starting point. There are no templates or
+                                                                                                                  blueprints for domain mapping in national associations, but typically an association will define its domains as
+> 3.2. External analysis                                                                                          8 to 15 main areas of activity in which it works to collect funds, generate revenue, perform in international
+                                                                                                                  competitions, increase the number of active players or improve stakeholders’ football experience. A framework
+Just like organisations in other sectors, national associations operate in an increasingly complex environment    for describing the most relevant domains (and the related subdomains) of a national association has been
+and are influenced by dozens of diverse factors, many of which are interconnected. Therefore, as discussed        developed by UEFA Grow and an example is shown in Table 2.4.
+earlier, effective strategies can only be formulated with a profound understanding of the organisation’s
+external environment and the various influences that may favourably or adversely affect outcomes.
+
+
+
+
+                                                        80                                                                                                              81
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                                                    CHAPTER 2: STRATEGIC MANAGEMENT
+
+
+
+
+                                                                                                                                                                     Factors determining
+                                                                                                                                Domain           Stakeholders                                         Key success factors
+The identification and mapping of the domains in which the association is active is sometimes a sufficient                                                           satisfaction
+starting point for developing a strategy. As will be described later in this chapter, goals, objectives and strategies
+must be formulated and developed for each domain. Management may, however, decide to focus more                                 Youth            Children            - Having fun                     - Working with clubs to set
+on some domains than others. Information on expected results, costs, investment and revenue will all help                       development                          - Identifying with                 standards regarding atmosphere
+                                                                                                                                                                       famous players                    in youth teams
+with this decision and therefore help to produce coherent strategic management. Where the dynamics of a
+                                                                                                                                                                     - Having successful             - Training of and communication
+specific domain are not clearly understood, analysis can be carried out in order to enhance understanding.
+                                                                                                                                                                       experiences                       with youth coaches
+Two such analytical methods (key success factors and PEST analysis) are described below.                                                                             - Feeling good
+                                                                                                                                                                     - Becoming good
+                                                                                         Governance          Women’s                                                   at football
+       Elite         Participation       Facilities      Revenue        Engagement       & regulation        football
+
+  National teams        Players                           Product                                          National teams                        Parents             - Seeing their children         - Clubs’ communication with
+                                       National team                        Image
+                      Programmes                       Public funding                     Governance                                                                   happy                             parents, schools and local
+    Elite clubs
+                        Partners                        Sponsorship                                       Elite competitions                                         - Seeing their children            government
+                                        Professional                    Communication
+  Leagues & cups     Amateur clubs                       Broadcasts                                         Participation
+                                                                                                                                                                       improve technically,           - Image of football as useful
+  Flexible formats   Leagues & cups      Amateur
+                                                       & media rights
+                                                                         Engagement      Administration
+                                                                                                                                                                       socially and psychologically      to society
+                                                                                                             Leadership
+                       Amateur
+                                                         Matchday
+                                                                                                              workforce                                              - Feeling safe and secure       - Image of football as healthy
+  Elite workforce                                        revenues
+                       workforce
+                                                                        Fan experience                      Commercial
+                                                                                                                                                                       leaving their children
+    Education          Education      Usage & demand
+                                                       New business                                                                                                    at training
+                                       management                                         Regulations         Visibility
+                                                       development        Influence                         & perception
+                                                                                                                                                                     - Having facilities close
+  Player pathway     Player pathway
+                                                                                                                                                                       to home
+
+                                                                                                                                                 Schools             - Seeing children grow,         - Developing club facilities
+  Table 2.4: An example of national association domains and subdomains
+                                                                                                                                                                       socially and individually
+
+                                                                                                                                                 Local               - Social and health aspects      -Making access to places to do
+> 3.2.2. Understanding key success factors                                                                                                       government                                              sport easy and cheap
+                                                                                                                                                                                                      - Communicational sports and
+Key success factors (KSFs) are elements within a specific domain that determine how an organisation can                                                                                                  recreational exercise possibilities
+be successful, i.e. achieve its goals.
+
+KSFs are identified by answering two simple questions:                                                                           Table 2.5: Identifying KSFs in youth development
+
+
+    1. What drives and determines stakeholders’ behaviour in this domain?                                                      > 3.2.3. PEST analysis
+    2. How can our national association meet stakeholders’ expectations in this domain?
+                                                                                                                               Another way to gain a better understanding of a national association’s domains is to analyse political,
+A variation on the second question is:                                                                                         economic, social and technological (PEST) trends.
+
+  2a. How can our national association meet stakeholders’ expectations better than other organisations?                       Under this framework, each domain is examined for its exposure to changes in PEST trends. In the above
+                                                                                                                               example of youth development, an ageing population and people having children later in life might change
+Trying to understand the KSFs in each of an association’s domains is a very interesting exercise and can in                    the KSFs and require adaptation of the sport and communication between clubs and parents. In the same
+many cases improve the association’s ability to obtain results, since its strategies become easier to formulate                vein, advances in technology, the explosive growth of social media and the emergence of new social media
+and therefore more effective. Table 2.5 provides an example of KSF analysis in a specific domain.                              platforms also change KSFs and need to be responded to.
+
+
+
+
+                                                            82                                                                                                                    83
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                                                CHAPTER 2: STRATEGIC MANAGEMENT
+
+
+
+It is important for a PEST analysis to be domain-specific, which typically also means that it should be limited        > 3.3.1. Identification of resources and capabilities
+geographically. For example, looking at the hypothetical trends in Table 2.6, immigration, integration of
+minorities and economic disparities may be major issues in some countries but not be at all relevant in others.        Even the most carefully designed and well-articulated goals may amount to nothing if they are not grounded
+                                                                                                                       in reality. Unrealistic goals can sometimes do an organisation more harm than good, leading to a loss of faith
+ Political                                                   Technological                                             and goodwill among internal and external stakeholders because the organisation is seen as running the risk
+                                                                                                                       of engaging in projects that it does not have the resources or capabilities to carry through.
+ Market orientation                                          Social media platforms
+
+ Immigration and integration                                 Multimedia and virtual reality                            For this reason, before starting on a strategy, national associations must take stock of the resources and
+                                                                                                                       capabilities at their disposal, i.e. those that they can readily access and control. This is usually straightforward,
+ Political correctness                                       Big data and data analytics                               and most associations will already have a reasonable overview of what is available (or will be available) to
+ Corporate social responsibility                             Internet of things                                        them over the strategic management timeframe, without the need for a formal process.
+
+ Sustainability                                              Blockchain                                                A national association’s resources can usually be grouped together in four categories – financial resources,
+                                                                                                                       tangible assets, intangible assets and human resources, as illustrated in Table 2.7. Some resources can be
+ Economic                                                    Social
+                                                                                                                       measured directly using various metrics. The national association’s accounting, financial reporting, budgeting
+ Disparities between high- and low-growth areas              Ageing population                                         and information systems will determine the number of metrics and how detailed they are.
+
+ Public spending cuts                                        Greater global awareness and exposure
+                                                                                                                                                Financial              Tangible               Intangible            Human
+                                                             Constraints regarding schedule of training sessions                                resources              assets                 assets                resources
+ Reduced contributions from national lotteries
+                                                             because of parents’ own working schedules
+                                                                                                                        Examples                - Cash reserves        - Land                 - Brands              - Staff skills and
+ Declines in disposable income                                                                                                                  - Future funding       - Buildings            - Trademarks             capabilities
+                                                                                                                                                - Revenue             - Facilities           - Reputation          - Staff’s potential to
+ Inflation of national currency                                                                                                                   generation           - Equipment            - Know-how               learn and produce
+                                                                                                                                                - Borrowing                                  - Patents                ideas
+                                                                                                                                                  capacity                                    - Databases and
+  Table 2.6: An example of some hypothetical PEST trends                                                                                                                                        contact
+                                                                                                                                                                                                information
+> 3.2.4. Deriving implications: opportunities, threats, strategic issues and options                                    Measurable              - Revenues             - Value of            - Value of           - Staff’s
+                                                                                                                        indicators              - Gross profit           tangible assets        intangible             qualifications
+When looking at an organisation’s domains, its KSFs and the overall PEST factors affecting them, strategic                                      - Credit rating        - Size and              assets              - Pay rates
+analysts may be capable of formulating preliminary actions that take advantage of any opportunities or react                                    - Cash flows             capacity of          - Budgets for        - Staff turnover
+to any threats. It is important that ideas for both types of action be recorded and fed into a repository of                                                             facilities             development
+issues and options for potential strategies.                                                                                                                                                    of systems and
+                                                                                                                                                                                                know-how
+> 3.3. Internal analysis                                                                                                                                                                      - Social media
+                                                                                                                                                                                                engagement
+A national association’s ability to efficiently execute its strategic plans depends on its strengths and weaknesses,
+the resources at its disposal and the capabilities of its staff. As discussed above, national associations should
+therefore carry out an objective appraisal of these, using the tools described below.                                    Table 2.7: Typical national association resources
+
+
+
+
+                                                        84                                                                                                                     85
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                                                  CHAPTER 2: STRATEGIC MANAGEMENT
+
+
+
+> 3.3.2. Analysis of strengths and weaknesses                                                                      The strengths and weaknesses grid comprises four quadrants:
+
+Strategies should increase the likelihood of success by leveraging areas where the national association is                • Key strengths: areas where the national association has valuable resources and capabilities that
+strong and strengthening areas where it is weak. Internal analysis helps the organisation to determine where               are unique or where it outscores other associations.
+its strengths and weaknesses lie. One way of objectively doing this is to score and rank all resources and
+capabilities on the basis of both their importance and their relative strength and then map them on a grid.               • Key weaknesses: areas that are important for the success of the national association, but where
+                                                                                                                           it is not performing as well as it should.
+Importance is linked to how valuable a given resource is for success (usually following a KSF analysis). As
+there is no scientific way of scoring importance, it is recommended that more than one person provide an                  • Superfluous strengths: areas where the national association is strong, but which are largely
+assessment, in order to produce a mathematical average or a mutually agreed score.                                         irrelevant to its success.
+
+Relative strength indicates how well the organisation performs when it comes to a given resource or capability.           • Irrelevant weaknesses: areas where the national association is weak, but which are also largely
+If the scoring is on a scale of 1 to 10, a score of 5 would indicate that the organisation is about average with           irrelevant to its success.
+regard to that particular resource or capability. Unlike the scoring for importance, the scoring for relative
+strength may be based on scientific methods, and whenever measurable indicators are available, scores can          Understanding strengths and weaknesses is extremely important when assessing strategy
+be calculated by comparing those indicators with equivalent data for similar national associations.                robustness, as strategies that rely on areas where the national association is generally weak
+                                                                                                                   are less likely to be successfully carried out.
+After scoring (as in the example in Table 2.8), resources are ready to be plotted on the strengths and
+weaknesses grid, as shown in Figure 2.5.
+                                                                                                                                                   10
+ Resource                                         Importance                          Relative strength
+
+ Facilities                                       8                                   1
+
+
+
+
+                                                                                                                               Relative strength
+                                                                                                                                                                                     I              F    H
+ Staff                                            6                                   5                                                                 Superfluous strengths                    Key strengths
+ National team                                    6                                   3                                                            5                                     B   G                        E
+
+ Management                                       6                                   3                                                                    Irrelevant           J        C       Key weaknesses
+                                                                                                                                                           weaknesses
+                                                                                                                                                                                         D
+ Marketing                                        9                                   5
+
+ Fan database                                     7                                   7                                                                                                                           A
+
+ Calendar planning                                6                                   5                                                             1                              5                                        10
+                                                                                                                                                                        Strategic importance
+ Training methods                                 7                                   7
+
+ Brand                                            5                                   7                            A.   Facilities                                  E. Marketing                             I.   Brand
+                                                                                                                   B.   Staff                                       F. Fan database                          J.   Network
+                                                                                                                   C.   National team                               G. Calendar planning
+ Network                                          4                                   4
+                                                                                                                   D.   Management                                  H. Training methods
+
+
+  Table 2.8: An example of scorings for national association resources                                                  Figure 2.5: Strengths and weaknesses grid (based on the scores in Table 2.8)
+
+
+
+
+                                                      86                                                                                                                            87
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                                              CHAPTER 2: STRATEGIC MANAGEMENT
+
+
+
+An analysis of strengths and weaknesses can also be used to assess where internal development is required.            by that point in time. When an association develops a vision, it develops a statement and a programme of
+Areas that are important for success where the national association is weak need to be addressed, and there           intent. Doing that is in itself a daunting task, but communicating that vision can be even more daunting.
+are usually two ways of doing so:                                                                                     There is, however, no alternative to developing and communicating a vision if a national association wants
+                                                                                                                      to increase its chances of putting its resources to the best use in order to accomplish its mission. At the
+   1. Building capabilities internally: national associations can invest in building facilities, training             same time, a vision statement is not normally sufficiently precise to give direction to a national association
+      employees, developing procedures, etc.                                                                          throughout a planning period, merely serving as a framework for setting out more detailed goals.
+
+   2. Outsourcing the task: where the required expertise lies outside the core competences of the                     Goals can be a lot of things. A generic goal (e.g. ‘we want to develop youth participation’) is normally not
+      national association, or where internal capabilities cannot easily be built, associations may choose to         specific enough to build a strategy around, because the organisation will not know exactly what initiative
+      outsource activities to third parties. For example, it is common to outsource travel logistics to travel        needs to be launched to achieve the goal. For this reason, strategists often apply the concept of SMART
+      agencies that are in a better position to perform that task.                                                    goals. A SMART goal is specific, measurable, attainable, relevant and time-bound. For example, ‘By 2024,
+                                                                                                                      we aim to have 20,000 registered players in the 9 to 16 age group’. SMART goals are an excellent starting
+All ideas for action that result from the internal analysis should be recorded and fed into a repository of issues    point when developing an action plan.
+and options for potential strategies.
+                                                                                                                      There are various versions of the SMART (or SMARTER) concept, which was first advocated by Doran (1981),
+> 4. Strategy formulation (generation and choice)                                                                     but they all describe the desirable attributes of an organisation’s goals using the SMART/SMARTER mnemonic.
+                                                                                                                      Table 2.9 shows variations.
+A strategy is a set of actions and decisions aimed at achieving a specific goal. Although the strategic analysis
+carried out so far does not have to include ideas for goals and actions, such ideas might already have been           In its simplest form, a SMART goal needs to be:
+generated as a natural consequence of insights and analysis, just not in a structured manner. For example,
+if a specific stakeholder group and a KSF were analysed in connection with women’s football and certain                    1. Ambitious but realistic
+barriers were revealed, it would be natural to generate ideas for initiatives to break down these barriers.                2. Measurable (hence also time-bound)
+                                                                                                                           3. Relevant (i.e. aligned with the association’s overall strategy and mission)
+A structured approach to strategy formulation follows three logical steps:
+                                                                                                                       Letter           Key term             Subsidiary terms
+   1. Formulating the vision and SMART goals
+   2. Generating ideas for achieving the goals                                                                         S                Specific             Significant, stretching, simple
+   3. Prioritising the goals and actions
+                                                                                                                       M                Measurable           Meaningful, motivational, manageable
+> 4.1. Formulating the vision and SMART goals                                                                                                                Appropriate, achievable, agreed, assignable, actionable, ambitious,
+                                                                                                                       A                Attainable
+                                                                                                                                                             aligned, aspirational
+It is not always easy to differentiate between a national association’s mission, vision and goals.
+                                                                                                                       R                Relevant             Realistic, resourced, resonant
+A mission, or mission statement, is a description of the organisation’s reason for being, i.e. a description of its                                          Time-oriented, time-framed, timed, time-based, time-boxed, timely,
+purpose and area of activity. Mission statements are timeless and very rarely changed or rewritten. An example         T                Time-bound
+                                                                                                                                                             time-specific, timetabled, time-limited, trackable, tangible
+of a mission statement is UEFA’s: “Our mission is to ensure football is the most played, trusted, competitive
+and engaging sport” (UEFA, 2019). The statement clearly defines the area in which the organisation operates            E                Evaluate             Ethical, excitable, enjoyable, engaging, ecological
+and also summarises the principles on which it bases its activities. Mission statements help organisations to          R                Re-evaluate          Rewarded, reassess, revisit, recordable, rewarding, reaching
+communicate their purpose to internal and external stakeholders.
+
+A vision is different. A vision is a statement of intent which is valid for a specific time period. When national       Table 2.9: Formulating SMART(ER) objectives
+associations talk about their ‘Vision 2024’ or ‘Vision 2026’, they are talking about what they want to achieve
+
+
+
+
+                                                        88                                                                                                                   89
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                                        CHAPTER 2: STRATEGIC MANAGEMENT
+
+
+
+Draebye and Palmieri (2017) explain how the Danish Football Association (DBU) made an important
+change to the way it formalised and coordinated its planning system in 2016. Before that, the DBU was             the organisation. This is especially true if a new domain is under discussion. In these cases, the second
+used to its committees setting up working groups whenever they saw the need. This resulted in a myriad            approach is more appropriate: leaning on the experiences and benchmarks in other organisations and
+of groups, making it difficult to coordinate and keep track of the work being done.                               bringing in outside experts. International associations such as UEFA often try to facilitate experience-sharing
+                                                                                                                  among national associations, such as through UEFA Academy Online, an online platform for sharing football
+In a bid to introduce a common strategic planning framework throughout the organisation, the DBU first            resources and experience.
+set up a four-year planning cycle with a vision for the organisation and goals for each main domain: sport,
+organisation, commercial and image. All committees and working groups had to use a strategic template             An example of the third approach, making use of specific idea-generation methods in dedicated workshops,
+based on SMART goals. The various chairpersons were then responsible for defining the strategic objectives,       sprints or hackathons, is the Football Association of Norway’s use of design-thinking methods to improve fan
+indicating precise measures to achieve them and defining the strategies. The committees were asked to draft       experience at the national stadium. The fans’ journey to the stadium was mapped and the so-called pains
+a small strategic plan for their working groups using a template in the form of a table with four columns: 1)     and gains were analysed. This enabled the NFF to identify problems that could be resolved or add elements
+four to six overall strategic objectives; 2) the measures; 3) the targets (or SMART goals) for each of the four   that could create a better experience (Matthews, 2016).
+planning years; 4) summaries of actions.
+                                                                                                                  > 4.3. Prioritising the goals and actions: domain selection and navigation
+Redefining the committees, working groups, templates and procedures took up around 20% of a department
+head’s time for a year, but the actual work on developing goals and plans for each of the subdomains did          Once the three analytical stages (situation and performance analysis; external analysis; and internal analysis)
+not take more than a few days at committee level at the beginning of the planning cycle. The plans were           have been completed and used to generate and record ideas, the strategy team should now find themselves
+then fleshed out at departmental level.                                                                           with a large number of goals and actions. Since most national associations do not have unlimited resources,
+                                                                                                                  and since most goals take time and resources to achieve, organisations need to choose which areas to focus
+There is no direct relationship between a vision and strategic issues, as issues are domain-specific, whereas     on (domain selection) and, for each of the areas chosen, which initiatives to invest in (domain navigation).
+a vision defines the route of the organisation as a whole. However, it is important for the vision to take        Both the domains and initiatives then need to be listed according to their priority.
+account of the issues highlighted.
+                                                                                                                  For this, a tool referred to as an impact/complexity matrix can be used (see Figure 2.6).
+A vision is broad, typically has a duration of three to five years and can be considered the title or heading
+of the strategic plan for that period. This is why strategic plans are often named after the final year they
+cover, e.g. ‘Vision 2024’.
+
+> 4.2. Generating ideas for actions                                                                                                  High
+                                                                                                                                            Strategic items/investments:           Low hanging fruits/
+Once SMART goals have been formulated for each strategic domain, work starts on developing an action                                          investigate/plan further             quick wins: prioritise
+plan for how to achieve the goals. There are three main ways to identify actions for achieving goals:
+
+
+
+
+                                                                                                                                 Impact
+   1. Experience within the organisation
+   2. Experience from other organisations and external consultants                                                                                  Not worth it                           Fill-ins
+   3. Specific idea-generating methods such as design thinking, creativity workshops,                                                 Low
+      sprints and hackathons
+                                                                                                                                            High                                                          Low
+The most commonly used approach is the first: using existing experience within the organisation. Based                                                                 Complexity
+on the internal and external analysis and the SMART goals, the organisation’s experts on the matter in
+question (for example, the marketing and sponsorship experts) sit down and discuss a plan for achieving
+the goal. Different ideas can be generated and then later placed in order of priority (see below).
+                                                                                                                    Figure 2.6: Impact/complexity matrix
+In some situations it is not sufficient to base the generation of ideas on the expertise and experience within
+
+
+
+
+                                                     90                                                                                                                 91
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                                              CHAPTER 2: STRATEGIC MANAGEMENT
+
+
+
+This type of matrix evaluates and scores the domains and initiatives in two dimensions:                             How successful this is depends on communication, the creation of appropriate organisational structures,
+                                                                                                                    budgeting and control, and the evaluation of individual performance. These elements will be discussed in
+   1. Impact: What is the potential impact on the organisation’s mission, vision or goals?                          greater detail in the subsequent chapters of this handbook, but for the purpose of completeness a brief
+   2. Complexity: What is the complexity, cost, effort or risk?                                                     description will follow.
+
+Based on the assessment, the domains and initiatives are then positioned in the matrix. They should be              > 5.1. Writing and communicating a strategic plan
+evaluated in separate processes. Domains and initiatives that have the biggest impact while being low on
+complexity should be prioritised. If the organisation’s resources are not exhausted with this ‘low-hanging          The starting point for communicating the association’s strategy to the stakeholders is to put it into writing. This
+fruit’ or ‘quick wins’, or if there are significant gaps between the organisation’s vision and objectives and       document, the strategic plan, can be drafted in different versions to suit the audience and purpose. Versions
+the identified actions, the organisation needs to investigate other strategic projects with high impact and         for internal planning are typically more detailed and operational and contain deadlines and deliverables,
+high complexity, perhaps by drafting a business plan for each project and deciding on its feasibility based         whereas public documents are more general. It is up to the organisation to decide how much detail to include.
+on these further studies.
+                                                                                                                    There is no standard, one-size-fits-all format for strategic plans, but the following sections are common:
+> 5. Strategic planning, communication and implementation
+                                                                                                                       1. Introduction and context
+The last and often critical step in strategic management is implementing the domain goals and initiatives              2. Mission, values and vision
+in order of priority.                                                                                                  3. Focus areas
+                                                                                                                       4. Goals and objectives
+While effective implementation largely depends on how well the strategies have been drafted, well-formulated           5. Initiatives
+strategies do not automatically produce the best results. Research in this particular area has highlighted the
+fact that organisations struggle to do justice to effective strategies by properly executing them (Kikulis, 2000;   > 5.2. Designing appropriate organisational structures
+Shilbury & Ferkins, 2011; Tawse & Tabesh, 2020). There are a number of possible reasons for discrepancies
+between the strategies and their implementation:                                                                    Ideally an association’s structure reflects its strategy. If a subdomain of elite football, such as the men’s under-21
+                                                                                                                    team, is a priority, the related initiatives should be placed in the organisation chart either as a departmental
+   1. Strategies are not known or fully understood by those responsible for carrying them out.                      line function or as a subdepartment of a line function.
+
+   2. There is resistance to change within the national association and among its stakeholders (for a               Line functions are the home of an organisation’s key activities or domains, such as national teams, grassroots
+      variety of reasons, such as fear of anything new, fear of a loss of privileges, or personal insecurities).    or competitions management. Well-defined line functions improve an organisation’s effectiveness because each
+                                                                                                                    function is composed of fewer people and typically has a manager coordinating and running the function.
+   3. The individual or stakeholder lacks clarity about the expectations or lacks suitable experience.              People working in a specific line function will have an easier time engaging with the specific tasks, and both
+                                                                                                                    formal and social control is made easier. If the association’s strategy changes radically and priority is given
+   4. Employees and stakeholders are not sufficiently motivated or incentivised to fully pursue the strategies.     to new domains, it will make sense for management to review the organisation chart and create new units.
+
+   5. There is a lack of control and follow-up.                                                                     > 5.3. Allocating resources and budgets
+
+A common thread running through all these obstacles is the management’s failure to fully understand that            The budgeting process that follows strategy formulation is typically not a one-off process, but often has many
+a national association does not act on its own, but that it does so through individuals: leaders, employees,        repetitions and loops. The starting point should always be the draft strategic plan, on the basis of which,
+volunteers, service providers, etc. How well a strategy is implemented therefore depends on how well these          budgets should be defined for functions and activities. If there are budget or resource constraints, the strategic
+individuals are motivated to produce the desired results.                                                           plan may need to be revised, then the budget adjusted accordingly, before being approved by the executive
+                                                                                                                    committee. Once both the strategic plan and the budget have been finalised, they can be made operational.
+
+
+
+
+                                                       92                                                                                                                    93
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT                                                                                                                                        CHAPTER 2: STRATEGIC MANAGEMENT
+
+
+
+> 5.4. Designing reporting and control systems                                                                     REFERENCES AND FURTHER READING
+
+It is one thing for an organisation to define the budget for its various units, and it is another to ask those     • DFB.de (n.d.). Verbandsstruktur, das DFB-Präsidium. Retrieved on 27 December 2020 from https://www.
+units to report back to the financial controller, HR department or general secretary on the progress of             dfb.de/verbandsstruktur/praesidium
+activities, revenue generation and spending. Different associations have different traditions, requirements        • Doran, G. T. (1981). There’s a S.M.A.R.T. way to write management’s goals and objectives. Management
+and standards for reporting. Some have very formal, structured rules, so that every month or quarter, the           Review, 70(11), 35–36.
+cost and revenue centres must report back on budget progress and will be controlled and receive feedback.          • Draebye, M., & Palmieri, A. (2017). The Danish Football Association (DBU) Case A. SDA Bocconi.
+Other associations have no reporting system, and do everything at year-end when the consolidated results           • Draebye, M., & Raju, P. N. (2012). Strategic management of sports governing bodies. Greyhouse
+are calculated. The advantage of a structured system is that if something is not going according to plan, it        Knowledge.
+can be discovered early and corrective actions taken. The disadvantage is that it costs more to run. Reporting     • Fawtrust.cymru (nd). Purpose, vision & goals. Retrieved on 27 December 2020 from www.fawtrust.
+and control systems do not necessarily need to limit themselves to financial measures; they could also be           cymru/who-we-are/purpose-vision-goals
+extended to include reporting back on and controlling strategic goals and objectives.                              • Fishbein, M., & Ajzen, I. (1975). Belief, attitude, intention, and behavior: an introduction to theory and
+                                                                                                                    research. Addison-Wesley.
+> 5.5. Defining individual tasks, responsibilities and incentive systems                                           • Grant, R. (2019). Contemporary strategy analysis (9th ed.). Wiley.
+                                                                                                                   • Kikulis, L. (2000). Continuity and change in governance and decision making in national sports
+Ultimately organisations need to translate the overall organisational goals into individual tasks and               organisations: institutional explanations. Journal of Sports Management, 14(4), 293–320.
+responsibilities. This process is often referred to as MBO, or management by objectives and involves individual    • Kraljic, P. (1983). Purchasing Must Become Supply Management. Retrieved from www.hbr.org/1983/09/
+managers and employees being given, or negotiating, a number of annual objectives in different areas. These         purchasing-must-become-supply-management
+objectives are linked to the strategic objectives of that unit. Depending on how the system is implemented,        • Matthews, T. (2016, 30 June – 2 July). Designing Football Rituals for Heightened Fan Experiences
+the employee will discuss their progress periodically with their line manager, and corrective action will be         [Conference presentation]. The Beautiful Game: The Poetics and Aesthetics of Soccer in Transnational
+taken if progress is not according to plan. Bonuses or other incentive systems could be linked to results.           Perspective. Basel, Switzerland.
+                                                                                                                   • Shilbury, D., & Ferkins, L. (2011). Professionalisation, sport governance and strategic capability.
+> 6. Conclusion                                                                                                      Managing Leisure, 16, 108–127.
+                                                                                                                   • Tawse, A., & Tabesh, P. (2020). Strategy implementation: a review and an introductory framework.
+The approach to strategic management that has been described in this chapter will hopefully serve as inspiration     European Management Journal.
+for any national association that is looking to modify its existing systems. Every organisation is different,      • UEFA (2019). Together for the Future of Football: UEFA Strategy 2019–2024. Retrieved on 29 October 2020
+and it is important for processes, formats and timing to be suited to the particular organisational context.         from www.uefa.com/MultimediaFiles/Download/uefaorg/General/02/59/06/32/2590632_DOWNLOAD.pdf
+However, research has shown that the chances of success increase if an organisation defines its goals based        • UEFA (2020). GROW, Leading and Supporting the Growth of European Football. Printed Manual.
+on analytical insights into the internal and external environment, sets out the path to achieving these goals,
+and allocates the right amount of time and effort to putting the strategies into practice.
+
+Much has been written on the subject of strategic planning and analysis, both in sport and other industries.
+The same basic methodologies apply to all types of organisation, even if the internal and external environments
+have different dynamics, but the fundamentals on which good strategies are based remain the same: (1) a
+profound understanding of the environment in which the organisation operates; (2) an objective appraisal
+of the organisation’s resources and capabilities; (3) the formulation of clear goals and objectives; and (4)
+effective implementation.
+
+
+
+
+                                                      94                                                                                                                95
+

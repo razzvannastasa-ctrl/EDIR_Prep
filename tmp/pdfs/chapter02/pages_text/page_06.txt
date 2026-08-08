@@ -1,0 +1,66 @@
+76
+77
+	> 3.1.1. Organisational mission and values
+The ultimate purpose of strategy is to help organisations to fulfil their mission by continuously improving 
+their performance in mission-related areas. As strategies are therefore formulated in terms of the mission, 
+understanding what the mission is and what the core values are is the starting point for any situation and 
+performance analysis.
+	> 3.1.2. Organisational context
+As part of the situation and performance analysis, the management team needs to clearly identify whether 
+the strategic management processes will encompass either the whole of the national association, including 
+its member organisations or only specific organisational functions and units, because clearly establishing the 
+boundaries will help to eliminate everything that is not immediately relevant thereby making the strategy 
+formulation more focused.
+For example, if one of the association’s key objectives is to improve football’s positioning and reputation, the 
+strategies and plans intended to meet that objective will require the involvement of staff in such areas as the 
+competitions, grassroots development, communications and marketing units. By placing these organisational 
+boundaries during the situation and performance analysis, the cross-functional analysis can be conducted 
+without involving units that are not relevant to the question in hand.
+The organisational context is typically determined by the structure of the organisation itself. Table 2.1, from 
+the German Football Association (DFB.de, n.d.), shows the structure of the association’s presidential board. 
+The organisational context for the president and the general secretary is of course the association as a whole, 
+with all its various activities and domains, but strategic planning could also be conducted at unit level. For 
+example, the unit reporting to the vice-president with responsibility for refereeing could use the strategic 
+management framework to develop its own unit-specific objectives and strategies.
+The association’s past and current performance in various areas provides a good indication of its situation 
+and helps to identify the issues that need to be addressed. However, situation and performance analysis in 
+national associations is more complex than in profit-maximising companies. Since the purpose of most of 
+these companies is to maximise shareholder value, performance can simply be measured in terms of economic 
+and financial results – profits, return on investment, return on equity, etc.
+In contrast, because most national associations are not in the business of maximising profits, performance 
+must be evaluated in terms of the association’s stated purpose and goals. The overall goals of a national 
+association are usually articulated in its mission statement and reiterated through various other operational 
+documents such as strategic plans and annual reports. The strategy formulation or review process must start 
+with a thorough analysis of whether those goals are being achieved, and how efficiently. 
+DFB presidential board
+DFB president
+First vice-president (amateur/regional associations)
+First vice-president (deputy spokesman for the DFL presidential board)
+Treasurer
+Vice-president (match operations and football development)
+Vice-president (CEO of the executive board of DFL Deutsche Fußball Liga GmbH)
+Vice-president (second deputy spokesman for the DFL presidential board)
+Vice-president (DFL vice-president)
+Representative for the DFL GmbH (consultative)
+Vice-president for youth football and refereeing
+Vice-president for qualifications and integration
+Vice-president for equality, women’s and girls’ football
+Vice-president for FSR and the DFB foundations
+General secretary
+Representative for the national team (consultative)
+Sports manager of the youth and talent promotion programme (consultative)
+Secretary for marketing, communication and CSR of DFB EURO GmbH (consultative)
+Honorary president
+
+Situation and performance analysis typically involves studying various key performance indicators (KPIs) 
+and comparing them with targets or previous results. National associations can also benchmark their 
+results against those of similar organisations to get a clearer picture of their relative performance.
+Table 2.2 lists a number of typical KPIs that national associations can use as part of their situation and 
+performance analysis. Related indicators are usually grouped together in categories to provide a better 
+understanding of how the association is doing in each of those areas. In this example, the categories used 
+are financial, operational, internal and stakeholder satisfaction. While the list is not exhaustive, it offers ideas 
+as to how an association could keep track of its performance and therefore be in a better position to assess 
+the various problems and challenges it faces.
+Table 2.1: Structure of the presidential board of the German Football Association
+CHAPTER 2: STRATEGIC MANAGEMENT
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT

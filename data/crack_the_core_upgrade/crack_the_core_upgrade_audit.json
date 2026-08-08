@@ -1,0 +1,16 @@
+{
+  "questions": 2545,
+  "sessions": 86,
+  "page_mappings": 2545,
+  "unique_source_pages": 977,
+  "questions_with_revised_distractors": 1035,
+  "distractors_revised": 1325,
+  "remaining_giveaway_flags": 0,
+  "stage_hashes": {
+    "crack_the_core_page_map.json": "af9c36cfd627e913d976e2118bf959d419fe5eda1d9e35936af848ed68b9a769",
+    "crack_the_core_distractor_upgrade.json": "19555fb015bd1412fda95e5f1ae89a10413c1eaf7e405391967769736914a449"
+  },
+  "applied_at": "2026-08-08T16:11:10.459250+03:00",
+  "database_backup": "C:\\Users\\Razvan\\Documents\\Radiologie\\backups\\Crack_the_Core_upgrade\\edir_prep.before_crack_the_core_upgrade_20260808_161110.db",
+  "transaction": "committed"
+}

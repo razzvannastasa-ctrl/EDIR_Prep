@@ -1,0 +1,63 @@
+92
+93
+This type of matrix evaluates and scores the domains and initiatives in two dimensions: 
+1.	Impact: What is the potential impact on the organisation’s mission, vision or goals?
+2.	Complexity: What is the complexity, cost, effort or risk? 
+Based on the assessment, the domains and initiatives are then positioned in the matrix. They should be 
+evaluated in separate processes. Domains and initiatives that have the biggest impact while being low on 
+complexity should be prioritised. If the organisation’s resources are not exhausted with this ‘low-hanging 
+fruit’ or ‘quick wins’, or if there are significant gaps between the organisation’s vision and objectives and 
+the identified actions, the organisation needs to investigate other strategic projects with high impact and 
+high complexity, perhaps by drafting a business plan for each project and deciding on its feasibility based 
+on these further studies.
+	> 5. Strategic planning, communication and implementation
+The last and often critical step in strategic management is implementing the domain goals and initiatives 
+in order of priority. 
+While effective implementation largely depends on how well the strategies have been drafted, well-formulated 
+strategies do not automatically produce the best results. Research in this particular area has highlighted the 
+fact that organisations struggle to do justice to effective strategies by properly executing them (Kikulis, 2000; 
+Shilbury & Ferkins, 2011; Tawse & Tabesh, 2020). There are a number of possible reasons for discrepancies 
+between the strategies and their implementation: 
+1.	Strategies are not known or fully understood by those responsible for carrying them out. 
+2.	There is resistance to change within the national association and among its stakeholders (for a 
+variety of reasons, such as fear of anything new, fear of a loss of privileges, or personal insecurities).
+3.	The individual or stakeholder lacks clarity about the expectations or lacks suitable experience.
+4.	Employees and stakeholders are not sufficiently motivated or incentivised to fully pursue the strategies.
+5.	There is a lack of control and follow-up.
+A common thread running through all these obstacles is the management’s failure to fully understand that 
+a national association does not act on its own, but that it does so through individuals: leaders, employees, 
+volunteers, service providers, etc. How well a strategy is implemented therefore depends on how well these 
+individuals are motivated to produce the desired results.
+How successful this is depends on communication, the creation of appropriate organisational structures, 
+budgeting and control, and the evaluation of individual performance. These elements will be discussed in 
+greater detail in the subsequent chapters of this handbook, but for the purpose of completeness a brief 
+description will follow.
+	> 5.1. Writing and communicating a strategic plan
+The starting point for communicating the association’s strategy to the stakeholders is to put it into writing. This 
+document, the strategic plan, can be drafted in different versions to suit the audience and purpose. Versions 
+for internal planning are typically more detailed and operational and contain deadlines and deliverables, 
+whereas public documents are more general. It is up to the organisation to decide how much detail to include.
+There is no standard, one-size-fits-all format for strategic plans, but the following sections are common:
+1.	Introduction and context
+2.	Mission, values and vision
+3.	Focus areas
+4.	Goals and objectives
+5.	Initiatives
+	> 5.2. Designing appropriate organisational structures
+Ideally an association’s structure reflects its strategy. If a subdomain of elite football, such as the men’s under-21 
+team, is a priority, the related initiatives should be placed in the organisation chart either as a departmental 
+line function or as a subdepartment of a line function.
+Line functions are the home of an organisation’s key activities or domains, such as national teams, grassroots 
+or competitions management. Well-defined line functions improve an organisation’s effectiveness because each 
+function is composed of fewer people and typically has a manager coordinating and running the function. 
+People working in a specific line function will have an easier time engaging with the specific tasks, and both 
+formal and social control is made easier. If the association’s strategy changes radically and priority is given 
+to new domains, it will make sense for management to review the organisation chart and create new units. 
+	> 5.3. Allocating resources and budgets
+The budgeting process that follows strategy formulation is typically not a one-off process, but often has many 
+repetitions and loops. The starting point should always be the draft strategic plan, on the basis of which, 
+budgets should be defined for functions and activities. If there are budget or resource constraints, the strategic 
+plan may need to be revised, then the budget adjusted accordingly, before being approved by the executive 
+committee. Once both the strategic plan and the budget have been finalised, they can be made operational.
+CHAPTER 2: STRATEGIC MANAGEMENT
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT

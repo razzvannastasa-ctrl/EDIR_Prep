@@ -1,0 +1,2655 @@
+{
+  "schema_version": 1,
+  "library_key": "uefa_cfm",
+  "chapter_number": 15,
+  "session_title": "Chapter 3 - Operational management",
+  "source_pdf": "Operational-management.pdf",
+  "questions": [
+    {
+      "q_number": 1,
+      "question_text": "A national association has technically capable staff, but service delivery is inconsistent. What should an operational review examine first?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Whether people are trained, motivated and equipped to perform their roles.",
+        "Whether the strategic plan contains more long-term objectives than the previous cycle.",
+        "Whether stakeholder services can be transferred to the finance department.",
+        "Whether organisational performance can be inferred from senior-team results.",
+        "Whether process documentation can compensate for gaps in staff motivation."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          98,
+          99
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0
+        ],
+        "explanation": "Operational management concerns the people, processes and structures that deliver services day to day. Technical competence alone is insufficient when motivation or tools are weak. The review should therefore connect workforce conditions to the service failure before redesigning strategy or departmental ownership."
+      }
+    },
+    {
+      "q_number": 2,
+      "question_text": "Which statements distinguish intrinsic motivation from extrinsic motivation?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Intrinsic motivation is created principally through performance bonuses.",
+        "Intrinsic motivation arises from passion or pleasure in the activity.",
+        "Extrinsic motivation depends on personal enjoyment of football work.",
+        "Extrinsic motivation is driven by economic, social or psychological factors outside the person.",
+        "Intrinsic and extrinsic motivation describe seniority levels in the organisation chart."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          98,
+          99
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3
+        ],
+        "explanation": "Intrinsic motivation comes from within, such as love of football or enjoyment of contributing. Extrinsic motivation comes from outside incentives or pressures, including economic, social and psychological rewards. Effective management recognises both rather than relabelling one as the other."
+      }
+    },
+    {
+      "q_number": 3,
+      "question_text": "Which needs appear in Maslow's hierarchy as presented in the chapter?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Operational autonomy.",
+        "Physiological needs.",
+        "Belonging and love.",
+        "Strategic alignment.",
+        "Esteem."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          98,
+          99
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "The hierarchy moves from physiological and safety needs through belonging, esteem and self-actualisation. The model suggests that the motivational value of higher needs depends on lower needs being met. Operational autonomy and strategic alignment may matter at work, but they are not named levels in this framework."
+      }
+    },
+    {
+      "q_number": 4,
+      "question_text": "Employees feel insecure about their jobs and perceive unfair treatment, while management launches a creativity prize. Which conclusions follow from the motivation framework?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Unresolved safety and belonging needs may weaken the prize's effect.",
+        "Fair treatment and team membership need management attention.",
+        "A creativity incentive addresses a higher-order need than the reported concerns.",
+        "The association should diagnose employees' position in the needs hierarchy.",
+        "The prize should be increased because economic value determines the level of need being addressed."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          98,
+          99
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "explanation": "The workforce is signalling safety and belonging concerns, while creativity relates more closely to self-actualisation. A prize may have limited effect until security, fairness and team inclusion improve. The framework is diagnostic; it does not say that a larger financial award moves people past unmet needs."
+      }
+    },
+    {
+      "q_number": 5,
+      "question_text": "Why can a poorly designed extrinsic incentive damage organisational performance?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "It converts intrinsic motivation into a formal job description.",
+        "It shifts employees from esteem needs to physiological needs.",
+        "It makes social and psychological incentives unavailable to volunteers.",
+        "It changes the organisation chart before behaviour can respond.",
+        "It may encourage behaviour that serves the reward rather than the association's interests."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          98,
+          99
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          4
+        ],
+        "explanation": "External incentives influence what people optimise, so a badly chosen measure can reward the wrong behaviour. Economic rewards remain useful, but they cover one part of motivation and must support teamwork and fairness. The risk lies in incentive design, not in the existence of job descriptions or organisational structure."
+      }
+    },
+    {
+      "q_number": 6,
+      "question_text": "How should a football association sustain the motivation of long-serving volunteers?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Preserve their connection to the sport and community they value.",
+        "Convert voluntary roles into target-based bonus schemes as the primary source of commitment.",
+        "Combine appreciation and belonging with well-designed external incentives.",
+        "Use promotion opportunities to replace passion as service length increases.",
+        "Separate volunteers from staff so social pressure cannot affect motivation."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "handbook_pages": [
+          98,
+          99
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2
+        ],
+        "explanation": "Volunteers often begin with strong intrinsic motives: love of football, enjoyment and community. Management should keep that passion alive while ensuring recognition, fairness and appropriate support. Treating financial or promotional mechanisms as a substitute for intrinsic meaning misunderstands the source of commitment."
+      }
+    },
+    {
+      "q_number": 7,
+      "question_text": "A youth coach is unsure about decision authority and how performance will be judged. Which job-description elements should be clarified?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Reporting and supervisory relationships.",
+        "Resources and decisions within the role.",
+        "The coach's preferred future department.",
+        "Expected results and performance measures.",
+        "The association's complete project portfolio."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          100,
+          101
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3
+        ],
+        "explanation": "A job description establishes accountability, authority, duties, resources, measures and expected results. These elements give the coach a workable role boundary. Career aspirations and the wider project portfolio may inform management discussions but do not resolve the immediate ambiguity."
+      }
+    },
+    {
+      "q_number": 8,
+      "question_text": "A motivated employee consistently contributes useful work beyond the formal role. How should a manager interpret this behaviour?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "It is job expansion beyond the documented baseline.",
+        "It may help the association exceed stakeholder expectations.",
+        "It can indicate that motivation and organisational culture are supporting initiative.",
+        "It demonstrates that the job description should be withdrawn from the role.",
+        "It should be recognised while role priorities remain clear."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          100,
+          101
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "explanation": "The chapter describes job expansion as people doing more than the formal description when motivated. The document remains a necessary baseline, while leadership should recognise useful initiative and keep effort aligned. Expansion is not evidence that role clarity has become unnecessary."
+      }
+    },
+    {
+      "q_number": 9,
+      "question_text": "What is the relationship between a job description and actual performance?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "The description predicts whether an employee will be intrinsically motivated.",
+        "The description replaces the need for performance measures once duties are listed.",
+        "The description sets departmental strategy through individual tasks.",
+        "The description defines a baseline rather than capturing every nuance of work.",
+        "The description should expand whenever an employee exceeds one target."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          100,
+          101
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "A job description sets expectations, authority and results, but real behaviour can expand or contract around that baseline. Motivation and culture influence whether people contribute beyond it. The document supports management; it does not determine motivation or replace evaluation."
+      }
+    },
+    {
+      "q_number": 10,
+      "question_text": "Which information belongs in a well-formed job description?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "The employee's preferred incentive mix.",
+        "The role's duties and responsibilities.",
+        "The department's external stakeholder map.",
+        "The next strategic plan's project-selection criteria.",
+        "The resources available to the role."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          100,
+          101
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          4
+        ],
+        "explanation": "The job description specifies reporting lines, supervision, resources, decisions, responsibilities, measures and expected results. It defines the role rather than the employee's personal motivation or the organisation's project portfolio. Those wider tools should remain connected but distinct."
+      }
+    },
+    {
+      "q_number": 11,
+      "question_text": "The association is hosting a one-off international tournament involving commercial, technical, competition and media expertise. Which structure is most suitable?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "A temporary project structure drawing specialists from relevant departments.",
+        "A new standing department that absorbs the specialist teams after the event.",
+        "Clear coordination around the event's defined period and deliverables.",
+        "Separate departmental plans joined during the final reporting stage.",
+        "Continued departmental accountability for specialist expertise."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          100,
+          101
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          4
+        ],
+        "explanation": "Special events cut across line departments and have a defined life, so a project structure coordinates the required expertise. Specialists retain their functional knowledge while working to common event outcomes. A permanent restructure or late-stage coordination would be disproportionate and operationally risky."
+      }
+    },
+    {
+      "q_number": 12,
+      "question_text": "Why does the chapter say that organisational structure follows strategy?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Departments group responsibility around the association's strategic goals.",
+        "Project structures supplement departments when temporary cross-functional work is required.",
+        "Strategy is derived from the departments already shown on the organisation chart.",
+        "The organisation chart should support how services are intended to be delivered.",
+        "Changes in priorities may require different coordination arrangements."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          3
+        ],
+        "handbook_pages": [
+          100,
+          101
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "explanation": "Structure is a means of implementing strategic priorities, not the source of those priorities. Departments support recurring domains, while projects coordinate temporary cross-functional delivery. Managers should therefore test whether the chart and project arrangements enable the intended strategy."
+      }
+    },
+    {
+      "q_number": 13,
+      "question_text": "A bonus scheme rewards individual output but has created rivalry and perceptions of favouritism. Which redesign principles follow from the chapter?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Replace performance criteria with manager discretion.",
+        "Align incentives with teamwork.",
+        "Make reward criteria transparent and fair.",
+        "Move the scheme into the risk-management system.",
+        "Consider how the scheme interacts with intrinsic motivation."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          102,
+          103
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "Extrinsic incentives should encourage collective performance and fair treatment. Poorly designed rewards can erode belonging and make intrinsic commitment harder to sustain. Risk rules serve a different purpose: they constrain harmful conduct rather than allocate positive rewards."
+      }
+    },
+    {
+      "q_number": 14,
+      "question_text": "A respected employee repeatedly undermines colleagues while still meeting personal targets. Which operational responses are justified?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Use transparent information to identify the behavioural risk.",
+        "Apply established conduct rules consistently.",
+        "Protect the wider team's motivation and working environment.",
+        "Consider dismissal when serious rule breaches persist.",
+        "Increase the employee's individual incentive so results compensate for the team impact."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          102,
+          103
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "explanation": "Risk-management systems protect the organisation from conduct that damages others or the working environment. Evidence and transparent rules support fair intervention, with dismissal as an ultimate sanction. Strong individual output does not neutralise a sustained negative effect on team motivation."
+      }
+    },
+    {
+      "q_number": 15,
+      "question_text": "Which activities form the staff lifecycle presented in the chapter?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Stakeholder mapping.",
+        "Service prototyping.",
+        "Financial reconciliation.",
+        "Project prioritisation.",
+        "Selection."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          102,
+          103
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          4
+        ],
+        "explanation": "The lifecycle is selection, growth and offboarding: bringing people in, developing them, and supporting their departure. The other activities belong to market sensing, finance or project design. Career management should therefore cover entry, progression and transition."
+      }
+    },
+    {
+      "q_number": 16,
+      "question_text": "Two candidates have similar technical qualifications, but one displays stronger empathy, values and team fit. How should the association decide?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Assess both hard skills and soft skills against the role profile.",
+        "Select from qualifications first and assess attitude during probation.",
+        "Give meaningful weight to attitude, values and group fit.",
+        "Treat empathy as an intrinsic incentive rather than a selection criterion.",
+        "Use the organisation chart to determine which personality is appropriate."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          102,
+          103
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2
+        ],
+        "explanation": "Knowledge and experience matter, but the final choice may hinge on soft skills because a winning team needs compatible personalities. The profile should make both categories explicit before interviews. Deferring fit assessment transfers avoidable recruitment risk into the working environment."
+      }
+    },
+    {
+      "q_number": 17,
+      "question_text": "Which work belongs in a thorough staff-selection process?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Analyse the skills of current staff.",
+        "Agree association-wide HR needs.",
+        "Set the successful applicant's promotion timetable before interviews.",
+        "Define the required profile and attitude.",
+        "Use the incentive scheme as the main applicant-rating method."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          102,
+          103
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3
+        ],
+        "explanation": "Selection begins with the current skill base, compares it with needs, agrees HR priorities and defines the desired profile. A recruitment plan then covers reach, interviews, tests, ratings and the decision. Promotion planning and incentives come later in career management."
+      }
+    },
+    {
+      "q_number": 18,
+      "question_text": "How do incentives and risk-management systems differ as people-management tools?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Incentives define role authority while risk systems define expected results.",
+        "Risk systems are designed for career growth while incentives support offboarding.",
+        "Incentives encourage desired behaviour through rewards.",
+        "Incentives address soft skills while risk systems assess technical competence.",
+        "Risk systems constrain harmful behaviour through rules, information and sanctions."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "handbook_pages": [
+          102,
+          103
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2,
+          4
+        ],
+        "explanation": "The tools influence behaviour from different directions. Incentives reward contribution, while risk systems identify and sanction conduct that threatens the organisation or its people. Job descriptions, career tools and selection processes cover the other functions suggested by the distractors."
+      }
+    },
+    {
+      "q_number": 19,
+      "question_text": "A mid-year review is being used solely to decide bonuses. How should management broaden the conversation?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Limit the discussion to targets linked to the current reward scheme.",
+        "Use peer feedback as a substitute for the line manager's assessment.",
+        "Set training needs after the year-end promotion decision.",
+        "Discuss work delivered beyond expectations.",
+        "Evaluate personality fit rather than improvement actions."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          104,
+          105
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "A performance review should identify strengths, improvement areas, required support and future objectives. A mid-year review can be developmental and need not trigger a reward decision. Bonus linkage is possible, but narrowing the conversation to pay loses the career-management purpose."
+      }
+    },
+    {
+      "q_number": 20,
+      "question_text": "An employee needs stronger stakeholder-service skills before taking on a larger role. Which outcomes should follow from evaluation?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "A revised mission statement for the employee's department.",
+        "A personal action plan with development objectives.",
+        "A project plan that transfers the role to another unit.",
+        "A bonus target based on stakeholder revenue rather than service competence.",
+        "Training linked to the capability gap."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          104,
+          105
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          4
+        ],
+        "explanation": "Evaluation should translate evidence into a personal action plan and the training needed to achieve it. New responsibilities can follow when capability is ready. Corporate mission or project ownership changes do not address the person's identified development need."
+      }
+    },
+    {
+      "q_number": 21,
+      "question_text": "What does a 360-degree performance evaluation add to a line-manager review?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Feedback from people who have working relationships with the employee.",
+        "A replacement for agreed objectives and competence criteria.",
+        "A broader qualitative view of behaviour across interactions.",
+        "A financial valuation of the employee's future contribution.",
+        "Evidence that can complement quantitative performance measures."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          104,
+          105
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          4
+        ],
+        "explanation": "A 360-degree process gathers perspectives from colleagues who work with the person, expanding the evidence beyond one manager. It complements quantitative and qualitative criteria. It does not remove the need for objectives, judgement or a development plan."
+      }
+    },
+    {
+      "q_number": 22,
+      "question_text": "Which three statements are the main financial statements introduced in the chapter?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "The balance sheet.",
+        "The cash flow statement.",
+        "The stakeholder-satisfaction statement.",
+        "The income statement.",
+        "The profit and loss account as another name for the income statement."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          104,
+          105
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "explanation": "The balance sheet, cash flow statement and income statement provide connected but different views. The income statement is also called a profit and loss account. Stakeholder satisfaction may be measured operationally, but it is not one of the three financial statements."
+      }
+    },
+    {
+      "q_number": 23,
+      "question_text": "An association wants to know what it owns, what it owes and its residual wealth at year-end. Which financial view is required?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "A cash flow statement for the reporting period.",
+        "An income statement recognising annual revenues and expenses.",
+        "A balance sheet at the reporting date.",
+        "A budgeted cash flow for the coming year.",
+        "A reconciliation of operating profit to operating cash."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          104,
+          105
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2
+        ],
+        "explanation": "The balance sheet is a point-in-time picture of assets, liabilities and equity. Cash flow and income statements explain changes across a period, while a budgeted cash flow looks forward. The requested residual wealth is equity: assets less liabilities."
+      }
+    },
+    {
+      "q_number": 24,
+      "question_text": "How should accounts receivable and a stadium be distinguished on the balance sheet?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Receivables are current assets expected to become cash within a year.",
+        "Receivables are liabilities because customers still control the cash.",
+        "A stadium is current when it hosts fixtures during the reporting year.",
+        "A stadium is normally a non-current tangible asset.",
+        "Both are classified by acquisition cost rather than conversion horizon."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "handbook_pages": [
+          104,
+          105
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          3
+        ],
+        "explanation": "Classification reflects the nature and expected conversion of the resource. Receivables usually turn into cash soon, whereas a stadium supports operations for many years and is seldom sold. Customer payment timing does not make the receivable a liability."
+      }
+    },
+    {
+      "q_number": 25,
+      "question_text": "An association forecasts a negative cash balance next year despite a credible sporting plan. What should management conclude?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "A projected accounting surplus supplies the missing cash at the reporting date.",
+        "Non-current assets can be treated as operating cash for budget purposes.",
+        "The income statement should be used instead because cash forecasts concern wealth.",
+        "The negative balance indicates that equity is already negative.",
+        "The plan requires additional funding or revised cash timing."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          106,
+          107
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          4
+        ],
+        "explanation": "A budgeted cash flow tests whether planned payments can be met when due. A sound programme may still be infeasible without financing or rescheduling. Profit, assets and equity are related measures, but they do not substitute for cash availability."
+      }
+    },
+    {
+      "q_number": 26,
+      "question_text": "The association pays cash for a building that has equivalent value. Which immediate accounting effects are expected?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Cash decreases while another asset increases.",
+        "The purchase price becomes an operating expense at acquisition.",
+        "The cash flow statement records an investing outflow.",
+        "Equity rises because the association owns more property.",
+        "Revenue is recognised because the building will support future services."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          106,
+          107
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2
+        ],
+        "explanation": "Buying the building exchanges one asset for another, so wealth does not change at acquisition. Cash flow records the payment as investment, while the income statement recognises use over time through depreciation. Ownership alone does not create revenue or equity."
+      }
+    },
+    {
+      "q_number": 27,
+      "question_text": "Why can sponsorship cash and sponsorship revenue occur at different times?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Cash follows the payment date.",
+        "Revenue follows delivery of the contracted service.",
+        "Revenue is recognised when the contract is signed because rights have future value.",
+        "Advance payment can precede revenue recognition.",
+        "Cash timing determines the period in which the service is economically delivered."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          106,
+          107
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3
+        ],
+        "explanation": "Financial statements separate the cash transaction from the economic transaction. A three-year sponsorship paid upfront improves cash immediately, while revenue is recognised as the service is delivered. Contract signature and payment do not by themselves complete the economic performance."
+      }
+    },
+    {
+      "q_number": 28,
+      "question_text": "Which categories structure a cash flow statement?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Customer activities.",
+        "Operating activities.",
+        "Investing activities.",
+        "Equity activities.",
+        "Financing activities."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          106,
+          107
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "Cash movements are classified as operating, investing or financing. The categories distinguish regular operations, non-current asset transactions and funding transactions. Customer receipts may be operating cash, while equity is a balance-sheet concept rather than a cash-flow category."
+      }
+    },
+    {
+      "q_number": 29,
+      "question_text": "A marketing agency delivers services in December and is paid in February. How should the association treat the December economics?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Recognise the expense when February cash leaves the bank.",
+        "Record the service as an intangible asset until payment.",
+        "Treat the unpaid amount as revenue received in advance.",
+        "Recognise an expense when the service is used.",
+        "Classify the service as an investing cash flow in December."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          106,
+          107
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "Expense recognition follows consumption of the service rather than payment timing. The unpaid amount creates a liability until cash is paid. It is neither association revenue nor a non-current investment."
+      }
+    },
+    {
+      "q_number": 30,
+      "question_text": "What does negative equity signal to association management?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "The association necessarily has a negative bank balance on the reporting date.",
+        "Liabilities exceed the value of assets.",
+        "The organisation may struggle to repay claims as they fall due.",
+        "Management needs to generate value and restore financial resilience.",
+        "Repayment schedules may provide time for corrective action."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "handbook_pages": [
+          106,
+          107
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "explanation": "Negative equity means the balance-sheet value owed exceeds the assets available, which is a serious warning. It is related to solvency rather than being the same as today's cash balance. Staged creditor claims may give management time, but the underlying weakness still requires action."
+      }
+    },
+    {
+      "q_number": 31,
+      "question_text": "Which statements correctly classify common cash movements?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Regular service receipts belong to operating activities.",
+        "Depreciation is a financing cash outflow.",
+        "Purchasing a stadium is an investing activity.",
+        "Recognising sponsorship revenue is an investing cash inflow.",
+        "Receiving a bank loan is a financing activity."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          108,
+          109
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          4
+        ],
+        "explanation": "Operating cash comes from regular activity, investment cash from non-current asset transactions, and financing cash from borrowing or repayment. Depreciation has no current cash movement, and revenue recognition follows economic delivery. Classification depends on the transaction's nature rather than its label in another statement."
+      }
+    },
+    {
+      "q_number": 32,
+      "question_text": "The association reports a strong operating profit but modest cash generated from operations. Which interpretations are appropriate?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Profit and operating cash measure different aspects of performance.",
+        "Working-capital movements may explain part of the difference.",
+        "The operating profit figure should be substituted for cash generated in funding decisions.",
+        "Non-cash expenses may require reconciliation.",
+        "Management should inspect the cash-flow reconciliation before judging liquidity."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          108,
+          109
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "explanation": "Operating profit measures economic performance while cash generated reflects cash timing and working capital. Depreciation, debtors and creditors can create a substantial reconciliation. Funding decisions need the cash evidence rather than treating profit as interchangeable with liquidity."
+      }
+    },
+    {
+      "q_number": 33,
+      "question_text": "Why can two managers reasonably disagree about the value of an asset?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Asset value is determined by the cash paid during the current year.",
+        "Current assets are valued by the date they are expected to be sold.",
+        "Some asset values require estimates and judgement.",
+        "Liability repayment schedules determine the value assigned to assets.",
+        "Equity supplies a fixed market value for each asset category."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          108,
+          109
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2
+        ],
+        "explanation": "Balance sheets assign monetary values, but some assets lack a simple observable price. Estimation assumptions can therefore produce defensible differences. Cash timing, liability terms and the residual equity equation do not independently fix each asset's value."
+      }
+    },
+    {
+      "q_number": 34,
+      "question_text": "A sponsor owes an invoice due in three months, while a bank loan matures in five years. How should they appear on the balance sheet?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "The invoice is a current asset.",
+        "The invoice is current revenue but absent from assets until paid.",
+        "The loan is equity because repayment is outside the current year.",
+        "The loan is a long-term liability.",
+        "Both belong to current assets because they affect future cash."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          108,
+          109
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          3
+        ],
+        "explanation": "The receivable is an asset expected to convert to cash within a year. The bank loan finances assets but remains a repayable liability, classified by its maturity. Revenue recognition and balance-sheet classification answer related but separate questions."
+      }
+    },
+    {
+      "q_number": 35,
+      "question_text": "The association builds a stadium expected to serve football for decades. Which financial treatments follow the chapter?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Recognise construction cost as a single operating expense when the venue opens.",
+        "Record the stadium as a non-current tangible asset.",
+        "Classify stadium revenue as a reduction in the asset's carrying value.",
+        "Recognise its use gradually through depreciation.",
+        "Show the construction payment as an investing cash outflow."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          108,
+          109
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3,
+          4
+        ],
+        "explanation": "The stadium is a long-lived asset rather than a current operating cost. Cash leaves during construction, while depreciation recognises consumption over its useful life. Revenues generated by the venue belong to economic activity, not direct reduction of the asset value."
+      }
+    },
+    {
+      "q_number": 36,
+      "question_text": "How do liabilities and equity differ as sources financing association assets?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Liabilities represent funding that must be repaid.",
+        "Equity is the portion of cash reserved for future liability payments.",
+        "Equity represents residual organisational wealth.",
+        "Supplier credit and bank borrowing create liabilities.",
+        "Funds received with no repayment obligation can increase equity."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "handbook_pages": [
+          108,
+          109
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "explanation": "The right side of the balance sheet explains how assets are financed. Creditors have repayable claims, while equity is the residual after liabilities are deducted from assets. Equity is broader than a cash reserve and changes with economic performance and non-repayable funding."
+      }
+    },
+    {
+      "q_number": 37,
+      "question_text": "What does an income statement primarily explain?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "The association's cash receipts and payments classified by activity.",
+        "Value generated and consumed through revenues and expenses during a period.",
+        "The assets and claims held at a reporting date.",
+        "The market value of stakeholder relationships at year-end.",
+        "The funding needed for the next strategic cycle."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          110,
+          111
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1
+        ],
+        "explanation": "The income statement reports economic performance over time through revenues and expenses. Cash flow explains cash movement, while the balance sheet is a point-in-time position. Stakeholder value and future funding may influence decisions but are not the statement's direct purpose."
+      }
+    },
+    {
+      "q_number": 38,
+      "question_text": "A three-season media-rights contract is paid when signed. Which reporting approach is appropriate?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Recognise the contract value as revenue at signing because cash is secure.",
+        "Spread the cash flow across seasons to match revenue.",
+        "Record the cash inflow when payment is received.",
+        "Treat the payment as equity until the final season finishes.",
+        "Recognise revenue as the rights service is delivered."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          110,
+          111
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2,
+          4
+        ],
+        "explanation": "Cash and revenue follow different clocks. The payment enters cash flow when received, while income is earned over the service period. Deferring revenue is not the same as converting the payment into equity or restating cash movement."
+      }
+    },
+    {
+      "q_number": 39,
+      "question_text": "The association wants to improve the national-match experience. Which sensing activities provide useful stakeholder evidence?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Follow a fan's journey through information, ticketing and stadium access.",
+        "Use attendance totals as the definition of fan satisfaction.",
+        "Use focus groups to explore expectations.",
+        "Review service processes from the match-goer's perspective.",
+        "Ask operational departments to infer customer needs from internal efficiency data."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          110,
+          111
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3
+        ],
+        "explanation": "Market sensing requires seeing the service through the stakeholder's eyes. Journey observation, process walkthroughs and focus groups reveal needs and friction that totals may hide. Internal efficiency evidence matters, but it does not substitute for customer perspective."
+      }
+    },
+    {
+      "q_number": 40,
+      "question_text": "Why is stakeholder satisfaction operationally valuable to a football association?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Satisfaction allows the association to use one service design for its different constituencies.",
+        "Satisfied stakeholders are easier to work with.",
+        "Positive experiences support loyalty and repeat engagement.",
+        "Repeat customers are cheaper to retain than new customers are to acquire.",
+        "Satisfaction helps the association achieve its service goals."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          110,
+          111
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "explanation": "Good experiences strengthen cooperation, loyalty and repeat use, reducing the effort required to reacquire customers. Football associations serve diverse constituencies, so satisfaction must be understood by stakeholder group. It improves operations without making stakeholder needs uniform."
+      }
+    },
+    {
+      "q_number": 41,
+      "question_text": "A department treats colleagues in another unit as people outside its service responsibility. Which correction follows the chapter?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Recognise colleagues and other departments as internal stakeholders.",
+        "Classify colleagues as external stakeholders when they approve a budget.",
+        "Limit stakeholder analysis to people who purchase a service.",
+        "Treat internal service quality as an HR issue detached from action plans.",
+        "Map departments as resources rather than stakeholders."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          110,
+          111
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0
+        ],
+        "explanation": "Stakeholders include internal colleagues whose work and expectations affect delivery. Their role depends on the objective and action plan, just as external stakeholder relevance does. A financial transaction is not required for a stakeholder relationship."
+      }
+    },
+    {
+      "q_number": 42,
+      "question_text": "What should an action plan contribute to stakeholder management?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "A fixed stakeholder list reused across association objectives.",
+        "Identification of stakeholders relevant to the objective.",
+        "A ranking based on each group's commercial contribution.",
+        "Consideration of their expectations and perspective.",
+        "A replacement for direct observation of the customer journey."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "handbook_pages": [
+          110,
+          111
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3
+        ],
+        "explanation": "An action plan links a specific objective to scenarios, milestones and the stakeholders who influence delivery. It should ask what those groups expect and how the plan looks from their perspective. Relevance changes with the objective, so a generic commercial ranking is insufficient."
+      }
+    },
+    {
+      "q_number": 43,
+      "question_text": "Which stages form the chapter's market-sensing sequence?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Approve budgets.",
+        "Map stakeholders.",
+        "Collect information.",
+        "Evaluate employee incentives.",
+        "Identify opportunities."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          112,
+          113
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "The five-step sequence maps stakeholders, collects information, identifies opportunities, defines action plans and prioritises them. It translates external sensing into operational choices. Budget approval and people incentives may support implementation but are not stages in this sequence."
+      }
+    },
+    {
+      "q_number": 44,
+      "question_text": "A women's-football team maps broadcasters but overlooks OTT platforms, player services and medical organisations. What should it do?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Expand the map across related stakeholder areas.",
+        "Break broad areas into specific organisations and roles.",
+        "Review the map as technologies and stakeholders change.",
+        "Connect the map to the objective being pursued.",
+        "Keep the map centred on rights buyers because media exposure is the primary value exchange."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          112,
+          113
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "explanation": "The example shows a dense landscape spanning media, players, medical services, data, regulators and marketing. Mapping should become specific enough to support information gathering and action. A broadcaster-centred map would miss organisations shaping participation, welfare and new distribution."
+      }
+    },
+    {
+      "q_number": 45,
+      "question_text": "Why does the chapter describe market sensing as a team sport?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "The marketing department can validate observations after other departments complete their action plans.",
+        "The environment is too complex for one person to understand.",
+        "Staff encounter different external signals through their work.",
+        "Shared observations create a richer information base.",
+        "A sensing culture gives employees a delivery role and an intelligence role."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          112,
+          113
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "explanation": "Useful intelligence is distributed across the organisation, so each person should act as a sensor. Processes and culture must help observations reach the team and be analysed. Marketing expertise remains useful, but central validation after planning would capture insight too late."
+      }
+    },
+    {
+      "q_number": 46,
+      "question_text": "Staff gather useful observations but keep them in personal notes. Which operational changes support opportunity discovery?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Create routines for sharing observations.",
+        "Ask managers to summarise observations during annual performance reviews.",
+        "Store observations within departmental files until an opportunity is confirmed.",
+        "Commission external research before using staff experience.",
+        "Move responsibility for sensing to the data-analytics supplier."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          112,
+          113
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0
+        ],
+        "explanation": "Internal people are a valuable information source, but their observations need shared processes and habits. A structured repository and periodic discussion turn individual experience into organisational intelligence. Delayed or isolated storage weakens the diversity and timeliness of insight."
+      }
+    },
+    {
+      "q_number": 47,
+      "question_text": "Which sources of stakeholder information are identified in the market-sensing section?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "The balance sheet as a customer-attitude survey.",
+        "People within the association.",
+        "Job descriptions as external market evidence.",
+        "Internet sources.",
+        "Competition regulations as a measure of sentiment."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          112,
+          113
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3
+        ],
+        "explanation": "The chapter identifies internal observations, internet sources, paid research, market analysts and social-media sentiment analysis. These sources complement each other. Financial and HR documents may support operations but do not directly reveal changing stakeholder attitudes."
+      }
+    },
+    {
+      "q_number": 48,
+      "question_text": "A monthly opportunity meeting receives broad observations about drone filming and computer vision. How should the team work with them?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Develop observations into insights through discussion.",
+        "Explore related uses in scouting, refereeing and coaching.",
+        "Translate promising insights into service opportunities.",
+        "Select the first technically feasible use before discussing stakeholder value.",
+        "Create and prioritise action plans after refining the idea."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "handbook_pages": [
+          112,
+          113
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "explanation": "Information becomes an insight when the team connects it to changing needs and possible value. Discussion can extend one technology across several services, after which action plans are assessed and prioritised. Technical feasibility alone does not establish stakeholder benefit or strategic fit."
+      }
+    },
+    {
+      "q_number": 49,
+      "question_text": "Which dimensions are used to analyse an action plan arising from an opportunity?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Employee tenure.",
+        "Asset depreciation.",
+        "Congress representation.",
+        "Impact.",
+        "Financial-statement format."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          114,
+          115
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "The action-plan assessment covers impact, complexity and timing. Impact may be economic, social, reputational, tactical or strategic; complexity includes stakeholder coordination; timing asks about urgency. The distractors are valid management topics but belong to different tools."
+      }
+    },
+    {
+      "q_number": 50,
+      "question_text": "A high-impact digital opportunity requires several powerful external partners who show limited commitment. What should the action plan reflect?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Low complexity because the association controls the strategic objective.",
+        "High coordination complexity.",
+        "A normal planning timetable based on impact rather than urgency.",
+        "An internal HR response before partner engagement.",
+        "The partners' power and commitment."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          114,
+          115
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          4
+        ],
+        "explanation": "Complexity depends on coordination with internal and external stakeholders, especially their power and commitment. Strategic impact does not reduce delivery dependence. Timing must be assessed separately rather than inferred from impact."
+      }
+    },
+    {
+      "q_number": 51,
+      "question_text": "Why is experimentation useful when designing uncertain services?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "It tests alternative solutions.",
+        "It converts a strategic opportunity into a routine process before launch.",
+        "It produces observations about outcomes.",
+        "It makes comparison with other organisations less useful.",
+        "It reduces uncertainty before wider commitment."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          114,
+          115
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          4
+        ],
+        "explanation": "Experimentation creates evidence where outcomes are uncertain. Small tests and observation of peers help managers learn which solution works before scaling. It supports rather than replaces external learning and disciplined planning."
+      }
+    },
+    {
+      "q_number": 52,
+      "question_text": "A fan club contacts the association through ticketing, email, events and social media. How should football relationship management support service improvement?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Record interactions across touchpoints.",
+        "Link product and event history to the stakeholder.",
+        "Maintain separate records for each channel so departments preserve ownership of their data.",
+        "Analyse behaviour and preferences.",
+        "Use the pattern to improve future service and targeting."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          114,
+          115
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "explanation": "Relationship management creates a joined view of interactions, preferences and behaviour. Analysis can reveal patterns and support better service or targeted marketing. Channel silos would fragment the stakeholder picture the tool is intended to organise."
+      }
+    },
+    {
+      "q_number": 53,
+      "question_text": "What does a driver analysis seek to identify?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "The legal ownership of stakeholder information.",
+        "The accounting value assigned to customer loyalty.",
+        "Cause-and-effect relationships behind satisfaction, revenue or cost.",
+        "The reporting line responsible for each service interaction.",
+        "The timetable for recognising sponsorship revenue."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          114,
+          115
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2
+        ],
+        "explanation": "Driver analysis maps internal factors that influence an outcome such as sponsor satisfaction, revenue or cost. It aims to reveal relationships that might remain hidden. Data ownership, reporting lines and revenue timing are separate operational questions."
+      }
+    },
+    {
+      "q_number": 54,
+      "question_text": "Sponsors value media exposure and the experience provided to their guests. Which analysis would best guide improvement?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Map media exposure and hospitality factors as drivers of sponsor satisfaction.",
+        "Use the sponsorship fee as the direct measure of satisfaction.",
+        "Assess stadium quality as a financial asset rather than a service driver.",
+        "Test how changes in those drivers affect the sponsor's perceived value.",
+        "Separate guest experience from the sponsorship relationship."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "handbook_pages": [
+          114,
+          115
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          3
+        ],
+        "explanation": "A sponsor evaluates both exposure and hospitality, so driver analysis should connect those service dimensions to satisfaction. The fee shows commercial value but does not reveal the experience producing it. Stadium facilities matter here through service quality rather than balance-sheet classification."
+      }
+    },
+    {
+      "q_number": 55,
+      "question_text": "Which factors can affect the value of a match ticket in the chapter's example?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "The association's equity balance.",
+        "The opponent.",
+        "The depreciation method used for the stadium.",
+        "The day and time of the match.",
+        "Stadium quality."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          116,
+          117
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3,
+          4
+        ],
+        "explanation": "Ticket value changes with the opponent, timing, weather, competing city events and facility quality. Dynamic pricing can respond to those variables. Balance-sheet measures concern financial reporting rather than the fan's perceived value of attendance."
+      }
+    },
+    {
+      "q_number": 56,
+      "question_text": "Ticket demand varies by opponent, weather and weekday, but prices are fixed months in advance. Which operational conclusions follow?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "The pricing decision is ignoring changing value drivers.",
+        "The association should base prices on stadium book value to create financial consistency.",
+        "Dynamic pricing could incorporate updated demand variables.",
+        "Customer and revenue effects should be monitored.",
+        "Price changes should remain connected to the fan value proposition."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          116,
+          117
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "explanation": "Fixed pricing can overlook variables that change willingness to pay. A dynamic approach uses current drivers, while monitoring is needed because revenue and customer experience are connected. Stadium accounting value is not a proxy for match-specific fan value."
+      }
+    },
+    {
+      "q_number": 57,
+      "question_text": "A manager has a strategy map but lacks evidence about whether its drivers are changing. Which tool should be added?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "A cash-flow reconciliation using the same variables.",
+        "A balanced scorecard with measures for the mapped variables.",
+        "A stakeholder map showing organisations rather than measures.",
+        "A revised organisation chart linking departments to the variables.",
+        "A job-description review for the manager who owns the map."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          116,
+          117
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1
+        ],
+        "explanation": "The strategy map expresses cause-and-effect logic from resources through processes and customers to outcomes. The balanced scorecard adds quantitative measures so those drivers can be tracked. The other tools answer financial, stakeholder or accountability questions rather than measuring the map."
+      }
+    },
+    {
+      "q_number": 58,
+      "question_text": "How does a strategic map connect operational resources to organisational outcomes?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Resources support processes.",
+        "Processes shape customer perceptions.",
+        "Customer outcomes influence strategic objectives.",
+        "Financial objectives determine the resources before customer and process effects are examined.",
+        "Cause-and-effect links make operational assumptions explicit."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          116,
+          117
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "explanation": "The map traces a causal chain from resources to process performance, customer value and final objectives. It makes the operating theory of the strategy visible. Reading the chain backwards as a resource-allocation rule would miss its explanatory purpose."
+      }
+    },
+    {
+      "q_number": 59,
+      "question_text": "Two partner organisations agree on activities but communicate different promises to the target audience. What should they align?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Their internal organisation charts.",
+        "Their financial year-end dates.",
+        "Their employee incentive schemes.",
+        "The shared message and value proposition.",
+        "Their asset-valuation methods."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          116,
+          117
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "Partner coordination depends on a common understanding of the target market, its needs, the value offered, the message and engagement approach. Activity coordination cannot rescue contradictory promises. Internal structures and accounting policies may differ without undermining a coherent service proposition."
+      }
+    },
+    {
+      "q_number": 60,
+      "question_text": "Which questions should partners resolve when coordinating a joint service?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Which partner will recognise the service revenue first in its income statement?",
+        "Who is the target market and what does it need?",
+        "What value proposition will satisfy it?",
+        "How will the partners communicate and engage?",
+        "What data and conversion process will support delivery?"
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "handbook_pages": [
+          116,
+          117
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "explanation": "Joint delivery starts with agreement on customer, value, message, engagement and the information used to convert interest into participation. These shared choices coordinate intangible service value. Accounting recognition may need agreement later, but it does not define the customer proposition."
+      }
+    },
+    {
+      "q_number": 61,
+      "question_text": "Which characteristic distinguishes services from physical goods in the chapter?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Production and consumption occur at the same time.",
+        "Quality is assessed after the customer takes ownership.",
+        "Physical elements dominate perceived service value.",
+        "Customer behaviour has limited influence during delivery.",
+        "Service output can be stored for a later audience."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          118,
+          119
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0
+        ],
+        "explanation": "A service is experienced as it is produced, and much of its value is intangible and interactive. The organisation and other customers influence satisfaction during delivery. Physical ownership and inventory logic therefore fit goods better than a live football experience."
+      }
+    },
+    {
+      "q_number": 62,
+      "question_text": "A futsal coaching course provides excellent content but clashes with fixtures and leaves applicants uncertain about admission. Which value dimensions need attention?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "The accounting value of the course materials.",
+        "The opportunity cost created by timing.",
+        "The coach's position in the organisation chart.",
+        "The uncertainty surrounding acceptance.",
+        "The association's financing mix for course delivery."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          118,
+          119
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3
+        ],
+        "explanation": "Perceived value subtracts price, inconvenience and uncertainty from tangible and emotional benefits. Scheduling conflict and unclear acceptance therefore reduce value even when content is strong. Asset values and organisational reporting lines do not represent the applicant's service cost."
+      }
+    },
+    {
+      "q_number": 63,
+      "question_text": "What are the main stages in designing a new service?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Set the final price before identifying the customer segment.",
+        "Understand the target market's needs.",
+        "Design a value proposition superior to alternatives.",
+        "Launch the service before testing delivery processes.",
+        "Design operations capable of delivering the service."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          118,
+          119
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "Service design starts with customer understanding, defines the value to be offered, and then builds the operating process. Price is one element of value rather than the starting point. Launch should follow process and resource design, especially where delivery is interactive."
+      }
+    },
+    {
+      "q_number": 64,
+      "question_text": "Customers see a polished match event, while backstage delivery is fragile. Which capabilities should management strengthen?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Process design.",
+        "Information and measures for tracking delivery.",
+        "Resources needed to execute the process.",
+        "People with appropriate customer attitudes.",
+        "A broader public value proposition before backstage operations are stabilised."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          118,
+          119
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "explanation": "The service iceberg means the visible experience rests on substantial hidden operations. Reliable processes, information, resources and customer-oriented people create the quality customers perceive. Expanding the promise before stabilising delivery would increase the gap between expectations and experience."
+      }
+    },
+    {
+      "q_number": 65,
+      "question_text": "Which components contribute to net perceived service value?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "The provider's asset value.",
+        "The project's internal reporting structure.",
+        "The employee's performance rating.",
+        "The association's accounting surplus.",
+        "Perceived benefits."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          118,
+          119
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          4
+        ],
+        "explanation": "Net perceived value compares tangible and emotional benefits with price, time inconvenience and uncertainty. It is defined from the customer's perspective. Provider finances and internal controls may shape delivery but are not direct components of the customer's calculation."
+      }
+    },
+    {
+      "q_number": 66,
+      "question_text": "Why is a project approach suitable for staging a championship or training camp?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "The service has defined objectives and a changing set of activities.",
+        "The approach converts the event into a recurring line-department process.",
+        "The work can be selected, planned, organised, implemented and reviewed.",
+        "Project status reduces the need for operational measures during delivery.",
+        "A project structure allows objectives to be refined after implementation begins."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "handbook_pages": [
+          118,
+          119
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2
+        ],
+        "explanation": "Events are finite, distinctive services that benefit from explicit selection, definition, planning, organisation and control. The project cycle also supports monitoring, reporting, review and learning. It creates discipline rather than relaxing measures or scope."
+      }
+    },
+    {
+      "q_number": 67,
+      "question_text": "Which information should a project definition establish?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Expected deliverables.",
+        "Required performance level.",
+        "The final performance-review ratings of project staff.",
+        "Resources and timing.",
+        "The accounting recognition date for each project benefit."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "handbook_pages": [
+          120,
+          121
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3
+        ],
+        "explanation": "Definition explains how project value will be delivered through outputs, standards, resources and timing. It aligns stakeholder expectations before detailed activity planning. Staff evaluation and accounting treatment may follow from delivery but do not define the project itself."
+      }
+    },
+    {
+      "q_number": 68,
+      "question_text": "Why can undertaking too many projects reduce service quality?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Frequent switching reduces team efficiency.",
+        "Resources become fragmented across competing work.",
+        "Attention available for each project declines.",
+        "Project efficiency rises in proportion to the number of initiatives selected.",
+        "Execution quality suffers beyond the useful workload level."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "handbook_pages": [
+          120,
+          121
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "explanation": "A modest increase in workload may sharpen organisation, but excessive project volume creates switching and fragmentation. The result is a decline in efficiency and service quality. Selection is therefore an operational capacity decision, not a competition to maximise project count."
+      }
+    },
+    {
+      "q_number": 69,
+      "question_text": "Stakeholders keep adding desirable features during tournament delivery. What should the project manager use to control this idea creep?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "The stakeholder map as authority for adding requested features.",
+        "The annual strategic vision as the detailed scope document.",
+        "The balanced scorecard as the approval mechanism.",
+        "The agreed project definition.",
+        "The final review as the point for redefining current deliverables."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "handbook_pages": [
+          120,
+          121
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          3
+        ],
+        "explanation": "A detailed definition establishes deliverables, performance, resources and timing, keeping stakeholders aligned with the original intention. New ideas can be assessed through change control rather than absorbed informally. The other tools inform strategy or measurement but do not provide detailed scope authority."
+      }
+    },
+    {
+      "q_number": 70,
+      "question_text": "How does project planning differ from project definition?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Definition selects team members while planning decides the target market.",
+        "Definition specifies value, deliverables and performance expectations.",
+        "Planning establishes the strategic case while definition monitors execution.",
+        "Definition reports results while planning captures lessons from repetition.",
+        "Planning assigns activities, timing, information, resources and responsibility."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "handbook_pages": [
+          120,
+          121
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          4
+        ],
+        "explanation": "Definition sets what the project is expected to deliver and within what broad constraints. Planning explains how, when, with what resources and by whom delivery will occur. Mixing the stages can produce activity before scope and expectations are stable."
+      }
+    },
+    {
+      "q_number": 71,
+      "question_text": "A national association is planning a service already delivered successfully by several peers. Which approach improves the plan?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Benchmark comparable association projects.",
+        "Replicate the peer process before defining local performance expectations.",
+        "Use UEFA knowledge and contacts.",
+        "Use benchmarking as the final review after operational choices are fixed.",
+        "Adapt shared good practice to the local context."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "handbook_pages": [
+          120,
+          121
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          4
+        ],
+        "explanation": "Peer experience can reveal proven activities, resources and risks, while UEFA facilitates exchange. The association still needs a local definition and adaptation because context and stakeholders differ. Benchmarking should inform planning rather than replace it or arrive after decisions are closed."
+      }
+    },
+    {
+      "q_number": 72,
+      "question_text": "What roles does information play during service delivery and review?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Monitor delivery against the planned level.",
+        "Keep stakeholders informed through reporting.",
+        "Convert operational results into project scope changes during execution.",
+        "Improve repeated services through review.",
+        "Capture learning from one-off events for future delivery."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "handbook_pages": [
+          120,
+          121
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "explanation": "Information supports control, communication and learning. Repeated services can improve the same process, while event reviews transfer lessons to future projects. Monitoring may justify corrective action, but informal scope change would recreate idea creep."
+      }
+    },
+    {
+      "q_number": 73,
+      "question_text": "How should an association choose which service projects to pursue?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Rank projects by forecast profit and treat resource needs as an implementation issue.",
+        "Use a fixed weighted score as the decisive method for dissimilar projects.",
+        "Consider strategic, economic and resource criteria.",
+        "Select projects that attract the broadest stakeholder group.",
+        "Prioritise projects whose benefits are easiest to measure."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          14
+        ],
+        "handbook_pages": [
+          122,
+          123
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2
+        ],
+        "explanation": "Selection balances contribution to football, financial effects and scarce material and human resources. Weighted models can inform discussion, but unique options and uncertain forecasts limit mechanical ranking. Ease of measurement or audience size does not replace strategic judgement."
+      }
+    },
+    {
+      "q_number": 74,
+      "question_text": "A project activity sits on the critical path and begins to slip. Which management responses are appropriate?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Assess the effect on final delivery timing.",
+        "Allow the delay if the activity remains within its own departmental budget.",
+        "Move the activity into the post-project review.",
+        "Protect or reallocate resources to recover the activity.",
+        "Offset the delay by increasing customer expectations for another service dimension."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          14
+        ],
+        "handbook_pages": [
+          122,
+          123
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          3
+        ],
+        "explanation": "A critical-path delay threatens the project's delivery date, so timing and resources require immediate attention. Budget performance in one unit does not neutralise schedule dependence. Review captures learning later; it cannot replace action on a live constraint."
+      }
+    },
+    {
+      "q_number": 75,
+      "question_text": "A power cut is a credible match risk. What should a robust contingency plan specify?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "A single recovery decision applied across the different timing scenarios.",
+        "Responses for a failure several hours before kick-off.",
+        "Transfer of risk responsibility to the electricity supplier after the event.",
+        "Responses for a failure immediately before or during the match.",
+        "Safe movement of spectators when evacuation is required."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          14
+        ],
+        "handbook_pages": [
+          122,
+          123
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3,
+          4
+        ],
+        "explanation": "Contingency planning connects a recognised risk to actions under distinct scenarios. Timing changes whether recovery, postponement or evacuation is appropriate. Supplier responsibility may matter contractually, but the association still needs an operational safety response."
+      }
+    },
+    {
+      "q_number": 76,
+      "question_text": "Which activity belongs in sound project planning?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "factual_anchor",
+      "options": [
+        "Identify critical activities and resources.",
+        "Use the project review to define the original work packages.",
+        "Estimate project timing.",
+        "Assess costs, benefits and risks.",
+        "Prepare contingency responses."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          14
+        ],
+        "handbook_pages": [
+          122,
+          123
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "explanation": "Planning breaks the project into work packages, estimates resources, timing, costs and benefits, highlights critical elements and prepares for risk. Review occurs after or during delivery to learn and improve. Defining work packages at review would leave execution without a usable plan."
+      }
+    },
+    {
+      "q_number": 77,
+      "question_text": "What makes a useful service-performance measure?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "It remains stable when service quality changes.",
+        "It reflects a relevant service dimension.",
+        "It requires specialist interpretation by the measurement team.",
+        "It concentrates on dimensions already exceeding expectations.",
+        "It combines customer and employee views into one score."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          14
+        ],
+        "handbook_pages": [
+          122,
+          123
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1
+        ],
+        "explanation": "A good system covers relevant dimensions, responds when service changes and is understandable enough to guide improvement. Measures should expose underperformance as well as strengths. Combining perspectives may hide the distinct causes and audiences represented by each measure."
+      }
+    },
+    {
+      "q_number": 78,
+      "question_text": "How should a radar chart comparing expected and actual service performance be interpreted?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Matching lines show that measurement sensitivity is inadequate.",
+        "A wider actual line indicates higher operating cost rather than service performance.",
+        "An expectation line beyond actual performance indicates underperformance.",
+        "Expectation gaps should be prioritised by chart size before considering customer importance.",
+        "Actual performance beyond expectation indicates overperformance."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          14
+        ],
+        "handbook_pages": [
+          122,
+          123
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          2,
+          4
+        ],
+        "explanation": "The chart compares what customers expect with what the service delivers by dimension. Gaps indicate underperformance, overperformance or a match. Management still needs judgement about importance and causes rather than ranking visual gaps mechanically."
+      }
+    },
+    {
+      "q_number": 79,
+      "question_text": "A service dashboard contains employee satisfaction, customer satisfaction and call waiting time. How should these measures be classified?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Employee satisfaction is internal and subjective.",
+        "Employee satisfaction is objective because it is collected numerically.",
+        "Customer satisfaction is external and subjective.",
+        "Call waiting time is external and objective.",
+        "Call waiting time is internal because staff control the answering process."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          15
+        ],
+        "handbook_pages": [
+          124,
+          125
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          2,
+          3
+        ],
+        "explanation": "Perspective concerns whose experience is measured, while objectivity concerns whether the measure is judgement or observable performance. Survey scores remain subjective despite numerical collection. Customer waiting time is an external service outcome even though internal processes influence it."
+      }
+    },
+    {
+      "q_number": 80,
+      "question_text": "Why should risk assessment continue during project execution?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "The planning-stage assessment transfers operational risk to the project team.",
+        "Risk conditions can change as the service unfolds.",
+        "Emerging threats may require activation or revision of action plans.",
+        "Continuous monitoring protects service quality and customer experience.",
+        "Execution evidence can refine scenario assumptions."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          15
+        ],
+        "handbook_pages": [
+          124,
+          125
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "explanation": "Planning identifies risks and scenarios, but live conditions may change their probability or impact. Monitoring lets managers activate contingencies and adjust responses before service quality is damaged. Responsibility remains with management rather than being discharged by the initial assessment."
+      }
+    },
+    {
+      "q_number": 81,
+      "question_text": "How do operations relate to strategy in the chapter's conclusion?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Operations translate strategic intentions into delivered results.",
+        "Operations define the association's mission through recurring service decisions.",
+        "Strategy begins after managers identify operational bottlenecks.",
+        "Operational efficiency determines which stakeholder goals are legitimate.",
+        "Project delivery replaces the need to prioritise strategic initiatives."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          15
+        ],
+        "handbook_pages": [
+          124,
+          125
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0
+        ],
+        "explanation": "Strategy chooses direction and priorities; operations turn them into actual services and experiences. Operational evidence can inform later strategy, but it does not define mission or stakeholder legitimacy. Careful selection, planning, people and measures connect the two levels."
+      }
+    },
+    {
+      "q_number": 82,
+      "question_text": "A review finds that a youth event met its budget but disappointed participants. Which follow-up is appropriate?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "application",
+      "options": [
+        "Classify the event as successful because budget control is objective.",
+        "Examine customer-facing service dimensions alongside financial performance.",
+        "Revise the strategic objective before analysing participant experience.",
+        "Capture lessons in the project review for future events.",
+        "Transfer evaluation to finance because the event closed within budget."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          15
+        ],
+        "handbook_pages": [
+          124,
+          125
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          3
+        ],
+        "explanation": "Budget adherence is one dimension of project performance, not proof of service quality. Participant evidence should identify where expectations were missed, and the review should convert that evidence into learning. Strategy may later change, but operational diagnosis comes first."
+      }
+    },
+    {
+      "q_number": 83,
+      "question_text": "Which ideas summarise world-class operational management in a football association?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Service quality can be inferred from financial surplus.",
+        "Motivated, capable people deliver services.",
+        "Financial understanding supports economic resilience.",
+        "Project selection becomes unnecessary when market sensing is strong.",
+        "Stakeholder sensing reveals opportunities."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          15
+        ],
+        "handbook_pages": [
+          124,
+          125
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          1,
+          2,
+          4
+        ],
+        "explanation": "World-class operations integrate people management, financial literacy, external sensing and disciplined service design. No single indicator captures that system. Surplus can coexist with poor experience, and opportunity discovery still requires project selection and execution capacity."
+      }
+    },
+    {
+      "q_number": 84,
+      "question_text": "Why are project selection, measurement and learning connected?",
+      "q_type": "multiple_choice",
+      "oral_exam_category": "explanation",
+      "options": [
+        "Selection protects scarce capacity for worthwhile projects.",
+        "Measurement supports control during execution.",
+        "Review converts results into learning.",
+        "Learning improves future selection and delivery.",
+        "Measurement compensates for weak selection by proving which overloaded projects should continue."
+      ],
+      "source_locator": {
+        "file": "Operational-management.pdf",
+        "pdf_pages": [
+          15
+        ],
+        "handbook_pages": [
+          124,
+          125
+        ]
+      },
+      "page_crops": [],
+      "answer": {
+        "correct_options": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "explanation": "The operational cycle begins by choosing work that fits strategy and resources, then measures delivery and learns from outcomes. Each stage improves the next cycle. Measurement can reveal a poor choice, but it cannot restore capacity already fragmented by excessive project load."
+      }
+    }
+  ]
+}

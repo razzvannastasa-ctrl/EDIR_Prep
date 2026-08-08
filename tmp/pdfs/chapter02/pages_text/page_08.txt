@@ -1,0 +1,138 @@
+80
+81
+	> 3.2. External analysis
+Just like organisations in other sectors, national associations operate in an increasingly complex environment 
+and are influenced by dozens of diverse factors, many of which are interconnected. Therefore, as discussed 
+earlier, effective strategies can only be formulated with a profound understanding of the organisation’s 
+external environment and the various influences that may favourably or adversely affect outcomes.
+Table 2.3: Situation and performance analysis in practice: the UEFA Grow framework
+Performance
+Participation
+Facilities
+Revenue
+Number of elite teams 
+by age group
+Competition structures
+Number of 
+performance coaches, 
+officials and volunteers
+Information from elite 
+clubs & academies
+Information on talent 
+pathways
+Participation across age 
+groups
+Number of 
+participation coaches, 
+officials and volunteers
+Number, cost and 
+impact of participation 
+programmes
+Participant and non-
+participant attitudes 
+and motivations
+Information from clubs, 
+academies & schools
+Number and type of 
+facilities per region/ 
+area by type
+Demand for facilities 
+per region/area by type
+Utilisation of existing 
+facilities
+Planned facility 
+maintenance/ 
+development 
+Value of public funding
+Total sports 
+sponsorships & % 
+football
+Total football broadcast 
+and media rights
+OTT & digital revenues
+Matchday revenues 
+(including ticketing)
+ROI/SROI assessments
+Existing NA assets
+Engagement
+Governance 
+& regulation
+Women’s football
+Enablers
+Social media 
+engagement (follows/ 
+likes/group members)
+Number of members 
+of the national team 
+official supporters club
+Data from recent 
+football image research 
+(e.g. surveys)
+Compliance check 
+against UEFA Good 
+Governance Framework
+Internal regulations/ 
+guides
+NA handbook
+Memberships of 
+social & international 
+regulatory bodies
+Women’s participation 
+across age groups
+% of workforce and 
+organisation that is 
+female
+Number of licensed/ 
+professionalised clubs
+Average number of 
+attendees per women’s 
+elite match
+Previous budget(s)
+Organisational charts & 
+decision-making bodies 
+e.g. Board, Standing 
+Committees, etc.
+Number of FTEs per 
+department and roles
+Job descriptions
+Recruitment/hiring 
+plans
+KPI trackers
+Calendar of events
+	> 3.2.1. Domain mapping
+Good strategic management relies on decision-makers fully understanding the external environment: knowing 
+what is needed to be successful and being able to identify trends and threats, etc. As mentioned previously, 
+national associations are complex organisations. They are complex in their internal structure because of their 
+democratic and political nature, but they are also complex in terms of the external environments in which 
+they operate.
+Many national associations are relatively small organisations, with an average of 30 to 70 employees. 
+However, national associations are active in many more areas than other similarly sized companies. A typical 
+company with 50 employees and annual turnover of €5m would not normally be active in more than one 
+business area, but national associations have to operate in perhaps a dozen or so different areas. Because 
+not all these areas are markets, they are normally referred to as ‘domains’, rather than ‘businesses’, ‘business 
+areas’ or ‘business units’.
+A ‘domain’ refers to an area of the association’s activities where it is possible to identify an exchange of 
+goods, services or money between the association and a defined group of stakeholders. Some of these 
+domains are easy to identify and the exchange process is clearly understood. In the sponsorship domain, for 
+example, the association sells space that it owns or controls, such as in stadiums and on websites, to generate 
+funds. Here, the stakeholder is a customer exchanging money for an advertising service, which is a defined 
+sponsorship package involving clear rights and obligations. Other domains are equally straightforward, such 
+as refereeing and stadiums. Here, the service and the stakeholder are easily identified, and the exchange 
+process is simple to understand. 
+However, other domains, such as youth development, are much more complex. The first difficulty lies in 
+understanding the service or the value that is being created. We normally understand youth development 
+as the process of giving more young people the opportunity to play football and providing talented young 
+players with adequate training and career prospects in football. So, the service is football club membership. 
+But who is the stakeholder, and what is the exchange process? The primary stakeholder is the young player, 
+who may already be playing for a club or may wish to start playing. The player is involved in an exchange 
+with a club, so the club is also a stakeholder. Local government, schools and parents are also parties that 
+can influence youth development and have a stake in it, so they too are stakeholders.
+When national associations want to understand their environment as part of their external analysis, mapping 
+the domains in which they are (or could be) active is an important starting point. There are no templates or 
+blueprints for domain mapping in national associations, but typically an association will define its domains as 
+8 to 15 main areas of activity in which it works to collect funds, generate revenue, perform in international 
+competitions, increase the number of active players or improve stakeholders’ football experience. A framework 
+for describing the most relevant domains (and the related subdomains) of a national association has been 
+developed by UEFA Grow and an example is shown in Table 2.4.
+CHAPTER 2: STRATEGIC MANAGEMENT
+HANDBOOK OF FOOTBALL ASSOCIATION MANAGEMENT
