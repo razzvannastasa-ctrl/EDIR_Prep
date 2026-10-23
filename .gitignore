@@ -6,3 +6,6 @@ __pycache__/
 
 # PDFs are copyrighted — keep local only
 data/pdfs/
+
+# Local DB snapshots — keep local only
+backups/
