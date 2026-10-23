@@ -61,6 +61,7 @@ def init_db():
             source_locator  TEXT,
             original_answer_pages TEXT,
             video_links     TEXT,
+            excluded        INTEGER NOT NULL DEFAULT 0,
             FOREIGN KEY (case_id) REFERENCES cases(id)
         );
         CREATE TABLE IF NOT EXISTS answers (
@@ -113,6 +114,7 @@ def init_db():
             current_phase    INTEGER NOT NULL DEFAULT 0,
             created_at       REAL NOT NULL,
             started_at       REAL,
+            paused_at        REAL,
             submitted_at     REAL,
             time_taken_s     INTEGER,
             FOREIGN KEY (template_id) REFERENCES custom_test_templates(id)
@@ -134,6 +136,7 @@ def init_db():
             revealed         INTEGER NOT NULL DEFAULT 0,
             result           TEXT,
             rating           TEXT,
+            self_score       REAL,
             answered_at      REAL,
             UNIQUE(custom_test_id, position),
             UNIQUE(custom_test_id, question_id),
@@ -151,6 +154,7 @@ def init_db():
             timer_limit_s    INTEGER NOT NULL,
             status           TEXT NOT NULL DEFAULT 'ready',
             started_at       REAL,
+            paused_at        REAL,
             submitted_at     REAL,
             time_taken_s     INTEGER,
             UNIQUE(custom_test_id, phase_index),
@@ -185,6 +189,8 @@ def _migrate(conn):
         conn.execute(
             "ALTER TABLE cases ADD COLUMN library_key TEXT NOT NULL DEFAULT 'edir'"
         )
+    if "modalities" not in cols:
+        conn.execute("ALTER TABLE cases ADD COLUMN modalities TEXT")
     conn.execute(
         "UPDATE cases SET library_key='edir' "
         "WHERE library_key IS NULL OR TRIM(library_key)=''"
@@ -199,6 +205,8 @@ def _migrate(conn):
         conn.execute("ALTER TABLE questions ADD COLUMN original_answer_pages TEXT")
     if "video_links" not in cols_q:
         conn.execute("ALTER TABLE questions ADD COLUMN video_links TEXT")
+    if "excluded" not in cols_q:
+        conn.execute("ALTER TABLE questions ADD COLUMN excluded INTEGER NOT NULL DEFAULT 0")
     conn.commit()
     conn.execute(
         "INSERT OR IGNORE INTO chapters (number, title) VALUES (?, ?)",
@@ -230,6 +238,8 @@ def _migrate(conn):
             "ALTER TABLE custom_tests "
             "ADD COLUMN current_phase INTEGER NOT NULL DEFAULT 0"
         )
+    if "paused_at" not in cols_tests:
+        conn.execute("ALTER TABLE custom_tests ADD COLUMN paused_at REAL")
     cols_custom_q = {
         r[1] for r in conn.execute("PRAGMA table_info(custom_test_questions)").fetchall()
     }
@@ -238,6 +248,13 @@ def _migrate(conn):
             "ALTER TABLE custom_test_questions "
             "ADD COLUMN phase_index INTEGER NOT NULL DEFAULT 0"
         )
+    if "self_score" not in cols_custom_q:
+        conn.execute("ALTER TABLE custom_test_questions ADD COLUMN self_score REAL")
+    cols_phases = {
+        r[1] for r in conn.execute("PRAGMA table_info(custom_test_phases)").fetchall()
+    }
+    if "paused_at" not in cols_phases:
+        conn.execute("ALTER TABLE custom_test_phases ADD COLUMN paused_at REAL")
     conn.commit()
 
 
@@ -341,7 +358,7 @@ def get_questions(case_id):
                FROM questions q
                JOIN cases c ON c.id=q.case_id
                JOIN chapters ch ON ch.id=c.chapter_id
-               WHERE q.case_id=? ORDER BY q.q_number""",
+               WHERE q.case_id=? AND q.excluded=0 ORDER BY q.q_number""",
             (case_id,)
         ).fetchall()
 

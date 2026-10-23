@@ -1,0 +1,18 @@
+{
+  "questions_audited": 15113,
+  "free_text_skipped": 4241,
+  "selectable_audited": 10872,
+  "questions_changed": 3456,
+  "distractors_changed": 6511,
+  "all_correct_without_distractors": 5,
+  "negative_stems_protected": 91,
+  "staged_updates": 3456,
+  "remaining_giveaway_flags_in_changed_options": 0,
+  "source_page_coverage": 3456,
+  "essential_guide_unchanged": true,
+  "stage_sha256": "142a7bdcf82c6544e3f7be3bf2bb272468d09279f7a4d0248eaa39dd65522cc3",
+  "applied_at": "2026-08-11T16:10:40.772025+03:00",
+  "immediate_database_backup": "C:\\Users\\Razvan\\Documents\\Radiologie\\backups\\SC_CORE_distractor_upgrade\\edir_prep.immediately_before_sc_core_apply_20260811_161039.db",
+  "database_sha256_after": "3a9822c52a4b2fb84453e7c455eddd27f541564cef13abd386a005ac659118a7",
+  "transaction": "committed"
+}

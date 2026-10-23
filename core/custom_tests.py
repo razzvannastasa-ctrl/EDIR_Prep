@@ -9,7 +9,8 @@ from copy import deepcopy
 from collections.abc import Iterable
 
 from core.database import LIBRARY_EDIR, LIBRARY_UEFA_CFM, get_conn
-from core.learning import classify_answer
+from core.learning import classify_answer, correct_option_indices, mrq_score
+from core.modality import MODALITIES, get_case_modalities
 
 
 SECTION_ORDER = ("core", "sc", "mrq")
@@ -110,33 +111,104 @@ def _library_sections(config: dict | None) -> tuple[str, ...]:
     return ("mrq",) if get_config_library(config) == LIBRARY_UEFA_CFM else SECTION_ORDER
 
 
+def _used_case_ids(conn) -> set[int]:
+    """Case ids (CORE/SC) with at least one completed question in any other custom test."""
+    rows = conn.execute(
+        """SELECT DISTINCT case_id FROM custom_test_questions
+           WHERE section IN ('core','sc')
+             AND (result IS NOT NULL OR user_answer IS NOT NULL)"""
+    ).fetchall()
+    return {row[0] for row in rows}
+
+
+def _used_question_ids(conn) -> set[int]:
+    """Question ids (MRQ) completed in any other custom test."""
+    rows = conn.execute(
+        """SELECT DISTINCT question_id FROM custom_test_questions
+           WHERE section='mrq'
+             AND (result IS NOT NULL OR user_answer IS NOT NULL)"""
+    ).fetchall()
+    return {row[0] for row in rows}
+
+
+def _modality_filter(modalities: list[str] | None) -> set[str] | None:
+    """Normalise a modality selection to None when it is a no-op (unset/full).
+
+    An empty list is a deliberate "match nothing" selection (the user
+    unchecked every modality), distinct from None (no filter configured at
+    all) — so this only special-cases None and the full set, not falsy
+    empty lists.
+    """
+    if modalities is None:
+        return None
+    selected = set(modalities)
+    return None if selected == set(MODALITIES) else selected
+
+
 def get_availability(
     section: str | None = None,
     library_key: str = LIBRARY_EDIR,
+    *,
+    modalities: list[str] | None = None,
+    exclude_used: bool = False,
 ) -> list[dict]:
     """Return source/chapter availability; unit_count is cases except for MRQs."""
+    modality_filter = _modality_filter(modalities)
     with get_conn() as conn:
+        used_case_ids = _used_case_ids(conn) if exclude_used else set()
+        used_question_ids = _used_question_ids(conn) if exclude_used else set()
         rows = conn.execute(
-            """SELECT c.section, ch.id AS chapter_id, ch.number AS chapter_number,
-                      ch.title AS chapter_title, c.source,
-                      COUNT(DISTINCT c.id) AS case_count,
-                      COUNT(q.id) AS question_count
+            """SELECT c.id AS case_id, c.section, ch.id AS chapter_id,
+                      ch.number AS chapter_number, ch.title AS chapter_title,
+                      c.source, c.modalities, q.id AS question_id
                FROM cases c
                JOIN chapters ch ON ch.id=c.chapter_id
                JOIN questions q ON q.case_id=c.id
                WHERE (? IS NULL OR c.section=?)
-                 AND c.library_key=?
-               GROUP BY c.section, ch.id, ch.number, ch.title, c.source
-               ORDER BY c.section, ch.number, c.source""",
+                 AND c.library_key=?""",
             (section, section, library_key),
         ).fetchall()
-    result = []
+
+    buckets: dict[tuple, dict] = {}
+    seen_cases: dict[tuple, set] = {}
     for row in rows:
-        item = dict(row)
+        key = (row["section"], row["chapter_id"], row["source"])
+        bucket = buckets.setdefault(
+            key,
+            {
+                "section": row["section"],
+                "chapter_id": row["chapter_id"],
+                "chapter_number": row["chapter_number"],
+                "chapter_title": row["chapter_title"],
+                "source": row["source"],
+                "case_count": 0,
+                "question_count": 0,
+            },
+        )
+        if row["section"] == "mrq":
+            if row["question_id"] in used_question_ids:
+                continue
+            bucket["question_count"] += 1
+            continue
+
+        if row["case_id"] in used_case_ids:
+            continue
+        if modality_filter is not None:
+            case_mods = set(get_case_modalities(row["modalities"]))
+            if not case_mods & modality_filter:
+                continue
+        bucket["question_count"] += 1
+        case_seen = seen_cases.setdefault(key, set())
+        if row["case_id"] not in case_seen:
+            case_seen.add(row["case_id"])
+            bucket["case_count"] += 1
+
+    result = list(buckets.values())
+    for item in result:
         item["unit_count"] = (
             item["question_count"] if item["section"] == "mrq" else item["case_count"]
         )
-        result.append(item)
+    result.sort(key=lambda item: (item["section"], item["chapter_number"], item["source"]))
     return result
 
 
@@ -205,7 +277,11 @@ def validate_config(config: dict) -> list[str]:
     library_key = get_config_library(config)
     if library_key not in (LIBRARY_EDIR, LIBRARY_UEFA_CFM):
         errors.append(f"Unknown content library: {library_key}.")
-    availability = get_availability(library_key=library_key)
+    availability = get_availability(
+        library_key=library_key,
+        modalities=config.get("modalities"),
+        exclude_used=bool(config.get("exclude_used")),
+    )
     lookup = {
         (r["section"], r["chapter_id"], r["source"]): r["unit_count"]
         for r in availability
@@ -289,15 +365,27 @@ def _eligible_case_ids(
     chapter_id: int,
     sources: list[str],
     library_key: str,
+    *,
+    modality_filter: set[str] | None = None,
+    exclude_ids: set[int] | None = None,
 ) -> list[int]:
     placeholders = ",".join("?" for _ in sources)
     rows = conn.execute(
-        f"""SELECT id FROM cases
+        f"""SELECT id, modalities FROM cases
             WHERE section=? AND chapter_id=? AND library_key=?
               AND source IN ({placeholders})""",
         (section, chapter_id, library_key, *sources),
     ).fetchall()
-    return [row["id"] for row in rows]
+    ids = []
+    for row in rows:
+        if exclude_ids and row["id"] in exclude_ids:
+            continue
+        if modality_filter is not None:
+            case_mods = set(get_case_modalities(row["modalities"]))
+            if not case_mods & modality_filter:
+                continue
+        ids.append(row["id"])
+    return ids
 
 
 def _eligible_question_ids(
@@ -305,6 +393,8 @@ def _eligible_question_ids(
     chapter_id: int,
     sources: list[str],
     library_key: str,
+    *,
+    exclude_ids: set[int] | None = None,
 ) -> list[int]:
     placeholders = ",".join("?" for _ in sources)
     rows = conn.execute(
@@ -312,9 +402,12 @@ def _eligible_question_ids(
             JOIN cases c ON c.id=q.case_id
             WHERE c.section='mrq' AND c.chapter_id=?
               AND c.library_key=?
-              AND c.source IN ({placeholders})""",
+              AND c.source IN ({placeholders})
+              AND q.excluded=0""",
         (chapter_id, library_key, *sources),
     ).fetchall()
+    if exclude_ids:
+        return [row["id"] for row in rows if row["id"] not in exclude_ids]
     return [row["id"] for row in rows]
 
 
@@ -381,7 +474,12 @@ def sample_config(config: dict, rng: random.Random | None = None) -> list[dict]:
             for section in _library_sections(config)
         ]
 
+    modality_filter = _modality_filter(config.get("modalities"))
+    exclude_used = bool(config.get("exclude_used"))
+
     with get_conn() as conn:
+        exclude_case_ids = _used_case_ids(conn) if exclude_used else None
+        exclude_question_ids = _used_question_ids(conn) if exclude_used else None
         selected_units: dict[tuple[int, str], list[tuple[str, int]]] = {}
         for phase_index, section, entries in phase_groups:
             units: list[tuple[str, int]] = []
@@ -391,13 +489,15 @@ def sample_config(config: dict, rng: random.Random | None = None) -> list[dict]:
                 count = int(entry["count"])
                 if section == "mrq":
                     eligible = _eligible_question_ids(
-                        conn, chapter_id, sources, library_key
+                        conn, chapter_id, sources, library_key,
+                        exclude_ids=exclude_question_ids,
                     )
                     selected = rng.sample(eligible, count)
                     units.extend(("question", qid) for qid in selected)
                 else:
                     eligible = _eligible_case_ids(
-                        conn, section, chapter_id, sources, library_key
+                        conn, section, chapter_id, sources, library_key,
+                        modality_filter=modality_filter, exclude_ids=exclude_case_ids,
                     )
                     selected = rng.sample(eligible, count)
                     units.extend(("case", cid) for cid in selected)
@@ -437,7 +537,7 @@ def sample_config(config: dict, rng: random.Random | None = None) -> list[dict]:
             for unit_kind, unit_id in units:
                 if unit_kind == "case":
                     q_rows = conn.execute(
-                        "SELECT id FROM questions WHERE case_id=? ORDER BY q_number",
+                        "SELECT id FROM questions WHERE case_id=? AND excluded=0 ORDER BY q_number",
                         (unit_id,),
                     ).fetchall()
                     question_ids = [row["id"] for row in q_rows]
@@ -920,6 +1020,68 @@ def continue_to_next_phase(test_id: int) -> bool:
         return True
 
 
+def pause_test(test_id: int) -> None:
+    """Freeze a standalone (non-phased) timed test's countdown."""
+    with get_conn() as conn:
+        conn.execute(
+            """UPDATE custom_tests
+               SET paused_at=?
+               WHERE id=? AND status='in_progress' AND paused_at IS NULL""",
+            (time.time(), test_id),
+        )
+
+
+def resume_test(test_id: int) -> None:
+    """Resume a paused standalone test, shifting started_at past the pause."""
+    now = time.time()
+    with get_conn() as conn:
+        test = conn.execute(
+            "SELECT started_at, paused_at FROM custom_tests WHERE id=?",
+            (test_id,),
+        ).fetchone()
+        if not test or test["paused_at"] is None:
+            return
+        pause_duration = now - test["paused_at"]
+        conn.execute(
+            """UPDATE custom_tests
+               SET started_at=started_at+?, paused_at=NULL
+               WHERE id=?""",
+            (pause_duration, test_id),
+        )
+
+
+def pause_phase(test_id: int, phase_index: int) -> None:
+    """Freeze an active phase's countdown until resume_phase is called."""
+    with get_conn() as conn:
+        conn.execute(
+            """UPDATE custom_test_phases
+               SET paused_at=?
+               WHERE custom_test_id=? AND phase_index=?
+                 AND status='active' AND paused_at IS NULL""",
+            (time.time(), test_id, phase_index),
+        )
+
+
+def resume_phase(test_id: int, phase_index: int) -> None:
+    """Resume a paused phase, shifting started_at so paused time isn't counted."""
+    now = time.time()
+    with get_conn() as conn:
+        phase = conn.execute(
+            """SELECT started_at, paused_at FROM custom_test_phases
+               WHERE custom_test_id=? AND phase_index=?""",
+            (test_id, phase_index),
+        ).fetchone()
+        if not phase or phase["paused_at"] is None:
+            return
+        pause_duration = now - phase["paused_at"]
+        conn.execute(
+            """UPDATE custom_test_phases
+               SET started_at=started_at+?, paused_at=NULL
+               WHERE custom_test_id=? AND phase_index=?""",
+            (pause_duration, test_id, phase_index),
+        )
+
+
 def finish_test(test_id: int) -> None:
     """Complete an exam/learning test, grading any unrevealed exam questions."""
     now = time.time()
@@ -972,15 +1134,205 @@ def finish_test(test_id: int) -> None:
         )
 
 
-def rate_free_text(test_id: int, position: int, rating: str) -> None:
-    result_map = {"got_it": "correct", "partial": "partial", "missed": "incorrect"}
+def rate_free_text(test_id: int, position: int, score: float) -> None:
+    """Self-rate a free-text answer with a continuous 0-1 score (0 = fully
+    missed, 1 = fully correct). The score feeds directly into that question's
+    case/section percentage; it is also bucketed into the coarser
+    correct/partial/incorrect result used by the plain result counts.
+    """
+    score = max(0.0, min(1.0, float(score)))
+    if score >= 0.75:
+        result = "correct"
+    elif score <= 0.25:
+        result = "incorrect"
+    else:
+        result = "partial"
     with get_conn() as conn:
         conn.execute(
             """UPDATE custom_test_questions
-               SET rating=?, result=?, revealed=1, answered_at=?
+               SET self_score=?, result=?, revealed=1, answered_at=?
                WHERE custom_test_id=? AND position=?""",
-            (rating, result_map[rating], time.time(), test_id, position),
+            (score, result, time.time(), test_id, position),
         )
+
+
+_SECTION_DISPLAY_ORDER = {"mrq": 0, "sc": 1, "core": 2}
+
+
+def score_core_case(entries: list[dict]) -> tuple[float, float]:
+    """Weighted score for one CORE case out of a 10-point total.
+
+    The first free-text question (by q_number) is worth 3 points, every
+    additional free-text question is worth 2 points each; the remaining
+    points are split evenly across the case's non-free-text questions. A
+    case that is entirely one type (all free-text, or all choice) gets the
+    full 10 points reallocated to that type. If the front-loaded free-text
+    total would itself exceed 10 (only possible with 5+ free-text questions
+    in one case), the free-text weights are scaled down to fit.
+
+    Each entry needs: {"q_number": int, "is_free_text": bool, "score": float | None}.
+    A None score (an unrated free-text question) is excluded from both the
+    earned and max points until it's self-rated, matching the "unscored, not
+    zero" convention used elsewhere — so its allotted weight is simply left
+    out of both totals rather than counted as 0.
+
+    Returns (earned_points, max_points_so_far).
+    """
+    ft_order = sorted(
+        (i for i, e in enumerate(entries) if e["is_free_text"]),
+        key=lambda i: entries[i]["q_number"],
+    )
+    choice_order = [i for i, e in enumerate(entries) if not e["is_free_text"]]
+
+    weight = [0.0] * len(entries)
+    if ft_order and choice_order:
+        raw = [3.0] + [2.0] * (len(ft_order) - 1)
+        total_raw = sum(raw)
+        if total_raw > 10.0:
+            raw = [w * (10.0 / total_raw) for w in raw]
+            total_raw = 10.0
+        for i, w in zip(ft_order, raw):
+            weight[i] = w
+        per_choice = (10.0 - total_raw) / len(choice_order)
+        for i in choice_order:
+            weight[i] = per_choice
+    elif ft_order:
+        per = 10.0 / len(ft_order)
+        for i in ft_order:
+            weight[i] = per
+    elif choice_order:
+        per = 10.0 / len(choice_order)
+        for i in choice_order:
+            weight[i] = per
+
+    earned = 0.0
+    max_points = 0.0
+    for i, entry in enumerate(entries):
+        if entry["score"] is None:
+            continue
+        earned += weight[i] * entry["score"]
+        max_points += weight[i]
+    return earned, max_points
+
+
+def get_phase_scores(test_id: int) -> list[dict]:
+    """Percentage score per phase (phased exams) or per section (standalone
+    tests) — grouped by (phase_index, section) so MRQ/SC/CORE never mix even
+    when they share a phase_index (every standalone test's rows default to
+    phase_index=0).
+
+    MRQ and non-free-text SC questions use the official MRQ-style
+    partial-credit formula (n.Correct/t.Correct minus n.Incorrect/t.Incorrect,
+    clamped to [0,1]), so a skipped question scores 0 without needing
+    special-casing. A free-text question only counts once self-rated (via
+    rate_free_text): its 0-1 self_score is then averaged in alongside the
+    others, so rating it can change the section's percentage.
+
+    CORE is different: each case is first scored out of 10 points via
+    score_core_case (front-loaded free-text weighting), and the CORE
+    section percentage is the sum of every case's earned points over the
+    sum of every case's max-points-so-far — i.e. weighted by case, not a
+    flat per-question average.
+    """
+    with get_conn() as conn:
+        rows = conn.execute(
+            """SELECT ctq.phase_index, ctq.section, ctq.case_id, ctq.user_answer,
+                      ctq.self_score, q.q_number, q.q_type, q.options,
+                      a.correct_options, a.answer_text
+               FROM custom_test_questions ctq
+               JOIN questions q ON q.id=ctq.question_id
+               LEFT JOIN answers a ON a.question_id=q.id
+               WHERE ctq.custom_test_id=?""",
+            (test_id,),
+        ).fetchall()
+        phase_rows = conn.execute(
+            """SELECT phase_index, name FROM custom_test_phases
+               WHERE custom_test_id=? ORDER BY phase_index""",
+            (test_id,),
+        ).fetchall()
+    phase_names = {row["phase_index"]: row["name"] for row in phase_rows}
+
+    def _question_score(row) -> float | None:
+        if row["q_type"] == "free_text":
+            return row["self_score"]
+        options = json.loads(row["options"] or "[]")
+        correct = set(
+            correct_option_indices(options, row["correct_options"], row["answer_text"])
+        )
+        user_answer = _answer_from_json(row["user_answer"])
+        if isinstance(user_answer, int):
+            selected = {user_answer}
+        elif isinstance(user_answer, list):
+            selected = {int(i) for i in user_answer}
+        else:
+            selected = set()
+        return mrq_score(selected, correct, len(options))
+
+    scores_by_group: dict[tuple[int, str], list[float]] = {}
+    core_cases: dict[tuple[int, int], list[dict]] = {}
+    for row in rows:
+        score = _question_score(row)
+        if row["section"] == "core":
+            key = (row["phase_index"], row["case_id"])
+            core_cases.setdefault(key, []).append(
+                {
+                    "q_number": row["q_number"],
+                    "is_free_text": row["q_type"] == "free_text",
+                    "score": score,
+                }
+            )
+            continue
+        if score is None:
+            continue
+        scores_by_group.setdefault((row["phase_index"], row["section"]), []).append(score)
+
+    core_totals: dict[int, list[float]] = {}
+    for (phase_index, _case_id), entries in core_cases.items():
+        earned, max_points = score_core_case(entries)
+        totals = core_totals.setdefault(phase_index, [0.0, 0.0])
+        totals[0] += earned
+        totals[1] += max_points
+
+    result = []
+    for (phase_index, section), scores in scores_by_group.items():
+        if phase_names:
+            name = phase_names.get(phase_index, f"Phase {phase_index + 1}")
+        else:
+            name = SECTION_LABELS[section]
+        result.append(
+            {
+                "phase_index": phase_index,
+                "section": section,
+                "name": name,
+                "score_pct": (sum(scores) / len(scores) * 100) if scores else 0.0,
+                "scored_count": len(scores),
+            }
+        )
+    for phase_index, (earned, max_points) in core_totals.items():
+        if phase_names:
+            name = phase_names.get(phase_index, f"Phase {phase_index + 1}")
+        else:
+            name = SECTION_LABELS["core"]
+        scored_count = sum(
+            1
+            for (pi, _case_id), entries in core_cases.items()
+            if pi == phase_index
+            for entry in entries
+            if entry["score"] is not None
+        )
+        result.append(
+            {
+                "phase_index": phase_index,
+                "section": "core",
+                "name": name,
+                "score_pct": (earned / max_points * 100) if max_points else 0.0,
+                "scored_count": scored_count,
+            }
+        )
+    result.sort(
+        key=lambda item: (item["phase_index"], _SECTION_DISPLAY_ORDER.get(item["section"], 99))
+    )
+    return result
 
 
 def get_result_breakdown(test_id: int) -> list[dict]:

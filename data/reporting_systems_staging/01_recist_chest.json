@@ -1,0 +1,260 @@
+[
+  {
+    "chapter_id": 4,
+    "chapter_match": "exact",
+    "source": "Reporting Systems",
+    "section": "mrq",
+    "library_key": "edir",
+    "clinical_vignette": "RECIST 1.1 — Thoracic/Mediastinal Target Lesions",
+    "article_summary": "### RECIST 1.1 (Response Evaluation Criteria In Solid Tumours)\n\n**Source:** Eisenhauer EA, Therasse P, Bogaerts J, et al. \"New response evaluation criteria in solid tumours: Revised RECIST guideline (version 1.1).\" European Journal of Cancer 45 (2009) 228–247 (RECIST Working Group, EORTC/NCI/NCIC Clinical Trials Group).\n\n**Scope:** A standardised anatomical framework, used mainly in oncology clinical trials, for measuring solid tumour burden on imaging (CT preferred, with limited roles for MRI, clinical exam, and chest X-ray) and for classifying the change in that burden into a defined response category over time. This case focuses on pulmonary parenchymal target lesions, mediastinal/hilar lymph node target lesions, and pleural/pericardial disease; the organ-agnostic general-principle content (measurability rules, non-target lesion definitions, new-lesion rules in the abstract) is covered in the companion Abdominal RECIST case.\n\n### Category cheat-sheet\n- **Complete Response (CR):** All target lesions have disappeared, and any target lymph node has shrunk to a short axis below 10 mm.\n- **Partial Response (PR):** The sum of target lesion diameters has fallen by at least 30% from the baseline sum.\n- **Stable Disease (SD):** The change in the sum of target lesion diameters is too small to qualify as either partial response or progressive disease, measured against the smallest sum recorded on study.\n- **Progressive Disease (PD):** The sum of target lesion diameters has increased by at least 20% (and at least 5 mm in absolute terms) from the smallest sum recorded on study, or a new lesion has appeared, or non-target disease has shown unequivocal progression.\n\n### Key imaging/scoring points\n- Measurability thresholds: 10 mm longest diameter on CT (assuming slice thickness no greater than 5 mm; if thicker, the minimum size is twice the slice thickness), 10 mm by caliper on clinical exam, and 20 mm on chest X-ray, but only if the lesion is clearly defined and surrounded by aerated lung.\n- Chest CT is preferred over chest X-ray whenever possible, especially when progression is an important trial endpoint, because of its superior sensitivity for both lesion measurement and new-lesion detection. MRI may substitute for CT at some anatomical sites, but explicitly not for the lung.\n- Lymph nodes are assessed by short axis only: a short axis of 15 mm or more on CT makes a node an eligible target lesion; 10 to under 15 mm makes it a non-target lesion; under 10 mm is considered normal and the node is not recorded or followed at all. Only the short axis, never the long axis, contributes to the sum of target lesion diameters.\n- A target lymph node's actual short axis must still be recorded at every follow-up assessment even after it regresses to a normal size — this is why a patient in complete response can still have a small, non-zero recorded sum.\n- Up to five target lesions total, with a maximum of two per organ, chosen for size and reproducibility; the largest lesion is not always the best choice if it cannot be reliably remeasured, in which case the next largest reproducible lesion should be selected instead.\n- A pulmonary target lesion that becomes too faint on CT to measure accurately, but is believed still present, is assigned a default value of 5 mm; if believed to have genuinely disappeared, it is recorded as 0 mm.\n- Recommended CT technique: contiguous slices through the chest, a slice thickness of 5 mm or less, and consistent contrast technique and anatomic coverage between baseline and follow-up scans.\n- Pleural effusions, pericardial effusions, and lymphangitic involvement of the lung are all classed as truly non-measurable disease and are never selected as target lesions, regardless of how large or well defined they appear on imaging.\n\n### Practical/management implications\n- The change in the target lesion sum drives the CR/PR/SD/PD category, which in turn underpins trial-defined decisions about continuing or discontinuing therapy.\n- Unequivocal progression of non-target disease — the guideline's own worked example is a pleural effusion increasing from trace to large — can override an otherwise favourable target lesion result and produce an overall response of progressive disease; this is deliberately a rare, high-bar judgement rather than something triggered by a modest change.\n- Any confirmed new lesion makes progressive disease the best overall response for that time point, however much the existing target lesions have shrunk.\n- Cytological sampling of a worsening pleural effusion can help distinguish genuine progression from a treatment-related effusion (for example with taxanes or anti-angiogenic agents) when the measurable disease itself is already in partial response or stable disease.\n\n### Pitfalls and limitations\n- Do not select a pulmonary nodule under 10 mm, a chest X-ray lesion under 20 mm, or a mediastinal/hilar node with a short axis under 15 mm as a target lesion.\n- Do not use MRI as a substitute for CT when following pulmonary lesions.\n- Do not omit a \"too small to measure\" lung nodule from the sum of diameters — assign the 5 mm default rather than dropping it.\n- Do not record or follow a lymph node with a short axis below 10 mm at all, whether as a target or a non-target lesion.\n- Do not classify a chest finding as a new lesion, and therefore as progression, if it could plausibly be explained by a change in scanning technique or imaging modality; if a new finding is equivocal, continue treatment to the next scheduled assessment rather than declaring premature progression.\n\n### Take-home points\n- Chest CT with contiguous slices of 5 mm or less is the reference standard for pulmonary and mediastinal RECIST assessment; MRI is not an acceptable substitute for the lung.\n- Mediastinal and hilar nodal measurability, and target/non-target/normal status, hinge entirely on short-axis thresholds of 15 mm and 10 mm, not on the long axis.\n- Complete response requires both disappearance of parenchymal target lesions and normalisation of any target node's short axis to below 10 mm.\n- New lesions and unequivocal non-target progression — classically illustrated in the chest by a pleural effusion going from trace to large — can define progressive disease even while target lesions are shrinking.\n- Pleural, pericardial, and lymphangitic disease are always non-measurable and can only ever be followed qualitatively as non-target disease.",
+    "questions": [
+      {
+        "q_number": 1,
+        "question_text": "Regarding measurability of pulmonary and mediastinal lesions using RECIST 1.1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Chest CT is preferred over chest X-ray for lesion measurement, particularly when disease progression is an important trial endpoint.",
+          "A pulmonary lesion measuring 10 mm on chest X-ray may be selected as a target lesion.",
+          "A lesion on chest X-ray may be considered measurable if it is clearly defined and surrounded by aerated lung.",
+          "MRI is an acceptable substitute for CT when measuring pulmonary lesions.",
+          "The minimum size for a measurable pulmonary nodule on CT assumes a slice thickness no greater than 5 mm."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 4],
+          "explanation": "Chest CT's superior sensitivity for new lesion detection and reproducible measurement makes it preferred over chest X-ray, particularly when progression is a trial endpoint. A pulmonary lesion on chest X-ray requires a minimum longest diameter of 20 mm and must be clearly defined and surrounded by aerated lung to be considered measurable; the 10 mm threshold applies only to CT and clinical caliper measurement, not plain film. RECIST 1.1 specifically states that MRI may substitute for CT at some sites but not the lung, so pulmonary lesions should continue to be followed by CT. The 10 mm CT minimum lesion size assumes contiguous slices of 5 mm or less; thicker slices require a minimum size of twice the slice thickness.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 2,
+        "question_text": "Regarding the assessment of mediastinal and hilar lymph nodes as lesions in RECIST 1.1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A mediastinal lymph node with a short axis of 12 mm on CT should be recorded as a target lesion.",
+          "A hilar lymph node with a short axis of 18 mm on CT may be selected as a target lesion, provided the overall organ and total lesion limits are respected.",
+          "A mediastinal lymph node with a short axis of 8 mm on CT should be recorded and followed as a non-target lesion.",
+          "When a lymph node is measured, only its short axis contributes to the sum of target lesion diameters, not its long axis.",
+          "A hilar lymph node with a short axis of 9 mm should be classified as non-target disease."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 3],
+          "explanation": "Only nodes with a short axis of at least 15 mm on CT qualify as measurable target lesions, and it is the short axis alone, not the long axis, that contributes to the baseline and follow-up sum of diameters. Nodes with a short axis of 10 to under 15 mm are recorded as non-target disease and followed qualitatively, while nodes below 10 mm short axis are considered non-pathological and should not be recorded or followed at all, whether as a target or a non-target lesion, and this applies equally to hilar and mediastinal nodes.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 3,
+        "question_text": "A 61-year-old man with metastatic non-small cell lung cancer has two RECIST target lesions selected at baseline: a right lower lobe pulmonary nodule with a longest diameter of 22 mm, and a subcarinal lymph node with a short axis of 18 mm (baseline sum of diameters 40 mm). At the first on-treatment CT, the pulmonary nodule measures 12 mm and the subcarinal node has a short axis of 12 mm (sum of diameters 24 mm). No non-target lesions are present, and no new lesions are seen.\n\nWhat is the most appropriate RECIST 1.1 overall response category for this time point?",
+        "q_type": "single_choice",
+        "options": [
+          "Stable Disease",
+          "Complete Response",
+          "Partial Response",
+          "Not evaluable",
+          "Progressive Disease"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Partial Response",
+          "correct_options": null,
+          "explanation": "The sum of diameters has fallen from 40 mm to 24 mm, a 40% decrease from baseline, which exceeds the 30% threshold required for partial response. Complete response is not met because the pulmonary nodule has not disappeared and the subcarinal node has not regressed below the 10 mm short-axis threshold that defines a normal node; both must occur for complete response to be assigned. There is no evidence of progression, since neither the 20% relative increase nor the 5 mm absolute increase criteria apply here, and no new lesions are described.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 4,
+        "question_text": "Regarding the calculation of tumour response category for a patient with pulmonary target lesions, with or without target mediastinal lymph nodes, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Progressive disease requires both a 20% relative increase and an absolute increase of at least 5 mm in the sum of target lesion diameters, taking the smallest sum recorded on study as reference.",
+          "Complete response requires disappearance of all target pulmonary lesions and reduction of any target lymph node to a short axis below 10 mm.",
+          "Partial response requires at least a 50% decrease in the sum of target lesion diameters compared with baseline.",
+          "Stable disease is assigned when the change in the sum of target lesion diameters is neither sufficient for partial response nor for progressive disease, taking the smallest sum on study as reference.",
+          "The appearance of a new pulmonary nodule is considered progressive disease even if all measured target lesions have decreased in size."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 3, 4],
+          "explanation": "RECIST 1.1 defines progressive disease as at least a 20% increase in the sum of target lesion diameters relative to the smallest sum recorded on study (the nadir), plus an absolute increase of at least 5 mm, a combined threshold intended to prevent over-calling progression when the sum is very small. Complete response requires disappearance of all target lesions, and any target lymph node must regress to a short axis below 10 mm, since that is the definition of a normal node. Stable disease is a residual category assigned when neither the partial response threshold nor the progression threshold is met, referenced against the smallest sum on study. New lesions, including a new pulmonary nodule, denote progression regardless of the behaviour of existing target lesions; only the partial-response statement is inaccurate, since a decrease of 30%, not 50%, from baseline defines partial response.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 5,
+        "question_text": "A 58-year-old woman with breast cancer has a single pulmonary target lesion, which decreases from 15 mm at baseline to 10 mm at the first follow-up CT, a 33% reduction in the sum of diameters. On the same follow-up scan, a new small pleural-based pulmonary nodule is identified that was clearly absent on the baseline CT performed with identical technique; the finding is unequivocal and not attributable to a change in scanning technique or imaging modality.\n\nWhat is the most appropriate RECIST 1.1 overall response category for this time point?",
+        "q_type": "single_choice",
+        "options": [
+          "Progressive Disease",
+          "Complete Response",
+          "Not evaluable",
+          "Partial Response",
+          "Stable Disease"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Progressive Disease",
+          "correct_options": null,
+          "explanation": "The appearance of an unequivocal new lesion denotes progressive disease irrespective of the behaviour of existing target lesions, so the 33% reduction in the pulmonary target lesion sum, which would otherwise satisfy the threshold for partial response, does not prevent an overall response of progressive disease once a genuinely new lesion is confirmed. For a new finding to count, it must be unequivocal and not explained by differences in scanning technique or modality, both of which are satisfied here. Stable disease and partial response cannot be the best overall response once a valid new lesion has been identified.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 6,
+        "question_text": "Regarding pleural and pericardial disease in RECIST 1.1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A pleural effusion may be selected as a target lesion if it can be reproducibly measured on CT.",
+          "Lymphangitic involvement of the lung is considered measurable disease provided the affected lung field is outlined on CT.",
+          "A pleural effusion is classified as truly non-measurable disease, regardless of its size on imaging.",
+          "A pericardial effusion should be recorded as a target lesion once it exceeds 10 mm in maximal depth.",
+          "Cytological confirmation of a pleural effusion is relevant only after complete response has already been achieved in the measurable disease."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [2],
+          "explanation": "RECIST 1.1 lists pleural and pericardial effusions, along with lymphangitic involvement of the lung, as examples of disease that is truly non-measurable, irrespective of how well-defined or how large the effusion or infiltrate appears on imaging; neither is ever selected as a target lesion, and both are instead followed qualitatively as non-target disease. Cytological confirmation of the neoplastic origin of an effusion is specifically useful once the measurable disease has already met criteria for partial response or stable disease and the effusion appears or worsens on treatment known to cause effusions, such as certain taxanes or angiogenesis inhibitors; restricting this utility to only after complete response misstates when it is actually applied.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 7,
+        "question_text": "Regarding the detection of new lesions and unequivocal progression within the thorax, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A new opacity seen on a single chest X-ray follow-up is sufficient to declare progression, even when it could reflect a change in imaging technique.",
+          "Chest CT is more sensitive than chest X-ray for identifying new pulmonary lesions.",
+          "An increase in a pleural effusion from trace to large is given as an example of unequivocal progression of non-target disease.",
+          "A new lesion found in a previously scanned area only counts towards progression if the existing target lesions are also increasing in size.",
+          "If a new lesion is equivocal because of its small size, therapy may continue until the next scheduled assessment to clarify whether it represents true disease."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 4],
+          "explanation": "Chest CT is recommended over chest X-ray specifically because of its superior sensitivity for detecting new pulmonary lesions, and a new finding must be unequivocal and not attributable to differences in scanning technique or imaging modality before it can be counted, which rules out relying on a single equivocal plain film opacity. The guideline gives an increase in a pleural effusion from trace to large as a worked example of unequivocal progression of non-target disease, since this magnitude of change is considered comparable to the volume increase that would define progression in measurable disease. When a new lesion is equivocal, for example because it is very small, continued therapy and follow-up imaging is appropriate to clarify its nature, with progression backdated to the first scan if it is subsequently confirmed. New lesions denote progression independently of the behaviour of existing target lesions, so a genuinely new, unequivocal lesion is not conditional on the target lesions also growing.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 8,
+        "question_text": "A 65-year-old man with metastatic non-small cell lung cancer has two pulmonary target lesions with a baseline sum of diameters of 30 mm. At the second on-treatment assessment the sum of diameters is 28 mm, the smallest recorded on study. At the current, third assessment the sum of diameters is 31 mm. No new lesions are identified and non-target disease is stable.\n\nWhat is the most appropriate RECIST 1.1 overall response category for this time point?",
+        "q_type": "single_choice",
+        "options": [
+          "Complete Response",
+          "Progressive Disease",
+          "Stable Disease",
+          "Partial Response",
+          "Not evaluable"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Stable Disease",
+          "correct_options": null,
+          "explanation": "Partial response requires at least a 30% decrease in the sum of target lesion diameters relative to baseline, and the current sum of 31 mm represents an increase, not a decrease, from the baseline sum of 30 mm, so partial response cannot be assigned. Progressive disease requires both a 20% relative increase and a 5 mm absolute increase compared with the smallest sum recorded on study, which here is the 28 mm nadir at the second assessment; the current sum of 31 mm represents only an 11% relative increase and a 3 mm absolute increase, so neither threshold is met. With neither the shrinkage criterion for partial response nor the growth criteria for progression satisfied, and no new lesions, the disease is stable.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 9,
+        "question_text": "Regarding CT technique for evaluating pulmonary and mediastinal disease in RECIST 1.1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The chest should be scanned with contiguous slices throughout the anatomic region of interest.",
+          "When CT slice thickness exceeds 5 mm, only the reconstruction interval needs to be adjusted; the minimum measurable lesion size remains 10 mm.",
+          "The chest, abdomen and pelvis is recommended as standard anatomical coverage only when brain metastases are suspected clinically.",
+          "If CT slice thickness exceeds 5 mm, the minimum size for a measurable lesion should be twice the slice thickness.",
+          "Once a body region such as the chest has been imaged at any single time point, it need not be re-imaged at subsequent assessments."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 3],
+          "explanation": "RECIST 1.1 recommends that CT of the chest, abdomen, and pelvis be performed with contiguous slices throughout the region of interest to allow reliable, reproducible measurement. This chest/abdomen/pelvis coverage is recommended as optimal anatomic coverage for most solid tumours generally, encompassing areas of known metastatic predilection, not only when brain metastases are clinically suspected. When institutions use a CT slice thickness greater than 5 mm, the minimum size required for a lesion to be considered measurable at baseline must itself be doubled to twice the slice thickness, since thicker slices directly reduce measurement reproducibility for smaller lesions, not merely change the reconstruction interval. All target and non-target sites, including the chest, should normally be re-evaluated at each protocol-specified time point, since a lesion later found in a region not previously imaged is treated as a new lesion and therefore as progression.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 10,
+        "question_text": "A 49-year-old woman with metastatic non-small cell lung cancer has two RECIST target lesions selected at baseline: a left upper lobe pulmonary nodule with a longest diameter of 14 mm, and a mediastinal lymph node with a short axis of 16 mm (baseline sum of diameters 30 mm). At the follow-up CT, the pulmonary nodule is no longer visible and the mediastinal node has regressed to a short axis of 8 mm. There is no non-target disease and no new lesions.\n\nWhat is the most appropriate RECIST 1.1 overall response category for this time point?",
+        "q_type": "single_choice",
+        "options": [
+          "Not evaluable",
+          "Partial Response",
+          "Complete Response",
+          "Stable Disease",
+          "Progressive Disease"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Complete Response",
+          "correct_options": null,
+          "explanation": "Complete response requires disappearance of all target lesions, and any target lymph node must additionally regress to a short axis below 10 mm, since that is the threshold that defines a normal, non-pathological node. Here the pulmonary nodule has disappeared and the mediastinal node has regressed to 8 mm short axis, satisfying both requirements, with no non-target disease and no new lesions to override this assessment. Partial response is not the correct category once both criteria for complete response have been fully met.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 11,
+        "question_text": "Regarding selection of pulmonary and mediastinal target lesions, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A maximum of two target lesions may be selected from the lung, even if more than two measurable pulmonary nodules are present.",
+          "A lymph node target lesion is excluded from the sum of diameters once it regresses below 10 mm short axis.",
+          "If the largest pulmonary nodule cannot be measured reproducibly, a smaller but more reproducible nodule may be selected as the target lesion instead.",
+          "The actual short axis measurement of a target lymph node should continue to be recorded at follow-up even after it has regressed to a normal size.",
+          "Mediastinal lymph nodes are only eligible for selection as non-target lesions, regardless of their short axis measurement."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 3],
+          "explanation": "RECIST 1.1 limits target lesion selection to a maximum of two lesions per organ (and five in total), so no more than two pulmonary nodules may be selected as target lesions even when additional measurable nodules are present. When the largest lesion does not lend itself to reproducible repeated measurement, the next largest lesion that can be measured reproducibly should be selected instead, a principle that applies equally to pulmonary nodules. A target lymph node's actual short axis measurement must continue to be recorded at every subsequent assessment, even once it has regressed to a normal size below 10 mm, rather than being excluded from the sum; this is why patients in complete response may still have a small but non-zero recorded sum. Mediastinal lymph nodes with a short axis of 15 mm or more on CT are eligible for selection as target lesions, so restricting them to non-target status regardless of size misstates the selection criteria.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 12,
+        "question_text": "Regarding practical measurement rules for pulmonary target lesions and associated pleural disease, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A pulmonary target nodule that becomes too faint to measure accurately, but is believed still present, should be omitted from the sum of target lesion diameters.",
+          "A pulmonary target nodule that becomes too faint to measure accurately, but is believed still present, should be assigned a default value of 5 mm.",
+          "A pulmonary nodule believed to have disappeared entirely should be recorded with the same default value as one that is faintly visible but unmeasurable.",
+          "Cytological confirmation of a worsening pleural effusion is only relevant when the measurable pulmonary disease is already in progressive disease.",
+          "Cytological confirmation of the neoplastic origin of a worsening pleural effusion can help differentiate stable disease from progressive disease when the effusion appears or worsens on treatments known to cause effusions."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 4],
+          "explanation": "When a pulmonary target lesion becomes too faint on CT for the radiologist to confidently assign an exact size but is believed still present, a default value of 5 mm should be recorded rather than omitting the lesion, since simply dropping it would risk a falsely favourable response. If the lesion is instead believed to have genuinely disappeared, a value of 0 mm is recorded, which is a distinct scenario from the faint-but-present default of 5 mm. Cytological confirmation of the neoplastic origin of a pleural effusion is specifically useful when the measurable disease has already met criteria for response or stable disease and the effusion appears or worsens on treatments known to cause effusions, such as certain taxanes or angiogenesis inhibitors, helping to distinguish continued response or stable disease from progression rather than being reserved for cases already called progressive disease.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 13,
+        "question_text": "A 55-year-old man with metastatic melanoma has a single pulmonary target lesion, which decreases from 20 mm at baseline to 13 mm at follow-up, a 35% reduction in the sum of diameters. A small, trace pleural effusion noted at baseline has become a large pleural effusion at follow-up, recorded as non-target disease; this change is judged substantial enough that the treating team considers a change in therapy. No new lesions are identified.\n\nWhat is the most appropriate RECIST 1.1 overall response category for this time point?",
+        "q_type": "single_choice",
+        "options": [
+          "Partial Response",
+          "Not evaluable",
+          "Progressive Disease",
+          "Complete Response",
+          "Stable Disease"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Progressive Disease",
+          "correct_options": null,
+          "explanation": "Although the pulmonary target lesion has decreased by 35%, which would otherwise satisfy the criteria for partial response, unequivocal progression of non-target disease overrides a favourable target lesion result when the overall increase in tumour burden is substantial enough to warrant a change in therapy. An increase in a pleural effusion from trace to large is specifically given as an example of this magnitude of unequivocal progression, distinguishing it from the modest, non-qualifying increases in non-target disease that are common and do not by themselves indicate progression. Because unequivocal progression of non-target disease has occurred, the overall response is progressive disease despite partial response in the target lesion.",
+          "page_images": []
+        }
+      }
+    ]
+  }
+]

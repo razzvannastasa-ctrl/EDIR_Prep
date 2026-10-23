@@ -1,0 +1,391 @@
+[
+  {
+    "chapter_id": 1,
+    "chapter_match": "exact",
+    "source": "Reporting Systems",
+    "section": "mrq",
+    "library_key": "edir",
+    "clinical_vignette": "LI-RADS v2018 (CT/MRI) - Liver Imaging Reporting and Data System",
+    "article_summary": "### LI-RADS v2018 (CT/MRI)\n**Source:** ACR LI-RADS CT/MRI v2018 Core (Full Manual), American College of Radiology, 2018 update; cross-referenced with the LI-RADS Lexicon 2021 for terminology.\n**Scope:** A structured diagnostic algorithm and reporting system for characterising liver observations on multiphase CT or MRI (performed with extracellular or hepatobiliary contrast agents) in adults at high risk for hepatocellular carcinoma (HCC) - namely those with cirrhosis, chronic hepatitis B infection, or current/prior HCC, including liver transplant candidates and recipients.\n\n### Category cheat-sheet\n- **LR-1 - Definitely benign:** a classic benign entity (e.g. cyst, haemangioma, perfusion alteration, fat deposition/sparing, confluent fibrosis) or spontaneous disappearance of an observation; no further work-up needed.\n- **LR-2 - Probably benign:** a benign-appearing observation with somewhat less certainty than LR-1, including a \"distinctive nodule\" under 20mm with no major feature of HCC and no ancillary feature of malignancy.\n- **LR-3 - Intermediate probability of malignancy:** typically an observation without arterial phase hyperenhancement (APHE) or additional major features that is neither convincingly benign nor convincingly HCC.\n- **LR-4 - Probably HCC:** enough of the major features (size, APHE, capsule, washout, growth) to favour HCC strongly, but short of the definite-HCC threshold.\n- **LR-5 - Definitely HCC:** meets the size/APHE/major-feature combinations defined in the diagnostic table; managed as HCC without biopsy in most practice settings.\n- **LR-M - Probably or definitely malignant, not HCC-specific:** a targetoid mass, or a nontargetoid mass with infiltrative appearance, marked diffusion restriction, or necrosis/severe ischaemia; raises concern for cholangiocarcinoma or another non-HCC malignancy.\n- **LR-TIV - Tumour in vein:** unequivocal enhancing soft tissue within a vein, regardless of whether a separate parenchymal mass is identified.\n- (Outside the 7 core diagnostic categories, LR-NC is used when an observation cannot be categorised because of image omission/degradation, and the LR-TR categories - Nonviable, Equivocal, Viable, Nonevaluable - describe treated observations.)\n\n### Key imaging/scoring points\nThree major features are scored above the baseline of size and APHE: enhancing \"capsule,\" nonperipheral \"washout,\" and threshold growth (size increase of at least 50% in 6 months or less, applied only to unequivocal masses with a comparable prior exam). The diagnostic table cross-references APHE status (absent vs nonrim), observation size (cut-offs differ depending on APHE status: <20mm/greater than or equal to 20mm without APHE; <10mm/10-19mm/greater than or equal to 20mm with APHE), and the count of additional major features (none, one, or two or more) to assign LR-3 through LR-5. A documented exception applies at 10-19mm with nonrim APHE: washout alone, or threshold growth alone, is sufficient for LR-5, whereas an enhancing capsule alone as the only additional feature keeps the observation at LR-4. At 20mm or more, any single additional feature (capsule, washout, or growth) already suffices for LR-5. Ancillary features (separate lists favouring malignancy in general, HCC specifically, or benignity) may be used at radiologist discretion to adjust category by one step - up to a ceiling of LR-4, never up to LR-5 - when features favouring only one direction are present; if features favouring both malignancy and benignity coexist, no adjustment is made, and absence of a feature should never be used to adjust category in the opposite direction. Tie-breaking rule: if unsure between two categories, choose the one reflecting lower certainty; if unsure about tumour in vein, do not assign LR-TIV. Size is measured outer-edge-to-outer-edge, including any capsule, on the phase/sequence/plane with the clearest margins - not on arterial phase or diffusion-weighted images if margins are visible elsewhere. Technique requires multidetector CT (8 or more detector rows) with arterial (late phase preferred), portal venous, and delayed phases, or MRI with unenhanced T1 in-/out-of-phase and T2-weighted imaging plus a matching multiphase T1 series; hepatobiliary-agent protocols add transitional (2-5 minutes) and hepatobiliary phases (about 20 minutes for gadoxetate; 1-3 hours for gadobenate, if obtained).\n\n### Practical/management implications\nCategory broadly dictates surveillance intensity: LR-1 and LR-2 return to routine 6-month surveillance; LR-3 prompts repeat or alternative diagnostic imaging at 3-6 months; LR-4, LR-M, and LR-TIV typically trigger multidisciplinary discussion for tailored work-up that may include biopsy; LR-5 usually leads to multidisciplinary management planning rather than routine biopsy, since it is managed as HCC; LR-NC prompts repeat or alternative diagnostic imaging at around 3 months or more. For US liver-transplant candidates, LI-RADS categories must be convertible to an OPTN Class, which depends on reporting size, major features, and the number of LR-5/pathologically proven HCC observations - but the 10-19mm \"washout-only\" LR-5 exception does not itself qualify for OPTN Class 5A exception points. LR-M and LR-TIV findings should always be flagged, as both can change transplant eligibility.\n\n### Pitfalls and limitations\nBenign processes such as focal perfusion alteration or fat/iron deposition can mimic an infiltrative malignant appearance; the key discriminators are that benign mimics do not invade veins, obscure vessels, or distort parenchymal architecture. A targetoid appearance suggests non-HCC malignancy but does not exclude HCC with an atypical appearance - it is a pattern-recognition clue, not a rule-out. Features suggesting tumour in vein (ill-defined occluded vein walls, restricted diffusion in an occluded vein, heterogeneous vein enhancement not attributable to artefact) are not themselves diagnostic; LR-TIV requires unequivocally enhancing soft tissue within the vein. The definition of threshold growth was simplified in the 2018 update; a size increase of 100% or more measured across exams more than 6 months apart, or a new observation of 10mm or more appearing within 24 months, no longer meets threshold growth and is instead termed \"subthreshold growth.\"\n\n### Take-home points\n- Diagnostic category follows a table combining APHE status, size, and a count of three major features (capsule, washout, threshold growth), with a documented exception making washout or growth (not capsule) alone sufficient for LR-5 at 10-19mm.\n- Ancillary features can adjust category by one step in either direction (never up to LR-5) but only when features favouring one direction are present without countervailing features of the other type.\n- LR-M and LR-TIV sit outside the numbered scale, flagging non-HCC-malignancy concern or venous tumour extension respectively; both affect transplant eligibility and warrant multidisciplinary discussion.\n- Management intensity scales with category: 6-month surveillance for LR-1/LR-2, short-interval repeat imaging for LR-3, multidisciplinary tailored work-up (often with biopsy) for LR-4/LR-M/LR-TIV, and multidisciplinary treatment planning for LR-5.\n- Tie-breaking always favours the lower-certainty category, and tumour in vein should never be assigned when uncertain.",
+    "questions": [
+      {
+        "q_number": 1,
+        "question_text": "Regarding the patient populations and imaging protocols to which the LI-RADS CT/MRI diagnostic algorithm should be applied, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The algorithm is intended for use in adults with cirrhosis, chronic hepatitis B infection, or current/prior hepatocellular carcinoma, including liver transplant candidates and recipients.",
+          "It should be applied to patients under 18 years of age who have cirrhosis of any cause.",
+          "Categories should not be assigned to observations that are pathologically proven benign lesions of non-hepatocellular origin, such as haemangiomas confirmed at biopsy.",
+          "It is validated for patients with cirrhosis caused by a vascular disorder such as hereditary haemorrhagic telangiectasia or Budd-Chiari syndrome.",
+          "It is designed for multiphase CT or MRI performed with extracellular contrast agents or with hepatobiliary contrast agents."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 4],
+          "explanation": "The algorithm is designed for adults at genuine risk for HCC - cirrhosis, chronic hepatitis B, or current/prior HCC, including transplant candidates and recipients - and is applied to multiphase CT or MRI using extracellular or hepatobiliary contrast agents. The claim about applying it under 18 years of age is incorrect because patients under 18 are explicitly excluded regardless of cirrhosis cause. The claim about vascular-cause cirrhosis is incorrect because cirrhosis due to a vascular disorder (hereditary haemorrhagic telangiectasia, Budd-Chiari syndrome, chronic portal vein occlusion, cardiac congestion, or diffuse nodular regenerative hyperplasia) is a specific exclusion. Categories are also withheld from lesions already proven pathologically to be non-hepatocellular and benign, since the system is designed to stratify diagnostic uncertainty, not to relabel known diagnoses."
+        }
+      },
+      {
+        "q_number": 2,
+        "question_text": "Regarding technical requirements for CT and MRI performed for LI-RADS diagnostic categorisation, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Multidetector CT with fewer than 8 detector rows is acceptable provided a delayed phase is obtained.",
+          "Late arterial phase imaging is strongly preferred over early arterial phase because HCC enhancement is usually higher in the late arterial phase.",
+          "Hepatobiliary phase imaging with gadoxetate disodium is typically acquired one to three hours after injection, the same timing as with gadobenate dimeglumine.",
+          "Required MRI sequences for both extracellular- and hepatobiliary-agent protocols include unenhanced T1-weighted in- and out-of-phase imaging and T2-weighted imaging.",
+          "Diffusion-weighted imaging is a required sequence for every LI-RADS CT/MRI examination, regardless of the contrast agent used."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 3],
+          "explanation": "Late arterial phase is strongly preferred because HCC hyperenhancement is often greater, and sometimes only present, in the late rather than early arterial phase. Unenhanced T1-weighted in-/out-of-phase imaging and T2-weighted imaging are required components of both the extracellular-agent and hepatobiliary-agent MRI protocols. The claim about fewer than 8 detector rows is incorrect, as multidetector CT with 8 or more detector rows is the recommended equipment. The claim about hepatobiliary phase timing is incorrect because gadoxetate hepatobiliary phase is acquired at about 20 minutes, quite different from the 1-3 hour window used with gadobenate. Diffusion-weighted imaging is listed only as a suggested or optional sequence, not a required one, so the final statement overstates its mandatory status."
+        }
+      },
+      {
+        "q_number": 3,
+        "question_text": "Regarding the LI-RADS CT/MRI diagnostic categories, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "LR-1 indicates a definitely benign observation.",
+          "LR-3 indicates an intermediate probability of malignancy.",
+          "LR-4 indicates definite hepatocellular carcinoma.",
+          "LR-M indicates an observation that is probably or definitely malignant but not necessarily hepatocellular carcinoma.",
+          "LR-NC is used when an observation cannot be categorised because of image omission or degradation."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 3, 4],
+          "explanation": "The seven-tier core scale runs from definitely benign (LR-1) through intermediate probability of malignancy (LR-3) to definitely HCC (LR-5), with LR-M reserved for malignancy that is probably or definitely present but not specific for HCC, and LR-NC reserved for observations that cannot be scored at all because of degraded or omitted imaging. The claim that LR-4 indicates definite HCC is incorrect: LR-4 means probably HCC, while definite HCC is reserved for LR-5. Distinguishing probably from definitely HCC (LR-4 vs LR-5) and separating HCC-specific malignancy from non-HCC malignancy (LR-M) are core distinctions the diagnostic table and LR-M criteria are built around."
+        }
+      },
+      {
+        "q_number": 4,
+        "question_text": "Regarding the major imaging features used in LI-RADS CT/MRI categorisation, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Nonrim APHE is defined as arterial phase enhancement that is most pronounced in the periphery of the observation.",
+          "Nonperipheral washout can be assessed in any enhancing observation, even in the absence of arterial phase hyperenhancement.",
+          "An enhancing capsule must appear as a smooth, uniform, sharp rim that is unequivocally thicker or more conspicuous than the fibrotic tissue around background nodules.",
+          "Observation size should preferentially be measured on arterial-phase images because margins are usually sharpest during peak arterial enhancement.",
+          "When measuring the size of an observation, any enhancing capsule should be included in the measurement."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 4],
+          "explanation": "Nonperipheral washout can be scored in any enhancing observation regardless of APHE status, an enhancing capsule is specifically defined as a smooth, uniform, unequivocally conspicuous rim compared with background fibrotic tissue, and capsule tissue is included when measuring overall observation size. The claim about nonrim APHE is incorrect because peripherally-predominant arterial enhancement is the definition of rim APHE, a feature that instead raises concern for LR-M, whereas nonrim APHE simply requires enhancement unequivocally greater than liver in whole or part without that peripheral pattern. The claim about measuring on arterial-phase images is incorrect because size should specifically not be measured on arterial phase or diffusion-weighted imaging when margins are clearly visible on another phase, since arterial-phase size can be overestimated by summation with periobservational enhancement."
+        }
+      },
+      {
+        "q_number": 5,
+        "question_text": "Regarding the definition and application of threshold growth in LI-RADS CT/MRI, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Threshold growth is defined as a size increase of a mass by at least 50% within 6 months or less.",
+          "Threshold growth may be assessed by comparing a current CT or MRI examination with a prior ultrasound examination of adequate quality.",
+          "A new observation measuring 10mm or more that appears within 24 months of a prior negative examination automatically meets criteria for threshold growth.",
+          "Threshold growth should only be applied if the observation unequivocally represents a mass rather than a possible pseudolesion such as a perfusion alteration.",
+          "A 100% size increase measured across two imaging examinations performed more than 6 months apart still meets current criteria for threshold growth."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 3],
+          "explanation": "The 2018 revision simplified threshold growth to a size increase of at least 50% within 6 months or less, and this criterion is only applied when the observation unequivocally represents a true mass rather than a pseudolesion such as a perfusion alteration. The claim about comparing with prior ultrasound is incorrect, since threshold growth assessment specifically requires a prior CT or MRI of adequate quality and should not be based on comparison with US or CEUS. The claim about a new 10mm-or-greater observation within 24 months, and the claim about a 100% increase over more than 6 months, are both incorrect because the 2018 update explicitly reclassified these two scenarios as subthreshold growth rather than threshold growth."
+        }
+      },
+      {
+        "q_number": 6,
+        "question_text": "Regarding ancillary imaging features favouring malignancy in LI-RADS CT/MRI, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Corona enhancement refers to periobservational enhancement seen in the late arterial phase or early portal venous phase, attributable to venous drainage from the tumour.",
+          "Restricted diffusion, as an ancillary feature favouring malignancy, is considered reliably evaluable on CT.",
+          "Transitional phase hypointensity, an ancillary feature favouring malignancy, is only evaluable on MRI performed with a hepatobiliary contrast agent.",
+          "Subthreshold growth refers to an unequivocal size increase of a mass that is smaller than the increase required to meet criteria for threshold growth.",
+          "Unenhanced ultrasound visibility of an observation as a discrete nodule is not considered a relevant ancillary feature when the observation was already detected on CT or MRI."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 3],
+          "explanation": "Corona enhancement and subthreshold growth are both correctly defined as stated, and transitional phase hypointensity is specific to hepatobiliary-agent MRI since a transitional phase only exists with those agents. The claim about restricted diffusion being reliably evaluable on CT is incorrect, since diffusion-weighted imaging is an MRI-only technique and this feature is simply not evaluable on CT. The claim that US visibility as a discrete nodule is irrelevant once an observation is detected on CT or MRI is incorrect, since it remains a listed ancillary feature favouring malignancy specifically because it corresponds to a CT- or MRI-detected observation being separately confirmed on ultrasound."
+        }
+      },
+      {
+        "q_number": 7,
+        "question_text": "Regarding ancillary imaging features favouring hepatocellular carcinoma specifically, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Nodule-in-nodule architecture, an ancillary feature favouring HCC specifically, is not evaluable on CT.",
+          "Mosaic architecture refers to a smaller inner nodule with different imaging features contained within a larger outer nodule.",
+          "Blood products within a mass, in the absence of biopsy, trauma, or intervention, is an ancillary feature favouring HCC specifically.",
+          "Fat within a mass relative to adjacent liver is reliably evaluable on CT in every case.",
+          "A nonenhancing capsule appearance is defined as a capsule appearance that is not visible as an enhancing rim."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [2, 4],
+          "explanation": "Intralesional or perilesional blood products, when not attributable to biopsy, trauma, or intervention, and a nonenhancing capsule appearance are both listed ancillary features favouring HCC specifically, with the latter contrasted against the major feature of an enhancing capsule. The claim that nodule-in-nodule architecture is not evaluable on CT is incorrect, as it is listed as usually evaluable on CT as well as both MRI protocols. The claim describing mosaic architecture is incorrect because a smaller inner nodule within a larger, differently-appearing outer nodule is the definition of nodule-in-nodule architecture, whereas mosaic architecture instead describes randomly distributed internal nodules or compartments. The claim about fat evaluability on CT is incorrect because fat in a mass is listed as only variably evaluable on CT (may or may not be evaluable), not reliably evaluable in every case."
+        }
+      },
+      {
+        "q_number": 8,
+        "question_text": "Regarding ancillary imaging features favouring benignity in LI-RADS CT/MRI, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Size stability of an observation over 2 years or more, in the absence of treatment, favours benignity.",
+          "An observation whose enhancement pattern eventually comes to parallel that of the blood pool is considered to favour benignity.",
+          "Vessels that traverse an observation without displacement or deformation favour benignity.",
+          "Hepatobiliary phase isointensity to liver is evaluable on both CT and MRI performed with extracellular contrast agents.",
+          "Marked T2 hyperintensity similar in signal to bile ducts and other fluid-filled structures is an ancillary feature favouring benignity."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 2, 4],
+          "explanation": "Size stability over 2 or more years, enhancement that comes to parallel the blood pool, undistorted traversing vessels, and marked T2 hyperintensity resembling fluid-filled structures are all listed ancillary features favouring benignity. The claim about hepatobiliary phase isointensity being evaluable on CT and extracellular-agent MRI is incorrect, since a hepatobiliary phase only exists with hepatobiliary contrast agents, making this feature evaluable only on MRI performed with a hepatobiliary agent. These benignity-favouring features are used, at radiologist discretion, to downgrade category by one step when present without countervailing features favouring malignancy."
+        }
+      },
+      {
+        "q_number": 9,
+        "question_text": "Regarding tie-breaking rules and the use of ancillary features to adjust LI-RADS category, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Ancillary features may be used to upgrade an observation's category from LR-4 to LR-5.",
+          "If one or more ancillary features favouring malignancy and one or more favouring benignity are both present, the category should be adjusted toward malignancy as a precaution.",
+          "The absence of ancillary features favouring malignancy should be used to downgrade an observation's category.",
+          "When uncertain between two possible categories for an observation, the tie-breaking rule is to choose the category reflecting lower certainty.",
+          "If uncertain about the presence of tumour in vein, the observation should be categorised as LR-TIV as a precautionary measure."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [3],
+          "explanation": "The stated tie-breaking rule is to choose the category reflecting lower certainty whenever a radiologist is unsure between two possible categories. Ancillary features can never be used to upgrade an observation to LR-5, contrary to the first statement, and when features favouring both malignancy and benignity are simultaneously present the explicit instruction is to make no adjustment at all, not to default toward malignancy. Absence of a feature should never itself drive a category change - absence of malignancy-favouring features should not be used to downgrade, just as absence of benignity-favouring features should not be used to upgrade. Uncertainty about tumour in vein is likewise handled conservatively: rather than defaulting to LR-TIV, the rule is specifically not to assign LR-TIV unless its presence is unequivocal."
+        }
+      },
+      {
+        "q_number": 10,
+        "question_text": "Regarding the criteria for assigning the LR-M category, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "LR-M criteria are met by a nontargetoid mass showing an infiltrative appearance, marked diffusion restriction, or necrosis/severe ischaemia.",
+          "A targetoid mass showing concentric internal architecture, such as rim APHE with delayed central enhancement, meets criteria for LR-M.",
+          "A targetoid appearance on imaging effectively excludes the possibility of hepatocellular carcinoma.",
+          "Presence of tumour in vein is a required criterion for assigning LR-M.",
+          "When an LR-M observation shows at least one imaging feature suggesting hepatocellular origin, such as fat, iron, or blood products within the mass, the report may indicate that it \"may represent HCC with atypical features or combined HCC-cholangiocarcinoma.\""
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 4],
+          "explanation": "LR-M is met by either a targetoid mass (concentric target-like morphology, including rim APHE with delayed central enhancement) or a nontargetoid mass with infiltrative appearance, marked diffusion restriction, or necrosis/severe ischaemia. When hepatocellular-origin features such as fat, iron, blood products, nodule-in-nodule architecture, or nonenhancing capsule appearance are present alongside LR-M criteria, the recommended report language is that the observation may represent HCC with atypical features or combined HCC-cholangiocarcinoma. The claim that targetoid appearance excludes HCC is incorrect, since a targetoid pattern is stated to suggest non-HCC malignancy without excluding HCC with an atypical presentation. The claim that tumour in vein is a required criterion is incorrect: the LR-M criteria actually specify no tumour in vein as part of the definition, since a vein-invading observation would instead be categorised LR-TIV."
+        }
+      },
+      {
+        "q_number": 11,
+        "question_text": "Regarding the diagnosis and reporting of tumour in vein (LR-TIV), which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Tumour in vein is diagnosed whenever a vein is occluded with ill-defined walls, regardless of whether enhancing soft tissue is identified within it.",
+          "Tumour in vein is defined as unequivocal enhancing soft tissue within a vein, regardless of whether a parenchymal mass is visualised.",
+          "When tumour in vein is contiguous with an LR-5 mass, the report should indicate that it is definitely due to hepatocellular carcinoma.",
+          "When tumour in vein is contiguous with a targetoid mass, the report should indicate that it is definitely due to hepatocellular carcinoma.",
+          "Heterogeneous enhancement of a vein attributable to a known flow artefact is a clue supporting a diagnosis of tumour in vein."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2],
+          "explanation": "Tumour in vein is specifically defined by unequivocal enhancing soft tissue within a vein, independent of whether a separate parenchymal mass is seen, and when it is contiguous with a mass already meeting LR-5 criteria the report should state that it is definitely due to HCC. Ill-defined occluded vein walls, restricted diffusion in an occluded vein, and heterogeneous vein enhancement are listed only as clues prompting closer scrutiny for enhancing soft tissue, not as diagnostic in themselves, so the first statement overstates their significance, and the requirement that the heterogeneous enhancement not be attributable to artefact makes the final statement incorrect as written. Contiguity with a targetoid rather than an LR-5 mass instead prompts the report language may be due to non-HCC malignancy, not a statement of definite HCC."
+        }
+      },
+      {
+        "q_number": 12,
+        "question_text": "Regarding examples and criteria for the LR-1 and LR-2 categories, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A distinctive nodule without malignant imaging features must measure 20mm or more to be categorised LR-2.",
+          "A distinctive nodule categorised as probable LR-2 must show no major feature of HCC, no feature of LR-M, and no ancillary feature of malignancy.",
+          "Nodules with features suggestive of focal nodular hyperplasia or hepatocellular adenoma should usually be categorised LR-3, and should not be categorised LR-1.",
+          "Confluent fibrosis or a focal scar may be categorised as either definite or probable LR-1/LR-2 depending on diagnostic confidence.",
+          "Spontaneous disappearance of an observation on follow-up imaging is included among the definite LR-1 entities."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 3, 4],
+          "explanation": "A distinctive nodule qualifying for probable LR-2 must show no major feature of HCC, no feature of LR-M, and no ancillary feature of malignancy, and confluent fibrosis or a focal scar appears on both the definite and probable entity lists depending on how confidently it can be recognised. Spontaneous disappearance is explicitly listed among the definite LR-1 entities. Nodules suggestive of focal nodular hyperplasia or hepatocellular adenoma are specifically flagged as diagnoses of exclusion in high-risk patients that should usually be LR-3 and, with caution, at most LR-2, but never LR-1. The claim that a distinctive nodule must measure 20mm or more is incorrect, since the distinctive-nodule definition specifically requires a solid nodule smaller than 20mm; larger nodules are instead categorised LR-3 or higher depending on their imaging features."
+        }
+      },
+      {
+        "q_number": 13,
+        "question_text": "Regarding management and follow-up implications of LI-RADS categories, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "LR-1 observations warrant repeat diagnostic imaging within 3 months.",
+          "LR-3 observations are managed identically to LR-1 observations, with return to routine surveillance in 6 months.",
+          "LR-4 and LR-M observations may both prompt multidisciplinary discussion for tailored work-up that may include biopsy.",
+          "LR-5 observations typically prompt multidisciplinary discussion for consensus management rather than routine biopsy.",
+          "LR-NC observations should prompt repeat or alternative diagnostic imaging, generally within approximately 3 months."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [2, 3, 4],
+          "explanation": "LR-4 and LR-M share a similar management pathway of multidisciplinary discussion for tailored work-up that may include biopsy, LR-5 is managed with multidisciplinary discussion for consensus management rather than being routinely biopsied, and LR-NC prompts repeat or alternative diagnostic imaging at around 3 months. The claim that LR-1 warrants imaging within 3 months is incorrect, since LR-1 simply returns to routine surveillance in 6 months. The claim that LR-3 is managed identically to LR-1 is also incorrect: LR-3 instead prompts a shorter-interval repeat or alternative diagnostic imaging at 3-6 months, reflecting its intermediate probability of malignancy rather than the low-risk 6-month surveillance interval used for LR-1/LR-2."
+        }
+      },
+      {
+        "q_number": 14,
+        "question_text": "Regarding the LI-RADS CT/MRI treatment response (LR-TR) categories, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "LR-TR Nonviable is assigned when there is no lesional enhancement, or when enhancement follows a treatment-specific expected pattern.",
+          "LR-TR Viable requires arterial phase hyperenhancement to be present; washout appearance or enhancement similar to pretreatment alone are insufficient.",
+          "Viable tumour size should be measured through the entire treated lesion, including any nonenhancing area traversed by the measurement line.",
+          "LR-TR Equivocal is used whenever any degree of enhancement is present within or along a treated lesion.",
+          "When treatment response cannot be evaluated because of image degradation or omission, the observation is categorised LR-TR Nonevaluable."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 4],
+          "explanation": "LR-TR Nonviable is correctly defined by either no lesional enhancement or an enhancement pattern that is the expected one for the specific treatment given, and LR-TR Nonevaluable is used whenever image degradation or omission prevents treatment-response assessment. LR-TR Viable actually requires nodular, masslike, or thick irregular tissue with any one of arterial phase hyperenhancement, washout appearance, or enhancement similar to pretreatment - not APHE specifically - so the claim requiring APHE is incorrect. Viable tumour size should be measured along the longest dimension through the enhancing area of the treated lesion, specifically not traversing nonenhancing area, making that claim incorrect. LR-TR Equivocal is more specific than simply any enhancement present: it requires enhancement that is atypical for the expected treatment-specific pattern and does not meet criteria for probably or definitely viable disease."
+        }
+      },
+      {
+        "q_number": 15,
+        "question_text": "Regarding reporting requirements and OPTN class conversion in LI-RADS CT/MRI, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A 10-19mm observation with nonrim APHE and nonperipheral washout as the only additional major feature, although categorised LR-5, is automatically eligible for OPTN Class 5A exception points.",
+          "Converting a LI-RADS category to an OPTN Class is more straightforward when the radiologist has reported observation size, major features, and the number of LR-5 observations and pathologically proven HCCs.",
+          "Reporting an observation's identifier need not remain fixed across serial examinations, as radiologists can renumber observations freely on each new report.",
+          "LR-TIV observations do not need to be specifically reported for liver transplant candidates, since vein involvement does not affect transplant eligibility.",
+          "When no reportable LI-RADS observation is present, this finding may optionally be mentioned in the report body but need not appear in the Impression."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1],
+          "explanation": "OPTN Class conversion is explicitly described as more straightforward when size, major features, and the counts of LR-5 and pathologically proven HCC observations are reported. The claim about automatic OPTN Class 5A eligibility is incorrect, because the 10-19mm nonrim APHE plus washout-only exception, despite being categorised LR-5, is explicitly stated not to qualify for OPTN Class 5A exception points. Observation identifiers should be kept fixed across all exams rather than renumbered, contrary to the third statement, and LR-TIV observations must specifically be reported for transplant candidates because vein involvement is relevant to staging and eligibility. Finally, when there are no reportable observations, this absence must be stated in the Impression, not merely optionally mentioned elsewhere in the report."
+        }
+      },
+      {
+        "q_number": 16,
+        "question_text": "A 66-year-old man with hepatitis B-related cirrhosis undergoes surveillance MRI with an extracellular contrast agent. A 14mm nodule is identified that is homogeneously hyperintense on unenhanced T1-weighted imaging, mildly hypointense on T2-weighted imaging, and hyperintense on the hepatobiliary phase, without arterial phase hyperenhancement, washout, capsule, or growth on comparison with a prior exam, and without any feature suggestive of LR-M or any ancillary feature favouring malignancy.\n\nWhat is the most appropriate LI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["LR-1", "LR-2", "LR-3", "LR-4", "LR-5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "LR-2",
+          "correct_options": null,
+          "explanation": "A solid nodule smaller than 20mm that is distinctive in appearance (here, T1-hyperintense, T2-hypointense, and hepatobiliary-phase hyperintense), with no major feature of HCC, no feature of LR-M, and no ancillary feature favouring malignancy, meets the specific criteria for a probable LR-2 \"distinctive nodule without malignant features.\" It is not LR-1, which is reserved for more definitively benign entities such as a cyst, haemangioma, or perfusion alteration rather than an indeterminate distinctive nodule. It is not LR-3, since that category applies when a nodule of this size lacks any distinguishing benign imaging features rather than showing the constellation described here."
+        }
+      },
+      {
+        "q_number": 17,
+        "question_text": "A 58-year-old cirrhotic woman undergoes contrast-enhanced CT. A 26mm hepatic mass demonstrates unequivocal nonrim arterial phase hyperenhancement. No enhancing capsule, no nonperipheral washout, and no threshold growth are identified on the current or prior examinations.\n\nWhat is the most appropriate LI-RADS category for this observation?",
+        "q_type": "single_choice",
+        "options": ["LR-3", "LR-4", "LR-5", "LR-M", "LR-2"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "LR-4",
+          "correct_options": null,
+          "explanation": "Per the diagnostic table, an observation of 20mm or more with nonrim APHE and zero additional major features falls in the \"no additional features\" row, nonrim-APHE-at-20mm-or-more column, which is the single cell in that row categorised LR-4 rather than LR-3. It does not reach LR-5 because no additional major feature (capsule, washout, or threshold growth) is present, and it is not LR-M because there is no rim APHE, targetoid morphology, infiltrative appearance, marked diffusion restriction, or necrosis described."
+        }
+      },
+      {
+        "q_number": 18,
+        "question_text": "A 61-year-old man at high risk for HCC has a 13mm nodule on MRI showing unequivocal nonrim arterial phase hyperenhancement and nonperipheral washout in the portal venous phase. There is no enhancing capsule and no threshold growth compared with a prior exam.\n\nWhat is the most appropriate LI-RADS category for this observation?",
+        "q_type": "single_choice",
+        "options": ["LR-3", "LR-4", "LR-5", "LR-M", "LR-TIV"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "LR-5",
+          "correct_options": null,
+          "explanation": "The v2018 update specifically revised the LR-5 criteria so that a 10-19mm observation with nonrim APHE and nonperipheral washout as the sole additional major feature is categorised LR-5, even though this represents only one additional feature by the general count-based table (this specific exception does not, however, qualify for OPTN Class 5A transplant exception points). This differs from an otherwise identical nodule whose only additional feature is an enhancing capsule, which under the same size/APHE combination remains LR-4 rather than being upgraded."
+        }
+      },
+      {
+        "q_number": 19,
+        "question_text": "A 61-year-old man at high risk for HCC has a 16mm nodule on CT showing unequivocal nonrim arterial phase hyperenhancement and a smooth, uniform enhancing capsule that is unequivocally more conspicuous than the fibrotic tissue around background nodules. There is no nonperipheral washout and no threshold growth.\n\nWhat is the most appropriate LI-RADS category for this observation?",
+        "q_type": "single_choice",
+        "options": ["LR-2", "LR-3", "LR-4", "LR-5", "LR-1"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "LR-4",
+          "correct_options": null,
+          "explanation": "For 10-19mm observations with nonrim APHE, the diagnostic table specifies that if an enhancing capsule is the only additional major feature, the observation is categorised LR-4; only nonperipheral washout or threshold growth as the additional feature upgrades this size/APHE combination to LR-5. This documented exception distinguishes the capsule-only scenario described here from an otherwise identical nodule whose sole additional feature is washout, which would instead be LR-5."
+        }
+      },
+      {
+        "q_number": 20,
+        "question_text": "A 63-year-old cirrhotic patient undergoes MRI. A 32mm hepatic mass shows arterial phase enhancement most pronounced in its periphery, apparent washout most pronounced peripherally, and a central area of progressive enhancement on later postarterial phase images, giving a concentric, target-like appearance.\n\nWhat is the most appropriate LI-RADS category for this observation?",
+        "q_type": "single_choice",
+        "options": ["LR-3", "LR-4", "LR-5", "LR-M", "LR-TIV"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "LR-M",
+          "correct_options": null,
+          "explanation": "Rim APHE, peripheral washout, and delayed central enhancement together constitute a targetoid dynamic enhancement pattern, one of the defined imaging appearances of a targetoid mass, which meets LR-M criteria. A targetoid appearance suggests non-HCC malignancy such as intrahepatic cholangiocarcinoma or combined HCC-cholangiocarcinoma but does not exclude HCC with an atypical appearance, so it cannot be assigned to a numbered category such as LR-4 or LR-5, which require nonrim rather than rim APHE."
+        }
+      },
+      {
+        "q_number": 21,
+        "question_text": "A 59-year-old cirrhotic man has a 40mm hepatic mass meeting LR-5 criteria on CT. The adjacent right portal vein branch is expanded and contains unequivocal enhancing soft tissue contiguous with the mass.\n\nWhat is the most appropriate LI-RADS category for the vein finding?",
+        "q_type": "single_choice",
+        "options": ["LR-4", "LR-5", "LR-M", "LR-TIV", "LR-NC"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "LR-TIV",
+          "correct_options": null,
+          "explanation": "Unequivocal enhancing soft tissue within a vein is diagnostic of tumour in vein regardless of whether a parenchymal mass is separately categorised, and this venous finding is designated LR-TIV. Because the intravenous tumour is contiguous with a mass already meeting LR-5 criteria, the report should further specify that the tumour in vein is definitely due to hepatocellular carcinoma, rather than simply reusing the parenchymal mass's own LR-5 category for the vein itself."
+        }
+      },
+      {
+        "q_number": 22,
+        "question_text": "A 55-year-old cirrhotic man undergoes surveillance MRI. A 9mm lesion is homogeneously hyperintense on T2-weighted imaging, similar in signal to the adjacent bile ducts, shows no measurable enhancement in any postcontrast phase, and is unchanged in size compared with an examination performed 3 years earlier.\n\nWhat is the most appropriate LI-RADS category for this observation?",
+        "q_type": "single_choice",
+        "options": ["LR-1", "LR-2", "LR-3", "LR-4", "LR-M"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "LR-1",
+          "correct_options": null,
+          "explanation": "A nonenhancing lesion with T2 signal matching fluid-filled structures such as bile ducts, and long-term size stability, is a classic simple hepatic cyst, which is listed among the definite LR-1 entities. This appearance is more definitively benign than a \"distinctive nodule,\" which would instead be categorised LR-2, and it lacks any major feature of malignancy (APHE, washout, capsule, or growth) that would raise it into the LR-3 to LR-5 range."
+        }
+      },
+      {
+        "q_number": 23,
+        "question_text": "A 60-year-old man at high risk for HCC undergoes CT. A 15mm hepatic nodule shows no arterial phase hyperenhancement, no washout, no capsule, and no growth on comparison with a prior exam. It is isointense to background liver on all available sequences and does not fulfil the criteria for a distinctive nodule without malignant features.\n\nWhat is the most appropriate LI-RADS category for this observation?",
+        "q_type": "single_choice",
+        "options": ["LR-1", "LR-2", "LR-3", "LR-4", "LR-5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "LR-3",
+          "correct_options": null,
+          "explanation": "An observation smaller than 20mm without arterial phase hyperenhancement and without any additional major feature falls into the \"no additional features\" row and \"no APHE, less than 20mm\" column of the diagnostic table, which is categorised LR-3. It cannot be categorised LR-2 because it lacks the distinctive imaging features (such as T1 hyperintensity, T2 hypointensity, or hepatobiliary phase hyperintensity) required for the \"distinctive nodule without malignant features\" designation, and there is no feature present to push it higher than LR-3."
+        }
+      },
+      {
+        "q_number": 24,
+        "question_text": "A 64-year-old cirrhotic woman undergoes MRI. A 48mm hepatic mass demonstrates unequivocal nonrim arterial phase hyperenhancement, nonperipheral washout in the extracellular phase, and a size increase of more than 50% compared with an examination performed 4 months earlier.\n\nWhat is the most appropriate LI-RADS category for this observation?",
+        "q_type": "single_choice",
+        "options": ["LR-3", "LR-4", "LR-5", "LR-M", "LR-TIV"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "LR-5",
+          "correct_options": null,
+          "explanation": "A mass measuring 20mm or more with nonrim APHE and one or more additional major features (here, both nonperipheral washout and threshold growth, since the size increase exceeds 50% within 6 months) meets the diagnostic table criteria for LR-5. This is a more straightforward route to LR-5 than the 10-19mm exception used for smaller nodules, since at 20mm or more a single additional feature already suffices, and here two features (washout and growth) are present together."
+        }
+      }
+    ]
+  }
+]

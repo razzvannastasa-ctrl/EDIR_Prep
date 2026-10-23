@@ -1,0 +1,523 @@
+[
+  {
+    "chapter_id": 3,
+    "chapter_match": "exact",
+    "source": "Reporting Systems",
+    "section": "mrq",
+    "library_key": "edir",
+    "clinical_vignette": "CAD-RADS 2.0 (Coronary Artery Disease Reporting and Data System, 2022)",
+    "article_summary": "### CAD-RADS 2.0\n\n**Source:** CAD-RADS™ 2.0 – 2022 Coronary Artery Disease – Reporting and Data System, Expert Consensus Document of the Society of Cardiovascular Computed Tomography (SCCT), American College of Cardiology (ACC), American College of Radiology (ACR), and North America Society of Cardiovascular Imaging (NASCI) (Cury et al., Radiology: Cardiothoracic Imaging 2022).\n\n**Scope:** A standardised reporting and data system for coronary CT angiography (CCTA), used to categorise patients by maximal coronary luminal stenosis, overall coronary plaque burden, and a set of modifiers, in order to guide subsequent cardiac investigation and management in both stable and acute chest pain presentations.\n\n### Category cheat-sheet\n- **CAD-RADS 0 – No plaque or stenosis:** no visible coronary atherosclerosis; reassurance, consider non-atherosclerotic causes of symptoms, no further cardiac investigation.\n- **CAD-RADS 1 – Minimal (1–24%) stenosis, or non-stenotic plaque with positive remodeling:** minimal non-obstructive CAD; no further cardiac investigation, risk-factor modification/preventive therapy scaled to plaque burden.\n- **CAD-RADS 2 – Mild (25–49%) stenosis:** mild non-obstructive CAD; no further cardiac investigation, risk-factor modification/preventive therapy scaled to plaque burden.\n- **CAD-RADS 3 – Moderate (50–69%) stenosis:** consider functional assessment (CT-FFR, CTP, or stress testing); aggressive preventive therapy, consider ICA if ischemia-positive or symptoms persist despite therapy.\n- **CAD-RADS 4A – Severe (70–99%) stenosis in one or two vessels (no left main, no 3-vessel disease):** consider ICA or functional assessment depending on symptoms/risk features.\n- **CAD-RADS 4B – Left main stenosis ≥50%, or obstructive (≥70%) three-vessel disease:** ICA is recommended, with possible revascularisation.\n- **CAD-RADS 5 – Total (100%) coronary occlusion:** consider ICA plus functional and/or viability assessment; clinical relevance depends on acute vs chronic context.\n- **CAD-RADS N – Non-diagnostic study:** obstructive CAD (or ACS, in the acute setting) cannot be excluded; additional/alternative evaluation is needed. N can stand alone as a category, or be appended as a modifier to a numeric grade when a diagnostic segment already shows ≥50% stenosis.\n\n**Modifier system (appended after the plaque category, in this order — N, HRP, I, S, G, E):**\n- **N – Non-diagnostic:** study not fully evaluable (motion, calcium blooming, metal artifact); a segment cannot be assessed with confidence.\n- **HRP – High-risk plaque:** ≥2 of spotty calcification, low-attenuation plaque (<30 HU), positive remodeling, napkin-ring sign; flags higher risk of ACS/events independent of stenosis grade.\n- **I – Ischemia (CT-FFR or CTP performed):** I1/I+ = positive (CT-FFR ≤0.75, or reversible/peri-infarct perfusion defect); I2/I- = negative (CT-FFR >0.80, or no ischemia/fixed infarct defect); I1/2/I± = borderline/indeterminate (CT-FFR 0.76–0.80).\n- **S – Stent:** at least one coronary stent present anywhere; graded by the same stenosis scale as native vessels.\n- **G – Graft:** at least one coronary bypass graft present; only the graft and the native segment distal to (and including) the anastomosis are graded.\n- **E – Exceptions:** a non-atherosclerotic cause of coronary narrowing (dissection, anomalous origin, aneurysm/pseudoaneurysm, vasculitis, fistula, extrinsic compression, arteriovenous malformation, other) is present; appended after any other modifiers, in addition to (not instead of) the numeric CAD-RADS 0–5 category.\n\n### Key imaging/scoring points\nCAD-RADS is assigned on a per-patient basis using the single most severe (usually highest-grade) coronary stenosis, graded across the standard scale: 0% (no visible stenosis), 1–24% (minimal), 25–49% (mild), 50–69% (moderate), 70–99% (severe), and 100% (occluded). Only vessels ≥1.5 mm in diameter are graded; CAD-RADS does not apply to smaller branches. Overall plaque burden is captured separately using the P1–P4 scale (mild, moderate, severe, extensive); CAD-RADS 0 needs no P category, since absence of stenosis implies absence of plaque. No single method is mandated for estimating plaque burden — options include the Agatston coronary artery calcium (CAC) score, the segment involvement score (SIS, one point per affected segment of 16, maximum 16), a purely visual estimate, or emerging quantitative volumetric techniques (the last still investigational and not routine). Where methods disagree, the most severe assessment (or CAC/total-burden quantification, where available) should be used. In-stent stenosis is graded on the same percentage scale as native disease.\n\n### Practical/management implications\nNon-obstructive categories (CAD-RADS 1–2) do not require further cardiac testing; management is preventive pharmacotherapy scaled to plaque burden (P1/P2 versus P3/P4). CAD-RADS 3 introduces the option of functional testing (CT-FFR, CTP, or stress imaging) to clarify haemodynamic significance, with invasive coronary angiography (ICA) reserved for ischemia-positive or symptomatic-despite-therapy patients. CAD-RADS 4 splits into 4A (one/two-vessel severe stenosis, ICA or functional testing considered) and 4B (left main ≥50% or three-vessel ≥70% disease, ICA recommended), reflecting a materially higher revascularisation likelihood in 4B. CAD-RADS 5 (total occlusion) prompts ICA together with functional and/or viability assessment, since management differs for acute versus chronic occlusion. High-risk plaque (HRP) is a stenosis-independent risk marker: it can justify more aggressive preventive therapy even in non-obstructive disease (CAD-RADS 1–2), and greater vigilance/testing when superimposed on CAD-RADS 3. The ischemia modifier (I) increasingly determines the ICA-referral decision for CAD-RADS 3/4A lesions, largely independent of the anatomical grade itself.\n\n### Pitfalls and limitations\nA non-diagnostic segment does not automatically mean the whole study is \"CAD-RADS N\": if a diagnostic segment elsewhere already shows ≥50% stenosis, the numeric grade (plus P, plus modifier N) is used instead, since the higher-grade finding still drives management. Conversely, if no interpretable segment exceeds mild stenosis and a segment cannot be assessed, CAD-RADS N is required, because a significant stenosis cannot be excluded. For grafted patients, native segments proximal to a fully patent graft anastomosis are excluded from grading, which can be a source of mis-scoring if not applied correctly. HRP has a high prevalence on CCTA (roughly 30%) but only modest positive predictive value on its own, and requires ≥2 qualifying features (not one) before the modifier is applied. Non-atherosclerotic causes of coronary narrowing (modifier E) are uncommon (roughly 5% of studies) but are frequently overlooked; CAD-RADS is strictly a marker of atherosclerotic disease and does not fully characterise these entities. CT-FFR/CTP results obtained after the initial CCTA should be used to update, not replace, the CAD-RADS score.\n\n### Take-home points\n- CAD-RADS 2.0 layers three components — stenosis category (0–5, N), plaque burden (P1–P4), and modifiers (N, HRP, I, S, G, E, applied in that order) — and none of these substitutes for the radiologist's overall impression.\n- The 4A/4B split and the total-occlusion category (5) are the thresholds that most reliably trigger an ICA recommendation.\n- HRP (≥2 features) and a positive ischemia modifier can each escalate management independent of the anatomical stenosis grade, particularly for CAD-RADS 3.\n- Grafts and stents are graded using the same stenosis scale as native vessels, with specific rules about which segments count.\n- Modifier E flags non-atherosclerotic aetiologies without replacing the numeric CAD-RADS category, keeping the system's scope explicitly atherosclerotic.",
+    "questions": [
+      {
+        "q_number": 1,
+        "question_text": "Regarding the overall framework and purpose of the CAD-RADS 2.0 classification system, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The plaque burden grading scale (P1 to P4) was already part of the original 2016 CAD-RADS classification and remains unchanged in the 2022 update.",
+          "The CAD-RADS classification is applied on a per-patient basis using the most severe (usually highest-grade) coronary stenosis.",
+          "CAD-RADS should always be interpreted together with the impression of the report rather than as a substitute for it.",
+          "CAD-RADS classification applies equally to coronary segments smaller than 1.5 mm in diameter.",
+          "The 2022 update allows optional inclusion of lesion-specific ischemia assessment using CT-FFR or myocardial CT perfusion."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            2,
+            4
+          ],
+          "explanation": "CAD-RADS is coded on a per-patient basis using the single most severe coronary stenosis identified, and the 2022 update explicitly adds the option of lesion-specific ischemia testing with CT-FFR or myocardial CT perfusion. The classification is also intended to complement, never replace, the radiologist's impression, so the two should always be read together. The claim that plaque burden grading existed unchanged since 2016 is incorrect, since the original version had no systematic plaque burden classification and the P1–P4 scale is a genuinely new 2022 addition. Only vessels greater than 1.5 mm in diameter are graded for stenosis severity; CAD-RADS does not apply to smaller branches.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 2,
+        "question_text": "Regarding the CAD-RADS grading scale for coronary luminal diameter stenosis severity, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A 25–49% luminal diameter stenosis is termed mild stenosis.",
+          "A 1–24% luminal diameter stenosis is termed moderate stenosis.",
+          "A 100% luminal diameter stenosis is termed severe stenosis.",
+          "A 50–69% luminal diameter stenosis is termed moderate stenosis.",
+          "A 70–99% luminal diameter stenosis is termed occluded."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            3
+          ],
+          "explanation": "The CAD-RADS terminology scale assigns 25–49% stenosis as mild and 50–69% stenosis as moderate. A 1–24% stenosis is termed minimal rather than moderate, and a 70–99% stenosis is termed severe rather than occluded. Complete (100%) luminal narrowing is its own distinct terminology category, occluded, and is not grouped with the severe stenosis range. Keeping these percentage bands distinct is essential because they map directly onto the numeric CAD-RADS categories 0 through 5.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 3,
+        "question_text": "Regarding CAD-RADS category 0, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "CAD-RADS 0 denotes the presence of minimal non-obstructive plaque with no stenosis.",
+          "CAD-RADS 0 requires a plaque burden category (P1–P4) to be reported alongside the stenosis grade.",
+          "CAD-RADS 0 indicates absence of any visible coronary plaque or stenosis, with reassurance and consideration of non-atherosclerotic causes of symptoms as the suggested management.",
+          "CAD-RADS 0 warrants referral for invasive coronary angiography to exclude occult stenosis.",
+          "CAD-RADS 0 in the acute chest pain setting still requires further evaluation for acute coronary syndrome."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            2
+          ],
+          "explanation": "CAD-RADS 0 signifies the complete absence of coronary plaque or stenosis, and the suggested management is reassurance with consideration of non-atherosclerotic causes of the patient's symptoms. Because CAD-RADS 0 denotes absence of stenosis or plaque altogether, a P category is explicitly not required for this category, unlike the description of plaque with positive remodeling and no stenosis, which instead falls under CAD-RADS 1. Neither invasive angiography nor further evaluation for acute coronary syndrome is indicated, since in the acute chest pain setting CAD-RADS 0 means acute coronary syndrome is highly unlikely and no further evaluation is required.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 4,
+        "question_text": "Regarding CAD-RADS category 1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "CAD-RADS 1 denotes stenosis of 25–49% of the luminal diameter.",
+          "CAD-RADS 1 includes the presence of plaque with positive remodeling and no evidence of stenosis.",
+          "CAD-RADS 1 warrants referral for invasive coronary angiography to confirm the absence of obstructive disease.",
+          "In patients with stable chest pain, CAD-RADS 1 with P3 or P4 plaque burden requires only routine surveillance without preventive pharmacotherapy.",
+          "CAD-RADS 1 represents minimal non-obstructive coronary artery disease with a luminal stenosis of 1–24%."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            4
+          ],
+          "explanation": "CAD-RADS 1 represents minimal non-obstructive disease with a stenosis of 1–24%, and this category also explicitly includes plaque demonstrating positive remodeling with no measurable stenosis at all. The 25–49% range instead defines CAD-RADS 2, not CAD-RADS 1. No further cardiac investigation, including invasive angiography, is indicated for CAD-RADS 1. When plaque burden is P3 or P4 in this category, aggressive risk factor modification and preventive pharmacotherapy are recommended rather than routine surveillance alone.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 5,
+        "question_text": "Regarding methods for estimating and reporting overall coronary plaque burden (the \"P\" category) in CAD-RADS 2.0, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The segment involvement score (SIS) assigns one point to each of 16 coronary segments with any detectable plaque, giving a maximum possible score of 16.",
+          "A total Agatston coronary artery calcium (CAC) score of 101–300 corresponds to a P2 (moderate) plaque burden category.",
+          "Quantitative volumetric plaque assessment is currently the preferred first-line method recommended for routine clinical CCTA reporting of plaque burden.",
+          "There is no single mandated method for estimating overall coronary plaque burden, and imagers may select the technique considered most appropriate for their institution.",
+          "When several plaque quantification methods are available for the same patient and give discrepant results, the most severe plaque assessment should be used for the P category."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "explanation": "The segment involvement score awards one point per affected coronary segment out of 16, and a CAC score of 101–300 falls within the P2 (moderate) plaque burden range. Because no single method is designated as mandatory, imagers may choose whichever technique (CAC, SIS, visual estimate) suits local practice, and when different approaches yield discordant results for the same patient the most severe plaque assessment should be used. Quantitative volumetric assessment is not the preferred routine method; it remains an emerging, time- and labour-intensive technique that is not widely available and requires further validation, so visual, CAC, or SIS-based estimates remain the practical routine options.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 6,
+        "question_text": "Regarding management considerations for CAD-RADS category 3, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "CAD-RADS 3 reflects moderate stenosis of 50–69% and permits consideration of CT-FFR, myocardial CT perfusion, or stress testing to assess for lesion-specific ischemia.",
+          "CAD-RADS 3 mandates same-day invasive coronary angiography before any consideration of functional imaging or stress testing.",
+          "In CAD-RADS 3 with a positive ischemia modifier, invasive coronary angiography should be considered, particularly if frequent symptoms persist despite guideline-directed medical therapy.",
+          "Patients classified as CAD-RADS 3 should receive aggressive risk factor modification and preventive pharmacotherapy regardless of plaque burden category.",
+          "CAD-RADS 3 corresponds to severe stenosis of 70–99% of the luminal diameter."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            2,
+            3
+          ],
+          "explanation": "CAD-RADS 3 corresponds to moderate stenosis (50–69%), for which functional testing options including CT-FFR, myocardial CT perfusion, or stress testing may be used to clarify haemodynamic significance. Aggressive risk factor modification and preventive pharmacotherapy are recommended across all plaque burden categories (P1 through P4) at this stenosis grade. When the ischemia modifier is positive, invasive coronary angiography should be considered, especially if symptoms persist despite adequate medical therapy. The 70–99% range instead defines severe stenosis (CAD-RADS 4A), and functional or invasive testing is an option to be considered rather than a mandatory same-day step.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 7,
+        "question_text": "Regarding the distinction between CAD-RADS categories 4A and 4B, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "CAD-RADS 4B is defined by a single-vessel stenosis of 70–99% without left main or three-vessel involvement.",
+          "CAD-RADS 4A requires at least 50% stenosis of the left main coronary artery.",
+          "CAD-RADS 4A describes severe stenosis (70–99%) in one or two vessels, excluding left main or three-vessel obstructive disease.",
+          "For CAD-RADS 4B, functional stress testing alone is generally regarded as an adequate substitute for invasive coronary angiography.",
+          "CAD-RADS 4B is defined by left main stenosis of at least 50% or three-vessel obstructive disease exceeding 70%."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            2,
+            4
+          ],
+          "explanation": "CAD-RADS 4A describes severe (70–99%) stenosis limited to one or two vessels, without left main or three-vessel obstructive involvement, whereas CAD-RADS 4B is defined by left main stenosis of at least 50% or by obstructive three-vessel disease exceeding 70%. The single-vessel description without left main or three-vessel disease describes 4A, not 4B, and left main stenosis is the defining feature of 4B rather than a requirement for 4A. Because 4B carries a substantially higher likelihood of needing revascularisation, invasive coronary angiography is recommended rather than functional stress testing being regarded as an adequate substitute.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 8,
+        "question_text": "Regarding CAD-RADS category 5, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "CAD-RADS 5 denotes a stenosis severity of 70–99% affecting a single coronary vessel.",
+          "CAD-RADS 5 requires that the total occlusion be of acute rather than chronic origin.",
+          "In patients with CAD-RADS 5, revascularization and further preventive pharmacotherapy are mutually exclusive management strategies.",
+          "CAD-RADS 5 indicates total (or sub-total) coronary occlusion and prompts consideration of invasive coronary angiography together with functional and/or viability assessment.",
+          "CAD-RADS 5 is assigned only when three separate vessels each demonstrate total occlusion."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            3
+          ],
+          "explanation": "CAD-RADS 5 denotes total or sub-total coronary occlusion and its suggested management is consideration of invasive coronary angiography together with functional and/or viability assessment. The 70–99% range instead defines severe stenosis under CAD-RADS 4A, not CAD-RADS 5, which requires 100% occlusion. The presence of at least one totally occluded coronary artery is sufficient for this category; three-vessel occlusion is not required. The clinical relevance of the occlusion varies depending on whether it is acute or chronic, so an acute origin is not a requirement, and preventive pharmacotherapy is recommended alongside, not instead of, revascularisation options.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 9,
+        "question_text": "Regarding the non-diagnostic study modifier \"N\" in CAD-RADS 2.0, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Modifier N can be used either as a stand-alone CAD-RADS category or as a modifier appended to a numeric stenosis grade, depending on the diagnostic completeness of the study.",
+          "If a diagnostic segment shows stenosis of 50% or more and other segments are non-diagnostic, the study should be graded using the numeric stenosis category plus modifier N, rather than category N alone.",
+          "Modifier N is reported in place of the plaque burden (P) category whenever a study is non-diagnostic, even if total plaque burden can be reliably assessed.",
+          "A study with at least one non-interpretable segment and no more than mild stenosis (25–49%) in the interpretable segments should be labelled with a numeric CAD-RADS category alone, without modifier N.",
+          "Non-diagnostic segments may result from motion artifact, calcium blooming, or metal artifact impairing confident interpretation of vessels greater than 1.5 mm in diameter."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            1,
+            4
+          ],
+          "explanation": "\"N\" can function either as its own category or as a modifier depending on context, and non-diagnostic segments typically arise from motion artifact, calcium blooming, or metal artifact obscuring confident assessment of vessels greater than 1.5 mm. When a diagnostic segment already shows stenosis of 50% or more, the study should be graded with the numeric category plus modifier N appended, since the higher-grade finding still drives management. Conversely, when no interpretable segment exceeds mild stenosis and a segment is non-interpretable, CAD-RADS N alone should be used because a significant stenosis cannot be reliably excluded. The plaque burden (P) category should still be used alongside N whenever total plaque burden can be reliably assessed, rather than being omitted by default.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 10,
+        "question_text": "Regarding the stent modifier \"S\" in CAD-RADS 2.0, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The presence of a coronary stent is denoted by modifier G.",
+          "In-stent restenosis is graded using a bespoke scale that differs from the standard CAD-RADS stenosis percentages.",
+          "Modifier S indicates the presence of at least one coronary stent anywhere in the coronary arterial tree, regardless of whether it demonstrates restenosis.",
+          "If a coronary stent cannot be evaluated and no other stenosis of 50% or greater is present elsewhere, the study should be coded with modifier N together with modifier S.",
+          "A severe stenosis occurring in a non-stented vessel is excluded from CAD-RADS classification if a stent is present elsewhere in the coronary tree."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            2,
+            3
+          ],
+          "explanation": "Modifier S denotes the presence of at least one coronary stent anywhere in the coronary tree, whether or not restenosis is present, and a non-evaluable stent with no other stenosis of 50% or more elsewhere is coded as CAD-RADS N together with modifier S. Modifier G instead denotes bypass grafts, not stents. In-stent stenosis is graded using the same percentage scale applied to native coronary arteries, not a separate scale. Because CAD-RADS is intended to guide management, it does not matter whether a severe stenosis lies within a stented or non-stented vessel; either is fully captured by the classification.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 11,
+        "question_text": "Regarding the coronary bypass graft modifier \"G\" in CAD-RADS 2.0, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A coronary stenosis that is fully bypassed by a patent graft is not considered when assigning the CAD-RADS stenosis category.",
+          "Native coronary artery segments proximal to a graft anastomosis should be evaluated and graded for CAD-RADS purposes in the same way as the graft itself.",
+          "Only the bypass grafts and the native coronary segments distal to and including the anastomosis should be evaluated for CAD-RADS coding in a patient with bypass grafts.",
+          "Total occlusion of a bypass graft is disregarded for CAD-RADS purposes provided the corresponding native vessel remains patent proximally.",
+          "Total coronary plaque burden in a patient with bypass grafts should be assessed by combining findings from both the native coronary arteries and the grafts."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            2,
+            4
+          ],
+          "explanation": "A stenosis fully bypassed by a patent graft is not counted toward the CAD-RADS stenosis category, and only the grafts together with the native segments distal to and including the anastomosis are evaluated for coding. Native segments proximal to the anastomosis are explicitly excluded from grading rather than being assessed the same way as the graft. Total plaque burden should combine findings from both native coronary arteries and grafts rather than being based on one or the other alone. A totally occluded graft is not disregarded; it is coded as an occlusion, for example alongside modifier G, since the presence of a total occlusion is itself clinically relevant.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 12,
+        "question_text": "Regarding high-risk plaque (HRP) features in CAD-RADS 2.0, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A single high-risk plaque feature, such as isolated spotty calcification, is sufficient to apply the HRP modifier.",
+          "High-risk plaque features include spotty calcification, low-attenuation plaque, positive remodeling, and the napkin-ring sign.",
+          "The presence of high-risk plaque has been associated with an increased risk of acute coronary syndrome independent of stenosis severity in patients with acute chest pain.",
+          "Low-attenuation plaque for the purposes of high-risk plaque assessment is defined as non-calcified plaque with internal attenuation less than 30 Hounsfield units.",
+          "The presence of high-risk plaque may warrant more aggressive preventive therapy even in non-obstructive coronary artery disease such as CAD-RADS 1 or 2."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "explanation": "The four recognised high-risk plaque features are spotty calcification, low-attenuation plaque (defined as non-calcified plaque with internal attenuation below 30 Hounsfield units), positive remodeling, and the napkin-ring sign. Their presence has been linked to a higher risk of acute coronary syndrome independent of stenosis severity, and identifying high-risk plaque can justify more aggressive preventive therapy even for non-obstructive disease such as CAD-RADS 1 or 2. A single isolated feature is not sufficient for the modifier, however: at least two of these features must be demonstrated together before the plaque is designated high-risk.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 13,
+        "question_text": "Regarding the ischemia modifier \"I\" as derived from CT fractional flow reserve (CT-FFR), which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A lesion-specific CT-FFR value of 0.75 or less in a vessel large enough for percutaneous coronary intervention is designated as modifier I1 (positive for ischemia).",
+          "A lesion-specific CT-FFR value greater than 0.80 is designated as modifier I1 (positive for ischemia), prompting consideration of invasive angiography.",
+          "A CT-FFR value between 0.76 and 0.80 is classified as modifier I2 (negative for ischemia), obligating deferral of invasive angiography.",
+          "CT-FFR is particularly useful for further characterising stenoses in the 50–90% range, especially those classified as CAD-RADS 3 or 4A.",
+          "A negative CT-FFR result automatically overrides and replaces the anatomical CAD-RADS stenosis category rather than being reported as an additional modifier."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            3
+          ],
+          "explanation": "A lesion-specific CT-FFR value of 0.75 or less in a vessel large enough for percutaneous coronary intervention defines modifier I1 (positive), and CT-FFR is particularly useful for characterising the haemodynamic significance of stenoses in the 50–90% range, especially CAD-RADS 3 and 4A lesions. A value greater than 0.80 instead defines the negative modifier I2, which favours deferral of invasive angiography rather than prompting it. Values between 0.76 and 0.80 fall into the borderline I1/2 category, with the angiography decision depending on symptoms, lesion location, and the trans-lesional pressure gradient, rather than being a fixed I2 designation. The ischemia result is reported as an additional modifier appended to the anatomical CAD-RADS category, not as a replacement for it.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 14,
+        "question_text": "Regarding the ischemia modifier \"I\" as derived from stress myocardial CT perfusion (CTP), which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A perfusion defect present on both stress and rest CT perfusion imaging in a defined coronary territory is designated modifier I1 (positive for ischemia).",
+          "A reversible perfusion defect present on stress but not on rest imaging indicates myocardial ischemia and should be designated modifier I1.",
+          "A fixed perfusion defect corresponding to a prior myocardial infarction should be designated modifier I2, and the presence of the infarct should be documented in the impression.",
+          "When CT-FFR or CT perfusion testing is performed some time after the initial CCTA, the CAD-RADS score from the original study should be left unchanged rather than updated with modifier I.",
+          "Peri-infarct ischemia, defined as a stress perfusion defect larger than the corresponding rest defect, should be designated modifier I1."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            2,
+            4
+          ],
+          "explanation": "A reversible stress perfusion defect that is absent at rest indicates true myocardial ischemia in the corresponding territory and is coded as modifier I1, as is peri-infarct ischemia, where the stress defect is larger than the rest defect. A fixed defect corresponding to a prior infarct is instead coded as modifier I2, with the infarct itself documented separately in the report impression. A defect present on both stress and rest imaging reflects a fixed infarct or no reversible ischemia and is therefore I2 rather than I1. When ischemia testing is performed after the initial CCTA, the recommendation is to update the existing CAD-RADS score by adding modifier I, not to leave the original score unchanged.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 15,
+        "question_text": "Regarding the exceptions modifier \"E\" and the overall ordering of CAD-RADS modifiers, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Modifier E is used to flag non-atherosclerotic causes of coronary narrowing, such as coronary dissection, vasculitis, or an anomalous coronary artery with an inter-arterial course.",
+          "Modifier E replaces the numeric CAD-RADS stenosis category entirely whenever a non-atherosclerotic cause of coronary narrowing is identified.",
+          "When multiple modifiers apply to the same patient, the recommended order after the plaque category is: N, HRP, I, S, G, then E.",
+          "Modifier E is added at the end of the CAD-RADS score, after any other applicable modifiers.",
+          "Non-atherosclerotic causes of coronary abnormality are considerably less common than atherosclerotic stenosis or occlusion as a cause of coronary narrowing on CCTA."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "explanation": "Modifier E flags non-atherosclerotic causes of coronary narrowing, including dissection, vasculitis, and anomalous coronary arteries with an inter-arterial course, and is added at the end of the coding string, following the recommended overall modifier order of N, HRP, I, S, G, then E. These non-atherosclerotic causes are considerably less common than atherosclerotic stenosis or occlusion, accounting for only a small minority of CCTA findings. Modifier E is used in addition to the numeric CAD-RADS 0–5 category rather than replacing it, since a stenosis category is still assigned based on the degree of luminal narrowing caused by the non-atherosclerotic abnormality.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 16,
+        "question_text": "A patient undergoes coronary CT angiography to investigate atypical chest pain. The coronary arteries show no calcified or non-calcified plaque in any segment, and no luminal diameter stenosis is identified in any vessel greater than 1.5 mm.\n\nWhat is the most appropriate CAD-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "CAD-RADS 0",
+          "CAD-RADS 1",
+          "CAD-RADS 2",
+          "CAD-RADS 3",
+          "CAD-RADS 4A"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "CAD-RADS 0",
+          "correct_options": null,
+          "explanation": "The complete absence of both plaque and stenosis throughout the coronary tree defines CAD-RADS 0, the absence of coronary artery disease. CAD-RADS 1 is the nearest distractor but requires either minimal stenosis or, at minimum, the presence of plaque with positive remodeling, neither of which is present here.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 17,
+        "question_text": "CCTA in a patient with stable chest pain demonstrates a small non-calcified plaque in the proximal left anterior descending artery with positive remodeling. Careful assessment shows no measurable luminal diameter narrowing at this site, and no other plaque or stenosis is seen elsewhere in the coronary tree.\n\nWhat is the most appropriate CAD-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "CAD-RADS 0",
+          "CAD-RADS 1",
+          "CAD-RADS 2",
+          "CAD-RADS 3",
+          "CAD-RADS 5"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "CAD-RADS 1",
+          "correct_options": null,
+          "explanation": "CAD-RADS 1 explicitly includes plaque with positive remodeling and no evidence of stenosis, which is exactly the finding described. CAD-RADS 0 is the nearest distractor but requires complete absence of plaque, whereas a definite non-calcified plaque is present here, ruling that category out.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 18,
+        "question_text": "In a patient undergoing CCTA for stable chest pain, the mid right coronary artery demonstrates a calcified plaque causing an estimated 30% luminal diameter stenosis. No other vessel demonstrates greater than mild luminal narrowing.\n\nWhat is the most appropriate CAD-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "CAD-RADS 1",
+          "CAD-RADS 2",
+          "CAD-RADS 3",
+          "CAD-RADS 4A",
+          "CAD-RADS 4B"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "CAD-RADS 2",
+          "correct_options": null,
+          "explanation": "A 30% luminal diameter stenosis falls within the 25–49% band, which is termed mild stenosis and corresponds to CAD-RADS 2. CAD-RADS 1 is the nearest distractor but is reserved for 1–24% stenosis or non-stenotic plaque, a lower threshold than the stenosis described here.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 19,
+        "question_text": "CCTA performed for stable chest pain shows the most severe lesion to be a 60% diameter stenosis in the proximal left anterior descending artery due to mixed plaque. There is no left main disease, no three-vessel obstructive disease, and no other vessel demonstrates stenosis greater than mild in degree.\n\nWhat is the most appropriate CAD-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "CAD-RADS 2",
+          "CAD-RADS 3",
+          "CAD-RADS 4A",
+          "CAD-RADS 4B",
+          "CAD-RADS 5"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "CAD-RADS 3",
+          "correct_options": null,
+          "explanation": "A 60% diameter stenosis falls within the 50–69% band, termed moderate stenosis, corresponding to CAD-RADS 3. CAD-RADS 4A is the nearest distractor but requires severe stenosis of 70–99%, a higher-grade lesion than the 60% stenosis described.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 20,
+        "question_text": "In a patient with stable angina, CCTA demonstrates an 80% diameter stenosis of the mid left anterior descending artery due to non-calcified plaque. The left main coronary artery, left circumflex, and right coronary arteries show no more than mild disease, and there is no three-vessel obstructive disease.\n\nWhat is the most appropriate CAD-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "CAD-RADS 2",
+          "CAD-RADS 3",
+          "CAD-RADS 4A",
+          "CAD-RADS 4B",
+          "CAD-RADS 5"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "CAD-RADS 4A",
+          "correct_options": null,
+          "explanation": "An 80% stenosis falls within the severe (70–99%) range, and since it is confined to a single vessel without left main or three-vessel obstructive disease, this defines CAD-RADS 4A. CAD-RADS 4B is the nearest distractor but is reserved for left main stenosis of at least 50% or three-vessel obstructive disease, neither of which is present here.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 21,
+        "question_text": "CCTA in a patient with stable chest pain demonstrates a 60% diameter stenosis of the distal left main coronary artery due to circumferential calcified plaque. The left anterior descending, left circumflex, and right coronary artery territories show no additional severe disease.\n\nWhat is the most appropriate CAD-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "CAD-RADS 2",
+          "CAD-RADS 3",
+          "CAD-RADS 4A",
+          "CAD-RADS 4B",
+          "CAD-RADS 5"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "CAD-RADS 4B",
+          "correct_options": null,
+          "explanation": "A left main coronary artery stenosis of at least 50% defines CAD-RADS 4B regardless of the degree of disease elsewhere in the coronary tree. CAD-RADS 3 is the nearest distractor by percentage stenosis alone, but the left main location is the decisive criterion that elevates this case to 4B rather than being graded purely by the numeric stenosis percentage.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 22,
+        "question_text": "In a patient presenting with stable chest pain, CCTA shows severe (70–99%) stenosis of the proximal right coronary artery, the proximal left anterior descending artery, and the mid left circumflex artery, with no left main disease.\n\nWhat is the most appropriate CAD-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "CAD-RADS 1",
+          "CAD-RADS 3",
+          "CAD-RADS 4A",
+          "CAD-RADS 4B",
+          "CAD-RADS 5"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "CAD-RADS 4B",
+          "correct_options": null,
+          "explanation": "Obstructive (≥70%) disease involving all three major coronary territories defines CAD-RADS 4B, even in the absence of left main disease. CAD-RADS 4A is the nearest distractor but is reserved for severe stenosis confined to one or two vessels; three-vessel obstructive disease specifically escalates the case to 4B.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 23,
+        "question_text": "CCTA performed for stable chest pain demonstrates complete (100%) luminal occlusion of the mid right coronary artery, with a small focus of calcification distal to the occlusion suggesting a chronic process. No other vessel shows more than mild disease.\n\nWhat is the most appropriate CAD-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "CAD-RADS 0",
+          "CAD-RADS 3",
+          "CAD-RADS 4A",
+          "CAD-RADS 4B",
+          "CAD-RADS 5"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "CAD-RADS 5",
+          "correct_options": null,
+          "explanation": "A 100% luminal occlusion defines CAD-RADS 5, total coronary occlusion, irrespective of whether the occlusion is acute or chronic in origin. CAD-RADS 4A is the nearest distractor by severity but is reserved for stenosis in the 70–99% range rather than complete occlusion.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 24,
+        "question_text": "In a patient with stable angina, CCTA demonstrates severe (70–99%) stenosis in both the proximal left anterior descending artery and the mid right coronary artery. The left circumflex artery shows no more than mild disease, and the left main coronary artery is normal.\n\nWhat is the most appropriate CAD-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "CAD-RADS 2",
+          "CAD-RADS 3",
+          "CAD-RADS 4A",
+          "CAD-RADS 4B",
+          "CAD-RADS 5"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "CAD-RADS 4A",
+          "correct_options": null,
+          "explanation": "Severe (70–99%) stenosis confined to two vessels, without left main or three-vessel obstructive involvement, defines CAD-RADS 4A. CAD-RADS 4B is the nearest distractor but requires either left main stenosis of at least 50% or obstructive disease in all three major vessels, neither of which applies to this two-vessel pattern.",
+          "page_images": []
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,415 @@
+[
+  {
+    "chapter_id": 6,
+    "chapter_match": "exact",
+    "source": "Reporting Systems",
+    "section": "mrq",
+    "library_key": "edir",
+    "clinical_vignette": "ACR NI-RADS (Neck Imaging Reporting and Data System, 2025)",
+    "article_summary": "### NI-RADS (Neck Imaging Reporting and Data System)\n**Source:** Cavazuti B, Hudgins P, Rath T, Branstetter C, Baugnon K, Corey A, Aiken A. \"Neck Imaging Reporting and Data System: An Atlas of NI-RADS Categories for Head and Neck Cancer,\" ACR (2025 update).\n**Scope:** A structured surveillance-imaging reporting system for patients previously treated for head and neck cancer, applied to contrast-enhanced CT with concurrent PET (readily adaptable to MRI-based surveillance), assigning a linked, standardized level of suspicion to guide further management.\n\n### Category cheat-sheet\n- **NI-RADS 1 (primary):** expected post-treatment tissue distortion only, no discrete abnormal soft tissue and no abnormal FDG uptake — routine surveillance. / **NI-RADS 1 (nodal):** no pathologically enlarged, necrotic, or otherwise abnormal lymph node, no abnormal FDG uptake — routine surveillance.\n- **NI-RADS 2 (primary):** subdivided into 2a — a superficial/mucosal-surface abnormality (direct clinical/endoscopic inspection) and 2b — a deep, ill-defined soft-tissue abnormality with only mild enhancement/FDG uptake (short-interval follow-up at ~3 months, or PET); most useful when CT and PET findings are discordant. / **NI-RADS 2 (nodal):** an ill-defined nodal abnormality, or a node growing along the expected drainage pathway without definite abnormal morphology, with mild-to-intermediate FDG uptake — short-interval follow-up or PET (no primary-style a/b subdivision in the neck).\n- **NI-RADS 3 (primary):** a new or definitely enlarging discrete mass/nodule with robust enhancement and intense focal FDG uptake — biopsy. / **NI-RADS 3 (nodal):** a new or definitely enlarging lymph node, typically with abnormal morphology and intense focal FDG uptake — biopsy if clinically needed.\n- **NI-RADS 4 (primary):** pathologically proven recurrence, or definite clinical/radiographic progression, at the primary site — no further biopsy needed, refer for clinical management. / **NI-RADS 4 (nodal):** pathologically proven nodal recurrence, or definite progression demonstrated on a single study — no further biopsy needed, refer for clinical management.\n\n### Key imaging/scoring points\n- The primary tumour bed and the neck are scored separately, each on the same 1-4 scale but using site-specific criteria, because the two sites are managed independently; both categories appear in the impression of a single report.\n- The system was modelled on BI-RADS and developed with input from ENT, radiation oncology, haematology/oncology, and pathology colleagues, aiming to standardise reporting, generate data-mineable reports, and highlight the radiologist's role in guiding care.\n- Standard surveillance imaging is contrast-enhanced CT of the neck with concurrent PET, with the initial post-treatment study typically obtained roughly 8-12 weeks after surgery or completion of chemoradiotherapy; the same category definitions transfer readily to MRI-based surveillance.\n- NI-RADS 2 is most relevant when CT and PET findings are discordant: robust enhancement without a corresponding focus of FDG uptake (favouring scar or granulation tissue), or focal FDG uptake without a clear anatomical correlate, or mucosal ulceration with avid uptake (favouring radiation effect).\n- Descriptive lexicon anchors: non-mass-like, hypo-enhancing distortion of soft tissue and fat planes = category 1; mucoid mucosal density and diffuse linear post-radiation mucosal enhancement = category 1; focal mucosal enhancement or FDG uptake = 2a. For a mass or node: ill-defined morphology with mild enhancement and mild FDG uptake = category 2; discrete morphology with robust enhancement and intense FDG uptake = category 3. For residual nodal tissue: no FDG uptake relative to background = category 1, mild uptake = category 2, intense uptake = category 3; a growing node along expected drainage without abnormal morphology = category 2, with abnormal morphology = category 3, with intense FDG uptake = category 3 or 4.\n- Practical heuristics: to separate category 2 from category 3, ask whether there is a discrete target that would actually be biopsied; if not, it is a 2. To separate category 3 from category 4, ask whether the finding still needs a biopsy or could plausibly represent something else; if not, it is a 4.\n- A structured legend defining every category and its linked recommendation is included at the bottom of every NI-RADS report, so any referring clinician can interpret the result without further radiology input; distant disease can optionally be commented on when the chest and/or abdomen are within the imaged field of view.\n\n### Practical/management implications\n- Category 1 leads to routine surveillance imaging (around 6 months). Category 2 leads to a short-interval follow-up (around 3 months) or PET, or direct clinical/endoscopic inspection when the abnormality is superficial/mucosal at the primary site. Category 3 leads to biopsy (image-guided or clinical/endoscopic) at either the primary site or the neck. Category 4 requires no further biopsy and proceeds directly to clinical management of confirmed recurrence.\n- Reported approximate disease-positivity rates rise across the scale: around 4% for category 1, around 17% for primary-site category 2a, and around 59% for category 3, consistent with the graded escalation of suspicion built into the category definitions; category 2a is deliberately designed to trigger inspection rather than immediate biopsy given how often it proves benign.\n\n### Pitfalls and limitations\n- After transoral robotic surgery, a deliberately preserved portion of the submandibular gland can mimic residual or recurrent nodular tissue on surveillance imaging; an FDG-avid level Ib node in a patient treated for oropharyngeal cancer should raise suspicion of an alternative explanation, since oropharyngeal cancer classically drains elsewhere.\n- Radiation-induced mucositis and postoperative granulation tissue are classic causes of a discordant CT/PET pattern that should be scored as category 2 rather than reflexively escalated to category 3.\n- Current practice favours obtaining a PET study before proceeding to salvage neck dissection for a suspicious node, rather than acting on CT morphology in isolation.\n- The 3-month short-interval follow-up figure reflects one institution's practice and is not necessarily a fixed value mandated by the system itself.\n\n### Take-home points\n- NI-RADS scores the primary site and the neck separately on the same 1-4 scale, because the two are managed independently.\n- Category 2 is subdivided only at the primary site (2a superficial/mucosal versus 2b deep/ill-defined); the neck uses a single, undivided category 2.\n- A discordant CT/PET pattern is the classic trigger for category 2, not an automatic upgrade to category 3.\n- Categories 3 and 4 are separated by whether recurrence is already proven (4) or still needs biopsy confirmation (3), not by imaging appearance alone.\n- The system is built around standardized, linked recommendations that any clinician can act on directly from the report legend, without needing to interpret imaging terminology.",
+    "questions": [
+      {
+        "q_number": 1,
+        "question_text": "Regarding the purpose and design of NI-RADS, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "NI-RADS was developed to standardise surveillance imaging reporting in patients previously treated for head and neck cancer, with categories linked to specific management recommendations.",
+          "NI-RADS was primarily developed to replace TNM staging at the time of initial head and neck cancer diagnosis.",
+          "The system was modelled on the BI-RADS framework, assigning a numerical level of suspicion to guide subsequent care.",
+          "Once a NI-RADS category is documented on the initial post-treatment surveillance scan, no further category needs to be assigned on subsequent surveillance studies.",
+          "One stated aim of NI-RADS is to generate data-mineable structured reports that can help refine surveillance algorithms and reduce inter-observer variability."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 4],
+          "explanation": "NI-RADS was designed as a post-treatment surveillance tool that links a standardized numerical category to a specific management recommendation, explicitly modelled on the BI-RADS framework. It was developed with input from ENT, radiation oncology, haematology/oncology, and pathology colleagues, not to replace initial TNM staging, which is an unrelated staging process performed before treatment. Each surveillance study is assigned its own category based on the findings on that scan, so a category from an earlier study is not carried forward without reassessment. A further stated aim is to build structured, data-mineable reports that can help optimise surveillance algorithms and reduce inter-observer variability over time.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 2,
+        "question_text": "Regarding the standard NI-RADS surveillance imaging protocol, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "NI-RADS categories are designed specifically for CT-PET studies and are not considered adaptable for use with MRI-based surveillance.",
+          "The recommended initial post-treatment surveillance study combines contrast-enhanced CT of the neck with concurrent PET, performed roughly 8-12 weeks after surgery or completion of chemoradiotherapy.",
+          "NI-RADS surveillance protocols were developed by radiologists working in isolation, without input from surgical or oncological colleagues.",
+          "The limited set of management options linked to NI-RADS categories includes routine surveillance, directed clinical inspection or short-interval follow-up, additional imaging such as PET or MRI, and biopsy.",
+          "A negative surveillance CECT/PET permanently obviates the need for any further follow-up imaging in a treated head and neck cancer patient."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 3],
+          "explanation": "The standard initial post-treatment surveillance study is contrast-enhanced CT of the neck combined with concurrent PET, obtained roughly 8-12 weeks after surgery or completion of chemoradiotherapy, and the category definitions transfer readily to MRI when that is the surveillance modality rather than being CT-PET exclusive. The system was deliberately developed with multidisciplinary input from ENT, radiation oncology, haematology/oncology, and pathology, not by radiology alone. The limited, deliberately simple set of linked management options spans routine surveillance, directed clinical inspection or short-interval follow-up, additional imaging, and biopsy. A negative study leads to continued routine surveillance rather than the complete cessation of future follow-up imaging.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 3,
+        "question_text": "Regarding NI-RADS category 1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "At the primary site, category 1 is characterised by non-mass-like, hypo-enhancing distortion of soft tissue and fat planes without abnormal FDG uptake.",
+          "A discrete new mass with intense focal FDG uptake is classified as category 1 provided it enhances only mildly.",
+          "In the neck, category 1 corresponds to the absence of any pathologically enlarged, necrotic, or otherwise abnormal lymph node.",
+          "Category 1 findings mandate a short-interval follow-up scan at around 3 months to confirm stability.",
+          "Diffuse linear mucosal enhancement and mucoid mucosal density seen after radiotherapy are considered high-suspicion findings requiring biopsy."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2],
+          "explanation": "Category 1 at the primary site is defined by non-mass-like, hypo-enhancing distortion of soft tissue and fat planes with no abnormal FDG uptake, reflecting expected post-treatment change rather than recurrence. In the neck, the equivalent finding is the absence of any pathologically enlarged, necrotic, or otherwise morphologically abnormal lymph node. A discrete mass with intense focal FDG uptake describes a high-suspicion, not a category 1, appearance regardless of enhancement pattern. Category 1 leads to routine surveillance rather than short-interval follow-up, and the diffuse linear mucosal enhancement and mucoid density typical of post-radiation change are recognised benign category 1 descriptors, not indications for biopsy.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 4,
+        "question_text": "Regarding the primary-site subcategories of NI-RADS category 2, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Category 2 at the primary site is a single, undivided category with one uniform management recommendation.",
+          "Subcategory 2a describes a superficial, mucosal-surface abnormality and is managed with direct clinical or endoscopic inspection.",
+          "Subcategory 2b describes a superficial mucosal abnormality and is managed identically to subcategory 2a.",
+          "Subcategory 2b describes a deep, ill-defined soft-tissue abnormality and is managed with short-interval follow-up imaging or PET.",
+          "The 2a/2b subdivision exists because superficial and deep post-treatment abnormalities at the primary site are more efficiently worked up by different next steps."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 3, 4],
+          "explanation": "Primary-site category 2 is divided into two subcategories rather than being a single uniform category. Subcategory 2a corresponds to a superficial, mucosal-surface abnormality and is managed with direct clinical or endoscopic inspection, while subcategory 2b instead corresponds to a deep, ill-defined soft-tissue abnormality and is managed with short-interval follow-up imaging or PET rather than inspection. This subdivision exists precisely because superficial and deep post-treatment findings are more efficiently triaged by different next steps, which is why 2b is not managed identically to 2a.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 5,
+        "question_text": "Regarding discordant CT and PET findings in NI-RADS category 2 assessment, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Robust enhancement on CT without a corresponding focus of FDG uptake is a recognised pattern that should prompt a category 2 assignment rather than an automatic upgrade to category 3.",
+          "Focal FDG uptake with a clearly corresponding discrete enhancing mass on CT is the classic discordant pattern that defines category 2.",
+          "Mucosal ulceration with avid FDG uptake reliably represents recurrent tumour and should be reported as category 3 or 4.",
+          "Discordant CT and PET findings should be resolved by disregarding the PET component and categorising on CT morphology alone.",
+          "Focal FDG uptake without a clear anatomical correlate on CT is a recognised discordant pattern relevant to category 2 assessment."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 4],
+          "explanation": "Robust CT enhancement without a corresponding focus of FDG uptake is one of the classic discordant patterns favouring category 2 (for example, scar or granulation tissue) rather than an automatic upgrade to category 3. A discrete enhancing mass with clearly corresponding intense FDG uptake is instead a concordant, high-suspicion pattern typical of category 3, not the discordant pattern that defines category 2. Mucosal ulceration with avid FDG uptake can represent benign radiation effect rather than reliably indicating recurrence, and discordant findings should not be resolved by disregarding either modality outright; focal FDG uptake without a clear anatomical correlate on CT is itself a recognised discordant pattern relevant to category 2.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 6,
+        "question_text": "Regarding NI-RADS category 3, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "At the primary site, category 3 is defined by non-mass-like distortion of soft tissue with only mild FDG uptake.",
+          "A new or definitely enlarging discrete nodule or mass with robust enhancement and intense focal FDG uptake at the primary site warrants a category 3 assignment.",
+          "In the neck, a new or definitely enlarging lymph node is a key criterion supporting category 3.",
+          "Category 3 findings are linked to a recommendation for biopsy, whether image-guided or clinical/endoscopic.",
+          "Category 3 requires pathological confirmation of recurrence before the category can be assigned."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 3],
+          "explanation": "Category 3 at the primary site requires a new or definitely enlarging discrete nodule or mass with robust enhancement and intense focal FDG uptake, which is a distinct and more concerning pattern than the non-mass-like, mildly FDG-avid appearance of a lower category. In the neck, a new or definitely enlarging lymph node is the corresponding key criterion, and category 3 findings at either site are linked to a recommendation for biopsy, whether image-guided or clinical/endoscopic. Pathological confirmation is not a prerequisite for category 3, since it describes imaging findings that are suspicious enough to warrant biopsy rather than an already-proven diagnosis; once recurrence is pathologically confirmed, the finding is reclassified as category 4.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 7,
+        "question_text": "Regarding NI-RADS category 4, which of the following statements is correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Category 4 requires a discrete new mass on CT even when pathology has not confirmed recurrence.",
+          "Category 4 findings should still be referred for image-guided biopsy to confirm the diagnosis before management proceeds.",
+          "Category 4 is reserved for pathologically proven recurrence, or definite clinical or radiographic progression, and does not require further biopsy before proceeding to clinical management.",
+          "Category 4 is assigned whenever FDG uptake is more intense than that seen in a category 3 lesion, regardless of pathological or clinical confirmation.",
+          "Category 4 can only be assigned at the primary site and has no nodal equivalent."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [2],
+          "explanation": "Category 4 is reserved for recurrence that is either pathologically proven or shows definite clinical or radiographic progression, and by definition it does not require further biopsy before the patient proceeds to clinical management of confirmed recurrence. A discrete mass without pathological or clinical confirmation, or a lesion characterised purely by more intense FDG uptake than a category 3 finding, remains a category 3, high-suspicion assignment rather than a category 4 one, since imaging appearance alone is not sufficient. Category 4 applies equally to the primary site and the neck, so a nodal equivalent does exist.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 8,
+        "question_text": "Regarding the linked management recommendations attached to each NI-RADS category, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Category 1 is linked to routine follow-up imaging, typically at a 6-month interval.",
+          "Category 2 is linked to a short-interval follow-up (around 3 months), additional PET imaging, or direct clinical inspection, depending on the site and pattern of abnormality.",
+          "Category 3 is linked to a recommendation for routine 6-month surveillance imaging without further intervention.",
+          "Category 3 is linked to a recommendation for biopsy.",
+          "Category 4 is linked to clinical management of confirmed recurrence rather than a further imaging or biopsy recommendation."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 3, 4],
+          "explanation": "Category 1 is linked to routine surveillance imaging at around a 6-month interval, while category 2 is linked to a short-interval follow-up (around 3 months), additional PET imaging, or direct clinical inspection depending on whether the abnormality is superficial or deep. Category 3 is linked to a recommendation for biopsy rather than routine surveillance, since its imaging pattern is suspicious enough to warrant tissue sampling. Category 4, by contrast, requires no further imaging or biopsy recommendation and is instead linked directly to clinical management of confirmed recurrence.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 9,
+        "question_text": "Regarding the NI-RADS descriptive lexicon for masses and mass-like abnormalities, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "An ill-defined mass morphology is more in keeping with category 2, whereas a discrete mass morphology is more in keeping with category 3.",
+          "Robust contrast enhancement of a mass is a feature more typical of category 2 than category 3.",
+          "Mild FDG uptake relative to background is more in keeping with category 2, while intense FDG uptake is more in keeping with category 3.",
+          "Non-mass-like, hypo-enhancing distortion of soft tissue and fat planes is the descriptor used for category 1 rather than for a discrete mass.",
+          "The lexicon does not distinguish between mild and intense FDG uptake when characterising a mass."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 3],
+          "explanation": "The lexicon pairs an ill-defined mass morphology, mild enhancement, and mild FDG uptake with category 2, while pairing a discrete mass morphology, robust enhancement, and intense FDG uptake with category 3, so ill-defined versus discrete morphology and mild versus intense FDG uptake correctly track categories 2 and 3 respectively. Robust enhancement is therefore a category 3, not a category 2, feature, contrary to the claim that it favours category 2. Non-mass-like, hypo-enhancing distortion of soft tissue and fat planes is specifically the category 1 descriptor, distinguishing expected post-treatment change from an actual mass. The lexicon explicitly distinguishes mild from intense FDG uptake as separate descriptors rather than treating them as equivalent.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 10,
+        "question_text": "Regarding the NI-RADS descriptive lexicon for mucosal abnormalities, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Focal mucosal enhancement or FDG uptake is the descriptor used for category 1.",
+          "Diffuse linear mucosal enhancement, a recognised pattern of benign radiation mucositis, is a category 1 descriptor.",
+          "A mucoid mucosal density is considered a high-suspicion descriptor requiring biopsy.",
+          "Any mucosal enhancement, whether diffuse or focal, is treated identically in the lexicon and carries the same category.",
+          "Mucoid density mucosal oedema is a recognised category 1 descriptor."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 4],
+          "explanation": "Diffuse linear mucosal enhancement, a recognised pattern of benign radiation mucositis, and mucoid density mucosal oedema are both category 1 descriptors reflecting expected post-treatment change rather than recurrence. Focal mucosal enhancement or FDG uptake is instead the descriptor used for the superficial primary-site subcategory 2a, not category 1, since it represents a localised finding rather than diffuse expected change. A mucoid mucosal density is a benign, category 1 finding rather than a high-suspicion descriptor requiring biopsy, and the lexicon distinguishes diffuse from focal mucosal enhancement as separate descriptors carrying different categories rather than treating them identically.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 11,
+        "question_text": "Regarding the NI-RADS descriptive lexicon for lymph nodes, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Residual nodal tissue with no FDG uptake relative to background corresponds to category 1.",
+          "Residual nodal tissue with mild FDG uptake relative to background corresponds to category 2.",
+          "Residual nodal tissue with intense FDG uptake relative to background corresponds to category 3.",
+          "A growing lymph node along the expected nodal drainage pathway without abnormal morphology is scored identically to a growing node with abnormal morphology.",
+          "A growing lymph node with intense FDG uptake is scored as category 3 or 4."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 2, 4],
+          "explanation": "The lymph node lexicon tiers residual nodal tissue by FDG uptake relative to background: no uptake corresponds to category 1, mild uptake to category 2, and intense uptake to category 3. A growing lymph node along the expected drainage pathway without abnormal morphology is scored as category 2, whereas the same growing node with abnormal morphology is scored higher as category 3, so the two patterns are not scored identically. A growing lymph node with intense FDG uptake can be scored as category 3 or 4 depending on whether pathological or clinical confirmation of recurrence is also present.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 12,
+        "question_text": "Regarding the practical heuristics used to separate adjacent NI-RADS categories, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The distinction between category 2 and category 3 rests solely on the size of the primary tumour at initial staging, not on the follow-up imaging appearance.",
+          "The distinction between category 3 and category 4 is based purely on the intensity of FDG uptake, with no reference to pathological or clinical confirmation.",
+          "One practical approach to separating category 2 from category 3 is to ask whether there is a discrete target that the radiologist would actually recommend biopsying.",
+          "One practical approach to separating category 3 from category 4 is to ask whether the finding still needs a biopsy or could plausibly represent something else.",
+          "These heuristics apply only to nodal findings and have no role in assessing the primary site."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [2, 3],
+          "explanation": "A practical way to separate category 2 from category 3 is to ask whether there is a discrete target that would genuinely be recommended for biopsy; if not, the finding remains a category 2. Separating category 3 from category 4 instead relies on asking whether the finding still needs biopsy confirmation or could plausibly represent something else; if not, it is a category 4. Neither distinction rests on the size of the tumour at initial staging or on FDG intensity alone, since pathological or clinical confirmation is the key factor separating 3 from 4, and both heuristics apply equally to the primary site and the neck rather than being nodal-specific.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 13,
+        "question_text": "Regarding the structure of a NI-RADS surveillance report, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The primary site and the neck are assigned separate NI-RADS categories in the impression because they are managed separately.",
+          "A structured legend explaining each category and its linked recommendation is included at the bottom of the report, allowing interpretation by any clinician.",
+          "Findings relating to the visualised brain, orbits, spine, and lungs are omitted from a NI-RADS report because they fall outside the scope of the system.",
+          "Distant disease, when included in the report, must be assigned its own separate NI-RADS 1-4 category using the same primary-site criteria.",
+          "Distant disease can optionally be included in the report when the chest and abdomen are within the imaged field of view."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 4],
+          "explanation": "The primary site and the neck are assigned separate NI-RADS categories in the impression precisely because they are managed independently, and a structured legend defining each category and its linked recommendation appears at the bottom of the report so that any clinician can interpret it directly. The report template also comments on the visualised brain, orbits, spine, and lungs for aggressive or metastatic-appearing lesions, so these are not omitted as out of scope. Distant disease is included as an optional narrative comment when the chest and abdomen are within the imaged field of view, rather than being forced into the same 1-4 category scale used for the primary site.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 14,
+        "question_text": "Regarding recognised pitfalls in NI-RADS surveillance interpretation, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "An FDG-avid level Ib lymph node in a patient treated for oropharyngeal squamous cell carcinoma should be assumed to represent nodal recurrence, since oropharyngeal cancer classically drains to this level.",
+          "Following transoral robotic surgery, a deliberately preserved portion of the submandibular gland can mimic residual or recurrent nodular soft tissue on surveillance imaging.",
+          "Radiation-induced mucositis and postoperative granulation tissue are recognised causes of a discordant CT/PET pattern that can mimic recurrence.",
+          "Current practice favours obtaining a PET study before proceeding to salvage neck dissection for a suspicious lymph node, rather than acting on CT morphology alone.",
+          "The short-interval follow-up period linked to category 2 (around 3 months) reflects one institution's practice rather than a value fixed by the system itself."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 3, 4],
+          "explanation": "A deliberately preserved portion of the submandibular gland after transoral robotic surgery can mimic residual or recurrent nodular soft tissue, and it would also be atypical for oropharyngeal cancer to drain primarily to a level Ib node, so an FDG-avid level Ib node should prompt consideration of an alternative cause rather than an assumption of recurrence. Radiation-induced mucositis and postoperative granulation tissue are recognised causes of a discordant CT/PET pattern that can mimic recurrent disease if not properly contextualised. Current practice favours obtaining PET before proceeding to salvage neck dissection for a suspicious node rather than relying on CT morphology in isolation, and the stated 3-month short-interval follow-up period is described as institutional practice rather than a universally fixed system requirement.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 15,
+        "question_text": "Regarding reported rates of disease positivity across NI-RADS categories, which of the following statements is correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Approximately 59% of category 1 findings are ultimately positive for disease.",
+          "Approximately 4% of category 3 findings are ultimately positive for disease.",
+          "The majority of category 2a findings at the primary site ultimately prove to represent recurrent disease.",
+          "Only a minority of category 2a findings at the primary site are ultimately positive for disease, consistent with the category's role in directing clinical inspection rather than immediate biopsy.",
+          "Category 4 findings have a reported positivity rate of approximately 17%."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [3],
+          "explanation": "Only a minority of primary-site category 2a findings are ultimately positive for disease (approximately 17%), which fits the category's intended role of triggering clinical or endoscopic inspection rather than immediate biopsy. The 59% figure describes category 3, not category 1, and the 4% figure describes category 1, not category 3, so those two statements have the categories and rates reversed. Since most category 2a findings are false positives rather than true recurrence, the claim that the majority represent recurrent disease is incorrect, and the 17% figure belongs to category 2a rather than to category 4, which by definition already represents confirmed recurrence.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 16,
+        "question_text": "A patient is imaged on contrast-enhanced CT with concurrent PET 12 weeks after completing chemoradiotherapy for oropharyngeal squamous cell carcinoma. At the primary tumour bed there is non-mass-like, hypo-enhancing distortion of the soft tissues with diffuse linear mucosal enhancement in keeping with post-radiation mucositis. No focal mass, nodularity, or abnormal FDG uptake is identified at the primary site.\n\nWhat is the most appropriate NI-RADS category for the primary site in this case?",
+        "q_type": "single_choice",
+        "options": ["NI-RADS 2b", "NI-RADS 1", "NI-RADS 4", "NI-RADS 2a", "NI-RADS 3"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "NI-RADS 1",
+          "correct_options": null,
+          "explanation": "The combination of non-mass-like, hypo-enhancing soft-tissue distortion, diffuse linear mucosal enhancement typical of radiation mucositis, and the absence of abnormal FDG uptake defines a primary-site category with no evidence of recurrence, prompting routine surveillance rather than any escalation. A discrete focal mucosal abnormality with associated enhancement or FDG uptake would instead point toward the superficial low-suspicion subcategory, and a discrete enhancing mass with intense FDG uptake would be needed to raise concern for a higher-suspicion or confirmed-recurrence category, neither of which is present here.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 17,
+        "question_text": "A patient with a history of glottic squamous cell carcinoma treated with chemoradiotherapy returns for surveillance imaging with new hoarseness. CT shows a focal area of mucosal surface enhancement at the primary site without any deep soft-tissue mass, and PET shows corresponding focal mucosal FDG uptake of mild-to-moderate intensity.\n\nWhat is the most appropriate NI-RADS category for the primary site in this case?",
+        "q_type": "single_choice",
+        "options": ["NI-RADS 3", "NI-RADS 2a", "NI-RADS 1", "NI-RADS 4", "NI-RADS 2b"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "NI-RADS 2a",
+          "correct_options": null,
+          "explanation": "Focal mucosal surface enhancement with corresponding focal mucosal FDG uptake, in the absence of a deep or discrete soft-tissue mass, is the defining pattern for the superficial primary-site subcategory, which is managed with direct clinical or endoscopic inspection rather than biopsy or imaging follow-up alone. This differs from the deep subcategory, which by definition involves an ill-defined abnormality below the mucosal surface rather than a mucosal-surface finding, and from the high-suspicion category, which requires a discrete mass with robust enhancement and intense FDG uptake.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 18,
+        "question_text": "Surveillance CECT/PET performed several months after chemoradiotherapy for a base-of-tongue primary shows an ill-defined area of deep soft-tissue abnormality at the primary site, deep to the mucosal surface, with only mild enhancement. PET shows only mild associated FDG uptake, and no discrete mass or nodule is identified.\n\nWhat is the most appropriate NI-RADS category for the primary site in this case?",
+        "q_type": "single_choice",
+        "options": ["NI-RADS 1", "NI-RADS 4", "NI-RADS 2b", "NI-RADS 3", "NI-RADS 2a"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "NI-RADS 2b",
+          "correct_options": null,
+          "explanation": "An ill-defined, deep soft-tissue abnormality with only mild enhancement and mild FDG uptake, without a discrete mass, matches the deep low-suspicion primary-site subcategory, for which short-interval follow-up imaging or PET is recommended rather than immediate clinical inspection or biopsy. The superficial subcategory instead requires a mucosal-surface finding, and a discrete mass with robust enhancement and intense FDG uptake would be needed to escalate this to the high-suspicion category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 19,
+        "question_text": "Four months after resection and chemoradiotherapy for a maxillary sinus carcinoma, surveillance imaging shows a new, discrete soft-tissue mass at the primary site with robust enhancement and associated bony erosion. PET shows intense focal FDG uptake corresponding to the mass.\n\nWhat is the most appropriate NI-RADS category for the primary site in this case?",
+        "q_type": "single_choice",
+        "options": ["NI-RADS 2a", "NI-RADS 4", "NI-RADS 3", "NI-RADS 1", "NI-RADS 2b"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "NI-RADS 3",
+          "correct_options": null,
+          "explanation": "A new, discrete mass with robust enhancement, intense focal FDG uptake, and bony erosion satisfies the criteria for a high-suspicion primary-site finding, which should prompt biopsy. The findings are too focal and intense to represent the ill-defined, mildly enhancing, mildly FDG-avid pattern of a low-suspicion category, and pathological or definite clinical/radiographic confirmation of recurrence would be required before this could instead be classified as the definitive-recurrence category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 20,
+        "question_text": "A patient previously treated with resection and chemoradiotherapy for laryngeal squamous cell carcinoma undergoes image-guided biopsy of a primary-site soft-tissue abnormality identified on a prior surveillance scan; histology confirms recurrent squamous cell carcinoma. The current follow-up report is documenting this pathologically confirmed recurrence at the primary site.\n\nWhat is the most appropriate NI-RADS category for the primary site in this case?",
+        "q_type": "single_choice",
+        "options": ["NI-RADS 3", "NI-RADS 1", "NI-RADS 2b", "NI-RADS 4", "NI-RADS 2a"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "NI-RADS 4",
+          "correct_options": null,
+          "explanation": "Once recurrence at the primary site has been pathologically proven, the finding is classified as definitive recurrence, and no further biopsy is required before proceeding to clinical management. This differs from the high-suspicion category, which describes imaging findings that are concerning enough to warrant biopsy but have not yet been confirmed, and from the low-suspicion subcategories, which describe indeterminate rather than confirmed findings.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 21,
+        "question_text": "Six-month surveillance CECT of the neck in a patient previously treated for tonsillar squamous cell carcinoma shows no pathologically enlarged, necrotic, or otherwise morphologically abnormal cervical lymph nodes. Any residual nodal tissue identified shows no FDG uptake relative to background on the concurrent PET.\n\nWhat is the most appropriate NI-RADS category for the neck in this case?",
+        "q_type": "single_choice",
+        "options": ["NI-RADS 2a", "NI-RADS 4", "NI-RADS 1", "NI-RADS 3", "NI-RADS 2"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "NI-RADS 1",
+          "correct_options": null,
+          "explanation": "The absence of any pathologically enlarged, necrotic, or otherwise abnormal lymph node, together with no FDG uptake relative to background in any residual nodal tissue, defines a nodal category with no evidence of recurrence, so routine surveillance continues. The superficial/mucosal subcategory used at the primary site has no nodal equivalent, since the primary-site 2a subdivision does not apply to nodal disease, and neither an ill-defined FDG-avid node nor a new or enlarging node with intense uptake is described here.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 22,
+        "question_text": "A patient under surveillance after chemoradiotherapy for tonsillar squamous cell carcinoma has an ill-defined nodular focus of enhancement in an expected nodal drainage region on CECT, without a definitely enlarging or morphologically abnormal lymph node. PET shows mild associated FDG uptake in this region, and the appearance is unchanged from the prior study.\n\nWhat is the most appropriate NI-RADS category for the neck in this case?",
+        "q_type": "single_choice",
+        "options": ["NI-RADS 3", "NI-RADS 2", "NI-RADS 4", "NI-RADS 2b", "NI-RADS 1"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "NI-RADS 2",
+          "correct_options": null,
+          "explanation": "An ill-defined nodal abnormality along the expected drainage pathway, without definite abnormal morphology, and with only mild associated FDG uptake corresponds to a low-suspicion nodal finding, for which short-interval follow-up or PET is recommended. Unlike the primary site, the neck does not use a superficial/deep subdivision, so this remains a single low-suspicion nodal category rather than a subcategory; a new or enlarging node with abnormal morphology and intense uptake would instead point toward a high-suspicion assignment.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 23,
+        "question_text": "Surveillance imaging in a patient treated with resection, neck dissection, and chemoradiotherapy for oral tongue squamous cell carcinoma shows a new, enlarging cervical lymph node with central necrosis compared with the prior study. PET shows intense focal FDG uptake within this node.\n\nWhat is the most appropriate NI-RADS category for the neck in this case?",
+        "q_type": "single_choice",
+        "options": ["NI-RADS 1", "NI-RADS 2a", "NI-RADS 4", "NI-RADS 3", "NI-RADS 2"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "NI-RADS 3",
+          "correct_options": null,
+          "explanation": "A new or definitely enlarging lymph node with abnormal morphology, such as central necrosis, together with intense focal FDG uptake, satisfies the criteria for a high-suspicion nodal finding, which should prompt biopsy if clinically needed. This is more advanced than the ill-defined, mildly FDG-avid pattern of a low-suspicion node, and pathological or definite clinical/radiographic confirmation would be required before this could instead be classified as definitive recurrence.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 24,
+        "question_text": "A patient with a prior total laryngectomy and bilateral neck dissection for laryngeal cancer is found on a single surveillance study to have definite radiologic progression of a right neck nodal mass compared with the immediately preceding scan, together with clinical findings confirming recurrence at the stoma/neck. The report is documenting this as pathologically and clinically confirmed nodal recurrence.\n\nWhat is the most appropriate NI-RADS category for the neck in this case?",
+        "q_type": "single_choice",
+        "options": ["NI-RADS 2", "NI-RADS 2b", "NI-RADS 1", "NI-RADS 3", "NI-RADS 4"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "NI-RADS 4",
+          "correct_options": null,
+          "explanation": "Definite radiographic or clinical progression, or pathological proof of recurrence, on a single study defines definitive nodal recurrence, meaning no further biopsy is required before proceeding to clinical management. A high-suspicion assignment would instead describe a new or enlarging node with intense FDG uptake that has not yet been confirmed, and the superficial/mucosal subcategory used at the primary site is not applicable to nodal findings at all.",
+          "page_images": []
+        }
+      }
+    ]
+  }
+]

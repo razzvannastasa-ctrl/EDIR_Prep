@@ -1,0 +1,469 @@
+[
+  {
+    "chapter_id": 5,
+    "chapter_match": "exact",
+    "source": "Reporting Systems",
+    "section": "mrq",
+    "library_key": "edir",
+    "clinical_vignette": "Kidney & Urotrauma Grading (AAST-OIS 2018) & WSES-AAST Guideline (2019)",
+    "article_summary": "### Kidney and Uro-trauma Grading (AAST-OIS 2018) & WSES-AAST Guideline (2019)\n\n**Source:** Coccolini F, et al. \"Kidney and uro-trauma: WSES-AAST guidelines.\" World Journal of Emergency Surgery 2019;14:54. The paper reproduces the American Association for the Surgery of Trauma (AAST) Renal Injury Scale (Organ Injury Scale) alongside the joint WSES-AAST anatomic/physiologic severity classification.\n\n**Scope:** Grading and management framework for blunt and penetrating renal trauma on contrast-enhanced CT (arterial, venous, and delayed excretory/urographic phases), with companion sections covering ureteral, bladder, and urethral trauma in adults and children.\n\n### Category cheat-sheet\n- **AAST-OIS Grade I:** Contusion with microscopic or gross haematuria and normal urological imaging, OR a subcapsular, non-expanding haematoma with no parenchymal laceration; managed conservatively, no follow-up imaging needed.\n- **AAST-OIS Grade II:** A non-expanding haematoma confined to the perirenal retroperitoneum (within Gerota's fascia), OR a superficial cortical laceration under 1.0 cm deep with no urinary extravasation; managed conservatively (NOM), no routine follow-up imaging needed.\n- **AAST-OIS Grade III:** A deeper cortical laceration (over 1.0 cm) that does not breach the collecting system and has no urinary extravasation; NOM remains first-line, with follow-up imaging driven by clinical course rather than routine.\n- **AAST-OIS Grade IV:** Either a laceration extending through the cortex, medulla, AND into the collecting system (typically with urinary extravasation on the excretory phase), OR a main renal artery/vein injury with contained haemorrhage; NOM/angioembolisation preferred if hemodynamically stable/stabilised, with CT (excretory phase) or contrast-enhanced ultrasound follow-up suggested within 48 hours.\n- **AAST-OIS Grade V:** Either a completely shattered kidney, OR avulsion of the renal hilum causing complete devascularisation of the kidney; still managed non-operatively or with angioembolisation if the patient is hemodynamically stable, reserving surgery for instability, uncontained bleeding, or renal vein injury.\n\n### Key imaging/scoring points\n- Contrast-enhanced CT with a delayed (~5-minute) excretory/urographic phase is the gold standard whenever urogenital injury is suspected; this delayed phase should be added selectively based on clinical suspicion rather than performed routinely on every trauma CT.\n- Arterial and venous phases are acquired at roughly 20-30 s and 70-80 s respectively and identify almost all parenchymal and vascular injuries; the delayed phase specifically identifies urinary extravasation.\n- E-FAST and ultrasound/Doppler are poor at grading renal injury and at detecting vascular lesions (sensitivity as low as 22-67%), though E-FAST remains useful for rapidly detecting free intra-abdominal fluid.\n- Three-dimensional CT reconstruction aids injury classification; routine repeat CT during follow-up is discouraged unless there is clinical deterioration or suspected complication.\n- High-risk CT features for failure of non-operative management: contrast blush, perirenal haematoma greater than 3.5 cm, medial laceration with medial urinary extravasation (posteromedial blush), and absent contrast in the ureter distal to the injury suggesting complete ureteropelvic junction disruption.\n- Segmental vascular injuries of the kidney are classified by the WSES system as moderate-severity lesions (rather than automatically severe), kept distinct from collecting-system lacerations because their non-operative success rate is markedly lower.\n\n### Practical/management implications\n- Non-operative management (NOM) is first-line across all AAST-OIS grades (I-V) provided the patient is hemodynamically stable or stabilised, escalating in a step-wise fashion from conservative care to minimally invasive endoscopic/angiographic techniques before surgery is considered.\n- Angioembolisation is indicated for arterial contrast extravasation, pseudoaneurysm, arteriovenous fistula, or non-self-limiting gross haematuria; blind bilateral embolisation is not indicated when formal angiography is negative for active bleeding.\n- Main renal vein injury without self-limiting bleeding bypasses angioembolisation entirely and proceeds straight to surgery; main renal artery injury/occlusion may instead be managed with angioembolisation or percutaneous stenting in specialised centres provided warm ischaemia time is short.\n- The presence of non-viable (devascularised) renal tissue alone is not, by itself, an indication for operative exploration in the acute setting.\n- Follow-up imaging is unnecessary for grade I-II injuries managed non-operatively, but a CT excretory phase or contrast-enhanced ultrasound is recommended within 48 hours for grade IV-V injuries; paediatric follow-up favours ultrasound/contrast-enhanced ultrasound first, escalating to MRI rather than CT if cross-sectional imaging is needed.\n\n### Pitfalls and limitations\n- Haematuria severity (macro- vs micro-) does not reliably predict injury grade in either adults or children, and can be entirely absent in a meaningful minority of high-grade or renal artery injuries.\n- Ultrasound plays no diagnostic role for ureteral injury; peri-ureteral stranding, delayed pyelogram, and absent distal ureteral contrast on delayed-phase CT are the relevant clues instead.\n- Isolated urinary extravasation and a non-resolving urinoma during NOM are not, by themselves, indications for surgery; they are usually managed with stenting or percutaneous drainage.\n- Retrograde (conventional or CT) cystography outperforms standard delayed-phase intravenous CT for detecting bladder injury and should not be substituted by passive antegrade bladder distension via a clamped catheter.\n\n### Take-home points\n- The renal AAST-OIS scale is anchored to laceration depth (1.0 cm threshold), collecting-system involvement, and a contained-versus-devascularising distinction for vascular injury, not to the size-based criteria used for liver or spleen.\n- WSES severity class layers hemodynamic status on top of the anatomic AAST-OIS grade, so an anatomically low-grade injury in an unstable patient is still treated as the most severe WSES category.\n- Management is grade-informed but hemodynamics-driven: NOM and angioembolisation dominate even for grade IV-V injuries provided the patient remains stable or is successfully stabilised.\n- Ureteral, bladder, and urethral injuries each have their own dedicated first-line imaging test (delayed-phase CT/ascending urography, retrograde cystography, and retrograde urethrography respectively), distinct from the renal CT protocol.",
+    "questions": [
+      {
+        "q_number": 1,
+        "question_text": "Regarding the AAST Organ Injury Scale (OIS) and the WSES classification for renal trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A completely shattered kidney with retained perfusion of at least one pole is classified as AAST-OIS grade IV",
+          "A parenchymal laceration extending through the renal cortex, medulla, and collecting system is classified as AAST-OIS grade IV",
+          "The WSES classification places all AAST-OIS grade IV-V renal injuries into a single severity category regardless of hemodynamic status",
+          "Segmental vascular injuries of the kidney are classified by the WSES system as a moderate-severity lesion rather than automatically as a severe injury",
+          "Hemodynamic instability at presentation is not incorporated into the WSES kidney injury classification, which is based on anatomic AAST-OIS grade alone"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 3],
+          "explanation": "A laceration that extends through the cortex, medulla, and into the collecting system is the defining laceration-type criterion for grade IV, distinct from grade III where the collecting system remains intact. A completely shattered kidney is the most severe laceration pattern and is graded V, not IV, regardless of any residual perfusion. Segmental vascular injuries are treated by the WSES classification as moderate rather than severe lesions, reflecting their lower risk of organ or life loss compared with main-vessel injury. Hemodynamic status is central to the WSES system, which stratifies grade IV-V injuries differently depending on whether the patient is stable or unstable, so anatomic grade alone does not determine WSES class.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 2,
+        "question_text": "A young man sustains a low-energy fall and undergoes contrast-enhanced CT for gross haematuria. The kidney parenchyma is entirely normal with a small non-expanding subcapsular haematoma and no parenchymal laceration. The collecting system and renal vasculature are unremarkable.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade I",
+          "correct_options": null,
+          "explanation": "This appearance is grade I: haematuria with an entirely normal collecting system and vasculature, together with a small, non-expanding subcapsular haematoma and no parenchymal laceration, fits the least severe category on the scale. Grade II requires either a perirenal haematoma confined to the retroperitoneum or a cortical laceration, neither of which is described here. No laceration, collecting-system disruption, or vascular abnormality is present, which excludes the higher grades entirely. Clinically, grade I injuries do not require follow-up imaging when managed non-operatively.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 3,
+        "question_text": "Regarding the WSES classification of kidney trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "WSES class I (minor) comprises hemodynamically stable AAST-OIS grade I-II injuries",
+          "WSES class II (moderate) comprises hemodynamically stable AAST-OIS grade IV-V injuries",
+          "WSES class III (severe) comprises hemodynamically stable AAST-OIS grade IV-V injuries and any-grade parenchymal injury with arterial dissection or occlusion",
+          "WSES class IV is reserved exclusively for hemodynamically unstable AAST-OIS grade IV-V injuries",
+          "A hemodynamically unstable patient is classified as WSES class IV regardless of the anatomic AAST-OIS grade"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 4],
+          "explanation": "WSES class I is defined as stable AAST-OIS grade I-II lesions, forming the minor-injury category. WSES class III is defined as stable grade IV-V lesions and, separately, any-grade parenchymal lesion with arterial dissection or occlusion, reflecting that vascular compromise can elevate severity even at a lower anatomic grade. WSES class II, by contrast, corresponds to stable grade III (or segmental vascular) lesions, not grade IV-V, so pairing class II with grade IV-V is incorrect. WSES class IV covers any hemodynamically unstable injury irrespective of anatomic grade, not only grade IV-V, which is why instability alone places a patient in the most severe class.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 4,
+        "question_text": "Regarding the definition of hemodynamic instability used in adult renal trauma triage, which of the following statements is correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Hemodynamic instability requires a systolic blood pressure below 110 mmHg on admission irrespective of other clinical findings",
+          "A transient responder is defined as a patient who never shows any response to initial fluid resuscitation",
+          "A systolic blood pressure above 90 mmHg but requiring bolus fluid resuscitation, transfusion, or vasopressor support still meets criteria for hemodynamic instability",
+          "A shock index below 1 in combination with any base excess value defines hemodynamic instability",
+          "Hemodynamic instability in adults is defined purely by heart rate rather than blood pressure or base excess"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [2],
+          "explanation": "Hemodynamic instability is defined not only by an admission systolic pressure below 90 mmHg with signs of poor perfusion, but also by a systolic pressure above 90 mmHg that nonetheless requires bolus fluids, transfusion, or vasopressors, or by a base excess more negative than -5 mmol/l or a shock index above 1. The stated 110 mmHg threshold does not match the definition used. A transient responder is, by definition, a patient who does show an initial response to resuscitation before subsequently deteriorating, not one who never responds at all. Instability is a composite definition drawing on blood pressure, base excess, shock index, and transfusion requirement together, not on heart rate in isolation.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 5,
+        "question_text": "After a road traffic collision, CT shows a non-expanding haematoma confined to the perirenal space within Gerota's fascia. A separate area shows a superficial parenchymal laceration measuring 0.6 cm in depth involving the renal cortex only, with no contrast extravasation on the delayed excretory-phase images.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade II",
+          "correct_options": null,
+          "explanation": "A parenchymal laceration confined to less than 1.0 cm of renal cortical depth, without urinary extravasation, meets the specific threshold for grade II rather than grade III, which requires the laceration to exceed 1.0 cm. The accompanying non-expanding haematoma confined to the perirenal retroperitoneum is itself also a grade II criterion, reinforcing the classification. There is no involvement of the medulla, collecting system, or renal vasculature, which would be required to justify grade IV or V. The absence of urinary extravasation on the delayed phase further distinguishes this from more severe grades.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 6,
+        "question_text": "Regarding CT technique for suspected renal and urogenital trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The arterial phase is typically acquired at approximately 20-30 seconds after contrast injection",
+          "A delayed excretory phase acquired at around 5 minutes after contrast injection is required to identify urinary extravasation",
+          "Three-dimensional CT reconstructions provide no additional benefit over axial images for injury classification",
+          "The delayed excretory phase should be added selectively, based on clinical suspicion of urogenital injury, rather than performed routinely on every trauma CT",
+          "Routine repeat CT scanning during follow-up of all renal injury grades is recommended regardless of clinical course"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 3],
+          "explanation": "The arterial phase is acquired at roughly 20-30 seconds and the venous phase at 70-80 seconds, with an additional delayed (excretory) phase at around 5 minutes needed specifically to reveal urinary extravasation. This delayed phase is added selectively when urogenital injury is suspected clinically, rather than being a routine addition to every trauma protocol. Three-dimensional reconstructions do provide added value, helping with injury classification rather than adding nothing over axial images alone. Routinely repeating CT scanning during follow-up is explicitly discouraged, being reserved instead for cases with suspected complications or a significant change in clinical status.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 7,
+        "question_text": "Following a fall from height, CT reveals haematuria with a perirenal haematoma that is confined entirely to the renal retroperitoneum and shows no interval enlargement on follow-up imaging. No laceration, collecting system injury, or vascular abnormality is identified.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade II",
+          "correct_options": null,
+          "explanation": "A haematoma that is confined entirely to the renal retroperitoneum and remains stable on follow-up satisfies the grade II haematoma criterion on its own, without needing an accompanying laceration. Grade I would instead require either normal renal imaging with isolated haematuria, or a subcapsular (rather than perirenal/retroperitoneal) non-expanding haematoma, which is a different location. Because no laceration, collecting-system injury, or vascular abnormality is present, grades III to V are excluded. The key discriminator here is haematoma location and stability, not depth of any laceration, since none is described.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 8,
+        "question_text": "Regarding ultrasound-based modalities in the initial assessment of renal trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "E-FAST has high sensitivity and specificity for detecting renal injury",
+          "Doppler ultrasound reliably detects vascular injuries of the kidney with a sensitivity comparable to CT",
+          "Ultrasound and contrast-enhanced ultrasound may be used as an alternative to CT in hemodynamically stable pregnant women and paediatric patients",
+          "Contrast-enhanced ultrasound is recommended as the primary investigation whenever injury to the urinary collecting system is suspected",
+          "E-FAST is effective and rapid for detecting free intra-abdominal fluid even though it is not reliable for grading renal injury specifically"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [2, 4],
+          "explanation": "Ultrasound, contrast-enhanced ultrasound, and Doppler are appropriate alternatives to CT in hemodynamically stable pregnant women and children, both for initial assessment and follow-up. E-FAST is genuinely fast and effective for detecting free intra-abdominal fluid, but this is a different task from grading renal parenchymal injury, for which its sensitivity and specificity are low. Doppler ultrasound is explicitly noted to struggle with detecting vascular injuries, so it cannot be considered comparable to CT in this respect. Contrast-enhanced ultrasound is specifically not recommended when injury to the urinary tract and collecting system is suspected, where delayed-phase CT remains the preferred investigation.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 9,
+        "question_text": "A cyclist struck by a car undergoes CT which demonstrates a parenchymal laceration measuring 1.8 cm in depth through the renal cortex. The excretory phase shows no urinary extravasation and the collecting system is intact. No vascular injury is seen.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade III",
+          "correct_options": null,
+          "explanation": "A parenchymal laceration extending more than 1.0 cm into the renal cortex, without collecting-system rupture or urinary extravasation, is the defining criterion for grade III. This depth threshold is precisely what distinguishes it from grade II, where the laceration must remain under 1.0 cm. Because the collecting system remains intact with no urinary extravasation or vascular injury described, the findings do not meet grade IV, which requires either collecting-system breach or a main-vessel injury. The absence of any vascular abnormality also excludes grade IV or V on vascular grounds.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 10,
+        "question_text": "Regarding indications for contrast-enhanced CT with a delayed urographic phase after suspected renal trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "In blunt trauma, it must be performed after high-energy deceleration injury regardless of the presence of haematuria",
+          "In penetrating trauma, it is indicated in all hemodynamically stable or stabilised patients",
+          "In blunt trauma it must be performed in cases of macro- or micro-haematuria accompanied by hypotension",
+          "In children, it is indicated only when gross haematuria exceeding 50 red blood cells per high-power field is present, irrespective of injury mechanism or energy",
+          "In children with high-energy, penetrating, or decelerating trauma, it should be performed regardless of the degree of haematuria if hematocrit is falling"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 2, 4],
+          "explanation": "In blunt trauma, delayed-phase CT is mandated both after high-energy deceleration regardless of haematuria, and in cases of macro- or micro-haematuria with hypotension. In penetrating trauma it is indicated across the board in any hemodynamically stable or stabilised patient, given the poor correlation between haematuria and injury severity for penetrating mechanisms. In children, the indication is broader than a fixed haematuria threshold: high-energy, penetrating, or decelerating trauma, or a falling hematocrit with any degree of haematuria, all trigger delayed-phase CT, so restricting the indication solely to greater than 50 RBCs/HPF omits these other valid triggers.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 11,
+        "question_text": "A hemodynamically stable adult sustains a stab wound to the flank. CT shows a discrete parenchymal laceration measuring 2.5 cm in depth confined to the cortex and outer medulla, without extension into the collecting system, no urinary extravasation on the delayed phase, and no vascular abnormality.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade III",
+          "correct_options": null,
+          "explanation": "A laceration greater than 1.0 cm deep that does not reach or breach the collecting system, and produces no urinary extravasation, remains grade III regardless of the penetrating mechanism, since the scale is defined by anatomic depth and collecting-system involvement rather than by injury mechanism. The stated depth exceeds the 1.0 cm threshold that would otherwise limit it to grade II. Because the collecting system is explicitly intact with no extravasation, and no vascular injury is described, the criteria for grade IV (collecting-system laceration or main-vessel injury) are not met. This vignette illustrates that grade III can result from either blunt or penetrating mechanisms as long as the anatomic criteria are satisfied.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 12,
+        "question_text": "Regarding CT findings associated with a high risk of failure of non-operative management in renal trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A perirenal haematoma measuring less than 1 cm is a recognised high-risk feature for NOM failure",
+          "A perirenal haematoma greater than 3.5 cm is a recognised high-risk feature for NOM failure",
+          "Lateral renal laceration with lateral urinary extravasation is the pattern most strongly associated with NOM failure",
+          "Contrast blush on CT is a recognised high-risk feature for NOM failure",
+          "Lack of contrast within the ureter distal to the injury, suggesting complete ureteropelvic junction disruption, is a recognised high-risk feature for NOM failure"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 3, 4],
+          "explanation": "The recognised high-risk criteria for NOM failure are a perirenal haematoma exceeding 3.5 cm, contrast blush, medial (not lateral) laceration with medial urinary extravasation, and absent ureteral contrast distal to the injury suggesting complete ureteropelvic junction disruption. A haematoma under 1 cm is far smaller than the actual threshold and is not the described risk feature. The laceration pattern specifically implicated is medial, associated with a posteromedial blush, rather than a lateral pattern, making that option incorrect. The combination of moderate-to-severe injury with at least two of these features carries a particularly high rate of NOM failure.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 13,
+        "question_text": "CT after a high-speed motorcycle crash shows a parenchymal laceration extending through the renal cortex and medulla into the collecting system, with a focus of contrast extravasation on the delayed excretory phase in keeping with a urinary leak. The main renal vessels are patent.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade IV",
+          "correct_options": null,
+          "explanation": "A laceration extending through the renal cortex, medulla, and into the collecting system, confirmed here by urinary extravasation on the delayed excretory phase, is the specific criterion that defines the laceration subtype of grade IV. This depth and collecting-system involvement distinguishes it from grade III, where the laceration does not breach the collecting system and no extravasation occurs. Because the main renal vessels are explicitly patent, this represents the laceration subtype of grade IV rather than the vascular subtype. A shattered kidney or hilar avulsion with devascularisation, which would elevate the injury to grade V, is not described.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 14,
+        "question_text": "Regarding non-operative management (NOM) of renal trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "NOM is the treatment of choice for hemodynamically stable or stabilised patients across minor, moderate, and severe AAST-OIS grades",
+          "Isolated urinary extravasation is an absolute contraindication to NOM",
+          "Incomplete anatomic staging of the injury is not considered relevant to the decision to pursue NOM",
+          "NOM should be pursued as a step-wise approach, beginning with conservative management and escalating to minimally invasive endoscopic or angiographic techniques if required",
+          "Non-resolving urinoma during NOM is an absolute indication for immediate open surgical exploration"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 3],
+          "explanation": "NOM is stated to be first-line for hemodynamically stable or stabilised patients across minor (grade I-II), moderate (grade III), and severe (grade IV-V) lesions alike, and should follow a step-wise progression from conservative management to minimally invasive endoscopic or angiographic techniques before any surgery is considered. Isolated urinary extravasation, on its own, is explicitly not an absolute contraindication to NOM in the absence of other indications for laparotomy. Incomplete staging of the injury is in fact a relative indication favouring surgical exploration, not an irrelevant factor. A non-resolving urinoma is typically managed with ureteric stenting or percutaneous drainage rather than automatically triggering open surgery.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 15,
+        "question_text": "A stable patient with blunt trauma undergoes CT angiography showing a contained area of contrast extravasation adjacent to the main renal artery near the hilum, in keeping with a main renal artery injury; there is no free extravasation beyond the perirenal space and the kidney parenchyma is otherwise preserved.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade IV",
+          "correct_options": null,
+          "explanation": "A main renal artery injury producing a contained area of extravasation, without free haemorrhage or devascularisation of the kidney, meets the vascular criterion for grade IV, which specifically requires main renal artery or vein injury with contained haemorrhage. This is distinguished from the grade V vascular criterion, which requires avulsion of the renal hilum with complete devascularisation, not merely contained bleeding at the hilum. The parenchyma remaining otherwise preserved further supports grade IV rather than grade V, since no laceration through the collecting system or shattered kidney is described here either.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 16,
+        "question_text": "Regarding indications for angiography with selective angioembolisation in renal trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Arterial contrast extravasation on CT in a hemodynamically stable or stabilised patient is a recognised indication",
+          "A renal pseudoaneurysm is a recognised indication",
+          "An arteriovenous fistula is a recognised indication",
+          "Non-self-limiting gross haematuria is a recognised indication",
+          "Blind angioembolisation of both kidneys is recommended whenever contrast extravasation is present on CT, irrespective of angiographic findings"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 2, 3],
+          "explanation": "Recognised indications for angiography and selective angioembolisation include arterial contrast extravasation on CT in a stable or stabilised patient, pseudoaneurysm, arteriovenous fistula, and non-self-limiting gross haematuria. Embolisation should always be performed as selectively as possible rather than blindly. Blind bilateral angioembolisation is explicitly not indicated when formal angiography is negative for active bleeding, regardless of what the CT contrast extravasation appeared to show, since a meaningful proportion of blunt injuries with CT extravasation have a negative angiogram and can be managed without embolisation.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 17,
+        "question_text": "CT following a high-energy deceleration injury shows the renal parenchyma fragmented into multiple non-viable segments with loss of the normal reniform architecture, in keeping with a completely shattered kidney. There is no contained perirenal haematoma limiting ongoing haemorrhage.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade V",
+          "correct_options": null,
+          "explanation": "Fragmentation of the renal parenchyma into multiple non-viable segments with complete loss of normal reniform architecture is the specific laceration-type criterion that defines grade V, described as a completely shattered kidney. This is more severe than grade IV, whose laceration subtype involves a discrete laceration through the cortex, medulla, and collecting system while still preserving overall renal architecture. No contained haematoma limiting ongoing haemorrhage is described, which is consistent with a shattered, non-viable kidney rather than the vascular subtype of grade IV, which specifically requires the haemorrhage to be contained.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 18,
+        "question_text": "Regarding management of severe renal vascular injury, which of the following statements is correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Main renal vein injury without self-limiting bleeding should be managed with angioembolisation as first-line treatment",
+          "Main renal artery occlusion is best managed with prolonged conservative observation regardless of ischaemia time",
+          "Percutaneous revascularisation of the main renal artery has been shown to produce worse renal function outcomes than open surgical revascularisation",
+          "Renal pedicle avulsion is universally amenable to angioembolisation with a uniformly reported high success rate across all series",
+          "Main renal vein injury without self-limiting bleeding is not amenable to angioembolisation and requires surgical intervention"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [4],
+          "explanation": "Main renal vein injury without self-limiting bleeding is explicitly stated to be unsuitable for angioembolisation and to require surgical intervention instead, since embolisation cannot control venous haemorrhage of this type effectively. Conservative management of main renal artery occlusion is discouraged because prolonged warm ischaemia leads to significant, exponential loss of renal function and a high rate of subsequent severe hypertension. Percutaneous stenting has in fact shown better renal function outcomes than open surgical revascularisation, not worse. Renal pedicle avulsion is described as a genuinely debated area, with some series reporting high embolisation success and others reporting complete failure, so it cannot be characterised as universally successful.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 19,
+        "question_text": "CT shows an abrupt cut-off of the main renal artery at the hilum with no enhancement of any part of the renal parenchyma on delayed imaging, in keeping with avulsion of the renal hilum and complete devascularisation of the kidney.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade V",
+          "correct_options": null,
+          "explanation": "Complete avulsion of the renal hilum with total loss of parenchymal enhancement on delayed imaging meets the vascular criterion for grade V, which is defined specifically as hilar avulsion causing devascularisation of the kidney. This is distinguished from the grade IV vascular criterion, which requires only a main renal artery or vein injury with contained haemorrhage and preserved perfusion, not complete devascularisation. The abrupt vascular cut-off with global non-enhancement indicates the kidney has lost its entire blood supply, which is the discriminating feature separating grade V vascular injury from the lesser, contained-haemorrhage pattern of grade IV.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 20,
+        "question_text": "Regarding indications for operative management in renal trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Hemodynamically unstable, non-responder patients should undergo operative management",
+          "The presence of non-viable, devascularised renal tissue is, by itself, an indication for operative exploration in the acute setting",
+          "Severe renal vascular injury without self-limiting bleeding is an indication for operative management",
+          "Damage to the renal pelvis that is not amenable to endoscopic or percutaneous techniques should be considered for delayed operative repair",
+          "Urine extravasation identified on CT is, by itself, an absolute indication for acute operative exploration"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 3],
+          "explanation": "Hemodynamically unstable, non-responder patients (WSES class IV) should proceed to operative management, as should patients with severe renal vascular injury that lacks self-limiting bleeding. Renal pelvis damage not amenable to endoscopic or percutaneous stenting techniques should be considered for delayed, rather than emergent, operative repair when no other indication for immediate laparotomy exists. The presence of non-viable, devascularised tissue is explicitly not, by itself, an indication for operative exploration in the acute setting in the absence of other reasons for laparotomy. Similarly, urine extravasation on its own is not by itself an indication for acute operative management.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 21,
+        "question_text": "Regarding follow-up imaging after renal trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Follow-up imaging is required for all AAST-OIS grade I-II injuries managed non-operatively",
+          "In severe (AAST IV-V) injuries, contrast-enhanced CT with an excretory phase, or contrast-enhanced ultrasound, is suggested within the first 48 hours after trauma",
+          "In paediatric patients, follow-up imaging should routinely include all AAST-OIS grades, including minor injuries",
+          "Routine repeat CT scanning is recommended for every patient during follow-up irrespective of clinical course",
+          "In paediatric patients, ultrasound and contrast-enhanced ultrasound should be the first choice for early and delayed follow-up, with MRI preferred if cross-sectional imaging is required"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 4],
+          "explanation": "For severe grade IV-V injuries, contrast-enhanced CT with an excretory phase (where urinary extravasation is possible or documented), or ultrasound and contrast-enhanced ultrasound, is suggested within the first 48 hours after trauma. In children, ultrasound and contrast-enhanced ultrasound are preferred first-line for both early and delayed follow-up, escalating to MRI rather than CT if cross-sectional imaging becomes necessary. Follow-up imaging is explicitly not required for minor grade I-II injuries managed non-operatively. Paediatric follow-up imaging is likewise limited to moderate and severe injuries rather than applied routinely across all grades, and routine repeat CT scanning irrespective of clinical course is discouraged in general.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 22,
+        "question_text": "Regarding ureteral trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Perirenal or peri-ureteral stranding, contrast extravasation into the perirenal space, and lack of contrast in the ureter distal to the injury are all suggestive CT signs of ureteral injury",
+          "Macroscopic and microscopic haematuria are unreliable signs of ureteral injury, since haematuria may be absent in up to a quarter of cases",
+          "Ultrasound is a reliable first-line investigation for suspected ureteral injury",
+          "Complete ureteral transection should always be managed initially with observation alone",
+          "Direct inspection of the ureter should always be performed during emergency laparotomy when ureteral injury is suspected"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 4],
+          "explanation": "Peri-ureteral stranding, perirenal contrast extravasation, and absent distal ureteral contrast are all recognised CT signs suggestive of ureteral injury, while haematuria of either type is an unreliable marker since it can be absent in up to a quarter of cases and its presence or absence does not correlate with injury severity. Ultrasound is explicitly stated to play no role in the diagnosis of ureteral injury, unlike its use in some other urogenital injuries. Complete ureteral transection requires surgical repair rather than observation alone, whereas only low-grade injuries such as contusion or partial transection are managed conservatively with stenting. Direct inspection of the ureter during emergency laparotomy is mandatory whenever ureteral injury is suspected.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 23,
+        "question_text": "Regarding traumatic bladder injury, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Ultrasound with Doppler is the diagnostic procedure of choice for suspected bladder injury",
+          "Intraperitoneal bladder rupture generally requires surgical exploration and primary repair",
+          "Uncomplicated extraperitoneal bladder injury may be managed non-operatively with urinary drainage via a urethral or suprapubic catheter",
+          "Complex extraperitoneal bladder rupture, such as that involving the bladder neck or associated with a pelvic ring fracture, should be surgically explored and repaired",
+          "CT and conventional cystography have broadly similar sensitivity and specificity for detecting bladder injury"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 3, 4],
+          "explanation": "Retrograde cystography, whether conventional or CT-based, is the diagnostic procedure of choice for bladder injury, not ultrasound with Doppler, and the two cystography techniques have comparable sensitivity and specificity for detecting injury. Intraperitoneal bladder rupture generally requires surgical exploration and primary repair, while uncomplicated extraperitoneal injuries can instead be managed non-operatively with urethral or suprapubic catheter drainage. Complex extraperitoneal ruptures, defined as those involving the bladder neck or associated with pelvic ring, vaginal, or rectal injury, are the exception and should be explored and repaired surgically rather than managed conservatively.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 24,
+        "question_text": "Regarding traumatic urethral injury, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Retrograde urethrography and selective urethroscopy are the modalities of choice for investigating suspected urethral injury",
+          "Urethroscopy should be avoided in favour of retrograde urethrography whenever a penile injury is present",
+          "In hemodynamic instability, investigation of the urethra should be postponed and urinary drainage established first",
+          "Posterior urethral injuries most commonly result from pelvic trauma, particularly pelvic fracture urethral injury",
+          "Conservative management is generally recommended for penetrating urethral injuries"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 3],
+          "explanation": "Retrograde urethrography and selective urethroscopy are the two established modalities of choice for suspected urethral injury. In a hemodynamically unstable patient, urethral investigation is deliberately postponed in favour of establishing urinary drainage first, typically via a suprapubic catheter. Posterior urethral injuries are characteristically associated with pelvic trauma and pelvic fracture urethral injury, distinguishing them from anterior injuries, which are usually caused by direct blunt trauma to the perineum. Contrary to postponing urethroscopy for penile injuries, urethroscopy is actually preferred over retrograde urethrography in that specific situation, and conservative management of penetrating urethral injuries is generally not recommended, favouring surgical repair when feasible instead.",
+          "page_images": []
+        }
+      }
+    ]
+  }
+]

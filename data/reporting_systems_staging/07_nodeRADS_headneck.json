@@ -1,0 +1,179 @@
+[
+  {
+    "chapter_id": 6,
+    "chapter_match": "exact",
+    "source": "Reporting Systems",
+    "section": "mrq",
+    "library_key": "edir",
+    "clinical_vignette": "NODE-RADS — Cervical/Head & Neck Nodal Scenarios",
+    "article_summary": "### Node-RADS (Node Reporting and Data System) 1.0\n**Source:** Elsholtz FHJ, Asbach P, Haas M, et al. \"Introducing the Node Reporting and Data System 1.0 (Node-RADS): a concept for standardized assessment of lymph nodes in cancer.\" European Radiology (2021) 31:6116–6124.\n**Scope:** A general-purpose, whole-body CT/MRI scoring system for the likelihood of malignant lymph node involvement, applicable at any anatomical site (regional or distant nodes) for staging and response assessment across tumour types; this case focuses on cervical/head and neck nodal applications together with the system's general scoring logic.\n\n### Category cheat-sheet\n- **NODE-RADS 1 — Very low likelihood:** normal-sized node with an entirely normal configuration (homogeneous texture, smooth margin, preserved fatty hilum).\n- **NODE-RADS 2 — Low likelihood:** either a normal-sized node with one minor configuration abnormality, or an enlarged node whose configuration is otherwise entirely normal.\n- **NODE-RADS 3 — Equivocal likelihood:** a normal-sized node with a moderately abnormal configuration, or an enlarged node with one abnormal configuration feature; whether it is reported as node-positive or node-negative depends on the primary tumour's stage and histology.\n- **NODE-RADS 4 — High likelihood:** a normal-sized node with markedly abnormal configuration, or an enlarged node with a moderately abnormal configuration.\n- **NODE-RADS 5 — Very high likelihood:** any bulky node (≥30 mm in any dimension) regardless of configuration, or an enlarged node with markedly abnormal configuration.\n\n### Key imaging/scoring points\n- Two-axis system: \"size\" (normal/enlarged/bulk) and \"configuration\" (texture + border + shape), combined via a fixed flowchart into the final 1–5 assessment category.\n- Size thresholds (short-axis unless stated): normal <10 mm as the general threshold; <15 mm for inguinal nodes; a lower <5 mm normal threshold for facial, parotid, retroauricular, occipital, retropharyngeal, and anterior jugular nodes (also cardio-phrenic, retrocrural, obturator, and mesorectal nodes). \"Bulk\" = ≥30 mm in the longest diameter in any dimension. \"Enlarged\" covers nodes between the normal and bulk thresholds, or a ≥2 mm interval increase in short-axis diameter compared with prior imaging.\n- Configuration score (0–5) = texture (homogeneous 0, heterogeneous 1, focal necrosis 2, gross/new necrosis or an entity-specific finding 3) + border (smooth 0, irregular/ill-defined 1) + shape (any shape with preserved fatty hilum 0, kidney-bean-like or oval without a fatty hilum 0, spherical without a fatty hilum 1).\n- Entity-specific findings (scored 3 points under texture): cystic appearance (HPV-positive squamous cell carcinoma of the neck, thyroid cancer, non-seminomatous germ cell tumour), calcification (thyroid cancer), and mucinous texture (mucinous adenocarcinoma).\n- Intravenous contrast is mandatory on CT to assess the configuration categories; it is not mandatory on MRI given intrinsic high soft-tissue contrast.\n- When multiple abnormal nodes occur within one nodal group, the node with the highest category is generally the one reported, unless the number of nodal metastases itself affects TNM stage or treatment decision.\n- A node situated at the border of two regions is assigned to the region in the direction of lymphatic drainage.\n\n### Practical/management implications\n- In TNM staging, Node-RADS 1–2 correspond to N(−) and Node-RADS 4–5 correspond to N(+); category 3 is reported as N(+) or N(−) depending on the primary tumour's stage and histological grade, or as Nx if histological information is unavailable.\n- For head and neck staging, imaging coverage should extend beyond the neck to likely distant metastatic sites (e.g. chest, upper abdomen/adrenals) depending on the primary tumour's risk of distant spread.\n- Node-RADS and RECIST 1.1 serve different purposes (detection versus response assessment) and can legitimately disagree on the same node; a discordance between the two should prompt careful evaluation on follow-up imaging rather than being dismissed.\n- Node-RADS can be reported alongside other RADS systems (e.g. LI-RADS, PI-RADS); the notable exception is NI-RADS in head and neck cancer surveillance, whose cervical nodal criteria and algorithm are not concordant with Node-RADS.\n\n### Pitfalls and limitations\n- Nodal size alone is a poor predictor of malignant involvement, with substantial overlap between benign and malignant node size ranges; a normal-sized node can still be scored high-suspicion if its configuration is sufficiently abnormal.\n- Applying a single size cutoff uniformly across all neck nodal stations is a recognised pitfall; specific regions (facial, parotid, retroauricular, occipital, retropharyngeal, anterior jugular) use the lower 5 mm normal threshold instead of the general 10 mm.\n- Immunotherapy-related reactive nodal enlargement and configuration change (pseudoprogression) is a recognised confounder; Node-RADS is not intended for this scenario, and iRECIST should be used instead.\n- Node-RADS does not currently incorporate ultrasound criteria or functional/PET imaging data.\n\n### Take-home points\n- Node-RADS combines size (normal/enlarged/bulk) with a 0–5 configuration score (texture + border + shape) through a fixed flowchart to produce a 1–5 suspicion category.\n- A bulky node (≥30 mm) is automatically very-high-suspicion (category 5) regardless of its configuration score.\n- An enlarged node with an entirely normal configuration defaults to low suspicion (category 2), not automatically to a higher category.\n- Head and neck-specific refinements matter for cervical nodal assessment: the lower 5 mm threshold at select nodal stations, and entity-specific texture findings such as cystic change in HPV-positive squamous cell carcinoma and thyroid cancer nodes.\n- Category 3 is the only category whose TNM reporting (N+/N−/Nx) is context-dependent rather than fixed.",
+    "questions": [
+      {
+        "q_number": 1,
+        "question_text": "Regarding the rationale and development of the Node-RADS system, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Node-RADS was developed partly because lymph node size alone is a poor predictor of malignant involvement, reflecting documented overlap between the size ranges of benign and malignant lymph nodes.",
+          "The system combines two scoring criteria, \"size\" and \"configuration,\" to arrive at a single five-point assessment category.",
+          "Node-RADS was designed with broad applicability across multiple anatomic sites and cancer types, rather than being restricted to a single organ or tumour entity.",
+          "Node-RADS was created specifically as a head and neck cancer surveillance tool intended to replace NI-RADS nodal assessment.",
+          "A single, universally agreed lymph node size cutoff for malignant involvement has already been established for use across differing anatomic sites."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 2],
+          "explanation": "Studies such as the mesorectal lymph node work cited in the source showed broad overlap between benign and malignant node sizes, motivating a system that does not rely on size alone. Node-RADS combines a \"size\" criterion with a \"configuration\" criterion (texture, border, shape) to arrive at a single 1-5 suspicion category, and it was explicitly designed for broad applicability across anatomic sites and tumour types rather than for one organ or cancer type. It was not created as a head and neck-specific replacement for NI-RADS; the two systems coexist in the neck but use non-concordant criteria. The source also emphasises that no single size cutoff is universally agreed, since the choice of cutoff trades sensitivity against specificity differently depending on the clinical scenario.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 2,
+        "question_text": "Regarding the Node-RADS \"size\" criterion as applied to lymph nodes in the head and neck, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A short-axis diameter below 10 mm is used as the general \"normal\" threshold across neck lymph node stations, including facial, parotid, retroauricular, occipital, retropharyngeal, and anterior jugular nodes.",
+          "Facial, parotid, retroauricular, occipital, retropharyngeal, and anterior jugular lymph nodes are assigned a lower \"normal\" short-axis threshold of less than 5 mm.",
+          "A lymph node with a longest diameter of 30 mm or more in any dimension is classified as \"bulk\" regardless of its configuration score.",
+          "An interval increase of 2 mm or more in short-axis diameter compared with prior imaging can support classifying a node as \"enlarged\" even when its absolute size remains below the bulk threshold.",
+          "An \"enlarged\" lymph node that shows no abnormal configuration features is assigned a Node-RADS score of 2 rather than a higher category."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 3, 4],
+          "explanation": "Facial, parotid, retroauricular, occipital, retropharyngeal, and anterior jugular nodes are specifically given a lower 5-mm normal short-axis threshold rather than the general 10-mm cutoff, so applying the 10-mm threshold uniformly to these stations is incorrect. Bulk is defined as a longest diameter of 30 mm or more in any dimension, and this size category alone drives the highest suspicion score irrespective of configuration. An interval increase of 2 mm or more in short-axis diameter, when prior imaging is available, is one accepted basis for classifying a node as enlarged. An enlarged node lacking abnormal configuration features defaults to a low-suspicion score rather than being over-interpreted, illustrating that size and configuration must be considered together.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 3,
+        "question_text": "Regarding the Node-RADS \"configuration\" score, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The configuration score is derived by selecting one feature from each of three sub-categories, texture, border, and shape, and summing their individual point values.",
+          "An irregular or ill-defined nodal border contributes a maximum of 3 points to the configuration score, reflecting its high specificity for extranodal extension on imaging.",
+          "A kidney-bean-like or oval nodal shape without a discernible fatty hilum is scored identically to a spherical node without a fatty hilum, since both indicate loss of normal nodal architecture.",
+          "Homogeneous nodal texture contributes 0 points, whereas gross necrosis or any new necrosis contributes the maximum of 3 points to the configuration score.",
+          "The maximum achievable configuration score is 3 points, obtained when the highest value is selected from each of the three sub-categories."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 3],
+          "explanation": "The configuration score is built by choosing one descriptor from each of texture, border, and shape and summing the points, ranging from a minimum of 0 to a maximum of 5. Homogeneous texture scores 0 points while gross or new necrosis scores the maximum of 3 points within that sub-category, correctly reflecting the wide range assignable to texture. The border sub-category has a maximum of only 1 point (smooth 0, irregular or ill-defined 1); the claim of a 3-point maximum is incorrect, and the source notes that extranodal extension is often difficult to diagnose confidently with imaging rather than highly specific. Shape scoring also distinguishes a kidney-bean-like or oval node without a fatty hilum (0 points) from a spherical node without a fatty hilum (1 point), so these are not scored identically.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 4,
+        "question_text": "Regarding entity-specific findings and the \"texture\" sub-category of the Node-RADS configuration score, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Calcification within a lymph node is classified under entity-specific findings and is most typically associated with mucinous adenocarcinoma metastases.",
+          "A cystic-appearing lymph node is recognised as an entity-specific finding associated with human papillomavirus-positive squamous cell carcinoma of the neck, thyroid cancer, and non-seminomatous germ cell tumour.",
+          "Entity-specific findings such as cystic change, calcification, or mucinous texture are scored identically to gross nodal necrosis, at the maximum value for the texture sub-category.",
+          "Heterogeneous nodal texture without necrosis or entity-specific findings is scored the same as focal necrosis within the texture sub-category.",
+          "Texture is regarded as the most reliably assignable configuration feature, which is reflected in it carrying the highest achievable point values of the three configuration sub-categories."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 4],
+          "explanation": "A cystic-appearing node is an entity-specific finding recognised in human papillomavirus-positive squamous cell carcinoma of the neck, thyroid cancer, and non-seminomatous germ cell tumour, and this feature scores 3 points, the same maximum value assigned to gross or new necrosis within the texture sub-category. Calcification is the entity-specific finding associated with thyroid cancer, not mucinous adenocarcinoma; mucinous texture is the finding linked to mucinous adenocarcinoma, so the two associations described are swapped. Heterogeneous texture without necrosis or an entity-specific finding scores 1 point, distinct from focal necrosis which scores 2 points, so these are not scored the same. Texture is described as the most reliably assignable configuration category, and this reliability is reflected in its wider range of achievable point values compared with border and shape.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 5,
+        "question_text": "Regarding technical and reporting requirements for applying Node-RADS in head and neck cancer imaging, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Intravenous contrast material is optional for both CT and MRI when assessing the configuration categories, since inherent soft tissue contrast is sufficient on both modalities.",
+          "For baseline staging of a head and neck tumour, imaging coverage should be restricted to the cervical lymph node stations, without extending to the chest or upper abdomen.",
+          "Ultrasound criteria for evaluating superficial cervical lymph nodes have been incorporated into Node-RADS alongside the CT- and MRI-based criteria.",
+          "When multiple abnormal lymph nodes are present within a specific nodal group, the node with the highest Node-RADS category is generally the one reported, unless the number of nodal metastases would itself influence TNM stage or treatment decision.",
+          "A lymph node situated at the border between two anatomical regions is generally assigned to the region associated with the more favourable prognosis for treatment planning."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [3],
+          "explanation": "The reporting rules state that when several abnormal nodes occur within one nodal group, the highest-category node is generally the one reported, unless nodal count itself changes TNM stage or treatment. Contrast material is mandatory, not optional, on CT to assess the configuration categories, whereas it is not mandatory on MRI given its intrinsic soft-tissue contrast, so treating both modalities as equally optional is incorrect. Baseline staging coverage should extend beyond the neck to relevant distant sites such as the chest and upper abdomen depending on metastatic risk, rather than being confined to cervical stations. Ultrasound was deliberately excluded from Node-RADS because its criteria differ distinctly from CT and MRI, and border-region nodes are assigned according to the direction of lymphatic drainage rather than by prognostic favourability.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 6,
+        "question_text": "Regarding TNM nodal staging, RECIST, and the relationship of Node-RADS to other reporting systems in head and neck cancer, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "In TNM staging, Node-RADS categories 1 and 2 are generally reported as node-negative, and categories 4 and 5 are generally reported as node-positive.",
+          "For head and neck cancer nodal staging, a lymph node short-axis diameter of 30 mm is used as the general N2 threshold for HPV-positive oropharyngeal, nasopharyngeal, and thyroid cancer, among other histologies.",
+          "Node-RADS and NI-RADS use concordant criteria and algorithms for scoring cervical lymph nodes, so the two systems can be used interchangeably in head and neck cancer surveillance.",
+          "A discordance between RECIST 1.1 and Node-RADS assessment of the same lymph node indicates a technical measurement error that should be disregarded on follow-up imaging.",
+          "When Node-RADS and RECIST 1.1 assessments of the same lymph node differ, this reflects the different purposes of the two systems (detection versus response assessment) rather than a contradiction."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 4],
+          "explanation": "Node-RADS categories 1 and 2 are generally reported as node-negative and categories 4 and 5 as node-positive in TNM staging, with category 3 depending on the primary tumour's stage and histology. Node-RADS and RECIST 1.1 are designed for different purposes, detection versus response assessment, so a discordant result on the same node should not be dismissed as a measurement error but should instead prompt careful evaluation on follow-up imaging. The 30-mm short-axis N2 threshold in head and neck TNM staging specifically excludes HPV-positive oropharyngeal, nasopharyngeal, and thyroid cancer rather than applying to them, so listing those histologies as included is incorrect. Node-RADS and NI-RADS are explicitly stated to use non-concordant criteria and algorithms for cervical nodal assessment, so they cannot be used interchangeably in head and neck surveillance.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 7,
+        "question_text": "A 58-year-old man is being staged for laryngeal squamous cell carcinoma. Contrast-enhanced neck CT shows a right level II lymph node measuring 7 mm in short-axis diameter. The node is homogeneous in attenuation, has a smooth margin, and is oval in shape with a preserved fatty hilum.\n\nWhat is the most appropriate NODE-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["NODE-RADS 1", "NODE-RADS 2", "NODE-RADS 3", "NODE-RADS 4", "NODE-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "NODE-RADS 1",
+          "correct_options": null,
+          "explanation": "The node measures 7 mm in short-axis diameter, below the general 10-mm threshold used for lateral neck stations such as level II, so it is classified as normal size. Its texture is homogeneous, its margin is smooth, and its oval shape with preserved fatty hilum each score 0 points, giving a configuration score of 0. A normal-sized node with a configuration score of 0 corresponds to very low suspicion of nodal involvement. The next category up, low suspicion, is reserved for a normal-sized node with a configuration score of 1, which does not apply here since no abnormal configuration feature is present.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 8,
+        "question_text": "A 46-year-old woman is being staged for papillary thyroid carcinoma. Contrast-enhanced neck CT shows a level VI lymph node measuring 12 mm in short-axis diameter, larger than the general normal threshold but not reaching the bulk threshold. The node has homogeneous internal attenuation and a preserved fatty hilum, but its margin is irregular and ill-defined.\n\nWhat is the most appropriate NODE-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["NODE-RADS 1", "NODE-RADS 2", "NODE-RADS 3", "NODE-RADS 4", "NODE-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "NODE-RADS 3",
+          "correct_options": null,
+          "explanation": "The node's short-axis diameter of 12 mm exceeds the general normal threshold but falls short of the 30-mm bulk cutoff, so it is classified as enlarged by size. Its texture remains homogeneous and its shape retains a preserved fatty hilum, each scoring 0 points, but the irregular, ill-defined margin contributes 1 point for border, giving a configuration score of 1. An enlarged node with a configuration score of 1 corresponds to equivocal suspicion. This differs from an enlarged node with no abnormal configuration feature at all, which would default to low suspicion rather than equivocal.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 9,
+        "question_text": "A 61-year-old man with HPV-negative squamous cell carcinoma of the oropharynx undergoes contrast-enhanced neck CT for staging. A right level IIa lymph node measures 9 mm in short-axis diameter, below the general threshold for enlargement. The node shows gross central necrosis, an irregular and ill-defined margin, and a rounded shape without a discernible fatty hilum.\n\nWhat is the most appropriate NODE-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["NODE-RADS 1", "NODE-RADS 2", "NODE-RADS 3", "NODE-RADS 4", "NODE-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "NODE-RADS 4",
+          "correct_options": null,
+          "explanation": "At 9 mm short-axis diameter, this level IIa node remains below the general 10-mm threshold and is therefore classified as normal size. However, its configuration score is high: gross necrosis contributes 3 points for texture, the irregular ill-defined margin contributes 1 point for border, and the rounded shape without a fatty hilum contributes 1 point for shape, giving a configuration score of 5 (greater than 2). A normal-sized node with a configuration score greater than 2 corresponds to high suspicion, illustrating that Node-RADS can assign a high-suspicion category to a node that does not meet size criteria for enlargement when morphological features are sufficiently abnormal. This is distinct from the very-high-suspicion category, which requires either an enlarged node with the same degree of configuration abnormality or a bulky node.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 10,
+        "question_text": "A 54-year-old woman with HPV-positive squamous cell carcinoma of the oropharynx undergoes staging neck MRI. A left level II lymph node measures 35 mm in its longest diameter, with a partially cystic, heterogeneous internal texture and an irregular margin.\n\nWhat is the most appropriate NODE-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["NODE-RADS 1", "NODE-RADS 2", "NODE-RADS 3", "NODE-RADS 4", "NODE-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "NODE-RADS 5",
+          "correct_options": null,
+          "explanation": "This node's longest diameter of 35 mm meets the bulk threshold of 30 mm or more in any dimension, which by itself is sufficient to assign the highest suspicion category regardless of the configuration score. The partially cystic, heterogeneous texture is also consistent with the entity-specific cystic appearance recognised in HPV-positive squamous cell carcinoma of the neck, reinforcing the assessment. This differs from the high-suspicion category, which requires a normal or enlarged, non-bulky, node with a sufficiently abnormal configuration score, since bulk size alone overrides the configuration-based pathway.",
+          "page_images": []
+        }
+      }
+    ]
+  }
+]

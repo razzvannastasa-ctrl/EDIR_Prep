@@ -1,0 +1,527 @@
+[
+  {
+    "chapter_id": 4,
+    "chapter_match": "exact",
+    "source": "Reporting Systems",
+    "section": "mrq",
+    "library_key": "edir",
+    "clinical_vignette": "Lung-RADS v2022 (ACR Lung Cancer Screening CT Reporting & Data System)",
+    "article_summary": "### Lung-RADS v2022\n**Source:** Lung-RADS® v2022, American College of Radiology (ACR); release date November 2022.\n**Scope:** Standardised assessment/management system for low-dose CT (LDCT) lung cancer screening; used to categorise pulmonary nodules and other findings and to drive follow-up recommendations in a screening population.\n\n### Category cheat-sheet\n- **Lung-RADS 0 — Incomplete:** Assigned when part or all of the lungs cannot be evaluated, a relevant prior chest CT has not yet been obtained for comparison, or there are findings suggesting an indeterminate infectious/inflammatory process; managed with comparison to the prior study, additional screening CT, or a 1–3 month LDCT depending on the reason.\n- **Lung-RADS 1 — Negative:** No pulmonary nodules, or a nodule with a definitely benign calcification pattern (complete, central, popcorn, or concentric ring) or fat content, regardless of size; managed with routine 12-month screening LDCT.\n- **Lung-RADS 2 — Benign:** Small/indolent nodules — a juxtapleural solid nodule <10 mm with smooth margins and oval/lentiform/triangular shape, a solid nodule <6 mm at baseline (or new <4 mm), a part-solid nodule <6 mm total mean diameter at baseline, a non-solid (ground-glass) nodule <30 mm at baseline/new/growing (or ≥30 mm but stable/slowly growing), or a subsegmental airway nodule; also used for a category 3 lesion that is stable/smaller at 6-month follow-up, or a category 4B lesion proven benign after work-up; managed with 12-month screening LDCT.\n- **Lung-RADS 3 — Probably benign:** Nodules just above the category 2 thresholds — solid 6 to <8 mm at baseline (or new 4 to <6 mm), part-solid ≥6 mm total mean diameter with a solid component <6 mm (or new <6 mm total mean diameter), non-solid ≥30 mm at baseline or new, or a thick-walled atypical cyst with a growing cystic component; also used for a stable/smaller category 4A lesion at 3-month follow-up (excluding airway nodules); managed with 6-month LDCT.\n- **Lung-RADS 4A — Suspicious:** Solid nodule 8 to <15 mm at baseline (or growing to <8 mm, or new 6 to <8 mm), part-solid nodule ≥6 mm total mean diameter with a solid component 6 to <8 mm (or a new/growing solid component <4 mm), a segmental-or-more-proximal airway nodule at baseline, or a thick-walled/multilocular atypical cyst; managed with 3-month LDCT, with PET/CT considered if there is a ≥8 mm solid nodule or solid component.\n- **Lung-RADS 4B — Very suspicious:** Solid nodule ≥15 mm at baseline (or new/growing ≥8 mm), part-solid nodule with a solid component ≥8 mm at baseline (or new/growing ≥4 mm), a persistent/growing segmental-or-more-proximal airway nodule, a thick-walled/multilocular atypical cyst with growth, or a slow-growing solid/part-solid nodule that grows across multiple screening exams without meeting the standard 12-month growth threshold; managed with diagnostic chest CT (± contrast), possible PET/CT, tissue sampling and/or referral, guided by clinical evaluation, patient preference and probability of malignancy.\n- **Lung-RADS 4X — Category 3/4 findings with added suspicion:** A category 3 or 4 nodule that also shows additional imaging features raising suspicion for lung cancer (e.g. spiculation, lymphadenopathy, frank metastatic disease, or a ground-glass nodule doubling in size within a year); it is a distinct standalone category (never used as a modifier suffix) and follows the same diagnostic-workup management pathway as category 4B.\n\n### Key imaging/scoring points\n- Each exam is coded 0–4(X) using the single most suspicious nodule present, even with multiple nodules of differing categories; follow-up timing is calculated from the current exam date, not the original baseline.\n- Nodule mean diameter is the average of the long and short axis, each measured to one decimal place in mm, in whichever plane best reflects true size; volumes, if obtained, are reported to the nearest whole mm³.\n- Growth is a specific threshold, not any size change: an increase in mean diameter of >1.5 mm within a 12-month interval. A nodule that enlarges enough to cross a category's size threshold is reclassified by its new size even without technically meeting this growth definition.\n- Slow-growing nodules (growth over multiple exams that never meets the >1.5 mm/12-month threshold) have dedicated rules: a slow-growing non-solid nodule may remain category 2, whereas a slow-growing solid or part-solid nodule may be upgraded to category 4B, since such nodules may not show increased PET/CT metabolic activity.\n- Atypical pulmonary cyst rules: thin-walled, uniform cysts <2 mm wall thickness are not classified in Lung-RADS at all; a cavitary nodule (wall thickening dominant) is instead managed as a solid nodule by total mean diameter; a cyst with an associated internal or external nodule is graded by whichever feature is most concerning (see cheat-sheet for the 3/4A/4B thresholds).\n- Airway nodules: subsegmental abnormalities are category 2 (or 0/2 if favouring infection); segmental-or-more-proximal abnormalities are 4A at baseline and upgrade to 4B if they persist or grow on 3-month follow-up.\n- The S modifier may be appended to categories 0–4 for clinically significant findings unrelated to lung cancer, but is not required for findings already known and undergoing clinical evaluation.\n\n### Practical/management implications\n- Categories 1–2 constitute a negative screen (routine annual LDCT); categories 3–4 constitute a positive screen, triggering the shorter interval imaging or work-up detailed in the cheat-sheet.\n- Categories 4A and 3 have built-in downgrade pathways: a stable/smaller 4A nodule at 3-month follow-up downgrades to category 3 (excluding airway nodules), and a stable/smaller category 3 lesion at 6 months downgrades to category 2.\n- Category 4B management is individualised (clinical evaluation, patient preference, probability of malignancy) rather than a single fixed pathway; a validated malignancy-risk calculator is encouraged when advising on next steps. Category 4X follows the same pathway, driven by qualitative suspicious features rather than size alone.\n- A negative Lung-RADS screen is a risk-stratification result, not a diagnostic guarantee — it does not mean an individual does not have lung cancer.\n\n### Pitfalls and limitations\n- Do not conflate the size threshold that defines a nodule's category with the separate >1.5 mm/12-month definition of growth — a nodule can cross into a higher category on absolute size alone without technically meeting the growth definition.\n- New nodules are held to smaller size thresholds than baseline nodules at the equivalent category boundary (e.g. a new solid nodule reaches category 3 at 4 mm, well below the 6 mm baseline threshold) — applying baseline thresholds to a new nodule under-calls its category.\n- A ≥30 mm ground-glass nodule is not automatically one fixed category regardless of behaviour: new or growing places it in category 3, whereas stable or only slowly growing keeps it in category 2.\n- Fluid-containing or multiple cysts can suggest alternative diagnoses (infection, or diffuse cystic lung disease such as LCH/LAM) and are deliberately left unclassified unless additional concerning features are present — do not force these into an atypical-cyst category by default.\n- Category 4X is a distinct category, not a modifier suffix; it should never be written as an addition to another category number.\n\n### Take-home points\n- Lung-RADS grades the single most suspicious nodule per exam (categories 0–4, plus the distinct 4X category and the S modifier), driving a stepped follow-up interval from 12 months (1–2) down to 3 months (4A) or diagnostic work-up (4B/4X).\n- Category assignment hinges on nodule type (solid, part-solid, non-solid, juxtapleural, airway, atypical cyst) and precise size/solid-component thresholds, with different thresholds applied to baseline versus new nodules.\n- Growth is a specific, defined threshold (>1.5 mm within 12 months), distinct from simply crossing into a new size category.\n- Categories 4A and 3 have built-in downgrade pathways on stable/decreasing short-interval follow-up; category 4B management is individualised rather than protocol-driven.\n- Categories 1 and 2 together count as a negative screen for audit purposes, but a negative screen never excludes lung cancer.",
+    "questions": [
+      {
+        "q_number": 1,
+        "question_text": "Regarding Lung-RADS category 0 (Incomplete), which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Category 0 is assigned only when partial or complete non-evaluability of the lungs precludes a confident categorisation.",
+          "A negative screening result, for audit purposes, includes both category 0 and category 1 assessments.",
+          "When a report is pending comparison with a prior chest CT that has not yet been located, the interim category is category 0 until that comparison is made and a new category is assigned.",
+          "The estimated population prevalence of category 0 is approximately 10%, similar to that of the S modifier.",
+          "Category 0 always requires a 6-month low-dose CT follow-up, regardless of the underlying reason for incompleteness."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            2
+          ],
+          "explanation": "Category 0 is temporary: when a relevant prior chest CT has not yet been obtained for comparison, the examination is coded 0 until that comparison is made and a definitive category can be assigned. Category 0 is not the only reason for a pending comparison label being needed, and it also covers non-evaluable lungs and findings suggestive of an infectious/inflammatory process, so restricting it to non-evaluability alone is incomplete. A negative screen is specifically defined as categories 1 and 2, not category 0. The approximately 10% prevalence figure belongs to the S modifier, not category 0, which affects roughly 1% of exams. Follow-up for category 0 varies by cause (comparison to prior study, additional screening CT, or 1–3 month low-dose CT) rather than a fixed 6-month interval.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 2,
+        "question_text": "Regarding Lung-RADS category 1 (Negative), which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A solid pulmonary nodule with complete, central, popcorn, or concentric ring calcification is classified as category 1 irrespective of its size.",
+          "A fat-containing nodule can only be classified as category 1 if it also measures less than 6 mm in mean diameter.",
+          "Category 1 nodules require a 6-month low-dose CT to confirm stability before returning to annual screening.",
+          "Together with category 2, category 1 constitutes a negative screening result for audit purposes.",
+          "The estimated population prevalence of category 1 exceeds that of category 2."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            3
+          ],
+          "explanation": "The defined benign calcification patterns (complete, central, popcorn, or concentric ring) place a solid nodule in category 1 with no accompanying size threshold, so size does not modify this rule. The same is true for fat-containing nodules, which are category 1 without any additional size requirement. Categories 1 and 2 together define a negative screen for audit purposes. Category 1 management is a routine 12-month screening low-dose CT rather than a 6-month interval. Finally, category 1 has an estimated prevalence of 39% against category 2's 45%, so category 1 does not exceed category 2.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 3,
+        "question_text": "Regarding the nodule-specific criteria that place a finding into Lung-RADS category 2, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A new solid nodule is classified as category 2 only if it measures less than 6 mm in mean diameter.",
+          "A juxtapleural solid nodule with smooth margins and an oval, lentiform, or triangular shape is classified as category 2, provided its mean diameter is less than 10 mm at baseline or when new.",
+          "A part-solid nodule with a total mean diameter of less than 6 mm at baseline is classified as category 2.",
+          "A non-solid (ground-glass) nodule that is new and measures 25 mm is classified as category 3, because it approaches the 30 mm threshold.",
+          "A subsegmental airway nodule present at baseline, new, or stable on follow-up is classified as category 2."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            2,
+            4
+          ],
+          "explanation": "The size threshold for a new solid nodule to remain category 2 is under 4 mm, not under 6 mm; the under-6-mm figure applies to baseline solid nodules, not new ones. A juxtapleural nodule under 10 mm with smooth margins and an oval, lentiform, or triangular shape does meet the category 2 criterion. A part-solid nodule with total mean diameter under 6 mm at baseline also meets category 2. A new non-solid nodule of 25 mm remains under the 30 mm size criterion and is therefore category 2, not category 3 — \"approaching\" a threshold does not cross it. A subsegmental airway nodule at baseline, new, or stable on follow-up is explicitly classified as category 2.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 4,
+        "question_text": "Regarding pathways by which a nodule can be reclassified as Lung-RADS category 2, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A category 3 nodule that is stable or has decreased in size on 6-month follow-up CT is reclassified as category 2.",
+          "A category 4B nodule that has been proven benign in aetiology following appropriate diagnostic work-up is reclassified as category 2.",
+          "A category 4A nodule that is stable on 3-month follow-up CT is reclassified as category 2.",
+          "A non-solid (ground-glass) nodule of 30 mm or greater that demonstrates growth over multiple screening examinations without ever meeting the greater-than-1.5-mm-per-12-month growth threshold may remain classified as category 2.",
+          "A slow-growing non-solid nodule may continue to be classified as category 2 until it develops findings that meet the criteria of another category, such as a new solid component."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "explanation": "A category 3 nodule that is stable or smaller at 6-month follow-up is explicitly downgraded to category 2, as is a category 4B nodule subsequently proven benign after work-up. A stable category 4A nodule at 3-month follow-up is instead downgraded to category 3, not category 2, so that pathway is incorrect. A large (≥30 mm) non-solid nodule that is stable or only slowly growing — never meeting the standard growth threshold — may remain category 2, and it stays there until it develops findings meeting a different category's criteria, such as an emerging solid component.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 5,
+        "question_text": "Regarding Lung-RADS category 3 (Probably Benign), which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A solid nodule measuring 9 mm at baseline is classified as category 3.",
+          "A part-solid nodule with a total mean diameter of 6 mm or more and a solid component measuring less than 6 mm at baseline is classified as category 3.",
+          "A thick-walled atypical pulmonary cyst that is stable in size is classified as category 3.",
+          "Management for category 3 is a 3-month low-dose CT.",
+          "A new solid nodule measuring 5 mm is classified as category 3."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            4
+          ],
+          "explanation": "A 9 mm solid baseline nodule falls within the 8-to-under-15-mm range that defines category 4A, not category 3, whose solid-nodule range is 6-to-under-8 mm. A part-solid nodule with total diameter ≥6 mm and a solid component under 6 mm does meet the category 3 criterion. The category 3 atypical-cyst criterion specifically requires a growing cystic component of a thick-walled cyst; a stable thick-walled cyst without growth does not meet this wording. Category 3 management is a 6-month low-dose CT, not 3 months, which is the interval used for category 4A. A new solid nodule measuring 5 mm falls within the 4-to-under-6-mm range defined for new nodules in category 3.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 6,
+        "question_text": "Regarding Lung-RADS category 4A (Suspicious), which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A solid nodule measuring 8 mm or more but less than 15 mm at baseline is classified as category 4A.",
+          "A new part-solid nodule with a solid component measuring 5 mm is classified as category 4A.",
+          "A segmental or more proximal endobronchial abnormality identified at baseline is classified as category 4A.",
+          "PET/CT may be considered as an adjunct when a solid nodule or solid component measures 8 mm or more.",
+          "The estimated population prevalence of category 4A is higher than that of category 3."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            2,
+            3
+          ],
+          "explanation": "A solid baseline nodule of 8 to under 15 mm meets the category 4A criterion. A new part-solid nodule's solid component must stay under 4 mm to remain category 4A; a 5 mm new solid component instead meets the category 4B threshold of 4 mm or more. A segmental-or-more-proximal airway abnormality at baseline is a defined category 4A criterion. PET/CT consideration is specifically tied to a solid nodule or solid component reaching 8 mm or more. Finally, category 4A has an estimated prevalence of 4%, lower than category 3's 9%, so it is not higher.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 7,
+        "question_text": "Regarding Lung-RADS category 4B (Very Suspicious), which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A solid nodule measuring 15 mm or more at baseline is classified as category 4B.",
+          "A part-solid nodule with a solid component measuring 8 mm or more at baseline is classified as category 4B.",
+          "A segmental or more proximal endobronchial abnormality that persists as stable or growing on follow-up CT is classified as category 4B.",
+          "Management of category 4B is limited to tissue sampling and does not involve consideration of PET/CT.",
+          "A slow-growing solid or part-solid nodule that demonstrates growth over multiple screening examinations without meeting the standard 12-month growth threshold may be classified as category 4B."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "explanation": "A solid baseline nodule of 15 mm or more meets the category 4B size criterion, as does a part-solid nodule whose solid component reaches 8 mm or more at baseline. A segmental-or-more-proximal airway abnormality that persists as stable or growing on follow-up is explicitly upgraded to category 4B. Management for category 4B is not limited to tissue sampling; it also includes diagnostic chest CT and consideration of PET/CT when there is a solid nodule or solid component of 8 mm or more, alongside tissue sampling and/or referral. A slow-growing solid or part-solid nodule that never meets the 12-month growth threshold but grows across multiple exams may still be classified as category 4B, since such nodules may not show increased PET/CT metabolic activity.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 8,
+        "question_text": "Regarding atypical pulmonary cysts in the context of Lung-RADS, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A thin-walled cyst with a uniform wall thickness of less than 2 mm is considered benign and is not classified or managed within Lung-RADS.",
+          "A thick-walled cyst that demonstrates growing wall thickness or nodularity, or a multilocular cyst that develops increased loculation or new opacity, is classified as category 4B.",
+          "A cavitary nodule in which wall thickening is the dominant feature is managed according to atypical cyst criteria rather than as a solid nodule.",
+          "Fluid-containing cysts are always classified using atypical pulmonary cyst criteria, because fluid content indicates a higher likelihood of malignancy.",
+          "Growth of an atypical pulmonary cyst is defined as an increase of more than 1.5 mm in nodule size, wall thickness, or cystic component size occurring within a 12-month interval."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            1,
+            4
+          ],
+          "explanation": "Thin-walled cysts with uniform wall thickness under 2 mm are explicitly considered benign and excluded from Lung-RADS classification. A thick-walled cyst with growing wall thickness/nodularity, or a multilocular cyst with increased loculation or new opacity, meets the category 4B atypical-cyst criteria. A cavitary nodule where wall thickening dominates is instead managed as a solid nodule using total mean diameter, not atypical-cyst criteria. Fluid-containing cysts are treated oppositely to the claim: they may represent an infectious process and are left unclassified unless other concerning features are present. Growth for atypical cysts uses the same defined threshold as other nodules — more than 1.5 mm change in size, wall thickness, or cystic component within a 12-month interval.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 9,
+        "question_text": "Regarding Lung-RADS category 4X, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Category 4X is used as a modifier appended to categories 0 through 4 rather than as a standalone category.",
+          "A ground-glass nodule that doubles in size within one year is an example of a feature that would not, by itself, justify upgrading a category 3 or 4 nodule to category 4X.",
+          "Category 4X is applied to category 3 or 4 nodules that show additional imaging features increasing suspicion for lung cancer, such as spiculation, lymphadenopathy, or frank metastatic disease.",
+          "The estimated population prevalence of category 4X is less than 1%, making it the least common of the numbered assessment categories.",
+          "Category 4X findings are managed identically to category 3 nodules, with a 6-month low-dose CT."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            2,
+            3
+          ],
+          "explanation": "Category 4X is explicitly described as a distinct standalone category, and its use as a modifier suffix is specifically discouraged, contradicting the first statement. A ground-glass nodule doubling in size within a year is explicitly given as an example feature that does justify a 4X upgrade, not one that fails to. Category 4X is correctly applied to category 3 or 4 nodules with additional suspicious features such as spiculation, lymphadenopathy, or frank metastatic disease, and its estimated prevalence of under 1% is indeed the lowest among the numbered categories. Management for 4X follows the diagnostic-workup pathway associated with category 4B, not the 6-month interval used for category 3.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 10,
+        "question_text": "Regarding the Lung-RADS S modifier and general assessment principles, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The S modifier may be appended to categories 0 through 4 to flag clinically significant or potentially clinically significant findings that are unrelated to lung cancer.",
+          "The S modifier is required every time an incidental finding is mentioned in the report, even once that finding has already been fully clinically worked up.",
+          "Each examination is assigned a single Lung-RADS category based on the nodule with the highest degree of suspicion, even when multiple nodules of differing categories are present.",
+          "The timing of recommended follow-up imaging is calculated from the date of the examination being interpreted rather than from the date of the original baseline scan.",
+          "Management of a category 4A lesion follows a stepped approach that depends on whether the nodule remains stable or decreases in size on interval follow-up imaging."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "explanation": "The S modifier is defined as an addition to categories 0–4 for clinically significant or potentially significant findings unrelated to lung cancer. However, findings that are already known and undergoing clinical evaluation do not require an S-modifier, so the claim that it is required every time such a finding is mentioned is incorrect. Each exam is coded using the single nodule of highest suspicion, and follow-up timing is calculated from the current exam date rather than the original baseline. Category 4A management follows a stepped approach based on whether the lesion is stable/smaller or persists/grows at short-interval follow-up.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 11,
+        "question_text": "Regarding nodule measurement, size thresholds, and growth in Lung-RADS, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Growth is defined as any measurable increase in nodule diameter detected between two consecutive screening examinations, regardless of the interval between them.",
+          "When a nodule enlarges and crosses a size threshold for a different category, it should be reclassified according to its new size even if it does not technically meet the definition of growth.",
+          "Nodule mean diameter is calculated from a single long-axis measurement rounded to the nearest whole millimetre.",
+          "Growth is defined as an increase in mean diameter of more than 1.5 mm occurring within a 12-month interval.",
+          "Long and short axis measurements may be obtained in any imaging plane that best reflects the true size of the nodule."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            3,
+            4
+          ],
+          "explanation": "Growth has a specific numeric and time-bound definition rather than being any measurable increase over any interval, so the first statement is too broad. A nodule that enlarges enough to cross a size threshold into a different category should be reclassified by that new size, even without formally meeting the growth definition. Nodule mean diameter requires both long- and short-axis measurements to one decimal point in mm, not a single long-axis measurement rounded to a whole millimetre. Growth itself is precisely defined as more than 1.5 mm increase in mean diameter within a 12-month interval, and the long/short axis measurements may be taken in whichever plane best reflects true nodule size.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 12,
+        "question_text": "Regarding findings suggestive of an infectious or inflammatory process and airway nodules in Lung-RADS, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Segmental or lobar consolidation, more than six new nodules, or large solid nodules of 8 mm or greater appearing over a short interval may prompt a category 0 assessment with short-interval follow-up.",
+          "Subsegmental or multiple tubular endobronchial abnormalities favour an infectious process and, in the absence of an underlying obstructive nodule, may be classified as category 0 or category 2.",
+          "Tree-in-bud nodules and new ground-glass nodules smaller than 3 cm always require short-interval follow-up imaging because of their infectious appearance.",
+          "A segmental or more proximal airway nodule that persists on 3-month follow-up CT is upgraded to category 4B with a recommendation for further clinical evaluation, typically bronchoscopy.",
+          "The presence of air within a segmental or more proximal airway abnormality, in the absence of an underlying soft tissue nodule, is a feature that favours malignancy and typically prompts an upgrade to category 4B."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            1,
+            3
+          ],
+          "explanation": "Segmental/lobar consolidation, more than six new nodules, or large (≥8 mm) solid nodules appearing over a short interval are given as examples that may prompt category 0 with short-interval follow-up. Subsegmental or multiple tubular endobronchial abnormalities favour infection and, without an underlying obstructive nodule, may be classified as category 0 or 2. Tree-in-bud nodules and new sub-3 cm ground-glass nodules are specifically noted as findings that may not warrant short-term follow-up, contradicting the claim that such follow-up is always required. A segmental-or-more-proximal airway nodule persisting at 3-month follow-up is upgraded to category 4B with referral, typically for bronchoscopy. Air within such an abnormality, without an underlying soft-tissue nodule, favours secretions rather than malignancy and may instead support classification as category 2, not an upgrade to 4B.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 13,
+        "question_text": "Regarding screening outcome definitions and estimated population prevalence in Lung-RADS, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A positive screening result is defined as an examination assigned to category 3 or category 4.",
+          "A negative screening result reliably excludes the presence of lung cancer in the screened individual.",
+          "Category 2 has a higher estimated population prevalence than any other single Lung-RADS category.",
+          "Category 4B has a higher estimated population prevalence than category 4A.",
+          "The S modifier has an estimated population prevalence lower than that of category 4X."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            2
+          ],
+          "explanation": "A positive screen is defined as categories 3 and 4, matching the first statement. A negative screen does not mean an individual does not have lung cancer, so it cannot be said to reliably exclude it. Category 2's estimated prevalence of 45% is the highest of any single category, exceeding category 1 (39%) and all the numbered/suspicious categories. Category 4B's prevalence (2%) is lower than category 4A's (4%), so it is not higher. The S modifier's prevalence (10%) is far higher than category 4X's (under 1%), not lower.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 14,
+        "question_text": "Regarding part-solid nodules in Lung-RADS, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The category assigned to a part-solid nodule depends only on its total mean diameter, irrespective of the size of its solid component.",
+          "A part-solid nodule with a solid component measuring 6 mm to less than 8 mm at baseline, and a total mean diameter of 6 mm or more, is classified as category 4A.",
+          "A new or growing solid component of less than 4 mm within a part-solid nodule is consistent with category 4A, whereas a new or growing solid component of 4 mm or more is consistent with category 4B.",
+          "A part-solid nodule is escalated to category 4B once its solid component reaches 8 mm or more at baseline.",
+          "A part-solid nodule can never be classified as category 2, regardless of its total mean diameter."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            2,
+            3
+          ],
+          "explanation": "Part-solid nodule category depends on both the total mean diameter and the size of the solid component, not on total diameter alone, so the first statement is incorrect. A part-solid nodule with total diameter ≥6 mm and a solid component of 6 to under 8 mm meets the category 4A criterion. A new/growing solid component under 4 mm is consistent with category 4A, while one of 4 mm or more is consistent with category 4B, correctly distinguishing the two categories. A part-solid nodule is escalated to category 4B once its solid component reaches 8 mm or more at baseline. Finally, a part-solid nodule with total mean diameter under 6 mm at baseline is explicitly category 2, so it can be classified as such.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 15,
+        "question_text": "Regarding non-solid (ground-glass) nodules in Lung-RADS, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A non-solid nodule measuring 20 mm at baseline is classified as category 3, because it approaches the size threshold used for larger ground-glass nodules.",
+          "A growing non-solid nodule of any size is always reclassified as category 4X once growth is documented.",
+          "A non-solid nodule that is new and measures 32 mm is classified as category 2, because all ground-glass nodules are managed identically regardless of size.",
+          "A non-solid nodule measuring 30 mm or more that remains stable or is only slowly growing may be classified as category 2.",
+          "A non-solid nodule measuring 30 mm or more at baseline, or one that is newly detected at 30 mm or more, is classified as category 3."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            3,
+            4
+          ],
+          "explanation": "A 20 mm non-solid nodule remains under the 30 mm threshold and is therefore category 2; merely approaching a threshold does not cross it. Growth alone does not trigger category 4X — that category requires additional suspicious imaging features such as spiculation or lymphadenopathy, not growth by itself. A new 32 mm non-solid nodule does not receive the same treatment as a stable one: the stable-or-slowly-growing exception that keeps a ≥30 mm ground-glass nodule at category 2 does not apply to a newly detected lesion, which instead meets the category 3 criterion. Correspondingly, a ≥30 mm non-solid nodule that is stable or only slowly growing may remain category 2, while one that is newly detected or growing at ≥30 mm is classified as category 3.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 16,
+        "question_text": "Regarding recommended follow-up intervals in Lung-RADS, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Category 2 findings are typically followed with a 6-month low-dose CT to confirm stability.",
+          "Category 3 findings are typically followed with a 6-month low-dose CT.",
+          "Category 4A findings are typically followed with a 12-month low-dose CT.",
+          "Category 0 findings assigned because of an indeterminate infectious or inflammatory process are typically followed with a 6-month low-dose CT.",
+          "Category 1 findings are typically followed with a 3-month low-dose CT."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1
+          ],
+          "explanation": "Category 2 findings are followed with a 12-month screening low-dose CT, not 6 months. Category 3 findings are correctly followed with a 6-month low-dose CT. Category 4A findings are followed with a 3-month low-dose CT, not 12 months. Category 0 assigned for an indeterminate infectious/inflammatory process is followed at 1–3 months, not 6 months. Category 1 findings are followed with a 12-month low-dose CT, not 3 months.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 17,
+        "question_text": "A patient presents for a low-dose CT lung cancer screening examination. The current study demonstrates a few small, non-calcified pulmonary nodules. The patient reports a chest CT performed eight months earlier at another hospital, but those images have not yet been obtained for comparison.\n\nWhat is the most appropriate Lung-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Lung-RADS category 0 (Incomplete)",
+          "Lung-RADS category 1 (Negative)",
+          "Lung-RADS category 2 (Benign)",
+          "Lung-RADS category 3 (Probably Benign)",
+          "Lung-RADS category 4A (Suspicious)"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Lung-RADS category 0 (Incomplete)",
+          "correct_options": null,
+          "explanation": "Because a relevant prior chest CT exists but has not yet been obtained for comparison, the current examination cannot yet be definitively categorised and is temporarily coded as incomplete until that comparison is available, at which point a new category is assigned based on whether the nodules are new, stable, or changed. The findings cannot be called negative or benign, nor escalated to a higher category, until their behaviour relative to the outside prior study is known.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 18,
+        "question_text": "A 58-year-old current smoker undergoes baseline low-dose CT lung cancer screening. The only pulmonary finding is a solitary 9 mm nodule with dense, complete central calcification. No other nodules are seen.\n\nWhat is the most appropriate Lung-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Lung-RADS category 1 (Negative)",
+          "Lung-RADS category 2 (Benign)",
+          "Lung-RADS category 3 (Probably Benign)",
+          "Lung-RADS category 4A (Suspicious)",
+          "Lung-RADS category 4B (Very Suspicious)"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Lung-RADS category 1 (Negative)",
+          "correct_options": null,
+          "explanation": "Complete, central calcification is one of the defined benign calcification patterns, and a solid nodule showing this pattern is classified as category 1 with no accompanying size threshold. Although the 9 mm mean diameter would otherwise place a non-calcified solid nodule in category 3 territory, the specific benign calcification pattern overrides the size-based criteria that would apply to an uncalcified nodule.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 19,
+        "question_text": "A 60-year-old asymptomatic heavy smoker undergoes their baseline (first-ever) low-dose CT for lung cancer screening. A solitary solid, non-calcified pulmonary nodule with smooth margins is identified, not abutting the pleura, measuring 5 mm in mean diameter.\n\nWhat is the most appropriate Lung-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Lung-RADS category 1 (Negative)",
+          "Lung-RADS category 2 (Benign)",
+          "Lung-RADS category 3 (Probably Benign)",
+          "Lung-RADS category 4A (Suspicious)",
+          "Lung-RADS category 4B (Very Suspicious)"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Lung-RADS category 2 (Benign)",
+          "correct_options": null,
+          "explanation": "A solid, non-calcified nodule measuring less than 6 mm at baseline meets the size threshold that defines category 2. It cannot be category 1, because a nodule is present and lacks a benign calcification pattern, and it does not reach the 6 mm threshold required to enter category 3.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 20,
+        "question_text": "On baseline low-dose CT screening, a 65-year-old has a solitary solid, non-calcified pulmonary nodule with smooth margins, not juxtapleural, measuring 7 mm in mean diameter.\n\nWhat is the most appropriate Lung-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Lung-RADS category 1 (Negative)",
+          "Lung-RADS category 2 (Benign)",
+          "Lung-RADS category 3 (Probably Benign)",
+          "Lung-RADS category 4A (Suspicious)",
+          "Lung-RADS category 4B (Very Suspicious)"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Lung-RADS category 3 (Probably Benign)",
+          "correct_options": null,
+          "explanation": "A solid baseline nodule measuring 7 mm falls within the 6-to-under-8 mm range that defines category 3. It exceeds the category 2 threshold of under 6 mm and falls short of the 8 mm threshold required for category 4A.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 21,
+        "question_text": "Baseline low-dose CT screening in a 67-year-old demonstrates a solitary solid, non-calcified pulmonary nodule with smooth margins, measuring 10 mm in mean diameter. There is no associated lymphadenopathy or spiculation.\n\nWhat is the most appropriate Lung-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Lung-RADS category 2 (Benign)",
+          "Lung-RADS category 3 (Probably Benign)",
+          "Lung-RADS category 4A (Suspicious)",
+          "Lung-RADS category 4B (Very Suspicious)",
+          "Lung-RADS category 4X"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Lung-RADS category 4A (Suspicious)",
+          "correct_options": null,
+          "explanation": "A solid baseline nodule measuring 10 mm falls within the 8-to-under-15 mm range that defines category 4A. The absence of spiculation, lymphadenopathy, or other additional suspicious features means the criteria for the separate category 4X escalation are not met, and the nodule remains below the 15 mm threshold that would define category 4B.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 22,
+        "question_text": "A 70-year-old undergoes baseline low-dose CT screening, which shows a solitary solid, non-calcified pulmonary nodule measuring 18 mm in mean diameter, without spiculation, lymphadenopathy, or other additional suspicious features.\n\nWhat is the most appropriate Lung-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Lung-RADS category 1 (Negative)",
+          "Lung-RADS category 3 (Probably Benign)",
+          "Lung-RADS category 4A (Suspicious)",
+          "Lung-RADS category 4B (Very Suspicious)",
+          "Lung-RADS category 4X"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Lung-RADS category 4B (Very Suspicious)",
+          "correct_options": null,
+          "explanation": "A solid nodule measuring 18 mm at baseline exceeds the 15 mm threshold that defines category 4B. Because no additional suspicious features such as spiculation or lymphadenopathy are present, the criteria for the separate category 4X escalation are not met, and size alone places the nodule in category 4B rather than category 4A or 4X.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 23,
+        "question_text": "A patient with a previously assigned category 4A solid pulmonary nodule (11 mm at the prior examination) returns for follow-up low-dose CT. The nodule now measures 13 mm, has developed spiculated margins, and there is a new ipsilateral hilar lymph node measuring 14 mm in short axis.\n\nWhat is the most appropriate Lung-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Lung-RADS category 2 (Benign)",
+          "Lung-RADS category 3 (Probably Benign)",
+          "Lung-RADS category 4A (Suspicious)",
+          "Lung-RADS category 4B (Very Suspicious)",
+          "Lung-RADS category 4X"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Lung-RADS category 4X",
+          "correct_options": null,
+          "explanation": "Although the nodule's size of 13 mm alone would remain within the category 4A range, the new spiculated margins and ipsilateral hilar lymphadenopathy are additional imaging findings that increase suspicion for lung cancer beyond what size criteria capture. A category 3 or 4 nodule with such additional suspicious features is reclassified as the distinct category 4X rather than simply advancing to category 4B on size alone, since 4X specifically captures this pattern of added suspicion.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 24,
+        "question_text": "A 64-year-old on annual low-dose CT screening has a known pure ground-glass (non-solid) nodule first detected two years ago, measuring 32 mm in mean diameter at that time. On the current examination, the nodule remains a pure ground-glass opacity, unchanged in size and morphology compared with the prior study.\n\nWhat is the most appropriate Lung-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Lung-RADS category 1 (Negative)",
+          "Lung-RADS category 2 (Benign)",
+          "Lung-RADS category 3 (Probably Benign)",
+          "Lung-RADS category 4A (Suspicious)",
+          "Lung-RADS category 4X"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Lung-RADS category 2 (Benign)",
+          "correct_options": null,
+          "explanation": "A non-solid nodule measuring 30 mm or more that remains stable, or is only slowly growing, is specifically classified as category 2, distinguishing it from a ground-glass nodule of the same size that is newly detected or unstable, which would instead be classified as category 3. Because this nodule is unchanged from the prior study, the stability-based category 2 criterion applies rather than the size-based category 3 criterion that governs new or growing ≥30 mm ground-glass nodules.",
+          "page_images": []
+        }
+      }
+    ]
+  }
+]

@@ -31,6 +31,31 @@ def correct_option_indices(
     return []
 
 
+def mrq_score(selected: set[int], correct: set[int], total_options: int) -> float:
+    """Score a single/multiple-choice answer using the exam's official MRQ formula:
+
+        score = (n.Correct / t.Correct) - (n.Incorrect / t.Incorrect)
+
+    where n.Correct/n.Incorrect are the selected options that are actually
+    right/wrong, and t.Correct/t.Incorrect are the total right/wrong options
+    for the question. The exam has no negative marking, so the result is
+    clamped to [0, 1] rather than allowed to go negative.
+    """
+    t_correct = len(correct)
+    if t_correct == 0:
+        return 0.0
+    t_incorrect = total_options - t_correct
+
+    n_correct = len(selected & correct)
+    n_incorrect = len(selected - correct)
+
+    score = n_correct / t_correct
+    if t_incorrect > 0:
+        score -= n_incorrect / t_incorrect
+
+    return max(0.0, min(1.0, score))
+
+
 def classify_answer(
     *,
     q_type: str,

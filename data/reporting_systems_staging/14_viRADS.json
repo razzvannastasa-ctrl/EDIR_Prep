@@ -1,0 +1,421 @@
+[
+  {
+    "chapter_id": 5,
+    "chapter_match": "exact",
+    "source": "Reporting Systems",
+    "section": "mrq",
+    "library_key": "edir",
+    "clinical_vignette": "VI-RADS (Vesical Imaging Reporting and Data System, 2018)",
+    "article_summary": "### VI-RADS (Vesical Imaging Reporting and Data System)\n\n**Source:** Radiology Assistant teaching summary (radiologyassistant.nl), based on the VI-RADS consensus statement (Panebianco V, et al. Multiparametric magnetic resonance imaging for bladder cancer: development of VI-RADS. Eur Urol. 2018;74(3):294-306); this note is a personal-study paraphrase of a freely accessible teaching page, not the original journal article.\n\n**Scope:** A standardised MRI-based reporting system for local staging of bladder cancer, designed to separate non-muscle-invasive from muscle-invasive disease before transurethral resection, using multiparametric bladder MRI (T2-weighted, diffusion-weighted, and dynamic contrast-enhanced sequences).\n\n### Category cheat-sheet\n- **VI-RADS 1 - Very low risk of muscle invasion:** lesion smaller than 1 cm; the muscularis propria is a continuous, unbroken low-signal line on T2W and DWI; only the inner layer enhances early on DCE, with no muscular enhancement.\n- **VI-RADS 2 - Low risk of muscle invasion:** lesion larger than 1 cm, but the muscularis propria is still an intact, continuous line on T2W/DWI; a papillary lesion shows a low-signal (DWI)/high-signal (ADC) stalk; no early muscular enhancement on DCE.\n- **VI-RADS 3 - Indeterminate/equivocal risk:** a papillary tumour lacking a stalk, or a sessile tumour lacking a thickened high-signal inner layer, but the muscularis propria remains continuous on all three sequences - muscle invasion can be neither excluded nor confirmed.\n- **VI-RADS 4 - Muscle-invasive, confined to the detrusor:** focal interruption of the low-signal muscularis line on T2W, focal early DCE enhancement within the muscle, and focal high-DWI/low-ADC signal extending into the muscularis, without extension beyond the bladder wall.\n- **VI-RADS 5 - Muscle-invasive with extravesical extension:** tumour signal, early DCE enhancement, and restricted diffusion all extend beyond the muscularis propria into the perivesical fat - consistent with locally advanced (T3 or higher) disease.\n\n### Key imaging/scoring points\n- Three layers matter: the inner layer (urothelium and lamina propria), the muscular layer (detrusor), and the outer layer (perivesical fat). The muscularis propria is normally a continuous low-signal (T2W)/intermediate-signal (DWI) line; the inner layer is not usually seen separately on T2W unless oedematous, and cannot be resolved on DWI.\n- VI-RADS combines a structural T2W score with functional DWI and DCE scores into a single five-point final category. When T2W and DWI findings are discordant, DWI takes precedence; when DWI is technically suboptimal, DCE becomes the dominant functional sequence instead. A higher score obtained from any one category can elevate the overall assessment.\n- Tumour morphology matters: papillary tumours (with or without a stalk) typically show a hypointense stalk on T2W/DWI and an avid, hyperintense stalk on DCE; flat tumours (carcinoma in situ) are confined to the mucosa; sessile tumours grow intramurally.\n- TNM correlation: T1 denotes no muscle invasion; T2a/T2b denote superficial/deep detrusor invasion; T3a/T3b denote microscopic/macroscopic perivesical fat invasion; T4a/T4b denote adjacent organ/distant extrapelvic invasion. VI-RADS 1-3 corresponds broadly to the non-muscle-invasive range and VI-RADS 4-5 to the muscle-invasive range.\n- Protocol optimisation: intramuscular antispasmodic agents reduce bowel-peristalsis motion and susceptibility artefact; adequate but not excessive bladder distension is essential - under-distension produces a thickened, uneven wall and risks overstaging, a convex bladder dome signals adequate filling, and over-distension causes discomfort-related motion and may obscure tumour extent.\n\n### Practical/management implications\nVI-RADS 1-3 (non-muscle-invasive) is generally managed by transurethral resection of bladder tumour; VI-RADS 4-5 (muscle-invasive) generally prompts neoadjuvant therapy followed by radical cystectomy and adjuvant treatment. Accurate categorisation matters in both directions: understaging risks disease progression, while overstaging risks unnecessarily aggressive therapy.\n\n### Pitfalls and limitations\nInflammatory oedema is the principal mimic: it thickens and increases the T2W signal of the inner layer, with associated hyperaemia, and can show early DCE enhancement of that inner layer, mimicking tumour. The key differentiating feature is that oedema remains confined within the bladder wall rather than extending beyond it. Bladder under- or over-distension is a recognised technical pitfall that can distort apparent wall thickness and tumour extent independent of the true stage.\n\n### Take-home points\n- VI-RADS integrates T2W (structural), DWI, and DCE (functional) findings into one five-point scale, with DWI (or DCE if DWI is suboptimal) dominant over T2W whenever the sequences disagree.\n- Whether the muscularis propria's continuity is preserved or interrupted on T2W/DWI, and whether early enhancement/restricted diffusion stays confined to the muscle or breaches into perivesical fat, are what separate categories 1-3 from 4 and 4 from 5.\n- VI-RADS 1-3 corresponds to non-muscle-invasive disease managed by transurethral resection; VI-RADS 4-5 corresponds to muscle-invasive disease managed by neoadjuvant therapy and radical cystectomy.\n- Adequate, non-excessive bladder distension and antispasmodic use are prerequisites for reliable local staging.\n- Inflammatory oedema confined within the bladder wall is the main differential mimic to exclude before assigning a higher category.",
+    "questions": [
+      {
+        "q_number": 1,
+        "question_text": "Regarding the layers of the bladder wall and their appearance on multiparametric MRI, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The muscular (detrusor) layer is normally seen as a continuous low signal intensity line on T2-weighted imaging.",
+          "The inner layer (urothelium and lamina propria) is routinely well visualised as a discrete structure on T2-weighted imaging in the absence of oedema.",
+          "On dynamic contrast-enhanced imaging, the inner layer typically shows early enhancement in non-muscle-invasive lesions while the intact muscular layer enhances later and progressively.",
+          "On diffusion-weighted imaging, the inner layer is reliably depicted as a distinct hyperintense band separate from the muscular layer.",
+          "The bladder wall comprises only two anatomical layers relevant to VI-RADS scoring: the inner mucosal layer and the outer perivesical fat."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2],
+          "explanation": "The muscularis propria is normally identified as a continuous low signal intensity line on T2-weighted imaging, and on dynamic contrast-enhanced imaging the inner layer characteristically enhances early in non-muscle-invasive lesions while an intact muscular layer enhances later and progressively. The claim that the inner layer is routinely well seen on T2-weighted imaging is incorrect because it is not usually visible except in the setting of oedema. The inner layer likewise cannot be resolved as a separate structure on diffusion-weighted imaging, and the bladder wall has three relevant layers (mucosa, muscularis, perivesical fat), not two, so omitting the muscular layer is incorrect.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 2,
+        "question_text": "Regarding the TNM T-staging classification of bladder cancer, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "T1 disease denotes a bladder tumour without invasion of the detrusor muscle.",
+          "T2a disease denotes superficial (inner-half) invasion of the detrusor muscle.",
+          "T3a disease denotes invasion confined to the outer half of the detrusor muscle without breaching the serosa.",
+          "T3b disease denotes macroscopically visible invasion of the perivesical fat.",
+          "T4a disease denotes direct tumour invasion of an adjacent pelvic organ."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 3, 4],
+          "explanation": "T1 disease is defined by absence of muscle invasion, T2a by superficial invasion of the inner half of the detrusor, T3b by macroscopic invasion of the perivesical fat, and T4a by direct invasion of an adjacent organ. The claim that T3a denotes invasion confined to the outer half of the detrusor muscle is incorrect because that description corresponds to T2b (deep muscle invasion); T3a instead denotes microscopic invasion of the perivesical fat, one stage beyond the muscularis itself.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 3,
+        "question_text": "Regarding the morphological types of bladder tumour and their appearance on multiparametric MRI, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Flat superficial tumours (carcinoma in situ) typically demonstrate a broad-based intramural growth pattern extending well into the muscular layer.",
+          "A papillary tumour's stalk, when present, characteristically appears hypointense on both T2-weighted and diffusion-weighted imaging.",
+          "Sessile tumours are defined by an exophytic, pedunculated growth pattern projecting freely into the bladder lumen.",
+          "On dynamic contrast-enhanced imaging, the stalk of a papillary tumour characteristically shows hyperintense (avid) signal.",
+          "Carcinoma in situ is best classified radiologically as a sessile tumour with early muscular enhancement."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 3],
+          "explanation": "A papillary tumour's stalk characteristically appears hypointense on both T2-weighted and diffusion-weighted imaging, and shows hyperintense, avid signal on dynamic contrast-enhanced imaging. Carcinoma in situ is a flat tumour confined to the mucosa rather than a broad-based intramural or sessile lesion, so describing it as extending into the muscular layer or as a sessile tumour with early muscular enhancement is incorrect. Describing sessile tumours as pedunculated and freely projecting into the lumen is likewise incorrect, since that exophytic, peduncle-bearing pattern instead describes a papillary tumour with a stalk, whereas sessile tumours grow intramurally.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 4,
+        "question_text": "Regarding the overall VI-RADS scoring system, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "VI-RADS integrates a structural (T2-weighted) assessment with functional diffusion-weighted and dynamic contrast-enhanced assessments into a single five-point category.",
+          "The VI-RADS final category is determined solely from the T2-weighted structural score, with diffusion-weighted and dynamic contrast-enhanced imaging used only as tie-breakers when the T2-weighted appearance is completely indeterminate.",
+          "The primary clinical purpose of VI-RADS is to distinguish non-muscle-invasive from muscle-invasive bladder cancer on pre-treatment MRI.",
+          "VI-RADS assigns a separate, independently reported category for each of the T2-weighted, diffusion-weighted, and dynamic contrast-enhanced sequences, with no single combined final score.",
+          "A higher score obtained from any one of the three imaging categories can elevate the overall VI-RADS assessment."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 4],
+          "explanation": "VI-RADS integrates the structural T2-weighted assessment with the functional diffusion-weighted and dynamic contrast-enhanced assessments into one combined five-point category, and its central clinical purpose is distinguishing non-muscle-invasive from muscle-invasive disease before treatment. A higher score from any one of the three categories can elevate the final assessment. The claim that the category is determined solely from T2-weighted findings is incorrect because all three sequences actively contribute to the final score rather than diffusion-weighted and dynamic contrast-enhanced imaging serving only as an indeterminate-case tie-breaker, and the claim that each sequence is reported as an independent, uncombined category is incorrect because VI-RADS produces one integrated final category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 5,
+        "question_text": "Regarding the dominance hierarchy used to reconcile discordant sequences when assigning the final VI-RADS category, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "T2-weighted imaging takes precedence over diffusion-weighted imaging whenever the two sequences are discordant.",
+          "Dynamic contrast-enhanced imaging is used in preference to diffusion-weighted imaging as the default dominant functional sequence, even when both are of diagnostic quality.",
+          "When T2-weighted and diffusion-weighted findings are discordant, the diffusion-weighted category should be given precedence to optimise diagnostic accuracy.",
+          "Dynamic contrast-enhanced imaging becomes the dominant sequence for category assignment when diffusion-weighted imaging is technically suboptimal.",
+          "The final VI-RADS category is determined by averaging the numerical scores of all three imaging categories."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [2, 3],
+          "explanation": "When T2-weighted and diffusion-weighted findings are discordant, diffusion-weighted imaging is given precedence to maximise accuracy, and dynamic contrast-enhanced imaging becomes the dominant functional sequence specifically when diffusion-weighted imaging is technically suboptimal. The claim that T2-weighted imaging takes precedence over diffusion-weighted imaging is incorrect because the hierarchy runs the other way, and describing dynamic contrast-enhanced imaging as the default dominant sequence ahead of diffusion-weighted imaging is incorrect because diffusion-weighted imaging is preferred whenever it is technically adequate. Final category assignment is not derived by averaging the three scores; it follows the dominance hierarchy described above.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 6,
+        "question_text": "Regarding the imaging criteria that define VI-RADS 1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "VI-RADS 1 is defined by a lesion diameter greater than 1 cm with an intact muscular layer.",
+          "In VI-RADS 1, dynamic contrast-enhanced imaging shows early enhancement confined to the inner layer, without any enhancement of the muscular layer.",
+          "VI-RADS 1 requires interruption of the low signal intensity muscular line on T2-weighted imaging.",
+          "Restricted diffusion in VI-RADS 1 is confined to the lesion itself, with a continuous intermediate-signal muscular layer preserved on diffusion-weighted imaging.",
+          "A VI-RADS 1 lesion may be papillary, with or without a stalk."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 3, 4],
+          "explanation": "VI-RADS 1 shows early dynamic contrast-enhanced enhancement confined to the inner layer without muscular enhancement, restricted diffusion confined to the lesion with a continuous intermediate-signal muscularis on diffusion-weighted imaging, and may be papillary with or without a stalk. The claim that VI-RADS 1 requires a lesion greater than 1 cm is incorrect because VI-RADS 1 is specifically defined by a lesion smaller than 1 cm. Interruption of the low signal intensity muscular line is not a VI-RADS 1 feature; it is the defining T2-weighted criterion of muscle invasion in a considerably higher category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 7,
+        "question_text": "Regarding the imaging criteria that define VI-RADS 2, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "VI-RADS 2 lesions are larger than 1 cm but still show a continuous, uninterrupted low-signal muscular layer on T2-weighted imaging.",
+          "In VI-RADS 2, the muscular layer demonstrates early enhancement on dynamic contrast-enhanced imaging, distinguishing it from VI-RADS 1.",
+          "The stalk of a papillary VI-RADS 2 lesion characteristically shows low signal on diffusion-weighted imaging and correspondingly high signal on the ADC map.",
+          "A sessile VI-RADS 2 lesion maintains a continuous, intact appearance of the muscular layer despite its larger size.",
+          "VI-RADS 2 requires focal extension of early enhancement into the muscularis propria on dynamic contrast-enhanced imaging."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 3],
+          "explanation": "VI-RADS 2 lesions are larger than 1 cm yet still show a continuous, intact low-signal muscularis on T2-weighted imaging, a papillary stalk that is low signal on diffusion-weighted imaging with high signal on the ADC map, and a sessile morphology that likewise preserves an intact muscular layer. The claim that the muscular layer shows early dynamic contrast-enhanced enhancement is incorrect because VI-RADS 2, like VI-RADS 1, shows no early muscular enhancement; that finding instead characterises muscle invasion. Focal extension of early enhancement into the muscularis propria is likewise not a VI-RADS 2 feature, as it defines the muscle-invasive category rather than this non-muscle-invasive one.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 8,
+        "question_text": "Regarding the imaging criteria that define VI-RADS 3, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "VI-RADS 3 is characterised by clear interruption of the muscularis propria on T2-weighted imaging.",
+          "In a papillary tumour, VI-RADS 3 is assigned when the stalk that would define a lower category is absent, while the muscularis propria itself remains continuous.",
+          "VI-RADS 3 requires focal early enhancement within the muscularis propria on dynamic contrast-enhanced imaging.",
+          "VI-RADS 3 corresponds to a tumour with unequivocal extension of restricted diffusion throughout the full thickness of the bladder wall.",
+          "VI-RADS 3 represents an equivocal, intermediate-risk category in which muscle invasion cannot be confidently excluded or confirmed."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 4],
+          "explanation": "VI-RADS 3 is assigned in a papillary tumour when the stalk that would otherwise define a lower category is absent while the muscularis propria remains continuous, and it represents a genuinely equivocal, intermediate-risk category in which muscle invasion can be neither excluded nor confirmed. Interruption of the muscularis propria on T2-weighted imaging and unequivocal full-thickness restricted diffusion both describe considerably higher categories, not VI-RADS 3, which by definition preserves a continuous muscularis. Focal early muscular enhancement on dynamic contrast-enhanced imaging is likewise absent in VI-RADS 3, since that finding defines muscle invasion rather than an equivocal, non-invasive appearance.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 9,
+        "question_text": "Regarding the imaging criteria that define VI-RADS 4, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "VI-RADS 4 is characterised by interruption of the continuous low signal intensity line of the muscularis propria on T2-weighted imaging, indicating muscle invasion.",
+          "On dynamic contrast-enhanced imaging, VI-RADS 4 shows focal extension of early enhancement into the muscularis propria.",
+          "On diffusion-weighted imaging, VI-RADS 4 shows high signal intensity with corresponding low ADC signal extending focally into the muscularis propria.",
+          "VI-RADS 4 is defined by tumour signal extending beyond the bladder wall into the perivesical fat.",
+          "A VI-RADS 4 category typically prompts consideration of neoadjuvant therapy followed by radical cystectomy."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 2, 4],
+          "explanation": "VI-RADS 4 is defined by interruption of the muscularis propria on T2-weighted imaging, focal extension of early dynamic contrast-enhanced enhancement into the muscularis, and focal high-signal/low-ADC restricted diffusion within the muscularis, and this category typically prompts consideration of neoadjuvant therapy followed by radical cystectomy. Extension of tumour signal beyond the bladder wall into the perivesical fat is incorrect for VI-RADS 4 because that finding defines the next, more advanced category, whereas VI-RADS 4 is specifically confined to the muscularis without extravesical fat invasion.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 10,
+        "question_text": "Regarding the imaging criteria that define VI-RADS 5, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "VI-RADS 5 is characterised by tumour extension into the perivesical fat on T2-weighted imaging.",
+          "VI-RADS 5 is confined to the mucosa, with restricted diffusion limited strictly to the inner layer of the bladder wall.",
+          "On dynamic contrast-enhanced imaging, VI-RADS 5 shows extension of early enhancement into the extravesical adipose tissue.",
+          "On diffusion-weighted imaging, VI-RADS 5 shows restricted diffusion extending throughout the entire bladder wall and into the perivesical fat.",
+          "A VI-RADS 5 category is broadly consistent with locally advanced (T3 or higher) disease."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 3, 4],
+          "explanation": "VI-RADS 5 is defined by T2-weighted tumour extension into the perivesical fat, dynamic contrast-enhanced extension of early enhancement into the extravesical adipose tissue, and diffusion-weighted restricted diffusion extending throughout the full thickness of the bladder wall and into the perivesical fat, and this category is broadly consistent with locally advanced (T3 or higher) disease. The claim that VI-RADS 5 is confined to the mucosa with restricted diffusion limited to the inner layer is incorrect because it describes the opposite pattern: VI-RADS 5 shows the most extensive, full-thickness and extravesical disease of the five categories.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 11,
+        "question_text": "Regarding technical optimisation of bladder MRI for VI-RADS scoring, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Maximal bladder distension, achieved by encouraging the patient to drink as much water as tolerated immediately before scanning, represents the optimal preparation strategy.",
+          "Intramuscular antispasmodic agents are used to reduce motion and susceptibility artefacts related to bowel peristalsis.",
+          "Inadequate bladder distension can produce a thickened, uneven bladder wall appearance and risks overestimation of tumour stage.",
+          "A collapsed, non-distended bladder wall configuration is the imaging sign that confirms adequate bladder filling for VI-RADS scoring.",
+          "A convex appearance of the bladder dome is a useful sign of adequate bladder distension for staging purposes."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 4],
+          "explanation": "Intramuscular antispasmodic agents reduce motion and susceptibility artefact from bowel peristalsis, inadequate bladder distension produces a thickened, uneven wall appearance that risks overestimating tumour stage, and a convex bladder dome is a useful sign of adequate distension. Encouraging maximal distension by drinking as much water as tolerated immediately before scanning is incorrect because overdistension causes discomfort-related motion artefact and may obscure tumour extent, so a specific, moderate preparation protocol is preferred over maximal filling. A collapsed, non-distended configuration is likewise incorrect as a sign of adequate filling, since it is the convex dome appearance, not a collapsed wall, that indicates adequate distension.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 12,
+        "question_text": "Regarding interpretation of the bladder wall on T2-weighted imaging, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "On T2-weighted imaging, bladder cancer typically shows signal intensity lower than both urine and muscle.",
+          "The inner layer of the bladder wall is consistently well seen as a separate structure on T2-weighted imaging, whether or not oedema is present.",
+          "The muscular layer on T2-weighted imaging is best identified as a discontinuous, irregular band of variable signal intensity in the normal bladder.",
+          "Bladder cancer typically demonstrates signal intensity intermediate between that of urine and muscle on T2-weighted imaging.",
+          "T2-weighted imaging has no established role in identifying the muscular layer of the bladder wall."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [3],
+          "explanation": "Bladder cancer typically demonstrates signal intensity intermediate between that of urine and muscle on T2-weighted imaging, rather than being lower than both. The inner layer is not consistently well seen on T2-weighted imaging in the absence of oedema, and the normal muscular layer is identified as a continuous, uniform low-signal line rather than a discontinuous, irregular band. T2-weighted imaging has a well-established role in identifying the muscular layer, since its continuity or interruption is central to VI-RADS category assignment.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 13,
+        "question_text": "Regarding interpretation of the bladder wall on diffusion-weighted imaging, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "On diffusion-weighted imaging, the inner layer of the bladder wall is reliably visualised as a distinct hyperintense structure.",
+          "Bladder cancer typically demonstrates restricted diffusion, appearing as high signal intensity on diffusion-weighted imaging with correspondingly low signal on the ADC map.",
+          "On diffusion-weighted imaging, the muscular layer is visualised as a discontinuous, high-signal-intensity band.",
+          "Diffusion-weighted imaging has no role in distinguishing tumour from normal bladder wall.",
+          "A high ADC value is characteristic of bladder cancer on diffusion-weighted imaging."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1],
+          "explanation": "Bladder cancer typically demonstrates restricted diffusion, seen as high signal intensity on diffusion-weighted imaging with correspondingly low signal on the ADC map. The inner layer cannot be visualised as a distinct structure on diffusion-weighted imaging, and the normal muscular layer is seen as a continuous intermediate-signal-intensity line rather than a discontinuous, high-signal band. Diffusion-weighted imaging has a central role in distinguishing tumour from normal bladder wall, and a high ADC value is the opposite of the low ADC signal characteristic of bladder cancer.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 14,
+        "question_text": "Regarding interpretation of the bladder wall on dynamic contrast-enhanced imaging, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Bladder cancer typically demonstrates early enhancement on dynamic contrast-enhanced imaging.",
+          "An intact (non-interrupted) muscular layer typically demonstrates early, rapid enhancement on dynamic contrast-enhanced imaging, similar in timing to tumour.",
+          "Early enhancement of the inner layer on dynamic contrast-enhanced imaging is a feature exclusively seen in muscle-invasive disease.",
+          "Dynamic contrast-enhanced imaging provides no additional diagnostic information beyond that available from T2-weighted imaging alone.",
+          "An intact muscular layer characteristically shows late and progressive enhancement, in contrast to the early enhancement typical of tumour."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 4],
+          "explanation": "Bladder cancer typically demonstrates early enhancement on dynamic contrast-enhanced imaging, whereas an intact muscular layer characteristically shows late, progressive enhancement rather than the early pattern seen in tumour, so describing the intact muscular layer as enhancing early like tumour is incorrect. Early inner-layer enhancement is typically seen in non-muscle-invasive rather than muscle-invasive lesions, so restricting it exclusively to muscle-invasive disease is incorrect. Dynamic contrast-enhanced imaging contributes distinct functional information used alongside T2-weighted and diffusion-weighted findings in VI-RADS scoring, so it is incorrect to say it adds nothing beyond T2-weighted imaging.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 15,
+        "question_text": "Regarding inflammatory oedema as a potential pitfall in VI-RADS interpretation, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Inflammatory oedema of the bladder wall has no described differentiating imaging feature from tumour in this system.",
+          "Inflammatory oedema can cause thickening and T2-weighted hyperintensity of the inner layer (urothelium and lamina propria), reflecting associated hyperaemia.",
+          "A useful feature favouring oedema over tumour is that the abnormal signal remains confined within the bladder wall rather than extending beyond it.",
+          "Early enhancement of an oedematous inner layer on dynamic contrast-enhanced imaging may reflect hyperaemia rather than malignancy, representing a recognised pitfall.",
+          "Inflammatory oedema exclusively affects the muscular layer, sparing the urothelium and lamina propria."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 3],
+          "explanation": "Inflammatory oedema thickens and increases the T2-weighted signal of the inner layer with associated hyperaemia, can produce early dynamic contrast-enhanced enhancement of that oedematous inner layer that mimics malignancy, and is favoured over tumour when the abnormal signal remains confined within the bladder wall rather than extending beyond it. Describing oedema as having no differentiating feature from tumour is incorrect because this confinement within the wall is explicitly described as a useful discriminator. Oedema is described as affecting the urothelium and lamina propria (the inner layer), not the muscular layer exclusively, so restricting it to the muscular layer is incorrect.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 16,
+        "question_text": "Regarding the management implications of the VI-RADS category assigned on bladder MRI, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "VI-RADS categories 1 to 3 are generally managed by local transurethral resection rather than radical surgery.",
+          "VI-RADS categories 4 and 5 are typically managed by transurethral resection alone, without systemic or surgical therapy.",
+          "Understaging a muscle-invasive tumour as non-muscle-invasive carries no meaningful clinical consequence provided the patient is followed up.",
+          "Overstaging a non-muscle-invasive tumour risks subjecting the patient to unnecessarily aggressive therapy.",
+          "VI-RADS categories 4 and 5 are generally associated with a management pathway of neoadjuvant therapy followed by radical cystectomy."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 3, 4],
+          "explanation": "VI-RADS categories 1 to 3 are generally managed by local transurethral resection, while categories 4 and 5 are generally associated with neoadjuvant therapy followed by radical cystectomy, and overstaging a non-muscle-invasive tumour risks subjecting the patient to this more aggressive treatment unnecessarily. Describing categories 4 and 5 as managed by transurethral resection alone is incorrect because these categories call for systemic and surgical therapy beyond local resection. Understaging a muscle-invasive tumour is incorrect to describe as inconsequential, since accurate staging is explicitly framed as preventing the disease progression that understaging risks.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 17,
+        "question_text": "A papillary bladder tumour measuring 8 mm is identified without an obvious stalk. On T2-weighted imaging, the muscularis propria is seen as a continuous, uninterrupted low signal intensity line. On diffusion-weighted imaging, the muscular layer likewise appears as a continuous intermediate signal intensity line, with restricted diffusion confined to the lesion itself. On dynamic contrast-enhanced imaging, only the inner layer shows early enhancement, without any enhancement of the muscular layer.\n\nWhat is the most appropriate VI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["VI-RADS 1", "VI-RADS 2", "VI-RADS 3", "VI-RADS 4", "VI-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "VI-RADS 1",
+          "correct_options": null,
+          "explanation": "A lesion smaller than 1 cm with a continuous, unbroken muscularis propria on T2-weighted and diffusion-weighted imaging, restricted diffusion confined to the lesion itself, and dynamic contrast-enhanced enhancement limited to the inner layer without muscular involvement meets every defining criterion of the lowest-risk category. A larger lesion with an otherwise identical, intact-muscularis pattern would instead be assigned the next category up, and any interruption of the muscularis line or muscular enhancement would point to a considerably higher, muscle-invasive category, neither of which is present here.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 18,
+        "question_text": "A sessile bladder tumour measuring 2.2 cm demonstrates a thickened, high signal intensity inner layer on T2-weighted imaging. The underlying muscularis propria remains a continuous, unbroken low signal intensity line. On dynamic contrast-enhanced imaging, this low signal intensity muscular line shows no early enhancement. On diffusion-weighted imaging, the muscular layer again appears as a continuous intermediate signal intensity line.\n\nWhat is the most appropriate VI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["VI-RADS 1", "VI-RADS 2", "VI-RADS 3", "VI-RADS 4", "VI-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "VI-RADS 2",
+          "correct_options": null,
+          "explanation": "A sessile tumour larger than 1 cm with a thickened, high-signal inner layer on T2-weighted imaging, a continuous muscularis propria preserved on all three sequences, and no early muscular enhancement on dynamic contrast-enhanced imaging matches the defining pattern for the second category. The lesion's size excludes the lowest category, which requires a lesion smaller than 1 cm, while the presence of the thickened high-signal inner layer (rather than its absence) excludes the equivocal category that applies to a sessile tumour lacking this feature; there is no interruption of the muscularis or muscular enhancement to suggest a higher, muscle-invasive category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 19,
+        "question_text": "A papillary bladder tumour measuring 1.8 cm shows no discernible stalk on any sequence. Despite this, the muscularis propria remains visible as a continuous, unbroken low signal intensity line on T2-weighted, diffusion-weighted, and dynamic contrast-enhanced imaging, without early muscular enhancement or evidence of muscular signal extension.\n\nWhat is the most appropriate VI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["VI-RADS 1", "VI-RADS 2", "VI-RADS 3", "VI-RADS 4", "VI-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "VI-RADS 3",
+          "correct_options": null,
+          "explanation": "A papillary tumour lacking the stalk that would otherwise support a lower category, but with a muscularis propria that remains continuous and unbroken across all three sequences without early muscular enhancement, meets the definition of the equivocal, intermediate-risk category in which muscle invasion can be neither excluded nor confirmed. A stalk-bearing lesion of this size would instead be assigned the lower, low-risk category, while any interruption of the muscularis line or muscular signal extension would point to a muscle-invasive category, neither of which is described here.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 20,
+        "question_text": "A bladder tumour shows a continuous, unbroken low signal intensity line of the muscularis propria on T2-weighted imaging, with no discernible stalk. However, diffusion-weighted imaging demonstrates high signal intensity with corresponding low ADC signal extending focally into the substance of the muscularis propria, without extension beyond the bladder wall. There is discordance between the T2-weighted and diffusion-weighted appearances.\n\nWhat is the most appropriate VI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["VI-RADS 1", "VI-RADS 2", "VI-RADS 3", "VI-RADS 4", "VI-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "VI-RADS 4",
+          "correct_options": null,
+          "explanation": "The T2-weighted appearance alone, with a preserved but stalk-less muscularis, would suggest the equivocal category, but diffusion-weighted imaging shows focal high-signal, low-ADC extension into the substance of the muscularis propria, which is the defining criterion of muscle invasion confined to the detrusor. Because the two sequences are discordant, diffusion-weighted imaging is given precedence to maximise accuracy, so the higher, diffusion-weighted-based category is assigned rather than the lower category the T2-weighted appearance alone would suggest. There is no extension beyond the bladder wall into the perivesical fat, which excludes the most advanced category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 21,
+        "question_text": "A bladder tumour demonstrates clear extension of tumour signal into the perivesical fat on T2-weighted imaging. On dynamic contrast-enhanced imaging, early enhancement extends into the extravesical adipose tissue. On diffusion-weighted imaging, restricted diffusion, with high signal intensity and corresponding low ADC signal, extends throughout the full thickness of the bladder wall and into the perivesical fat.\n\nWhat is the most appropriate VI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["VI-RADS 1", "VI-RADS 2", "VI-RADS 3", "VI-RADS 4", "VI-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "VI-RADS 5",
+          "correct_options": null,
+          "explanation": "Extension of tumour signal into the perivesical fat on T2-weighted imaging, extension of early enhancement into the extravesical adipose tissue on dynamic contrast-enhanced imaging, and full-thickness restricted diffusion extending into the perivesical fat together define the most advanced category, consistent with locally advanced disease. The muscle-invasive category confined to the detrusor is excluded here because that category, by definition, shows no extension beyond the bladder wall into the perivesical fat, which is clearly present in all three sequences in this case.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 22,
+        "question_text": "Diffusion-weighted imaging of a bladder tumour is markedly degraded by susceptibility artefact and is not diagnostically interpretable. T2-weighted imaging shows a continuous, unbroken low signal intensity line of the muscularis propria without an identifiable stalk. Dynamic contrast-enhanced imaging, however, demonstrates focal extension of early enhancement into the substance of the muscularis propria, without enhancement extending into the perivesical fat.\n\nWhat is the most appropriate VI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["VI-RADS 1", "VI-RADS 2", "VI-RADS 3", "VI-RADS 4", "VI-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "VI-RADS 4",
+          "correct_options": null,
+          "explanation": "Because diffusion-weighted imaging is technically suboptimal here, dynamic contrast-enhanced imaging becomes the dominant functional sequence for category assignment rather than being disregarded. Its finding of focal early enhancement extending into the substance of the muscularis propria is the defining dynamic contrast-enhanced criterion for muscle invasion confined to the detrusor, which takes precedence over the T2-weighted appearance alone (which, lacking a stalk but with a preserved muscularis, would otherwise suggest the equivocal category). There is no enhancement extending into the perivesical fat, which excludes the most advanced, extravesical category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 23,
+        "question_text": "A papillary bladder tumour measuring 1.5 cm has a visible stalk. On T2-weighted imaging, the muscularis propria is preserved as a continuous low signal intensity line. On diffusion-weighted imaging, the stalk itself shows low signal intensity, with correspondingly high signal on the ADC map, while the muscularis propria remains a continuous intermediate signal intensity line. On dynamic contrast-enhanced imaging, the muscular layer shows no early enhancement.\n\nWhat is the most appropriate VI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["VI-RADS 1", "VI-RADS 2", "VI-RADS 3", "VI-RADS 4", "VI-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "VI-RADS 2",
+          "correct_options": null,
+          "explanation": "A papillary lesion larger than 1 cm with a visible stalk that is low signal on diffusion-weighted imaging and correspondingly high signal on the ADC map, a muscularis propria preserved as a continuous line on both T2-weighted and diffusion-weighted imaging, and no early muscular enhancement on dynamic contrast-enhanced imaging matches the classic pattern for the second category. The lesion's size excludes the lowest category, which requires a lesion smaller than 1 cm, while the presence of a visible stalk (rather than its absence) excludes the equivocal category that applies when the stalk cannot be identified.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 24,
+        "question_text": "A sessile bladder tumour measuring 2 cm shows no high signal intensity thickening of the inner layer on T2-weighted imaging. The muscularis propria nonetheless remains visible as a continuous, unbroken low signal intensity line on T2-weighted, diffusion-weighted, and dynamic contrast-enhanced imaging, with no early muscular enhancement and no discontinuity of the muscular signal.\n\nWhat is the most appropriate VI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["VI-RADS 1", "VI-RADS 2", "VI-RADS 3", "VI-RADS 4", "VI-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "VI-RADS 3",
+          "correct_options": null,
+          "explanation": "A sessile tumour lacking the thickened, high-signal inner layer that would otherwise support a lower category, but with a muscularis propria that remains continuous and unbroken across all three sequences without early muscular enhancement, meets the definition of the equivocal, intermediate-risk category. A sessile lesion of this size with a thickened high-signal inner layer would instead be assigned the lower, low-risk category, while any interruption of the muscularis line or muscular enhancement would point to a muscle-invasive category, neither of which is present here.",
+          "page_images": []
+        }
+      }
+    ]
+  }
+]

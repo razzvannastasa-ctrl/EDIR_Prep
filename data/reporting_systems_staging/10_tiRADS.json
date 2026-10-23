@@ -1,0 +1,415 @@
+[
+  {
+    "chapter_id": 6,
+    "chapter_match": "exact",
+    "source": "Reporting Systems",
+    "section": "mrq",
+    "library_key": "edir",
+    "clinical_vignette": "ACR TI-RADS (Thyroid Imaging Reporting and Data System, 2017)",
+    "article_summary": "### ACR TI-RADS (Thyroid Imaging Reporting and Data System, 2017)\n\n**Source:** American College of Radiology Thyroid Imaging, Reporting and Data System (TI-RADS) Lexicon Directory, based on the ACR TI-RADS white paper (Thyroid Ultrasound Reporting Lexicon, J Am Coll Radiol 2015).\n\n**Scope:** A point-based ultrasound risk-stratification system for thyroid nodules. Five sonographic feature categories are each scored, the points are summed, and the total determines a TI-RADS (TR) category that drives the decision to perform fine-needle aspiration (FNA), follow with ultrasound, or take no further action.\n\n### Category cheat-sheet\n- **TR1 — Benign (0 points):** lowest-risk scoring pattern; no FNA is recommended at any nodule size.\n- **TR2 — Not suspicious (2 points):** low-risk scoring pattern; no FNA is recommended at any nodule size.\n- **TR3 — Mildly suspicious (3 points):** FNA recommended once the nodule reaches 2.5 cm; ultrasound follow-up recommended from 1.5 cm.\n- **TR4 — Moderately suspicious (4-6 points):** FNA recommended once the nodule reaches 1.5 cm; follow-up recommended from 1 cm.\n- **TR5 — Highly suspicious (7 points or more):** FNA recommended once the nodule reaches 1 cm; follow-up recommended from 0.5 cm, with extra caution for 5-9 mm nodules given the indolent behaviour of papillary microcarcinoma.\n\n### Key imaging/scoring points\nFive categories are assessed: composition, echogenicity, shape, margin, and echogenic foci. Composition, echogenicity, shape, and margin each allow only a single selection; echogenic foci is the exception and allows every applicable feature to be selected, with points added together. Composition is scored cystic/almost completely cystic (0), spongiform (0), mixed cystic and solid (1), or solid/almost completely solid (2). Spongiform nodules, composed predominantly (>50%) of tiny cystic spaces, are a special case: no further points are added for the other four categories once spongiform is chosen, although the classification should be reconsidered if there is concern for an irregular margin or suspicious echogenic foci. For mixed cystic and solid nodules, echogenicity, shape, margin, and echogenic foci should all be assessed using the solid component rather than the nodule as a whole. Echogenicity is scored anechoic (0, applies only to cystic/almost completely cystic nodules), hyperechoic or isoechoic relative to parenchyma (1, grouped together), hypoechoic relative to parenchyma (2), or very hypoechoic, more hypoechoic than adjacent strap muscle (3). Shape is assessed on a transverse image comparing the anteroposterior and transverse diameters: wider-than-tall (ratio 1 or less) scores 0, taller-than-wide (ratio greater than 1) scores 3. Margin is scored smooth (0), ill-defined (0), lobulated or irregular (2), or extrathyroidal extension (3); when more than one margin type is present, only the single most suspicious pattern is used. Extrathyroidal extension means the nodule extends through the thyroid margin, and obvious invasion is considered to equate to malignancy. Echogenic foci are scored none/large comet-tail artefacts (0), macrocalcifications causing posterior acoustic shadowing (1), peripheral/rim calcifications generally involving the majority of the margin (2), and punctate, dot-like foci under 1 mm that may show small comet-tail artefacts (3); more than one type may coexist and all applicable points are added. Several assumptions cover indeterminate features: if composition cannot be determined, score as solid; if echogenicity cannot be determined, score as isoechoic; if the margin cannot be determined, score as ill-defined; and if dense rim calcifications obscure the nodule completely, score composition as solid and echogenicity as isoechoic. The five category scores are summed to give the total that determines the TR category.\n\n### Practical/management implications\nTR1 and TR2 nodules do not require FNA irrespective of size, because their point totals reflect a benign or low-suspicion appearance. From TR3 upward, both an FNA threshold and a smaller follow-up threshold apply, and the thresholds fall progressively as suspicion rises (see cheat-sheet). Nodule size and morphological suspicion are therefore weighed together rather than either alone driving the decision to biopsy.\n\n### Pitfalls and limitations\nConfusing which feature category allows multiple selections is a common scoring error: only echogenic foci is additive within itself, while composition, echogenicity, shape, and margin each contribute a single point value. Mixing up punctate echogenic foci (tiny, sub-1 mm dot-like foci) with macrocalcifications (larger foci causing posterior shadowing) changes the score by two points and can shift the nodule between TR categories. Dense peripheral calcification that obscures the nodule interior must be handled with the specific composition/echogenicity assumption rather than guessed at. A spongiform nodule with a genuinely irregular margin or suspicious echogenic foci should prompt reconsideration of the spongiform label rather than automatic acceptance of a zero-point score. For mixed cystic and solid nodules, scoring echogenicity or margin on the cystic rather than the solid component will understate the true risk.\n\n### Take-home points\n- TI-RADS is additive: sum the points from composition, echogenicity, shape, margin, and echogenic foci to reach the total that defines TR1-TR5.\n- Echogenic foci is the only category where more than one feature may be selected and summed; every other category is a single choice.\n- Spongiform composition and mixed cystic-solid composition each carry their own special scoring rule (no further points added; assess remaining features on the solid component, respectively).\n- TR1 and TR2 nodules do not require FNA at any size; from TR3 to TR5 the FNA and follow-up size thresholds progressively fall as the point total rises.\n- Extrathyroidal extension and very hypoechoic echogenicity are anchored to specific comparison structures (thyroid margin invasion; strap muscle) rather than being purely subjective descriptors.",
+    "questions": [
+      {
+        "q_number": 1,
+        "question_text": "Regarding the composition category of ACR TI-RADS, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A predominantly cystic nodule with no significant solid component, beyond trace septations, is scored 0 points for composition.",
+          "A mixed cystic and solid nodule contributes 2 points to the composition score.",
+          "When composition cannot be determined, it should be scored as solid.",
+          "A spongiform nodule is scored 2 points because of its heterogeneous cystic architecture.",
+          "A solid or almost completely solid nodule contributes 2 points to the composition score."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 4],
+          "explanation": "Cystic or almost completely cystic nodules and spongiform nodules both anchor the bottom of the composition scale at 0 points, while solid or almost completely solid nodules sit at the top of the scale at 2 points. The claim that spongiform composition scores 2 points is incorrect, since spongiform is itself a benign, 0-point pattern rather than a heterogeneous one. Mixed cystic and solid composition scores only 1 point, not 2, because the full 2-point value is reserved for solid or almost completely solid nodules. When composition genuinely cannot be assessed, the lexicon default is to score it as solid rather than leaving it unscored, which matters because composition then determines how the remaining categories are assessed for mixed nodules.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 2,
+        "question_text": "Regarding the echogenicity category of ACR TI-RADS, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Hypoechoic nodules are compared against adjacent strap muscle rather than thyroid parenchyma.",
+          "A nodule that is more hypoechoic than the adjacent strap muscles is scored as very hypoechoic.",
+          "Anechoic nodules score 1 point because some internal echoes may still be present.",
+          "Hyperechoic and isoechoic nodules are grouped together and scored identically.",
+          "Very hypoechoic nodules score fewer points than hypoechoic nodules because they represent a more benign appearance."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 3],
+          "explanation": "Hyperechoic and isoechoic nodules are deliberately grouped together and both score 1 point, reflecting a shared low-suspicion appearance relative to parenchyma. Very hypoechoic status is specifically defined by comparison with adjacent strap muscle rather than parenchyma, and once met it scores 3 points, more than hypoechoic (2 points), because it reflects greater suspicion rather than a benign appearance. The claim that ordinary hypoechoic nodules are compared against strap muscle is incorrect, since that comparison is reserved for distinguishing very hypoechoic from hypoechoic; hypoechoic itself is compared against parenchyma. Anechoic nodules score 0 points, not 1, and the term applies specifically to cystic or almost completely cystic nodules without a soft tissue component.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 3,
+        "question_text": "Regarding the shape category of ACR TI-RADS, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A taller-than-wide shape is defined by an anteroposterior-to-transverse diameter ratio greater than 1, measured on a transverse image.",
+          "Shape is assessed on a sagittal image with measurements taken parallel to the sound beam.",
+          "A wider-than-tall nodule contributes 2 points to the total score.",
+          "Taller-than-wide shape is considered a benign feature and is scored 0 points.",
+          "Shape can only be assessed reliably using Doppler evaluation of internal vascularity."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0],
+          "explanation": "Shape is defined on a transverse image by comparing the anteroposterior diameter with the transverse diameter; a ratio greater than 1 is taller-than-wide and scores 3 points, reflecting increased suspicion. The claim that assessment uses a sagittal plane is incorrect, since the transverse plane is specifically required for this measurement. Wider-than-tall shape, not taller-than-wide, is the benign pattern and scores 0 points rather than 2, so both distractors invert the true point assignment. Shape is a morphological measurement assessed on greyscale imaging and does not require Doppler evaluation of vascularity.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 4,
+        "question_text": "Regarding the margin category of ACR TI-RADS, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Smooth and ill-defined margins are each scored 2 points because both patterns raise mild suspicion.",
+          "When a nodule shows more than one margin type, the most suspicious pattern present should be used for scoring.",
+          "Extrathyroidal extension refers to the nodule extending through the thyroid margin and is considered obvious invasion equating to malignancy.",
+          "Lobulated or irregular margins are scored 3 points, the same as extrathyroidal extension.",
+          "If the margin of a nodule cannot be determined, it should be scored as ill-defined."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 4],
+          "explanation": "Smooth and ill-defined margins both sit at the bottom of the margin scale, scoring 0 points each, so the claim that they score 2 points is incorrect; lobulated or irregular margins are the pattern that scores 2 points, and extrathyroidal extension scores 3 points, so the two patterns are not equivalent. Extrathyroidal extension is specifically defined as the nodule extending through the thyroid margin, with obvious invasion considered to equate to malignancy, which is why it carries the highest margin score. When more than one margin type coexists, only the single most suspicious pattern present is used for scoring, avoiding double-counting within the category. If the margin genuinely cannot be assessed, the default assumption is to score it as ill-defined rather than leaving it unscored.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 5,
+        "question_text": "Regarding the echogenic foci category of ACR TI-RADS, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Unlike the other four categories, more than one echogenic focus type may be selected, with the points added together if several are present.",
+          "Macrocalcifications cause posterior acoustic shadowing and contribute 1 point.",
+          "Peripheral (rim) calcifications contribute 3 points because they most strongly obscure the nodule interior.",
+          "Punctate echogenic foci are dot-like and less than 1 mm in diameter, occasionally with small comet-tail artefacts.",
+          "Large comet-tail artefacts occurring within cystic components are scored together with the absence of echogenic foci at 0 points."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 3, 4],
+          "explanation": "Echogenic foci is the one category assessed as \"choose all that apply\", so several feature types can be selected together with their points summed, unlike composition, echogenicity, shape, and margin, which each allow only a single selection. Macrocalcifications, which cause posterior acoustic shadowing, contribute 1 point, and punctate echogenic foci, small dot-like foci under 1 mm that may show small comet-tail artefacts, contribute the highest foci score of 3 points. The claim that peripheral calcifications score 3 points is incorrect, since that value belongs to punctate foci; peripheral (rim) calcifications instead score 2 points. Large comet-tail artefacts within cystic spaces are grouped with the absence of echogenic foci and both score 0 points, reflecting their benign significance.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 6,
+        "question_text": "Regarding the ACR TI-RADS assumptions applied when a feature cannot be confidently determined, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "If echogenicity cannot be determined, it should be scored as hypoechoic.",
+          "If rim calcifications obscure the nodule completely, composition should be scored as solid and echogenicity as isoechoic.",
+          "If the margin cannot be determined, it should be scored as ill-defined.",
+          "If echogenicity cannot be determined, it should be scored as isoechoic.",
+          "If composition cannot be determined, it should be scored as solid."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 3, 4],
+          "explanation": "The lexicon provides specific default assumptions for indeterminate features: composition defaults to solid, echogenicity defaults to isoechoic, and margin defaults to ill-defined when they cannot be confidently assessed. A dedicated combined rule also applies when rim calcifications obscure the nodule completely, in which case composition is scored as solid and echogenicity as isoechoic together. The claim that indeterminate echogenicity should default to hypoechoic is incorrect, since the actual default is isoechoic, which reflects a lower-suspicion assumption than hypoechoic would. These defaults ensure every nodule can still be assigned a complete, additive score even when a feature is technically difficult to characterise.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 7,
+        "question_text": "Regarding the ACR TI-RADS category assignments, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A total score of 0 points corresponds to TR1, labelled benign.",
+          "A total score of 3 points corresponds to TR4, labelled moderately suspicious.",
+          "A total score of 7 points or more corresponds to TR5, labelled highly suspicious.",
+          "A total score of 2 points corresponds to TR2, labelled not suspicious.",
+          "A total score between 4 and 6 points corresponds to TR3, labelled mildly suspicious."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 3],
+          "explanation": "A total of 0 points corresponds to TR1 (benign), a total of 2 points corresponds to TR2 (not suspicious), and a total of 7 points or more corresponds to TR5 (highly suspicious), forming the two ends and the top of the scale. The claim that 3 points corresponds to TR4 is incorrect, because 3 points is specifically the TR3 (mildly suspicious) total; TR4 instead requires a total between 4 and 6 points. Similarly, the claim that 4 to 6 points corresponds to TR3 is incorrect, since that range defines TR4 (moderately suspicious), one category higher than TR3. Recognising the exact point boundaries between categories is essential because a single point can shift a nodule from one management pathway to the next.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 8,
+        "question_text": "Regarding the size thresholds used for management recommendations in ACR TI-RADS, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "TR2 nodules should undergo FNA if they measure 1.5 cm or more.",
+          "TR3 nodules should be followed if they measure 1.5 cm or more, and undergo FNA if they measure 2.5 cm or more.",
+          "TR4 nodules require FNA once they reach 2.5 cm, the same threshold as TR3.",
+          "TR4 nodules should be followed if they measure 1 cm or more, and undergo FNA if they measure 1.5 cm or more.",
+          "TR5 nodules should undergo FNA if they measure 1 cm or more, and be followed if they measure 0.5 cm or more."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 3, 4],
+          "explanation": "TR3 nodules follow from 1.5 cm and undergo FNA from 2.5 cm, TR4 nodules follow from 1 cm and undergo FNA from 1.5 cm, and TR5 nodules follow from 0.5 cm and undergo FNA from 1 cm, showing a consistent pattern of falling thresholds as suspicion rises across TR3 to TR5. The claim that TR4 shares the 2.5 cm FNA threshold with TR3 is incorrect, since TR4's FNA threshold is smaller, at 1.5 cm, reflecting its higher suspicion category. TR2 nodules are never recommended for FNA regardless of size, so the claim that a size threshold triggers FNA in TR2 is incorrect. This progressive lowering of thresholds means a small, highly suspicious nodule may reach the FNA threshold sooner than a larger, mildly suspicious one.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 9,
+        "question_text": "Regarding a nodule classified as spongiform on ultrasound, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Spongiform composition is defined as being composed predominantly, more than 50%, of small cystic spaces.",
+          "A spongiform nodule automatically scores 2 points for composition because of its mixed architecture.",
+          "If there is concern for irregular margins or suspicious echogenic foci, the classification of spongiform should be reconsidered.",
+          "Once a nodule is classified as spongiform, further points should still be added for echogenicity, shape, margin, and echogenic foci.",
+          "Spongiform nodules are considered indeterminate and require additional cross-sectional imaging before scoring."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2],
+          "explanation": "Spongiform composition is specifically defined as being composed predominantly, more than 50%, of small cystic spaces, and this pattern is treated as a benign finding that scores 0 points, not 2 points, so the claim of an automatic 2-point score is incorrect. Once spongiform is chosen, the lexicon explicitly states that no further points should be added for the other categories, so the claim that echogenicity, shape, margin, and foci points are still added is incorrect. However, if there is genuine concern for an irregular margin or suspicious echogenic foci alongside the cystic pattern, the spongiform classification itself should be reconsidered rather than accepted at face value. Spongiform nodules are assessed and scored directly from the ultrasound appearance rather than being deferred as indeterminate pending further cross-sectional imaging.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 10,
+        "question_text": "Regarding a nodule with mixed cystic and solid composition, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "All other lexicon characteristics, including echogenicity, shape, margin, and echogenic foci, should be based on the cystic component.",
+          "Anechoic should be selected for echogenicity because part of the nodule is cystic.",
+          "Mixed cystic and solid composition scores 2 points, identical to a solid nodule.",
+          "The solid component should be used as the basis for assessing echogenicity, shape, margin, and echogenic foci.",
+          "Mixed cystic and solid nodules are excluded from ACR TI-RADS scoring and should be assessed with a separate risk system."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [3],
+          "explanation": "For nodules with mixed cystic and solid composition, the lexicon directs that all other characteristics, echogenicity, shape, margin, and echogenic foci, be based on the solid component rather than the nodule as a whole or its cystic portion. The claim that the cystic component should instead be used is incorrect, and follows from the same misunderstanding as selecting anechoic echogenicity for a mixed nodule, since anechoic applies only to cystic or almost completely cystic nodules without a measurable solid component. Mixed cystic and solid composition scores 1 point, not 2 points, since the 2-point value is reserved for nodules that are solid or almost completely solid. Mixed cystic and solid nodules remain fully scoreable within ACR TI-RADS itself and do not require a separate classification system.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 11,
+        "question_text": "Regarding extrathyroidal extension in ACR TI-RADS, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Extrathyroidal extension is scored 2 points, the same as lobulated or irregular margins.",
+          "Extrathyroidal extension is defined as the nodule extending through the thyroid margin.",
+          "Extrathyroidal extension is treated as a low-suspicion finding because it reflects a slow-growing nodule.",
+          "Extrathyroidal extension contributes fewer points than a smooth margin because it is considered a technical artefact.",
+          "Obvious invasion through the thyroid margin is considered to equate to malignancy."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 4],
+          "explanation": "Extrathyroidal extension is specifically defined as the nodule extending through the thyroid margin, and when this represents obvious invasion it is considered to equate to malignancy, making it the most suspicious margin pattern. The claim that it scores the same 2 points as lobulated or irregular margins is incorrect, since extrathyroidal extension carries the higher score of 3 points, reflecting its greater clinical significance. It is not treated as a low-suspicion, slow-growing finding, nor is it a technical artefact scoring fewer points than a smooth margin (0 points); rather it anchors the top of the margin scale. Recognising extrathyroidal extension correctly is important because it can, on its own, contribute enough points to push a nodule into a higher-suspicion category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 12,
+        "question_text": "Regarding the descriptive definitions of margin subtypes in ACR TI-RADS, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A smooth margin is an uninterrupted, well-defined, curvilinear edge typically forming a spherical or elliptical shape.",
+          "An ill-defined margin refers to a border with focal rounded soft tissue protrusions extending into adjacent parenchyma.",
+          "An irregular margin shows a spiculated, jagged, or sharply angled outer border, with or without soft tissue protrusions.",
+          "A lobulated margin shows focal rounded soft tissue protrusions that may be single or multiple, with small lobulations referred to as microlobulated.",
+          "An ill-defined margin is one where the border is difficult to distinguish because of dense peripheral calcification obscuring the entire nodule."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 3],
+          "explanation": "A smooth margin is an uninterrupted, well-defined, curvilinear edge, typically spherical or elliptical, while an irregular margin instead shows a spiculated, jagged, or sharply angled border, with or without soft tissue protrusions of variable size. A lobulated margin shows focal rounded soft tissue protrusions, single or multiple, with the smaller pattern specifically termed microlobulated. The description of focal rounded protrusions is incorrectly attributed to an ill-defined margin, when it actually describes a lobulated margin; an ill-defined margin instead refers to a border that is generally difficult to distinguish from thyroid parenchyma. The claim that ill-defined margins are specifically caused by dense peripheral calcification is also incorrect, since that scenario is addressed by its own separate composition and echogenicity assumption rather than being folded into the margin definition.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 13,
+        "question_text": "Regarding the descriptive definitions of echogenic foci subtypes in ACR TI-RADS, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A comet-tail artefact is a reverberation artefact in which deeper echoes become attenuated, producing a triangular shape.",
+          "Macrocalcifications are dot-like foci less than 1 mm in diameter that occasionally show small comet-tail artefacts.",
+          "Macrocalcifications are large enough to cause posterior acoustic shadowing.",
+          "Peripheral calcifications are typically discontinuous and involve only a small minority of the nodule margin.",
+          "Punctate echogenic foci are large, greater than 1 mm, and typically located centrally within a cystic space."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2],
+          "explanation": "A comet-tail artefact is a reverberation artefact in which deeper echoes become progressively attenuated, producing the characteristic triangular shape, and macrocalcifications are specifically large enough to cause posterior acoustic shadowing. The description of dot-like foci under 1 mm with occasional small comet-tail artefacts is incorrectly attributed to macrocalcifications, when it actually describes punctate echogenic foci; conversely, describing punctate foci as large, over 1 mm, and centrally located within a cystic space is also incorrect, since punctate foci are small and dot-like. Peripheral calcifications may not be continuous, but they generally involve the majority of the nodule margin rather than only a small minority, so describing them as typically discontinuous and minor is incorrect. Distinguishing these subtypes correctly matters because macrocalcifications and punctate foci carry different point values, one and three respectively, and confusing them changes the final category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 14,
+        "question_text": "Regarding FNA and follow-up recommendations across ACR TI-RADS categories, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "TR1 and TR2 nodules are recommended for FNA once they exceed 2.5 cm, matching the TR3 threshold.",
+          "For TR5 nodules measuring 5 to 9 mm, additional consideration regarding papillary microcarcinoma behaviour applies before applying the standard 0.5 cm follow-up threshold.",
+          "FNA is recommended for all TR3 nodules regardless of size because mild suspicion alone justifies biopsy.",
+          "TR1 nodules should be followed if they measure 1.5 cm or more, matching TR3 follow-up criteria.",
+          "Size-based FNA and follow-up thresholds only apply to TR3, TR4, and TR5 nodules, since TR1 and TR2 nodules do not require FNA."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 4],
+          "explanation": "Size-based FNA and follow-up thresholds are only meaningful for TR3, TR4, and TR5, since TR1 and TR2 nodules are never recommended for FNA regardless of how large they become. A specific additional consideration applies to TR5 nodules measuring 5 to 9 mm, reflecting the more indolent behaviour of papillary microcarcinoma, before the standard 0.5 cm follow-up threshold is applied. The claim that TR1 and TR2 nodules are recommended for FNA at 2.5 cm is incorrect, since that threshold belongs to TR3 and no FNA threshold exists for TR1 or TR2 at any size. FNA in TR3 is specifically size-dependent, recommended from 2.5 cm, rather than applied to every TR3 nodule irrespective of size.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 15,
+        "question_text": "Regarding the overall scoring process of ACR TI-RADS, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The final TI-RADS level is determined by whichever single category scores the highest, rather than by summing all categories.",
+          "Points from composition, echogenicity, shape, margin, and echogenic foci are added together to determine the final TI-RADS level.",
+          "Composition, echogenicity, and shape each allow only one selection, while echogenic foci allows multiple selections to be added together.",
+          "TR1 and TR2 nodules are not recommended for FNA regardless of nodule size.",
+          "When more than one margin type is present, only the single most suspicious margin pattern contributes points, avoiding double-counting within that category."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 3, 4],
+          "explanation": "The core scoring rule of ACR TI-RADS is additive: points from composition, echogenicity, shape, margin, and echogenic foci are all summed to determine the final TI-RADS level, so the claim that a single highest-scoring category alone determines the level is incorrect. Composition, echogenicity, and shape are each single-selection categories, while echogenic foci is the sole category permitting multiple simultaneous selections with points added together. Margin follows the same single-selection principle as composition, echogenicity, and shape; when more than one margin pattern is present, only the most suspicious one contributes points, preventing double-counting. This additive structure is also why TR1 and TR2, which produce the lowest point totals, never trigger an FNA recommendation regardless of nodule size.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 16,
+        "question_text": "A 45-year-old woman undergoes thyroid ultrasound for an incidentally noted nodule. The nodule is almost completely cystic with no measurable solid component, appears anechoic, is wider than it is tall on the transverse image, has a smooth, well-defined margin, and shows no echogenic foci other than a few large comet-tail artefacts within the cystic spaces.\n\nWhat is the most appropriate ACR TI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["TR1", "TR2", "TR3", "TR4", "TR5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "TR1",
+          "correct_options": null,
+          "explanation": "Almost completely cystic composition, anechoic echogenicity (valid here since the nodule is cystic), wider-than-tall shape, a smooth margin, and large comet-tail artefacts each score 0 points, giving a total of 0 points, which corresponds to TR1. A total of 2 points would instead be required to reach TR2, but no category here contributes any non-zero value. This combination of purely benign-scoring features across every category places the nodule at the lowest severity level rather than any higher category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 17,
+        "question_text": "A 38-year-old man has a thyroid nodule on ultrasound composed predominantly, more than 50%, of small cystic spaces, consistent with a spongiform appearance. On the same image the nodule is wider than it is tall, has a smooth margin, and contains only large comet-tail artefacts.\n\nWhat is the most appropriate ACR TI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["TR1", "TR2", "TR3", "TR4", "TR5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "TR1",
+          "correct_options": null,
+          "explanation": "Spongiform composition alone determines the category here: no further points are added for the other categories once a nodule is classified as spongiform, and spongiform is itself a 0-point, benign pattern, giving TR1 regardless of the wider-than-tall shape, smooth margin, or comet-tail artefacts also described. A higher category would only be appropriate if an irregular margin or suspicious echogenic foci prompted reconsideration of the spongiform classification, but the margin here is smooth and only benign comet-tail artefacts are present. The special spongiform rule therefore overrides what would otherwise be a routine additive calculation across all five categories.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 18,
+        "question_text": "A 52-year-old woman has a thyroid nodule on ultrasound composed of soft tissue and cystic spaces, with the solid component assessed as hyperechoic relative to adjacent thyroid parenchyma. The nodule is wider than it is tall, has a smooth margin, and shows no echogenic foci other than large comet-tail artefacts.\n\nWhat is the most appropriate ACR TI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["TR1", "TR2", "TR3", "TR4", "TR5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "TR2",
+          "correct_options": null,
+          "explanation": "Mixed cystic and solid composition contributes 1 point, and because the lexicon requires the remaining categories to be assessed on the solid component, the hyperechoic appearance contributes a further 1 point; the wider-than-tall shape, smooth margin, and absence of suspicious echogenic foci each add 0 points. This gives a total of 2 points, which corresponds to TR2. A total of 3 points would instead place the nodule at TR3, but no third point-contributing feature is present in this scenario.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 19,
+        "question_text": "A 60-year-old man has a solid or almost completely solid thyroid nodule on ultrasound that is hyperechoic relative to adjacent parenchyma. The nodule is wider than it is tall, has a smooth margin, and shows no echogenic foci other than large comet-tail artefacts.\n\nWhat is the most appropriate ACR TI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["TR1", "TR2", "TR3", "TR4", "TR5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "TR3",
+          "correct_options": null,
+          "explanation": "Solid composition contributes 2 points and hyperechoic echogenicity contributes a further 1 point, giving a total of 3 points; the wider-than-tall shape, smooth margin, and absence of suspicious echogenic foci add nothing further. A total of 3 points corresponds to TR3, one point higher than a mixed cystic-solid, hyperechoic combination, which would total only 2 points and remain at TR2. The solid composition here, rather than a mixed one, is what pushes the total past the TR2 threshold.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 20,
+        "question_text": "A 47-year-old woman has a thyroid nodule on ultrasound with mixed cystic and solid composition; the solid component is hypoechoic relative to adjacent parenchyma. The nodule is wider than it is tall, has a smooth margin, and shows no echogenic foci other than large comet-tail artefacts.\n\nWhat is the most appropriate ACR TI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["TR1", "TR2", "TR3", "TR4", "TR5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "TR3",
+          "correct_options": null,
+          "explanation": "Mixed cystic and solid composition contributes 1 point, and the hypoechoic solid component contributes a further 2 points, giving a total of 3 points; the remaining categories each add 0 points. This total corresponds to TR3, illustrating that the same 3-point total, and therefore the same category, can be reached through different combinations of composition and echogenicity, as seen in the preceding solid, hyperechoic example. Neither combination reaches the 4-point threshold that would instead define TR4.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 21,
+        "question_text": "A 55-year-old woman has a solid or almost completely solid thyroid nodule on ultrasound that is hypoechoic relative to adjacent parenchyma. The nodule is wider than it is tall, has a smooth margin, and contains macrocalcifications with associated posterior acoustic shadowing.\n\nWhat is the most appropriate ACR TI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["TR1", "TR2", "TR3", "TR4", "TR5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "TR4",
+          "correct_options": null,
+          "explanation": "Solid composition contributes 2 points, hypoechoic echogenicity contributes 2 points, and the macrocalcifications contribute a further 1 point, giving a total of 5 points; the wider-than-tall shape and smooth margin each add 0 points. A total of 5 points falls within the 4-to-6-point range that defines TR4, distinguishing it from the 3-point total that would instead correspond to TR3. The additional point from macrocalcifications is specifically what pushes this nodule from a TR3-range total into the TR4 range.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 22,
+        "question_text": "A 50-year-old man has a solid or almost completely solid thyroid nodule on ultrasound that is hyperechoic relative to adjacent parenchyma. On the transverse image the nodule is taller than it is wide, with a smooth margin, and shows no echogenic foci other than large comet-tail artefacts.\n\nWhat is the most appropriate ACR TI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["TR1", "TR2", "TR3", "TR4", "TR5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "TR4",
+          "correct_options": null,
+          "explanation": "Solid composition contributes 2 points, hyperechoic echogenicity contributes 1 point, and the taller-than-wide shape contributes a further 3 points, giving a total of 6 points; the smooth margin and absence of suspicious echogenic foci add nothing further. A total of 6 points remains within the 4-to-6-point range for TR4, one point below the threshold of 7 points or more that would instead define TR5. The taller-than-wide shape, rather than a margin or echogenic foci abnormality, is the dominant contributor here.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 23,
+        "question_text": "A 63-year-old woman has a solid or almost completely solid thyroid nodule on ultrasound that is very hypoechoic, more hypoechoic than the adjacent strap muscles. On the transverse image the nodule is taller than it is wide, with a smooth margin, and shows no echogenic foci other than large comet-tail artefacts.\n\nWhat is the most appropriate ACR TI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["TR1", "TR2", "TR3", "TR4", "TR5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "TR5",
+          "correct_options": null,
+          "explanation": "Solid composition contributes 2 points, very hypoechoic echogenicity contributes 3 points, and the taller-than-wide shape contributes a further 3 points, giving a total of 8 points; the smooth margin and absence of suspicious echogenic foci add nothing further. A total of 8 points exceeds the 7-point threshold that defines TR5, in contrast to a 6-point total that would instead remain within the TR4 range. The combination of very hypoechoic echogenicity and taller-than-wide shape together accounts for the jump into the highest-suspicion category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 24,
+        "question_text": "A 58-year-old man has a solid or almost completely solid thyroid nodule on ultrasound that is hypoechoic relative to adjacent parenchyma. The nodule is wider than it is tall, has a smooth margin, and contains both macrocalcifications with posterior acoustic shadowing and separate punctate, dot-like echogenic foci less than 1 mm in diameter.\n\nWhat is the most appropriate ACR TI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["TR1", "TR2", "TR3", "TR4", "TR5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "TR5",
+          "correct_options": null,
+          "explanation": "Solid composition contributes 2 points and hypoechoic echogenicity contributes 2 points; because echogenic foci is the only category in which more than one feature can be selected, both the macrocalcifications (1 point) and the punctate echogenic foci (3 points) are added, contributing 4 points from that category alone. The wider-than-tall shape and smooth margin each add 0 points, giving a total of 8 points, which places this nodule at TR5 despite the absence of a suspicious shape or margin. This illustrates how a benign-appearing shape and margin can still be outweighed by a heavily point-loaded echogenic foci category once multiple foci types coexist.",
+          "page_images": []
+        }
+      }
+    ]
+  }
+]

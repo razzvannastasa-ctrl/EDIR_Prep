@@ -280,6 +280,11 @@ Validation exception:
 - For risk-factor, complication, classification, or feature-list questions, wrong options should come from the same clinical category but must not be listed or implied by the source.
 - Avoid silly or obviously unrelated distractors unless the source topic genuinely offers no reasonable alternatives.
 - Do not use a distractor that is true from general medical knowledge if it would make the question ambiguous but is not supported by the source.
+- Check every incorrect option against the complete case-level `original_answer_pages`, not only against the generated explanation. Record the exact answer-page span used in the batch audit.
+- Reject test-wise wording whose falsity is telegraphed by `always`, `never`, `cannot`, `every`, `none`, `impossible`, `guaranteed`, or an equivalent universal claim. Legitimate numeric intervals such as "every 6 months" are not universal-claim giveaways.
+- Do not repair a weak distractor by merely softening an absolute (`always` to `usually`, `never` to `rarely`). Rewrite the complete option as a specific competing claim and re-check it against the Original Answer Page so that it remains false rather than becoming partly true.
+- For management questions, every distractor must compete within the management decision shown on the answer page (for example observation versus medical, image-guided, endoscopic, or surgical treatment). Unrelated organ procedures and random therapies fail validation even if medically real.
+- Before insertion, perform a per-option audit: preserve the keyed correct indices, confirm each unselected option remains false against the answer page, reject near-duplicate options, and confirm that no rewrite changes a numeric threshold unless that source-grounded change is deliberate and documented.
 
 **Anti-hallucination rules:**
 - The textbook's model answer is authoritative for findings and diagnosis. Do NOT second-guess it.
@@ -454,6 +459,11 @@ high-yield management/disease-fact question. Typical length: 3–5 questions.
 - For risk-factor, complication, classification, or feature-list questions, wrong options should come from the same clinical category but must not be listed or implied by the source.
 - Avoid silly or obviously unrelated distractors unless the source topic genuinely offers no reasonable alternatives.
 - Do not use a distractor that is true from general medical knowledge if it would make the question ambiguous but is not supported by the source.
+- Check every incorrect option against the complete case-level `original_answer_pages`, not only against the generated explanation. Record the exact answer-page span used in the batch audit.
+- Reject test-wise wording whose falsity is telegraphed by `always`, `never`, `cannot`, `every`, `none`, `impossible`, `guaranteed`, or an equivalent universal claim. Legitimate numeric intervals such as "every 6 months" are not universal-claim giveaways.
+- Do not repair a weak distractor by merely softening an absolute (`always` to `usually`, `never` to `rarely`). Rewrite the complete option as a specific competing claim and re-check it against the Original Answer Page so that it remains false rather than becoming partly true.
+- For management questions, every distractor must compete within the management decision shown on the answer page. Unrelated organ procedures and random therapies fail validation even if medically real.
+- Before insertion, perform a per-option audit: preserve the keyed correct indices, confirm each unselected option remains false against the answer page, reject near-duplicate options, and confirm that no rewrite changes a numeric threshold unless that source-grounded change is deliberate and documented.
 
 4. **Explanation** (1–4 sentences): imaging features supporting diagnosis; why main distractors are excluded. Never reference options by letter — refer to the relevant content instead (e.g. "The claim that X is incorrect because…" not "Option b is incorrect").
 

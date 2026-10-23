@@ -1,0 +1,333 @@
+[
+  {
+    "chapter_id": 1,
+    "chapter_match": "exact",
+    "source": "Reporting Systems",
+    "section": "mrq",
+    "library_key": "edir",
+    "clinical_vignette": "RECIST 1.1 — Hepatic/Nodal Target Lesions & General Principles",
+    "article_summary": "### RECIST 1.1 (Response Evaluation Criteria In Solid Tumours)\n**Source:** Eisenhauer EA, Therasse P, Bogaerts J, et al. New response evaluation criteria in solid tumours: revised RECIST guideline (version 1.1). European Journal of Cancer 2009;45:228-247 (EORTC/NCI/NCIC RECIST Working Group).\n**Scope:** Standardised anatomical CT/MRI (with limited roles for clinical exam and chest X-ray) criteria for measuring solid tumour burden and assigning an objective response category in cancer clinical trials. This case covers hepatic and nodal target-lesion examples plus all organ-agnostic general principles: measurability, target/non-target lesion selection, the formal response-category definitions, non-target progression rules and new-lesion rules.\n\n### Category cheat-sheet\n- **Complete Response (CR):** All target lesions have disappeared and every pathological lymph node (target or non-target) has shrunk to a short axis below 10 mm.\n- **Partial Response (PR):** The sum of target-lesion diameters has fallen by at least 30% from the baseline sum, with no new lesions and no unequivocal progression of non-target disease.\n- **Stable Disease (SD):** Neither enough shrinkage to qualify for PR nor enough growth to qualify for PD, measured against the smallest sum of diameters recorded at any point on study.\n- **Progressive Disease (PD):** The sum of target-lesion diameters has risen by at least 20% relative to the smallest sum on study AND by at least 5 mm in absolute terms, or a new lesion has appeared, or non-target disease shows unequivocal progression.\n- **Not evaluable (NE):** Assigned when a scheduled assessment is missing or incomplete such that the overall response at that time point (or overall) cannot be determined.\n\n### Key imaging/scoring points\n- Minimum measurable size: 10 mm by CT (slice thickness ≤ 5 mm; otherwise twice the slice thickness), 10 mm by caliper on clinical exam (superficial lesions only), 20 mm by chest X-ray.\n- Pathological lymph nodes: short axis ≥ 15 mm on CT = measurable/eligible as a target lesion; short axis 10-14 mm = non-target only; short axis < 10 mm = non-pathological, not recorded.\n- Only the short axis of a node is measured and summed, never the long axis; a node's actual short axis is still recorded even once it falls below 10 mm, so the sum of diameters need not reach zero for a patient to achieve CR.\n- Maximum of five target lesions in total, maximum two per organ, selected for size and reproducibility of repeat measurement (the largest lesion is not chosen if it cannot be reliably remeasured).\n- Non-target lesions are recorded as present/absent/unequivocal progression only, not measured; multiple lesions in one organ (e.g. multiple liver metastases) may be logged as a single item.\n- 'Too small to measure' lesions are assigned a default of 5 mm if believed still present, or 0 mm if believed to have disappeared.\n- New lesions do not need to meet formal measurability criteria to indicate progression; an equivocal new lesion can be watched to the next assessment, with the progression date backdated to the scan on which it was first suspected if later confirmed. A lesion found on follow-up imaging in a region not scanned at baseline also counts as a new lesion.\n- Confirmation of CR/PR is required only in non-randomised trials where response is the primary endpoint; it is not required in randomised trials or when SD/PD are the primary endpoints.\n\n### Practical/management implications\nPR and CR both represent objective tumour regression and typically support continuation of an effective regimen; SD supports continued treatment pending further reassessment, subject to any protocol-specified minimum SD duration; PD (whether target-based, non-target-based via unequivocal progression, or new-lesion-based) generally prompts discontinuation of the current therapy. Because nodal short-axis measurements persist even after normalisation, trial case report forms must allow a non-zero sum at CR when target nodes were selected. NE time points complicate best-overall-response determination and must be handled per the trial's pre-specified analysis plan.\n\n### Pitfalls and limitations\n- Ultrasound must never be used to measure tumour lesions for RECIST purposes because examinations are operator-dependent and not reproducible for independent review.\n- Delineating the true tumour boundary is often difficult in organs with similar attenuation to the mass itself, including the liver, pancreas, kidney, adrenal and spleen, making consistent technique across time points essential.\n- The number and conspicuity of hepatic metastases can differ markedly between the arterial and portal venous contrast phases, so the same acquisition protocol should be used at baseline and every follow-up; triphasic CT is specifically recommended for hepatocellular and neuroendocrine tumours.\n- Central low-dose/attenuation-correction CT from a combined PET-CT should not be substituted for a dedicated diagnostic contrast-enhanced CT unless a site has documented equivalent diagnostic quality.\n- Necrosis developing within a previously solid liver lesion should not be misreported as a new lesion.\n- A modest increase in one or two non-target lesions is usually insufficient for 'unequivocal progression'; this designation should be rare when target disease is stable or responding.\n- Reappearance of a single lesion that had disappeared is only automatically PD if the patient had previously achieved CR; in the setting of PR or SD, the reappeared lesion's measurement is simply added back into the sum.\n\n### Take-home points\n- Target lesion selection is capped at five in total and two per organ, chosen for size and reproducible remeasurement, not size alone.\n- Pathological lymph nodes are assessed and summed by short axis only, with distinct 15 mm/10 mm thresholds separating target, non-target and normal nodes.\n- PD from target disease requires both a 20% relative increase and a 5 mm absolute increase over the study nadir; a new lesion or unequivocal non-target progression is independently sufficient for PD.\n- 'Non-CR/Non-PD' is the preferred descriptor for stable non-target disease; unequivocal progression of non-target disease overriding stable/responding target disease should be an extremely rare event.\n- Consistent imaging technique (modality, contrast phase, slice thickness) across baseline and follow-up is essential for reproducible RECIST measurement, particularly in organs like the liver where lesion conspicuity is phase-dependent.",
+    "questions": [
+      {
+        "q_number": 1,
+        "question_text": "Regarding the measurability of tumour lesions and lymph nodes at baseline under RECIST 1.1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A pulmonary nodule measuring 8 mm on CT performed with 5 mm slice thickness is measurable.",
+          "A superficial skin nodule measuring 12 mm and assessed with calipers may be recorded as a measurable clinical lesion.",
+          "A lesion measuring 15 mm on chest X-ray, clearly defined and surrounded by aerated lung, is measurable.",
+          "A lymph node with a short axis of 18 mm on CT is considered pathologically enlarged and measurable.",
+          "An abdominal mass identified only on physical examination, with no correlate on reproducible imaging, is measurable."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            3
+          ],
+          "explanation": "A clinical lesion assessed with calipers is only considered measurable when it is superficial and at least 10 mm in diameter, so a 12 mm caliper-assessed skin nodule qualifies. A lymph node is classed as pathologically enlarged and eligible as a target lesion once its short axis reaches at least 15 mm on CT. By contrast, CT lesions need a longest diameter of at least 10 mm (not 8 mm) at a slice thickness of 5 mm or less, and chest X-ray lesions need at least 20 mm rather than 15 mm to qualify as measurable. An abdominal mass or organomegaly identified only by physical examination and not correlating with reproducible imaging is explicitly classed as truly non-measurable.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 2,
+        "question_text": "Regarding lymph node assessment under RECIST 1.1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Only the short axis of a pathological lymph node is measured and followed, both at baseline and during follow-up.",
+          "A node with a short axis of 12 mm should be recorded as a target lesion if it is the largest lesion available in that patient.",
+          "When a lymph node is selected as a target lesion, its actual short axis measurement should still be recorded even if it regresses to below 10 mm on treatment.",
+          "A node reported as measuring 25 mm by 12 mm on CT has a short axis of 25 mm for RECIST purposes.",
+          "For a target lymph node to be counted towards a complete response, its short axis must fall below 10 mm."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            2,
+            4
+          ],
+          "explanation": "RECIST 1.1 uses the short axis, not the long axis, as the dimension both defining nodal pathology and contributing to the sum of target lesion diameters, so a node reported as 25 mm by 12 mm has a short axis of 12 mm, not 25 mm. A node with a short axis of only 12 mm falls into the 10-14 mm non-target category and cannot be selected as a target lesion, which requires at least 15 mm. Once a node is chosen as a target lesion its actual short axis continues to be recorded at every subsequent assessment, even once it regresses below 10 mm, and complete response specifically requires that short axis to fall below 10 mm.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 3,
+        "question_text": "A patient with metastatic colorectal cancer has two hepatic target lesions and one target retroperitoneal lymph node selected at baseline, giving a baseline sum of diameters (longest diameter for the liver lesions, short axis for the node) of 62 mm. At the first on-treatment CT the liver lesions have shrunk and the nodal short axis has decreased, giving a new sum of 40 mm. No new lesions are seen, and the non-target lesions remain unchanged in a Non-CR/Non-PD pattern.\n\nWhat is the most appropriate RECIST 1.1 category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Progressive Disease",
+          "Complete Response",
+          "Partial Response",
+          "Not evaluable",
+          "Stable Disease"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Partial Response",
+          "correct_options": null,
+          "explanation": "The sum of target lesion diameters has fallen from 62 mm to 40 mm, a decrease of just over 30% from the baseline sum, which meets the threshold for partial response. Complete response is not met because the target lesions and nodal short axis have not disappeared or fallen below 10 mm, and progressive disease is excluded because the sum has decreased rather than increased. Non-target disease is unchanged (Non-CR/Non-PD) and no new lesions are present, so nothing overrides the target-lesion-based partial response, and the assessment was performed with all lesions evaluated, so the case is evaluable.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 4,
+        "question_text": "Regarding special considerations in lesion measurability under RECIST 1.1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Blastic bone lesions with an identifiable soft tissue component are measurable if that soft tissue component meets the size criteria.",
+          "A tumour lesion situated in a previously irradiated area is usually considered measurable regardless of whether progression has since been demonstrated in that lesion.",
+          "A cystic lesion thought to represent a cystic metastasis can be selected as a target lesion if it meets the size criteria for measurability, but a non-cystic lesion should be preferred if one is present in the same patient.",
+          "A radiographically defined simple cyst should be recorded as a non-measurable malignant lesion.",
+          "Bone scan or plain film imaging is an adequate technique for measuring the size of a lytic bone lesion."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            2
+          ],
+          "explanation": "A cystic lesion thought to represent a metastasis can be used as a target lesion once it meets the measurability criteria, but the guideline specifically states that a non-cystic lesion in the same patient should be preferred for selection. Blastic bone lesions are classed as non-measurable regardless of any soft tissue component; only lytic or mixed lytic-blastic lesions with an identifiable soft tissue component evaluable by CT or MRI can be measurable. A lesion in a previously irradiated field is usually not considered measurable unless progression has been demonstrated there, and a simple cyst meeting radiographic criteria is not treated as a malignant lesion at all, so it is neither measurable nor non-measurable rather than being recorded as non-measurable disease. Bone scan and plain film can only confirm the presence or disappearance of a bone lesion; they are not adequate for measuring its size.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 5,
+        "question_text": "Regarding the selection and recording of target and non-target lesions at baseline under RECIST 1.1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A maximum of five target lesions may be recorded in total, with no more than two from any single organ.",
+          "Target lesions should be selected on the basis of size and representativeness of all involved organs, but a smaller lesion that lends itself to reproducible repeat measurement may be chosen over a larger lesion that does not.",
+          "All lesions not selected as target lesions are excluded from the baseline case record and are not tracked for the remainder of the study.",
+          "Multiple non-target lesions within the same organ, such as multiple liver metastases, may be recorded as a single item on the case record form.",
+          "In a patient whose disease is confined to only two organ sites, a maximum of four target lesions in total may be recorded."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "explanation": "RECIST 1.1 caps target lesion selection at five in total and two per involved organ, so a patient with disease in only two organs can have at most four target lesions recorded. Selection is based on lesion size and organ representativeness, but reproducibility of repeat measurement is also a criterion, so the largest lesion is passed over for the next largest reproducibly measurable lesion when necessary. Lesions not chosen as targets are not simply discarded: they are recorded and followed as non-target disease (present, absent, or in rare cases unequivocal progression), and multiple non-target lesions in one organ may be logged together as a single case-record item such as 'multiple liver metastases'.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 6,
+        "question_text": "A patient with metastatic gastric cancer had two hepatic target lesions and one target coeliac lymph node, with a baseline short axis of 22 mm, selected at study entry. On the follow-up CT both hepatic lesions have disappeared, the previously enlarged lymph node has regressed to a short axis of 8 mm, no non-target lesions remain, and no new lesions are present.\n\nWhat is the most appropriate RECIST 1.1 category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Stable Disease",
+          "Not evaluable",
+          "Progressive Disease",
+          "Complete Response",
+          "Partial Response"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Complete Response",
+          "correct_options": null,
+          "explanation": "Complete response for target disease requires disappearance of all non-nodal target lesions and, for any target or non-target lymph node, regression of the short axis to below 10 mm; both criteria are met here since the hepatic lesions have disappeared and the nodal short axis has fallen to 8 mm. Non-target disease has also resolved completely and no new lesions have appeared, so nothing overrides the target-based assessment. Partial response is excluded because there has been complete disappearance rather than a partial decrease, and progressive disease is excluded because there is neither growth of measured disease nor a new lesion.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 7,
+        "question_text": "Regarding the RECIST 1.1 definitions of response for target lesions, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Partial response requires at least a 30% decrease in the sum of target lesion diameters relative to the baseline sum.",
+          "Progressive disease is defined solely by a 20% increase in the sum of target lesion diameters relative to the smallest sum recorded on study.",
+          "Stable disease is defined by comparing the current sum of diameters against the baseline sum only, regardless of any interim measurements.",
+          "Complete response of target disease can be declared even if a previously involved pathological lymph node has a persisting short axis of 12 mm.",
+          "Progressive disease for target lesions requires both a relative increase of at least 20% and an absolute increase of at least 5 mm in the sum of diameters."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            4
+          ],
+          "explanation": "Partial response is defined as at least a 30% decrease in the sum of target lesion diameters from the baseline sum. Progressive disease requires more than just a 20% relative increase from the smallest sum on study: an absolute increase of at least 5 mm is also required, specifically to avoid over-calling progression when the total sum is very small. Stable disease is assessed against the smallest sum of diameters recorded at any point on study, not the baseline sum alone, and complete response cannot be declared while any previously involved lymph node still has a short axis of 10 mm or more, so a persisting 12 mm node would exclude complete response.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 8,
+        "question_text": "Regarding evaluation of non-target lesions and 'unequivocal progression' under RECIST 1.1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "'Stable disease' is the preferred descriptor for persistent non-target lesions that have neither disappeared nor progressed.",
+          "A modest increase in the size of one or more non-target lesions is usually not sufficient, on its own, to qualify as unequivocal progression.",
+          "When measurable target disease is present, declaring overall progressive disease on the basis of non-target disease alone, in the face of stable or responding target disease, should be extremely rare.",
+          "Unequivocal progression of non-target disease must represent a substantial overall worsening of tumour burden, of a magnitude that would prompt a change in therapy even while target disease is stable or responding.",
+          "Complete response of non-target disease can be declared even if a previously involved lymph node still measures 12 mm in short axis."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            2,
+            3
+          ],
+          "explanation": "Because a modest increase in one or a few non-target lesions is usually insufficient to represent overall worsening, unequivocal progression on the basis of non-target disease alone, while target disease remains stable or responding, is described as an event that should be extremely rare. The guideline is explicit that this designation requires a substantial worsening of overall tumour burden, of a magnitude that would lead a treating physician to change therapy. 'Non-CR/Non-PD' rather than 'stable disease' is the preferred term for persistent non-target disease, since stable disease is increasingly used as an efficacy endpoint elsewhere in a trial. Complete response of non-target disease also requires all lymph nodes to be non-pathological in size (below 10 mm short axis), so a persisting 12 mm node would exclude it.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 9,
+        "question_text": "A patient with metastatic pancreatic neuroendocrine tumour has three hepatic target lesions and one target portal lymph node, with a baseline sum of diameters of 58 mm, which is also the smallest sum recorded at any point on study. At the current assessment the sum has increased slightly to 62 mm, no new lesions are present, and the non-target disease remains in a Non-CR/Non-PD pattern.\n\nWhat is the most appropriate RECIST 1.1 category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Progressive Disease",
+          "Partial Response",
+          "Not evaluable",
+          "Complete Response",
+          "Stable Disease"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Stable Disease",
+          "correct_options": null,
+          "explanation": "The sum of target lesion diameters has increased from the study nadir of 58 mm to 62 mm, an absolute change of only 4 mm and a relative change of under 7%, which meets neither the 30% decrease required for partial response nor the combined 20% relative and 5 mm absolute increase required for progressive disease. With non-target disease unchanged (Non-CR/Non-PD) and no new lesions, there is no basis for an overall category other than stable disease, and since a full assessment was performed the case is evaluable rather than not evaluable.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 10,
+        "question_text": "Regarding the identification of new lesions under RECIST 1.1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A lesion detected on follow-up imaging in an anatomical region that was not scanned at baseline should be disregarded when assessing progression.",
+          "Any subcentimetre new lesion must meet formal measurability criteria before it can be counted as evidence of progression.",
+          "A new lesion that is equivocal, for example because of its small size, can be reassessed at the next scheduled evaluation before progression is declared.",
+          "If repeat imaging subsequently confirms a previously equivocal new lesion, the date of progression should be taken as the date of the scan on which it was first suspected.",
+          "Necrosis developing within an existing liver lesion should be reported as a new lesion for the purposes of progression assessment."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            2,
+            3
+          ],
+          "explanation": "New lesions do not need to satisfy formal measurability criteria to indicate progression; the key requirement is that their appearance be unequivocal. When a new lesion is equivocal because of factors such as small size, continuing therapy and reassessing at the next scheduled evaluation is appropriate, and if that follow-up confirms the lesion, progression is backdated to the date it was first suspected rather than the confirmatory scan. A lesion identified in a body region that was not imaged at baseline is explicitly considered a new lesion and therefore evidence of progression, not something to be disregarded, and necrosis appearing within a previously solid liver lesion is specifically cited as an example of a finding that should not be misreported as a new lesion.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 11,
+        "question_text": "Regarding special notes on the assessment of target lesions during follow-up under RECIST 1.1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A target lesion judged by the radiologist to be present but too faint to measure accurately should be assigned a default value of 5 mm.",
+          "A target lesion believed by the radiologist to have disappeared entirely should be recorded with a measurement of 0 mm.",
+          "When non-nodal target lesions truly coalesce so that they can no longer be separated, the longest diameter of the merged mass is used in the sum of diameters.",
+          "If a single lesion among several lesions showing partial response disappears and then reappears at a later assessment, the reappearance alone establishes progressive disease for that patient.",
+          "If a target lesion that had previously reached complete response later reappears, this reappearance alone is sufficient to classify the patient as having progressive disease."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "explanation": "Lesions judged too faint to measure accurately but believed still present are assigned a default value of 5 mm, derived from the standard 5 mm CT slice thickness, while lesions believed to have genuinely disappeared are recorded as 0 mm; both defaults prevent spurious apparent response or progression from measurement error. When non-nodal lesions truly coalesce and can no longer be separated, the longest diameter of the merged mass is used in the sum. Whether reappearance of a single lesion signifies progression depends on the prior response status: if the patient had achieved complete response, reappearance of any lesion is by itself sufficient to declare progressive disease, but if the patient was only in partial response or stable disease, the reappeared lesion's measurement is simply added back into the sum of the remaining lesions rather than automatically triggering progression.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 12,
+        "question_text": "A patient with metastatic ovarian cancer has two hepatic target lesions and one target pelvic lymph node. The smallest sum of diameters recorded at any point on study, occurring at cycle 4, was 45 mm. At the current assessment the sum has risen to 58 mm, an increase of 13 mm from that nadir, with no new lesions seen and the non-target disease unchanged.\n\nWhat is the most appropriate RECIST 1.1 category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Complete Response",
+          "Progressive Disease",
+          "Stable Disease",
+          "Not evaluable",
+          "Partial Response"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Progressive Disease",
+          "correct_options": null,
+          "explanation": "The sum of target lesion diameters has increased from the nadir of 45 mm to 58 mm, a rise of 13 mm, which represents both a relative increase of just under 29% (above the 20% threshold) and an absolute increase well above the required 5 mm, so the criteria for target-lesion progressive disease are both met. Stable disease and partial response are excluded because the sum has increased rather than remained within the stable range or decreased, and complete response is excluded because target and non-target disease are both still present. The finding of progression here rests on the target lesion measurements themselves rather than on a new lesion or non-target worsening, and the assessment is fully evaluable.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 13,
+        "question_text": "Regarding confirmation of response and best overall response under RECIST 1.1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Confirmation of complete or partial response is required in non-randomised trials where response is the primary endpoint.",
+          "Confirmation of response is required in randomised trials whenever objective response is recorded as a secondary endpoint.",
+          "Best overall response is determined solely by the response recorded at the final protocol assessment, without reference to earlier time points.",
+          "Stable disease can only be claimed as the best overall response if it also meets a protocol-specified minimum duration from baseline.",
+          "Symptomatic deterioration leading to discontinuation of therapy, without objective evidence of disease progression, is recorded as a reason for stopping treatment rather than as an objective response category."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            3,
+            4
+          ],
+          "explanation": "Confirmation of complete or partial response is specifically required in non-randomised trials where response is the primary endpoint, to guard against measurement error, but this requirement does not extend to randomised trials, where the control arm provides an appropriate basis for interpreting results regardless of whether response is a secondary endpoint. Best overall response is the best response recorded across all time points on study, not simply the final assessment, and when stable disease would otherwise be the best response it can only be claimed if the protocol-specified minimum duration from baseline is met. Symptomatic deterioration prompting discontinuation of therapy without objective evidence of progression is explicitly described as a reason for stopping study treatment rather than as an objective response designation.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 14,
+        "question_text": "Regarding CT technique for hepatic lesion assessment under RECIST 1.1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Triphasic CT is recommended as the standard acquisition for all solid tumour types undergoing RECIST assessment.",
+          "The number and measurable size of hepatic metastases can differ substantially between the arterial and portal venous phases of contrast administration, so a consistent scanning technique should be used at baseline and every follow-up.",
+          "Ultrasound is an acceptable alternative to CT for measuring hepatic target lesions, provided a single consistent operator performs the follow-up scans.",
+          "The CT portion of a combined PET-CT scan is routinely of equivalent diagnostic quality to a dedicated contrast-enhanced CT for measuring hepatic target lesions.",
+          "Difficulty delineating a hepatic metastasis from surrounding normal liver parenchyma on cross-sectional imaging has no bearing on the reproducibility of RECIST measurements."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1
+          ],
+          "explanation": "The guideline illustrates, with a hepatic example, that the number of visible metastases and their apparent size can differ greatly between the arterial and portal venous phases of contrast administration, which is why consistent acquisition technique, including contrast phase, is important at baseline and on every subsequent scan. Triphasic CT is only specifically recommended for hepatocellular and neuroendocrine tumours, where it is standard of care, not as a universal acquisition for all tumour types. Ultrasound is not considered acceptable for RECIST measurement regardless of operator consistency, since examinations cannot be reproduced for independent review, and the low-dose CT portion of a combined PET-CT can only substitute for a dedicated diagnostic CT if a site has specifically documented equivalent diagnostic quality, which is not assumed to be routine. The guideline also notes that delineating a lesion embedded in an organ of similar contrast to itself, such as the liver, can be genuinely difficult and affects the reproducibility of measurement.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 15,
+        "question_text": "A patient with metastatic hepatocellular carcinoma has two hepatic target lesions and one target coeliac lymph node. At the scheduled 8-week assessment the patient was too unwell to attend for imaging, and no scan of any kind was performed at that time point.\n\nWhat is the most appropriate RECIST 1.1 category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Partial Response",
+          "Complete Response",
+          "Not evaluable",
+          "Progressive Disease",
+          "Stable Disease"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Not evaluable",
+          "correct_options": null,
+          "explanation": "When no imaging or measurement is performed at all at a particular protocol-specified time point, the patient is classified as not evaluable at that time point, since there is no data from which to assign complete response, partial response, stable disease or progressive disease. This differs from a partial-assessment scenario, where a convincing case that the missing lesions would not change the assigned response (most plausibly for progressive disease) can sometimes still support a category; here, the complete absence of any scan leaves no basis for such an argument. This 'not evaluable' status is provisional to that assessment point and does not itself represent a response category.",
+          "page_images": []
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,523 @@
+[
+  {
+    "chapter_id": 5,
+    "chapter_match": "exact",
+    "source": "Reporting Systems",
+    "section": "mrq",
+    "library_key": "edir",
+    "clinical_vignette": "O-RADS (Ovarian-Adnexal Reporting and Data System) — US v2022 & MRI 2020",
+    "article_summary": "### O-RADS (Ovarian-Adnexal Reporting and Data System)\n**Source:** O-RADS US v2022 — Assessment Categories & Classic Benign Lesions (American College of Radiology, Release Date November 2022); O-RADS MRI Risk Stratification and Management System (American College of Radiology, criteria based on Thomassin-Naggara et al., 2020)\n**Scope:** A risk-stratification and management system for ovarian and adnexal lesions, with a dedicated ultrasound (US) lexicon/scoring pathway and a separate, criteria-based MRI scoring pathway; used to standardise reporting, estimate malignancy risk, and guide follow-up or referral.\n\n### Category cheat-sheet\n\n**US O-RADS 0 — Incomplete evaluation:** technical factors prevent adequate assessment; repeat ultrasound or proceed to MRI.\n**US O-RADS 1 — Normal ovary:** no ovarian lesion, or only a physiological follicle/corpus luteum ≤3 cm; no follow-up needed.\n**US O-RADS 2 — Almost certainly benign (<1%):** a simple/near-simple unilocular cyst, a smooth bilocular cyst, or a typical benign lesion (haemorrhagic cyst, dermoid, endometrioma, paraovarian cyst, peritoneal inclusion cyst, hydrosalpinx) under 10 cm; no action or short-interval follow-up.\n**US O-RADS 3 — Low risk (1–<10%):** the same simple/typical benign lesion types once they reach 10 cm or more, or an irregular unilocular cyst, a smooth multilocular cyst with low vascularity, or a smooth solid lesion with low-to-moderate flow; imaging follow-up and/or gynaecologist review.\n**US O-RADS 4 — Intermediate risk (10–<50%):** a cyst (uni-, bi-, or multilocular) with a solid component and limited vascularity, an irregular bilocular/multilocular cyst, a very vascular smooth multilocular cyst, or a smooth non-shadowing solid lesion with moderate flow; gynaecologist plus gynaecological oncology input, MRI, or US specialist review.\n**US O-RADS 5 — High risk (≥50%):** a unilocular cyst with 4 or more papillary projections, a cyst with a solid component and high vascularity, a very vascular smooth solid lesion, any irregular solid lesion, or ascites/peritoneal nodules; managed per gynaecological oncology protocol.\n\n**MRI O-RADS 0 — Incomplete evaluation:** a technical limitation prevents scoring.\n**MRI O-RADS 1 — Normal ovaries:** no lesion, or a simple follicle, hemorrhagic cyst, or corpus luteum ≤3 cm in a premenopausal woman.\n**MRI O-RADS 2 — Almost certainly benign (<0.5%):** a unilocular cyst with no enhancing solid tissue (simple, endometriotic, or lipid content), a homogeneously \"dark T2/dark DWI\" solid component, or a simple-fluid dilated tube/paraovarian cyst with a thin smooth wall and no solid tissue.\n**MRI O-RADS 3 — Low risk (~5%):** a unilocular cyst with more complex (proteinaceous/haemorrhagic/mucinous) fluid and a smooth enhancing wall, a multilocular non-lipid cyst with smooth enhancing septae/wall, or solid tissue with a low-risk time-intensity curve on dynamic contrast enhancement, all without a higher-risk enhancement pattern.\n**MRI O-RADS 4 — Intermediate risk (~50%):** solid tissue (excluding dark T2/DWI) with an intermediate-risk time-intensity curve, or enhancing no more than the myometrium at 30–40 seconds without dynamic imaging; or a lipid-containing lesion with large-volume enhancing solid tissue.\n**MRI O-RADS 5 — High risk (~90%):** solid tissue with a high-risk time-intensity curve, or enhancing more than the myometrium at 30–40 seconds without dynamic imaging; or peritoneal/mesenteric/omental nodularity or irregular thickening with or without ascites.\n\n### Key imaging/scoring points\n- US relies on lexicon descriptors: locularity (uni-/bi-/multilocular), wall/septal smoothness versus irregularity, presence and number of papillary projections, percentage solid tissue (≥80% defines a solid lesion), colour score (CS 1–4) for intralesional vascularity, and diffuse/broad shadowing (refractive shadowing excluded).\n- MRI relies on whether solid tissue enhances and its morphology (papillary projection, mural nodule, irregular septum/wall, or a larger solid portion), whether solid tissue is homogeneously \"dark\" on both T2 and DWI (a benign-pattern exception), lipid content, and dynamic contrast-enhanced (DCE, ≤15-second temporal resolution) time-intensity curve risk (low/intermediate/high). If DCE is not performed, a non-DCE surrogate threshold is used: solid tissue enhancement compared with myometrial enhancement at 30–40 seconds.\n- Menopausal status on US is defined by ≥1 year of amenorrhoea (early <5 years, late ≥5 years); if uncertain or the uterus is absent, age is used instead (early >50–<55 years, late ≥55 years).\n- Bilocular, smooth cysts carry a lower malignancy risk than other lesion types on US, regardless of size or colour score.\n- MRI with contrast is noted to have higher specificity than US for solid lesions and for cystic lesions with a solid component, and is offered as a next step from several higher US categories.\n- Minimal enhancement of a Rokitansky nodule in a lipid-containing lesion does not upgrade an MRI score to the intermediate-risk category.\n\n### Practical/management implications\n- US categories 1–2 generally need no action or routine interval follow-up only.\n- US category 3 triggers imaging follow-up (or MRI/US-specialist review if solid) with gynaecologist input; category 4 adds gynaecological oncology consultation; category 5 is managed entirely per gynaecological oncology protocol.\n- MRI scores map onto an equivalent risk-driven pathway: categories 1–2 are reassuring, category 3 supports continued surveillance, and categories 4–5 escalate toward oncological work-up, in keeping with their approximate 5%, 50%, and 90% malignancy risk.\n- See the cheat-sheet above for the size/vascularity/enhancement thresholds that drive each of these decisions.\n\n### Pitfalls and limitations\n- A late postmenopausal woman (≥5 years of amenorrhoea) should not have a \"typical hemorrhagic cyst\" appearance; this should prompt recategorisation with other lexicon descriptors rather than being accepted at face value.\n- Small (<3 mm) inner-wall irregularity of a cyst does not meet the threshold to be called a solid component/papillary projection (which requires a ≥3 mm protrusion), so it should not be over-called as a solid feature.\n- On MRI, a homogeneously \"dark T2/dark DWI\" solid component is a specific benign-pattern exception and should not be scored using the time-intensity-curve criteria applied to other solid tissue.\n- The stated MRI positive predictive values apply to the category as a whole, not to individual lesion characteristics, and PPV data are not yet available at the level of individual features.\n- Score accuracy on MRI is reduced when dynamic contrast-enhanced imaging is not performed, so the non-DCE threshold is a lower-confidence substitute, not an equivalent method.\n\n### Take-home points\n- O-RADS uses the same five-point risk scale (plus category 0 for incomplete evaluation) on both US and MRI, but the underlying descriptors differ: colour score/shadowing/locularity on US versus solid-tissue enhancement pattern and time-intensity curve on MRI.\n- Size thresholds (notably the 10 cm cut-off on US) and vascularity/enhancement thresholds are the main drivers that move a lesion up or down a category.\n- Certain \"typical\" benign lesion types (haemorrhagic cyst, dermoid, endometrioma, paraovarian cyst, peritoneal inclusion cyst, hydrosalpinx) have their own defined US criteria and dedicated management pathways, separate from the general size/locularity/vascularity rules.\n- Ascites or peritoneal nodularity independently assigns the highest-risk category on both US and MRI, regardless of the ovarian lesion's own features.\n- MRI is positioned as a problem-solving step from indeterminate or higher-category US findings, particularly for solid or complex cystic lesions.",
+    "questions": [
+      {
+        "q_number": 1,
+        "question_text": "Regarding descriptors used in the O-RADS US v2022 lexicon, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A colour score (CS) of 1 indicates moderate intralesional flow",
+          "Shadowing is only considered a relevant descriptor when it is diffuse or broad; refractive shadowing from a cyst wall or septation does not qualify",
+          "A papillary projection is defined as any solid component, regardless of how much fluid surrounds it",
+          "A solid component is defined as tissue protruding at least 3 mm in height into the cyst lumen from a wall or septation",
+          "A lesion is classified as solid only when solid tissue accounts for at least 50% of its volume"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            3
+          ],
+          "explanation": "A colour score of 1 denotes no detectable intralesional vascularity, not moderate flow, and the lexicon reserves \"moderate flow\" for colour score 3. Shadowing counts as a descriptor only when diffuse or broad; refractive-type shadowing at a wall or septal edge is specifically excluded because it is a technical artefact rather than a tissue property. A papillary projection is a subtype of solid component that must be surrounded by fluid on three sides, not simply any solid tissue, and a lesion is only termed \"solid\" once at least 80% of it is solid tissue, not 50%. The 3 mm protrusion threshold correctly separates a true solid component from minor, non-qualifying wall irregularity.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 2,
+        "question_text": "Regarding the imaging and clinical management recommendations across the O-RADS US v2022 risk categories, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "O-RADS US category 0 (incomplete evaluation) is managed with a repeat ultrasound study or MRI",
+          "O-RADS US category 3 lesions are always referred directly to a gynaecological oncologist without any prior imaging follow-up",
+          "For a solid O-RADS US category 3 or 4 lesion, MRI with an O-RADS MRI score may be considered as part of further characterisation",
+          "O-RADS US category 5 lesions are managed with a follow-up ultrasound at 12 months before any specialist referral",
+          "O-RADS US category 4 lesions may be managed with gynaecologist review together with gynaecological oncology consultation, or solely by a gynaecological oncologist"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            2,
+            4
+          ],
+          "explanation": "Category 0 findings cannot be risk-stratified because of technical limitations, so the recommended step is simply to repeat the ultrasound or proceed to MRI. Category 3 lesions are managed by a gynaecologist, with imaging follow-up if not surgically excised, or referral to a US specialist or MRI when the lesion is solid; direct gynaecological oncology referral is not the stated pathway. Category 4 explicitly offers gynaecologist review with gynaecological oncology consultation, or management solely by a gynaecological oncologist, reflecting the intermediate risk. Category 5 lesions go straight to management per gynaecological oncology protocol; there is no interval follow-up ultrasound built into the category 5 pathway.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 3,
+        "question_text": "Regarding the O-RADS US v2022 definition of a typical hemorrhagic cyst, which of the following statements is correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A retractile clot within the cyst is defined by irregular, ill-defined margins",
+          "Internal vascularity within the cystic component is a required diagnostic feature",
+          "A reticular pattern of fine, thin intersecting lines represents fibrin strands within the cyst",
+          "A late postmenopausal woman (5 years or more of amenorrhoea) with these features should be assigned O-RADS US category 2 without further evaluation",
+          "A hemorrhagic cyst of any size in a premenopausal woman requires no follow-up"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            2
+          ],
+          "explanation": "The reticular pattern of fine, thin, intersecting internal lines is explicitly attributed to fibrin strands within a typical hemorrhagic cyst. A retractile clot is instead defined by straight, concave, or angular margins, not irregular ones, and the definition specifically requires the absence of internal vascularity, not its presence. This appearance should not occur in a late postmenopausal woman; if seen, the lesion should be recategorised using other lexicon descriptors rather than accepted as a typical hemorrhagic cyst. In a premenopausal woman, follow-up is only omitted for lesions up to 5 cm; larger lesions (over 5 cm but under 10 cm) require a follow-up scan at 2-3 months.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 4,
+        "question_text": "Regarding the O-RADS US v2022 criteria for a typical dermoid cyst, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The lesion must contain more than three locules to qualify as a typical dermoid cyst",
+          "Hyperechoic lines and dots are among the recognised sonographic features",
+          "Internal vascularity within the echogenic components is a required diagnostic feature",
+          "Floating echogenic spherical structures support the diagnosis",
+          "A dermoid cyst measuring 3-10 cm that is not surgically excised is managed with follow-up ultrasound at 12 months"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            3,
+            4
+          ],
+          "explanation": "A typical dermoid cyst is defined as a cystic lesion with three or fewer locules, so more than three locules would argue against the diagnosis rather than support it. Hyperechoic lines and dots, and floating echogenic spherical structures, are both listed as recognised supporting features, alongside a hyperechoic component with shadowing. The definition requires the absence of internal vascularity, not its presence. When a dermoid measuring between 3 cm and 10 cm is not surgically removed, the recommended pathway is a follow-up ultrasound at 12 months.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 5,
+        "question_text": "Regarding the O-RADS US v2022 criteria and management for a typical endometrioma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Homogeneous low-level or ground-glass internal echoes are a characteristic feature",
+          "Peripheral punctate echogenic foci within the cyst wall may be present",
+          "Internal vascularity within the lesion is a required diagnostic feature",
+          "Endometriomas carry an increased risk of malignancy after the menopause and when present for more than 10 years",
+          "In a postmenopausal woman with a lesion under 10 cm at initial examination, options include follow-up ultrasound in 2-3 months, referral to a US specialist, or MRI with an O-RADS MRI score"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "explanation": "A typical endometrioma is defined by homogeneous low-level or ground-glass internal echoes with smooth inner walls and septations, and may show peripheral punctate echogenic foci in the wall. The definition specifically requires no internal vascularity, so its presence would argue against this diagnosis. The evidence base supports an increased malignancy risk for endometriomas following the menopause and for those present for more than 10 years, which underlies the closer surveillance recommended in postmenopausal women. In that setting, a lesion under 10 cm at the initial scan can be confirmed by a short-interval follow-up ultrasound, referral to a US specialist, or MRI with an O-RADS MRI score.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 6,
+        "question_text": "Regarding menopausal status definitions used in the O-RADS US v2022 system, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Postmenopausal status is defined as at least 1 year of amenorrhoea",
+          "Early postmenopausal status is defined as amenorrhoea of 5 years or more",
+          "When menopausal status is uncertain, an age under 50 years should be used as a surrogate for the postmenopausal state",
+          "Bilocular, smooth cysts carry a higher risk of malignancy than unilocular cysts of the same size and colour score",
+          "If the uterus has been surgically removed and menopausal status is uncertain, age is used as a surrogate marker"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            4
+          ],
+          "explanation": "Postmenopausal status is defined by at least 1 year of amenorrhoea, with early postmenopause being under 5 years and late postmenopause being 5 years or more, so the option describing early postmenopause as 5 years or more inverts this definition. When menopausal status cannot be determined, or the uterus has been surgically removed, age is used instead, with the postmenopausal age threshold set above 50 years rather than below it. Bilocular, smooth cysts are explicitly noted to carry a lower risk of malignancy regardless of size or colour score, not a higher one.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 7,
+        "question_text": "Regarding O-RADS US v2022 category 2 (\"almost certainly benign\") lesions, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A simple cyst measuring 6 cm in a premenopausal woman requires no imaging follow-up",
+          "A bilocular, smooth cyst measuring 3 cm or less requires no imaging follow-up",
+          "A bilocular, smooth cyst measuring between 3 cm and 10 cm is followed up with ultrasound at 6 months",
+          "This category carries an estimated malignancy risk of less than 1%",
+          "A unilocular, smooth, non-simple cyst with internal echoes cannot be assigned to this category"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            2,
+            3
+          ],
+          "explanation": "A bilocular, smooth cyst of 3 cm or less needs no follow-up, while the same lesion type between 3 cm and 10 cm is followed up with ultrasound at 6 months; category 2 as a whole carries an estimated malignancy risk of under 1%. A simple cyst of 6 cm falls in the \"more than 5 cm but under 10 cm\" size band, which does require a 12-month follow-up scan rather than no follow-up at all. A unilocular, smooth, non-simple cyst with internal echoes and/or incomplete septations is explicitly listed within category 2, so it is not excluded from this category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 8,
+        "question_text": "Regarding the classic benign extraovarian and adnexal lesions recognised in the O-RADS US v2022 system, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A typical paraovarian cyst is a simple cyst that is separate from the ovary",
+          "A typical peritoneal inclusion cyst is characterised by a thick, irregular wall with internal vascularity",
+          "A typical hydrosalpinx appears as an anechoic, fluid-filled tubular structure",
+          "Endosalpingeal folds in a typical hydrosalpinx appear as short, round projections around the inner walls",
+          "A typical peritoneal inclusion cyst may show septations that represent adhesions"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "explanation": "A typical paraovarian cyst is defined simply as a simple cyst separate from the ovary, and a typical peritoneal inclusion cyst is a fluid collection with the ovary at its margin or suspended within it, conforming to the adjacent pelvic organs, with septations that represent adhesions rather than true internal architecture. A typical hydrosalpinx appears as an anechoic, fluid-filled tubular structure, sometimes with incomplete septations representing folds and short, round endosalpingeal fold projections around its inner walls. None of these classic benign lesions is defined by a thick, irregular, vascular wall; such a description would instead raise concern for a non-typical, higher-risk lesion.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 9,
+        "question_text": "A 34-year-old premenopausal woman undergoes transvaginal ultrasound for a palpable adnexal mass. The right ovary contains an 11 cm cystic lesion with three or fewer locules, no internal vascularity, and a focal hyperechoic component producing shadowing, together with scattered hyperechoic lines and dots, in keeping with a typical dermoid cyst.\n\nWhat is the most appropriate O-RADS US category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "O-RADS 1 (Normal Ovary/Ovaries)",
+          "O-RADS 2 (Almost Certainly Benign)",
+          "O-RADS 3 (Low Risk)",
+          "O-RADS 4 (Intermediate Risk)",
+          "O-RADS 5 (High Risk)"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "O-RADS 3 (Low Risk)",
+          "correct_options": null,
+          "explanation": "A cystic lesion with the sonographic features of a typical dermoid cyst (limited locularity, no internal vascularity, a shadowing hyperechoic component, hyperechoic lines and dots) is a classic benign lesion, but the O-RADS US v2022 size threshold for these typical benign lesions places any lesion measuring 10 cm or more into the low-risk category rather than the almost-certainly-benign category, which is reserved for the same lesion type under 10 cm. The lesion shows none of the multilocular, irregular, or vascular features that would raise it further to intermediate or high risk.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 10,
+        "question_text": "A 45-year-old woman has a routine pelvic ultrasound. The left ovary contains a 4 cm bilocular cyst with smooth inner walls and septations, no papillary projections, and no solid components.\n\nWhat is the most appropriate O-RADS US category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "O-RADS 1 (Normal Ovary/Ovaries)",
+          "O-RADS 2 (Almost Certainly Benign)",
+          "O-RADS 3 (Low Risk)",
+          "O-RADS 4 (Intermediate Risk)",
+          "O-RADS 5 (High Risk)"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "O-RADS 2 (Almost Certainly Benign)",
+          "correct_options": null,
+          "explanation": "A bilocular, smooth cyst without a solid component is placed in the almost-certainly-benign category when it measures between 3 cm and 10 cm, reflecting the lower malignancy risk of bilocular smooth cysts regardless of size or vascularity. This differs from a unilocular simple cyst of the same size range, which is also almost-certainly-benign, but a bilocular smooth cyst reaching 10 cm or more would instead be reclassified as low risk.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 11,
+        "question_text": "A 61-year-old postmenopausal woman undergoes pelvic ultrasound for pelvic pain. The right adnexa contains a 6 cm solid lesion with an irregular outer contour and a colour score of 3 (moderate intralesional flow).\n\nWhat is the most appropriate O-RADS US category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "O-RADS 1 (Normal Ovary/Ovaries)",
+          "O-RADS 2 (Almost Certainly Benign)",
+          "O-RADS 3 (Low Risk)",
+          "O-RADS 4 (Intermediate Risk)",
+          "O-RADS 5 (High Risk)"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "O-RADS 5 (High Risk)",
+          "correct_options": null,
+          "explanation": "An irregular solid lesion is assigned the high-risk category regardless of its size or colour score, because irregular margins on a solid lesion carry a high malignancy risk on their own. A smooth solid lesion with the same colour score of 2-3 would instead be low risk, and a smooth solid lesion only reaches high risk once its colour score reaches 4.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 12,
+        "question_text": "A 52-year-old woman has a pelvic ultrasound for an incidental adnexal finding. The left ovary contains an 8 cm multilocular cystic lesion with smooth septations, no solid components, and a colour score of 4 (very strong intralesional flow).\n\nWhat is the most appropriate O-RADS US category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "O-RADS 1 (Normal Ovary/Ovaries)",
+          "O-RADS 2 (Almost Certainly Benign)",
+          "O-RADS 3 (Low Risk)",
+          "O-RADS 4 (Intermediate Risk)",
+          "O-RADS 5 (High Risk)"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "O-RADS 4 (Intermediate Risk)",
+          "correct_options": null,
+          "explanation": "A multilocular cyst without a solid component is categorised primarily by septal/wall smoothness, size, and colour score. A smooth multilocular cyst under 10 cm with a colour score below 4 is low risk, but once the colour score reaches 4, the same smooth lesion is upgraded to intermediate risk irrespective of size; an irregular multilocular cyst without a solid component is intermediate risk at any size or colour score.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 13,
+        "question_text": "Regarding O-RADS MRI 2020 category 1 (\"normal ovaries\"), which of the following statements is correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A simple cyst measuring 5 cm in a premenopausal woman is classified as a follicle and assigned category 1",
+          "A corpus luteum with haemorrhage measuring 4 cm in a premenopausal woman is assigned category 1",
+          "A hemorrhagic cyst measuring 3.5 cm in a premenopausal woman is assigned category 1",
+          "A hemorrhagic cyst measuring 2 cm in a premenopausal woman is assigned category 1",
+          "Category 1 has an approximate positive predictive value for malignancy of 5%"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            3
+          ],
+          "explanation": "A follicle is specifically defined as a simple cyst measuring 3 cm or less in a premenopausal woman, and a hemorrhagic cyst under 3 cm in a premenopausal woman is likewise assigned category 1, so the 2 cm hemorrhagic cyst qualifies. A 5 cm simple cyst exceeds the 3 cm follicle threshold, and a 4 cm or 3.5 cm lesion both exceed the 3 cm size limit that defines the corpus luteum and hemorrhagic-cyst exceptions respectively. Category 1 has no defined positive predictive value for malignancy at all, since it represents a normal or physiological ovarian appearance rather than a lesion requiring risk stratification; the approximate 5% figure instead applies to the low-risk category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 14,
+        "question_text": "Regarding O-RADS MRI 2020 category 2 (\"almost certainly benign\") lesions, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A unilocular cyst with any type of fluid content and no wall enhancement is included in this category",
+          "A lesion with homogeneously hypointense solid tissue on both T2-weighted and diffusion-weighted imaging (\"dark T2/dark DWI\") is included in this category",
+          "A unilocular cyst with proteinaceous fluid content and a smooth enhancing wall belongs to this category",
+          "A dilated fallopian tube with non-simple fluid content and a thin wall is assigned to this category",
+          "This category has an approximate positive predictive value for malignancy of less than 0.5%"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            1,
+            4
+          ],
+          "explanation": "A unilocular cyst of any fluid type with no wall enhancement and no enhancing solid tissue, and a lesion whose solid component is homogeneously dark on both T2-weighted and diffusion-weighted imaging, both meet the category 2 definition, which carries an approximate malignancy risk under 0.5%. A unilocular cyst with proteinaceous, hemorrhagic, or mucinous fluid content and a smooth enhancing wall is instead placed in the low-risk category, because this more complex fluid content raises the threshold. A dilated fallopian tube with non-simple fluid needs only a thin wall/folds to meet the low-risk definition; the almost-certainly-benign category requires simple fluid content with a thin, smooth, enhancing wall or folds.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 15,
+        "question_text": "Regarding the definition of solid tissue and the lipid-content rule in O-RADS MRI 2020, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Solid tissue is defined purely by morphology and does not require contrast enhancement",
+          "A mural nodule cannot be classified as solid tissue under this definition",
+          "Minimal enhancement of a Rokitansky nodule within a lipid-containing lesion does not upgrade the lesion to category 4",
+          "Any lipid-containing lesion with large-volume enhancing solid tissue remains capped at category 3",
+          "A lesion component showing irregular septal or wall enhancement meets the definition of solid tissue"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            2,
+            4
+          ],
+          "explanation": "Minimal enhancement of a Rokitansky nodule in a lipid-containing lesion is specifically stated not to upgrade the lesion to the intermediate-risk category, avoiding over-calling this common benign feature. Solid tissue is defined as a component that both enhances and conforms to one of several morphologies, including papillary projection, mural nodule, irregular septation/wall, or a larger solid portion, so irregular septal or wall enhancement does meet this definition, and enhancement is a required element rather than morphology alone. A mural nodule is explicitly one of the qualifying morphologies, not an exclusion. A lipid-containing lesion with large-volume enhancing solid tissue is specifically assigned to the intermediate-risk category, not capped at low risk.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 16,
+        "question_text": "Regarding dynamic contrast-enhanced (DCE) MRI and time-intensity curve assessment in O-RADS MRI 2020, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "DCE MRI is defined as dynamic contrast enhancement with a time resolution of 60 seconds or less",
+          "A lesion with solid tissue and a low-risk time-intensity curve on DCE MRI is assigned the low-risk category",
+          "A lesion with solid tissue and a high-risk time-intensity curve on DCE MRI is assigned the high-risk category",
+          "When DCE is not performed, solid tissue enhancing more than the myometrium at 30-40 seconds on non-DCE imaging is assigned the high-risk category",
+          "The accuracy of the O-RADS MRI score is reduced when DCE imaging is not used"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "explanation": "A low-risk time-intensity curve on dynamic contrast-enhanced imaging places a lesion with solid tissue in the low-risk category, while a high-risk curve places it in the high-risk category, and these curve-based thresholds are explicitly stated to have reduced accuracy when DCE is not performed. DCE is defined by a much finer time resolution of 15 seconds or less, not 60 seconds, since a coarser temporal sampling would not adequately characterise the enhancement kinetics. When DCE is unavailable, the stated surrogate is comparing solid-tissue enhancement with the myometrium at 30-40 seconds, with enhancement exceeding the myometrium placing the lesion in the high-risk category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 17,
+        "question_text": "Regarding O-RADS MRI 2020 category 3 (\"low risk\") lesions, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A multilocular cyst with smooth septae and wall enhancement, no lipid content, and no enhancing solid tissue is included in this category",
+          "This category has an approximate positive predictive value for malignancy of around 50%",
+          "A unilocular cyst with mucinous fluid content, a smooth enhancing wall, and no enhancing solid tissue is included in this category",
+          "A dilated fallopian tube with simple fluid content and a thin, smooth wall is included in this category",
+          "Any lesion with enhancing solid tissue that shows a high-risk time-intensity curve belongs in this category"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            2
+          ],
+          "explanation": "A multilocular cyst of any non-lipid fluid type with smooth, enhancing septae and wall and no enhancing solid tissue, and a unilocular cyst with mucinous fluid content, a smooth enhancing wall, and no enhancing solid tissue, both meet the low-risk category definition, which carries an approximate malignancy risk of around 5% rather than 50%. A dilated fallopian tube with simple fluid content and a thin, smooth wall meets the almost-certainly-benign definition; the low-risk category instead requires either non-simple fluid with a thin wall/folds, or simple fluid with a thick, smooth wall/folds. A high-risk time-intensity curve places a lesion with solid tissue in the high-risk category, not the low-risk one.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 18,
+        "question_text": "Regarding O-RADS MRI 2020 category 5 (\"high risk\") findings, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Peritoneal, mesenteric, or omental nodularity or irregular thickening, with or without ascites, is assigned this category",
+          "This category has an approximate positive predictive value for malignancy of around 50%",
+          "A lesion with homogeneously dark solid tissue on T2 and diffusion-weighted imaging is classified in this category regardless of its time-intensity curve",
+          "A lesion with solid tissue and a high-risk time-intensity curve on DCE MRI is classified in this category",
+          "When DCE is not performed, solid tissue enhancing more than the myometrium at 30-40 seconds is classified in this category"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            3,
+            4
+          ],
+          "explanation": "Peritoneal, mesenteric, or omental nodularity or irregular thickening, with or without ascites, independently defines the high-risk category, which carries an approximate malignancy risk of around 90% rather than 50%. Solid tissue with a high-risk time-intensity curve on dynamic imaging, or solid tissue enhancing more than the myometrium at 30-40 seconds when DCE is not performed, both meet the high-risk definition. A lesion with homogeneously dark solid tissue on T2 and diffusion-weighted imaging is specifically excluded from the time-intensity-curve-based categories and instead falls under the almost-certainly-benign category, not the high-risk category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 19,
+        "question_text": "A 27-year-old premenopausal woman undergoes pelvic MRI for an incidentally noted adnexal cyst. The right ovary contains a 2.2 cm unilocular cyst with simple fluid signal, no wall enhancement, and no enhancing solid tissue.\n\nWhat is the most appropriate O-RADS MRI category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "O-RADS 1 (Normal Ovary/Ovaries)",
+          "O-RADS 2 (Almost Certainly Benign)",
+          "O-RADS 3 (Low Risk)",
+          "O-RADS 4 (Intermediate Risk)",
+          "O-RADS 5 (High Risk)"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "O-RADS 1 (Normal Ovary/Ovaries)",
+          "correct_options": null,
+          "explanation": "A simple cyst measuring 3 cm or less in a premenopausal woman meets the O-RADS MRI definition of a follicle and is assigned to the normal-ovaries category, alongside a normal ovary with no lesion at all. A cyst of similar appearance without wall enhancement but measuring more than 3 cm, or occurring outside this specific premenopausal follicle definition, would instead be assessed against the almost-certainly-benign category criteria for a unilocular cyst with no wall enhancement and no enhancing solid tissue.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 20,
+        "question_text": "A 58-year-old postmenopausal woman undergoes pelvic MRI. The left ovary contains a 5 cm unilocular cyst with simple fluid signal, a smooth enhancing wall, and no enhancing solid tissue.\n\nWhat is the most appropriate O-RADS MRI category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "O-RADS 1 (Normal Ovary/Ovaries)",
+          "O-RADS 2 (Almost Certainly Benign)",
+          "O-RADS 3 (Low Risk)",
+          "O-RADS 4 (Intermediate Risk)",
+          "O-RADS 5 (High Risk)"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "O-RADS 2 (Almost Certainly Benign)",
+          "correct_options": null,
+          "explanation": "A unilocular cyst with simple fluid content, a smooth enhancing wall, and no enhancing solid tissue meets the almost-certainly-benign category criteria, which carry an approximate malignancy risk of under 0.5%. This differs from a unilocular cyst containing proteinaceous, hemorrhagic, or mucinous fluid with a smooth enhancing wall and no solid tissue, which is placed in the low-risk category because of its more complex fluid content.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 21,
+        "question_text": "A 49-year-old woman undergoes pelvic MRI for an adnexal mass. The right ovary contains a 7 cm multilocular cystic lesion with no lipid content, smooth septae and wall enhancement, and no enhancing solid tissue.\n\nWhat is the most appropriate O-RADS MRI category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "O-RADS 1 (Normal Ovary/Ovaries)",
+          "O-RADS 2 (Almost Certainly Benign)",
+          "O-RADS 3 (Low Risk)",
+          "O-RADS 4 (Intermediate Risk)",
+          "O-RADS 5 (High Risk)"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "O-RADS 3 (Low Risk)",
+          "correct_options": null,
+          "explanation": "A multilocular cyst of any fluid type other than lipid, with smooth septal and wall enhancement and no enhancing solid tissue, meets the low-risk category definition, carrying an approximate malignancy risk of around 5%. The absence of any enhancing solid tissue component excludes the higher-risk categories, which require solid tissue showing an intermediate- or high-risk enhancement pattern.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 22,
+        "question_text": "A 55-year-old woman undergoes pelvic MRI with dynamic contrast-enhanced sequences for a complex adnexal mass. The lesion contains solid tissue that is not homogeneously hypointense on T2-weighted or diffusion-weighted imaging, and the time-intensity curve on DCE MRI shows an intermediate-risk pattern.\n\nWhat is the most appropriate O-RADS MRI category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "O-RADS 1 (Normal Ovary/Ovaries)",
+          "O-RADS 2 (Almost Certainly Benign)",
+          "O-RADS 3 (Low Risk)",
+          "O-RADS 4 (Intermediate Risk)",
+          "O-RADS 5 (High Risk)"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "O-RADS 4 (Intermediate Risk)",
+          "correct_options": null,
+          "explanation": "Solid tissue with an intermediate-risk time-intensity curve on dynamic contrast-enhanced MRI, in a lesion whose solid component is not homogeneously dark on T2- and diffusion-weighted imaging, meets the intermediate-risk category definition, with an approximate malignancy risk of around 50%. A low-risk curve in the same lesion type would instead indicate the low-risk category, and a high-risk curve would indicate the high-risk category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 23,
+        "question_text": "A 63-year-old postmenopausal woman undergoes pelvic MRI for a large adnexal mass. In addition to a solid ovarian lesion, there is nodularity and irregular thickening of the peritoneum with a small volume of ascites.\n\nWhat is the most appropriate O-RADS MRI category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "O-RADS 1 (Normal Ovary/Ovaries)",
+          "O-RADS 2 (Almost Certainly Benign)",
+          "O-RADS 3 (Low Risk)",
+          "O-RADS 4 (Intermediate Risk)",
+          "O-RADS 5 (High Risk)"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "O-RADS 5 (High Risk)",
+          "correct_options": null,
+          "explanation": "Peritoneal, mesenteric, or omental nodularity or irregular thickening, with or without ascites, is assigned the high-risk category regardless of the enhancement characteristics of the ovarian lesion itself, reflecting the approximate 90% malignancy risk associated with this category. This finding is analogous to the ascites and/or peritoneal nodules criterion that independently assigns the high-risk category on the ultrasound side of the O-RADS system.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 24,
+        "question_text": "Regarding the relationship between the O-RADS US v2022 and O-RADS MRI 2020 systems, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Both systems use an identical set of lexicon descriptors, since MRI simply reproduces the ultrasound criteria",
+          "The O-RADS US pathway recommends MRI with an O-RADS MRI score as one option for further characterising certain solid or higher-category lesions",
+          "O-RADS MRI can only be applied after a lesion has first been assigned an O-RADS US category of 4 or 5",
+          "MRI with contrast is noted to have higher specificity than ultrasound for solid lesions and for cystic lesions with solid components",
+          "Both systems assign an identical estimated malignancy risk percentage to each equivalently numbered category"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            3
+          ],
+          "explanation": "The O-RADS US pathway explicitly offers MRI with an O-RADS MRI score as an option when characterising solid lesions in the low- and intermediate-risk categories, reflecting the stated higher specificity of contrast-enhanced MRI for solid lesions and for cystic lesions with a solid component. The two systems use materially different descriptors: ultrasound relies on colour score, shadowing, and locularity, whereas MRI relies on solid-tissue enhancement morphology, the dark T2/dark DWI pattern, and dynamic time-intensity curves, so they are not identical. There is no stated restriction confining O-RADS MRI use to lesions already scored US category 4 or 5, and the two systems' estimated risk figures for equivalent categories are not identical (for example, under 1% for US category 2 versus under 0.5% for MRI category 2).",
+          "page_images": []
+        }
+      }
+    ]
+  }
+]

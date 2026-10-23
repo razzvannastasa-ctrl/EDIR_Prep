@@ -1,0 +1,469 @@
+[
+  {
+    "chapter_id": 1,
+    "chapter_match": "exact",
+    "source": "Reporting Systems",
+    "section": "mrq",
+    "library_key": "edir",
+    "clinical_vignette": "Splenic Trauma Grading (AAST-OIS 2018) & WSES Management Guideline",
+    "article_summary": "### Splenic Trauma Grading (AAST-OIS) & WSES Management Guideline\n\n**Source:** WSES splenic trauma classification and guidelines — Coccolini et al., World Journal of Emergency Surgery, 2017 (classification and management guideline); WSES non-operative management follow-up consensus, 2022 (follow-up-specific content). The anatomic grading criteria used here follow the standard AAST-OIS splenic injury scale, including the CT-recognised splenic vascular injury criteria that determine whether an injury reaches Grade III or Grade IV.\n\n**Scope:** Used on contrast-enhanced CT to grade the anatomic severity of blunt or penetrating splenic injury and, combined with the patient's haemodynamic status (the WSES classification), to guide the choice between observation, angioembolization, and surgery.\n\n### Category cheat-sheet\n- **AAST-OIS Grade I —** Subcapsular haematoma under 10% of the splenic surface area, or a capsular laceration under 1 cm parenchymal depth, with no active bleeding; managed with observation alone.\n- **AAST-OIS Grade II —** Subcapsular haematoma 10–50% of surface area, or an intraparenchymal haematoma under 5 cm, or a laceration 1–3 cm deep that spares the trabecular vessels; still typically managed non-operatively.\n- **AAST-OIS Grade III —** Subcapsular haematoma over 50% or expanding, a ruptured haematoma of 5 cm or more, a laceration over 3 cm deep or involving the trabecular vessels, OR any injury with a splenic vascular injury (pseudoaneurysm/arteriovenous fistula) or active bleeding contained within the capsule; non-operative management is often still appropriate, but angioembolization is frequently used, especially when a vascular finding is present.\n- **AAST-OIS Grade IV —** A laceration of the segmental or hilar vessels causing more than 25% splenic devascularisation, or active bleeding extending beyond the spleen into the peritoneum; angioembolization is typically first-line in a stable patient, and the failure rate of observation alone rises sharply.\n- **AAST-OIS Grade V —** A completely shattered spleen, or a hilar vascular injury devascularising the entire organ; the highest risk of non-operative failure, with splenectomy often required, especially if the patient becomes unstable.\n\n### Key imaging/scoring points\n- Grading is assigned according to the single highest-grade component present on CT (for example, a deep laceration and a small haematoma are graded on the laceration, not averaged together).\n- A splenic vascular injury (pseudoaneurysm or arteriovenous fistula) or active contrast extravasation are themselves grade-defining CT findings: a vascular abnormality upgrades an otherwise lower-grade laceration to at least Grade III, and bleeding that has broken through the capsule into the peritoneum defines Grade IV.\n- Delayed-phase CT helps distinguish active bleeding (extravasating, potentially expanding) from a contained vascular injury such as a pseudoaneurysm, which matters for planning intervention.\n- Contrast blush occurs in roughly 17% of injuries and, historically, was associated with a high non-operative failure rate when angioembolization was not used; its absence does not exclude active bleeding, and neither injury grade, free-fluid volume, nor blush presence alone reliably predicts non-operative failure.\n- The WSES classification layers haemodynamic status onto the anatomic grade: WSES class I = stable Grade I–II, WSES class II = stable Grade III, WSES class III = stable Grade IV–V, WSES class IV = any haemodynamically unstable patient regardless of anatomic grade.\n\n### Practical/management implications\n- Non-operative management (NOM) is the default first-line approach for stable patients irrespective of anatomic grade, provided there is no other indication for laparotomy (peritonitis, bowel evisceration, impalement).\n- Angioembolization is recommended for all stable WSES class III (Grade IV–V) patients regardless of blush, and is a recognised option for WSES class II (Grade III) patients, particularly when a vascular injury or blush is present; reported embolization use rises from roughly 2–10% in Grade I–II injuries to 40–75% in Grade IV–V injuries.\n- Splenectomy is reserved for patients in whom NOM (with or without embolization) fails, for ongoing haemodynamic instability, or when the treating environment cannot support intensive monitoring or rapid embolization for a moderate-severe injury.\n- Follow-up CT during admission is reserved for moderate-severe (Grade III and above) injuries or a falling haematocrit; routine post-discharge CT is not required for low-grade (Grade I–II) injuries, but selective follow-up imaging before return to full activity may be considered for higher grades.\n- Activity restriction is roughly 4–6 weeks for minor injuries, extending to 2–4 months for moderate-severe injuries; in-hospital bed rest is similarly graded (about one night for low-grade, two nights for high-grade injuries).\n- Children are managed non-operatively regardless of anatomic grade when haemodynamically stable, and the majority do not require embolization even for a blush or a higher grade; adult-style protocols apply once a patient is over 15 years old.\n\n### Pitfalls and limitations\n- Do not assume a low anatomic grade excludes clinically important vascular pathology — pseudoaneurysms have been identified months after apparently minor (Grade II) injuries.\n- Do not treat contrast blush or a high anatomic grade in isolation as predictive of NOM failure — neither reliably predicts outcome on its own; overall haemodynamic trajectory matters more.\n- Do not withhold angioembolization from a stable patient with a vascular injury simply because there is no free extraperitoneal extravasation — a contained pseudoaneurysm or arteriovenous fistula is itself an indication to consider intervention.\n- Do not apply adult blush-driven embolization thresholds uncritically to children — paediatric practice tolerates observation of blush and higher-grade injury far more often than adult practice.\n\n### Take-home points\n- Anatomic grade is set by the single worst CT feature present; a vascular injury (pseudoaneurysm/AVF) upgrades to at least Grade III, and bleeding extending beyond the capsule defines Grade IV.\n- The WSES classification adds haemodynamic status on top of anatomic grade, and it is instability — not anatomy alone — that mandates operative management.\n- Angioembolization use and NOM failure both rise steeply with anatomic grade, becoming the norm rather than the exception by Grade IV–V.\n- Splenectomy is a rescue strategy for NOM/embolization failure or instability, not a default for high-grade injury in a stable patient.\n- Paediatric splenic trauma is managed far more conservatively than adult trauma, tolerating higher grades and blush without routine embolization.",
+    "questions": [
+      {
+        "q_number": 1,
+        "question_text": "Regarding AAST-OIS Grade I and Grade II splenic injuries on CT, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A subcapsular haematoma occupying less than 10% of the splenic surface area is consistent with a Grade I injury.",
+          "An intraparenchymal haematoma measuring 6 cm in maximum diameter is classified as Grade II.",
+          "A capsular laceration less than 1 cm in parenchymal depth is consistent with a Grade I injury.",
+          "A laceration 1–3 cm in parenchymal depth that involves the trabecular vessels is classified as Grade II.",
+          "Neither Grade I nor Grade II injury is associated with a demonstrable splenic vascular injury on CT."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 4],
+          "explanation": "Grade I injury is defined by a subcapsular haematoma under 10% of the surface area or a capsular laceration under 1 cm deep, without active bleeding or vascular injury. Grade II extends this to a subcapsular haematoma of 10–50% surface area, an intraparenchymal haematoma under 5 cm, or a laceration 1–3 cm deep that does not involve the trabecular vessels; a haematoma of 6 cm or a laceration involving the trabecular vessels exceeds these thresholds and pushes the injury to Grade III. The presence of any splenic vascular injury (pseudoaneurysm or arteriovenous fistula) or active bleeding immediately raises the case to at least Grade III regardless of laceration or haematoma size, so neither of the two lowest grades can show a vascular abnormality on CT.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 2,
+        "question_text": "Regarding AAST-OIS Grade III splenic injury, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A splenic laceration greater than 3 cm in depth is only classified as Grade III if it also involves the trabecular vessels.",
+          "A splenic vascular injury (pseudoaneurysm or arteriovenous fistula) with bleeding contained within the splenic capsule is sufficient to classify an injury as at least Grade III, irrespective of laceration depth.",
+          "A subcapsular haematoma occupying 40% of the splenic surface area, non-expanding, is classified as Grade III.",
+          "A ruptured subcapsular or intraparenchymal haematoma measuring 5 cm or more, or expanding, meets the criteria for Grade III.",
+          "Grade III injury requires active bleeding extending beyond the splenic capsule into the peritoneal cavity."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 3],
+          "explanation": "Grade III is reached whenever a splenic laceration exceeds 3 cm in parenchymal depth or involves the trabecular vessels — either finding alone is sufficient, not both together. A ruptured or expanding subcapsular or intraparenchymal haematoma of 5 cm or more also meets the threshold. A contained pseudoaneurysm or arteriovenous fistula, or active bleeding confined within the splenic capsule, is itself enough to assign at least Grade III regardless of how deep the laceration is — this is the key CT finding that can upgrade an otherwise minor-looking injury. A 40% subcapsular haematoma remains within the 10–50% Grade II range, and active bleeding that has broken through the capsule into the peritoneal cavity defines Grade IV, not Grade III.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 3,
+        "question_text": "A CT of a trauma patient shows a splenic laceration measuring 4 cm in parenchymal depth involving the trabecular vessels, with a non-expanding subcapsular haematoma of 30% surface area and no contrast extravasation or vascular abnormality.\n\nWhich of the following statements are correct regarding this image?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The laceration depth alone is sufficient to classify this injury as at least Grade III.",
+          "The subcapsular haematoma component of this injury, taken alone, would only meet criteria for Grade II.",
+          "The overall injury should be graded according to the single highest-grade component present, not an average of the findings.",
+          "The absence of contrast extravasation on this scan guarantees that non-operative management will succeed.",
+          "This injury would not be upgraded further because no splenic vascular injury or active bleeding is present on this scan."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 2, 4],
+          "explanation": "Whenever an injury has components of different severities, the anatomic grade is assigned according to the single highest-grade finding present, not an average or combination score; here, the 4 cm laceration involving the trabecular vessels alone reaches Grade III, while the 30% non-expanding subcapsular haematoma on its own would only meet Grade II criteria. Because no splenic vascular injury or active contrast extravasation is identified, there is no additional CT finding present to push the grade any higher than the laceration already dictates. The absence of a contrast blush is reassuring but is not a guarantee of successful non-operative management, since neither injury grade nor the presence or absence of a blush reliably predicts non-operative failure.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 4,
+        "question_text": "Regarding AAST-OIS Grade IV and Grade V splenic injury, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Grade IV requires complete devascularisation of the spleen.",
+          "A laceration involving the segmental or hilar vessels producing more than 25% splenic devascularisation is classified as Grade IV.",
+          "Active bleeding that extends beyond the splenic capsule into the peritoneal cavity is classified as at least Grade IV.",
+          "A hilar vascular injury that devascularises the entire spleen is classified as Grade V.",
+          "A completely shattered spleen with intact hilar vasculature cannot be classified higher than Grade IV."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 3],
+          "explanation": "Grade IV is defined either by a laceration of the segmental or hilar vessels producing more than 25% devascularisation of the spleen, or by active bleeding that has extended beyond the splenic capsule into the peritoneal cavity — complete devascularisation is not required for this grade. Grade V requires either a completely shattered spleen or a hilar vascular injury that devascularises the entire organ; a shattered spleen alone is sufficient for Grade V even without a hilar vessel injury, so limiting a shattered spleen to Grade IV is incorrect.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 5,
+        "question_text": "Regarding the WSES classification of splenic trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The WSES classification incorporates both the AAST-OIS anatomic grade and the patient's haemodynamic status.",
+          "A haemodynamically stable patient with an AAST-OIS Grade III injury is classified as WSES class I.",
+          "A haemodynamically unstable patient with an AAST-OIS Grade I injury is classified as WSES class I.",
+          "WSES class III refers to haemodynamically stable patients with AAST-OIS Grade I–II injuries.",
+          "Any haemodynamically unstable patient is classified as WSES class IV regardless of the anatomic injury grade."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 4],
+          "explanation": "The WSES system layers the patient's haemodynamic status on top of the anatomic AAST-OIS grade rather than replacing it: WSES class I covers stable Grade I–II injuries, class II covers stable Grade III injuries, and class III covers stable Grade IV–V injuries, while class IV captures any haemodynamically unstable patient irrespective of the anatomic grade found on imaging. This reflects the guideline's emphasis that clinical physiology, not anatomy alone, ultimately drives whether a patient proceeds to non-operative management or emergency surgery.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 6,
+        "question_text": "Regarding first-line diagnostic imaging in adult splenic trauma, which of the following statements is correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "E-FAST has a reported false-negative rate of less than 5% for detecting free fluid in splenic injury.",
+          "Ultrasound-based imaging is the gold standard for characterising splenic injury in haemodynamically stable adults.",
+          "Contrast-enhanced CT is the gold standard for characterising splenic injury in haemodynamically stable or stabilised trauma patients.",
+          "Doppler and contrast-enhanced ultrasound have no role once a splenic injury has been characterised on CT.",
+          "The choice of initial diagnostic technique is independent of the patient's haemodynamic status."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [2],
+          "explanation": "Contrast-enhanced CT is explicitly identified as the gold standard for characterising splenic injury in patients who are haemodynamically stable or have been stabilised, given its high sensitivity and specificity. E-FAST remains useful for rapidly detecting free fluid but carries a reported false-negative rate as high as 42%, so it cannot substitute for CT once the patient is stable enough to undergo it. Doppler and contrast-enhanced ultrasound retain a role after the initial CT, particularly for evaluating splenic vascularisation and in follow-up, and the choice of initial investigation is explicitly guided by haemodynamic status rather than being independent of it.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 7,
+        "question_text": "A haemodynamically stable adult trauma patient undergoes contrast-enhanced CT, which demonstrates a contained intraparenchymal pseudoaneurysm without extraperitoneal contrast extravasation, in a spleen with an otherwise Grade II anatomic laceration.\n\nWhich of the following statements are correct regarding this image?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The presence of the pseudoaneurysm means this injury should be graded as at least Grade III, despite the laceration alone only meeting Grade II criteria.",
+          "The absence of extraperitoneal contrast extravasation excludes any need for angiographic intervention.",
+          "A finding of this type occurs in the majority of low-grade splenic injuries.",
+          "Angiography and angioembolization may be considered as part of non-operative management in this patient given the vascular finding.",
+          "This finding is an example of a splenic vascular injury on CT, distinct from active contrast extravasation."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 3, 4],
+          "explanation": "A contained pseudoaneurysm is a splenic vascular injury, and its presence upgrades the anatomic grade to at least Grade III regardless of how the laceration alone would otherwise be classified, since vascular injury is itself a grade-defining CT feature. It is distinct from active contrast extravasation, which represents ongoing bleeding rather than a contained vascular abnormality. Vascular abnormalities of this kind are not typical of low-grade injuries and instead correlate with higher anatomic grade. Even though there is no free extravasation into the peritoneum here, angiography with embolization remains an appropriate option in a stable patient with a demonstrated vascular injury, since its absence is not required to justify intervention.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 8,
+        "question_text": "Regarding indications for angiography and angioembolization (AG/AE) in blunt splenic trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "AG/AE should be considered in all haemodynamically stable patients with WSES class III (AAST Grade IV–V) injuries, regardless of the presence of contrast blush.",
+          "Coils are preferred over temporary embolic agents when performing AG/AE.",
+          "In the presence of multiple splenic vascular abnormalities, proximal or combined embolization should be used rather than distal embolization alone.",
+          "A contrast blush on CT is one of the recognised indications for AG/AE in a haemodynamically stable patient.",
+          "AG/AE is contraindicated in any patient who is a candidate for non-operative management."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 2, 3],
+          "explanation": "AG/AE is recommended for all haemodynamically stable patients with high-grade (WSES class III / AAST Grade IV–V) injuries irrespective of whether a contrast blush is seen, and a demonstrated blush is itself one of the recognised triggers for embolization in stable patients. Coils are the preferred embolic agent over temporary materials, and when multiple vascular abnormalities are present, or the injury is severe, proximal or combined embolization is favoured over distal embolization alone. AG/AE is not a contraindication to non-operative management — it is one of its principal tools, used specifically to increase the chance that non-operative management succeeds.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 9,
+        "question_text": "Regarding risk factors for failure of non-operative management (NOM) in adult blunt splenic trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Haemodynamic status at admission has consistently been shown across all studies to be the single strongest predictor of NOM failure.",
+          "An Injury Severity Score above the thresholds reported in the literature is associated with an increased likelihood of NOM failure.",
+          "A high AAST-OIS injury grade is associated with an increased likelihood of NOM failure.",
+          "A Glasgow Coma Scale score below 12 is, on its own, an absolute contraindication to attempting NOM.",
+          "Age above 55 years has been shown in every study to be a statistically significant predictor of NOM failure."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2],
+          "explanation": "Higher Injury Severity Scores have repeatedly been associated with an increased risk of non-operative management failing, reflecting the greater burden of associated injuries in these patients, and a higher anatomic splenic injury grade likewise correlates with a rising failure rate. Admission haemodynamic status has not been consistently shown to be a significant predictor across studies and should not on its own be used to exclude a patient from an attempt at non-operative management, and a Glasgow Coma Scale below 12 alone is similarly not regarded as an absolute contraindication. The prognostic significance of age above 55 years remains genuinely debated in the literature, with some studies finding it significant and others not, so it cannot be described as a universally reproducible predictor.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 10,
+        "question_text": "Regarding the relationship between AAST-OIS grade and the use of splenic artery angioembolization (SAE) or non-operative management outcomes, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The reported rate of SAE use rises progressively from low-grade to high-grade splenic injuries.",
+          "SAE use is reported to be higher in Grade I–II injuries than in Grade IV–V injuries.",
+          "Grade IV and Grade V injuries are associated with a substantially higher reported use of SAE than Grade I–III injuries.",
+          "The likelihood of requiring intervention beyond observation increases as the anatomic grade rises.",
+          "Reported SAE utilisation is approximately equal across all five AAST-OIS grades."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 3],
+          "explanation": "Reported splenic artery angioembolization rates rise markedly with anatomic grade, from a low percentage in Grade I–II injuries, through an intermediate rate in Grade III, up to a substantially higher proportion in Grade IV and especially Grade V injuries. This progressive rise reflects the fact that higher-grade injuries are more likely to demonstrate the vascular abnormalities or active bleeding that prompt intervention, so the likelihood of needing more than simple observation increases as the anatomic grade rises; utilisation is therefore far from equal across the five grades, and it is not higher in the lowest grades.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 11,
+        "question_text": "Regarding operative management of splenic trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Splenectomy is indicated when non-operative management with angioembolization has failed and the patient remains haemodynamically unstable.",
+          "Laparoscopic splenectomy is the recommended approach for actively bleeding trauma patients.",
+          "Operative management is indicated in a stable patient with a moderate or severe injury if intensive monitoring or angioembolization is not rapidly available.",
+          "Partial splenic salvage during surgery is a well-established, strongly recommended technique.",
+          "Peritonitis and bowel evisceration are relative, not absolute, indications for operative exploration."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2],
+          "explanation": "Splenectomy is indicated once non-operative management, including angioembolization, has failed and the patient remains haemodynamically unstable or continues to require transfusion, and operative management is also favoured in a stable patient with a moderate or severe injury when the environment cannot provide intensive monitoring or rapid access to angioembolization. Laparoscopic splenectomy in the acute bleeding trauma setting cannot currently be recommended, and salvage of at least part of the spleen during surgery remains debated rather than an established, strongly supported technique. Peritonitis, bowel evisceration, and impalement are treated as clear indications for surgical exploration rather than merely relative considerations.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 12,
+        "question_text": "A haemodynamically stable adult with an AAST-OIS Grade IV splenic injury is managed non-operatively. Serial imaging follow-up is being planned during the admission.\n\nWhich of the following statements are correct regarding this image?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Routine follow-up CT during admission is unnecessary in this grade of injury.",
+          "Follow-up CT scanning during the admission should be considered in this patient given the high anatomic grade.",
+          "A falling haematocrit during observation would be an additional reason to repeat imaging in this patient.",
+          "Once discharged, this patient requires no further imaging follow-up regardless of clinical course.",
+          "Contrast-enhanced follow-up imaging before return to full physical activity may be considered given the severity of this injury."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 4],
+          "explanation": "Repeat CT scanning during the admission is recommended for injuries of this severity, and a falling haematocrit during observation is an additional trigger for repeating imaging regardless of the initial grade. Because higher-grade injuries take longer to heal and carry a greater risk of delayed complications, selective contrast-enhanced follow-up imaging before the patient returns to full physical activity may be considered in this group, in contrast to low-grade injuries where routine post-discharge imaging is not generally required. It would therefore be incorrect to say that no follow-up imaging is warranted during admission or that discharge imaging is never appropriate in a high-grade injury.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 13,
+        "question_text": "Regarding activity restriction and bed rest following blunt splenic injury managed non-operatively, which of the following statements is correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Activity restriction of only 4–6 weeks is recommended regardless of injury grade.",
+          "Bed rest duration during admission is the same for low-grade and high-grade injuries.",
+          "No period of bed rest is required for any grade of splenic injury.",
+          "Activity restriction may extend up to 2–4 months in moderate and severe splenic injuries.",
+          "Activity restriction recommendations are identical for adult and paediatric patients."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [3],
+          "explanation": "Activity restriction is generally graded to the severity of the injury: around 4–6 weeks is suggested for minor injuries, but this extends up to 2–4 months for moderate and severe injuries given their slower healing. In-hospital bed rest is likewise stratified, with one night generally sufficient for low-grade injuries and two nights suggested for higher-grade injuries. Recommendations for return to activity in children are considered separately from adults, so it is inaccurate to describe the guidance as identical across the two age groups.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 14,
+        "question_text": "Regarding complications of blunt splenic trauma managed non-operatively, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Delayed splenic rupture can occur days after the initial injury, most frequently between 4 and 10 days post-trauma.",
+          "A pseudoaneurysm can develop or be identified months after the initial trauma, even in lower-grade injuries.",
+          "The mortality associated with delayed splenic rupture is lower than that associated with acute rupture at presentation.",
+          "A small proportion of patients discharged with an incompletely healed spleen require a late intervention.",
+          "Splenectomy carries a higher reported rate of infectious complications than observation or angioembolization alone."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 3, 4],
+          "explanation": "Delayed splenic rupture is a recognised complication of non-operative management, occurring most often between 4 and 10 days after the initial injury, and pseudoaneurysms have been identified months after trauma even in lower-grade (Grade II) injuries. A small proportion of patients discharged with a non-healed spleen go on to require a late intervention. Splenectomy carries a substantially higher reported rate of infectious complications than observation or angioembolization alone, reflecting the loss of splenic immunological function. Delayed rupture actually carries a higher mortality than acute rupture at presentation, not a lower one, which is precisely why patients undergoing non-operative management are counselled about warning symptoms after discharge.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 15,
+        "question_text": "Regarding non-operative management of blunt splenic trauma in children, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Non-operative management should only be attempted in children with low-grade (AAST Grade I–II) injuries.",
+          "Current recommendations support non-operative management in haemodynamically stable children irrespective of the anatomic injury grade.",
+          "The vast majority of children do not require angioembolization for a contrast blush or for moderate-to-severe injury.",
+          "A contrast blush on CT is an absolute indication for splenectomy or angioembolization in children.",
+          "Patients older than 15 years should be managed according to adult angioembolization protocols."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 4],
+          "explanation": "Current recommendations support an initial attempt at non-operative management in haemodynamically stable children regardless of the anatomic injury grade, reflecting the generally superior success of non-operative management in the paediatric population. The vast majority of children do not require angioembolization purely because a contrast blush or a moderate-to-severe injury grade is present, and a blush on CT is explicitly not regarded as an absolute indication for either splenectomy or angioembolization in this age group. Once a patient is older than 15 years, however, management reverts to the adult angioembolization protocols rather than continuing under the more conservative paediatric approach.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 16,
+        "question_text": "Regarding thromboprophylaxis in patients with blunt splenic trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Mechanical thromboprophylaxis is considered safe in all patients without an absolute contraindication to its use.",
+          "Splenic trauma with ongoing bleeding is not an absolute contraindication to starting low-molecular-weight heparin.",
+          "Angioembolization has no reported association with venous thromboembolic risk.",
+          "Pharmacological prophylaxis should be started as early as safely possible after the injury.",
+          "Oral anticoagulant reversal decisions in trauma patients require no individualised risk-benefit assessment."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 3],
+          "explanation": "Mechanical thromboprophylaxis is regarded as safe in essentially all patients unless there is an absolute contraindication, and pharmacological prophylaxis with low-molecular-weight heparin should be started as early as safely possible after injury, since delaying it has been associated with a higher rate of venous thromboembolism. Splenic trauma without ongoing bleeding is the situation that is not, on its own, an absolute contraindication to starting prophylactic anticoagulation — framing active ongoing bleeding itself as an acceptable setting to proceed is incorrect. Angioembolization has in fact been reported as an independent risk factor for venous thromboembolic complications in higher-grade injuries, and decisions about reversing oral anticoagulants in trauma patients explicitly require individualised assessment of the risks and benefits rather than a fixed rule.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 17,
+        "question_text": "A 28-year-old man sustains blunt abdominal trauma in a road traffic collision. He is haemodynamically stable. Contrast-enhanced CT shows a subcapsular haematoma occupying approximately 8% of the splenic surface area and a capsular laceration measuring 0.5 cm in parenchymal depth. No contrast extravasation, pseudoaneurysm, or arteriovenous fistula is identified.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade I",
+          "correct_options": null,
+          "explanation": "A subcapsular haematoma under 10% of the surface area together with a capsular laceration under 1 cm in depth, with no vascular injury or active bleeding, meets the criteria for the lowest anatomic grade. This does not reach the next grade up, which requires either a larger subcapsular haematoma (10–50%), an intraparenchymal haematoma, or a deeper laceration, and there is no vascular abnormality present that would push the grade any higher.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 18,
+        "question_text": "A 34-year-old woman involved in a fall from height is haemodynamically stable. CT demonstrates a subcapsular haematoma occupying 35% of the splenic surface area, non-expanding, with a parenchymal laceration measuring 2 cm in depth that does not involve the trabecular vessels. There is no evidence of active contrast extravasation or vascular injury.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade V",
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade IV"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade II",
+          "correct_options": null,
+          "explanation": "A non-expanding subcapsular haematoma between 10 and 50% of the surface area, together with a laceration of 1–3 cm in depth that spares the trabecular vessels, defines this grade. It exceeds the size and depth thresholds for the lowest grade, but because the haematoma has not exceeded 50% or expanded, and the laceration is both within 3 cm and does not involve the trabecular vessels, it does not meet the next grade up.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 19,
+        "question_text": "A 45-year-old man is haemodynamically stable following blunt trauma. CT shows a splenic laceration measuring 4.5 cm in parenchymal depth, clearly involving the trabecular vessels. There is no subcapsular haematoma, no active contrast extravasation, and no pseudoaneurysm or arteriovenous fistula.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade V",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade I"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade III",
+          "correct_options": null,
+          "explanation": "A laceration exceeding 3 cm in parenchymal depth and involving the trabecular vessels meets the criteria for this grade on its own, independent of haematoma size. It does not reach the next grade up, since that requires either a laceration of the segmental or hilar vessels producing more than 25% devascularisation, or active bleeding extending beyond the spleen — neither of which is present here, and there is no vascular injury such as a pseudoaneurysm to consider separately.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 20,
+        "question_text": "A 51-year-old man is haemodynamically stable after blunt trauma. CT shows a splenic laceration measuring 2 cm in parenchymal depth not involving the trabecular vessels, and a small intraparenchymal pseudoaneurysm with no extraperitoneal contrast extravasation. There is no evidence of devascularisation.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade III",
+          "correct_options": null,
+          "explanation": "Although the laceration alone, at 2 cm and not involving the trabecular vessels, would only meet the lower grade's criteria, the presence of a splenic vascular injury — here a contained intraparenchymal pseudoaneurysm without extraperitoneal extravasation — is itself sufficient to assign at least this grade, regardless of the anatomic laceration depth. It does not reach the grade above, because there is no evidence of significant devascularisation or of bleeding extending beyond the spleen.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 21,
+        "question_text": "A 38-year-old man is haemodynamically stable after a motorcycle collision. CT shows a laceration involving the segmental splenic vessels with approximately 40% devascularisation of the splenic parenchyma. There is no active contrast extravasation beyond the splenic capsule and no hilar vascular injury.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade V",
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade II"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade IV",
+          "correct_options": null,
+          "explanation": "A laceration of the segmental or hilar vessels producing more than 25% devascularisation of the spleen meets the criteria for this grade; 40% clearly exceeds that threshold. It does not reach the grade above, since there is no complete shattering of the spleen and no hilar vascular injury devascularising the entire organ — the devascularisation here, although substantial, remains partial.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 22,
+        "question_text": "A 47-year-old woman is haemodynamically stable following blunt abdominal trauma. CT shows a splenic laceration measuring 3.5 cm in parenchymal depth involving the trabecular vessels, with active contrast extravasation extending beyond the splenic capsule into the perisplenic peritoneal space.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade IV",
+          "correct_options": null,
+          "explanation": "Although the laceration itself, at 3.5 cm and involving the trabecular vessels, would only meet the criteria for the grade below, active bleeding that has extended beyond the splenic capsule into the peritoneal cavity is itself a defining feature of this higher grade, distinguishing it from bleeding that remains contained within the capsule. There is no complete shattering of the spleen or hilar vascular devascularisation described, so the injury does not reach the grade above.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 23,
+        "question_text": "A 29-year-old man presents after a high-speed road traffic collision. CT shows the splenic parenchyma completely fragmented with loss of normal splenic architecture throughout the organ, though the splenic hilum itself appears intact on this scan.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade V",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade II"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade V",
+          "correct_options": null,
+          "explanation": "A completely shattered spleen meets the criteria for this highest grade on its own, regardless of whether the hilar vessels themselves are also injured. This is distinct from the grade below, which is defined by a laceration producing partial (more than 25%) devascularisation or by bleeding extending beyond the capsule, rather than complete architectural disruption of the organ.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 24,
+        "question_text": "A 55-year-old man is haemodynamically unstable after blunt trauma. CT performed during a brief period of stabilisation shows a hilar vascular injury with complete devascularisation of the spleen, without gross splenic parenchymal disruption.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade V",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade I"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade V",
+          "correct_options": null,
+          "explanation": "A hilar vascular injury that devascularises the entire spleen meets the criteria for this grade even without the spleen itself being physically shattered, since either finding is independently sufficient. This is distinct from the grade below, in which devascularisation from a segmental or hilar vessel laceration remains partial, at more than 25% but not complete.",
+          "page_images": []
+        }
+      }
+    ]
+  }
+]

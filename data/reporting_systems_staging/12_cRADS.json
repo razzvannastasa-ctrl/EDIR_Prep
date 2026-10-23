@@ -1,0 +1,523 @@
+[
+  {
+    "chapter_id": 1,
+    "chapter_match": "exact",
+    "source": "Reporting Systems",
+    "section": "mrq",
+    "library_key": "edir",
+    "clinical_vignette": "ACR C-RADS (CT Colonography Reporting and Data System, 2023)",
+    "article_summary": "### C-RADS (CT Colonography Reporting and Data System)\n\n**Source:** American College of Radiology, C-RADS v2023 Assessment Categories (Colonic Findings and Extracolonic Findings), release date January 2024.\n\n**Scope:** A structured, two-part reporting system for CT colonography (CTC) that separately categorises (1) colonic findings - polyps, masses, and technical study adequacy - and (2) extracolonic findings incidentally identified on the same examination, in order to standardise interpretation, guide follow-up, and support communication of results.\n\n### Colonic findings cheat-sheet (C-RADS)\n- **C0 - Inadequate study/awaiting prior comparisons:** the study cannot be reliably assessed, either because retained fluid/faeces could hide a lesion ≥10 mm or because a segment is collapsed on both views; await priors or repeat CTC/consider an alternative screening test.\n- **C1 - Normal colon or benign lesion:** no abnormality, no polyp ≥6 mm, or a definitively benign finding (lipoma, inverted diverticulum, asymptomatic pneumatosis cystoides coli, simple diverticula); continue routine screening (roughly every 5-10 years).\n- **C2a - Intermediate polyp/indeterminate finding:** one or two polyps measuring 6-9 mm; repeat CTC in 3 years or refer for colonoscopy, depending on the individual patient.\n- **C2b - Likely benign diverticular finding:** a mass-like diverticular abnormality (severe myochosis coli, muscular hypertrophy, or stricture) rather than a true polyp; repeat imaging in 5 years if likely benign, or ≤3 years if the appearance is uncertain.\n- **C3 - Polyp, possibly advanced adenoma:** a polyp ≥10 mm, three or more polyps each 6-9 mm, a subepithelial lesion ≥10 mm, or a previously C2a polyp that has grown on follow-up; refer for colonoscopy.\n- **C4 - Colonic mass, likely malignant:** a lesion that narrows the bowel lumen and shows extracolonic invasion; refer for colonoscopy plus surgical/oncological consultation, with communication to the referring clinician.\n\n### Extracolonic findings cheat-sheet (C-RADS)\n- **E1/E2 - No clinically important finding:** no extracolonic finding, a finding of no consequence (e.g. Bosniak I/II renal cyst, simple liver cyst, adrenal adenoma on non-contrast criteria, uncomplicated renal/gallstones), or a previously known finding that remains stable; no additional workup needed.\n- **E3 - Likely unimportant, further workup may be warranted:** findings unlikely to be significant but requiring clarification (indeterminate postmenopausal adnexal cystic lesion without suspicious features, Bosniak III renal cyst, liver attenuation ≥75 HU raising suspicion for iron overload, porcelain gallbladder, indeterminate solitary bone lesion).\n- **E4 - Likely clinically important, further workup needed:** findings suspicious for malignancy or otherwise needing prompt attention (spiculated lung mass, Bosniak IV renal lesion, peritoneal nodularity, bulky suspicious lymphadenopathy, AAA >3 cm, obstructing/staghorn calculus, airspace consolidation suggesting pneumonia, multiple bone lesions suggesting metastasis/myeloma, unsuspected osteoporotic fracture).\n\n*Note: the 2023 ACR C-RADS update merges the previous E1 and E2 tiers into a single \"E1/E2\" category, and this version does not define a separate \"E0\" tier.*\n\n### Key imaging/scoring points\n- C0 has two distinct triggers that should not be conflated: inadequate bowel preparation (retained fluid/faeces obscuring lesions ≥10 mm) and inadequate insufflation (a segment collapsed on both acquisitions) - but a collapsed segment suspected to represent myochosis coli is routed to C2b instead of C0.\n- The C2a/C3 boundary for polyps is driven by size and count together: 1-2 polyps of 6-9 mm remain C2a, whereas ≥3 polyps of 6-9 mm, any polyp ≥10 mm, or a subepithelial lesion ≥10 mm all qualify as C3.\n- Growth is an explicit upgrade trigger: a polyp initially scored C2a that enlarges on a follow-up study is reclassified as C3.\n- C2b acknowledges genuine diagnostic uncertainty in diverticular disease, with the follow-up interval (5 years vs ≤3 years) set by how confident the interpreter is that the mass-like appearance is benign.\n- C4 requires both luminal compromise and evidence of extracolonic invasion; a polyp or subepithelial lesion confined to the bowel wall, however large, remains C3.\n- On the extracolonic side, a finding's clinical history matters as much as its imaging appearance: a stable, previously known finding stays E1/E2 even if its imaging features in isolation would otherwise suggest E3 or E4.\n\n### Practical/management implications\nManagement escalates in step with category: C1 needs only routine screening, C2a and C2b are managed with either short-interval CTC or referral (endoscopic for C2a, driven by diagnostic confidence for C2b), C3 warrants colonoscopy referral, and C4 warrants colonoscopy together with surgical/oncological consultation and formal communication to the referring physician. On the extracolonic side, E1/E2 findings need no further action, E3 findings may warrant dedicated further characterisation, and E4 findings need prompt further workup because of their higher likelihood of clinical significance.\n\n### Pitfalls and limitations\n- Diverticular myochosis coli can mimic both a collapsed (inadequately insufflated) segment and a true mass, so it must be actively distinguished from C0 and from C2b/C4 based on the pattern of luminal narrowing.\n- A previously known extracolonic finding should not be automatically upgraded to E3/E4 on the basis of its imaging appearance alone if it has already been shown to be stable.\n- Several extracolonic examples require a specific quantitative or qualitative threshold to be applied correctly (Bosniak category, liver attenuation ≥75 HU, AAA >3 cm) rather than being assigned on a purely descriptive basis.\n- A C0 categorisation is provisional, not final - reports should be amended once prior comparison studies become available.\n\n### Take-home points\n- C-RADS uses two independent scales at CT colonography: a colonic scale (C0-C4, with C2 split into C2a and C2b) and an extracolonic scale (E1/E2, E3, E4).\n- Colonic category is driven by polyp size, polyp count, subepithelial lesion size, diverticular mass-like appearance, and study adequacy, with an explicit upgrade rule for polyps that grow on follow-up.\n- C4 specifically requires both luminal compromise and extracolonic invasion, not size alone.\n- Extracolonic category depends on both the imaging appearance and whether the finding is new or a known, stable finding.\n- Management recommendations range from routine screening through short-interval imaging and endoscopic referral to combined endoscopic/surgical/oncological referral, and should be communicated appropriately to the referring clinician.",
+    "questions": [
+      {
+        "q_number": 1,
+        "question_text": "Regarding assignment of a C0 (Inadequate Study) category at CT colonography, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A colonic segment collapsed on both the prone and supine (or decubitus) acquisitions is a recognised cause of an inadequate study, unless myochosis coli is suspected.",
+          "Residual fluid or faecal material only precludes a C0 categorisation once it obscures lesions of any size.",
+          "A C0 study should be permanently labelled as such even once prior comparison studies become available.",
+          "Options for managing an inadequate study include repeating the CT colonography or considering an alternative screening test.",
+          "A collapsed colonic segment suspected to represent myochosis coli should be categorised as C0 rather than C2b."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            3
+          ],
+          "explanation": "A segment that remains collapsed on both views is specifically defined as an inadequate study, provided myochosis coli is not suspected; when myochosis coli is suspected, the segment is instead categorised as a likely benign diverticular finding rather than as an inadequate study. Inadequate preparation is defined by retained fluid or faeces obscuring lesions ≥10 mm, not lesions of any size, so an inadequate study is not triggered by trivial residue alone. A C0 categorisation is provisional rather than permanent and should be amended once prior comparison studies are available. Repeating the examination or considering an alternative screening test are both explicitly recognised management options when a study is inadequate.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 2,
+        "question_text": "CT colonography performed as part of a screening programme in an asymptomatic 58-year-old. A single well-defined, fat-attenuation lesion measuring 12 mm is identified in the sigmoid colon, in keeping with a lipoma. No polyp measuring 6 mm or greater is identified elsewhere, and the study is technically adequate.\n\nWhat is the most appropriate C-RADS colonic category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "C2b - Likely Benign Diverticular Finding",
+          "C1 - Normal Colon or Benign Lesion",
+          "C0 - Inadequate Study/Awaiting Prior Comparisons",
+          "C3 - Polyp, Possibly Advanced Adenoma",
+          "C2a - Intermediate Polyp or Indeterminate Finding"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "C1 - Normal Colon or Benign Lesion",
+          "correct_options": null,
+          "explanation": "A lipoma is explicitly listed as a recognised C1 finding because its fat attenuation is diagnostic of a definitively benign lesion rather than an adenomatous polyp requiring size-based triage, and no polyp ≥6 mm is present elsewhere to raise an intermediate or advanced category. The diverticular mass-like category does not apply, as there is no diverticular abnormality described, and the polyp-based categories do not apply because a lipoma is not scored using the polyp size/count criteria.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 3,
+        "question_text": "Regarding the C-RADS E1/E2 extracolonic category, which of the following are recognised examples?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A Bosniak I renal cyst.",
+          "An adrenal adenoma characterised by non-contrast CT criteria.",
+          "A calcified (“porcelain”) gallbladder wall.",
+          "An uncomplicated gallstone.",
+          "A previously known finding that would otherwise meet E3 or E4 criteria but has remained stable."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "explanation": "Benign kidney cysts corresponding to Bosniak I or II, an adrenal adenoma characterised on non-contrast CT criteria, and uncomplicated kidney or gallstones are all explicitly listed as E1/E2 examples, as is a previously known finding that has remained stable even though its imaging appearance alone might otherwise support a higher category. A calcified, porcelain gallbladder wall is instead given as an example of a likely clinically unimportant finding that may still warrant further workup, so it does not belong in the least concerning extracolonic category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 4,
+        "question_text": "CT colonography performed for screening in a 55-year-old. Two sessile polyps are identified in the transverse colon, measuring 7 mm and 8 mm respectively. No other polyp or mass is seen, and the study is otherwise adequate.\n\nWhat is the most appropriate C-RADS colonic category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "C2a - Intermediate Polyp or Indeterminate Finding",
+          "C4 - Colonic Mass, Likely Malignant",
+          "C1 - Normal Colon or Benign Lesion",
+          "C2b - Likely Benign Diverticular Finding",
+          "C3 - Polyp, Possibly Advanced Adenoma"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "C2a - Intermediate Polyp or Indeterminate Finding",
+          "correct_options": null,
+          "explanation": "Two polyps measuring 6-9 mm, fewer than three in number, meet the definition of an intermediate polyp/indeterminate finding. A normal colon or benign lesion category is excluded because a polyp ≥6 mm is present, and an advanced polyp category is excluded because that requires either a polyp ≥10 mm, three or more polyps each 6-9 mm, or a subepithelial lesion ≥10 mm, none of which are present here.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 5,
+        "question_text": "Regarding the C1 (Normal Colon or Benign Lesion) category, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A polyp measuring 6 mm should still be categorised as C1.",
+          "A lipoma is a recognised C1 finding.",
+          "An inverted diverticulum is a recognised C1 finding.",
+          "Symptomatic pneumatosis cystoides coli is classified as C1.",
+          "Colonic diverticula are a recognised nonneoplastic C1 finding."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            2,
+            4
+          ],
+          "explanation": "A lipoma and an inverted diverticulum are both explicitly listed as recognised C1 findings, as are colonic diverticula, given as an example of a nonneoplastic finding within this category. A polyp measuring 6 mm cannot be categorised as C1, since C1 specifically requires no polyp ≥6 mm to be present. The C1 example given for pneumatosis cystoides coli is specifically the asymptomatic form; a symptomatic presentation is not the scenario described for this category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 6,
+        "question_text": "Regarding the C-RADS E3 extracolonic category, which of the following are recognised examples?",
+        "q_type": "multiple_choice",
+        "options": [
+          "An indeterminate cystic adnexal lesion in a postmenopausal woman without suspicious features.",
+          "A renal cyst that cannot be clearly categorised as benign, corresponding to Bosniak III.",
+          "Increased liver attenuation of 75 Hounsfield units or greater, raising suspicion for iron overload.",
+          "A spiculated lung mass.",
+          "An indeterminate solitary bone lesion."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "explanation": "An indeterminate postmenopausal cystic adnexal lesion without suspicious features, a Bosniak III renal cyst, liver attenuation ≥75 HU suggesting iron overload, and an indeterminate solitary bone lesion are all explicitly listed as E3 examples of likely clinically unimportant findings that may still warrant further workup. A spiculated lung mass is instead given as an example of a likely clinically important finding needing further workup, so it belongs to the higher extracolonic category rather than E3.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 7,
+        "question_text": "CT colonography in a 68-year-old with a long history of diverticular disease. A segment of sigmoid colon shows luminal narrowing with a mass-like configuration attributable to muscular hypertrophy and stricture formation; there is no discrete polyp or bowel wall mass, and the appearances are considered likely benign.\n\nWhat is the most appropriate C-RADS colonic category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "C4 - Colonic Mass, Likely Malignant",
+          "C0 - Inadequate Study/Awaiting Prior Comparisons",
+          "C2b - Likely Benign Diverticular Finding",
+          "C2a - Intermediate Polyp or Indeterminate Finding",
+          "C3 - Polyp, Possibly Advanced Adenoma"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "C2b - Likely Benign Diverticular Finding",
+          "correct_options": null,
+          "explanation": "A mass-like area attributable to severe diverticular myochosis coli, muscular hypertrophy, or stricture is specifically defined as a likely benign diverticular finding, distinct from a true polyp. This excludes the intermediate and advanced polyp categories, which apply to discrete polyps or subepithelial lesions rather than diverticular mass-like disease, and excludes the malignant mass category, which requires bowel lumen compromise together with extracolonic invasion rather than a likely benign diverticular appearance.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 8,
+        "question_text": "Regarding assignment of the C2a (Intermediate Polyp or Indeterminate Finding) category, which of the following statements is correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "C2a is reserved for polyps measuring 10 mm or greater.",
+          "C2a requires three or more polyps within the 6-9 mm range.",
+          "C2a describes an intermediate polyp measuring 6-9 mm, when fewer than three such polyps are present.",
+          "Management of a C2a finding is identical regardless of individual patient circumstances.",
+          "A C2a polyp that enlarges on a follow-up study remains categorised as C2a."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            2
+          ],
+          "explanation": "C2a is specifically defined as an intermediate polyp measuring 6-9 mm, when fewer than three such polyps are identified; polyps ≥10 mm and three or more polyps of 6-9 mm both fall instead under the advanced polyp category. Management of a C2a finding is subject to individual patient circumstance rather than being fixed, since repeat CT colonography in 3 years and colonoscopy referral are both options. A C2a polyp that enlarges on a follow-up study is explicitly reclassified as an advanced polyp category rather than remaining categorised as C2a.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 9,
+        "question_text": "Regarding the C-RADS E4 extracolonic category, which of the following statements is correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "E4 findings require no additional workup.",
+          "An uncomplicated gallstone is a recognised E4 example.",
+          "The example given for a staghorn calculus under E4 relates to obstruction of the biliary tree rather than the urinary tract.",
+          "A Bosniak I renal cyst is a recognised E4 finding.",
+          "An abdominal aortic aneurysm greater than 3 cm is a recognised E4 finding."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            4
+          ],
+          "explanation": "An abdominal aortic aneurysm greater than 3 cm is explicitly listed as a recognised E4 example of a likely clinically important finding needing further workup. E4 findings are defined as needing further workup, not as requiring none. An uncomplicated gallstone and a Bosniak I renal cyst are both given as E1/E2 examples of no clinically important finding, not as E4 findings. The staghorn calculus example given for E4 specifically concerns urinary tract obstruction, not the biliary tree.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 10,
+        "question_text": "CT colonography in a 59-year-old. A solitary sessile polyp measuring 14 mm is identified in the descending colon. No other abnormality is seen and the examination is technically adequate.\n\nWhat is the most appropriate C-RADS colonic category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "C1 - Normal Colon or Benign Lesion",
+          "C3 - Polyp, Possibly Advanced Adenoma",
+          "C4 - Colonic Mass, Likely Malignant",
+          "C2a - Intermediate Polyp or Indeterminate Finding",
+          "C2b - Likely Benign Diverticular Finding"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "C3 - Polyp, Possibly Advanced Adenoma",
+          "correct_options": null,
+          "explanation": "A polyp measuring ≥10 mm meets the definition of a possibly advanced adenoma regardless of the total polyp count. This is distinguished from the intermediate polyp category, which is reserved for polyps 6-9 mm in number fewer than three, and from the malignant mass category, which requires evidence of luminal compromise and extracolonic invasion rather than an isolated polyp confined to the bowel wall.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 11,
+        "question_text": "Regarding the use of the Bosniak renal cyst classification within C-RADS extracolonic categorisation, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A Bosniak II renal cyst is categorised as E3.",
+          "A Bosniak III renal cyst is categorised as E1/E2.",
+          "A Bosniak I renal cyst is categorised as E1/E2.",
+          "A Bosniak III renal cyst is categorised as E3.",
+          "A Bosniak IV renal lesion is categorised as E4."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "Bosniak I and II renal cysts are both explicitly given as examples of the least concerning extracolonic category, so a Bosniak I cyst is correctly categorised there. A Bosniak III renal cyst that cannot be clearly categorised as benign is instead given as the example for the likely unimportant category warranting further workup, and a Bosniak IV renal lesion is given as an example of high suspicion for malignancy within the likely clinically important category. A Bosniak II cyst therefore does not belong in the intermediate category, and a Bosniak III cyst does not belong in the least concerning category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 12,
+        "question_text": "Regarding the C2b (Likely Benign Diverticular Finding) category, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "C2b is defined by a discrete polypoid lesion rather than a mass-like diverticular abnormality.",
+          "Severe diverticular myochosis coli is a recognised cause of a C2b categorisation.",
+          "All C2b findings should be followed up with colonoscopy referral, identical to the advanced polyp category.",
+          "A colonic stricture identified on CT colonography is categorised under the advanced polyp category rather than C2b.",
+          "When a C2b finding is considered uncertain rather than clearly benign, a shorter interval of three years or less for repeat CT colonography is recommended."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            4
+          ],
+          "explanation": "Severe diverticular myochosis coli is one of the explicit examples given for a mass-like area supporting a C2b categorisation. C2b is specifically defined by a mass-like diverticular abnormality, not a discrete polyp, so it is not the polyp-based category. Management differs from the advanced polyp category, which is managed with colonoscopy referral, whereas C2b is managed with repeat imaging at an interval that depends on diagnostic confidence: five years if likely benign, or three years or less if the appearance is uncertain. A stricture is explicitly listed as a recognised cause of C2b, not of the advanced polyp category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 13,
+        "question_text": "CT colonography in a 71-year-old presenting with altered bowel habit. A circumferential soft-tissue mass is identified in the sigmoid colon, causing luminal narrowing, with imaging features suggesting extension of the mass beyond the bowel wall into the extracolonic fat.\n\nWhat is the most appropriate C-RADS colonic category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "C4 - Colonic Mass, Likely Malignant",
+          "C0 - Inadequate Study/Awaiting Prior Comparisons",
+          "C3 - Polyp, Possibly Advanced Adenoma",
+          "C1 - Normal Colon or Benign Lesion",
+          "C2b - Likely Benign Diverticular Finding"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "C4 - Colonic Mass, Likely Malignant",
+          "correct_options": null,
+          "explanation": "A lesion that compromises the bowel lumen and demonstrates extracolonic invasion meets the specific definition of a colonic mass likely to be malignant. This is distinguished from the advanced polyp category, which covers polyps and subepithelial lesions without extracolonic extension, and from the likely benign diverticular category, which describes mass-like diverticular disease rather than a lesion with features of extracolonic invasion.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 14,
+        "question_text": "Regarding recognised E4 (Likely Clinically Important) extracolonic findings, which of the following are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Bulky lymphadenopathy suspicious for malignancy.",
+          "A staghorn calculus causing urinary obstruction.",
+          "A calcified gallbladder wall.",
+          "A Bosniak III renal cyst.",
+          "Lung airspace consolidation suggesting pneumonia."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            1,
+            4
+          ],
+          "explanation": "Bulky lymphadenopathy suspicious for malignancy, an obstructing staghorn urinary calculus, and lung airspace consolidation suggesting pneumonia are all explicitly listed as E4 examples of likely clinically important findings needing further workup. A calcified, porcelain gallbladder wall and a Bosniak III renal cyst are instead both given as examples of the likely unimportant category, where further workup may be warranted rather than a finding of high clinical importance.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 15,
+        "question_text": "CT colonography in a 62-year-old undergoing screening. Multiple diverticula are noted throughout the sigmoid colon, and a few tiny asymptomatic pockets of intramural gas are identified in the descending colon, in keeping with pneumatosis cystoides coli. The patient is asymptomatic with no relevant acute presentation. No polyp is identified, and the study is technically adequate.\n\nWhat is the most appropriate C-RADS colonic category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "C4 - Colonic Mass, Likely Malignant",
+          "C2b - Likely Benign Diverticular Finding",
+          "C0 - Inadequate Study/Awaiting Prior Comparisons",
+          "C1 - Normal Colon or Benign Lesion",
+          "C3 - Polyp, Possibly Advanced Adenoma"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "C1 - Normal Colon or Benign Lesion",
+          "correct_options": null,
+          "explanation": "Colonic diverticula and asymptomatic pneumatosis cystoides coli are both explicitly listed as nonneoplastic C1 findings, and the absence of any polyp ≥6 mm removes any basis for an intermediate or advanced polyp category. The diverticular mass-like category does not apply, as there is no mass-like abnormality such as myochosis coli, muscular hypertrophy, or stricture described here, only simple diverticulosis with incidental benign pneumatosis.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 16,
+        "question_text": "Regarding the C3 (Polyp, Possibly Advanced Adenoma) category, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A solitary polyp measuring 10 mm or greater qualifies for C3.",
+          "C3 requires at least five polyps to be present.",
+          "Three or more polyps, each measuring 6-9 mm, qualify for C3.",
+          "A subepithelial lesion measuring 10 mm or greater is a recognised C3 finding.",
+          "Repeat CT colonography in three years, rather than colonoscopy referral, is the recommended management for a C3 finding."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            2,
+            3
+          ],
+          "explanation": "A solitary polyp ≥10 mm, three or more polyps each 6-9 mm, and a subepithelial lesion ≥10 mm are all explicitly listed as criteria for the possibly advanced adenoma category. There is no requirement for as many as five polyps; the count-based criterion is three or more polyps in the 6-9 mm range. Colonoscopy referral, not a repeat CT colonography interval, is the recommended management for this category; a repeat interval of three years is instead an option for the intermediate polyp category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 17,
+        "question_text": "Regarding recognised E3 extracolonic findings, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A calcified (“porcelain”) gallbladder wall is a recognised E3 finding.",
+          "Increased liver attenuation suspicious for iron overload requires a threshold below 50 Hounsfield units.",
+          "An indeterminate solitary bone lesion is a recognised E3 finding.",
+          "The E3 category is applied specifically to findings already confirmed to represent malignancy.",
+          "An indeterminate cystic adnexal lesion in a premenopausal woman is the example given for E3."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            2
+          ],
+          "explanation": "A calcified, porcelain gallbladder wall and an indeterminate solitary bone lesion are both explicitly listed as E3 examples of likely clinically unimportant findings for which further workup may be warranted. The liver attenuation threshold given for suspected iron overload is ≥75 Hounsfield units, not below 50. E3 is defined as likely clinically unimportant, not as a category applied to findings already confirmed as malignant. The example given for the indeterminate cystic adnexal lesion specifically concerns postmenopausal women, not premenopausal women.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 18,
+        "question_text": "Screening CT colonography in a 60-year-old. A single sessile polyp measuring 6 mm is identified in the caecum. The remainder of the colon is normal and the study is technically adequate.\n\nWhat is the most appropriate C-RADS colonic category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "C4 - Colonic Mass, Likely Malignant",
+          "C0 - Inadequate Study/Awaiting Prior Comparisons",
+          "C3 - Polyp, Possibly Advanced Adenoma",
+          "C1 - Normal Colon or Benign Lesion",
+          "C2a - Intermediate Polyp or Indeterminate Finding"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "C2a - Intermediate Polyp or Indeterminate Finding",
+          "correct_options": null,
+          "explanation": "A solitary polyp measuring 6 mm falls within the 6-9 mm intermediate range and is fewer than three in number, so it meets the definition of the intermediate polyp category. It cannot be categorised as normal colon or benign lesion, since that requires no polyp ≥6 mm, and it does not meet the ≥10 mm, three-or-more-polyp, or subepithelial lesion criteria required for the advanced polyp category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 19,
+        "question_text": "Regarding the C4 (Colonic Mass, Likely Malignant) category, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A colonic mass measuring 10 mm that remains confined within the bowel wall, without luminal narrowing, meets the definition of C4.",
+          "A C4 lesion is, by definition, confined entirely within the bowel wall without extracolonic extension.",
+          "A C4 lesion compromises the bowel lumen.",
+          "Surgical or oncologic consultation is an appropriate recommendation for a C4 finding.",
+          "Communication with the referring physician is not required for a C4 finding given its rarity."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            2,
+            3
+          ],
+          "explanation": "A C4 lesion is specifically defined as one that compromises the bowel lumen, and colonoscopy together with surgical and/or oncologic consultation is the recommended management. Size alone does not define C4; both luminal compromise and extracolonic invasion are required features, so a mass confined within the bowel wall without luminal narrowing does not meet the definition, however large it measures. Communication to the referring physician, following accepted guidelines for communicating diagnostic imaging findings, is explicitly recommended for this category rather than being waived.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 20,
+        "question_text": "Regarding recognised E4 extracolonic findings, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Multiple bone lesions suggestive of metastasis or multiple myeloma are recognised E4 findings.",
+          "A solitary indeterminate bone lesion without further features is the example given for E4.",
+          "Peritoneal nodularity is not mentioned as an example of any extracolonic category.",
+          "An unsuspected osteoporotic fracture is a recognised E4 finding.",
+          "Lung airspace consolidation suggesting pneumonia is a recognised E4 finding."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            3,
+            4
+          ],
+          "explanation": "Multiple bone lesions suggestive of metastasis or multiple myeloma, an unsuspected osteoporotic fracture, and lung airspace consolidation suggesting pneumonia are all explicitly listed as E4 examples. The solitary indeterminate bone lesion is instead the example given for the likely unimportant category, not for E4, which specifically uses multiple bone lesions suggestive of metastasis or myeloma as its bone-related example. Peritoneal nodularity is explicitly mentioned as an example of high suspicion for malignancy within the E4 category, so it is not absent from the system.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 21,
+        "question_text": "A 61-year-old attends for interval CT colonography follow-up of a polyp previously categorised as C2a. The polyp, previously measuring 7 mm, has enlarged in size on this follow-up study, with no evidence of luminal compromise or extracolonic extension.\n\nWhat is the most appropriate C-RADS colonic category for this finding on the follow-up study?",
+        "q_type": "single_choice",
+        "options": [
+          "C0 - Inadequate Study/Awaiting Prior Comparisons",
+          "C4 - Colonic Mass, Likely Malignant",
+          "C2a - Intermediate Polyp or Indeterminate Finding",
+          "C2b - Likely Benign Diverticular Finding",
+          "C3 - Polyp, Possibly Advanced Adenoma"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "C3 - Polyp, Possibly Advanced Adenoma",
+          "correct_options": null,
+          "explanation": "A polyp previously categorised as C2a that has enlarged on follow-up is specifically reclassified as the possibly advanced adenoma category, reflecting the increased concern raised by interval growth. It would be inappropriate to retain the original intermediate polyp categorisation once growth has been demonstrated, and there is no luminal compromise or extracolonic invasion described here that would instead indicate the malignant mass category.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 22,
+        "question_text": "Regarding recommended follow-up intervals after CT colonography, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A C1 result warrants routine screening repeated every 1-2 years.",
+          "A C2a result may be followed with repeat CT colonography in 3 years.",
+          "Likely benign C2b findings and uncertain C2b findings share the same recommended follow-up interval of three years.",
+          "A likely benign C2b finding may be followed with a repeat examination in 5 years.",
+          "A C3 finding is typically managed with repeat CT colonography in 3 years rather than colonoscopy referral."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            3
+          ],
+          "explanation": "Repeat CT colonography in 3 years is an explicit management option for a C2a finding, and a repeat examination in 5 years is the recommended interval when a C2b finding is considered likely benign. Routine screening for a normal colon or benign lesion is recommended roughly every 5-10 years, not every 1-2 years. Likely benign and uncertain C2b findings do not share the same interval: the recommended interval is 5 years when likely benign but 3 years or less when the appearance is uncertain. A C3 finding is managed with colonoscopy referral, not with a fixed repeat CT colonography interval.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 23,
+        "question_text": "CT colonography performed in a 64-year-old for screening. On review, a segment of the descending colon is seen to be collapsed on both the prone and supine acquisitions. There is no suspicion of underlying myochosis coli, and this segment cannot be adequately assessed on either view.\n\nWhat is the most appropriate C-RADS colonic category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "C1 - Normal Colon or Benign Lesion",
+          "C3 - Polyp, Possibly Advanced Adenoma",
+          "C2a - Intermediate Polyp or Indeterminate Finding",
+          "C0 - Inadequate Study/Awaiting Prior Comparisons",
+          "C2b - Likely Benign Diverticular Finding"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "C0 - Inadequate Study/Awaiting Prior Comparisons",
+          "correct_options": null,
+          "explanation": "A colonic segment that remains collapsed on both views, without suspicion of underlying myochosis coli, defines an inadequate study due to inadequate insufflation and is categorised accordingly. This differs from the likely benign diverticular category, which is reserved for cases where a mass-like appearance raises suspicion of myochosis coli rather than a technically inadequate collapsed segment, and from the other categories, which all presuppose that the colon has been adequately evaluated.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 24,
+        "question_text": "Regarding the overall structure of C-RADS, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "C-RADS comprises two separate assessment scales, one for colonic findings and one for extracolonic findings.",
+          "The colonic and extracolonic scales share an identical category labelling scheme.",
+          "The colonic scale includes a dedicated category for studies that cannot be adequately evaluated.",
+          "A finding that is stable and previously known may remain in the least concerning extracolonic category even if its imaging features alone might otherwise suggest further workup.",
+          "Management recommendations differ between categories, ranging from routine screening to colonoscopy with surgical or oncologic consultation."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "explanation": "C-RADS is structured as two separate assessment category tables, one covering colonic findings and one covering extracolonic findings, and the colonic scale specifically includes an inadequate-study category for studies that cannot be adequately evaluated. A previously known, stable finding is explicitly permitted to remain in the least concerning extracolonic category even where its imaging appearance alone might otherwise suggest a higher category. Management recommendations clearly differ by category, ranging from routine screening through short-interval imaging and endoscopic referral to combined endoscopic, surgical, and oncologic referral. The two scales do not share an identical labelling scheme: the colonic scale uses C0 through C4 with C2 split into sub-tiers, while the extracolonic scale uses a differently structured E1/E2, E3, E4 scheme.",
+          "page_images": []
+        }
+      }
+    ]
+  }
+]

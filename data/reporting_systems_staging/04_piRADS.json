@@ -1,0 +1,415 @@
+[
+  {
+    "chapter_id": 5,
+    "chapter_match": "exact",
+    "source": "Reporting Systems",
+    "section": "mrq",
+    "library_key": "edir",
+    "clinical_vignette": "PI-RADS v2.1 (Prostate Imaging Reporting and Data System, ACR/ESUR/AdMeTech 2019)",
+    "article_summary": "### PI-RADS v2.1 (Prostate Imaging Reporting and Data System)\n\n**Source:** PI-RADS v2.1, American College of Radiology (ACR), European Society of Urogenital Radiology (ESUR), and AdMeTech Foundation, 2019.\n\n**Scope:** A structured 5-point reporting system for multiparametric MRI (mpMRI) of the treatment-naive prostate gland, used to estimate the likelihood of clinically significant prostate cancer at each lesion and to help select patients for biopsy.\n\n### Category cheat-sheet\n- **PI-RADS 1 - Very low:** clinically significant cancer is highly unlikely; a normal-appearing gland, or in the transition zone a round, completely encapsulated \"typical\" nodule.\n- **PI-RADS 2 - Low:** clinically significant cancer is unlikely; findings are most consistent with benign tissue, e.g. mild non-focal signal change in the peripheral zone or a mostly-encapsulated \"atypical\" transition-zone nodule without markedly restricted diffusion.\n- **PI-RADS 3 - Intermediate:** the presence of clinically significant cancer is equivocal; the dominant-sequence finding is indeterminate and does not meet the criteria for category 2 or category 4.\n- **PI-RADS 4 - High:** clinically significant cancer is likely present; the dominant-sequence finding meets the defined \"markedly abnormal\" criteria and is under 1.5 cm, with no extraprostatic extension.\n- **PI-RADS 5 - Very high:** clinically significant cancer is highly likely; same imaging features as category 4 but the lesion is 1.5 cm or larger, or shows definite extraprostatic extension/invasive behaviour.\n\n### Key imaging/scoring points\n- Clinically significant cancer is defined as Gleason score >7 (including 3+4 with a prominent but not predominant Gleason 4 component), and/or tumour volume >0.5cc, and/or extraprostatic extension.\n- The dominant sequence differs by zone: diffusion-weighted imaging (DWI, using the ADC map plus a high b-value of at least 1400 sec/mm2) is dominant in the peripheral zone (PZ); T2-weighted imaging (T2W) is dominant in the transition zone (TZ).\n- Dynamic contrast-enhanced (DCE) imaging plays only a secondary role and changes the overall category in one specific situation: when a PZ lesion scores DWI 3, a positive DCE (focal enhancement, earlier than or contemporaneous with adjacent normal tissue, corresponding to the T2W/DWI finding) upgrades the lesion to PI-RADS 4.\n- A TZ-specific upgrade rule applies to T2W: an \"atypical nodule\" (T2W score 2) is upgraded to PI-RADS 3 if DWI shows markedly restricted diffusion (score ≥4); mild/moderate restriction (DWI score 3) does not upgrade a T2W score of 1 or 2.\n- A greatest dimension of 1.5 cm (or definite extraprostatic extension/invasive behaviour) is the threshold separating category 4 from category 5 on both the PZ (DWI-based) and TZ (T2W-based) tables.\n- Characteristic TZ tumour features include a non-circumscribed, homogeneous, moderately hypointense appearance sometimes called the \"erased charcoal\" or \"smudgy fingerprint\" sign, a lenticular shape, spiculated margins, absence of a complete hypointense capsule, and invasion of the urethral sphincter or anterior fibromuscular stroma; the more of these features present, the higher the likelihood of clinically significant TZ cancer.\n- A technically inadequate sequence is scored \"X\": without adequate DCE the PZ category is determined by DWI alone (a DWI-3 finding cannot be upgraded) while TZ assessment is unaffected; without adequate DWI, assessment falls back to the T2W/DCE-based tables.\n\n### Practical/management implications\n- Biopsy should be considered for PI-RADS 4 or 5 and generally not for PI-RADS 1 or 2; for PI-RADS 3, whether to biopsy depends on factors outside the MRI (PSA, digital rectal exam, clinical history) since PI-RADS v2.1 itself makes no management recommendation.\n- Up to four lesions scored PI-RADS 3, 4, or 5 are marked on the sector map; the index (dominant) lesion is the one with the highest category, or if tied, the one showing extraprostatic extension, or otherwise the largest.\n- Reporting a PI-RADS 2 or definitely benign finding is optional but can be useful as a landmark for biopsy targeting or for tracking on follow-up exams.\n- Omitting DCE (biparametric MRI) shifts more PZ lesions into category 3, since a DWI-3 finding can no longer be upgraded, and correspondingly reduces the proportion assigned category 4; multiparametric MRI (including DCE) remains preferred for prior-negative-biopsy patients with rising PSA, active surveillance with rapid PSA doubling, men with prior treatment that has altered gland morphology, biopsy-naive men with strong genetic/family risk, and patients expected to have degraded DWI quality (e.g. hip implants).\n\n### Pitfalls and limitations\n- An encapsulated, round, circumscribed nodule in the PZ or central zone is likely an extruded BPH nodule and should be scored category 2 even if it is hypointense on ADC.\n- Prostatitis can cause PZ signal loss on T2W and the ADC map, and can produce a \"false positive\" diffuse DCE enhancement; a band-like, wedge-shaped, or diffuse morphology (rather than focal and rounded) favours a benign process over cancer.\n- TZ assessment is inherently more difficult than PZ assessment because BPH produces heterogeneous glandular/stromal signal; restricted diffusion scattered diffusely among multiple similar TZ nodules is a background feature and should not be individually scored.\n- DWI/ADC signal intensity units are not standardised across MRI scanners, so consistent window/level settings and reader experience with a given scanner matter.\n- The incremental value of DCE over combined T2W and DWI is modest in the treatment-naive gland, and PI-RADS v2.1 assessment criteria do not apply to evaluation of suspected local recurrence after treatment.\n\n### Take-home points\n- DWI is the dominant sequence in the peripheral zone; T2W is the dominant sequence in the transition zone - always establish the zone of origin first.\n- The single most tested DCE rule is the PZ DWI-3-plus-positive-DCE upgrade to PI-RADS 4.\n- A transition-zone \"atypical nodule\" (T2W score 2) is upgraded to PI-RADS 3 only when DWI is markedly restricted (score ≥4), never for a DWI score of 3.\n- A 1.5 cm size threshold (or extraprostatic extension) separates category 4 from category 5 on both dominant-sequence tables.\n- The PI-RADS category reflects mpMRI findings alone; PSA, digital rectal exam findings, and clinical history should not be used to alter the assigned category.",
+    "questions": [
+      {
+        "q_number": 1,
+        "question_text": "Regarding the PI-RADS v2.1 assessment categories, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "PI-RADS 1 indicates that clinically significant cancer is highly unlikely to be present.",
+          "Assignment of a PI-RADS assessment category should incorporate serum PSA level and digital rectal examination findings alongside the mpMRI findings.",
+          "PI-RADS 3 denotes an equivocal likelihood of clinically significant cancer.",
+          "Biopsy should always be avoided for a finding assigned PI-RADS category 3, regardless of clinical context.",
+          "Biopsy should be considered for a finding assigned PI-RADS category 4 or 5."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 4],
+          "explanation": "PI-RADS 1 through 5 form a scale of increasing likelihood that a finding represents clinically significant cancer, with category 1 being 'highly unlikely' and category 3 representing a genuinely equivocal likelihood. The category assignment should be based on mpMRI findings alone; incorporating PSA, digital rectal exam, or clinical history into the category itself is explicitly discouraged, since these belong to separate clinical decision-making rather than the imaging score. Biopsy should be considered for category 4 or 5 findings, but PI-RADS v2.1 does not dictate management for category 3 - whether to biopsy depends on non-MRI factors, so an absolute rule against biopsy for category 3 is incorrect.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 2,
+        "question_text": "Regarding prostate biopsy timing and post-biopsy changes in relation to mpMRI, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "MRI performed after a negative TRUS biopsy should routinely be postponed for at least six weeks because of concern for missed clinically significant cancer at the site of post-biopsy hemorrhage.",
+          "Post-biopsy hemorrhage in the peripheral zone appears hyperintense on T1-weighted imaging and may confound mpMRI interpretation.",
+          "An interval of at least six weeks between biopsy and MRI is mandatory before any prostate mpMRI can be interpreted for tumour detection.",
+          "Post-biopsy changes such as hemorrhage and inflammation may adversely affect interpretation of prostate MRI for staging.",
+          "Antispasmodic agents such as glucagon are mandatory for all patients undergoing prostate mpMRI to reduce bowel motion artefact."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 3],
+          "explanation": "Post-biopsy hemorrhage is hyperintense on T1W and iso-to-hypointense on T2W, and can confound assessment of the peripheral zone. Because the likelihood of clinically significant cancer at a site of hemorrhage without a corresponding suspicious MRI finding is low, detection is not substantially compromised, so a mandatory delay before detection-focused interpretation is not required; the recommended interval of at least six weeks applies specifically to reduce the impact of post-biopsy changes on staging accuracy, not as a blanket requirement for tumour detection. Antispasmodic agents may help some patients but are not described as mandatory, since their cost and potential adverse effects must be weighed for each patient.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 3,
+        "question_text": "Regarding magnetic field strength and endorectal coil use for prostate mpMRI, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The fundamental advantage of 3T over 1.5T is an increased signal-to-noise ratio.",
+          "An endorectal coil increases signal-to-noise ratio in the prostate at any magnetic field strength.",
+          "Prostate mpMRI performed at magnetic field strengths below 1.5T is preferred because it reduces susceptibility artefact.",
+          "Use of an endorectal coil may deform the gland and introduce artefacts.",
+          "Distending an endorectal coil balloon with air can introduce local magnetic field inhomogeneity that distorts diffusion-weighted images, particularly at 3T."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 3, 4],
+          "explanation": "3T's principal advantage over 1.5T is a higher signal-to-noise ratio, which can be exploited for spatial or temporal resolution. Endorectal coils raise prostate SNR at any field strength and can be valuable for DWI and high-temporal-resolution DCE, but they add cost, discomfort, and can distort the gland; an air-filled balloon in particular can cause field inhomogeneity that degrades DWI, especially at 3T, which is why liquid distention is preferred. Field strengths below 1.5T are not recommended unless adequately validated, so they are not the preferred option.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 4,
+        "question_text": "Regarding the normal zonal anatomy of the prostate, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The transition zone surrounds the urethra proximal to the verumontanum and contains approximately 5% of the glandular tissue.",
+          "The central zone contains the greatest proportion of prostatic glandular tissue.",
+          "Approximately 70-75% of prostate cancers originate in the peripheral zone.",
+          "The term \"central gland\" is the preferred term for describing the combined transition and central zones on MRI reporting.",
+          "The prostate is surrounded by a true fibrous capsule that is complete both anteriorly and apically."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2],
+          "explanation": "The transition zone surrounds the proximal urethra and contains only about 5% of glandular tissue, while the peripheral zone contains 70-80% and is the site of origin for approximately 70-75% of prostate cancers. The central zone, not the transition zone, surrounds the ejaculatory ducts and contains about 20% of glandular tissue, so it does not hold the greatest proportion. The term \"central gland\" is discouraged because it does not reflect true zonal anatomy, and the prostate lacks a true capsule - it has an incomplete fibromuscular band that is absent anteriorly and apically.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 5,
+        "question_text": "Regarding benign prostatic findings on mpMRI, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Benign prostatic hyperplasia nodules are never seen outside the transition zone.",
+          "Prostatitis can cause a \"false positive\" DCE result due to increased perfusion.",
+          "Prostatic calcifications appear as markedly hypointense foci on all pulse sequences.",
+          "Prostatic atrophy typically demonstrates an ADC value as low as that seen in clinically significant cancer.",
+          "Simple prostatic cysts typically appear markedly hyperintense on T2-weighted imaging and dark on T1-weighted imaging."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 4],
+          "explanation": "Prostatitis increases perfusion and can produce a false-positive DCE result, though its band-like, wedge-shaped, or diffuse morphology usually distinguishes it from cancer. Calcifications appear as signal voids (markedly hypointense) on every pulse sequence, and simple cysts follow typical fluid signal - markedly hyperintense on T2W and dark on T1W. BPH arises in the transition zone but exophytic or extruded nodules can occur in the peripheral or central zone, so it is not confined to the transition zone, and prostatic atrophy shows only mildly decreased ADC, generally not as low as clinically significant cancer.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 6,
+        "question_text": "Regarding T2-weighted scoring of peripheral zone lesions in PI-RADS v2.1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A T2W score of 4 in the peripheral zone is assigned to any focal hypointense lesion regardless of size.",
+          "A T2W score of 2 in the peripheral zone corresponds to a circumscribed, homogeneous, moderately hypointense focus confined to the gland.",
+          "A T2W score of 1 in the peripheral zone represents uniform hyperintense (normal) signal intensity.",
+          "Heterogeneous or non-circumscribed rounded moderate hypointensity in the peripheral zone on T2W is scored as 5.",
+          "A linear or wedge-shaped hypointensity with an indistinct margin on T2W peripheral zone imaging is scored as 4."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [2],
+          "explanation": "A T2W score of 1 in the peripheral zone is defined as uniform hyperintense signal, representing normal tissue. A circumscribed, homogeneous, moderately hypointense focus confined to the gland and under 1.5 cm is the definition of score 4, not score 2, and score 4 explicitly requires that size threshold rather than applying to any focal hypointense lesion regardless of size. Heterogeneous or non-circumscribed rounded moderate hypointensity is the definition of score 3, and a linear/wedge-shaped indistinct hypointensity is score 2, not score 4 or 5.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 7,
+        "question_text": "Regarding T2-weighted scoring of transition zone lesions in PI-RADS v2.1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Transition zone tumours may demonstrate a non-circumscribed, homogeneous, moderately hypointense appearance sometimes described as an \"erased charcoal\" or \"smudgy fingerprint\" pattern.",
+          "A round, completely encapsulated nodule in the transition zone is scored as T2W category 4.",
+          "Spiculated margins and invasion of the urethral sphincter make a transition zone lesion less likely to represent clinically significant cancer.",
+          "A lenticular or non-circumscribed, homogeneous, moderately hypointense transition zone lesion less than 1.5 cm in greatest dimension is scored as T2W category 4.",
+          "The greater the number of features such as spiculated margins, lenticular shape, and an absent capsule present in a transition zone lesion, the higher the likelihood of clinically significant cancer."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 3, 4],
+          "explanation": "Transition zone cancers characteristically show a non-circumscribed, homogeneous, moderately hypointense pattern likened to erased charcoal or a smudgy fingerprint, and a lenticular, non-circumscribed lesion under 1.5 cm meets the definition of T2W score 4. The more of these suspicious features (spiculated margins, lenticular shape, absent capsule, sphincter invasion) that are present, the higher the likelihood of clinically significant cancer, which is the opposite of what one distractor claims. A round, completely encapsulated nodule is the \"typical nodule\" appearance and corresponds to T2W score 1, not score 4.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 8,
+        "question_text": "Regarding diffusion-weighted imaging (DWI) scoring in PI-RADS v2.1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A DWI score of 3 requires both marked hypointensity on the ADC map and marked hyperintensity on high b-value imaging simultaneously.",
+          "A DWI score of 4 requires a focal lesion that is markedly hypointense on the ADC map and markedly hyperintense on high b-value imaging, measuring less than 1.5 cm.",
+          "High b-value DWI sequences are defined by PI-RADS v2.1 as using a b-value of at least 800 sec/mm2.",
+          "An encapsulated, round, circumscribed nodule in the peripheral zone that is hypointense on ADC should be assigned a DWI-based PI-RADS category of 4.",
+          "The term \"markedly\" for DWI scoring is defined as a more pronounced signal change than any other focus within the same zone."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 4],
+          "explanation": "A DWI score of 4 requires a focal lesion that is markedly abnormal on both the ADC map and high b-value imaging simultaneously and measures under 1.5 cm, whereas a score of 3 may show marked abnormality on only one of the two, not both. \"Markedly\" is explicitly defined relative to other foci within the same zone, i.e. more pronounced than any other focus present. High b-value imaging requires at least 1400 sec/mm2, not 800, and an encapsulated, round, circumscribed PZ nodule that is hypointense on ADC is more likely an extruded BPH nodule and should be scored category 2, not 4.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 9,
+        "question_text": "Regarding dynamic contrast-enhanced (DCE) MRI assessment in PI-RADS v2.1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A \"positive\" DCE finding is focal, occurs earlier than or contemporaneously with enhancement of adjacent normal prostatic tissue, and corresponds to a suspicious finding on T2W and/or DWI.",
+          "DCE is the dominant sequence used to determine the overall PI-RADS assessment category in both the peripheral and transition zones.",
+          "Diffuse, multifocal enhancement that does not correspond to a focal T2W or DWI finding is classified as DCE negative.",
+          "DCE may assist in determining the index lesion when multiple lesions share the same highest PI-RADS category, with the largest DCE-positive lesion favoured.",
+          "Focal early enhancement corresponding to a lesion with benign prostatic hyperplasia features on T2W is still classified as DCE negative."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 3, 4],
+          "explanation": "A positive DCE result requires focal enhancement that is early or contemporaneous with adjacent normal tissue and corresponds to a T2W/DWI abnormality; diffuse enhancement not localised to a focal finding, and focal enhancement corresponding to a lesion with BPH features, are both classified as negative. DCE's role is secondary to T2W and DWI rather than dominant in either zone, but it can still help select the index lesion when several lesions tie for the highest category, favouring the largest DCE-positive lesion.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 10,
+        "question_text": "Regarding overall PI-RADS v2.1 assessment in the peripheral zone, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "In the peripheral zone, the T2W score is the dominant sequence used to determine the overall PI-RADS assessment category.",
+          "In the peripheral zone, a DWI score of 4 results in an overall PI-RADS category of 4 regardless of the T2W score.",
+          "In the peripheral zone, a DWI score of 3 with a negative DCE result yields an overall PI-RADS category of 3.",
+          "In the peripheral zone, a DWI score of 3 with a positive DCE result is upgraded to an overall PI-RADS category of 4.",
+          "In the peripheral zone, a DWI score of 2 combined with a positive DCE result is upgraded to PI-RADS category 3."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 3],
+          "explanation": "DWI, not T2W, is the dominant sequence for the peripheral zone, so a DWI score of 4 determines an overall category of 4 irrespective of the T2W score. A DWI score of 3 remains category 3 if DCE is negative but is specifically upgraded to category 4 if DCE is positive, since DCE only modifies the assessment at this one intermediate DWI score. DCE positivity does not upgrade a DWI score of 2, since the DCE-driven upgrade rule applies only to the DWI-3 scenario.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 11,
+        "question_text": "Regarding overall PI-RADS v2.1 assessment in the transition zone, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "In the transition zone, the T2W score is the dominant sequence used to determine the overall PI-RADS assessment category.",
+          "In the transition zone, a T2W score of 2 with a DWI score of 3 is upgraded to overall PI-RADS category 3.",
+          "In the transition zone, a T2W score of 1 is upgraded to overall PI-RADS category 2 if the DWI score shows markedly restricted diffusion.",
+          "In the transition zone, a T2W score of 4 combined with a DWI score of 2 still results in an overall PI-RADS category of 4.",
+          "In the transition zone, DCE positivity can independently upgrade a T2W score of 3 finding to overall PI-RADS category 4, analogous to the peripheral zone rule."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 3],
+          "explanation": "T2W is the dominant sequence in the transition zone, so a T2W score of 4 determines an overall category of 4 even when the DWI score is only 2. The DWI-based upgrade of an atypical (T2W score 2) nodule requires a DWI score of at least 4, not 3; mild-to-moderate restriction (DWI 3) is explicitly stated not to upgrade a T2W score of 1 or 2. The DCE-driven upgrade rule described for the peripheral zone (DWI-3 plus positive DCE upgrading to category 4) is not described as an equivalent rule for the transition zone.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 12,
+        "question_text": "Regarding which transition zone findings should be scored a PI-RADS assessment category, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A nodule in the transition zone demonstrating clearly more restricted diffusion than the surrounding background nodules should be scored.",
+          "A focal transition zone lesion with obscured margins, lenticular shape, or invasive behaviour on T2W should be scored even without differing restricted diffusion compared with background.",
+          "Restricted diffusion present diffusely across multiple similar-appearing nodules scattered throughout the transition zone should be scored as an individual suspicious finding.",
+          "All round, well-circumscribed, encapsulated transition zone nodules with restricted diffusion must be assigned a specific PI-RADS assessment category.",
+          "Homogeneous or heterogeneous nodules in the transition zone that are round, well-circumscribed, and encapsulated are common in men aged 40 and above and are generally considered BPH."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 4],
+          "explanation": "A nodule or region that shows more restricted diffusion than the surrounding background, or a focal lesion with obscured margins, lenticular shape, or invasive behaviour on T2W, should be scored even if diffusion restriction is not the distinguishing feature. Round, well-circumscribed, encapsulated nodules are common findings from age 40 onward and are generally considered BPH even when they show some restricted diffusion or enhancement, so they do not have to be separately assigned a category. Restricted diffusion that is a diffuse background feature shared by multiple similar nodules throughout the transition zone should not be scored as an individual suspicious finding.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 13,
+        "question_text": "Regarding lesion mapping and the index lesion in PI-RADS v2.1, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Up to four lesions with a PI-RADS category of 2, 3, 4, or 5 may be mapped on the sector map.",
+          "If two or more lesions share the highest PI-RADS assessment category, the lesion demonstrating extraprostatic extension should be designated as the index lesion.",
+          "If more than four suspicious lesions are identified, only the four with the highest PI-RADS assessment category should generally be reported.",
+          "Reporting of additional findings with a PI-RADS category of 2, or definitely benign findings, is optional but can serve as a landmark for subsequent biopsy or follow-up.",
+          "The index lesion is defined as the lesion with the highest PI-RADS assessment category among those identified."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 3, 4],
+          "explanation": "The index lesion is by definition the one with the highest PI-RADS category; when two or more lesions tie for the highest category, the lesion with extraprostatic extension becomes the index lesion even if it is smaller than another tied lesion. Only up to four lesions with a category of 3, 4, or 5 (not 2) are mapped, since category 2 or definitely benign findings are optional to report and are mainly useful as landmarks for biopsy or tracking. When more than four suspicious lesions exist, only the four with the highest category are generally reported.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 14,
+        "question_text": "Regarding staging for extraprostatic extension and seminal vesicle invasion, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Extraprostatic extension is best assessed using high b-value diffusion-weighted imaging rather than T2-weighted imaging.",
+          "A tumour-capsule interface of less than 1.0 cm is a recognised imaging feature suggesting extraprostatic extension.",
+          "Lymph nodes are only considered suspicious on MRI when they exceed 15 mm in short-axis dimension.",
+          "Features of seminal vesicle invasion include obliteration of the angle between the base of the prostate and the seminal vesicle.",
+          "Bone metastases do not need to be assessed as part of a standard PI-RADS-compliant staging evaluation."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [3],
+          "explanation": "Obliteration of the angle between the prostate base and the seminal vesicle, together with abnormal seminal vesicle signal, enhancement, and restricted diffusion, are recognised features of seminal vesicle invasion. High spatial resolution T2W imaging, not DWI, is required for accurate assessment of extraprostatic extension, and a tumour-capsule interface greater than 1.0 cm (not less than) is the feature suggesting extension. Lymph nodes over 8 mm in short axis, not 15 mm, are regarded as suspicious, and images should always be assessed for bone metastases.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 15,
+        "question_text": "Regarding biparametric MRI and pelvic lymph node assessment, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Biparametric MRI omitting DCE is recommended by the PI-RADS Steering Committee as the preferred technique for all biopsy-naive men.",
+          "When DCE is omitted, lesions in the peripheral zone with a DWI score of 3 are upgraded to PI-RADS category 4 based on T2W features alone.",
+          "Omitting DCE is expected to increase the proportion of peripheral zone findings categorised as PI-RADS 3 and decrease the proportion categorised as PI-RADS 4.",
+          "Pelvic lymph nodes are regarded as suspicious on MRI only on the basis of increased size, irrespective of morphology or enhancement.",
+          "Men with a hip implant that is expected to degrade diffusion-weighted image quality should be evaluated with multiparametric rather than biparametric MRI."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [2, 4],
+          "explanation": "Without DCE, a peripheral zone DWI score of 3 cannot be upgraded, so more findings remain at category 3 while fewer reach category 4. Multiparametric MRI (including DCE) is preferred, not biparametric MRI, for men expected to have degraded DWI, such as those with a hip implant, since DCE can act as a safety-net when DWI quality is compromised. Biparametric MRI is not recommended as the preferred technique for all biopsy-naive men; the Committee reserves it for select indications and prefers mpMRI in several specific scenarios, and lymph node suspicion on MRI is based on size, morphology/shape, and enhancement pattern together, not size alone.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 16,
+        "question_text": "A 61-year-old man undergoes prostate mpMRI for a persistently elevated PSA. A lesion in the left peripheral zone at the mid-gland measures 1.8 cm in greatest dimension. On DWI, the lesion is markedly hypointense on the ADC map and markedly hyperintense on high b-value imaging (b=1400 sec/mm2). What is the most appropriate PI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["PI-RADS 1", "PI-RADS 2", "PI-RADS 3", "PI-RADS 4", "PI-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "PI-RADS 5",
+          "correct_options": null,
+          "explanation": "DWI is the dominant sequence for peripheral zone assessment. A focal lesion that is markedly hypointense on ADC and markedly hyperintense on high b-value imaging meets the criteria for DWI score 4, but because it measures 1.8 cm, which is at or above the 1.5 cm threshold, it is upgraded to DWI score 5, giving an overall PI-RADS category of 5. A category of 4 would apply to the identical imaging appearance only if the lesion measured under 1.5 cm, and lower categories require less marked or non-focal signal change than described here.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 17,
+        "question_text": "A 58-year-old man undergoes prostate mpMRI to investigate an elevated PSA of 8.4 ng/mL. A right peripheral zone lesion at the apex measures 1.1 cm. On DWI, the lesion is markedly hypointense on the ADC map and markedly hyperintense on high b-value imaging. On T2W imaging, the lesion is heterogeneous with an ill-defined margin. What is the most appropriate PI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["PI-RADS 1", "PI-RADS 2", "PI-RADS 3", "PI-RADS 4", "PI-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "PI-RADS 4",
+          "correct_options": null,
+          "explanation": "The lesion is markedly hypointense on ADC and markedly hyperintense on high b-value imaging and measures under 1.5 cm, meeting the criteria for a DWI score of 4. Since DWI is the dominant sequence for the peripheral zone, this determines an overall PI-RADS category of 4 regardless of the T2W appearance, which in this case shows only a non-specific heterogeneous, ill-defined pattern consistent with T2W score 3. A category of 5 would require the lesion to reach 1.5 cm or show extraprostatic extension, neither of which is present here.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 18,
+        "question_text": "A 55-year-old man undergoes prostate mpMRI. A peripheral zone lesion in the left mid-gland is focal and discrete from the background, appearing moderately hypointense on the ADC map without a corresponding markedly hyperintense focus on high b-value imaging. On dynamic contrast-enhanced imaging, there is no early or contemporaneous focal enhancement corresponding to this lesion. What is the most appropriate PI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["PI-RADS 1", "PI-RADS 2", "PI-RADS 3", "PI-RADS 4", "PI-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "PI-RADS 3",
+          "correct_options": null,
+          "explanation": "A focal lesion, discrete from background, that is moderately (but not markedly on both) abnormal on ADC and high b-value imaging meets the definition of a DWI score of 3. In the peripheral zone, a DWI score of 3 with a negative DCE result remains an overall PI-RADS category of 3, since DCE only changes the category at this intermediate DWI score when it is positive. A category of 4 would require either a DWI score of 4 (markedly abnormal on both ADC and high b-value imaging) or a positive DCE result corresponding to this lesion, neither of which is present.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 19,
+        "question_text": "A 63-year-old man undergoes prostate mpMRI for a rising PSA. A peripheral zone lesion in the right mid-gland is focal and discrete from the background prostate tissue, demonstrating moderate hypointensity on the ADC map without correspondingly marked hyperintensity on high b-value imaging. On dynamic contrast-enhanced imaging, there is focal enhancement within the lesion that occurs earlier than enhancement of the adjacent normal peripheral zone tissue and corresponds precisely to the abnormality seen on DWI. What is the most appropriate PI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["PI-RADS 1", "PI-RADS 2", "PI-RADS 3", "PI-RADS 4", "PI-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "PI-RADS 4",
+          "correct_options": null,
+          "explanation": "The DWI appearance (focal, discrete, moderate abnormality without marked abnormality on both ADC and high b-value imaging) corresponds to a DWI score of 3. The DCE finding here is positive because it is focal, occurs earlier than adjacent normal tissue enhancement, and corresponds to the DWI abnormality; when DWI is scored 3 in the peripheral zone, a positive DCE upgrades the overall PI-RADS category to 4. Without the positive DCE, this same DWI-3 lesion would remain category 3, which is why correctly identifying DCE positivity is essential to this scenario.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 20,
+        "question_text": "A 50-year-old man undergoes prostate mpMRI for a mildly elevated PSA. In the left peripheral zone, there is a linear, wedge-shaped area of mild hypointensity on the ADC map with an indistinct margin, without a corresponding focal hyperintensity on high b-value imaging. What is the most appropriate PI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["PI-RADS 1", "PI-RADS 2", "PI-RADS 3", "PI-RADS 4", "PI-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "PI-RADS 2",
+          "correct_options": null,
+          "explanation": "A linear or wedge-shaped hypointensity on the ADC map, without a corresponding focal high b-value hyperintensity, meets the definition of a DWI score of 2 rather than a discrete focal abnormality. Since DWI is dominant for the peripheral zone, this determines an overall PI-RADS category of 2. This non-focal, indistinct pattern is more typical of a benign process such as prostatitis or fibrosis than of a discrete, rounded lesion, which is why it does not reach the focal criteria required for category 3 or above.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 21,
+        "question_text": "A 68-year-old man with benign prostatic hyperplasia undergoes prostate mpMRI. Within the transition zone there is a round nodule that is completely encapsulated on T2W imaging in both the axial and sagittal planes, with no restricted diffusion differing from the surrounding background nodularity. What is the most appropriate PI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["PI-RADS 1", "PI-RADS 2", "PI-RADS 3", "PI-RADS 4", "PI-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "PI-RADS 1",
+          "correct_options": null,
+          "explanation": "A round, completely encapsulated nodule in the transition zone is the described \"typical nodule\" appearance and corresponds to a T2W score of 1. Since T2W is the dominant sequence for the transition zone, and the nodule shows no diffusion restriction that differs from the background, the overall PI-RADS category is 1. Such typical BPH nodules are considered a normal variant and do not need to be separately reported, in contrast to an atypical, incompletely encapsulated nodule, which would score T2W 2.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 22,
+        "question_text": "A 66-year-old man undergoes prostate mpMRI. Within the transition zone there is a homogeneous, circumscribed nodule without a complete capsule on T2W imaging (an \"atypical nodule\"). On DWI, the nodule shows only mild-to-moderate hypointensity on the ADC map without markedly restricted diffusion. What is the most appropriate PI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["PI-RADS 1", "PI-RADS 2", "PI-RADS 3", "PI-RADS 4", "PI-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "PI-RADS 2",
+          "correct_options": null,
+          "explanation": "A homogeneous, circumscribed nodule without a complete capsule is described as an \"atypical nodule\" and corresponds to a T2W score of 2. The upgrade of an atypical nodule to PI-RADS 3 requires a DWI score of 4 or higher (markedly restricted diffusion); mild-to-moderate restriction, which corresponds to a DWI score of 3, does not trigger this upgrade. Since T2W is dominant for the transition zone and no qualifying DWI upgrade applies, the overall category remains 2.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 23,
+        "question_text": "A 70-year-old man undergoes prostate mpMRI. Within the transition zone there is a mostly encapsulated nodule on T2W imaging (an \"atypical nodule\"). On DWI, this same nodule is markedly hypointense on the ADC map and markedly hyperintense on high b-value imaging, distinctly more restricted than the surrounding background nodules. What is the most appropriate PI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["PI-RADS 1", "PI-RADS 2", "PI-RADS 3", "PI-RADS 4", "PI-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "PI-RADS 3",
+          "correct_options": null,
+          "explanation": "The mostly encapsulated nodule corresponds to a T2W score of 2 (\"atypical nodule\"). Because this atypical nodule shows markedly restricted diffusion, distinctly more than the background, it meets the criterion for a DWI score of 4 or higher, and PI-RADS v2.1 specifies that an atypical TZ nodule with a T2W score of 2 is upgraded to overall category 3 when the DWI score is 4 or above. Without this markedly restricted diffusion, the same T2W appearance alone would remain category 2, which illustrates why DWI still matters even though T2W is the dominant transition zone sequence.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 24,
+        "question_text": "A 64-year-old man undergoes prostate mpMRI. Within the transition zone there is a lenticular, non-circumscribed, homogeneous, moderately hypointense lesion on T2W imaging measuring 1.2 cm in greatest dimension, without a complete hypointense capsule. What is the most appropriate PI-RADS category for this finding?",
+        "q_type": "single_choice",
+        "options": ["PI-RADS 1", "PI-RADS 2", "PI-RADS 3", "PI-RADS 4", "PI-RADS 5"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "PI-RADS 4",
+          "correct_options": null,
+          "explanation": "A lenticular, non-circumscribed, homogeneous, moderately hypointense lesion without a complete capsule and measuring under 1.5 cm meets the criteria for a T2W score of 4 in the transition zone. Since T2W is the dominant sequence for the transition zone, this directly determines an overall PI-RADS category of 4. If the lesion had instead measured 1.5 cm or more, or shown definite extraprostatic extension or invasive behaviour, the same features would instead correspond to category 5.",
+          "page_images": []
+        }
+      }
+    ]
+  }
+]

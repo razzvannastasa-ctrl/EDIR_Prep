@@ -1,0 +1,523 @@
+[
+  {
+    "chapter_id": 1,
+    "chapter_match": "exact",
+    "source": "Reporting Systems",
+    "section": "mrq",
+    "clinical_vignette": "Liver Trauma Grading (AAST-OIS 2018) & WSES Management Guideline (2020)",
+    "article_summary": "### AAST-OIS Liver Injury Scale & WSES Management Guideline\n\n**Source:** Coccolini F, et al. \"Liver trauma: WSES 2020 guidelines.\" World Journal of Emergency Surgery. 2020;15:24 (reproduces the AAST-OIS liver injury grading table alongside the parallel WSES classification).\n\n**Scope:** Anatomic CT-based grading of hepatic injury following blunt or penetrating trauma, combined with haemodynamic status, to guide the choice between non-operative management (NOM), angioembolization (AE), and operative management (OM).\n\n### Category cheat-sheet\n\n- **Grade I:** Subcapsular haematoma occupying less than 10% of the liver surface, or a capsular tear/laceration less than 1 cm in parenchymal depth; a minor injury almost always managed non-operatively.\n- **Grade II:** Subcapsular haematoma 10-50% of the surface area (or an intraparenchymal haematoma less than 10 cm in diameter), or a laceration 1-3 cm deep and less than 10 cm long; a moderate injury still treated first-line with NOM if the patient is stable.\n- **Grade III:** Subcapsular haematoma greater than 50% of the surface area or expanding/ruptured, an intraparenchymal haematoma greater than 10 cm, or a laceration more than 3 cm deep; NOM remains first-line if stable, with a lower threshold for angioembolization when arterial blush is present.\n- **Grade IV:** Parenchymal disruption involving 25-75% of a hepatic lobe; a severe injury in which NOM is still attempted if the patient is stable, but only a minority of these severe injuries are ultimately managed successfully without an operation.\n- **Grade V:** Parenchymal disruption involving more than 75% of a hepatic lobe, or a juxtahepatic venous injury (retrohepatic vena cava or major hepatic veins); the most severe survivable anatomic grade, frequently requiring operative and/or endovascular control.\n- Grade VI (hepatic avulsion/complete vascular disruption) is the sixth tier of the AAST-OIS scale reproduced in the source table but is not one of the five categories tested in the classification questions here; it is generally not survivable.\n\n### Key imaging/scoring points\n\n- CT with intravenous contrast is the gold standard for grading hepatic injury in haemodynamically stable or stabilised patients. E-FAST is used for rapid bedside detection of free fluid but has limited sensitivity, particularly in haemodynamically stable children.\n- Grading follows the anatomic haematoma/laceration/vascular criteria in the cheat-sheet above, based on the single worst injury; the 2018 AAST-OIS revision removed the earlier (1994) instruction to advance the grade by one level for multiple hepatic injuries.\n- Active contrast extravasation on CT indicates active haemorrhage. Delayed-phase imaging helps differentiate active bleeding from a contained vascular injury, which matters because CT and angiographic findings are concordant in only around 47% of cases.\n- The anatomic AAST-OIS grade alone does not determine management. The parallel WSES classification layers haemodynamic status onto the AAST-OIS grade: WSES I = AAST I-II stable, WSES II = AAST III stable, WSES III = AAST IV-V stable, and WSES IV = any AAST grade (I-VI) in a haemodynamically unstable patient.\n\n### Practical/management implications\n\n- Grades I-III (WSES I-II), haemodynamically stable: NOM is the treatment of choice in the absence of other injuries requiring surgery.\n- Grades IV-V (WSES III), haemodynamically stable: NOM remains first-line, but historically only around one-third of these severe injuries are managed successfully without operation.\n- Any anatomic grade in a haemodynamically unstable or non-responding patient (WSES IV): operative management is required, irrespective of the anatomic grade.\n- Arterial blush on CT in a stable patient may prompt first-line angioembolization; in children, blush alone is not considered an absolute indication for embolization.\n- Post-operative angioembolization has two recognised indications: contrast blush on a completion CT after initial operative haemostasis, and an adjunctive tool for uncontrolled suspected arterial bleeding despite laparotomy.\n- Serial clinical evaluation and laboratory monitoring are required throughout NOM to detect deterioration; interval laparoscopy may be used as an extension of NOM when a missed injury is suspected.\n\n### Pitfalls and limitations\n\n- E-FAST has reported sensitivity of only 42-52% for intra-abdominal free fluid in haemodynamically stable children, so a negative E-FAST should not be relied on alone to exclude significant injury.\n- Routine follow-up CT is not indicated after successful NOM; it should be reserved for clinical suspicion of a complication such as a rising inflammatory response, abdominal pain, jaundice, or a falling haemoglobin.\n- A large subcapsular haematoma is not an automatic indication for surgery, but it does carry a higher risk of NOM failure and warrants closer monitoring.\n- The 47% CT-angiography concordance means a CT appearance suggestive of a contained vascular injury does not always predict the angiographic findings, and vice versa.\n- Ultrasound is a useful, low-cost tool during follow-up for detecting bile leak or biloma, particularly after grade IV-V injury with a central laceration.\n\n### Take-home points\n\n- AAST-OIS grade is a purely anatomic descriptor; management decisions require combining the grade with haemodynamic status and associated injuries.\n- Haemodynamic instability mandates operative management regardless of anatomic grade.\n- Arterial blush on CT is an important trigger for angioembolization, but its significance differs between adults and children.\n- Most biliary and infective complications (biloma, abscess, pseudoaneurysm) are managed with percutaneous, endoscopic, or angiographic techniques rather than repeat surgery.\n- The anatomic grade can be advanced by one level, up to grade III, when multiple hepatic injuries coexist.",
+    "questions": [
+      {
+        "q_number": 1,
+        "question_text": "Regarding AAST-OIS grading of hepatic injury, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Grade IV liver injury requires angiographic confirmation of a juxtahepatic venous injury before it can be assigned.",
+          "A subcapsular haematoma occupying 30% of the hepatic surface area corresponds to grade III injury.",
+          "The 2018 AAST-OIS revision removed the earlier instruction (present in the 1994 version) to advance the anatomic grade by one level for multiple hepatic injuries.",
+          "Hepatic avulsion is classified as a grade V vascular injury.",
+          "A parenchymal laceration extending 2 cm in depth corresponds to grade I injury."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            2
+          ],
+          "explanation": "Grade IV is defined by parenchymal disruption of a hepatic lobe on CT, not by vascular injury, so vascular confirmation is not required for that grade. A subcapsular haematoma of 30% surface area falls within the 10-50% range that defines grade II, not grade III, and a 2 cm-deep laceration falls within the 1-3 cm range that defines grade II rather than grade I. Hepatic avulsion is the defining feature of grade VI, not grade V. The 2018 AAST-OIS revision explicitly dropped the earlier (1994) instruction to advance the anatomic grade by one level, up to grade III, for multiple hepatic injuries — grading is now based purely on the imaging criteria for the single worst injury.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 2,
+        "question_text": "Regarding the WSES classification of liver trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "WSES grade II liver injury corresponds to AAST-OIS grade IV-V lesions in a haemodynamically stable patient.",
+          "WSES grade III liver injury is defined irrespective of the patient's haemodynamic status.",
+          "WSES grade I liver injury includes AAST-OIS grade III lesions.",
+          "A haemodynamically unstable patient with an AAST-OIS grade I liver injury is classified as WSES grade I.",
+          "WSES grade IV liver injury encompasses any AAST-OIS anatomic grade, from I to VI, provided the patient is haemodynamically unstable."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            4
+          ],
+          "explanation": "WSES grade II corresponds to AAST-OIS grade III (not IV-V) in a stable patient, and WSES grade III specifically requires haemodynamic stability, so it is not defined irrespective of it. WSES grade I is limited to AAST-OIS grade I-II, not grade III. A haemodynamically unstable patient is classified as WSES grade IV regardless of the anatomic AAST-OIS grade, so an unstable grade I injury would not remain WSES grade I. The correct statement reflects that WSES grade IV is defined by instability alone and spans the entire AAST-OIS anatomic range.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 3,
+        "question_text": "Regarding the diagnostic assessment of suspected liver trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "CT scan with intravenous contrast is the gold standard for hepatic injury assessment in haemodynamically stable trauma patients.",
+          "E-FAST has a higher reported sensitivity for intra-abdominal free fluid in children than in adults.",
+          "Diagnostic peritoneal lavage should be used as the first-line diagnostic tool whenever a CT scanner is available on site.",
+          "Active contrast extravasation on CT is a recognised sign of active haemorrhage.",
+          "CT findings are concordant with angiographic findings in more than 90% of cases, allowing angiography to be safely omitted after a reassuring CT."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            3
+          ],
+          "explanation": "CT with intravenous contrast is explicitly the gold standard in haemodynamically stable patients, and active contrast extravasation is specifically described as a sign of active haemorrhage. E-FAST sensitivity for free fluid is described as a particular concern in haemodynamically stable children, not as superior to adult performance. Diagnostic peritoneal lavage is reserved for low-resource settings where CT or ultrasound is not promptly available, not as a first-line tool when CT is accessible. Only around 47% of patients have their CT findings confirmed at angiography, so concordance is far lower than 90% and angiography cannot be assumed unnecessary after a reassuring CT.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 4,
+        "question_text": "Regarding non-operative management (NOM) of liver trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "NOM is contraindicated for grade IV or V liver injuries whenever the patient is haemodynamically stable.",
+          "NOM should be the treatment of choice for haemodynamically stable patients with minor, moderate, or severe liver injuries in the absence of other injuries requiring surgery.",
+          "A CT scan with intravenous contrast is optional for patients being considered for NOM if ultrasound has already excluded free fluid.",
+          "Serial clinical evaluation is unnecessary once a patient has been accepted for NOM, since the initial CT grade determines the entire management course.",
+          "Contrast blush on CT may prompt first-line angioembolization in a haemodynamically stable patient."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            4
+          ],
+          "explanation": "NOM is explicitly described as the treatment of choice for haemodynamically stable minor, moderate, and severe liver injuries when no other injury requires surgery, so it is not contraindicated for stable grade IV-V injuries. A CT scan with intravenous contrast should always be performed in patients being considered for NOM, and serial clinical and laboratory evaluation must continue throughout NOM to detect deterioration, so neither can be skipped based on the initial grade alone. The correct statement regarding contrast blush reflects that arterial blush on CT may prompt first-line angioembolization specifically in haemodynamically stable patients.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 5,
+        "question_text": "Regarding angioembolization (AE) in liver trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Angioembolization is used exclusively as an upfront treatment before any surgical intervention is attempted.",
+          "In children, contrast blush on CT is an absolute indication for angioembolization.",
+          "Angioembolization is a useful tool for persistent arterial bleeding after non-haemostatic or damage-control surgical procedures.",
+          "Two recognised indications for post-operative angioembolization are contrast blush on completion CT after initial operative haemostasis, and an adjunctive tool for uncontrolled suspected arterial bleeding despite laparotomy.",
+          "Angioembolization is contraindicated in patients who have already undergone damage control surgery."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            2,
+            3
+          ],
+          "explanation": "Angioembolization has an established post-operative role, being useful for persistent arterial bleeding after non-haemostatic or damage-control procedures, and the two specific post-operative indications describe exactly this adjunctive use, so it is not confined to an upfront role and is not contraindicated after damage-control surgery. In children, contrast blush on CT is specifically stated not to be an absolute indication for angioembolization, distinguishing paediatric from adult decision-making. The two correct statements together capture the primary and post-operative roles of angioembolization as described.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 6,
+        "question_text": "Regarding complications of liver trauma managed non-operatively, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Hepatic artery pseudoaneurysm should be treated with angioembolization because of the high risk of rupture.",
+          "Traumatic bilomas require surgical drainage in the majority of cases.",
+          "Late follow-up imaging should be performed after high-grade liver injury even in the absence of clinical signs of a complication.",
+          "Hepatic abscesses occur in the majority of patients undergoing NOM for high-grade liver injury.",
+          "Melena or haematemesis following liver trauma is suggestive of hemobilia from a ruptured intrahepatic pseudoaneurysm."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            4
+          ],
+          "explanation": "Hepatic artery pseudoaneurysm is specifically described as warranting early angioembolization because of its high risk of rupture, and melena or haematemesis after liver trauma is highlighted as suggestive of hemobilia from a ruptured intrahepatic pseudoaneurysm. Most traumatic bilomas regress spontaneously and are managed with percutaneous drainage only when enlarging, symptomatic, or infected, rather than requiring surgery in most cases. Mandatory late follow-up imaging is not indicated and should be reserved for clinical suspicion of a complication, and hepatic abscesses are described as rare rather than occurring in the majority of NOM patients.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 7,
+        "question_text": "Regarding operative management (OM) of liver trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Haemodynamically unstable, non-responder patients should undergo operative management.",
+          "The primary surgical goal is control of haemorrhage and bile leak, with early institution of damage control resuscitation.",
+          "Major hepatic resection is the preferred first-line surgical technique for a high-grade hepatic laceration.",
+          "Resuscitative endovascular balloon occlusion of the aorta (REBOA) may be used as a bridge to more definitive haemorrhage control in unstable patients.",
+          "Angioembolization is used only prior to laparotomy and not as a post-operative adjunct."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            1,
+            3
+          ],
+          "explanation": "Haemodynamically unstable and non-responder patients are explicitly stated to require operative management, and the primary surgical aim is haemorrhage and bile leak control alongside early damage control resuscitation. REBOA is described as a viable bridge to more definitive haemorrhage control procedures in unstable patients. Major hepatic resection is avoided as a first-line technique and only considered in subsequent, staged operations, and angioembolization has a defined post-operative role rather than being restricted to use before laparotomy.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 8,
+        "question_text": "Regarding follow-up after liver trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Late follow-up imaging is mandatory after high-grade liver injury as part of routine post-injury care.",
+          "The majority of liver lesions heal within approximately 4 months.",
+          "Patients may usually resume normal physical activity 3-4 months after moderate or severe liver injury.",
+          "Ultrasound is reserved solely for initial trauma assessment and is not used during follow-up of hepatic injury.",
+          "Repeated CT scanning is recommended when there is a falling haemoglobin, fever, or abdominal pain during recovery."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            2,
+            4
+          ],
+          "explanation": "Most liver lesions are described as healing in about 4 months, with a return to normal activity typically after 3-4 months, and repeated CT scanning is specifically recommended when abnormal inflammatory response, abdominal pain, fever, jaundice, or a drop in haemoglobin occurs. Mandatory late follow-up imaging is explicitly not indicated and should only be used if clinical condition or symptoms suggest a complication, and ultrasound is in fact described as a useful follow-up tool for assessing bile leak or biloma, not one confined to initial assessment.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 9,
+        "question_text": "Regarding the CT criteria used to grade hepatic injury, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A parenchymal laceration between 1 and 3 cm in depth, measuring less than 10 cm in length, corresponds to grade II injury.",
+          "An expanding subcapsular haematoma occupying more than 50% of the hepatic surface corresponds to grade II injury.",
+          "An intraparenchymal haematoma exceeding 10 cm in diameter corresponds to grade III injury.",
+          "A parenchymal laceration exceeding 3 cm in depth corresponds to grade III injury.",
+          "A subcapsular haematoma occupying less than 10% of the hepatic surface corresponds to grade II injury."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            2,
+            3
+          ],
+          "explanation": "A laceration of 1-3 cm depth and under 10 cm length, an intraparenchymal haematoma greater than 10 cm, and a laceration deeper than 3 cm are the specific defining criteria for grade II (laceration), grade III (haematoma), and grade III (laceration) respectively. A subcapsular haematoma greater than 50% of the surface area, whether expanding or not, defines grade III rather than grade II, and a subcapsular haematoma under 10% of the surface area defines grade I rather than grade II.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 10,
+        "question_text": "Regarding grade IV and V hepatic injury on CT, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Grade IV injury is defined by an intraparenchymal haematoma greater than 10 cm in diameter.",
+          "Grade IV injury is defined by parenchymal disruption involving 25-75% of a hepatic lobe.",
+          "Grade V injury requires haemodynamic instability as part of its anatomic definition.",
+          "Grade V injury includes parenchymal disruption involving more than 75% of a hepatic lobe.",
+          "Grade V vascular injury refers to juxtahepatic venous injury involving the retrohepatic vena cava or major hepatic veins."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            3,
+            4
+          ],
+          "explanation": "Grade IV is anatomically defined by parenchymal disruption of 25-75% of a hepatic lobe, and grade V is defined by disruption exceeding 75% of a hepatic lobe or by juxtahepatic venous injury affecting the retrohepatic vena cava or major hepatic veins. An intraparenchymal haematoma over 10 cm defines grade III, not grade IV. The AAST-OIS anatomic grade is assigned from imaging findings alone and does not require haemodynamic instability; haemodynamic status is instead layered on separately through the parallel WSES classification.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 11,
+        "question_text": "Regarding the assessment of haemodynamic status in trauma patients, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Adult haemodynamic instability is defined in part by an admission systolic blood pressure below 90 mmHg with clinical evidence of haemorrhagic shock.",
+          "A transient responder is a patient who never responds to initial fluid resuscitation.",
+          "An admission base excess greater than -5 mmol/l together with a requirement for more than 4 units of packed red cells within 8 hours defines instability even with a systolic blood pressure above 90 mmHg.",
+          "Paediatric haemodynamic stability thresholds are identical to adult thresholds.",
+          "Diagnostic imaging strategy on admission is determined by the patient's haemodynamic status."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            2,
+            4
+          ],
+          "explanation": "Adult instability is defined by a systolic blood pressure below 90 mmHg with clinical shock features, or, alternatively, a higher blood pressure combined with a base excess beyond -5 mmol/l and a transfusion requirement exceeding 4 units in 8 hours, and diagnostic methods on admission are explicitly determined by haemodynamic status. A transient responder is instead defined as a patient who initially responds to resuscitation before showing signs of ongoing blood loss, not one who never responds at all. Paediatric stability is defined by a different formula based on age (systolic blood pressure of 70 mmHg plus twice the child's age), so it is not identical to the adult definition.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 12,
+        "question_text": "Regarding patient selection and monitoring during non-operative management of liver trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Serial clinical evaluation, including physical examination and laboratory testing, must be performed during NOM to detect a change in clinical status.",
+          "ICU admission may be required for isolated moderate or severe liver injury to reduce mortality risk.",
+          "Interval laparoscopic exploration may be considered as an extension of NOM when an intra-abdominal injury is suspected in the days following trauma.",
+          "Concomitant head trauma or spinal cord injury automatically precludes NOM of the liver injury.",
+          "NOM eligibility is determined solely by anatomic injury grade, independent of haemodynamic status or associated injuries."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "Serial clinical and laboratory evaluation is a mandatory component of NOM monitoring, ICU admission may be required specifically for isolated moderate or severe liver injury to reduce mortality risk, and interval laparoscopy may be used as an extension of NOM when a missed intra-abdominal injury is suspected. Concomitant head trauma or spinal cord injury does not automatically preclude NOM; it should still be attempted with a reliable clinical examination unless the specific haemodynamic goals for the neurotrauma cannot be met. NOM eligibility fundamentally requires haemodynamic stability and the absence of injuries requiring surgery, so it is not determined by anatomic grade alone.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 13,
+        "question_text": "Regarding the overall management pathway for liver trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The diagnostic method used on admission is determined by the patient's haemodynamic status.",
+          "E-FAST is a rapid tool for detecting intra-abdominal free fluid.",
+          "Non-operative management should be considered the standard first-line approach whenever feasible, in both adult and paediatric populations.",
+          "Careful physical examination remains important in determining the need for exploratory laparotomy.",
+          "Anatomic hepatic resection is the standard first surgical option for a high-grade hepatic laceration in an unstable patient."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "explanation": "Diagnostic strategy on admission is explicitly determined by haemodynamic status, E-FAST is described as rapid for detecting free fluid, physical examination is stated to be of paramount importance in deciding on laparotomy, and non-operative management is presented as the preferred first option in both adult and paediatric patients when feasible. Anatomic hepatic resection is instead described as seldom used and specifically avoided in unstable patients during damage control surgery, where a non-anatomic resection is considered safer and easier.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 14,
+        "question_text": "Regarding biliary complications after liver trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Bile peritonitis is best managed with observation alone, without drainage or surgery.",
+          "Enlarging, symptomatic, or infected bilomas can be successfully managed with percutaneous drainage.",
+          "Endoscopic retrograde cholangiopancreatography may be combined with percutaneous drainage in managing post-traumatic biliary complications.",
+          "Most traumatic bilomas regress spontaneously.",
+          "The reported incidence of biliary complications after liver trauma ranges from approximately 2.8% to 30%."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "explanation": "Most bilomas regress spontaneously, but enlarging, symptomatic, or infected bilomas are successfully managed with percutaneous drainage, sometimes combined with endoscopic retrograde cholangiopancreatography and endobiliary stenting, and the overall incidence of biliary complications is reported at 2.8-30%. Bile peritonitis, in contrast, has traditionally required laparotomy, with laparoscopic irrigation/drainage combined with endoscopic stenting only representing a possible alternative, so observation alone is not the described management.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 15,
+        "question_text": "Regarding management of major vascular injury during operative treatment of liver trauma, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "If the common or right hepatic artery must be ligated, cholecystectomy should be performed to prevent gallbladder necrosis.",
+          "Portal vein main branch ligation is the preferred initial management for a portal venous injury whenever the hepatic artery is intact.",
+          "Liver packing is considered the least risky method for temporarily controlling severe venous injury.",
+          "Retrohepatic caval or suprahepatic venous injury should be suspected when bleeding originates from behind the liver.",
+          "Hepatic artery ligation increases the risk of hepatic necrosis, abscess, and biloma formation."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "explanation": "Cholecystectomy is specifically recommended when the common or right hepatic artery must be ligated, to avoid gallbladder necrosis, and hepatic artery ligation itself is described as increasing the risk of hepatic necrosis, abscess, and biloma formation. Liver packing is described as the least risky method to temporarily manage severe venous injury, and bleeding originating from behind the liver should raise suspicion of a retrohepatic caval or hepatic vein injury. Portal vein main branch ligation should instead be avoided because of the high risk of liver necrosis or massive bowel oedema, with primary repair preferred and ligation reserved only for when no other option exists.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 16,
+        "question_text": "A 28-year-old man sustains a high-speed motor vehicle collision. Contrast-enhanced CT of the abdomen shows a right hepatic lobe with parenchymal disruption involving more than 75% of the lobe, together with active contrast extravasation tracking into the retrohepatic inferior vena cava.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade V",
+          "correct_options": null,
+          "explanation": "Parenchymal disruption involving more than 75% of a hepatic lobe, and juxtahepatic venous injury of the retrohepatic vena cava, are each independently defining features of grade V. Grade IV would require the disruption to remain confined to 25-75% of the lobe without extension to the retrohepatic cava, which is not the case here; the lower grades are excluded because they describe far smaller haematomas or lacerations without lobar-scale disruption or juxtahepatic venous involvement.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 17,
+        "question_text": "A 19-year-old restrained driver undergoes CT following a low-speed collision. There is a 4 mm capsular tear over segment VI of the liver, with no visible haematoma and no active contrast extravasation.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade I",
+          "correct_options": null,
+          "explanation": "A capsular tear of only a few millimetres in parenchymal depth is well under the 1 cm threshold that defines grade I. Grade II requires a laceration of 1-3 cm depth, which this laceration does not approach, and no haematoma or vascular injury is present to justify assignment to grade III, IV, or V.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 18,
+        "question_text": "A 45-year-old pedestrian struck by a car undergoes CT which demonstrates a subcapsular haematoma occupying approximately 60% of the hepatic surface, with evidence of active expansion on delayed imaging and no parenchymal laceration.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade III",
+          "correct_options": null,
+          "explanation": "A subcapsular haematoma exceeding 50% of the hepatic surface area, or one that is expanding, specifically defines grade III. Grade II is capped at 10-50% surface area involvement, which this haematoma clearly exceeds, and there is no lobar parenchymal disruption or juxtahepatic venous injury to support the higher grades of IV or V.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 19,
+        "question_text": "A 33-year-old woman involved in a fall from height has a CT showing a parenchymal laceration of the left hepatic lobe measuring 2 cm in depth and 6 cm in length, with no associated haematoma.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade II",
+          "correct_options": null,
+          "explanation": "A laceration depth of 2 cm together with a length under 10 cm falls precisely within the 1-3 cm deep, under-10 cm-long criterion for grade II. Grade I is excluded because the depth exceeds 1 cm, and grade III is excluded because the depth does not exceed 3 cm; there is no lobar disruption to justify grade IV or V.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 20,
+        "question_text": "A 24-year-old man following a high-speed collision undergoes CT demonstrating parenchymal disruption affecting approximately 50% of the right hepatic lobe, with preserved perfusion of the remaining parenchyma and no injury to the retrohepatic vena cava or major hepatic veins.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade IV",
+          "correct_options": null,
+          "explanation": "Parenchymal disruption affecting approximately 50% of a hepatic lobe falls within the 25-75% range that defines grade IV. Grade V is excluded because the disruption does not exceed 75% of the lobe and there is no juxtahepatic venous injury; the smaller-scale criteria of grades I-III do not apply to an injury of this lobar extent.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 21,
+        "question_text": "A 38-year-old man sustains blunt abdominal trauma. CT shows a solitary parenchymal laceration of the right hepatic lobe extending 4 cm in depth, with no associated haematoma and no vascular injury.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade III",
+          "correct_options": null,
+          "explanation": "A parenchymal laceration exceeding 3 cm in depth meets the grade III laceration criterion regardless of the presence of a haematoma. Grade II is limited to lacerations of 1-3 cm depth, which this 4 cm laceration exceeds, and there is no lobar disruption or juxtahepatic venous injury to justify grade IV or V.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 22,
+        "question_text": "A 30-year-old woman following a road traffic collision has a CT demonstrating a large right hepatic lobe laceration disrupting more than 75% of the lobe's parenchyma, with contrast extravasation tracking into a markedly distended, contrast-opacified retrohepatic inferior vena cava.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade V",
+          "correct_options": null,
+          "explanation": "Parenchymal disruption exceeding 75% of a hepatic lobe, together with a juxtahepatic venous injury involving the retrohepatic inferior vena cava, are each independently sufficient for grade V. Grade IV is excluded because disruption of this extent goes beyond the 25-75% range and because a juxtahepatic venous injury is present, which grade IV does not include.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 23,
+        "question_text": "A 21-year-old man sustains a stab wound to the right upper quadrant. CT shows a small subcapsular haematoma occupying less than 10% of the hepatic surface area, with no parenchymal laceration.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade I",
+          "correct_options": null,
+          "explanation": "A subcapsular haematoma confined to less than 10% of the hepatic surface area meets the grade I haematoma criterion. Grade II requires 10-50% surface area involvement, which this haematoma does not reach, and there is no laceration or vascular injury present to support any higher grade.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 24,
+        "question_text": "A 27-year-old man following a bicycle accident undergoes CT which shows an intraparenchymal haematoma measuring 7 cm in diameter within the right hepatic lobe, without an associated laceration.\n\nWhat is the most appropriate AAST-OIS category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "AAST-OIS Grade I",
+          "AAST-OIS Grade II",
+          "AAST-OIS Grade III",
+          "AAST-OIS Grade IV",
+          "AAST-OIS Grade V"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "AAST-OIS Grade II",
+          "correct_options": null,
+          "explanation": "An intraparenchymal haematoma measuring less than 10 cm in diameter meets the grade II criterion. Grade III requires an intraparenchymal haematoma exceeding 10 cm in diameter, which this 7 cm haematoma does not reach, and there is no laceration or lobar-scale disruption to justify a higher grade.",
+          "page_images": []
+        }
+      }
+    ]
+  }
+]

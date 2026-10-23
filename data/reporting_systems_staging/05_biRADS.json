@@ -1,0 +1,488 @@
+[
+  {
+    "chapter_id": 2,
+    "chapter_match": "exact",
+    "source": "Reporting Systems",
+    "section": "mrq",
+    "library_key": "edir",
+    "clinical_vignette": "BI-RADS Lexicon & Assessment Categories (2025)",
+    "article_summary": "### BI-RADS (Breast Imaging Reporting and Data System)\n**Source:** ACR BI-RADS® v2025 Lexicon Summary Forms — Mammography, Ultrasound, and MRI Appendices (American College of Radiology)\n**Scope:** A standardised lexicon and final-assessment category system for describing and reporting breast imaging findings on mammography, ultrasound, and MRI, giving consistent terminology and a shared management framework across all three modalities.\n\n### Category cheat-sheet\n- **Category 0 — Incomplete:** additional imaging evaluation and/or comparison with prior mammograms/imaging is needed before a final category can be assigned; likelihood of malignancy is not applicable until assessment is complete.\n- **Category 1 — Negative:** no abnormality found; routine screening continues; essentially 0% likelihood of malignancy.\n- **Category 2 — Benign:** a definite benign finding is identified and named (e.g. simple cyst, involuting fibroadenoma); routine screening continues; essentially 0% likelihood of malignancy.\n- **Category 3 — Probably benign:** >0% but ≤ 2% likelihood of malignancy; triggers short-interval (6-month) follow-up or continued surveillance rather than biopsy.\n- **Category 4 — Suspicious:** >2% but <95% likelihood of malignancy; triggers tissue diagnosis. Subdivided as:\n  - **4A — low suspicion** (>2% to ≤ 10%)\n  - **4B — moderate suspicion** (>10% to ≤ 50%)\n  - **4C — high suspicion** (50% to <95%)\n- **Category 5 — Highly suggestive of malignancy:** ≥ 95% likelihood of malignancy; triggers tissue diagnosis.\n- **Category 6 — Known biopsy-proven malignancy:** malignancy already confirmed histologically; imaging is used for staging/planning; management is clinical follow-up with the surgeon/oncologist and definitive local therapy (usually surgery) when appropriate.\n\n### Key imaging/scoring points\n- Each modality has its own descriptor lexicon (mass shape/margin/density on mammography; shape/orientation/margin/echo pattern/posterior features on ultrasound; shape/margin/internal enhancement pattern/kinetics on MRI), but all three feed into the single seven-tier assessment category framework above.\n- Breast composition/tissue density is reported separately from the assessment category: a four-tier scale (almost entirely fatty → scattered fibroglandular → heterogeneously/heterogeneous dense → extremely/extreme dense) is used consistently on mammography and MRI (amount of fibroglandular tissue), with an analogous glandular tissue component scale on ultrasound.\n- Margin definitions differ subtly by modality: the mammographic \"circumscribed\" label requires at least 75% of the margin to be sharply demarcated, whereas ultrasound and MRI require the entire margin to be sharply defined before the \"circumscribed\" label can be used.\n- On MRI, enhancement kinetics are split into an early phase (first 60–120 seconds: slow/medium/fast) and a delayed phase (persistent/plateau/washout), and background parenchymal enhancement (BPE) is assessed primarily on the first post-contrast image, with subtraction and MIP imaging as adjuncts.\n- On ultrasound, calcification morphology is less discernible than on mammography, so correlation with mammography is required; posterior acoustic features (enhancement/shadowing) and mass orientation (parallel/non-parallel) are ultrasound-specific descriptors with no direct mammographic equivalent.\n- Category 0 has two variants: \"need additional imaging evaluation\" (recall for further views/technique) and \"need prior mammograms/imaging for comparison.\"\n\n### Practical/management implications\n- Categories 1 and 2 both lead to routine screening; the distinction is whether a specific benign finding is named (2) or nothing abnormal is seen at all (1).\n- Category 3 avoids biopsy in favour of short-interval imaging follow-up, reflecting the very low (≤ 2%) but non-zero risk.\n- Category 4 is the biopsy-triggering category across its whole range; the 4A/4B/4C subdivision communicates pre-test probability to help correlate imaging suspicion with pathology results, not to change the underlying recommendation to biopsy.\n- Category 5 and Category 6 both proceed to definitive management, but Category 6 is used only once malignancy is already histologically proven, typically for staging, treatment planning, or documenting a known cancer rather than establishing a new diagnosis.\n\n### Pitfalls and limitations\n- A new or increasingly conspicuous asymmetry must still be viewed with suspicion even though \"asymmetry\" itself is often a benign summation artifact seen on only one projection.\n- A margin obscured by ≥ 25% superimposed fibroglandular tissue on mammography should not be mistaken for a fully circumscribed margin.\n- Large rod-like and coarse (\"popcorn-like\") calcifications are typically benign despite sounding alarming by name; fine pleomorphic and fine linear/branching morphologies are the higher-risk calcification patterns.\n- Elasticity (soft/intermediate/hard) and vascularity on ultrasound are adjunct features only — both soft and hard lesions have recognised exceptions to the usual benign/malignant association, so neither overrides the primary morphological descriptors.\n- Silicone implant-related signs on MRI (subcapsular line, keyhole, linguine signs) indicate intracapsular rupture and should not be confused with normal radial folds.\n\n### Take-home points\n- The BI-RADS assessment category (0–6) is a single shared framework across mammography, ultrasound, and MRI, even though each modality has its own descriptor lexicon.\n- Category 3 is reserved for a genuinely low (≤ 2%) risk profile and is managed with short-interval follow-up, not biopsy.\n- The 4A/4B/4C subdivision within Category 4 stratifies suspicion (low/moderate/high) but does not change the underlying recommendation for tissue diagnosis.\n- Category 6 is distinct from Category 5 in that malignancy is already proven; it is not simply a higher grade of suspicion.\n- Modality-specific descriptors (e.g. orientation and posterior features on ultrasound, enhancement kinetics on MRI) supplement, but never replace, the shared category system when arriving at a final assessment.",
+    "questions": [
+      {
+        "q_number": 1,
+        "question_text": "Regarding the ACR BI-RADS mammography lexicon for mass shape and margin, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "An oval mass shows an elliptical contour with one axis longer than the other two.",
+          "A lobulated mass is defined by acute-angle protrusions that distinguish it from an oval or round mass.",
+          "An obscured margin means the entire margin is poorly defined with no sharp demarcation from surrounding tissue.",
+          "A spiculated margin is characterised by lines radiating outward from the mass.",
+          "A circumscribed margin can still be assigned even if fibroglandular tissue obscures more than half of the margin, provided the visible portion is circumscribed."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 3],
+          "explanation": "An oval mass is elliptical with one axis longer than the other two, and a spiculated margin is characterised by lines radiating from the mass. The claim about lobulated shape is incorrect because acute-angle protrusions define an irregular shape, not lobulated, which instead shows an undulating contour with one or more indentations. The claim about an obscured margin is incorrect because that description matches an indistinct margin; an obscured margin instead means 25% or more of the margin is hidden by superimposed fibroglandular tissue while the visible portion remains circumscribed. Once 25% or more of the margin is hidden, the correct descriptor is obscured, not circumscribed, so a margin more than half hidden cannot be labelled circumscribed.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 2,
+        "question_text": "Regarding the ACR BI-RADS mammography lexicon for calcification distribution and suspicious morphology, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Diffuse calcifications are grouped so that at least five occupy an area within 1 cm of each other.",
+          "Segmental calcifications are typically arranged in a triangular pattern with the apex pointing toward the nipple, suggesting deposition within a duct and its branches.",
+          "Fine pleomorphic calcifications are usually smaller than 0.5 mm, have discrete shapes, and are more conspicuous than amorphous calcifications.",
+          "Coarse heterogeneous calcifications are typically larger than 2 to 3 mm in greatest diameter and confluent.",
+          "Regional distribution describes numerous calcifications occupying more than 2 cm of breast tissue without conforming to a ductal distribution, and not confined to a single quadrant."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 4],
+          "explanation": "Segmental distribution suggests deposits within a duct and its branches, arranged with the apex toward the nipple, and fine pleomorphic calcifications are usually smaller than 0.5 mm with discrete shapes, more conspicuous than amorphous forms. Regional distribution correctly describes numerous calcifications occupying more than 2 cm of breast tissue that do not conform to a ductal distribution and may involve more than a single quadrant. The claim about diffuse calcifications is incorrect because that description matches grouped distribution; diffuse calcifications are instead distributed randomly throughout the breast. The claim about coarse heterogeneous calcifications is incorrect because greater than 2 to 3 mm and confluent describes coarse (typically benign) calcifications; coarse heterogeneous calcifications are generally between 0.5 and 1 mm.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 3,
+        "question_text": "Regarding calcification morphologies considered typically benign in the ACR BI-RADS mammography lexicon, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Vascular calcifications typically appear as parallel tracks or linear, tubular calcifications clearly associated with blood vessels.",
+          "Rim calcifications appear as calcium deposited on the surface of a sphere, usually less than 1 mm in thickness when viewed on edge.",
+          "Large rod-like calcifications are a suspicious morphology that should prompt tissue diagnosis, as they indicate underlying malignancy.",
+          "Layering calcifications represent sedimentation within macro- or microcysts and characteristically change shape between different mammographic projections.",
+          "Suture calcifications are typically linear or tubular, and visible knots are a frequent feature."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 3, 4],
+          "explanation": "Vascular, rim, layering, and suture calcifications are all listed among the typically benign morphologies: vascular calcifications track alongside vessels, rim calcifications outline the surface of a sphere, layering calcifications sediment within cysts and change shape between projections, and suture calcifications are linear or tubular with visible knots. The claim about large rod-like calcifications is incorrect because they are also a typically benign morphology, associated with ductal ectasia and often forming smooth linear rods with tapering ends, not a suspicious pattern requiring biopsy.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 4,
+        "question_text": "Regarding the ACR BI-RADS mammography lexicon for asymmetries, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A focal asymmetry is, by definition, visible on only one mammographic projection.",
+          "A global asymmetry is confined to less than one quadrant of the breast and typically shows a convex-outward contour.",
+          "A plain asymmetry is seen on only one mammographic projection and frequently represents summation of normal breast structures.",
+          "Any new or more conspicuous asymmetry can be assigned a benign assessment without further evaluation.",
+          "A focal asymmetry has a similar shape on different projections, a concave-outward contour, and is usually interspersed with fat."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [2, 4],
+          "explanation": "A plain asymmetry is seen on only one projection and frequently reflects summation of normal structures, while a focal asymmetry maintains a similar shape across projections, has a concave-outward contour, and is usually interspersed with fat. The claim about focal asymmetry being visible on only one projection is incorrect because that description matches plain asymmetry; focal asymmetry is instead seen on more than one view. The claim about global asymmetry is incorrect because it involves at least one quadrant, not less than one, and focal (not global) asymmetry is the one described with a concave-outward contour. The claim that a new or more conspicuous asymmetry can be dismissed as benign is incorrect, since such a change must be viewed with suspicion.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 5,
+        "question_text": "Regarding associated features and lymph nodes in the ACR BI-RADS mammography lexicon, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Nipple retraction is synonymous with nipple inversion and the two terms should not be distinguished in mammography reporting.",
+          "Skin thickening is defined as any thickening greater than 5 mm, whether focal or diffuse.",
+          "A normal intramammary lymph node must measure 1 cm or less, since larger nodes are classified as abnormal by size alone.",
+          "For axillary lymph nodes, degree of suspicion is assessed independently of nodal length, with cortical thickening and loss of fatty hilum being more relevant abnormal features.",
+          "Trabecular thickening refers specifically to thickening of the nipple-areolar complex rather than the fibrous septa of the breast."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [3],
+          "explanation": "For axillary lymph nodes, suspicion is assessed independently of nodal length; cortical thickening and loss of the fatty hilum are the more relevant abnormal features. Nipple retraction is not synonymous with nipple inversion, which is a separate, often bilateral finding that should not be confused with it. Skin thickening is defined as greater than 2 mm, not 5 mm. A normal intramammary lymph node may still be larger than 1 cm and be characterised as normal, so size alone does not define abnormality. Trabecular thickening refers to thickening of the fibrous septa of the breast, not the nipple-areolar complex.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 6,
+        "question_text": "Regarding tissue composition and mass shape/orientation in the ACR BI-RADS ultrasound lexicon, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Glandular tissue component is classified as marked when it comprises 75% or more of the overall fibroglandular tissue.",
+          "A parallel orientation is present when the anteroposterior dimension of the mass equals or exceeds its horizontal dimension in any ultrasound plane.",
+          "Heterogeneous background echotexture is characterised by multiple small areas of alternating increased and decreased echogenicity.",
+          "An irregular mass shape shows acute-angle protrusions and cannot be classified as oval, lobulated, or round.",
+          "A lobulated mass is a subtype of irregular shape distinguished only by the presence of microlobulated margins."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 3],
+          "explanation": "Marked glandular tissue component is defined as 75% or more of the overall fibroglandular tissue, heterogeneous background echotexture shows alternating small areas of increased and decreased echogenicity, and an irregular mass shape shows acute-angle protrusions that exclude it from the oval, lobulated, or round categories. The claim about parallel orientation is incorrect because an anteroposterior dimension equal to or exceeding the horizontal dimension describes non-parallel orientation; parallel orientation instead requires the horizontal dimension to exceed the anteroposterior dimension in all planes. Lobulated is not a subtype of irregular shape; it is its own shape category defined by an undulating contour with indentations, separate from the margin descriptor microlobulated.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 7,
+        "question_text": "Regarding margin descriptors in the ACR BI-RADS ultrasound lexicon, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A mass can be described as circumscribed at ultrasound provided at least 75% of the margin is sharply demarcated, matching the mammographic definition.",
+          "Microlobulated margins are characterised by short-cycle undulations or ripples measuring approximately 2 to 3 mm.",
+          "Angular margins describe a margin that is poorly defined or fuzzy with no sharp demarcation from surrounding tissue.",
+          "Spiculated margins are a subtype of the circumscribed margin category reserved for masses with a favourable prognosis.",
+          "Spiculated margins are characterised by sharp lines radiating from the mass and are often a sign of malignancy."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 4],
+          "explanation": "Microlobulated margins show short-cycle 2 to 3 mm undulations, and spiculated margins are characterised by sharp lines radiating from the mass, often a sign of malignancy. The claim that a 75%-demarcated margin qualifies as circumscribed at ultrasound is incorrect, since ultrasound requires the entire margin to be sharply defined for the circumscribed label, unlike the 75% threshold used at mammography. Angular margins are incorrectly described here, since poorly defined or fuzzy demarcation describes indistinct margins; angular margins instead show sharp corners forming acute angles. Spiculated margins are a non-circumscribed subtype, not a favourable-prognosis circumscribed subtype.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 8,
+        "question_text": "Regarding echo pattern and posterior acoustic features in the ACR BI-RADS ultrasound lexicon, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "An isoechoic mass has the same echogenicity as subcutaneous fat and may therefore be relatively inconspicuous on ultrasound.",
+          "A hypoechoic mass is defined as having less echogenicity than fibroglandular tissue but more than fat.",
+          "Posterior enhancement refers to a darker column of tissue deep to the mass compared with tissue at the same depth to either side.",
+          "Edge shadows arising at the lateral margins of a mass should be disregarded when assessing posterior acoustic features.",
+          "In a mass with mixed solid and cystic echo pattern, the solid component is the clinically important feature to characterise."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 3, 4],
+          "explanation": "An isoechoic mass shares the echogenicity of subcutaneous fat and can be inconspicuous, edge shadows at the lateral margins should be disregarded when assessing posterior features, and in a mixed solid and cystic mass the solid component is the important feature to characterise. The claim about hypoechoic masses is incorrect because hypoechoic is defined relative to fat (less echogenic than fat but not anechoic), not relative to fibroglandular tissue. The claim about posterior enhancement is incorrect because enhancement describes a brighter, not darker, echogenic column deep to the mass; a darker posterior column instead describes shadowing.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 9,
+        "question_text": "Regarding non-mass lesions and calcifications in the ACR BI-RADS ultrasound lexicon, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A non-mass lesion, by definition, can be assigned a specific shape descriptor such as oval or irregular in the same way as a discrete mass.",
+          "A segmental distribution of a non-mass lesion is triangular, with its base toward the pectoralis muscle and its apex toward the nipple.",
+          "Macrocalcifications are large enough to attenuate the ultrasound beam and are typically associated with posterior shadowing.",
+          "Microcalcifications are most conspicuous on ultrasound when located within a hypoechoic mass, non-mass lesion, or duct.",
+          "Because calcification morphology is not as readily discernible on ultrasound as on mammography, correlation with mammography is required for precise analysis."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 3, 4],
+          "explanation": "A segmental non-mass lesion distribution is triangular with base toward the pectoralis muscle and apex toward the nipple, macrocalcifications attenuate the ultrasound beam and typically cause posterior shadowing, microcalcifications are most conspicuous within a hypoechoic mass, non-mass lesion, or duct, and mammographic correlation is required because morphology is less discernible on ultrasound. The claim about non-mass lesions being assignable a specific shape is incorrect, since a non-mass lesion by definition lacks the discrete margination needed to assign a specific shape, unlike a mass.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 10,
+        "question_text": "Regarding special-case findings in the ACR BI-RADS ultrasound lexicon, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A complicated cyst is defined by an avascular, entirely anechoic appearance identical to a simple cyst.",
+          "Clustered microcysts characteristically contain a discrete solid component within one or more of the locules.",
+          "A simple cyst is circumscribed, round or oval, anechoic, has a thin wall, and often shows posterior acoustic enhancement.",
+          "Postsurgical seromas typically demonstrate marked internal vascularity on colour Doppler imaging.",
+          "Fat necrosis on ultrasound is a finding related solely to non-surgical breast trauma, distinguishing it from post-surgical change."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [2],
+          "explanation": "A simple cyst is circumscribed, round or oval, anechoic, thin-walled, and often shows posterior acoustic enhancement. A complicated cyst is not entirely anechoic like a simple cyst; it instead shows homogeneous low-level internal echoes and may layer or shift with position. Clustered microcysts are defined by the absence of a discrete solid component in any locule, not its presence. Postsurgical seromas should be avascular, not markedly vascular. Fat necrosis is described as related to either surgical or non-surgical breast trauma, so it is not solely a non-surgical finding.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 11,
+        "question_text": "Regarding associated features and lymph nodes in the ACR BI-RADS ultrasound lexicon, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Peripheral hypervascularity describes a high number of blood vessels concentrated around the margin of a breast abnormality.",
+          "Level II axillary lymph nodes lie posterior to the pectoralis minor muscle, in the region also referred to as the interpectoral or Rotter's nodes.",
+          "Level I axillary lymph nodes are located medial to the medial margin of the pectoralis minor muscle.",
+          "A hard elasticity score is an absolute indicator of malignancy, and a soft score excludes malignancy entirely.",
+          "Involvement of the ipsilateral supraclavicular lymph node represents the highest nodal stage still considered confined to regional disease."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 4],
+          "explanation": "Peripheral hypervascularity describes a high number of vessels around the margin of an abnormality, Level II axillary nodes lie posterior to pectoralis minor (interpectoral/Rotter's nodes), and supraclavicular nodal involvement represents the highest N stage still considered regional disease. The claim about Level I nodes is incorrect because that description matches Level III; Level I nodes are instead lateral to the lateral margin of pectoralis minor. The claim about elasticity is incorrect because exceptions to the usual soft-benign/hard-malignant association are explicitly recognised, so neither score is an absolute indicator on its own.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 12,
+        "question_text": "Regarding fibroglandular tissue and background parenchymal enhancement in the ACR BI-RADS MRI lexicon, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Background parenchymal enhancement is primarily assessed on the first post-contrast image, with subtraction and maximum intensity projection imaging providing additional information.",
+          "Minimal background parenchymal enhancement is defined as mild but definite enhancement throughout the fibroglandular tissue.",
+          "The amount of fibroglandular tissue is described using the same four-tier framework (almost entirely fatty, scattered, heterogeneous, extreme) used for mammographic breast density.",
+          "Background parenchymal enhancement is reported as focal, linear, or segmental, analogous to the distribution categories used for non-mass enhancement.",
+          "Marked background parenchymal enhancement precludes the use of MRI for detecting an underlying malignancy."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2],
+          "explanation": "Background parenchymal enhancement is primarily assessed on the first post-contrast image, with subtraction and MIP imaging as adjuncts, and the amount of fibroglandular tissue follows the same four-tier framework used for mammographic density. The claim about minimal enhancement is incorrect because minimal is defined as including no enhancement at all, not mild but definite enhancement. Background parenchymal enhancement level is reported as minimal/mild/moderate/marked with a separate symmetric/asymmetric descriptor, not the focal/linear/segmental distribution scale used for non-mass enhancement. There is no basis for the claim that marked enhancement precludes MRI's use for malignancy detection.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 13,
+        "question_text": "Regarding mass margin and internal enhancement pattern in the ACR BI-RADS MRI lexicon, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "An indistinct margin at MRI is synonymous with a spiculated margin, and the two terms are used interchangeably.",
+          "Dark internal septations appear as dark, non-enhancing lines within an otherwise enhancing mass.",
+          "Thick rim enhancement describes confluent, uniform enhancement distributed evenly throughout the entire mass.",
+          "A circumscribed margin at MRI requires that the entire margin be sharply demarcated, with an abrupt transition between the finding and the surrounding tissue.",
+          "A heterogeneous internal enhancement pattern shows varied, non-uniform signal intensity within the mass."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 3, 4],
+          "explanation": "Dark internal septations are dark non-enhancing lines within an enhancing mass, a circumscribed margin at MRI requires the entire margin to be sharply demarcated with an abrupt transition, and a heterogeneous internal enhancement pattern shows varied, non-uniform signal intensity. The claim equating indistinct and spiculated margins is incorrect, since indistinct describes uneven edges that are specifically not spiculated. The claim about thick rim enhancement is incorrect because it describes thick enhancement concentrated at the periphery of the mass, not confluent uniform enhancement throughout, which instead describes homogeneous enhancement.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 14,
+        "question_text": "Regarding non-mass enhancement distribution and internal enhancement pattern in the ACR BI-RADS MRI lexicon, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Segmental non-mass enhancement is triangular or cone-shaped, with its apex pointing toward the nipple, suggesting involvement of a duct and its branches.",
+          "Clumped internal enhancement shows varying shapes and sizes with a cobblestone or beaded appearance, with occasional confluent areas.",
+          "Regional non-mass enhancement typically involves more than one quadrant but does not follow a segmental or linear distribution.",
+          "Clustered ring enhancement describes confluent, uniform enhancement filling the entire area without any ductal association.",
+          "Focal non-mass enhancement is localised, occupies less than one quadrant, and does not follow a segmental or linear distribution."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 2, 4],
+          "explanation": "Segmental non-mass enhancement is triangular with apex toward the nipple, clumped enhancement shows varying cobblestone/beaded shapes with occasional confluence, regional enhancement involves more than one quadrant without a segmental or linear pattern, and focal enhancement is localised to less than one quadrant without a segmental or linear pattern. The claim about clustered ring enhancement is incorrect because it specifically describes rings of enhancement around ducts, not confluent uniform enhancement without any ductal association, which instead describes a homogeneous pattern.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 15,
+        "question_text": "Regarding enhancement kinetics in the ACR BI-RADS MRI lexicon, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A fast early-phase enhancement is defined as a 50 to 100% increase in signal intensity within the first 60 to 120 seconds after contrast injection.",
+          "A washout delayed-phase curve shows a decrease in signal intensity of up to 10% compared with the early phase.",
+          "A plateau delayed-phase curve shows a change in signal intensity, whether increase or decrease, of 10% or less compared with the early phase.",
+          "A persistent delayed-phase curve shows a signal intensity increase of more than 10% compared with the early phase.",
+          "The delayed phase is defined strictly as the interval from 60 to 120 seconds after contrast injection, regardless of the kinetic curve shape."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [2, 3],
+          "explanation": "A plateau curve shows a change of 10% or less in either direction compared with the early phase, and a persistent curve shows an increase of more than 10% compared with the early phase. The claim about fast early-phase enhancement is incorrect because a 50 to 100% increase describes medium enhancement; fast enhancement is defined as an increase of more than 100%. The claim about washout is incorrect because washout requires a decrease of more than 10%, not up to 10%. The claim about the delayed phase is incorrect because it is defined as beginning after the first 60 to 120 seconds or when the kinetic curve begins to change, not as a fixed 60 to 120 second window.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 16,
+        "question_text": "Regarding associated features and lymph nodes in the ACR BI-RADS MRI lexicon, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Chest wall involvement refers to abnormal enhancement confined to the pectoralis major and minor muscles, without extension beyond them.",
+          "Skin involvement may occur via direct tumour invasion or via invasion of the dermal lymphatics, the latter often seen in inflammatory breast cancer.",
+          "Peritumoral oedema is recognised as hyperintense T2 signal in the tissue surrounding a malignant or suspicious finding.",
+          "An internal mammary lymph node is considered suspicious if it measures 5 mm or more in a patient with current breast cancer, even though nodes up to 9 to 10 mm may be normal in a screening population.",
+          "An abnormal axillary lymph node is defined solely by an absolute size cutoff, irrespective of cortical thickness or the presence of a fatty hilum."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 3],
+          "explanation": "Skin involvement may occur via direct invasion or via dermal lymphatic invasion, characteristic of inflammatory breast cancer, peritumoral oedema is recognised as hyperintense T2 signal surrounding a suspicious finding, and an internal mammary node is suspicious at 5 mm or more in a patient with current breast cancer despite up to 9 to 10 mm being acceptable as normal in screening. The claim about chest wall involvement is incorrect because enhancement confined to the pectoralis muscles is instead termed pectoralis muscle involvement; chest wall involvement specifically means extension into the ribs or intercostal spaces behind the muscle. The claim about axillary node abnormality is incorrect because it is judged by asymmetric cortical thickness, loss of fatty hilum, or interval change, not by an absolute size cutoff alone.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 17,
+        "question_text": "A 54-year-old woman attends routine screening mammography. A new area of fibroglandular-density tissue is seen in the upper outer quadrant of one breast on a single projection only, most probably representing summation of normal structures, but no prior mammograms are available in the system for comparison.\n\nWhat is the most appropriate BI-RADS mammography category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Category 1: Negative",
+          "Category 0: Incomplete – need prior mammograms for comparison",
+          "Category 2: Benign",
+          "Category 3: Probably benign",
+          "Category 4A: Suspicious (low suspicion for malignancy)"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Category 0: Incomplete – need prior mammograms for comparison",
+          "correct_options": null,
+          "explanation": "Because a definitive characterisation of a single-projection finding cannot be made without comparison to establish stability, an incomplete assessment requesting prior mammograms is used rather than assigning a final category prematurely; a final category (1 to 5) can only be assigned once the comparison is available or additional views are obtained. Category 3 would require a definite probably-benign characterisation to already have been reached, which is not yet possible here, and Category 1 or 2 would require a final assessment that stability has been demonstrated.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 18,
+        "question_text": "A 38-year-old woman is referred for targeted breast ultrasound to assess a palpable lump in the upper outer quadrant. At the site of palpable concern, the tissue shows normal homogeneous fibroglandular echotexture with no discrete mass, non-mass lesion, or other abnormality identified.\n\nWhat is the most appropriate BI-RADS ultrasound category for this examination?",
+        "q_type": "single_choice",
+        "options": [
+          "Category 1: Negative",
+          "Category 2: Benign",
+          "Category 0: Incomplete – need additional imaging evaluation",
+          "Category 3: Probably benign",
+          "Category 4A: Suspicious (low suspicion for malignancy)"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Category 1: Negative",
+          "correct_options": null,
+          "explanation": "No discrete abnormality is identified at all at the site in question, which meets the definition of a negative examination with essentially 0% likelihood of malignancy and routine screening recommended. Category 2 is reserved for cases where a definite benign finding, such as a named cyst or lymph node, is present; here there is no discrete finding at all, only normal tissue, so a negative assessment is more accurate. There is no indication for further imaging, which rules out an incomplete assessment.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 19,
+        "question_text": "Screening mammography in a 61-year-old woman demonstrates a solitary mass in the left breast containing coarse, dense, confluent calcifications greater than 3 mm in diameter, in keeping with a degenerating fibroadenoma. The appearance is unchanged from a mammogram performed two years earlier.\n\nWhat is the most appropriate BI-RADS mammography category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Category 1: Negative",
+          "Category 2: Benign",
+          "Category 3: Probably benign",
+          "Category 0: Incomplete – need additional imaging evaluation",
+          "Category 4A: Suspicious (low suspicion for malignancy)"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Category 2: Benign",
+          "correct_options": null,
+          "explanation": "Coarse, popcorn-like calcifications are a classic typically benign morphology, and a definite benign entity (degenerating fibroadenoma) is being named together with long-term stability, which together correspond to a benign assessment rather than a negative one, since Category 1 is reserved for examinations with no described finding at all. Category 3 is inappropriate because probably benign findings are not yet definitively characterised as benign and still carry a small residual risk requiring short-interval follow-up, whereas here the finding is already confidently benign.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 20,
+        "question_text": "A 45-year-old woman undergoes breast MRI for a personal history of lobular carcinoma in situ. A new, small area of focal non-mass enhancement is identified, less than one quadrant in extent, with a homogeneous internal enhancement pattern and a persistent delayed kinetic curve. No suspicious morphological features are present, and short-interval MRI follow-up in six months is recommended.\n\nWhat is the most appropriate BI-RADS MRI category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Category 2: Benign",
+          "Category 3: Probably benign",
+          "Category 4A: Suspicious (low suspicion for malignancy)",
+          "Category 1: Negative",
+          "Category 0: Incomplete – need additional imaging evaluation"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Category 3: Probably benign",
+          "correct_options": null,
+          "explanation": "A newly identified, small area of enhancement without suspicious morphology, managed with short-interval (6-month) follow-up rather than immediate tissue diagnosis or routine screening, corresponds to a probably benign assessment, carrying a low but non-zero likelihood of malignancy. It cannot be assigned a benign assessment because it has not yet been proven stable over time, and it does not warrant tissue diagnosis since no suspicious morphological features are described.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 21,
+        "question_text": "Diagnostic mammography in a 50-year-old woman with a new palpable lump shows a mass with oval shape and circumscribed margin, new compared with a mammogram from eighteen months earlier. There are no suspicious calcifications or architectural distortion. Ultrasound-guided core biopsy is recommended.\n\nWhat is the most appropriate BI-RADS mammography category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Category 3: Probably benign",
+          "Category 4A: Suspicious (low suspicion for malignancy)",
+          "Category 4B: Suspicious (moderate suspicion for malignancy)",
+          "Category 4C: Suspicious (high suspicion for malignancy)",
+          "Category 2: Benign"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Category 4A: Suspicious (low suspicion for malignancy)",
+          "correct_options": null,
+          "explanation": "Although the mass has favourable morphological descriptors (oval shape, circumscribed margin), its interval appearance as a new finding precludes a probably benign or benign assessment and instead warrants tissue diagnosis, placing it at the lower end of the suspicious range with a likelihood of malignancy of more than 2% but no more than 10%. It does not reach the moderate or high suspicion subdivisions because none of the more concerning descriptors, such as an indistinct or spiculated margin or an irregular shape, are present.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 22,
+        "question_text": "Diagnostic breast ultrasound in a 47-year-old woman shows an irregular mass with an indistinct margin and a non-parallel orientation. There is no posterior shadowing, no spiculation, and no skin or chest wall involvement.\n\nWhat is the most appropriate BI-RADS ultrasound category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Category 4A: Suspicious (low suspicion for malignancy)",
+          "Category 4B: Suspicious (moderate suspicion for malignancy)",
+          "Category 4C: Suspicious (high suspicion for malignancy)",
+          "Category 3: Probably benign",
+          "Category 5: Highly suggestive of malignancy"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Category 4B: Suspicious (moderate suspicion for malignancy)",
+          "correct_options": null,
+          "explanation": "The combination of irregular shape, indistinct margin, and non-parallel orientation are all suspicious descriptors that together place this mass above the low-suspicion range, but the absence of more aggressive features such as spiculation or shadowing keeps it short of the high-suspicion or highly-suggestive ranges, corresponding to the moderate-suspicion subdivision of category 4. A probably benign assessment is excluded because irregular shape and non-parallel orientation are themselves suspicious rather than reassuring descriptors.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 23,
+        "question_text": "Breast MRI in a 58-year-old woman shows an irregular mass with a spiculated margin, heterogeneous internal enhancement, and a washout delayed kinetic curve. There is no chest wall or skin involvement, and no other lesion elsewhere in either breast to suggest a background of diffuse disease.\n\nWhat is the most appropriate BI-RADS MRI category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Category 4B: Suspicious (moderate suspicion for malignancy)",
+          "Category 4C: Suspicious (high suspicion for malignancy)",
+          "Category 5: Highly suggestive of malignancy",
+          "Category 3: Probably benign",
+          "Category 4A: Suspicious (low suspicion for malignancy)"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Category 4C: Suspicious (high suspicion for malignancy)",
+          "correct_options": null,
+          "explanation": "The combination of irregular shape, a spiculated margin, heterogeneous internal enhancement, and washout kinetics represents a cluster of concerning descriptors placing the finding toward the top of the suspicious range, with a likelihood of malignancy of 50% up to but not reaching 95%. This falls short of the 95% or greater threshold that defines a highly-suggestive-of-malignancy assessment, so the high-suspicion subdivision of category 4 is the most defensible category, still requiring tissue diagnosis rather than a more definitive assessment.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 24,
+        "question_text": "Diagnostic mammography in a 63-year-old woman with a palpable mass shows a high-density mass with spiculated margins and associated architectural distortion, with overlying skin retraction.\n\nWhat is the most appropriate BI-RADS mammography category for this finding?",
+        "q_type": "single_choice",
+        "options": [
+          "Category 4C: Suspicious (high suspicion for malignancy)",
+          "Category 5: Highly suggestive of malignancy",
+          "Category 6: Known biopsy-proven malignancy",
+          "Category 4B: Suspicious (moderate suspicion for malignancy)",
+          "Category 3: Probably benign"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Category 5: Highly suggestive of malignancy",
+          "correct_options": null,
+          "explanation": "The combination of a high-density, spiculated mass with architectural distortion and skin retraction represents a constellation of classically malignant descriptors corresponding to a likelihood of malignancy of 95% or greater, for which tissue diagnosis is recommended. A known biopsy-proven malignancy assessment is not yet appropriate because histological confirmation has not occurred in this description; it would only apply once biopsy has already proven malignancy at this site.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 25,
+        "question_text": "A 55-year-old woman with a core-biopsy-proven invasive ductal carcinoma of the right breast undergoes pre-operative ultrasound for surgical planning. The ultrasound confirms the known irregular hypoechoic mass with spiculated margin at the previously biopsied site, corresponding to the marked biopsy clip.\n\nWhat is the most appropriate BI-RADS ultrasound category for this examination?",
+        "q_type": "single_choice",
+        "options": [
+          "Category 5: Highly suggestive of malignancy",
+          "Category 6: Known biopsy-proven malignancy",
+          "Category 4C: Suspicious (high suspicion for malignancy)",
+          "Category 2: Benign",
+          "Category 1: Negative"
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Category 6: Known biopsy-proven malignancy",
+          "correct_options": null,
+          "explanation": "Because malignancy has already been confirmed on core biopsy at this site, the finding is categorised as known biopsy-proven malignancy rather than highly suggestive of malignancy, the latter being reserved for lesions not yet proven malignant. This category is used to document a known cancer, for example for surgical planning, with definitive management guided by the surgeon and/or oncologist rather than by a further likelihood-of-malignancy assessment.",
+          "page_images": []
+        }
+      }
+    ]
+  }
+]

@@ -1,10 +1,11 @@
 import time
 import json
+import html
 import datetime
 from pathlib import Path
 
 import streamlit as st
-from streamlit_autorefresh import st_autorefresh
+import streamlit.components.v1 as components
 
 from core.database import (
     init_db, has_data, has_section,
@@ -17,7 +18,8 @@ from core.database import (
     admin_get_questions, admin_update_question, admin_update_answer, admin_update_vignette,
     DB_PATH, LIBRARY_EDIR, LIBRARY_UEFA_CFM,
 )
-from core.learning import classify_answer, correct_option_indices
+from core.learning import classify_answer, correct_option_indices, mrq_score
+from core.modality import MODALITIES
 from core.custom_tests import (
     CONFIG_VERSION,
     SECTION_LABELS,
@@ -30,6 +32,8 @@ from core.custom_tests import (
     finish_test as finish_custom_test,
     get_availability as get_custom_availability,
     get_official_edir_config,
+    get_phase_scores as get_custom_phase_scores,
+    score_core_case,
     get_result_breakdown as get_custom_result_breakdown,
     get_standard_ordering as get_custom_ordering,
     get_templates as get_custom_templates,
@@ -38,7 +42,11 @@ from core.custom_tests import (
     get_test_questions as get_custom_test_questions,
     get_tests as get_custom_tests,
     is_phased_config,
+    pause_phase as pause_custom_phase,
+    pause_test as pause_custom_test,
     rate_free_text as rate_custom_free_text,
+    resume_phase as resume_custom_phase,
+    resume_test as resume_custom_test,
     save_progress as save_custom_progress,
     save_template as save_custom_template,
     set_current_position as set_custom_position,
@@ -218,6 +226,139 @@ def _submit_case(next_view: str = "review"):
     st.session_state.core_view = next_view
 
 
+def _render_js_countdown(slot, remaining_seconds: float, *, label: str, ticking: bool) -> None:
+    """Render a countdown that ticks entirely client-side (via a components.html
+    iframe), so per-second updates need no server round trip at all. This is
+    both smoother (no rerun-driven flash) and sidesteps a Streamlit limitation
+    where an auto-refreshing @st.fragment cannot write into the sidebar.
+    `remaining_seconds` only needs to be fresh as of "now" — the browser owns
+    the visible ticking between real reruns. Pass ticking=False to freeze the
+    display (e.g. while paused) without starting the JS interval.
+    """
+    total = max(0, int(round(remaining_seconds)))
+    tick_js = (
+        f"const t = setInterval(function() {{ r -= 1; draw(); "
+        f"if (r <= 0) clearInterval(t); }}, 1000);"
+        if ticking else ""
+    )
+    with slot.container():
+        components.html(
+            f"""
+            <html><head><style>
+            html,body{{background:transparent;margin:0;padding:0;
+              font-family:"Source Sans Pro",sans-serif;overflow:hidden}}
+            </style></head><body>
+            <div style="text-align:center">
+              <p style="color:rgba(255,255,255,0.75);margin:0;font-size:0.75em;
+                letter-spacing:1px">{html.escape(label)}</p>
+              <p id="d" style="font-size:3em;font-weight:bold;margin:0;line-height:1;
+                color:#FFFFFF"></p>
+            </div>
+            <script>
+              let r = {total};
+              const el = document.getElementById('d');
+              function draw() {{
+                const rr = Math.max(0, r);
+                const m = String(Math.floor(rr/60)).padStart(2,'0');
+                const s = String(rr%60).padStart(2,'0');
+                el.textContent = m+':'+s;
+              }}
+              draw();
+              {tick_js}
+            </script>
+            </body></html>
+            """,
+            height=95,
+        )
+
+
+@st.fragment(run_every=1)
+def _watch_case_timer_expiry():
+    """Poll for exam time-up in isolation, without touching the sidebar (see
+    _render_js_countdown). Renders nothing until time actually expires, so
+    there is nothing for these per-second ticks to visibly flash."""
+    if not (
+        st.session_state.case_active
+        and st.session_state.timer_start is not None
+        and st.session_state.get("attempt_mode") != "learning"
+    ):
+        return
+    elapsed = time.time() - st.session_state.timer_start
+    remaining = max(0.0, st.session_state.timer_limit_s - elapsed)
+    if remaining <= 0:
+        st.warning("Time's up! Submitting automatically…")
+        _submit_case()
+        st.rerun()
+
+
+@st.fragment(run_every=1)
+def _watch_phase_timer_expiry(test_id: int, phase_index: int, is_last_phase: bool):
+    """Poll for exam-phase time-up in isolation (see _watch_case_timer_expiry)."""
+    phase = get_custom_test_phases(test_id)[phase_index]
+    if phase.get("paused_at"):
+        return
+    started_at = phase["started_at"] or time.time()
+    remaining = max(0.0, phase["timer_limit_s"] - (time.time() - started_at))
+    if remaining <= 0:
+        finish_custom_phase(test_id, phase_index)
+        if is_last_phase:
+            st.session_state.custom_view = "review"
+        st.rerun()
+
+
+def _render_phase_pause_button(test_id: int, phase_index: int, paused_at) -> None:
+    """Render the pause/resume control below the phase timer."""
+    with st.sidebar:
+        if paused_at:
+            if st.button(
+                "▶ Resume timer",
+                key=f"resume_phase_{test_id}_{phase_index}",
+                use_container_width=True,
+            ):
+                resume_custom_phase(test_id, phase_index)
+                st.rerun()
+        elif st.button(
+            "⏸ Pause timer",
+            key=f"pause_phase_{test_id}_{phase_index}",
+            use_container_width=True,
+        ):
+            pause_custom_phase(test_id, phase_index)
+            st.rerun()
+
+
+@st.fragment(run_every=1)
+def _watch_custom_test_timer_expiry(test_id: int):
+    """Poll for standalone-test time-up in isolation (see _watch_case_timer_expiry)."""
+    test = get_custom_test(test_id)
+    if test.get("paused_at"):
+        return
+    remaining = max(0.0, test["timer_limit_s"] - (time.time() - test["started_at"]))
+    if remaining <= 0:
+        finish_custom_test(test_id)
+        st.session_state.custom_view = "review"
+        st.rerun()
+
+
+def _render_custom_test_pause_button(test_id: int, paused_at) -> None:
+    """Render the pause/resume control below the timer."""
+    with st.sidebar:
+        if paused_at:
+            if st.button(
+                "▶ Resume timer",
+                key=f"resume_test_{test_id}",
+                use_container_width=True,
+            ):
+                resume_custom_test(test_id)
+                st.rerun()
+        elif st.button(
+            "⏸ Pause timer",
+            key=f"pause_test_{test_id}",
+            use_container_width=True,
+        ):
+            pause_custom_test(test_id)
+            st.rerun()
+
+
 _APP_DIR = Path(__file__).parent
 
 def _load_images(paths_json: str | None, *, crops_only: bool = True) -> list[Path]:
@@ -250,14 +391,33 @@ def _show_images(
     caption: str = "",
     small: bool = False,
     captions: list[str] | None = None,
+    grid_cols: int = 1,
 ):
     captions = captions or []
-    for index, p in enumerate(paths):
-        image_caption = (
+
+    def _caption_for(index: int) -> str:
+        return (
             captions[index]
             if index < len(captions) and captions[index]
             else caption if index == 0 else ""
         )
+
+    if grid_cols > 1 and paths:
+        n_cols = min(grid_cols, len(paths))
+        # Use spacer columns to shrink the image's rendered width while still
+        # handing the browser the full-resolution file (so the fullscreen
+        # expand shows it at native quality, not a downscaled version).
+        cols = st.columns(n_cols * 2) if small else st.columns(n_cols)
+        for index, p in enumerate(paths):
+            col = cols[(index % n_cols) * 2] if small else cols[index % n_cols]
+            if p.exists():
+                col.image(str(p), use_container_width=True, caption=_caption_for(index))
+            else:
+                col.caption(f"Image not rendered yet: {p.name}")
+        return
+
+    for index, p in enumerate(paths):
+        image_caption = _caption_for(index)
         if p.exists():
             if small:
                 col, _ = st.columns([1, 3])
@@ -307,33 +467,20 @@ def _show_learning_feedback(q: dict, options: list[str]):
     message_fn, label = feedback[result]
     message_fn(label)
 
-    ans_row = get_answer(q_id)
-    st.markdown("**Correct answer**")
-    if ans_row and ans_row["answer_text"]:
-        st.markdown(ans_row["answer_text"])
-    elif ans_row and options:
-        correct_indices = correct_option_indices(
-            options, ans_row["correct_options"], ans_row["answer_text"]
-        )
-        if correct_indices:
-            for index in correct_indices:
-                st.markdown(f"→ {options[index]}")
-        else:
-            st.markdown("_Answer not available_")
+    correct_indices = _correct_indices_for(q_id, options)
+    user_answer = st.session_state.user_answers.get(q_id)
+
+    st.markdown(_your_answer_heading(q["q_type"], user_answer, correct_indices, len(options)))
+    if q["q_type"] == "free_text":
+        _render_free_text_answer(user_answer)
+        st.markdown("**Correct answer**")
     else:
-        st.markdown("_Answer not available_")
+        _render_choice_feedback_grid(options, user_answer, correct_indices)
 
-    if ans_row and ans_row["explanation"]:
-        with st.expander("Explanation", expanded=False):
-            st.markdown(ans_row["explanation"])
-
-    _render_source_citation(q)
-
-    answer_imgs = _load_images(ans_row["page_images"] if ans_row else None)
-    if answer_imgs:
-        st.markdown("**Answer images**")
-        _show_images(answer_imgs, small=True)
-    _render_original_answer_page(q)
+    _render_correct_answer(
+        q_id, options, collapse_explanation=True, question=q,
+        show_correct_text=(q["q_type"] == "free_text"),
+    )
 
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
@@ -390,23 +537,21 @@ with st.sidebar:
     # Timer slot — filled later if case is active
     _timer_slot = st.empty()
 
-# ── Timer update (runs every rerun while case is active) ─────────────────────
-_remaining: float | None = None
+# ── Timer display (client-side ticking, no per-second rerun) ─────────────────
 if (
     st.session_state.case_active
     and st.session_state.timer_start is not None
     and st.session_state.get("attempt_mode") != "learning"
 ):
-    _elapsed   = time.time() - st.session_state.timer_start
-    _remaining = max(0.0, st.session_state.timer_limit_s - _elapsed)
-    _color     = "#2E7D32" if _remaining > 120 else ("#E65100" if _remaining > 30 else "#C62828")
-    _timer_slot.markdown(
-        f"<div style='text-align:center'>"
-        f"<p style='color:rgba(255,255,255,0.75);margin:0;font-size:0.75em;letter-spacing:1px'>TIME REMAINING</p>"
-        f"<p style='font-size:3em;font-weight:bold;color:{_color};margin:0;line-height:1'>"
-        f"{_fmt_time(_remaining)}</p></div>",
-        unsafe_allow_html=True,
-    )
+    _case_elapsed = time.time() - st.session_state.timer_start
+    _case_remaining = max(0.0, st.session_state.timer_limit_s - _case_elapsed)
+    with st.sidebar:
+        _render_js_countdown(
+            _timer_slot, _case_remaining, label="TIME REMAINING", ticking=True
+        )
+# Isolated fragment that only watches for time-up; kept out of the sidebar
+# (a @st.fragment cannot write to the sidebar in this Streamlit version).
+_watch_case_timer_expiry()
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -614,9 +759,8 @@ def view_question():
         _db_section() == "mrq"
         and st.session_state.get("attempt_mode") == "learning"
     )
-    # Refresh every second while case is active to keep the timer ticking
-    if st.session_state.case_active and not is_learning:
-        st_autorefresh(interval=1000, key="case_timer")
+    # Countdown ticking and time's-up auto-submit are handled by the sidebar's
+    # _tick_case_timer fragment, so this view doesn't need its own rerun timer.
 
     questions = st.session_state.questions
     q_idx     = st.session_state.q_index
@@ -644,7 +788,8 @@ def view_question():
             if vig:
                 st.info(vig)
         st.markdown(f"### Q{q['q_number']}")
-        if q.get("source"):
+        if is_learning and q.get("source"):
+            # Hidden in exam mode — seeing the source book can hint at the answer.
             st.caption(
                 f"{q['source']} · Chapter {q['chapter_number']}: "
                 f"{q['chapter_title']} · {SECTION_LABELS.get(sec, sec.upper())}"
@@ -655,39 +800,35 @@ def view_question():
         saved   = st.session_state.user_answers.get(q_id)
         options = json.loads(q["options"]) if q.get("options") else []
 
-        if q_type == "free_text":
-            val = st.text_area(
-                "Your answer",
-                value=saved or "",
-                height=160,
-                placeholder="Write your answer here…",
-                key=f"ft_{q_id}",
-                disabled=is_learning and is_submitted,
-            )
-            st.session_state.user_answers[q_id] = val
+        if not (is_learning and is_submitted):
+            if q_type == "free_text":
+                val = st.text_area(
+                    "Your answer",
+                    value=saved or "",
+                    height=160,
+                    placeholder="Write your answer here…",
+                    key=f"ft_{q_id}",
+                )
+                st.session_state.user_answers[q_id] = val
 
-        elif q_type == "single_choice":
-            prev_idx = saved if isinstance(saved, int) and saved < len(options) else None
-            choice = st.radio(
-                "Select one:",
-                options,
-                index=prev_idx,
-                key=f"sc_{q_id}",
-                disabled=is_learning and is_submitted,
-            )
-            if choice in options:
-                st.session_state.user_answers[q_id] = options.index(choice)
+            elif q_type == "single_choice":
+                prev_idx = saved if isinstance(saved, int) and saved < len(options) else None
+                choice = st.radio(
+                    "Select one:",
+                    options,
+                    index=prev_idx,
+                    key=f"sc_{q_id}",
+                )
+                if choice in options:
+                    st.session_state.user_answers[q_id] = options.index(choice)
 
-        elif q_type == "multiple_choice":
-            prev_sel = [options[i] for i in (saved or []) if i < len(options)]
-            chosen = st.multiselect(
-                "Select all that apply:",
-                options,
-                default=prev_sel,
-                key=f"mc_{q_id}",
-                disabled=is_learning and is_submitted,
-            )
-            st.session_state.user_answers[q_id] = [options.index(c) for c in chosen]
+            elif q_type == "multiple_choice":
+                prev_sel = saved if isinstance(saved, list) else []
+                st.caption("Select all that apply:")
+                chosen = _render_mc_checkbox_input(
+                    options, prev_sel, key_prefix=f"mc_{q_id}", disabled=False,
+                )
+                st.session_state.user_answers[q_id] = chosen
 
         if is_learning:
             if is_submitted:
@@ -760,21 +901,11 @@ def view_question():
             _show_images(
                 imgs,
                 captions=_load_image_captions(q.get("page_image_captions")),
+                grid_cols=2,
             )
         video_links = json.loads(q.get("video_links") or "[]")
         for i, url in enumerate(video_links, 1):
             st.markdown(f"[▶ Video {i}]({url})")
-
-    # ── Auto-submit when time runs out ────────────────────────────────────────
-    if (
-        not is_learning
-        and st.session_state.case_active
-        and _remaining is not None
-        and _remaining <= 0
-    ):
-        st.warning("Time's up! Submitting automatically…")
-        _submit_case()
-        st.rerun()
 
 
 def view_learning_summary():
@@ -798,20 +929,45 @@ def view_learning_summary():
     metric_cols[3].metric("Skipped", counts["skipped"])
     st.caption(f"Completed {len(results)} of {total} questions")
 
+    st.markdown("---")
     result_labels = {
         "correct": "Correct",
         "partial": "Partially correct",
         "incorrect": "Incorrect",
         "skipped": "Skipped",
     }
-    rows = [
-        {
-            "Question": f"Q{q['q_number']}",
-            "Result": result_labels.get(results.get(q["id"]), "Not completed"),
-        }
-        for q in st.session_state.questions
-    ]
-    st.dataframe(rows, use_container_width=True, hide_index=True)
+    for q in st.session_state.questions:
+        q_id = q["id"]
+        result = results.get(q_id)
+        options = json.loads(q["options"]) if q.get("options") else []
+        ans_row = get_answer(q_id)
+        correct_indices = _correct_indices_for(q_id, options)
+
+        with st.expander(
+            f"Q{q['q_number']} — {result_labels.get(result, 'Not completed')}",
+            expanded=result in ("incorrect", "partial"),
+        ):
+            st.markdown(q["question_text"])
+            user_answer = st.session_state.user_answers.get(q_id)
+            if q["q_type"] == "free_text":
+                col_a, col_b = st.columns(2, gap="large")
+                with col_a:
+                    st.markdown("**Your answer**")
+                    _render_free_text_answer(user_answer)
+                with col_b:
+                    st.markdown("**Correct answer**")
+                    if ans_row and ans_row["answer_text"]:
+                        st.markdown(ans_row["answer_text"])
+                    else:
+                        st.markdown("_Answer not available_")
+            else:
+                st.markdown(
+                    _your_answer_heading(q["q_type"], user_answer, correct_indices, len(options))
+                )
+                _render_choice_feedback_grid(options, user_answer, correct_indices)
+            if ans_row and ans_row["explanation"]:
+                with st.expander("Explanation", expanded=False):
+                    st.markdown(ans_row["explanation"])
 
 
 def view_review():
@@ -840,6 +996,13 @@ def view_review():
         user_ans = st.session_state.user_answers.get(q_id)
         options  = json.loads(q["options"]) if q.get("options") else []
         rating   = st.session_state.ratings.get(q_id)
+        correct_indices = set(
+            correct_option_indices(
+                options,
+                ans_row["correct_options"] if ans_row else None,
+                ans_row["answer_text"] if ans_row else None,
+            )
+        )
 
         _RATING_COLORS = {
             "got_it":  ("#2E7D32", "✓ Got it"),
@@ -865,34 +1028,23 @@ def view_review():
             with col_q:
                 st.markdown("**Question**")
                 st.markdown(q["question_text"])
-                st.markdown("**Your answer**")
 
                 if q["q_type"] == "free_text":
-                    st.markdown(user_ans or "_No answer_")
+                    st.markdown("**Your answer**")
+                    _render_free_text_answer(user_ans)
                 elif options:
-                    if isinstance(user_ans, int):
-                        chosen = [options[user_ans]] if user_ans < len(options) else []
-                    elif isinstance(user_ans, list):
-                        chosen = [options[i] for i in user_ans if i < len(options)]
-                    else:
-                        chosen = []
-                    if chosen:
-                        for c in chosen:
-                            st.markdown(f"→ {c}")
-                    else:
-                        st.markdown("_No answer_")
+                    st.markdown(
+                        _your_answer_heading(q["q_type"], user_ans, correct_indices, len(options))
+                    )
+                    _render_choice_feedback_grid(options, user_ans, correct_indices)
 
             with col_a:
-                st.markdown("**Correct Answer**")
-                if ans_row and ans_row["answer_text"]:
-                    st.markdown(ans_row["answer_text"])
-                elif ans_row and ans_row["correct_options"] and options:
-                    correct_indices = json.loads(ans_row["correct_options"])
-                    correct_labels = [options[i] for i in correct_indices if i < len(options)]
-                    for c in correct_labels:
-                        st.markdown(f"→ {c}")
-                else:
-                    st.markdown("_Answer not available_")
+                if q["q_type"] == "free_text":
+                    st.markdown("**Correct Answer**")
+                    if ans_row and ans_row["answer_text"]:
+                        st.markdown(ans_row["answer_text"])
+                    else:
+                        st.markdown("_Answer not available_")
 
                 if ans_row and ans_row["explanation"]:
                     st.markdown("**Explanation**")
@@ -903,7 +1055,7 @@ def view_review():
                 answer_imgs = _load_images(ans_row["page_images"] if ans_row else None)
                 if answer_imgs:
                     st.markdown("**Answer Images**")
-                    _show_images(answer_imgs, small=True)
+                    _show_images(answer_imgs, small=True, grid_cols=2)
 
                 _render_original_answer_page(q)
 
@@ -973,22 +1125,142 @@ def _custom_context_label(q: dict) -> str:
     )
 
 
-def _render_user_answer(q: dict, user_answer):
-    options = json.loads(q.get("options") or "[]")
-    if q["q_type"] == "free_text":
-        st.markdown(user_answer or "_No answer_")
-        return
+def _render_free_text_answer(user_answer):
+    st.markdown(user_answer or "_No answer_")
+
+
+def _render_mc_checkbox_input(
+    options: list[str], selected: list[int], *, key_prefix: str, disabled: bool
+) -> list[int]:
+    """Render multiple_choice options as a checkbox column instead of a dropdown."""
+    chosen = []
+    for i, option_text in enumerate(options):
+        checked = st.checkbox(
+            option_text,
+            value=i in selected,
+            key=f"{key_prefix}_{i}",
+            disabled=disabled,
+        )
+        if checked:
+            chosen.append(i)
+    return chosen
+
+
+def _render_choice_feedback_grid(
+    options: list[str], user_answer, correct_indices: set[int]
+) -> None:
+    """Render every option as a bordered row with a correctness mark to its
+    left (✔ = objectively correct, ✘ = selected but wrong) and a checked/
+    unchecked box coloured green (selected & correct) or red (selected &
+    wrong). Used for both single_choice and multiple_choice feedback.
+    """
     if isinstance(user_answer, int):
-        chosen = [options[user_answer]] if user_answer < len(options) else []
+        selected = {user_answer}
     elif isinstance(user_answer, list):
-        chosen = [options[i] for i in user_answer if i < len(options)]
+        selected = set(user_answer)
     else:
-        chosen = []
-    if chosen:
-        for item in chosen:
-            st.markdown(f"→ {item}")
+        selected = set()
+
+    n_correct = len(selected & correct_indices)
+    n_wrong = len(selected - correct_indices)
+    n_missed = len(correct_indices - selected)
+    if selected:
+        score = mrq_score(selected, correct_indices, len(options))
+        if score >= 1.0:
+            icon, color, bg = "✅", "#2E7D32", "rgba(46,125,50,0.08)"
+        elif score >= 0.5:
+            icon, color, bg = "⚠️", "#E65100", "rgba(230,81,0,0.08)"
+        else:
+            icon, color, bg = "❌", "#C62828", "rgba(198,40,40,0.08)"
+        parts = []
+        if n_correct:
+            parts.append(
+                f"<span style='color:#2E7D32;font-weight:600'>"
+                f"{n_correct} correct answer(s)</span>"
+            )
+        if n_missed:
+            parts.append(
+                f"<span style='color:#E65100;font-weight:600'>"
+                f"{n_missed} missed answer(s)</span>"
+            )
+        if n_wrong:
+            parts.append(
+                f"<span style='color:#C62828;font-weight:600'>"
+                f"{n_wrong} wrong answer(s)</span>"
+            )
+        banner = f"{icon} {', '.join(parts)}"
     else:
-        st.markdown("_No answer_")
+        color, bg, banner = "#999", "transparent", "No answer selected"
+    st.markdown(
+        f"<div style='border:1px solid {color};background:{bg};border-radius:6px;"
+        f"padding:10px 14px;margin-bottom:10px'>{banner}</div>",
+        unsafe_allow_html=True,
+    )
+
+    st.markdown(
+        "<style>"
+        ".edir-mark{width:1em;display:inline-block;font-weight:bold}"
+        ".edir-mark.wrong{color:#C62828}"
+        ".edir-mark.correct{color:#111}"
+        "@media (prefers-color-scheme: dark){"
+        ".edir-mark.correct{color:#fff}"
+        "}"
+        "</style>",
+        unsafe_allow_html=True,
+    )
+    for i, option_text in enumerate(options):
+        is_selected = i in selected
+        is_correct = i in correct_indices
+        if is_correct:
+            mark, mark_class = "✔", "correct"
+        elif is_selected:
+            mark, mark_class = "✘", "wrong"
+        else:
+            mark, mark_class = "", ""
+        if is_selected and is_correct:
+            border, row_bg = "#2E7D32", "rgba(46,125,50,0.08)"
+        elif is_selected and not is_correct:
+            border, row_bg = "#C62828", "rgba(198,40,40,0.08)"
+        else:
+            border, row_bg = "#BBBBBB", "transparent"
+        box = "☑" if is_selected else "☐"
+        st.markdown(
+            f"<div style='display:flex;align-items:center;gap:10px;"
+            f"border:1.5px solid {border};background:{row_bg};border-radius:6px;"
+            f"padding:8px 12px;margin-bottom:6px'>"
+            f"<span class='edir-mark {mark_class}'>{mark}</span>"
+            f"<span style='font-size:1.2em;line-height:1'>{box}</span>"
+            f"<span>{html.escape(option_text)}</span></div>",
+            unsafe_allow_html=True,
+        )
+
+
+def _your_answer_heading(
+    q_type: str, user_answer, correct_indices: set[int], total_options: int = 0
+) -> str:
+    """"Correct answers" heading: (correct picks / total correct) plus the
+    official MRQ-formula score in parentheses, e.g. "Correct answers - 3/4 (0.75)".
+    """
+    if q_type == "free_text" or not correct_indices:
+        return "**Your answer**"
+    if isinstance(user_answer, int):
+        selected = {user_answer}
+    elif isinstance(user_answer, list):
+        selected = set(user_answer)
+    else:
+        selected = set()
+    hits = len(selected & correct_indices)
+    score = mrq_score(selected, correct_indices, total_options)
+    return f"**Correct answers - {hits}/{len(correct_indices)} ({score:.2f})**"
+
+
+def _correct_indices_for(q_id: int, options: list[str]) -> set[int]:
+    ans_row = get_answer(q_id)
+    if not ans_row:
+        return set()
+    return set(
+        correct_option_indices(options, ans_row["correct_options"], ans_row["answer_text"])
+    )
 
 
 def _render_correct_answer(
@@ -998,21 +1270,27 @@ def _render_correct_answer(
     show_details: bool = True,
     collapse_explanation: bool = False,
     question: dict | None = None,
+    after_correct=None,
+    show_correct_text: bool = True,
 ):
     ans_row = get_answer(question_id)
-    if ans_row and ans_row["answer_text"]:
-        st.markdown(ans_row["answer_text"])
-    elif ans_row and options:
-        indices = correct_option_indices(
-            options, ans_row["correct_options"], ans_row["answer_text"]
-        )
-        if indices:
-            for index in indices:
-                st.markdown(f"→ {options[index]}")
+    if show_correct_text:
+        if ans_row and ans_row["answer_text"]:
+            st.markdown(ans_row["answer_text"])
+        elif ans_row and options:
+            indices = correct_option_indices(
+                options, ans_row["correct_options"], ans_row["answer_text"]
+            )
+            if indices:
+                for index in indices:
+                    st.markdown(f"→ {options[index]}")
+            else:
+                st.markdown("_Answer not available_")
         else:
             st.markdown("_Answer not available_")
-    else:
-        st.markdown("_Answer not available_")
+
+    if after_correct is not None:
+        after_correct()
 
     if not show_details:
         return
@@ -1028,7 +1306,7 @@ def _render_correct_answer(
     answer_imgs = _load_images(ans_row["page_images"] if ans_row else None)
     if answer_imgs:
         st.markdown("**Answer images**")
-        _show_images(answer_imgs, small=True)
+        _show_images(answer_imgs, small=True, grid_cols=2)
     if question:
         _render_original_answer_page(question)
 
@@ -1037,13 +1315,16 @@ def _custom_answer_input(test_id: int, q: dict, *, disabled: bool):
     saved = q["user_answer_value"]
     options = json.loads(q.get("options") or "[]")
     key = f"custom_answer_{test_id}_{q['position']}"
+    if disabled:
+        # Already graded — the feedback view below shows the answer instead
+        # of duplicating it here.
+        return saved, options
     if q["q_type"] == "free_text":
         value = st.text_area(
             "Your answer",
             value=saved or "",
             height=160,
             key=key,
-            disabled=disabled,
         )
     elif q["q_type"] == "single_choice":
         index = saved if isinstance(saved, int) and saved < len(options) else None
@@ -1052,19 +1333,14 @@ def _custom_answer_input(test_id: int, q: dict, *, disabled: bool):
             options,
             index=index,
             key=key,
-            disabled=disabled,
         )
         value = options.index(choice) if choice in options else None
     else:
-        defaults = [options[i] for i in (saved or []) if i < len(options)]
-        chosen = st.multiselect(
-            "Select all that apply:",
-            options,
-            default=defaults,
-            key=key,
-            disabled=disabled,
+        prev_sel = saved if isinstance(saved, list) else []
+        st.caption("Select all that apply:")
+        value = _render_mc_checkbox_input(
+            options, prev_sel, key_prefix=key, disabled=False,
         )
-        value = [options.index(item) for item in chosen]
 
     if value != saved and (
         _has_user_answer(q["q_type"], value) or saved is not None
@@ -1090,13 +1366,24 @@ def _show_custom_feedback(q: dict, options: list[str]):
         "partial": (st.warning, "Partially correct"),
         "incorrect": (st.error, "Incorrect"),
         "skipped": (st.info, "Skipped"),
-        "unrated": (st.info, "Compare your answer, then rate yourself"),
+        "unrated": (st.warning, "Compare your answer, then rate yourself"),
     }
     message_fn, label = feedback[result]
     message_fn(label)
-    st.markdown("**Correct answer**")
+
+    correct_indices = _correct_indices_for(q["question_id"], options)
+    st.markdown(
+        _your_answer_heading(q["q_type"], q["user_answer_value"], correct_indices, len(options))
+    )
+    if q["q_type"] == "free_text":
+        _render_free_text_answer(q["user_answer_value"])
+        st.markdown("**Correct answer**")
+    else:
+        _render_choice_feedback_grid(options, q["user_answer_value"], correct_indices)
+
     _render_correct_answer(
-        q["question_id"], options, collapse_explanation=True, question=q
+        q["question_id"], options, collapse_explanation=True, question=q,
+        show_correct_text=(q["q_type"] == "free_text"),
     )
 
 
@@ -1249,6 +1536,24 @@ def _render_custom_builder():
         placeholder="A date-based name will be generated automatically",
         key="custom_builder_test_name",
     )
+    exclude_used = st.checkbox(
+        "Exclude items already used in other custom tests (In Progress or History)",
+        key="custom_builder_exclude_used",
+    )
+    if _library_key() != LIBRARY_UEFA_CFM:
+        selected_modalities = st.multiselect(
+            "Imaging modality (CORE & SC only)",
+            MODALITIES,
+            default=MODALITIES,
+            key="custom_builder_modalities",
+        )
+        if selected_modalities and set(selected_modalities) != set(MODALITIES):
+            st.caption(
+                "MRQs are unaffected — CORE/SC cases are filtered to those "
+                "showing at least one selected modality."
+            )
+    else:
+        selected_modalities = MODALITIES
     st.markdown("#### Content ordering")
     if _library_key() == LIBRARY_UEFA_CFM:
         ordering_mode = "sequential"
@@ -1299,7 +1604,11 @@ def _render_custom_builder():
         "section_order": section_order,
     }
 
-    availability = get_custom_availability(library_key=_library_key())
+    availability = get_custom_availability(
+        library_key=_library_key(),
+        modalities=selected_modalities,
+        exclude_used=exclude_used,
+    )
     entries = {}
     if _library_key() == LIBRARY_UEFA_CFM:
         entries["mrq"] = _render_custom_section_builder("mrq", availability)
@@ -1315,11 +1624,21 @@ def _render_custom_builder():
         "library": _library_key(),
         "ordering": ordering,
         "sections": entries,
+        "modalities": selected_modalities,
+        "exclude_used": exclude_used,
     }
 
     st.markdown("---")
     st.markdown(f"**Selection:** {_custom_config_summary(config)}")
     st.caption(_custom_ordering_summary(config))
+    filter_notes = []
+    if exclude_used:
+        filter_notes.append("excluding items already used in other custom tests")
+    if set(selected_modalities) != set(MODALITIES):
+        modality_list = ", ".join(selected_modalities) if selected_modalities else "none"
+        filter_notes.append(f"CORE/SC modality filter: {modality_list}")
+    if filter_notes:
+        st.caption("Active filters: " + "; ".join(filter_notes))
     errors = validate_custom_config(config)
     for error in errors:
         st.warning(error)
@@ -1363,7 +1682,6 @@ def _render_phased_template_editor():
     editor = st.session_state.custom_phase_editor
     config = editor["config"]
     nonce = st.session_state.custom_phase_editor_nonce
-    availability = get_custom_availability(library_key=LIBRARY_EDIR)
 
     st.markdown("---")
     st.subheader("Customize phased exam")
@@ -1375,6 +1693,14 @@ def _render_phased_template_editor():
         "Template name",
         value=editor["name"],
         key=f"phased_editor_name_{nonce}",
+    )
+    exclude_used = st.checkbox(
+        "Exclude items already used in other custom tests (In Progress or History)",
+        value=bool(config.get("exclude_used")),
+        key=f"phased_editor_exclude_used_{nonce}",
+    )
+    availability = get_custom_availability(
+        library_key=LIBRARY_EDIR, exclude_used=exclude_used
     )
     edited_phases = []
     for phase in config["phases"]:
@@ -1469,6 +1795,7 @@ def _render_phased_template_editor():
         "library": LIBRARY_EDIR,
         "structure": "phased_exam",
         "phases": edited_phases,
+        "exclude_used": exclude_used,
     }
     st.markdown(f"**Selection:** {_custom_config_summary(edited_config)}")
     errors = validate_custom_config(edited_config)
@@ -1516,6 +1843,10 @@ def _render_custom_templates():
             st.caption(
                 "Uses all currently available sources and follows the official chapter blueprint."
             )
+            official_exclude_used = st.checkbox(
+                "Exclude items already used in other custom tests (In Progress or History)",
+                key="official_edir_exclude_used",
+            )
             official_actions = st.columns(2)
             with official_actions[0]:
                 if st.button(
@@ -1524,12 +1855,13 @@ def _render_custom_templates():
                     use_container_width=True,
                     key="official_edir_generate",
                 ):
+                    official_config = {**official, "exclude_used": official_exclude_used}
                     try:
                         test_id = create_custom_test(
                             _custom_default_name("Official EDiR Exam"),
                             "exam",
                             None,
-                            official,
+                            official_config,
                         )
                     except ValueError as exc:
                         st.error(str(exc))
@@ -1546,7 +1878,7 @@ def _render_custom_templates():
                     st.session_state.custom_phase_editor = {
                         "template_id": None,
                         "name": "Official EDiR Exam — Custom",
-                        "config": official,
+                        "config": {**official, "exclude_used": official_exclude_used},
                     }
                     st.rerun()
 
@@ -1783,33 +2115,10 @@ def _render_custom_media(q: dict):
         _show_images(
             imgs,
             captions=_load_image_captions(q.get("page_image_captions")),
+            grid_cols=2,
         )
     for index, url in enumerate(json.loads(q.get("video_links") or "[]"), 1):
         st.markdown(f"[▶ Video {index}]({url})")
-
-
-def _is_last_question_in_custom_case(q: dict, questions: list[dict]) -> bool:
-    """Return whether this is the final persisted question in a SC/CORE case."""
-    if q["section"] not in ("core", "sc"):
-        return False
-    case_positions = [
-        candidate["position"]
-        for candidate in questions
-        if candidate["case_id"] == q["case_id"]
-    ]
-    return bool(case_positions) and q["position"] == max(case_positions)
-
-
-def _render_custom_case_source(q: dict, questions: list[dict]) -> None:
-    """Show the original answer page after the final revealed case question."""
-    if not _is_last_question_in_custom_case(q, questions):
-        return
-    original_answer_pages = _load_images(
-        q.get("original_answer_pages"), crops_only=False
-    )
-    if original_answer_pages:
-        with st.expander("Original answer page", expanded=False):
-            _show_images(original_answer_pages, small=True)
 
 
 def _render_custom_article_summary(q: dict) -> None:
@@ -1825,6 +2134,23 @@ def _phase_content_label(phase: dict, questions: list[dict]) -> str:
         return f"{len(questions)} MRQ questions"
     cases = len({q["case_id"] for q in questions})
     return f"{cases} {SECTION_LABELS[phase['section']]} cases"
+
+
+def _section_case_progress(questions: list[dict], current_q: dict) -> str | None:
+    """For a CORE/SC question, return e.g. "SC case 2 of 24" — the current
+    case's rank among same-section cases in this question list. MRQ returns
+    None since "Question X of Y" already conveys the same thing there (each
+    MRQ is its own unit).
+    """
+    section = current_q["section"]
+    if section not in ("core", "sc"):
+        return None
+    unit_positions = []
+    for q in questions:
+        if q["section"] == section and q["unit_position"] not in unit_positions:
+            unit_positions.append(q["unit_position"])
+    case_number = unit_positions.index(current_q["unit_position"]) + 1
+    return f"{SECTION_LABELS[section]} case {case_number} of {len(unit_positions)}"
 
 
 def _render_phased_custom_test(test: dict):
@@ -1878,26 +2204,27 @@ def _render_phased_custom_test(test: dict):
         start_custom_test(test_id)
         phase = get_custom_test_phases(test_id)[phase_index]
 
-    started_at = phase["started_at"] or time.time()
-    elapsed = time.time() - started_at
-    remaining = max(0.0, phase["timer_limit_s"] - elapsed)
-    color = "#2E7D32" if remaining > 120 else (
-        "#E65100" if remaining > 30 else "#C62828"
-    )
-    _timer_slot.markdown(
-        f"<div style='text-align:center'>"
-        f"<p style='color:rgba(255,255,255,0.75);margin:0;font-size:0.75em;"
-        f"letter-spacing:1px'>PHASE {phase_index + 1} TIME</p>"
-        f"<p style='font-size:3em;font-weight:bold;color:{color};margin:0;"
-        f"line-height:1'>{_fmt_time(remaining)}</p></div>",
-        unsafe_allow_html=True,
-    )
-    if remaining <= 0:
-        finish_custom_phase(test_id, phase_index)
-        if phase_index == len(phases) - 1:
-            st.session_state.custom_view = "review"
-        st.rerun()
-    st_autorefresh(interval=1000, key=f"phased_timer_{test_id}_{phase_index}")
+    phase = get_custom_test_phases(test_id)[phase_index]
+    phase_paused_at = phase.get("paused_at")
+    phase_started_at = phase["started_at"] or time.time()
+    phase_elapsed = (phase_paused_at or time.time()) - phase_started_at
+    phase_remaining = max(0.0, phase["timer_limit_s"] - phase_elapsed)
+    with st.sidebar:
+        _render_js_countdown(
+            _timer_slot, phase_remaining,
+            label=f"PHASE {phase_index + 1} TIME",
+            ticking=not phase_paused_at,
+        )
+    # Isolated fragment that only watches for time-up; kept out of the
+    # sidebar (a @st.fragment cannot write to the sidebar in this version).
+    _watch_phase_timer_expiry(test_id, phase_index, phase_index == len(phases) - 1)
+    _render_phase_pause_button(test_id, phase_index, phase_paused_at)
+    if phase_paused_at:
+        st.info(
+            "Phase paused — the countdown is frozen and your progress is saved. "
+            "Press **Resume timer** in the sidebar to continue."
+        )
+        return
 
     positions = [q["position"] for q in questions]
     current_global = int(test["current_position"])
@@ -1910,9 +2237,13 @@ def _render_phased_custom_test(test: dict):
         (local_index + 1) / len(questions),
         text=f"Question {local_index + 1} of {len(questions)} in this phase",
     )
+    case_progress = _section_case_progress(questions, q)
+    if case_progress:
+        st.caption(case_progress)
     col_q, col_img = st.columns([1, 1], gap="large")
     with col_q:
-        st.caption(_custom_context_label(q))
+        # Source is intentionally hidden here — phased exams are exam-mode
+        # only, and seeing the source book can hint at the answer.
         st.markdown(f"### {SECTION_LABELS[q['section']]} Q{q['q_number']}")
         if q["section"] in ("core", "sc") and q.get("clinical_vignette"):
             st.info(q["clinical_vignette"])
@@ -1985,24 +2316,25 @@ def view_custom_test():
     is_learning = test["mode"] == "learning"
 
     if not is_learning:
-        elapsed = time.time() - test["started_at"]
-        remaining = max(0.0, test["timer_limit_s"] - elapsed)
-        color = "#2E7D32" if remaining > 120 else (
-            "#E65100" if remaining > 30 else "#C62828"
+        test_paused_at = test.get("paused_at")
+        test_remaining = max(
+            0.0, test["timer_limit_s"] - ((test_paused_at or time.time()) - test["started_at"])
         )
-        _timer_slot.markdown(
-            f"<div style='text-align:center'>"
-            f"<p style='color:rgba(255,255,255,0.75);margin:0;font-size:0.75em;"
-            f"letter-spacing:1px'>TIME REMAINING</p>"
-            f"<p style='font-size:3em;font-weight:bold;color:{color};margin:0;"
-            f"line-height:1'>{_fmt_time(remaining)}</p></div>",
-            unsafe_allow_html=True,
-        )
-        if remaining <= 0:
-            finish_custom_test(test_id)
-            st.session_state.custom_view = "review"
-            st.rerun()
-        st_autorefresh(interval=1000, key=f"custom_timer_{test_id}")
+        with st.sidebar:
+            _render_js_countdown(
+                _timer_slot, test_remaining,
+                label="TIME REMAINING", ticking=not test_paused_at,
+            )
+        # Isolated fragment that only watches for time-up; kept out of the
+        # sidebar (a @st.fragment cannot write to the sidebar in this version).
+        _watch_custom_test_timer_expiry(test_id)
+        _render_custom_test_pause_button(test_id, test_paused_at)
+        if test_paused_at:
+            st.info(
+                "Test paused — the countdown is frozen and your progress is saved. "
+                "Press **Resume timer** in the sidebar to continue."
+            )
+            return
 
     if st.button("← Custom dashboard"):
         st.session_state.custom_view = "dashboard"
@@ -2012,9 +2344,14 @@ def view_custom_test():
         (position + 1) / len(questions),
         text=f"Question {position + 1} of {len(questions)}",
     )
+    case_progress = _section_case_progress(questions, q)
+    if case_progress:
+        st.caption(case_progress)
     col_q, col_img = st.columns([1, 1], gap="large")
     with col_q:
-        st.caption(_custom_context_label(q))
+        if is_learning:
+            # Hidden in exam mode — seeing the source book can hint at the answer.
+            st.caption(_custom_context_label(q))
         st.markdown(f"### {SECTION_LABELS[q['section']]} Q{q['q_number']}")
         if q["section"] in ("core", "sc") and q.get("clinical_vignette"):
             st.info(q["clinical_vignette"])
@@ -2027,23 +2364,29 @@ def view_custom_test():
         if is_learning and revealed:
             _show_custom_feedback(q, options)
             _render_custom_article_summary(q)
-            _render_custom_case_source(q, questions)
             if q["result"] == "unrated":
-                st.markdown("**Rate your answer**")
-                rating_cols = st.columns(3)
-                for col, rating, label in zip(
-                    rating_cols,
-                    ("got_it", "partial", "missed"),
-                    ("✓ Got it", "~ Partial", "✕ Missed"),
+                st.markdown(
+                    "**Self-rating** — this score feeds into this case's and this "
+                    "section's overall percentage once saved."
+                )
+                self_score = st.slider(
+                    "0 = fully missed · 1 = fully correct",
+                    min_value=0.0, max_value=1.0, value=0.5, step=0.05,
+                    key=f"custom_selfscore_{test_id}_{position}",
+                )
+                if st.button(
+                    "Save rating",
+                    key=f"custom_saverating_{test_id}_{position}",
                 ):
-                    with col:
-                        if st.button(
-                            label,
-                            use_container_width=True,
-                            key=f"custom_rate_{test_id}_{position}_{rating}",
-                        ):
-                            rate_custom_free_text(test_id, position, rating)
-                            st.rerun()
+                    rate_custom_free_text(test_id, position, self_score)
+                    st.rerun()
+
+                st.text_area(
+                    "Scratch notes (not saved)",
+                    key=f"custom_scratch_{test_id}_{position}",
+                    height=120,
+                    placeholder="Jot down anything you like — this is just for practice and is never saved.",
+                )
 
         st.markdown("---")
         if is_learning:
@@ -2164,6 +2507,26 @@ def _custom_result_summary(test: dict, questions: list[dict]):
         else []
     )
     phase_names = {phase["phase_index"]: phase["name"] for phase in phases}
+
+    scores = get_custom_phase_scores(test["id"])
+    if scores:
+        st.subheader("Phase scores" if phases else "Section scores")
+        st.caption(
+            "MRQ and SC score every question equally (non-free-text plus any "
+            "free-text question you've self-rated below), using the official "
+            "partial-credit formula. Each CORE case is instead weighted out of "
+            "10 points — its first free-text question is worth 3, each "
+            "additional free-text question 2, and the rest is split evenly "
+            "across its non-free-text questions."
+        )
+        score_cols = st.columns(len(scores))
+        for col, score in zip(score_cols, scores):
+            col.metric(
+                score["name"],
+                f"{score['score_pct']:.1f}%",
+                help=f"{score['scored_count']} scored question(s)",
+            )
+
     if phases:
         st.subheader("Phase timing")
         st.dataframe(
@@ -2202,6 +2565,100 @@ def _custom_result_summary(test: dict, questions: list[dict]):
         st.dataframe(table, use_container_width=True, hide_index=True)
 
 
+def _question_score(q: dict) -> float | None:
+    """A question's 0-1 partial-credit score. A free-text question only
+    scores once self-rated (its 0-1 self_score is used directly); an
+    unrated free-text question returns None, same as an unscored one."""
+    if q["q_type"] == "free_text":
+        return q.get("self_score")
+    options = json.loads(q.get("options") or "[]")
+    correct_indices = _correct_indices_for(q["question_id"], options)
+    user_answer = q["user_answer_value"]
+    if isinstance(user_answer, int):
+        selected = {user_answer}
+    elif isinstance(user_answer, list):
+        selected = set(user_answer)
+    else:
+        selected = set()
+    return mrq_score(selected, correct_indices, len(options))
+
+
+def _case_score_pct(case_questions: list[dict]) -> float | None:
+    """Average partial-credit score across a case's scorable questions —
+    every question weighted equally. Used for SC (and any non-CORE) cases.
+    Returns None if the case has no scorable question yet."""
+    scores = [s for s in (_question_score(q) for q in case_questions) if s is not None]
+    if not scores:
+        return None
+    return sum(scores) / len(scores) * 100
+
+
+def _core_case_score(case_questions: list[dict]) -> tuple[float, float]:
+    """A CORE case's weighted score out of 10 points (see score_core_case):
+    the first free-text question is worth 3 points, each additional
+    free-text question 2 points, and the remaining points split evenly
+    across the non-free-text questions — reallocating fully to whichever
+    type exists if a case is all one type. Returns (earned_points,
+    max_points_so_far); an unrated free-text question's points are excluded
+    from both until it's self-rated."""
+    entries = [
+        {
+            "q_number": q["q_number"],
+            "is_free_text": q["q_type"] == "free_text",
+            "score": _question_score(q),
+        }
+        for q in case_questions
+    ]
+    return score_core_case(entries)
+
+
+def _render_custom_review_question(test_id: int, q: dict, *, label: str, expanded: bool) -> None:
+    result_label = _CUSTOM_RESULT_LABELS[q["result"]]
+    title = f"{label} — {result_label}"
+    if q["result"] == "unrated":
+        title = f"🟡 {title}"
+    options = json.loads(q.get("options") or "[]")
+    correct_indices = _correct_indices_for(q["question_id"], options)
+    with st.expander(title, expanded=expanded):
+        col_q, col_a = st.columns(2, gap="large")
+        with col_q:
+            st.markdown("**Question**")
+            st.markdown(q["question_text"])
+            st.markdown(
+                _your_answer_heading(
+                    q["q_type"], q["user_answer_value"], correct_indices, len(options)
+                )
+            )
+            if q["q_type"] == "free_text":
+                _render_free_text_answer(q["user_answer_value"])
+            else:
+                _render_choice_feedback_grid(
+                    options, q["user_answer_value"], correct_indices
+                )
+        with col_a:
+            if q["q_type"] == "free_text":
+                st.markdown("**Correct answer**")
+            _render_correct_answer(
+                q["question_id"], options, question=q,
+                show_correct_text=(q["q_type"] == "free_text"),
+            )
+        if q["q_type"] == "free_text" and q["result"] == "unrated":
+            st.markdown("---")
+            st.markdown("**Self-rating** — this score feeds into this case's and this "
+                         "section's overall percentage once saved.")
+            score = st.slider(
+                "0 = fully missed · 1 = fully correct",
+                min_value=0.0, max_value=1.0, value=0.5, step=0.05,
+                key=f"custom_review_selfscore_{test_id}_{q['position']}",
+            )
+            if st.button(
+                "Save rating",
+                key=f"custom_review_saverating_{test_id}_{q['position']}",
+            ):
+                rate_custom_free_text(test_id, q["position"], score)
+                st.rerun()
+
+
 def view_custom_results(*, compact: bool):
     test_id = st.session_state.custom_test_id
     test = get_custom_test(test_id) if test_id else None
@@ -2223,44 +2680,73 @@ def view_custom_results(*, compact: bool):
         st.rerun()
     st.header(f"{test['name']} — {'Summary' if compact else 'Review'}")
     _custom_result_summary(test, questions)
-    if compact:
-        return
 
-    for q in questions:
-        result_label = _CUSTOM_RESULT_LABELS[q["result"]]
-        with st.expander(
-            f"Question {q['position'] + 1} — {result_label}", expanded=False
-        ):
-            st.caption(_custom_context_label(q))
-            if q["section"] in ("core", "sc") and q.get("clinical_vignette"):
-                st.info(q["clinical_vignette"])
-            col_q, col_a = st.columns(2, gap="large")
-            with col_q:
-                st.markdown("**Question**")
-                st.markdown(q["question_text"])
-                st.markdown("**Your answer**")
-                _render_user_answer(q, q["user_answer_value"])
-            with col_a:
-                st.markdown("**Correct answer**")
-                options = json.loads(q.get("options") or "[]")
-                _render_correct_answer(q["question_id"], options, question=q)
-            if q["q_type"] == "free_text" and q["result"] == "unrated":
-                st.markdown("---")
-                st.markdown("**Rate your answer**")
-                rating_cols = st.columns(3)
-                for col, rating, label in zip(
-                    rating_cols,
-                    ("got_it", "partial", "missed"),
-                    ("✓ Got it", "~ Partial", "✕ Missed"),
-                ):
-                    with col:
-                        if st.button(
-                            label,
-                            use_container_width=True,
-                            key=f"custom_review_rate_{test_id}_{q['position']}_{rating}",
-                        ):
-                            rate_custom_free_text(test_id, q["position"], rating)
-                            st.rerun()
+    st.markdown("---")
+    hide_correct = st.checkbox(
+        "Hide correct answers (show only partial/incorrect/skipped/unrated)",
+        key=f"hide_correct_{test_id}",
+        help="Also speeds up this page a lot on long tests, since every "
+             "expander's content is skipped entirely rather than just collapsed.",
+    )
+    sections_present = [s for s in ("mrq", "sc", "core") if any(q["section"] == s for q in questions)]
+    if not sections_present:
+        return
+    tabs = st.tabs([SECTION_LABELS[s] for s in sections_present])
+    for section, tab in zip(sections_present, tabs):
+        with tab:
+            section_questions = [q for q in questions if q["section"] == section]
+            if section == "mrq":
+                shown = 0
+                for idx, q in enumerate(section_questions, start=1):
+                    if hide_correct and q["result"] == "correct":
+                        continue
+                    shown += 1
+                    _render_custom_review_question(
+                        test_id, q, label=f"MRQ {idx}",
+                        expanded=compact and q["result"] in ("incorrect", "partial"),
+                    )
+                if shown == 0:
+                    st.info("No partial, incorrect, skipped, or unrated MRQs.")
+                continue
+            cases: dict[int, list[dict]] = {}
+            for q in section_questions:
+                cases.setdefault(q["case_id"], []).append(q)
+            case_list = list(cases.values())
+            shown_cases = 0
+            for case_idx, case_questions in enumerate(case_list, start=1):
+                visible_questions = (
+                    [q for q in case_questions if q["result"] != "correct"]
+                    if hide_correct else case_questions
+                )
+                if not visible_questions:
+                    continue
+                shown_cases += 1
+                header = f"{SECTION_LABELS[section]} case {case_idx} of {len(case_list)}"
+                if section == "core":
+                    earned, max_points = _core_case_score(case_questions)
+                    if max_points > 0:
+                        pct = earned / max_points * 100
+                        header += f" — {earned:.1f}/{max_points:.0f} ({pct:.0f}%)"
+                else:
+                    score_pct = _case_score_pct(case_questions)
+                    if score_pct is not None:
+                        header += f" — {score_pct:.0f}%"
+                with st.container(border=True):
+                    st.markdown(f"#### {header}")
+                    first_q = case_questions[0]
+                    st.caption(
+                        f"{first_q['source']} · Chapter {first_q['chapter_number']}: "
+                        f"{first_q['chapter_title']}"
+                    )
+                    if first_q.get("clinical_vignette"):
+                        st.info(first_q["clinical_vignette"])
+                    for q in visible_questions:
+                        _render_custom_review_question(
+                            test_id, q, label=f"Q{q['q_number']}",
+                            expanded=compact and q["result"] in ("incorrect", "partial"),
+                        )
+            if shown_cases == 0:
+                st.info("No partial, incorrect, skipped, or unrated cases in this section.")
 
 
 def _new_book_import_tab(import_type: str) -> None:

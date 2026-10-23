@@ -1,0 +1,414 @@
+[
+  {
+    "chapter_id": 5,
+    "chapter_match": "exact",
+    "source": "Reporting Systems",
+    "section": "mrq",
+    "clinical_vignette": "Bosniak Classification of Renal Cystic Masses (2019)",
+    "article_summary": "### Bosniak Classification of Renal Cystic Masses (2019)\n**Source:** Silverman SG, et al. Bosniak Classification of Cystic Renal Masses, Version 2019. Radiology. 2019;292:475-488 (summarised here from a Radiology Assistant teaching page).\n**Scope:** A CT/MRI-based classification for cystic renal masses, defined as lesions in which less than 25% of the mass is composed of enhancing tissue. The system stratifies malignancy risk across five categories and guides the choice between no follow-up, surveillance, or intervention. It should not be applied to lesions of infectious, inflammatory or vascular origin, to masses whose solid component exceeds 25% (these are necrotic solid masses, not cystic masses), or to patients with hereditary renal cancer syndromes such as von Hippel-Lindau or hereditary leiomyomatosis.\n\n### Category cheat-sheet\n- **Bosniak I:** Simple, thin-walled cyst with homogeneous fluid and no septa or solid tissue; malignancy risk ~0%; no follow-up needed.\n- **Bosniak II:** Minimally complex cyst with a few (1-3) thin septa, or a homogeneous hyperdense/high-attenuation cyst, or a small cyst too low-attenuation to fully characterise; malignancy risk <1%; no follow-up needed.\n- **Bosniak IIF:** More numerous (≥4) thin septa or a single minimally thickened (3mm) enhancing wall/septum, or a heterogeneous unenhanced fat-saturated T1-hyperintense mass on MRI; malignancy risk 0-38% (up to ~85% if it later progresses); surveillance imaging required.\n- **Bosniak III:** Thickened (≥4mm) smooth wall/septa, or thick irregular wall/septa with obtuse-margined protrusions ≤3mm; malignancy risk ~50%; management individualised (surgery vs surveillance) based on patient factors.\n- **Bosniak IV:** Enhancing nodule(s) — any acute-angle protrusion, or an obtuse-margined protrusion ≥4mm — or a large soft-tissue component with a thick irregular wall; malignancy risk ~90%; treatment usually recommended.\n\n### Key imaging/scoring points\nA septum is a linear or curvilinear structure connecting two surfaces of a cyst; \"few\" means 1-3, \"many\" means 4 or more. Wall/septal thickness is graded as thin (≤2mm, categories I/II), minimally thickened (3mm, category IIF), or thickened (≥4mm, category III). Enhancement is confirmed on CT by unequivocal visual comparison between non-contrast and contrast phases or a ≥20 HU increase using a conventionally sized region of interest, and on MRI by a ≥15% signal intensity increase; the 2019 update deliberately treats all confirmed enhancement equally, abandoning the older \"perceived versus measurable\" distinction. Wall/septal irregularity is defined specifically as diffuse convex protrusions with obtuse margins; a protrusion forming an acute angle with the wall or septum is always a nodule (Bosniak IV) regardless of size, an obtuse-margined protrusion ≤3mm is graded as thickening, and an obtuse-margined protrusion ≥4mm is a nodule. Non-enhancing septa cannot be counted toward IIF criteria — a lesion that would otherwise qualify is downgraded to Bosniak II. Cystic masses under 30 HU on the portal venous phase are considered benign despite possible pseudo-enhancement from adjacent parenchyma, and homogeneous small lesions (up to 1.5cm) showing pseudo-enhancement are still classified Bosniak II.\n\n### Practical/management implications\nBosniak I and II require no follow-up imaging at all. Bosniak IIF requires surveillance imaging to detect growth or morphological change, since progression to category III or IV (though not itself a scoring criterion) signals a malignancy rate comparable to a lesion that was Bosniak IV from the outset. Bosniak III is managed on a case-by-case basis, integrating lesion size with patient age, comorbidities, life expectancy, personal preference and risk tolerance, since roughly half of resected lesions prove benign. Bosniak IV is usually treated when the patient's overall condition permits, reflecting the high (~90%) malignancy rate, with clear cell and papillary renal cell carcinoma the most common histological findings.\n\n### Pitfalls and limitations\nPseudo-enhancement from adjacent renal parenchyma can mimic true enhancement in small cysts and must be distinguished using the portal venous HU threshold and lesion-size considerations. Abundant thick nodular calcification, hyperattenuating non-enhancing lesions >3cm, and heterogeneous non-enhancing lesions are all problem-solving indications for MRI with subtraction imaging, to exclude occult enhancement before a category is assigned. The system predicts the likelihood of malignancy, not its biological aggressiveness, and it is unclear which specific criteria are most predictive of aggressive behaviour. Lesion size and growth rate are not formal scoring criteria, even though smaller lesions are thought more likely to be benign. IIF malignancy rates are highly variable (0-38%) owing to subjective grading and selection bias, and the classification should not be relied upon in patients with hereditary renal cancer syndromes, in whom benign-appearing cysts may still harbour malignancy.\n\n### Take-home points\n- Category assignment hinges on precise wall/septal thickness (≤2mm / 3mm / ≥4mm), septal number (few vs many), and the acute-vs-obtuse-angle distinction for nodularity.\n- Bosniak I and II need no follow-up; IIF needs surveillance; III is individualised; IV is usually treated.\n- Non-enhancing septa never count toward IIF; confirmed enhancement is graded identically regardless of degree once the CT/MRI threshold is met.\n- A solid component exceeding 25% of the mass takes the lesion outside the Bosniak system entirely.\n- The system predicts malignancy likelihood only, not tumour aggressiveness, and should not be applied in hereditary renal cancer syndromes.",
+    "questions": [
+      {
+        "q_number": 1,
+        "question_text": "Regarding the general framework of the Bosniak 2019 classification of cystic renal masses, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A cystic renal mass is defined as a lesion in which less than 25% of the mass is composed of enhancing tissue.",
+          "The classification should be applied to renal masses of infectious, inflammatory, or vascular etiology in the same way as to true cystic neoplasms.",
+          "The 2019 update aims to reduce interobserver variability and increase specificity so as to minimize unnecessary treatment of benign lesions.",
+          "Abundant thick nodular calcifications that obscure enhancement assessment should be resolved by repeating the non-contrast CT acquisition.",
+          "Hyperattenuating, non-enhancing lesions larger than 3cm should prompt consideration of further evaluation with MRI."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 4],
+          "explanation": "The Bosniak system explicitly defines a cystic mass by its enhancing-tissue fraction being under 25%, and the 2019 revision was designed specifically to reduce interobserver variability and increase specificity against overtreating benign disease. The claim that infectious, inflammatory, or vascular lesions should be classified the same way as true cystic neoplasms is incorrect, since the system explicitly excludes these etiologies. Resolving obscuring calcification by repeating non-contrast CT is also incorrect, because the source recommends MRI with subtraction imaging rather than a repeat CT acquisition for this problem. Large hyperattenuating non-enhancing lesions are correctly flagged for further MRI evaluation, as stated among the exclusions/problem-solving scenarios.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 2,
+        "question_text": "Regarding septa and wall/septal thickness definitions in the Bosniak 2019 classification, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "\"Few\" septa is defined as four or more septa within the cystic mass.",
+          "Many septa (four or more), if enhancing and smooth, is a feature supporting a Bosniak IIF assignment.",
+          "A wall or septum measuring 3mm in thickness is classified as thin.",
+          "A wall or septal thickness of 4mm or more corresponds to the \"thickened\" category associated with Bosniak III.",
+          "A minimally thickened wall or septum measuring 3mm is categorized under Bosniak III."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 3],
+          "explanation": "Many septa is correctly defined as four or more, and when such septa are smooth and enhancing this supports a Bosniak IIF assignment; a thickness of 4mm or more is likewise correctly categorized as \"thickened\", the threshold associated with Bosniak III. The claim that \"few\" means four or more septa is incorrect, since few is defined as 1-3 septa. Describing a 3mm wall or septum as \"thin\" is also incorrect, since thin is defined as ≤2mm; 3mm instead falls into the \"minimally thickened\" band, which is a Bosniak IIF feature rather than Bosniak III.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 3,
+        "question_text": "Regarding enhancement criteria used in the Bosniak 2019 classification, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "On CT, enhancement can be confirmed by unequivocal visual comparison between non-contrast and contrast-enhanced phases, or by an increase of 20 HU or more using a conventionally sized region of interest.",
+          "On MRI, enhancement is confirmed by a signal intensity increase of 30% or more on contrast-enhanced sequences.",
+          "The 2019 update treats all confirmed enhancement equally, abandoning the earlier distinction between perceived and measurable enhancement.",
+          "A focus that is too small to measure accurately but is clearly visible is nonetheless classified as an enhancing feature.",
+          "Confirmed enhancement on CT additionally requires the lesion to measure at least 1cm in diameter."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2],
+          "explanation": "The CT enhancement threshold of unequivocal visual comparison or a ≥20 HU increase, and the deliberate abandonment of the perceived-versus-measurable distinction, are both stated directly in the 2019 criteria. The MRI enhancement threshold is incorrect as written, since the source specifies a signal intensity increase of 15% or more, not 30%. A focus that is not unequivocally visible or is too small to measure accurately is classified as non-enhancing, so describing such a focus as enhancing is incorrect. There is no stated minimum lesion-size requirement of 1cm for confirming CT enhancement.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 4,
+        "question_text": "Regarding wall irregularity and nodularity in the Bosniak 2019 classification, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Obtuse-margined protrusions measuring 4mm or more are considered wall or septal thickening rather than nodules.",
+          "A protrusion forming an acute angle with the underlying wall or septum is always classified as a nodule, regardless of its size.",
+          "An obtuse-margined protrusion measuring 3mm or less is considered wall or septal thickening rather than a nodule.",
+          "When bilateral obtuse thickening is present, the combined thickness should be measured including the underlying septum.",
+          "An obtuse-margined protrusion measuring 4mm or more is classified as a nodule."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2, 4],
+          "explanation": "An acute-angle protrusion is always a nodule regardless of size, an obtuse-margined protrusion of 3mm or less is graded as thickening, and an obtuse-margined protrusion of 4mm or more is a nodule — all stated directly by the source's angle-based framework. The first statement contradicts this by describing a 4mm obtuse protrusion as thickening rather than a nodule, which is incorrect. The bilateral-thickening measurement rule is also reversed: the source specifies measuring combined thickness excluding, not including, the underlying septum.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 5,
+        "question_text": "Regarding the diagnostic criteria for a Bosniak I renal cyst, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A Bosniak I lesion may contain up to three thin septa.",
+          "On MRI, a Bosniak I lesion typically demonstrates T2 signal intensity lower than that of cerebrospinal fluid.",
+          "The wall of a Bosniak I lesion must not enhance under any circumstances.",
+          "A Bosniak I lesion is a well-defined cyst with a thin (≤2mm) smooth wall and homogeneous fluid attenuation of -9 to 20 HU, without septa or calcification.",
+          "Rare reports of malignancy arising in Bosniak I lesions are considered to reflect a genuinely aggressive disease subtype requiring closer follow-up."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [3],
+          "explanation": "A Bosniak I lesion is defined precisely as a well-defined, thin, smooth-walled cyst with homogeneous simple fluid attenuation and no septa or calcification. Describing it as containing septa contradicts the defining absence of septa in this category. The MRI signal characterisation is incorrect because fluid signal is similar to, not lower than, cerebrospinal fluid on T2. The wall may in fact enhance, so an absolute prohibition on enhancement is wrong. Rare malignancy reports are attributed to likely misclassification rather than a genuinely aggressive subtype, so no closer follow-up is indicated for true Bosniak I lesions.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 6,
+        "question_text": "Regarding the recognized imaging patterns of a Bosniak II renal cyst, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A homogeneous mass measuring 70 HU or more on non-contrast CT is classified as Bosniak II.",
+          "A homogeneous, non-enhancing mass measuring more than 20 HU on renal mass protocol CT, with any type of calcification, may be classified as Bosniak II.",
+          "A cystic mass with four or more thin, smooth, enhancing septa is classified as Bosniak II.",
+          "A homogeneous mass measuring -9 to 20 HU on non-contrast CT is a recognized Bosniak II subtype.",
+          "A homogeneous mass measuring 21-30 HU on portal venous phase CT is a recognized Bosniak II subtype."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 3, 4],
+          "explanation": "All four attenuation-defined patterns — homogeneous hyperattenuating masses ≥70 HU on non-contrast CT, homogeneous non-enhancing masses >20 HU on renal mass protocol CT with any calcification, homogeneous masses of -9 to 20 HU on non-contrast CT, and homogeneous masses of 21-30 HU on the portal venous phase — are among the recognized Bosniak II subtypes. Four or more thin, smooth, enhancing septa instead defines a Bosniak IIF pattern, since many septa (≥4) is the threshold that upgrades a lesion beyond the few (1-3) septa seen in Bosniak II.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 7,
+        "question_text": "Regarding portal venous phase measurements and pseudo-enhancement in Bosniak II lesions, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Cystic masses measuring 35 HU in the portal venous phase are classified as Bosniak II due to pseudo-enhancement.",
+          "Pseudo-enhancement affecting small renal cysts can occur in lesions up to 3cm in diameter.",
+          "Cystic masses measuring less than 30 HU in the portal venous phase are considered benign despite potential pseudo-enhancement from adjacent renal parenchyma.",
+          "Homogeneous lesions demonstrating pseudo-enhancement up to 1.5cm should be reclassified as Bosniak IIF pending follow-up.",
+          "Homogeneous small renal lesions up to 1.5cm in diameter showing pseudo-enhancement should be considered benign Bosniak II lesions."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [2, 4],
+          "explanation": "The source states that cystic masses under 30 HU on the portal venous phase are considered benign despite pseudo-enhancement from adjacent renal parenchyma, and that homogeneous small lesions up to 1.5cm showing pseudo-enhancement should be considered benign Bosniak II lesions. A threshold of 35 HU is incorrect, since the stated benign threshold is below 30 HU, not above it. Pseudo-enhancement in small cysts is described as occurring in lesions up to 1.5cm, not 3cm. Reclassifying such homogeneous small lesions as Bosniak IIF pending follow-up is also incorrect, since the source explicitly classifies them as benign Bosniak II without further caveat.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 8,
+        "question_text": "Regarding MRI features used to classify a Bosniak II renal cyst, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "On MRI, benign Bosniak II lesions are typically hypointense on T1, at roughly half the signal intensity of normal renal parenchyma.",
+          "Well-defined, homogeneous masses with T2 signal intensity similar to cerebrospinal fluid may be confidently classified as benign Bosniak II lesions without follow-up.",
+          "Any MRI-detected cystic lesion with heterogeneous T1 signal, regardless of enhancement, can be confidently classified as benign Bosniak II.",
+          "MRI-based Bosniak II classification requires mandatory follow-up imaging at 6 months to confirm stability.",
+          "The malignancy risk for Bosniak II lesions is estimated at approximately 10%."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1],
+          "explanation": "Well-defined homogeneous masses with T2 signal similar to cerebrospinal fluid may indeed be confidently called benign Bosniak II without follow-up, matching the stated MRI benign features. The T1 description is reversed, since benign Bosniak II lesions are described as hyperintense on T1 at roughly 2.5 times normal parenchymal intensity, not hypointense at half that intensity. Heterogeneous T1 signal is instead a feature raising concern for Bosniak IIF, not a reassuring Bosniak II finding. No follow-up imaging is indicated for Bosniak II, contradicting a mandatory 6-month follow-up requirement, and the stated malignancy risk is under 1%, not approximately 10%.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 9,
+        "question_text": "Regarding the diagnostic criteria for a Bosniak IIF renal cyst, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A cystic mass with a smooth, minimally thickened (3mm) enhancing wall is a recognized Bosniak IIF pattern.",
+          "A cystic mass with three or fewer thin, smooth, enhancing septa is classified as Bosniak IIF.",
+          "Non-enhancing septa, regardless of number or thickness, are counted toward a Bosniak IIF classification.",
+          "A cystic mass with many (four or more) smooth, thin (≤2mm), enhancing septa is a recognized Bosniak IIF pattern.",
+          "A lesion that would otherwise meet IIF septal criteria, but whose septa are non-enhancing, should be downgraded to Bosniak II."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 3, 4],
+          "explanation": "Both recognized IIF patterns are correctly represented: a smooth, minimally thickened (3mm) enhancing wall or septum, and many (≥4) smooth, thin, enhancing septa. Non-enhancing septa cannot be counted toward IIF classification under the 2019 update, so a lesion that would otherwise meet septal criteria but whose septa are non-enhancing is correctly downgraded to Bosniak II rather than counted as IIF. Three or fewer thin, smooth, enhancing septa is instead the definition of few septa, which is a Bosniak II feature, not an IIF criterion.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 10,
+        "question_text": "Regarding the special MRI finding and malignancy behaviour of Bosniak IIF lesions, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Heterogeneously hyperintense cystic masses on unenhanced fat-saturated T1-weighted imaging, without any enhancement features, are reclassified as Bosniak II to avoid overcalling malignancy.",
+          "The heterogeneously hyperintense unenhanced fat-saturated T1 appearance is classified as Bosniak IIF because papillary renal cell carcinomas may present this way.",
+          "Lesions that progress from Bosniak IIF to category III or IV demonstrate a malignancy rate of approximately 85%, comparable to lesions that were Bosniak IV from the outset.",
+          "Progression over time is formally incorporated as a scoring criterion within the Bosniak classification system itself.",
+          "The malignancy rate for Bosniak IIF lesions is tightly reproducible across studies, ranging only from 30-38%."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 2],
+          "explanation": "The heterogeneously hyperintense unenhanced fat-saturated T1 appearance is specifically assigned to Bosniak IIF because of the concern for papillary renal cell carcinoma, and lesions that progress from IIF to III or IV do carry an approximately 85% malignancy rate comparable to an initially Bosniak IV lesion. Reclassifying this MRI appearance as Bosniak II would understate its malignant potential and is incorrect. Progression over time is explicitly described as a strong indicator of malignancy that is nonetheless not included as a formal classification criterion, so calling it a formal scoring criterion is wrong. The stated malignancy range for IIF is 0-38%, described as highly variable, not a tightly reproducible 30-38% band.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 11,
+        "question_text": "Regarding the diagnostic criteria for a Bosniak III renal cyst, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Bosniak III lesions may show a thick, irregular wall or septa with obtuse-margined convex protrusions measuring 3mm or less.",
+          "Bosniak III lesions are defined exclusively by the presence of nodules with acute-angle margins.",
+          "A smooth, thickened wall or septum measuring 4mm or more in width can qualify a lesion as Bosniak III.",
+          "\"Irregular\", in this classification, refers to diffuse convex protrusions that have obtuse margins with the wall or septa.",
+          "Diffuse convex protrusions with acute margins are classified as Bosniak III rather than Bosniak IV."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 2, 3],
+          "explanation": "Bosniak III is correctly defined by either a thick irregular wall/septa with obtuse-margined convex protrusions of 3mm or less, or a smooth thickened wall/septum of 4mm or more, and irregularity is explicitly defined as diffuse convex protrusions with obtuse margins. Defining Bosniak III exclusively by acute-angle nodules is incorrect, since acute-angle nodules of any size instead define Bosniak IV. Likewise, diffuse convex protrusions with acute margins are always classified as nodules, placing them in Bosniak IV rather than III.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 12,
+        "question_text": "Regarding the management of a Bosniak III renal cyst, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "Approximately 90% of resected Bosniak III lesions prove to be benign at pathology.",
+          "Management of Bosniak III lesions varies by institution and depends on factors such as lesion size, patient comorbidities, life expectancy, and surgeon preference.",
+          "Because roughly half of resected Bosniak III lesions are benign, current practice mandates surveillance alone, with resection strictly prohibited.",
+          "Patient age, comorbidities, and personal preference are irrelevant to the treatment-versus-observation decision in Bosniak III disease, which is dictated solely by lesion size.",
+          "The teaching point for Bosniak III management is that patient factors including age, comorbidities, life expectancy, personal preferences, and risk tolerance must be integrated into the treatment-versus-observation decision."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 4],
+          "explanation": "Management of Bosniak III lesions genuinely varies by institution and is influenced by lesion size, comorbidities, life expectancy, and surgeon preference, and the explicit teaching point is that these patient factors must be integrated into the treatment-versus-observation decision. Approximately 50%, not 90%, of resected lesions prove benign, so the 90% figure is incorrect. Current practice involves either resection or surveillance depending on risk stratification, not a mandate for surveillance alone with resection prohibited. Patient factors are explicitly described as necessary to integrate into the decision, directly contradicting a claim that they are irrelevant and that size alone dictates management.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 13,
+        "question_text": "Regarding the diagnostic criteria for a Bosniak IV renal cyst, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A focal enhancing convex protrusion with an acute-angle margin qualifies as a Bosniak IV nodule regardless of its size.",
+          "A convex protrusion with an obtuse margin measuring 4mm or more is classified as a Bosniak IV nodule.",
+          "A larger soft tissue component with a thick, enhancing, irregular wall is a recognized Bosniak IV pattern.",
+          "Bosniak IV lesions are, by definition, masses in which the soft tissue component exceeds 25% of the total mass, and the Bosniak criteria still fully apply to such lesions.",
+          "Clear cell and papillary renal cell carcinomas are common histological findings in resected Bosniak IV lesions."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 2, 4],
+          "explanation": "Bosniak IV is correctly defined by an acute-angle protrusion of any size, an obtuse-margined protrusion of 4mm or more, or a larger soft tissue component with a thick irregular enhancing wall, and clear cell and papillary renal cell carcinoma are indeed the common histological findings at resection. The claim about masses exceeding 25% solid component is incorrect: once the solid component exceeds 25%, the mass is reclassified as a necrotic solid mass rather than a cystic mass, and the Bosniak criteria explicitly no longer apply, contrary to the statement that they still fully apply.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 14,
+        "question_text": "Regarding the critical distinction between cystic and necrotic solid masses, and the management of Bosniak IV lesions, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "A cystic mass whose enhancing soft tissue component exceeds 25% of the total mass should still be scored using the standard Bosniak wall/septal thickness criteria.",
+          "Once a cystic mass's soft tissue component exceeds 25%, it is reclassified as a necrotic solid mass rather than a cystic mass, and the Bosniak criteria no longer apply.",
+          "Approximately 50% of Bosniak IV lesions prove malignant at histology.",
+          "Treatment is recommended for most Bosniak IV lesions when the patient's overall condition and characteristics permit it.",
+          "Bosniak IV lesions are typically more easily recognized as suspicious owing to larger soft tissue components and thick, irregular enhancing walls."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [1, 3, 4],
+          "explanation": "A mass whose solid component exceeds 25% is correctly reclassified as a necrotic solid mass, taking it outside the Bosniak system entirely, and treatment is recommended for most Bosniak IV lesions when patient condition permits, with these lesions typically easier to recognize as suspicious owing to larger soft tissue components and thick irregular walls. Continuing to score such a >25%-solid mass with standard Bosniak wall/septal criteria is therefore incorrect, since the criteria explicitly no longer apply once that threshold is exceeded. The malignancy rate for Bosniak IV is approximately 90%, not 50%, so that figure is incorrect.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 15,
+        "question_text": "Regarding the limitations of the Bosniak 2019 classification system, which of the following statements are correct?",
+        "q_type": "multiple_choice",
+        "options": [
+          "The Bosniak system is designed to predict the likelihood of malignancy rather than the biologic behaviour of a lesion.",
+          "Lesion size and growth rate are not formally incorporated into the Bosniak diagnostic criteria, even though smaller lesions are thought more likely to be benign.",
+          "The Bosniak classification should not be applied to patients with von Hippel-Lindau syndrome or hereditary leiomyomatosis, since benign-appearing cystic masses in these patients may still harbour malignancy.",
+          "MRI with subtraction imaging is recommended as a problem-solving tool for abundant thick nodular calcifications, hyperattenuating non-enhancing lesions larger than 3cm, and heterogeneous non-enhancing lesions, in order to exclude occult enhancement.",
+          "It is well established precisely which specific Bosniak criteria are most predictive of tumour aggressiveness."
+        ],
+        "page_images": [],
+        "answer": {
+          "answer_text": null,
+          "correct_options": [0, 1, 2, 3],
+          "explanation": "The system is explicitly stated to predict malignancy likelihood rather than biologic behaviour; size and growth rate are not formal criteria despite smaller lesions being thought more likely benign; the classification should be avoided in hereditary renal cancer syndromes such as von Hippel-Lindau and hereditary leiomyomatosis because benign-appearing cysts may still harbour malignancy in these patients; and MRI with subtraction is indeed recommended for the listed problem-solving scenarios to exclude occult enhancement. The final statement is incorrect because the source explicitly states it is unclear which criteria are more predictive of cancer aggressiveness than others, the opposite of being well established.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 16,
+        "question_text": "A renal mass on CT shows a well-defined, smooth wall no more than 2mm thick, uniform fluid attenuation of 15 HU, and no septa, nodules, or calcification. The wall shows faint enhancement on the post-contrast phase.\n\nWhat is the most appropriate Bosniak category for this finding?",
+        "q_type": "single_choice",
+        "options": ["Bosniak I", "Bosniak II", "Bosniak IIF", "Bosniak III", "Bosniak IV"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Bosniak I",
+          "correct_options": null,
+          "explanation": "A thin (≤2mm), smooth, enhancing wall enclosing homogeneous simple fluid (-9 to 20 HU) with no septa, nodularity, or calcification is the exact definition of Bosniak I. Bosniak II is excluded because none of its recognized patterns (few thin septa, hyperattenuating or specific-HU homogeneous variants) are described here, and IIF, III, and IV all require septal or wall thickening beyond 2mm, or nodularity, none of which is present.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 17,
+        "question_text": "A cystic renal lesion demonstrates two thin (2mm) septa, both of which show faint enhancement on the post-contrast phase. No septum is thickened, irregular, or nodular, and no soft tissue component is present.\n\nWhat is the most appropriate Bosniak category for this finding?",
+        "q_type": "single_choice",
+        "options": ["Bosniak I", "Bosniak II", "Bosniak IIF", "Bosniak III", "Bosniak IV"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Bosniak II",
+          "correct_options": null,
+          "explanation": "Two thin (≤2mm), enhancing septa fall within the \"few\" (1-3) septa criterion that defines this Bosniak II subtype. Bosniak IIF is excluded because that requires either many (≥4) septa or minimal thickening (3mm), neither of which is present here, and Bosniak I is excluded because that category has no septa at all.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 18,
+        "question_text": "An incidental renal lesion is homogeneous and measures 75 HU on non-contrast CT, with no discernible wall thickening, septa, or enhancement after contrast administration.\n\nWhat is the most appropriate Bosniak category for this finding?",
+        "q_type": "single_choice",
+        "options": ["Bosniak I", "Bosniak II", "Bosniak IIF", "Bosniak III", "Bosniak IV"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Bosniak II",
+          "correct_options": null,
+          "explanation": "A homogeneous mass measuring 70 HU or more on non-contrast CT is one of the recognized Bosniak II subtypes. Bosniak I is excluded because its defining attenuation range is -9 to 20 HU, well below the measured value here, and IIF, III, and IV all require enhancing wall/septal thickening or nodularity, which are absent from this homogeneous non-enhancing lesion.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 19,
+        "question_text": "A cystic renal mass contains five thin (≤2mm), smooth septa, all of which enhance following contrast administration. There is no wall or septal thickening beyond 2mm, and no nodularity.\n\nWhat is the most appropriate Bosniak category for this finding?",
+        "q_type": "single_choice",
+        "options": ["Bosniak I", "Bosniak II", "Bosniak IIF", "Bosniak III", "Bosniak IV"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Bosniak IIF",
+          "correct_options": null,
+          "explanation": "Five smooth, thin, enhancing septa meet the \"many\" (≥4) septa criterion that defines this Bosniak IIF pattern, even though each individual septum is thin. Bosniak II is excluded because it is limited to \"few\" (1-3) septa, and this lesion's septal number exceeds that threshold; Bosniak III and IV are excluded because no thickening ≥4mm or nodularity is described.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 20,
+        "question_text": "A cystic renal lesion has a single septum that is smooth and minimally thickened, measuring 3mm, with definite enhancement following contrast.\n\nWhat is the most appropriate Bosniak category for this finding?",
+        "q_type": "single_choice",
+        "options": ["Bosniak I", "Bosniak II", "Bosniak IIF", "Bosniak III", "Bosniak IV"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Bosniak IIF",
+          "correct_options": null,
+          "explanation": "A smooth, minimally thickened (3mm) enhancing septum is one of the two defining Bosniak IIF patterns. Bosniak II is excluded because it requires septa to be thin (≤2mm), not minimally thickened, and Bosniak III is excluded because it requires thickening of 4mm or more, or irregular obtuse-margined protrusions, neither of which is present here.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 21,
+        "question_text": "A cystic renal mass shows an enhancing septum with a thick, irregular contour and multiple convex protrusions that form obtuse angles with the septal surface, each protrusion measuring 2mm.\n\nWhat is the most appropriate Bosniak category for this finding?",
+        "q_type": "single_choice",
+        "options": ["Bosniak I", "Bosniak II", "Bosniak IIF", "Bosniak III", "Bosniak IV"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Bosniak III",
+          "correct_options": null,
+          "explanation": "A thick, irregular enhancing septum with obtuse-margined convex protrusions measuring 3mm or less is the defining Bosniak III pattern for irregular thickening. Bosniak IV is excluded because these protrusions form obtuse, not acute, angles and measure only 2mm, below the 4mm threshold that would classify an obtuse protrusion as a nodule, and Bosniak IIF is excluded because the septum here is irregular rather than smoothly minimally thickened.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 22,
+        "question_text": "A cystic renal mass demonstrates a smooth, enhancing wall measuring 5mm in thickness, without any convex nodular protrusion.\n\nWhat is the most appropriate Bosniak category for this finding?",
+        "q_type": "single_choice",
+        "options": ["Bosniak I", "Bosniak II", "Bosniak IIF", "Bosniak III", "Bosniak IV"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Bosniak III",
+          "correct_options": null,
+          "explanation": "A smooth, thickened wall measuring 4mm or more is one of the two defining Bosniak III patterns, independent of any irregularity or nodularity. Bosniak IIF is excluded because that category is limited to a thickness of exactly 3mm (minimally thickened), and Bosniak IV is excluded because no nodular protrusion, acute-angled or otherwise, is described.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 23,
+        "question_text": "A cystic renal mass contains an enhancing 4mm focal protrusion that forms an acute angle with the underlying wall.\n\nWhat is the most appropriate Bosniak category for this finding?",
+        "q_type": "single_choice",
+        "options": ["Bosniak I", "Bosniak II", "Bosniak IIF", "Bosniak III", "Bosniak IV"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Bosniak IV",
+          "correct_options": null,
+          "explanation": "A protrusion forming an acute angle with the underlying wall is always classified as a nodule, and any nodule defines Bosniak IV regardless of its size. Bosniak III is excluded because that category's irregular pattern is defined by obtuse-margined protrusions, not acute-angled ones, so an acute-angle protrusion cannot be scored as III irregularity irrespective of its 4mm size.",
+          "page_images": []
+        }
+      },
+      {
+        "q_number": 24,
+        "question_text": "A renal mass is predominantly cystic but contains an enhancing convex protrusion with an obtuse margin measuring 6mm from the adjacent wall, together with a separate area of thick, irregular enhancing soft tissue.\n\nWhat is the most appropriate Bosniak category for this finding?",
+        "q_type": "single_choice",
+        "options": ["Bosniak I", "Bosniak II", "Bosniak IIF", "Bosniak III", "Bosniak IV"],
+        "page_images": [],
+        "answer": {
+          "answer_text": "Bosniak IV",
+          "correct_options": null,
+          "explanation": "An obtuse-margined protrusion of 4mm or more is classified as a nodule, and the additional thick, irregular enhancing soft tissue component matches the larger soft-tissue Bosniak IV pattern as well. Bosniak III is excluded because its irregular obtuse-margined pattern is capped at 3mm, whereas this protrusion measures 6mm, placing it in the nodular Bosniak IV category instead.",
+          "page_images": []
+        }
+      }
+    ]
+  }
+]
